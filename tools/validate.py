@@ -9,53 +9,16 @@ import json, os, sys
 
 from actorio import ROOT, load_all
 
-model = json.load(open(os.path.join(ROOT, "data/model.json"), encoding="utf-8"))
-AXES = model["axes"]
-AXIS_IDS = [a["id"] for a in AXES]
-FACET_AXIS = {f["id"]: a["id"] for a in AXES for f in a["facets"]}
-FACET_IDS = list(FACET_AXIS)
+from pcmodel import MODEL as model, AXES, AXIS_IDS, FACET_AXIS, FACET_IDS, BAND, snapshot_axes as axis_scores, type_code, current
+import pcmodel
+
 LO, HI = model["scale"]["min"], model["scale"]["max"]
-BAND = model["scale"]["centre_band"]
 CURRENT_FROM = 2015  # hand snapshots from this year on must score every facet
 errors = []
 
 
 def err(msg):
     errors.append(msg)
-
-
-# ---------- scoring ----------
-
-def axis_scores(snap):
-    """Axis score = mean of available facets. Falls back to a CHES proxy.
-    Returns {axis: (score or None, n_facets, used_proxy)}."""
-    out = {}
-    for a in AXES:
-        vals = [snap["facets"][f["id"]][0] for f in a["facets"] if snap["facets"].get(f["id"])]
-        if vals:
-            out[a["id"]] = (sum(vals) / len(vals), len(vals), False)
-        elif a["id"] in snap.get("proxies", {}):
-            out[a["id"]] = (snap["proxies"][a["id"]], 0, True)
-        else:
-            out[a["id"]] = (None, 0, False)
-    return out
-
-
-def type_code(scores):
-    letters = []
-    for a in AXES:
-        s = scores[a["id"]][0]
-        if s is None:
-            letters.append("?")
-        else:
-            letters.append("x" if abs(s) < BAND else (a["neg"]["letter"] if s < 0 else a["pos"]["letter"]))
-    return "".join(letters[:4]) + "-" + "".join(letters[4:])
-
-
-def current(actor):
-    """Latest hand-scored snapshot, else latest snapshot."""
-    hand = [s for s in actor["snapshots"] if s["method"] == "hand"]
-    return (hand or actor["snapshots"])[-1]
 
 
 # ---------- checks ----------
@@ -100,6 +63,35 @@ for path in sorted(os.listdir(os.path.join(ROOT, "data/countries"))):
             err(f"countries/{path}: unknown party {pid}")
     frames[fr["code"]] = fr
 
+questions = json.load(open(os.path.join(ROOT, "data/questions.json"), encoding="utf-8"))
+ids = set()
+per_facet = {f: [] for f in FACET_IDS}
+for item in questions["items"]:
+    if item["id"] in ids:
+        err(f"questions: duplicate id {item['id']}")
+    ids.add(item["id"])
+    if item["facet"] not in per_facet:
+        err(f"questions: {item['id']} has unknown facet")
+        continue
+    if item["key"] not in (1, -1):
+        err(f"questions: {item['id']} key must be 1 or -1")
+    for cc in item.get("local", {}):
+        if cc not in frames:
+            err(f"questions: {item['id']} has a variant for unknown country {cc}")
+    per_facet[item["facet"]].append(item)
+for f, items in per_facet.items():
+    if len(items) < 3:
+        err(f"questions: facet {f} has fewer than 3 items")
+    if sum(i["quick"] for i in items) != 1:
+        err(f"questions: facet {f} needs exactly one quick-mode item")
+for ax in AXIS_IDS:
+    for mode, sel in (("all", lambda i: True), ("quick", lambda i: i["quick"])):
+        keys = [i["key"] for f, items in per_facet.items() if FACET_AXIS[f] == ax for i in items if sel(i)]
+        if sum(keys) != 0:
+            err(f"questions: axis {ax} is unbalanced in {mode} mode ({keys.count(1)} towards + vs {keys.count(-1)} towards -)")
+if {s["axis"] for s in questions["salience"]["items"]} != set(AXIS_IDS):
+    err("questions: salience items must cover every axis")
+
 if errors:
     print("\n".join(errors))
     sys.exit(1)
@@ -116,13 +108,7 @@ def fmt(cell):
 
 
 def centre(fr):
-    total = sum(fr["parties"].values())
-    c = {ax: 0.0 for ax in AXIS_IDS}
-    for pid, w in fr["parties"].items():
-        sc = axis_scores(current(actors[pid]))
-        for ax in AXIS_IDS:
-            c[ax] += sc[ax][0] * w / total
-    return {ax: (v, 4, False) for ax, v in c.items()}
+    return {ax: (v, 4, False) for ax, v in pcmodel.centre(fr, actors).items()}
 
 
 HEAD = "| Party | Code | " + " | ".join(AXIS_IDS) + " |\n|---|---|" + "---:|" * len(AXIS_IDS)
@@ -198,4 +184,16 @@ if "--report" in sys.argv:
         f.write("# Calibration: hand scores vs CHES 2024\n\n" + gen +
                 "Compares the current hand-scored snapshot with the CHES 2024 snapshot on facets both cover. "
                 "Gaps can be real change since 2024 (new leaders, new coalitions) or scoring error.\n\n" + calibration + "\n")
-    print("\nwrote docs/party-overview.md, docs/drift.md, docs/calibration.md")
+    ql = ["# Question list\n", gen.strip() + "\n", "Agreeing with a **+** statement moves you towards the + pole of the axis, a **−** statement towards the − pole. "
+          "**Q** marks the statement used in quick mode. Country versions replace the general text when that country is selected."]
+    for a in AXES:
+        ql.append(f"\n## {a['name']} ({a['neg']['label']} − / {a['pos']['label']} +)")
+        for fct in a["facets"]:
+            ql.append(f"\n**{fct['name']}**\n")
+            for i in per_facet[fct["id"]]:
+                ql.append(f"- `{i['id']}` {'+' if i['key'] > 0 else '−'}{' Q' if i['quick'] else ''}: {i['text']}")
+                for cc, t in i.get("local", {}).items():
+                    ql.append(f"  - {cc}: {t}")
+    with open(os.path.join(ROOT, "docs/question-list.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(ql) + "\n")
+    print("\nwrote docs/party-overview.md, docs/drift.md, docs/calibration.md, docs/question-list.md")

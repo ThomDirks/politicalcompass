@@ -118,13 +118,9 @@ Eight axes may be too many for the main result screen. Since every axis is the m
 
 A user is compared with each actor per facet. The distance on an axis is weighted by the user's salience for that axis. Matching at facet level means a party that agrees with you on economy but not on migration shows up as such, instead of disappearing into an average.
 
-## Questions (next step)
+## Questions
 
-- 3 to 4 statements per facet, answered on a 7-point agree/disagree scale
-- half of the statements per facet phrased so that agreeing points towards the − pole, half towards the + pole, to cancel out the tendency to agree with everything
-- quick mode: about 32 statements, one per facet
-- deep mode: the full set, about 110 statements
-- country frames swap in local examples while measuring the same facet
+96 statements (three per facet) on a 7-point agree/disagree scale, balanced per axis so that agreeing with everything does not push anyone in one direction, plus a salience question per axis. Quick mode uses 32 of them. Country frames swap in local examples while measuring the same facet. Details, scoring and test results: [questions.md](questions.md).
 
 ## Validation (later)
 

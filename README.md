@@ -12,10 +12,13 @@ Because "left" in one country can be "right" in another, scores are measured on 
 | [`docs/party-overview.md`](docs/party-overview.md) | Current profile of every party, per country, plus former parties |
 | [`docs/drift.md`](docs/drift.md) | Every snapshot of every party over time |
 | [`docs/calibration.md`](docs/calibration.md) | Hand scores compared with the Chapel Hill Expert Survey 2024 |
+| [`docs/questions.md`](docs/questions.md) | How the questions are written, scored, matched and tested |
+| [`docs/question-list.md`](docs/question-list.md) | Every statement, readable |
 | `data/model.json` | Axes, facets and the anchors that define each scale |
 | `data/countries/` | Country frames: parties, weights, local topics |
 | `data/actors/<country>/` | One file per party with all its snapshots |
 | `data/ches_mapping.json` | How CHES items map onto PCompass facets |
+| `data/questions.json` | The question bank: 96 statements, salience questions, country versions |
 | `tools/` | Import, calibration and validation scripts |
 
 ## Data sources
@@ -29,8 +32,10 @@ Because "left" in one country can be "right" in another, scores are measured on 
 python tools/import_ches.py      # (re)import CHES snapshots
 python tools/calibrate_ches.py   # calibrate new hand snapshots against CHES 2024
 python tools/validate.py --report
+python tools/score.py --selftest --noise 1   # can the questions tell parties apart?
+python tools/score.py --simulate nl-vvd      # answer as a party's supporter would
 ```
 
 ## Status
 
-Model spec, 56 parties with 230 snapshots. All hand scores are drafts. Next up: the question bank.
+Model spec, 56 parties with 230 snapshots, and a 96-statement question bank with scoring and matching. All hand scores are drafts. Next up: type codes, then a first web version.
