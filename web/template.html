@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCompass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Ballot paper: cool printed paper, blue-black official ink, one red pencil. */
+  --paper: #F1F3EE;
+  --sheet: #FBFCF9;
+  --ink: #18212F;
+  --muted: #5B6470;
+  --rule: #C7CCC3;
+  --tint: #E3E7DF;
+  --pencil: #C8272D;
+  --pencil-soft: rgba(200, 39, 45, .12);
+  --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Layout: a narrow masthead, then one working column per view; the ballot slip is the centrepiece of the test. */
+  --gutter: clamp(16px, 4vw, 40px);
+  --measure: 64ch;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1rem/1.55 var(--body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--pencil); outline-offset: 3px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- masthead ---------- */
+.mast {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px var(--gutter);
+  border-bottom: 2px solid var(--ink);
+  background: var(--sheet);
+  position: sticky; top: 0; z-index: 5;
+}
+.brand {
+  font-family: var(--display); font-variation-settings: "wdth" 72; font-weight: 800;
+  font-size: 1.45rem; letter-spacing: -.01em; text-decoration: none; line-height: 1;
+  display: flex; align-items: center; gap: 10px;
+}
+.brand svg { flex: none; }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.nav a {
+  text-decoration: none; padding: 6px 10px; border-radius: 3px; font-weight: 500; font-size: .95rem;
+}
+.nav a:hover { background: var(--tint); }
+.nav a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--pencil); border-radius: 0; }
+
+main { padding: clamp(24px, 5vw, 56px) var(--gutter) 64px; max-width: 1180px; margin: 0 auto; }
+.view[hidden] { display: none; }
+
+/* ---------- type ---------- */
+h1, h2, h3 {
+  font-family: var(--display); font-weight: 800; line-height: 1.02; margin: 0;
+  text-wrap: balance; letter-spacing: -.012em;
+}
+h1 { font-size: clamp(2.6rem, 6.4vw, 4.6rem); font-variation-settings: "wdth" 68; }
+h2 { font-size: clamp(1.6rem, 3vw, 2.15rem); font-variation-settings: "wdth" 75; }
+h3 { font-size: 1.2rem; font-variation-settings: "wdth" 85; font-weight: 700; }
+p { margin: 0; max-width: var(--measure); }
+.lead { font-size: 1.15rem; color: var(--ink); }
+.muted { color: var(--muted); }
+.small { font-size: .875rem; }
+.num { font-variant-numeric: tabular-nums; }
+
+/* ---------- buttons and choices ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 2px solid var(--ink); background: var(--ink); color: var(--sheet);
+  padding: 11px 20px; border-radius: 3px; font-weight: 600; cursor: pointer; text-decoration: none;
+}
+.btn:hover { background: var(--pencil); border-color: var(--pencil); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: var(--tint); border-color: var(--ink); }
+.linkbtn { background: none; border: 0; padding: 4px 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; color: var(--muted); }
+.linkbtn:hover { color: var(--ink); }
+
+.seg { display: inline-flex; border: 1.5px solid var(--ink); border-radius: 3px; overflow: hidden; flex-wrap: wrap; }
+.seg button {
+  border: 0; background: transparent; padding: 8px 14px; cursor: pointer; font-weight: 600;
+  border-right: 1.5px solid var(--ink);
+}
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--sheet); }
+.seg button:not([aria-pressed="true"]):hover { background: var(--tint); }
+
+.choice { display: grid; gap: 10px; }
+.choice label {
+  display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start;
+  padding: 12px 14px; border: 1.5px solid var(--rule); border-radius: 3px; cursor: pointer; background: var(--sheet);
+}
+.choice input { margin: 3px 0 0; accent-color: var(--pencil); width: 18px; height: 18px; }
+.choice label:has(input:checked) { border-color: var(--ink); }
+.choice b { display: block; }
+
+/* ---------- home ---------- */
+.home { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: clamp(32px, 6vw, 80px); align-items: start; }
+.home .intro { display: grid; gap: 24px; }
+.field { display: grid; gap: 8px; }
+.field > span { font-weight: 600; }
+.actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+
+.measures { margin-top: 56px; border-top: 2px solid var(--ink); padding-top: 22px; display: grid; gap: 18px; }
+.measures ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0; border-top: 1px solid var(--rule); }
+.measures li { padding: 14px 16px 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 2px; }
+.measures li b { font-family: var(--display); font-variation-settings: "wdth" 85; font-size: 1.05rem; }
+.poles { color: var(--muted); font-size: .92rem; }
+
+/* ---------- the ballot slip ---------- */
+.slip {
+  background: var(--sheet); border: 1.5px solid var(--ink); border-radius: 2px;
+  padding: clamp(20px, 3.5vw, 36px);
+  box-shadow: 6px 6px 0 var(--tint);
+  display: grid; gap: 22px;
+}
+.slip-head { display: flex; justify-content: space-between; gap: 12px; font-size: .9rem; color: var(--muted); border-bottom: 1px dashed var(--rule); padding-bottom: 12px; }
+.statement {
+  font-family: var(--display); font-variation-settings: "wdth" 80; font-weight: 650;
+  font-size: clamp(1.45rem, 3vw, 2.05rem); line-height: 1.16; letter-spacing: -.008em; text-wrap: balance;
+  max-width: 30ch; min-height: 3.5em;
+}
+.scale { display: grid; gap: 10px; }
+.marks { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; justify-items: center; align-items: center; }
+.mark {
+  position: relative; display: grid; place-items: center; cursor: pointer;
+  width: var(--d); height: var(--d); border-radius: 50%;
+  border: 2px solid var(--ink); background: var(--sheet);
+}
+.mark[data-v="-3"], .mark[data-v="3"] { --d: 54px; }
+.mark[data-v="-2"], .mark[data-v="2"] { --d: 46px; }
+.mark[data-v="-1"], .mark[data-v="1"] { --d: 40px; }
+.mark[data-v="0"] { --d: 34px; border-style: dashed; }
+.mark:hover { background: var(--pencil-soft); }
+.mark input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.mark:has(input:focus-visible) { outline: 2px solid var(--pencil); outline-offset: 3px; }
+.mark svg { position: absolute; inset: -6px; width: calc(100% + 12px); height: calc(100% + 12px); pointer-events: none; overflow: visible; }
+.mark svg path { fill: none; stroke: var(--pencil); stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 400; stroke-dashoffset: 400; }
+.mark.on svg path { stroke-dashoffset: 0; transition: stroke-dashoffset .45s cubic-bezier(.3,.7,.2,1); }
+.ends { display: grid; grid-template-columns: 1fr 1fr 1fr; font-size: .85rem; color: var(--muted); }
+.ends span:nth-child(2) { text-align: center; }
+.ends span:last-child { text-align: right; }
+.slip-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+/* ---------- test view ---------- */
+.testwrap { max-width: 780px; margin: 0 auto; display: grid; gap: 26px; }
+.progress { display: grid; grid-template-columns: repeat(8, 1fr); gap: 4px; }
+.progress div { display: grid; gap: 5px; font-size: .74rem; color: var(--muted); }
+.progress i { display: block; height: 6px; background: var(--tint); position: relative; overflow: hidden; }
+.progress i b { position: absolute; inset: 0 auto 0 0; background: var(--ink); }
+.progress div.now { color: var(--ink); font-weight: 600; }
+.progress div.now i b { background: var(--pencil); }
+.hint { font-size: .85rem; color: var(--muted); }
+kbd { font: 600 .8rem var(--body); border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 3px; padding: 0 5px; background: var(--sheet); }
+
+.salrows { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.salrow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.salmarks { display: flex; gap: 8px; }
+.salmarks .mark { --d: 34px; border-style: solid; }
+.salmarks .mark span { font-size: .78rem; font-weight: 600; position: relative; z-index: 1; }
+.sallegend { display: flex; justify-content: flex-end; gap: 8px; font-size: .78rem; color: var(--muted); }
+
+/* ---------- results ---------- */
+.rhead { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; border-bottom: 2px solid var(--ink); padding-bottom: 20px; }
+.code { font-family: var(--display); font-variation-settings: "wdth" 62; font-weight: 900; font-size: clamp(2.6rem, 7vw, 4.4rem); line-height: .9; letter-spacing: .02em; }
+.code small { display: block; font: 400 .85rem var(--body); letter-spacing: 0; color: var(--muted); margin-top: 8px; }
+.rgrid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); margin-top: 32px; align-items: start; }
+.block { display: grid; gap: 16px; }
+.block + .block { margin-top: 40px; }
+
+.axes { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.axrow { border-bottom: 1px solid var(--rule); }
+.axbtn { width: 100%; background: none; border: 0; padding: 14px 0 12px; text-align: left; cursor: pointer; display: grid; gap: 8px; }
+.axbtn:hover .axname { text-decoration: underline; text-underline-offset: 3px; }
+.axtop { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.axname { font-family: var(--display); font-variation-settings: "wdth" 85; font-weight: 700; font-size: 1.08rem; }
+.axread { font-size: .88rem; color: var(--muted); text-align: right; }
+.track { position: relative; height: 26px; }
+.track .line { position: absolute; left: 0; right: 0; top: 12px; height: 2px; background: var(--rule); }
+.track .zero { position: absolute; left: 50%; top: 5px; width: 1px; height: 16px; background: var(--muted); }
+.track .tick { position: absolute; top: 9px; width: 1px; height: 8px; background: var(--rule); }
+.track .ctr { position: absolute; top: 2px; transform: translateX(-50%); width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 8px solid var(--muted); }
+.track .party { position: absolute; top: 6px; transform: translateX(-50%); width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--ink); background: var(--sheet); }
+.track .you { position: absolute; top: 0; transform: translateX(-50%); width: 26px; height: 26px; }
+.track .you svg { width: 100%; height: 100%; overflow: visible; }
+.track .you path { fill: none; stroke: var(--pencil); stroke-width: 3.4; stroke-linecap: round; }
+.polelabels { display: flex; justify-content: space-between; font-size: .8rem; color: var(--muted); }
+.facets { padding: 2px 0 18px 14px; border-left: 2px solid var(--tint); display: grid; gap: 10px; margin-bottom: 4px; }
+.facets[hidden] { display: none; }
+.frow { display: grid; grid-template-columns: minmax(130px, 220px) 1fr; gap: 14px; align-items: center; font-size: .88rem; }
+.frow .track { height: 20px; }
+.frow .track .line { top: 9px; }
+.frow .track .zero { top: 4px; height: 12px; }
+.frow .track .you { width: 20px; height: 20px; }
+.frow .track .party { top: 4px; width: 12px; height: 12px; }
+.legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: .82rem; color: var(--muted); align-items: center; }
+.legend span { display: inline-flex; gap: 6px; align-items: center; }
+.lg-you { width: 14px; height: 14px; }
+.lg-party { width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--ink); }
+.lg-ctr { width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid var(--muted); }
+
+.matches { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.matches li { border-bottom: 1px solid var(--rule); }
+.matches a { display: grid; grid-template-columns: 2.4em minmax(0, 1fr) 4.2em; gap: 10px; align-items: center; padding: 11px 0; text-decoration: none; }
+.matches a:hover .pname { text-decoration: underline; text-underline-offset: 3px; }
+.rank { font-family: var(--display); font-variation-settings: "wdth" 70; font-weight: 800; font-size: 1.3rem; color: var(--muted); }
+.matches li:first-child .rank { color: var(--pencil); }
+.pname { font-weight: 600; }
+.pmeta { font-size: .82rem; color: var(--muted); }
+.bar { height: 5px; background: var(--tint); margin-top: 6px; }
+.bar b { display: block; height: 100%; background: var(--ink); }
+.pct { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.toggles { display: flex; gap: 18px; flex-wrap: wrap; font-size: .9rem; }
+.toggles label { display: inline-flex; gap: 7px; align-items: center; cursor: pointer; }
+.toggles input { accent-color: var(--ink); width: 16px; height: 16px; }
+
+.elsewhere { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.elsewhere th, .elsewhere td { text-align: left; padding: 10px 8px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.elsewhere th { font-weight: 600; color: var(--muted); font-size: .82rem; }
+.elsewhere td:first-child { font-weight: 700; white-space: nowrap; }
+.elsewhere tr.sel td { background: var(--pencil-soft); }
+.tblwrap { overflow-x: auto; }
+
+/* ---------- parties ---------- */
+.pfilters { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; margin: 22px 0 8px; }
+.pgroup { margin-top: 30px; }
+.pgroup h3 { padding-bottom: 8px; border-bottom: 2px solid var(--ink); }
+.plist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.plist li { border-bottom: 1px solid var(--rule); }
+.plist a { display: grid; gap: 1px; padding: 12px 14px 12px 0; text-decoration: none; }
+.plist a:hover .pname { text-decoration: underline; text-underline-offset: 3px; }
+.tag { display: inline-block; font-size: .74rem; font-weight: 600; padding: 1px 6px; border-radius: 2px; background: var(--tint); color: var(--muted); margin-left: 6px; vertical-align: 2px; }
+
+.phead { display: grid; gap: 10px; border-bottom: 2px solid var(--ink); padding-bottom: 20px; }
+.back { font-size: .9rem; }
+.snaps { display: flex; gap: 6px; flex-wrap: wrap; }
+.snaps button { border: 1.5px solid var(--rule); background: var(--sheet); padding: 5px 10px; border-radius: 3px; cursor: pointer; font-size: .85rem; font-variant-numeric: tabular-nums; }
+.snaps button.ches { border-style: dashed; }
+.snaps button[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: var(--sheet); border-style: solid; }
+.drift svg { width: 100%; height: auto; display: block; }
+.drift .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chips button { border: 1.5px solid var(--rule); background: transparent; padding: 4px 10px; border-radius: 99px; cursor: pointer; font-size: .82rem; }
+.chips button[aria-pressed="true"] { border-color: var(--pencil); color: var(--pencil); font-weight: 600; }
+.notes { display: grid; gap: 10px; margin: 0; }
+.notes div { display: grid; grid-template-columns: 9.5em 1fr; gap: 12px; font-size: .92rem; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.notes dt { font-weight: 600; }
+.notes dd { margin: 0; }
+.sources { font-size: .88rem; display: grid; gap: 4px; padding-left: 18px; margin: 0; }
+.note-box { border-left: 3px solid var(--pencil); padding: 4px 0 4px 14px; font-size: .9rem; }
+
+/* ---------- method ---------- */
+.prose { display: grid; gap: 16px; max-width: 70ch; }
+.prose h2 { margin-top: 18px; }
+.prose ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+
+footer { border-top: 1px solid var(--rule); padding: 22px var(--gutter) 40px; font-size: .85rem; color: var(--muted); max-width: 1180px; margin: 0 auto; display: flex; gap: 12px 28px; flex-wrap: wrap; justify-content: space-between; }
+
+@media (max-width: 860px) {
+  .home, .rgrid { grid-template-columns: minmax(0, 1fr); }
+  .progress div span { display: none; }
+}
+@media (max-width: 520px) {
+  .mark[data-v="-3"], .mark[data-v="3"] { --d: 44px; }
+  .mark[data-v="-2"], .mark[data-v="2"] { --d: 38px; }
+  .mark[data-v="-1"], .mark[data-v="1"] { --d: 33px; }
+  .mark[data-v="0"] { --d: 28px; }
+  .marks { gap: 2px; }
+  .frow { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .notes div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .salrow { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .sallegend { justify-content: flex-start; }
+  .nav a { padding: 6px 6px; font-size: .9rem; }
+  .nav { gap: 0; }
+  .brand { font-size: 1.2rem; }
+  .mast { padding: 10px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mark.on svg path { transition: none; }
+}
+</style>
+</head>
+<body>
+<header class="mast">
+  <a class="brand" href="#home" aria-label="PCompass home">
+    <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="11" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M6.5 13.5 C9 15.5 10.5 18 11.5 19.5 C14 13 17 9 21 6" fill="none" stroke="#C8272D" stroke-width="2.8" stroke-linecap="round"/></svg>
+    PCompass
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="#test" data-nav="test">Test</a>
+    <a href="#results" data-nav="results">Results</a>
+    <a href="#parties" data-nav="parties">Parties</a>
+    <a href="#method" data-nav="method">Method</a>
+  </nav>
+</header>
+
+<main>
+  <section class="view" id="v-home"></section>
+  <section class="view" id="v-test" hidden></section>
+  <section class="view" id="v-results" hidden></section>
+  <section class="view" id="v-parties" hidden></section>
+  <section class="view" id="v-party" hidden></section>
+  <section class="view" id="v-method" hidden></section>
+</main>
+
+<footer>
+  <span>Party profiles are drafts: hand-scored and calibrated against the Chapel Hill Expert Survey 1999 to 2024.</span>
+  <span><a href="https://github.com/ThomDirks/politicalcompass">Source and data on GitHub</a></span>
+</footer>
+
+<script>
+const DATA = /*__DATA__*/null;
+const AX = DATA.axes;
+const FIDS = DATA.facetIds;
+const FIDX = Object.fromEntries(FIDS.map((f, i) => [f, i]));
+const FAXIS = {};
+AX.forEach(a => a.facets.forEach(f => { FAXIS[f.id] = a.id; }));
+const FACET = {};
+AX.forEach(a => a.facets.forEach(f => { FACET[f.id] = f; }));
+const ACT = Object.fromEntries(DATA.actors.map(a => [a.id, a]));
+const COUNTRIES = ["NL", "DE", "UK", "US"];
+const CNAME = { NL: "the Netherlands", DE: "Germany", UK: "the United Kingdom", US: "the United States" };
+const LABELS = DATA.questions.scale.labels;
+const SAL = DATA.questions.salience;
+
+/* ---------- state ---------- */
+const KEY = "pcompass-v1";
+let S = { country: "NL", mode: "quick", answers: {}, salience: {}, idx: 0, stage: "statements", finished: false };
+try { const saved = JSON.parse(localStorage.getItem(KEY) || "null"); if (saved) S = Object.assign(S, saved); } catch (e) {}
+if (window.claude?.hot?.data && Object.keys(window.claude.hot.data).length) S = Object.assign(S, window.claude.hot.data);
+function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+window.claude?.hot?.snapshot?.(() => S);
+
+const ui = { includeHistoric: false, allCountries: false, openAxes: new Set(), driftAxis: "ECO", snapIdx: {} };
+
+/* ---------- helpers ---------- */
+const $ = (sel, el = document) => el.querySelector(sel);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const pctX = v => (v + 100) / 2;
+const fmt = v => (v > 0 ? "+" : "") + Math.round(v);
+
+function orderedItems(mode) {
+  const pool = DATA.questions.items.filter(i => mode === "full" || i.quick);
+  // round-robin over axes, so the test moves between topics
+  const byAxis = AX.map(a => pool.filter(i => FAXIS[i.facet] === a.id));
+  const out = [];
+  for (let r = 0; out.length < pool.length; r++) byAxis.forEach(list => { if (list[r]) out.push(list[r]); });
+  return out;
+}
+const itemText = (it, cc) => (it.local && it.local[cc]) || it.text;
+
+/* ---------- scoring (same rules as tools/score.py) ---------- */
+function facetScores(answers) {
+  const acc = {};
+  DATA.questions.items.forEach(it => {
+    const v = answers[it.id];
+    if (v === null || v === undefined) return;
+    (acc[it.facet] = acc[it.facet] || []).push(v * it.key);
+  });
+  const out = {};
+  FIDS.forEach(f => { const a = acc[f]; out[f] = a ? Math.round(a.reduce((x, y) => x + y, 0) / a.length / 3 * 100) : null; });
+  return out;
+}
+function axisFromFacets(get, proxies) {
+  const out = {};
+  AX.forEach(a => {
+    const vals = a.facets.map(f => get(f.id)).filter(v => v !== null && v !== undefined);
+    out[a.id] = vals.length ? vals.reduce((x, y) => x + y, 0) / vals.length : (proxies && proxies[a.id] !== undefined ? proxies[a.id] : null);
+  });
+  return out;
+}
+const snapFacet = (snap, f) => snap.f[FIDX[f]];
+const snapAxes = snap => axisFromFacets(f => snapFacet(snap, f), snap.p);
+function current(actor) {
+  const hand = actor.snaps.filter(s => s.m === "hand");
+  return (hand.length ? hand : actor.snaps)[(hand.length ? hand : actor.snaps).length - 1];
+}
+function typeCode(axes) {
+  const L = AX.map(a => {
+    const v = axes[a.id];
+    if (v === null || v === undefined) return "?";
+    return Math.abs(v) < DATA.band ? "x" : (v < 0 ? a.neg.letter : a.pos.letter);
+  }).join("");
+  return L.slice(0, 4) + "-" + L.slice(4);
+}
+function similarity(user, sal, snap) {
+  let num = 0, den = 0, full = 0;
+  FIDS.forEach(f => {
+    const u = user[f];
+    if (u === null) return;
+    const w = sal[FAXIS[f]] ?? 2;
+    full += w;
+    const p = snapFacet(snap, f);
+    if (p === null || w === 0) return;
+    num += w * Math.abs(u - p); den += w;
+  });
+  if (!den || den / full < 0.5) return null;
+  return 100 - (num / den) / 2;
+}
+function inAnyFrame(id) { return COUNTRIES.some(c => id in DATA.frames[c].parties); }
+function matches(user, sal, opts) {
+  const rows = [];
+  DATA.actors.forEach(a => {
+    const current_ = inAnyFrame(a.id);
+    if (!opts.historic && !current_) return;
+    if (opts.country && a.country !== opts.country) return;
+    const snap = current(a);
+    const sim = similarity(user, sal, snap);
+    if (sim !== null) rows.push({ sim, a, snap, current: current_ });
+  });
+  return rows.sort((x, y) => y.sim - x.sim);
+}
+function centre(cc) {
+  const fr = DATA.frames[cc].parties;
+  const tot = Object.values(fr).reduce((x, y) => x + y, 0);
+  const out = Object.fromEntries(AX.map(a => [a.id, 0]));
+  Object.entries(fr).forEach(([id, w]) => {
+    const ax = snapAxes(current(ACT[id]));
+    AX.forEach(a => { out[a.id] += ax[a.id] * w / tot; });
+  });
+  return out;
+}
+function relWords(a, d) {
+  if (Math.abs(d) < 10) return "close to the average";
+  const pole = d < 0 ? a.neg.label : a.pos.label;
+  return (Math.abs(d) >= 30 ? "well towards " : "towards ") + pole;
+}
+function answeredCount() {
+  return orderedItems(S.mode).filter(it => it.id in S.answers).length;
+}
+function hasResults() { return S.finished && Object.values(S.answers).some(v => v !== null); }
+
+/* ---------- pencil marks ---------- */
+const SCRIBBLE = "M14 30 C18 34 21 40 24 45 C29 33 36 22 48 12";
+const CROSS = "M5 6 L21 20 M20 5 L6 21";
+function markSvg() { return `<svg viewBox="0 0 60 60" aria-hidden="true"><path d="${SCRIBBLE}"/></svg>`; }
+function youMark() { return `<span class="you" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="${CROSS}"/></svg></span>`; }
+
+/* ---------- views ---------- */
+function show(view) {
+  document.querySelectorAll(".view").forEach(v => { v.hidden = v.id !== "v-" + view; });
+  document.querySelectorAll("[data-nav]").forEach(a => {
+    const nav = a.dataset.nav;
+    if (nav === view || (view === "party" && nav === "parties")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+  });
+}
+
+function route() {
+  const h = location.hash.replace(/^#/, "") || "home";
+  if (h.startsWith("party-") && ACT[h.slice(6)]) { renderParty(h.slice(6)); show("party"); }
+  else if (h === "test") { renderTest(); show("test"); }
+  else if (h === "results") { if (hasResults()) { renderResults(); show("results"); } else { location.hash = answeredCount() ? "test" : "home"; return; } }
+  else if (h === "parties") { renderParties(); show("parties"); }
+  else if (h === "method") { renderMethod(); show("method"); }
+  else { renderHome(); show("home"); }
+  window.scrollTo(0, 0);
+}
+window.addEventListener("hashchange", route);
+
+/* ---------- home ---------- */
+function renderHome() {
+  const items = orderedItems(S.mode);
+  const done = answeredCount();
+  const first = items[0];
+  const resumable = done > 0 && !S.finished;
+  $("#v-home").innerHTML = `
+  <div class="home">
+    <div class="intro">
+      <h1>Your politics on eight axes, not one line.</h1>
+      <p class="lead">Answer statements on the economy, social values, liberty, migration, foreign affairs, climate, technology and democracy. See your profile, the parties closest to you, and how the same views read in four different countries.</p>
+      <div class="field">
+        <span id="lbl-country">Compare me with parties from</span>
+        <div class="seg" role="group" aria-labelledby="lbl-country">
+          ${COUNTRIES.map(c => `<button type="button" data-country="${c}" aria-pressed="${S.country === c}">${({ NL: "Netherlands", DE: "Germany", UK: "United Kingdom", US: "United States" })[c]}</button>`).join("")}
+        </div>
+      </div>
+      <div class="field">
+        <span id="lbl-mode">Length</span>
+        <div class="choice" role="radiogroup" aria-labelledby="lbl-mode">
+          <label><input type="radio" name="mode" value="quick" ${S.mode === "quick" ? "checked" : ""}><span><b>Quick</b><span class="muted small">32 statements, one per topic. About 5 minutes.</span></span></label>
+          <label><input type="radio" name="mode" value="full" ${S.mode === "full" ? "checked" : ""}><span><b>Full</b><span class="muted small">96 statements, more precise. About 15 minutes.</span></span></label>
+        </div>
+      </div>
+      <div class="actions">
+        ${resumable
+          ? `<a class="btn" href="#test">Continue (${done} of ${items.length} answered)</a><button type="button" class="linkbtn" id="restart">Start over</button>`
+          : S.finished
+            ? `<a class="btn" href="#results">See my results</a><button type="button" class="linkbtn" id="restart">Take the test again</button>`
+            : `<a class="btn" href="#test">Start the test</a>`}
+      </div>
+    </div>
+    <div class="slip" aria-label="First statement">
+      <div class="slip-head"><span>Statement 1 of ${items.length}</span><span>${esc(FACET[first.facet].name)}</span></div>
+      <p class="statement">${esc(itemText(first, S.country))}</p>
+      ${scaleHtml(first, "home")}
+      <p class="hint">Mark a circle to start. Your answers stay in this browser.</p>
+    </div>
+  </div>
+  <div class="measures">
+    <h2>What the test measures</h2>
+    <ol>
+      ${AX.map(a => `<li><b>${esc(a.name)}</b><span class="poles">${esc(a.neg.label)} or ${esc(a.pos.label.toLowerCase())}</span></li>`).join("")}
+    </ol>
+    <p class="muted">Each topic has four parts, from ownership of energy companies to the power of judges. The scales are the same in every country. Picking a country only changes which parties you're compared with and what counts as average there.</p>
+  </div>`;
+  $("#v-home").querySelectorAll("[data-country]").forEach(b => b.onclick = () => { S.country = b.dataset.country; save(); renderHome(); });
+  $("#v-home").querySelectorAll("input[name=mode]").forEach(r => r.onchange = () => { S.mode = r.value; S.idx = 0; S.finished = false; S.stage = "statements"; save(); renderHome(); });
+  const rs = $("#restart"); if (rs) rs.onclick = () => { S.answers = {}; S.salience = {}; S.idx = 0; S.stage = "statements"; S.finished = false; save(); renderHome(); };
+  bindScale($("#v-home"), first, v => { S.answers[first.id] = v; S.idx = 1; S.finished = false; S.stage = "statements"; save(); setTimeout(() => { location.hash = "test"; }, 420); });
+}
+
+function scaleHtml(item, ctx) {
+  const cur = S.answers[item.id];
+  return `<div class="scale" role="radiogroup" aria-label="Your answer">
+    <div class="marks">
+      ${[-3, -2, -1, 0, 1, 2, 3].map((v, i) => `<label class="mark${cur === v ? " on" : ""}" data-v="${v}"><input type="radio" name="ans-${ctx}" value="${v}" aria-label="${LABELS[i]}" ${cur === v ? "checked" : ""}>${markSvg()}</label>`).join("")}
+    </div>
+    <div class="ends"><span>Strongly disagree</span><span>Neutral</span><span>Strongly agree</span></div>
+  </div>`;
+}
+function bindScale(root, item, onPick) {
+  root.querySelectorAll(".mark input").forEach(inp => {
+    inp.addEventListener("change", () => {
+      root.querySelectorAll(".mark").forEach(m => m.classList.remove("on"));
+      inp.parentElement.classList.add("on");
+      onPick(Number(inp.value));
+    });
+  });
+}
+
+/* ---------- test ---------- */
+function renderTest() {
+  const items = orderedItems(S.mode);
+  if (S.stage === "salience") return renderSalience(items);
+  if (S.idx >= items.length) S.idx = items.length - 1;
+  const it = items[S.idx];
+  const perAxis = AX.map(a => {
+    const list = items.filter(i => FAXIS[i.facet] === a.id);
+    return { a, total: list.length, done: list.filter(i => i.id in S.answers).length };
+  });
+  $("#v-test").innerHTML = `
+  <div class="testwrap">
+    <div class="progress" aria-label="Progress per topic">
+      ${perAxis.map(p => `<div class="${FAXIS[it.facet] === p.a.id ? "now" : ""}"><span>${esc(p.a.name.split(" ")[0])}</span><i><b style="width:${p.done / p.total * 100}%"></b></i></div>`).join("")}
+    </div>
+    <div class="slip">
+      <div class="slip-head"><span class="num">Statement ${S.idx + 1} of ${items.length}</span><span>${esc(FACET[it.facet].name)}</span></div>
+      <p class="statement" id="stmt">${esc(itemText(it, S.country))}</p>
+      ${scaleHtml(it, "test")}
+      <div class="slip-foot">
+        <button type="button" class="btn ghost" id="prev" ${S.idx === 0 ? "disabled" : ""}>Back</button>
+        <button type="button" class="linkbtn" id="skip">No opinion, skip</button>
+      </div>
+    </div>
+    <p class="hint">Keyboard: <kbd>1</kbd> to <kbd>7</kbd> to answer, <kbd>0</kbd> to skip, <kbd>Backspace</kbd> to go back.</p>
+  </div>`;
+  const next = () => {
+    save();
+    if (S.idx < items.length - 1) { S.idx++; save(); renderTest(); $("#stmt")?.focus?.(); }
+    else { S.stage = "salience"; save(); renderTest(); }
+  };
+  bindScale($("#v-test"), it, v => { S.answers[it.id] = v; save(); setTimeout(next, 380); });
+  $("#skip").onclick = () => { S.answers[it.id] = null; next(); };
+  $("#prev").onclick = () => { if (S.idx > 0) { S.idx--; save(); renderTest(); } };
+}
+
+function renderSalience(items) {
+  $("#v-test").innerHTML = `
+  <div class="testwrap">
+    <div class="slip">
+      <div class="slip-head"><span>Last step</span><span>${items.length} statements answered</span></div>
+      <h2>How much do these topics matter to you?</h2>
+      <p class="muted">Parties are matched more strictly on the topics you care about. Choose 0 to leave a topic out of the matching.</p>
+      <div class="sallegend" aria-hidden="true"><span>0 not at all</span><span>4 decides my vote</span></div>
+      <div class="salrows">
+        ${SAL.items.map(s => {
+          const cur = S.salience[s.axis] ?? 2;
+          return `<div class="salrow"><span><b>${esc(AX.find(a => a.id === s.axis).name)}</b><br><span class="muted small">${esc(s.text)}</span></span>
+          <div class="salmarks" role="radiogroup" aria-label="${esc(s.text)}">
+            ${SAL.values.map((v, i) => `<label class="mark${cur === v ? " on" : ""}"><input type="radio" name="sal-${s.axis}" value="${v}" aria-label="${SAL.labels[i]}" ${cur === v ? "checked" : ""}><span>${v}</span>${markSvg()}</label>`).join("")}
+          </div></div>`;
+        }).join("")}
+      </div>
+      <div class="slip-foot">
+        <button type="button" class="btn ghost" id="backq">Back to the statements</button>
+        <button type="button" class="btn" id="finish">See my results</button>
+      </div>
+    </div>
+  </div>`;
+  $("#v-test").querySelectorAll(".salmarks").forEach(group => {
+    group.querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
+      group.querySelectorAll(".mark").forEach(m => m.classList.remove("on"));
+      inp.parentElement.classList.add("on");
+      S.salience[inp.name.slice(4)] = Number(inp.value); save();
+    }));
+  });
+  $("#backq").onclick = () => { S.stage = "statements"; S.idx = items.length - 1; save(); renderTest(); };
+  $("#finish").onclick = () => {
+    SAL.items.forEach(s => { if (S.salience[s.axis] === undefined) S.salience[s.axis] = 2; });
+    S.finished = true; save(); location.hash = "results";
+  };
+}
+
+document.addEventListener("keydown", e => {
+  if ($("#v-test").hidden || S.stage !== "statements" || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (/^[1-7]$/.test(e.key)) {
+    const inp = $(`#v-test .mark input[value="${Number(e.key) - 4}"]`);
+    if (inp) { inp.checked = true; inp.dispatchEvent(new Event("change")); }
+  } else if (e.key === "0") { $("#skip")?.click(); }
+  else if (e.key === "Backspace") { e.preventDefault(); $("#prev")?.click(); }
+});
+
+/* ---------- axis tracks ---------- */
+function trackHtml(you, centreV, party) {
+  return `<div class="track" aria-hidden="true"><span class="line"></span>
+    ${[-100, -50, 50, 100].map(t => `<span class="tick" style="left:${pctX(t)}%"></span>`).join("")}
+    <span class="zero"></span>
+    ${centreV !== null && centreV !== undefined ? `<span class="ctr" style="left:${pctX(centreV)}%"></span>` : ""}
+    ${party !== null && party !== undefined ? `<span class="party" style="left:${pctX(party)}%"></span>` : ""}
+    ${you !== null && you !== undefined ? youMark().replace('class="you"', `class="you" style="left:${pctX(you)}%"`) : ""}
+  </div>`;
+}
+
+/* ---------- results ---------- */
+function renderResults() {
+  const user = facetScores(S.answers);
+  const axes = axisFromFacets(f => user[f]);
+  const cc = S.country;
+  const ctr = centre(cc);
+  const local = matches(user, S.salience, { country: ui.allCountries ? null : cc, historic: ui.includeHistoric });
+  const top = local.find(r => r.current) || local[0];
+  const topAxes = top ? snapAxes(top.snap) : {};
+  const answered = Object.values(S.answers).filter(v => v !== null).length;
+
+  const elsewhere = COUNTRIES.map(c => {
+    const ce = centre(c);
+    const best = matches(user, S.salience, { country: c, historic: false })[0];
+    const diffs = AX.map(a => ({ a, d: axes[a.id] - ce[a.id] })).filter(x => axes[x.a.id] !== null).sort((x, y) => Math.abs(y.d) - Math.abs(x.d)).slice(0, 2);
+    return { c, best, diffs };
+  });
+
+  $("#v-results").innerHTML = `
+  <div class="rhead">
+    <div class="block" style="gap:10px">
+      <h1>Your profile</h1>
+      <p class="muted">Based on ${answered} answers, compared with ${CNAME[cc]}.</p>
+      <div class="seg" role="group" aria-label="Compare with">
+        ${COUNTRIES.map(c => `<button type="button" data-country="${c}" aria-pressed="${cc === c}">${c}</button>`).join("")}
+      </div>
+    </div>
+    <div class="code" aria-label="Type code">${typeCode(axes)}<small>Type code, one letter per axis. Still provisional.</small></div>
+  </div>
+
+  <div class="rgrid">
+    <div>
+      <div class="block">
+        <h2>Where you stand</h2>
+        <div class="legend">
+          <span><svg class="lg-you" viewBox="0 0 26 26"><path d="${CROSS}" fill="none" stroke="#C8272D" stroke-width="3.4" stroke-linecap="round"/></svg>You</span>
+          <span><i class="lg-ctr"></i>Average in ${CNAME[cc]}</span>
+          ${top ? `<span><i class="lg-party"></i>${esc(top.a.name)}, your closest party</span>` : ""}
+        </div>
+        <div class="axes">
+          ${AX.map(a => {
+            const v = axes[a.id];
+            const open = ui.openAxes.has(a.id);
+            return `<div class="axrow">
+              <button type="button" class="axbtn" data-axis="${a.id}" aria-expanded="${open}">
+                <span class="axtop"><span class="axname">${esc(a.name)}</span><span class="axread num">${v === null ? "not answered" : `${fmt(v)}, ${relWords(a, v - ctr[a.id])}`}</span></span>
+                ${trackHtml(v, ctr[a.id], topAxes[a.id])}
+                <span class="polelabels"><span>${esc(a.neg.label)}</span><span>${esc(a.pos.label)}</span></span>
+              </button>
+              <div class="facets" ${open ? "" : "hidden"}>
+                ${a.facets.map(f => `<div class="frow"><span>${esc(f.name)} <span class="muted num">${user[f.id] === null ? "" : fmt(user[f.id])}</span></span>${trackHtml(user[f.id], null, top ? snapFacet(top.snap, f.id) : null)}</div>`).join("")}
+                <p class="small muted">${esc(a.neg.summary)} Or: ${esc(a.pos.summary.charAt(0).toLowerCase() + a.pos.summary.slice(1))}</p>
+              </div>
+            </div>`;
+          }).join("")}
+        </div>
+        <p class="small muted">Select a topic to see its four parts.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="block">
+        <h2>Closest parties</h2>
+        <div class="toggles">
+          <label><input type="checkbox" id="t-all" ${ui.allCountries ? "checked" : ""}>All four countries</label>
+          <label><input type="checkbox" id="t-hist" ${ui.includeHistoric ? "checked" : ""}>Include former parties</label>
+        </div>
+        <ol class="matches">
+          ${local.slice(0, 8).map((r, i) => `<li><a href="#party-${r.a.id}">
+            <span class="rank num">${i + 1}</span>
+            <span><span class="pname">${esc(r.a.name)}</span> <span class="pmeta">${esc(r.a.full !== r.a.name ? r.a.full : "")}${r.current ? "" : `, ${esc(r.snap.l)}`}${ui.allCountries ? ` (${r.a.country})` : ""}</span><span class="bar"><b style="width:${Math.max(0, r.sim)}%"></b></span></span>
+            <span class="pct">${Math.round(r.sim)}%</span></a></li>`).join("")}
+        </ol>
+        <p class="small muted">Match is based on all 32 parts, weighted by how much each topic matters to you.</p>
+      </div>
+
+      <div class="block">
+        <h2>The same answers elsewhere</h2>
+        <p class="muted small">Left and right shift between countries. Here's how your answers compare with the average in each, and which party comes closest there.</p>
+        <div class="tblwrap"><table class="elsewhere">
+          <thead><tr><th scope="col">Country</th><th scope="col">Closest party</th><th scope="col">You stand out most on</th></tr></thead>
+          <tbody>
+          ${elsewhere.map(e => `<tr class="${e.c === cc ? "sel" : ""}"><td>${e.c}</td><td>${e.best ? `<a href="#party-${e.best.a.id}">${esc(e.best.a.name)}</a> <span class="muted num">${Math.round(e.best.sim)}%</span>` : "none"}</td>
+            <td>${e.diffs.map(x => `${esc(x.a.name)}: ${relWords(x.a, x.d)}`).join("<br>")}</td></tr>`).join("")}
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="block">
+        <div class="actions">
+          <a class="btn ghost" href="#test">Review answers</a>
+          <button type="button" class="linkbtn" id="again">Take the test again</button>
+        </div>
+      </div>
+    </div>
+  </div>`;
+  const root = $("#v-results");
+  root.querySelectorAll("[data-country]").forEach(b => b.onclick = () => { S.country = b.dataset.country; save(); renderResults(); });
+  root.querySelectorAll(".axbtn").forEach(b => b.onclick = () => {
+    const id = b.dataset.axis;
+    ui.openAxes.has(id) ? ui.openAxes.delete(id) : ui.openAxes.add(id);
+    const open = ui.openAxes.has(id);
+    b.setAttribute("aria-expanded", open);
+    b.nextElementSibling.hidden = !open;
+  });
+  $("#t-all").onchange = e => { ui.allCountries = e.target.checked; renderResults(); };
+  $("#t-hist").onchange = e => { ui.includeHistoric = e.target.checked; renderResults(); };
+  $("#again").onclick = () => { S.answers = {}; S.salience = {}; S.idx = 0; S.stage = "statements"; S.finished = false; save(); location.hash = "home"; };
+}
+
+/* ---------- parties ---------- */
+let pFilter = { country: "all", show: "current" };
+function years(a) {
+  if (!a.active.from) return "";
+  if (!a.active.to) return `since ${a.active.from}`;
+  return a.active.from === a.active.to ? `${a.active.from}` : `${a.active.from} to ${a.active.to}`;
+}
+function renderParties() {
+  const user = hasResults() ? facetScores(S.answers) : null;
+  const groups = COUNTRIES.filter(c => pFilter.country === "all" || pFilter.country === c).map(c => {
+    let list = DATA.actors.filter(a => a.country === c);
+    if (pFilter.show === "current") list = list.filter(a => a.id in DATA.frames[c].parties);
+    if (pFilter.show === "former") list = list.filter(a => !(a.id in DATA.frames[c].parties));
+    const w = DATA.frames[c].parties;
+    list.sort((x, y) => (w[y.id] ?? -1) - (w[x.id] ?? -1) || (x.active.from ?? 0) - (y.active.from ?? 0));
+    return { c, list };
+  });
+  $("#v-parties").innerHTML = `
+    <h1>Parties</h1>
+    <p class="lead" style="margin-top:14px">${DATA.actors.length} parties from four countries, current and former, each with one or more dated profiles. Open a party to see where it stands and how it moved over time.</p>
+    <div class="pfilters">
+      <div class="seg" role="group" aria-label="Country">
+        ${["all", ...COUNTRIES].map(c => `<button type="button" data-pc="${c}" aria-pressed="${pFilter.country === c}">${c === "all" ? "All" : c}</button>`).join("")}
+      </div>
+      <div class="seg" role="group" aria-label="Which parties">
+        ${[["current", "In the current comparison"], ["former", "Former and minor"], ["all", "Both"]].map(([k, l]) => `<button type="button" data-ps="${k}" aria-pressed="${pFilter.show === k}">${l}</button>`).join("")}
+      </div>
+    </div>
+    ${groups.map(g => g.list.length ? `<div class="pgroup"><h3>${({ NL: "Netherlands", DE: "Germany", UK: "United Kingdom", US: "United States" })[g.c]}</h3>
+      <ul class="plist">${g.list.map(a => {
+        const snap = current(a);
+        const sim = user ? similarity(user, S.salience, snap) : null;
+        return `<li><a href="#party-${a.id}"><span class="pname">${esc(a.name)}${a.snaps.length > 1 ? `<span class="tag">${a.snaps.length} profiles</span>` : ""}</span>
+          <span class="pmeta">${esc(a.full !== a.name ? a.full : "")}${a.full !== a.name ? ", " : ""}${years(a)}${sim !== null ? `. Match with you: ${Math.round(sim)}%` : ""}</span></a></li>`;
+      }).join("")}</ul></div>` : "").join("")}`;
+  $("#v-parties").querySelectorAll("[data-pc]").forEach(b => b.onclick = () => { pFilter.country = b.dataset.pc; renderParties(); });
+  $("#v-parties").querySelectorAll("[data-ps]").forEach(b => b.onclick = () => { pFilter.show = b.dataset.ps; renderParties(); });
+}
+
+function driftSvg(a, axisId) {
+  const pts = a.snaps.map(s => ({ y: s.y, v: snapAxes(s)[axisId], m: s.m, l: s.l })).filter(p => p.v !== null && p.v !== undefined);
+  if (pts.length < 2) return `<p class="muted small">Not enough profiles with data on this topic to show a trend.</p>`;
+  const W = 640, H = 230, L = 46, R = 16, T = 14, B = 30;
+  const y0 = Math.min(...pts.map(p => p.y)), y1 = Math.max(...pts.map(p => p.y));
+  const span = Math.max(1, y1 - y0);
+  const X = y => L + (y - y0) / span * (W - L - R);
+  const Y = v => T + (100 - v) / 200 * (H - T - B);
+  const ax = AX.find(x => x.id === axisId);
+  const grid = [-100, -50, 0, 50, 100].map(v => `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="${v === 0 ? "#5B6470" : "#C7CCC3"}" stroke-width="1" ${v === 0 ? "" : 'stroke-dasharray="2 4"'}/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end" font-size="11" fill="#5B6470">${v > 0 ? "+" + v : v}</text>`).join("");
+  const yearsShown = [...new Set(pts.map(p => p.y))];
+  const xl = yearsShown.filter((y, i) => i === 0 || i === yearsShown.length - 1 || y - yearsShown[i - 1] >= span / 9).map(y => `<text x="${X(y)}" y="${H - 8}" text-anchor="middle" font-size="11" fill="#5B6470">${y}</text>`).join("");
+  const path = pts.map((p, i) => `${i ? "L" : "M"}${X(p.y).toFixed(1)} ${Y(p.v).toFixed(1)}`).join(" ");
+  const dots = pts.map(p => `<circle cx="${X(p.y)}" cy="${Y(p.v)}" r="${p.m === "hand" ? 5 : 4.2}" fill="${p.m === "hand" ? "#18212F" : "#FBFCF9"}" stroke="#18212F" stroke-width="2"><title>${esc(p.l)}: ${fmt(p.v)}</title></circle>`).join("");
+  const last = pts[pts.length - 1];
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(a.name)} on ${esc(ax.name)} over time">
+    ${grid}${xl}
+    <text x="${L + 4}" y="${T + 10}" font-size="11" fill="#5B6470">${esc(ax.pos.label)}</text>
+    <text x="${L + 4}" y="${H - B - 6}" font-size="11" fill="#5B6470">${esc(ax.neg.label)}</text>
+    <path d="${path}" fill="none" stroke="#C8272D" stroke-width="2.4" stroke-linejoin="round"/>
+    ${dots}
+    <text x="${Math.min(X(last.y) + 9, W - R - 2)}" y="${Y(last.v) - 9}" text-anchor="end" font-size="12" font-weight="700" fill="#18212F">${fmt(last.v)}</text>
+  </svg>`;
+}
+
+function renderParty(id) {
+  const a = ACT[id];
+  const idx = ui.snapIdx[id] ?? (a.snaps.indexOf(current(a)));
+  const snap = a.snaps[idx];
+  const axes = snapAxes(snap);
+  const user = hasResults() ? facetScores(S.answers) : null;
+  const uaxes = user ? axisFromFacets(f => user[f]) : null;
+  const sim = user ? similarity(user, S.salience, snap) : null;
+  const ctr = DATA.frames[a.country] ? centre(a.country) : null;
+  const links = [...a.pred.map(p => ["Continues", p]), ...a.succ.map(p => ["Continued as", p])].filter(([, p]) => ACT[p]);
+  const isChes = snap.m === "ches";
+  $("#v-party").innerHTML = `
+  <div class="phead">
+    <a class="back" href="#parties">All parties</a>
+    <h1>${esc(a.name)}</h1>
+    <p class="lead">${esc(a.full !== a.name ? a.full + ", " : "")}${CNAME[a.country].replace(/^the /, "")}, ${years(a)}.</p>
+    ${links.length ? `<p class="small">${links.map(([w, p]) => `${w} <a href="#party-${p}">${esc(ACT[p].name)}</a>`).join(". ")}.</p>` : ""}
+    <div class="code" style="font-size:clamp(2rem,5vw,3rem)">${typeCode(axes)}</div>
+  </div>
+  <div class="rgrid">
+    <div>
+      <div class="block">
+        <h2>Profile</h2>
+        <div class="snaps" role="group" aria-label="Profile year">
+          ${a.snaps.map((s, i) => `<button type="button" class="${s.m === "ches" ? "ches" : ""}" data-si="${i}" aria-pressed="${i === idx}" title="${esc(s.l)}">${s.y}</button>`).join("")}
+        </div>
+        <p class="small muted">${esc(snap.l)}. ${isChes ? "Expert survey (Chapel Hill). Covers 20 of the 32 parts; the rest are left empty." : "Scored by hand from programmes and record."}${sim !== null ? ` Match with your answers: <b class="num" style="color:var(--ink)">${Math.round(sim)}%</b>.` : ""}</p>
+        <div class="legend">
+          <span><i class="lg-party"></i>${esc(a.name)} ${snap.y}</span>
+          ${user ? `<span><svg class="lg-you" viewBox="0 0 26 26"><path d="${CROSS}" fill="none" stroke="#C8272D" stroke-width="3.4" stroke-linecap="round"/></svg>You</span>` : ""}
+          ${ctr ? `<span><i class="lg-ctr"></i>Today's average in ${CNAME[a.country]}</span>` : ""}
+        </div>
+        <div class="axes">
+          ${AX.map(ax => {
+            const v = axes[ax.id];
+            const open = ui.openAxes.has(ax.id);
+            return `<div class="axrow">
+              <button type="button" class="axbtn" data-axis="${ax.id}" aria-expanded="${open}">
+                <span class="axtop"><span class="axname">${esc(ax.name)}</span><span class="axread num">${v === null || v === undefined ? "no data" : fmt(v)}</span></span>
+                ${trackHtml(uaxes ? uaxes[ax.id] : null, ctr ? ctr[ax.id] : null, v)}
+                <span class="polelabels"><span>${esc(ax.neg.label)}</span><span>${esc(ax.pos.label)}</span></span>
+              </button>
+              <div class="facets" ${open ? "" : "hidden"}>
+                ${ax.facets.map(f => { const pv = snapFacet(snap, f.id); return `<div class="frow"><span>${esc(f.name)} <span class="muted num">${pv === null ? "no data" : fmt(pv)}</span></span>${trackHtml(user ? user[f.id] : null, null, pv)}</div>`; }).join("")}
+              </div>
+            </div>`;
+          }).join("")}
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="block drift">
+        <h2>Over time</h2>
+        ${a.snaps.length > 1 ? `
+        <div class="chips" role="group" aria-label="Topic">${AX.map(ax => `<button type="button" data-da="${ax.id}" aria-pressed="${ui.driftAxis === ax.id}">${esc(ax.name)}</button>`).join("")}</div>
+        ${driftSvg(a, ui.driftAxis)}
+        <p class="small muted">Filled dots are scored by hand, open dots come from the expert survey. Early survey years only measured overall economic and social positions.</p>` : `<p class="muted">Only one profile so far.</p>`}
+      </div>
+      ${snap.n ? `<div class="block"><h2>Why these scores</h2><dl class="notes">${AX.map(ax => snap.n[ax.id] ? `<div><dt>${esc(ax.name)}</dt><dd>${esc(snap.n[ax.id])}</dd></div>` : "").join("")}</dl></div>` : ""}
+      ${snap.src ? `<div class="block"><h3>Sources</h3><ul class="sources">${snap.src.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("")}</ul></div>` : ""}
+      ${!inAnyFrame(a.id) && a.active.to && a.active.to < 1950 ? `<p class="note-box">Historical parties are measured on today's scales. A party from the 1930s mostly looks traditional on social values because norms then were different, and the profile describes its programme and conduct in office.</p>` : ""}
+    </div>
+  </div>`;
+  const root = $("#v-party");
+  root.querySelectorAll("[data-si]").forEach(b => b.onclick = () => { ui.snapIdx[id] = Number(b.dataset.si); renderParty(id); });
+  root.querySelectorAll("[data-da]").forEach(b => b.onclick = () => { ui.driftAxis = b.dataset.da; renderParty(id); });
+  root.querySelectorAll(".axbtn").forEach(b => b.onclick = () => {
+    const ax = b.dataset.axis;
+    ui.openAxes.has(ax) ? ui.openAxes.delete(ax) : ui.openAxes.add(ax);
+    b.setAttribute("aria-expanded", ui.openAxes.has(ax));
+    b.nextElementSibling.hidden = !ui.openAxes.has(ax);
+  });
+}
+
+/* ---------- method ---------- */
+function renderMethod() {
+  const nItems = DATA.questions.items.length;
+  const nSnaps = DATA.actors.reduce((x, a) => x + a.snaps.length, 0);
+  $("#v-method").innerHTML = `
+  <div class="prose">
+    <h1>How it works</h1>
+    <p class="lead">A short version of the method. The full model, all data and the scripts are on GitHub.</p>
+    <h2>Eight topics, 32 parts</h2>
+    <p>Each topic is split into four parts with written descriptions of what the extremes and the middle look like in concrete policy. Your score on a part is the average of your answers to its statements, from -100 to +100. A topic score is the average of its four parts.</p>
+    <h2>The statements</h2>
+    <p>The full test has ${nItems} statements, three per part. Quick mode uses one per part. On every topic, half the statements point one way and half the other, so agreeing with everything doesn't push you to one side. Some statements use a local example for the country you pick.</p>
+    <h2>Countries</h2>
+    <p>Scores are absolute: the same answers give the same scores everywhere. The country you pick decides which parties you're compared with and what counts as average there. The average is the mean of that country's parties, weighted by votes at the last national election (or current seats in the Netherlands, after the PVV split).</p>
+    <h2>Parties</h2>
+    <ul>
+      <li>${DATA.actors.length} parties with ${nSnaps} dated profiles.</li>
+      <li>Current profiles are scored by hand from programmes and record (November 2026), then checked against the Chapel Hill Expert Survey 2024. Where the two disagreed by 35 points or more, the score became the average of both, unless there was a documented reason to keep it.</li>
+      <li>Expert survey profiles from 1999 to 2024 show how European parties moved. Earlier eras and historical parties are scored by hand.</li>
+      <li>All profiles are drafts and open to correction.</li>
+    </ul>
+    <h2>Matching</h2>
+    <p>Your answers are compared with each party part by part. Topics you said matter more count more. A party is only ranked if its profile covers at least half of what you answered.</p>
+    <h2>Privacy</h2>
+    <p>Your answers are kept in this browser only. Nothing is sent anywhere.</p>
+    <p><a href="https://github.com/ThomDirks/politicalcompass/blob/main/docs/model.md">Read the full model on GitHub</a></p>
+  </div>`;
+}
+
+route();
+</script>
+</body>
+</html>
