@@ -4,75 +4,566 @@
   "name": "CDU",
   "full_name": "Christlich Demokratische Union Deutschlands",
   "country": "DE",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026. Leads the Merz government with CSU and SPD."
+  "active": {
+    "from": 1945,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 4,
-    "SOC": 3,
-    "LIB": 4,
-    "MIG": 4,
-    "INT": 3,
-    "CLI": 2,
-    "TEC": 3,
-    "DEM": 1
-  },
-  "facets": {
-    "eco_own": [40, "h"],
-    "eco_reg": [35, "h"],
-    "eco_lab": [15, "h"],
-    "eco_tax": [35, "h"],
-    "soc_fam": [30, "m"],
-    "soc_lgbt": [10, "m"],
-    "soc_rel": [30, "m"],
-    "soc_mor": [35, "m"],
-    "lib_priv": [40, "h"],
-    "lib_just": [60, "h"],
-    "lib_speech": [0, "h"],
-    "lib_emerg": [15, "h"],
-    "mig_lvl": [45, "h"],
-    "mig_asy": [60, "h"],
-    "mig_int": [45, "h"],
-    "mig_nat": [30, "h"],
-    "int_eu": [-50, "h"],
-    "int_trade": [-60, "h"],
-    "int_def": [-90, "h"],
-    "int_aid": [10, "h"],
-    "cli_amb": [0, "m"],
-    "cli_pay": [30, "m"],
-    "cli_nat": [25, "m"],
-    "cli_intl": [-40, "m"],
-    "tec_ai": [50, "m"],
-    "tec_bio": [30, "m"],
-    "tec_nuc": [50, "m"],
-    "tec_big": [-5, "m"],
-    "dem_trust": [-55, "m"],
-    "dem_direct": [-55, "m"],
-    "dem_courts": [-55, "m"],
-    "dem_central": [-40, "m"]
-  },
-  "notes": {
-    "ECO": "Social market economy, lower business taxes, reform of Bürgergeld.",
-    "SOC": "Christian democratic; against cannabis legalisation.",
-    "LIB": "More police powers, IP address retention.",
-    "MIG": "Border turnbacks and stricter asylum under Merz.",
-    "INT": "Pro-EU, strong NATO and Ukraine support.",
-    "CLI": "Keeps the 2045 target, reverses the heating law.",
-    "TEC": "Open to nuclear research and SMRs, pro AI.",
-    "DEM": "Institutional, federalist."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://www.cdu.de/"
+      "year": 1999,
+      "label": "CHES 1999",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 1999, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-91, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": 13,
+        "SOC": 27
+      },
+      "ches": {
+        "party_id": "301",
+        "party": "CDU",
+        "items": {
+          "eu_position": 6.73,
+          "lrecon": 5.67,
+          "galtan": 6.33
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2002,
+      "label": "CHES 2002",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2002, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-88, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": 17,
+        "SOC": 33
+      },
+      "ches": {
+        "party_id": "301",
+        "party": "CDU",
+        "items": {
+          "eu_position": 6.64,
+          "lrecon": 5.86,
+          "galtan": 6.64
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "label": "CHES 2006",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2006, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [28, "h"],
+        "eco_lab": null,
+        "eco_tax": [8, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [23, "h"],
+        "soc_rel": [34, "h"],
+        "soc_mor": [23, "h"],
+        "lib_priv": null,
+        "lib_just": [49, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [54, "h"],
+        "mig_asy": null,
+        "mig_int": [63, "h"],
+        "mig_nat": [26, "h"],
+        "int_eu": [-79, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-3, "h"]
+      },
+      "proxies": {
+        "ECO": 36,
+        "SOC": 38
+      },
+      "ches": {
+        "party_id": "301",
+        "party": "CDU",
+        "items": {
+          "deregulation": 6.38,
+          "redistribution": 5.14,
+          "spendvtax": 5.63,
+          "sociallifestyle": 6.17,
+          "religious_principles": 6.71,
+          "civlib_laworder": 7.43,
+          "immigrate_policy": 7.71,
+          "multiculturalism": 8.14,
+          "nationalism": 6.29,
+          "eu_position": 6.36,
+          "regions": 4.86,
+          "lrecon": 6.82,
+          "galtan": 6.91
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "label": "CHES 2010",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2010, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [11, "h"],
+        "eco_lab": null,
+        "eco_tax": [5, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [3, "h"],
+        "soc_rel": [33, "h"],
+        "soc_mor": [3, "h"],
+        "lib_priv": null,
+        "lib_just": [29, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [33, "h"],
+        "mig_asy": null,
+        "mig_int": [47, "h"],
+        "mig_nat": null,
+        "int_eu": [-67, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [20, "h"],
+        "cli_pay": null,
+        "cli_nat": [20, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-14, "h"]
+      },
+      "proxies": {
+        "ECO": 20,
+        "SOC": 25
+      },
+      "ches": {
+        "party_id": "301",
+        "party": "CDU",
+        "items": {
+          "deregulation": 5.53,
+          "redistribution": 5.33,
+          "spendvtax": 5.13,
+          "sociallifestyle": 5.13,
+          "religious_principles": 6.67,
+          "civlib_laworder": 6.47,
+          "immigrate_policy": 6.67,
+          "multiculturalism": 7.33,
+          "eu_position": 6.0,
+          "environment": 6.0,
+          "regions": 4.29,
+          "lrecon": 6.0,
+          "galtan": 6.25
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [14, "h"],
+        "eco_lab": null,
+        "eco_tax": [16, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [4, "h"],
+        "soc_rel": [24, "h"],
+        "soc_mor": [4, "h"],
+        "lib_priv": null,
+        "lib_just": [28, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [15, "h"],
+        "mig_asy": null,
+        "mig_int": [30, "h"],
+        "mig_nat": [-6, "h"],
+        "int_eu": [-79, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [7, "h"],
+        "cli_pay": null,
+        "cli_nat": [7, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-84, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [0, "h"]
+      },
+      "proxies": {
+        "ECO": 18,
+        "SOC": 20
+      },
+      "ches": {
+        "party_id": "301",
+        "party": "CDU",
+        "items": {
+          "deregulation": 5.7,
+          "redistribution": 5.9,
+          "spendvtax": 5.73,
+          "sociallifestyle": 5.2,
+          "religious_principles": 6.2,
+          "civlib_laworder": 6.4,
+          "immigrate_policy": 5.73,
+          "multiculturalism": 6.5,
+          "nationalism": 4.7,
+          "eu_position": 6.38,
+          "environment": 5.36,
+          "antielite_salience": 0.8,
+          "regions": 5.0,
+          "lrecon": 5.92,
+          "galtan": 6.0
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [19, "h"],
+        "eco_lab": null,
+        "eco_tax": [21, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [2, "h"],
+        "soc_rel": [28, "h"],
+        "soc_mor": [2, "h"],
+        "lib_priv": null,
+        "lib_just": [32, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [20, "h"],
+        "mig_asy": null,
+        "mig_int": [41, "h"],
+        "mig_nat": [9, "h"],
+        "int_eu": [-76, "h"],
+        "int_trade": [-32, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [21, "h"],
+        "cli_pay": null,
+        "cli_nat": [21, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-85, "h"],
+        "dem_direct": [-66, "h"],
+        "dem_courts": null,
+        "dem_central": [-20, "h"]
+      },
+      "proxies": {
+        "ECO": 18,
+        "SOC": 17
+      },
+      "ches": {
+        "party_id": "301",
+        "party": "CDU",
+        "items": {
+          "deregulation": 5.94,
+          "redistribution": 5.95,
+          "spendvtax": 6.16,
+          "sociallifestyle": 5.11,
+          "religious_principles": 6.4,
+          "civlib_laworder": 6.6,
+          "immigrate_policy": 6.0,
+          "multiculturalism": 7.05,
+          "nationalism": 5.47,
+          "eu_position": 6.29,
+          "protectionism": 3.39,
+          "environment": 6.05,
+          "antielite_salience": 0.75,
+          "people_vs_elite": 1.7,
+          "regions": 4.0,
+          "lrecon": 5.9,
+          "galtan": 5.86
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [23, "h"],
+        "eco_lab": null,
+        "eco_tax": [26, "h"],
+        "soc_fam": [7, "h"],
+        "soc_lgbt": [8, "h"],
+        "soc_rel": [28, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [42, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [44, "h"],
+        "mig_asy": null,
+        "mig_int": [48, "h"],
+        "mig_nat": [17, "h"],
+        "int_eu": [-81, "h"],
+        "int_trade": [-29, "h"],
+        "int_def": [-64, "h"],
+        "int_aid": null,
+        "cli_amb": [9, "h"],
+        "cli_pay": null,
+        "cli_nat": [16, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-45, "h"],
+        "dem_direct": [-47, "h"],
+        "dem_courts": [-50, "h"],
+        "dem_central": [-27, "h"]
+      },
+      "proxies": {
+        "ECO": 32,
+        "SOC": 31
+      },
+      "ches": {
+        "party_id": "301",
+        "party": "CDU",
+        "items": {
+          "deregulation": 6.17,
+          "redistribution": 6.39,
+          "spendvtax": 6.25,
+          "womens_rights": 5.33,
+          "lgbtq_rights": 5.4,
+          "religious_principles": 6.38,
+          "civlib_laworder": 7.11,
+          "immigrate_policy": 7.21,
+          "multiculturalism": 7.39,
+          "nationalism": 5.86,
+          "eu_position": 6.42,
+          "protectionism": 3.57,
+          "eu_russia": 1.8,
+          "climate_change": 5.44,
+          "environment": 5.8,
+          "antielite_salience": 2.75,
+          "people_vs_elite": 2.64,
+          "judicial_independence": 1.0,
+          "executive_power": 4.0,
+          "regions": 3.67,
+          "lrecon": 6.58,
+          "galtan": 6.56
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Bundestagswahl 2025 programme and record up to Nov 2026. Leads the Merz government with CSU and SPD.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [40, "h"],
+        "eco_reg": [35, "h"],
+        "eco_lab": [15, "h"],
+        "eco_tax": [35, "h"],
+        "soc_fam": [30, "m"],
+        "soc_lgbt": [10, "m"],
+        "soc_rel": [30, "m"],
+        "soc_mor": [35, "m"],
+        "lib_priv": [40, "h"],
+        "lib_just": [60, "h"],
+        "lib_speech": [0, "h"],
+        "lib_emerg": [15, "h"],
+        "mig_lvl": [45, "h"],
+        "mig_asy": [60, "h"],
+        "mig_int": [45, "h"],
+        "mig_nat": [30, "h"],
+        "int_eu": [-50, "h"],
+        "int_trade": [-60, "h"],
+        "int_def": [-90, "h"],
+        "int_aid": [10, "h"],
+        "cli_amb": [0, "m"],
+        "cli_pay": [30, "m"],
+        "cli_nat": [25, "m"],
+        "cli_intl": [-40, "m"],
+        "tec_ai": [50, "m"],
+        "tec_bio": [30, "m"],
+        "tec_nuc": [50, "m"],
+        "tec_big": [-5, "m"],
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [-40, "m"]
+      },
+      "notes": {
+        "ECO": "Social market economy, lower business taxes, reform of Bürgergeld.",
+        "SOC": "Christian democratic; against cannabis legalisation.",
+        "LIB": "More police powers, IP address retention.",
+        "MIG": "Border turnbacks and stricter asylum under Merz.",
+        "INT": "Pro-EU, strong NATO and Ukraine support.",
+        "CLI": "Keeps the 2045 target, reverses the heating law.",
+        "TEC": "Open to nuclear research and SMRs, pro AI.",
+        "DEM": "Institutional, federalist."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://www.cdu.de/"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {},
+        "kept": {}
+      }
     }
   ]
 }

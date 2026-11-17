@@ -1,0 +1,357 @@
+{
+  "id": "uk-ukip",
+  "type": "party",
+  "name": "UKIP",
+  "full_name": "UK Independence Party",
+  "country": "UK",
+  "active": {
+    "from": 1993,
+    "to": null
+  },
+  "predecessors": [],
+  "successors": [],
+  "status": "ches-only",
+  "snapshots": [
+    {
+      "year": 1999,
+      "label": "CHES 1999",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 1999, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [100, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": 56,
+        "SOC": 51
+      },
+      "ches": {
+        "party_id": "1108",
+        "party": "UKIP",
+        "items": {
+          "eu_position": 1.0,
+          "lrecon": 7.81,
+          "galtan": 7.57
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "label": "CHES 2006",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2006, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [54, "h"],
+        "eco_lab": null,
+        "eco_tax": [52, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [40, "h"],
+        "soc_rel": [20, "h"],
+        "soc_mor": [40, "h"],
+        "lib_priv": null,
+        "lib_just": [50, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [93, "h"],
+        "mig_asy": null,
+        "mig_int": [86, "h"],
+        "mig_nat": [91, "h"],
+        "int_eu": [100, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [20, "h"]
+      },
+      "proxies": {
+        "ECO": 68,
+        "SOC": 63
+      },
+      "ches": {
+        "party_id": "1108",
+        "party": "UKIP",
+        "items": {
+          "deregulation": 7.71,
+          "redistribution": 7.0,
+          "spendvtax": 8.25,
+          "sociallifestyle": 7.0,
+          "religious_principles": 6.0,
+          "civlib_laworder": 7.5,
+          "immigrate_policy": 9.63,
+          "multiculturalism": 9.29,
+          "nationalism": 9.57,
+          "eu_position": 1.0,
+          "regions": 6.0,
+          "lrecon": 8.38,
+          "galtan": 8.13
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "label": "CHES 2010",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2010, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [48, "h"],
+        "eco_lab": null,
+        "eco_tax": [51, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [44, "h"],
+        "soc_rel": [18, "h"],
+        "soc_mor": [44, "h"],
+        "lib_priv": null,
+        "lib_just": [67, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [89, "h"],
+        "mig_asy": null,
+        "mig_int": [86, "h"],
+        "mig_nat": null,
+        "int_eu": [100, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [46, "h"],
+        "cli_pay": null,
+        "cli_nat": [46, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [48, "h"]
+      },
+      "proxies": {
+        "ECO": 63,
+        "SOC": 52
+      },
+      "ches": {
+        "party_id": "1108",
+        "party": "UKIP",
+        "items": {
+          "deregulation": 7.38,
+          "redistribution": 7.56,
+          "spendvtax": 7.5,
+          "sociallifestyle": 7.18,
+          "religious_principles": 5.89,
+          "civlib_laworder": 8.33,
+          "immigrate_policy": 9.46,
+          "multiculturalism": 9.3,
+          "eu_position": 1.0,
+          "environment": 7.29,
+          "regions": 7.38,
+          "lrecon": 8.17,
+          "galtan": 7.62
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [67, "h"],
+        "eco_lab": null,
+        "eco_tax": [63, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [70, "h"],
+        "soc_rel": [36, "h"],
+        "soc_mor": [70, "h"],
+        "lib_priv": null,
+        "lib_just": [77, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [100, "h"],
+        "mig_asy": null,
+        "mig_int": [96, "h"],
+        "mig_nat": [97, "h"],
+        "int_eu": [95, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [80, "h"],
+        "cli_pay": null,
+        "cli_nat": [80, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [86, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [15, "h"]
+      },
+      "proxies": {
+        "ECO": 71,
+        "SOC": 86
+      },
+      "ches": {
+        "party_id": "1108",
+        "party": "UKIP",
+        "items": {
+          "deregulation": 8.33,
+          "redistribution": 7.5,
+          "spendvtax": 8.83,
+          "sociallifestyle": 8.5,
+          "religious_principles": 6.8,
+          "civlib_laworder": 8.86,
+          "immigrate_policy": 10.0,
+          "multiculturalism": 9.8,
+          "nationalism": 9.83,
+          "eu_position": 1.14,
+          "environment": 9.0,
+          "antielite_salience": 9.29,
+          "regions": 5.75,
+          "lrecon": 8.57,
+          "galtan": 9.29
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [53, "h"],
+        "eco_lab": null,
+        "eco_tax": [36, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [56, "h"],
+        "soc_rel": [40, "h"],
+        "soc_mor": [56, "h"],
+        "lib_priv": null,
+        "lib_just": [80, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [89, "h"],
+        "mig_asy": null,
+        "mig_int": [83, "h"],
+        "mig_nat": [85, "h"],
+        "int_eu": [100, "h"],
+        "int_trade": [15, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [72, "h"],
+        "cli_pay": null,
+        "cli_nat": [72, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [76, "h"],
+        "dem_direct": [71, "h"],
+        "dem_courts": null,
+        "dem_central": [30, "h"]
+      },
+      "proxies": {
+        "ECO": 55,
+        "SOC": 64
+      },
+      "ches": {
+        "party_id": "1108",
+        "party": "UKIP",
+        "items": {
+          "deregulation": 7.67,
+          "redistribution": 7.07,
+          "spendvtax": 6.5,
+          "sociallifestyle": 7.79,
+          "religious_principles": 7.0,
+          "civlib_laworder": 9.0,
+          "immigrate_policy": 9.47,
+          "multiculturalism": 9.15,
+          "nationalism": 9.25,
+          "eu_position": 1.0,
+          "protectionism": 5.73,
+          "environment": 8.6,
+          "antielite_salience": 8.81,
+          "people_vs_elite": 8.53,
+          "regions": 6.5,
+          "lrecon": 7.73,
+          "galtan": 8.2
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    }
+  ]
+}

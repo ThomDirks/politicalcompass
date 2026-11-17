@@ -4,75 +4,182 @@
   "name": "BSW",
   "full_name": "Bündnis Sahra Wagenknecht",
   "country": "DE",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026. Not in the Bundestag (4.98%)."
+  "active": {
+    "from": 2024,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 4,
-    "SOC": 2,
-    "LIB": 3,
-    "MIG": 4,
-    "INT": 5,
-    "CLI": 2,
-    "TEC": 1,
-    "DEM": 4
-  },
-  "facets": {
-    "eco_own": [-50, "m"],
-    "eco_reg": [-55, "m"],
-    "eco_lab": [-60, "m"],
-    "eco_tax": [-60, "m"],
-    "soc_fam": [20, "m"],
-    "soc_lgbt": [10, "m"],
-    "soc_rel": [0, "m"],
-    "soc_mor": [15, "m"],
-    "lib_priv": [-40, "m"],
-    "lib_just": [35, "m"],
-    "lib_speech": [-50, "m"],
-    "lib_emerg": [-50, "m"],
-    "mig_lvl": [60, "h"],
-    "mig_asy": [70, "h"],
-    "mig_int": [55, "h"],
-    "mig_nat": [35, "h"],
-    "int_eu": [45, "h"],
-    "int_trade": [45, "h"],
-    "int_def": [85, "h"],
-    "int_aid": [20, "h"],
-    "cli_amb": [40, "m"],
-    "cli_pay": [70, "m"],
-    "cli_nat": [20, "m"],
-    "cli_intl": [20, "m"],
-    "tec_ai": [-20, "l"],
-    "tec_bio": [-10, "l"],
-    "tec_nuc": [-10, "l"],
-    "tec_big": [-60, "l"],
-    "dem_trust": [70, "l"],
-    "dem_direct": [75, "l"],
-    "dem_courts": [-10, "l"],
-    "dem_central": [-10, "l"]
-  },
-  "notes": {
-    "ECO": "Left on wages, pensions and social security.",
-    "SOC": "Culturally conservative, against 'woke' politics.",
-    "LIB": "Against Covid-style measures and speech restrictions.",
-    "MIG": "Restrictive on migration.",
-    "INT": "Peace with Russia, against weapons for Ukraine, EU-critical.",
-    "CLI": "Against costly climate rules, wants cheap Russian gas.",
-    "TEC": "Little profile; critical of big tech.",
-    "DEM": "Anti-establishment, pro referendums."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://bsw-vg.de/"
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-57, "h"],
+        "eco_lab": null,
+        "eco_tax": [-58, "h"],
+        "soc_fam": [-14, "h"],
+        "soc_lgbt": [4, "h"],
+        "soc_rel": [-72, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [25, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [73, "h"],
+        "mig_asy": null,
+        "mig_int": [64, "h"],
+        "mig_nat": [37, "h"],
+        "int_eu": [53, "h"],
+        "int_trade": [63, "h"],
+        "int_def": [84, "h"],
+        "int_aid": null,
+        "cli_amb": [52, "h"],
+        "cli_pay": null,
+        "cli_nat": [44, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [77, "h"],
+        "dem_direct": [40, "h"],
+        "dem_courts": [46, "h"],
+        "dem_central": [13, "h"]
+      },
+      "proxies": {
+        "ECO": -44,
+        "SOC": 41
+      },
+      "ches": {
+        "party_id": "313",
+        "party": "BSW",
+        "items": {
+          "deregulation": 2.17,
+          "redistribution": 2.0,
+          "spendvtax": 2.2,
+          "womens_rights": 4.29,
+          "lgbtq_rights": 5.2,
+          "religious_principles": 1.4,
+          "civlib_laworder": 6.25,
+          "immigrate_policy": 8.63,
+          "multiculturalism": 8.21,
+          "nationalism": 6.86,
+          "eu_position": 2.42,
+          "protectionism": 8.17,
+          "eu_russia": 9.2,
+          "climate_change": 7.62,
+          "environment": 7.22,
+          "antielite_salience": 8.86,
+          "people_vs_elite": 7.0,
+          "judicial_independence": 9.0,
+          "executive_power": 5.56,
+          "regions": 5.67,
+          "lrecon": 2.78,
+          "galtan": 7.06
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Bundestagswahl 2025 programme and record up to Nov 2026. Not in the Bundestag (4.98%).",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 5,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-50, "m"],
+        "eco_reg": [-55, "m"],
+        "eco_lab": [-60, "m"],
+        "eco_tax": [-60, "m"],
+        "soc_fam": [20, "m"],
+        "soc_lgbt": [10, "m"],
+        "soc_rel": [-36, "m"],
+        "soc_mor": [15, "m"],
+        "lib_priv": [-40, "m"],
+        "lib_just": [35, "m"],
+        "lib_speech": [-50, "m"],
+        "lib_emerg": [-50, "m"],
+        "mig_lvl": [60, "h"],
+        "mig_asy": [70, "h"],
+        "mig_int": [55, "h"],
+        "mig_nat": [35, "h"],
+        "int_eu": [45, "h"],
+        "int_trade": [45, "h"],
+        "int_def": [85, "h"],
+        "int_aid": [20, "h"],
+        "cli_amb": [40, "m"],
+        "cli_pay": [70, "m"],
+        "cli_nat": [20, "m"],
+        "cli_intl": [20, "m"],
+        "tec_ai": [-20, "l"],
+        "tec_bio": [-10, "l"],
+        "tec_nuc": [-10, "l"],
+        "tec_big": [-60, "l"],
+        "dem_trust": [70, "l"],
+        "dem_direct": [58, "m"],
+        "dem_courts": [18, "m"],
+        "dem_central": [-10, "l"]
+      },
+      "notes": {
+        "ECO": "Left on wages, pensions and social security.",
+        "SOC": "Culturally conservative, against 'woke' politics.",
+        "LIB": "Against Covid-style measures and speech restrictions.",
+        "MIG": "Restrictive on migration.",
+        "INT": "Peace with Russia, against weapons for Ukraine, EU-critical.",
+        "CLI": "Against costly climate rules, wants cheap Russian gas.",
+        "TEC": "Little profile; critical of big tech.",
+        "DEM": "Anti-establishment, pro referendums."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://bsw-vg.de/"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "soc_rel": {
+            "hand": 0,
+            "ches": -72,
+            "new": -36
+          },
+          "dem_direct": {
+            "hand": 75,
+            "ches": 40,
+            "new": 58
+          },
+          "dem_courts": {
+            "hand": -10,
+            "ches": 46,
+            "new": 18
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

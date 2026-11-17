@@ -4,75 +4,84 @@
   "name": "Restore Britain",
   "full_name": "Restore Britain",
   "country": "UK",
-  "period": {
-    "from": "2026",
-    "to": null,
-    "basis": "Founded as a party in February 2026 by Rupert Lowe. Few published policies outside migration."
+  "active": {
+    "from": 2026,
+    "to": null
   },
+  "predecessors": [
+    "uk-reform"
+  ],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 4,
-    "LIB": 3,
-    "MIG": 5,
-    "INT": 3,
-    "CLI": 3,
-    "TEC": 1,
-    "DEM": 5
-  },
-  "facets": {
-    "eco_own": [40, "l"],
-    "eco_reg": [50, "l"],
-    "eco_lab": [50, "l"],
-    "eco_tax": [60, "l"],
-    "soc_fam": [60, "l"],
-    "soc_lgbt": [50, "l"],
-    "soc_rel": [40, "l"],
-    "soc_mor": [40, "l"],
-    "lib_priv": [-10, "l"],
-    "lib_just": [90, "l"],
-    "lib_speech": [-70, "l"],
-    "lib_emerg": [0, "l"],
-    "mig_lvl": [100, "l"],
-    "mig_asy": [100, "l"],
-    "mig_int": [95, "l"],
-    "mig_nat": [95, "l"],
-    "int_eu": [90, "l"],
-    "int_trade": [20, "l"],
-    "int_def": [20, "l"],
-    "int_aid": [100, "l"],
-    "cli_amb": [100, "l"],
-    "cli_pay": [100, "l"],
-    "cli_nat": [60, "l"],
-    "cli_intl": [100, "l"],
-    "tec_ai": [30, "l"],
-    "tec_bio": [30, "l"],
-    "tec_nuc": [60, "l"],
-    "tec_big": [0, "l"],
-    "dem_trust": [90, "l"],
-    "dem_direct": [70, "l"],
-    "dem_courts": [70, "l"],
-    "dem_central": [30, "l"]
-  },
-  "notes": {
-    "ECO": "Few published economic policies; assumed free-market right.",
-    "SOC": "Socially conservative, 'Christian Britain'.",
-    "LIB": "Hardline on crime, strong free speech stance.",
-    "MIG": "Net-negative immigration, abolish asylum, mass deportations.",
-    "INT": "Hard Brexit.",
-    "CLI": "Scrap net zero.",
-    "TEC": "Little profile.",
-    "DEM": "Anti-establishment; members propose and vote on policy."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://www.restorebritain.org.uk/"
-    },
-    {
-      "title": "The Week: Restore Britain",
-      "url": "https://theweek.com/politics/restore-britain-new-far-right-party-threat-to-farage"
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Founded as a party in February 2026 by Rupert Lowe. Few published policies outside migration.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [40, "l"],
+        "eco_reg": [50, "l"],
+        "eco_lab": [50, "l"],
+        "eco_tax": [60, "l"],
+        "soc_fam": [60, "l"],
+        "soc_lgbt": [50, "l"],
+        "soc_rel": [40, "l"],
+        "soc_mor": [40, "l"],
+        "lib_priv": [-10, "l"],
+        "lib_just": [90, "l"],
+        "lib_speech": [-70, "l"],
+        "lib_emerg": [0, "l"],
+        "mig_lvl": [100, "l"],
+        "mig_asy": [100, "l"],
+        "mig_int": [95, "l"],
+        "mig_nat": [95, "l"],
+        "int_eu": [90, "l"],
+        "int_trade": [20, "l"],
+        "int_def": [20, "l"],
+        "int_aid": [100, "l"],
+        "cli_amb": [100, "l"],
+        "cli_pay": [100, "l"],
+        "cli_nat": [60, "l"],
+        "cli_intl": [100, "l"],
+        "tec_ai": [30, "l"],
+        "tec_bio": [30, "l"],
+        "tec_nuc": [60, "l"],
+        "tec_big": [0, "l"],
+        "dem_trust": [90, "l"],
+        "dem_direct": [70, "l"],
+        "dem_courts": [70, "l"],
+        "dem_central": [30, "l"]
+      },
+      "notes": {
+        "ECO": "Few published economic policies; assumed free-market right.",
+        "SOC": "Socially conservative, 'Christian Britain'.",
+        "LIB": "Hardline on crime, strong free speech stance.",
+        "MIG": "Net-negative immigration, abolish asylum, mass deportations.",
+        "INT": "Hard Brexit.",
+        "CLI": "Scrap net zero.",
+        "TEC": "Little profile.",
+        "DEM": "Anti-establishment; members propose and vote on policy."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://www.restorebritain.org.uk/"
+        },
+        {
+          "title": "The Week: Restore Britain",
+          "url": "https://theweek.com/politics/restore-britain-new-far-right-party-threat-to-farage"
+        }
+      ]
     }
   ]
 }

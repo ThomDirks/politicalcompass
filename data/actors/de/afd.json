@@ -4,75 +4,310 @@
   "name": "AfD",
   "full_name": "Alternative für Deutschland",
   "country": "DE",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026."
+  "active": {
+    "from": 2013,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 4,
-    "LIB": 3,
-    "MIG": 5,
-    "INT": 4,
-    "CLI": 4,
-    "TEC": 2,
-    "DEM": 5
-  },
-  "facets": {
-    "eco_own": [25, "m"],
-    "eco_reg": [30, "m"],
-    "eco_lab": [10, "m"],
-    "eco_tax": [35, "m"],
-    "soc_fam": [80, "h"],
-    "soc_lgbt": [65, "h"],
-    "soc_rel": [25, "h"],
-    "soc_mor": [55, "h"],
-    "lib_priv": [-20, "m"],
-    "lib_just": [80, "m"],
-    "lib_speech": [-45, "m"],
-    "lib_emerg": [-20, "m"],
-    "mig_lvl": [95, "h"],
-    "mig_asy": [100, "h"],
-    "mig_int": [90, "h"],
-    "mig_nat": [95, "h"],
-    "int_eu": [85, "h"],
-    "int_trade": [20, "h"],
-    "int_def": [65, "h"],
-    "int_aid": [90, "h"],
-    "cli_amb": [100, "h"],
-    "cli_pay": [95, "h"],
-    "cli_nat": [70, "h"],
-    "cli_intl": [100, "h"],
-    "tec_ai": [15, "l"],
-    "tec_bio": [0, "l"],
-    "tec_nuc": [90, "l"],
-    "tec_big": [-10, "l"],
-    "dem_trust": [90, "h"],
-    "dem_direct": [90, "h"],
-    "dem_courts": [45, "h"],
-    "dem_central": [-30, "h"]
-  },
-  "notes": {
-    "ECO": "Lower taxes, abolish inheritance tax, pensions for natives first.",
-    "SOC": "Traditional family, against gender policy.",
-    "LIB": "Tough on crime; against hate speech laws and Covid measures.",
-    "MIG": "Remigration, closed borders.",
-    "INT": "Dexit as an option, end Ukraine support, Russia-friendly.",
-    "CLI": "Denies the need for climate policy, wants coal and nuclear back.",
-    "TEC": "Strongly pro nuclear.",
-    "DEM": "Anti-establishment, Swiss-style referendums."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://www.afd.de/"
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [63, "h"],
+        "eco_lab": null,
+        "eco_tax": [50, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [62, "h"],
+        "soc_rel": [40, "h"],
+        "soc_mor": [62, "h"],
+        "lib_priv": null,
+        "lib_just": [75, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [86, "h"],
+        "mig_asy": null,
+        "mig_int": [84, "h"],
+        "mig_nat": [74, "h"],
+        "int_eu": [79, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [73, "h"],
+        "cli_pay": null,
+        "cli_nat": [73, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [56, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-40, "h"]
+      },
+      "proxies": {
+        "ECO": 67,
+        "SOC": 74
+      },
+      "ches": {
+        "party_id": "310",
+        "party": "AfD",
+        "items": {
+          "deregulation": 8.14,
+          "redistribution": 7.12,
+          "spendvtax": 7.89,
+          "sociallifestyle": 8.12,
+          "religious_principles": 7.0,
+          "civlib_laworder": 8.75,
+          "immigrate_policy": 9.3,
+          "multiculturalism": 9.22,
+          "nationalism": 8.7,
+          "eu_position": 1.62,
+          "environment": 8.67,
+          "antielite_salience": 7.78,
+          "regions": 3.0,
+          "lrecon": 8.33,
+          "galtan": 8.69
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [26, "h"],
+        "eco_lab": null,
+        "eco_tax": [33, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [82, "h"],
+        "soc_rel": [-14, "h"],
+        "soc_mor": [82, "h"],
+        "lib_priv": null,
+        "lib_just": [90, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [98, "h"],
+        "mig_asy": null,
+        "mig_int": [99, "h"],
+        "mig_nat": [94, "h"],
+        "int_eu": [70, "h"],
+        "int_trade": [34, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [69, "h"],
+        "cli_pay": null,
+        "cli_nat": [69, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [94, "h"],
+        "dem_direct": [66, "h"],
+        "dem_courts": null,
+        "dem_central": [18, "h"]
+      },
+      "proxies": {
+        "ECO": 40,
+        "SOC": 90
+      },
+      "ches": {
+        "party_id": "310",
+        "party": "AfD",
+        "items": {
+          "deregulation": 6.29,
+          "redistribution": 6.0,
+          "spendvtax": 7.29,
+          "sociallifestyle": 9.11,
+          "religious_principles": 4.29,
+          "civlib_laworder": 9.5,
+          "immigrate_policy": 9.9,
+          "multiculturalism": 9.95,
+          "nationalism": 9.68,
+          "eu_position": 1.9,
+          "protectionism": 6.69,
+          "environment": 8.45,
+          "antielite_salience": 9.7,
+          "people_vs_elite": 8.32,
+          "regions": 5.92,
+          "lrecon": 7.0,
+          "galtan": 9.52
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [32, "h"],
+        "eco_lab": null,
+        "eco_tax": [42, "h"],
+        "soc_fam": [47, "h"],
+        "soc_lgbt": [64, "h"],
+        "soc_rel": [-3, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [82, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [99, "h"],
+        "mig_asy": null,
+        "mig_int": [98, "h"],
+        "mig_nat": [91, "h"],
+        "int_eu": [70, "h"],
+        "int_trade": [40, "h"],
+        "int_def": [68, "h"],
+        "int_aid": null,
+        "cli_amb": [89, "h"],
+        "cli_pay": null,
+        "cli_nat": [80, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [80, "h"],
+        "dem_direct": [60, "h"],
+        "dem_courts": [68, "h"],
+        "dem_central": [-15, "h"]
+      },
+      "proxies": {
+        "ECO": 53,
+        "SOC": 88
+      },
+      "ches": {
+        "party_id": "310",
+        "party": "AfD",
+        "items": {
+          "deregulation": 6.6,
+          "redistribution": 7.06,
+          "spendvtax": 7.1,
+          "womens_rights": 7.33,
+          "lgbtq_rights": 8.22,
+          "religious_principles": 4.86,
+          "civlib_laworder": 9.11,
+          "immigrate_policy": 9.95,
+          "multiculturalism": 9.89,
+          "nationalism": 9.57,
+          "eu_position": 1.89,
+          "protectionism": 7.0,
+          "eu_russia": 8.4,
+          "climate_change": 9.44,
+          "environment": 9.0,
+          "antielite_salience": 9.0,
+          "people_vs_elite": 8.0,
+          "judicial_independence": 9.5,
+          "executive_power": 7.27,
+          "regions": 4.25,
+          "lrecon": 7.63,
+          "galtan": 9.39
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Bundestagswahl 2025 programme and record up to Nov 2026.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 4,
+        "TEC": 2,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [25, "m"],
+        "eco_reg": [30, "m"],
+        "eco_lab": [10, "m"],
+        "eco_tax": [35, "m"],
+        "soc_fam": [80, "h"],
+        "soc_lgbt": [65, "h"],
+        "soc_rel": [25, "h"],
+        "soc_mor": [55, "h"],
+        "lib_priv": [-20, "m"],
+        "lib_just": [80, "m"],
+        "lib_speech": [-45, "m"],
+        "lib_emerg": [-20, "m"],
+        "mig_lvl": [95, "h"],
+        "mig_asy": [100, "h"],
+        "mig_int": [90, "h"],
+        "mig_nat": [95, "h"],
+        "int_eu": [85, "h"],
+        "int_trade": [20, "h"],
+        "int_def": [65, "h"],
+        "int_aid": [90, "h"],
+        "cli_amb": [100, "h"],
+        "cli_pay": [95, "h"],
+        "cli_nat": [70, "h"],
+        "cli_intl": [100, "h"],
+        "tec_ai": [15, "l"],
+        "tec_bio": [0, "l"],
+        "tec_nuc": [90, "l"],
+        "tec_big": [-10, "l"],
+        "dem_trust": [90, "h"],
+        "dem_direct": [90, "h"],
+        "dem_courts": [45, "h"],
+        "dem_central": [-30, "h"]
+      },
+      "notes": {
+        "ECO": "Lower taxes, abolish inheritance tax, pensions for natives first.",
+        "SOC": "Traditional family, against gender policy.",
+        "LIB": "Tough on crime; against hate speech laws and Covid measures.",
+        "MIG": "Remigration, closed borders.",
+        "INT": "Dexit as an option, end Ukraine support, Russia-friendly.",
+        "CLI": "Denies the need for climate policy, wants coal and nuclear back.",
+        "TEC": "Strongly pro nuclear.",
+        "DEM": "Anti-establishment, Swiss-style referendums."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://www.afd.de/"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {},
+        "kept": {}
+      }
     }
   ]
 }

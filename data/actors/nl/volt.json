@@ -4,79 +4,186 @@
   "name": "Volt",
   "full_name": "Volt Nederland",
   "country": "NL",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  "active": {
+    "from": 2018,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 3,
-    "LIB": 3,
-    "MIG": 3,
-    "INT": 5,
-    "CLI": 4,
-    "TEC": 3,
-    "DEM": 3
-  },
-  "facets": {
-    "eco_own": [10, "m"],
-    "eco_reg": [-15, "m"],
-    "eco_lab": [-25, "m"],
-    "eco_tax": [-35, "m"],
-    "soc_fam": [-85, "h"],
-    "soc_lgbt": [-95, "h"],
-    "soc_rel": [-75, "h"],
-    "soc_mor": [-75, "h"],
-    "lib_priv": [-55, "m"],
-    "lib_just": [-30, "m"],
-    "lib_speech": [10, "m"],
-    "lib_emerg": [-45, "m"],
-    "mig_lvl": [-55, "m"],
-    "mig_asy": [-60, "m"],
-    "mig_int": [-45, "m"],
-    "mig_nat": [-85, "m"],
-    "int_eu": [-100, "h"],
-    "int_trade": [-60, "h"],
-    "int_def": [-85, "h"],
-    "int_aid": [-70, "h"],
-    "cli_amb": [-85, "m"],
-    "cli_pay": [-65, "m"],
-    "cli_nat": [-60, "m"],
-    "cli_intl": [-95, "m"],
-    "tec_ai": [5, "m"],
-    "tec_bio": [45, "m"],
-    "tec_nuc": [40, "m"],
-    "tec_big": [-45, "m"],
-    "dem_trust": [-50, "m"],
-    "dem_direct": [-30, "m"],
-    "dem_courts": [-80, "m"],
-    "dem_central": [-30, "m"]
-  },
-  "notes": {
-    "ECO": "Pan-European social liberal, pro investment and innovation.",
-    "SOC": "Strongly progressive.",
-    "LIB": "Pro privacy.",
-    "MIG": "European, humane migration policy.",
-    "INT": "A federal Europe is the core aim.",
-    "CLI": "Ambitious climate policy at EU level.",
-    "TEC": "Pro innovation with EU regulation.",
-    "DEM": "Institutional; pro-European democratic reform."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://voltnederland.org/"
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-11, "h"],
+        "eco_lab": null,
+        "eco_tax": [-4, "h"],
+        "soc_fam": [-76, "h"],
+        "soc_lgbt": [-80, "h"],
+        "soc_rel": [-72, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [-60, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-58, "h"],
+        "mig_asy": null,
+        "mig_int": [-56, "h"],
+        "mig_nat": [-20, "h"],
+        "int_eu": [-100, "h"],
+        "int_trade": [-53, "h"],
+        "int_def": [-60, "h"],
+        "int_aid": null,
+        "cli_amb": [-83, "h"],
+        "cli_pay": null,
+        "cli_nat": [-24, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-78, "h"],
+        "dem_direct": [-50, "h"],
+        "dem_courts": [-82, "h"],
+        "dem_central": [27, "h"]
+      },
+      "proxies": {
+        "ECO": -6,
+        "SOC": -78
+      },
+      "ches": {
+        "party_id": "1052",
+        "party": "Volt",
+        "items": {
+          "deregulation": 4.43,
+          "redistribution": 4.56,
+          "spendvtax": 5.0,
+          "womens_rights": 1.2,
+          "lgbtq_rights": 1.0,
+          "religious_principles": 1.4,
+          "civlib_laworder": 2.0,
+          "immigrate_policy": 2.09,
+          "multiculturalism": 2.2,
+          "nationalism": 4.0,
+          "eu_position": 7.0,
+          "protectionism": 2.33,
+          "eu_russia": 2.0,
+          "climate_change": 0.83,
+          "environment": 3.8,
+          "antielite_salience": 1.12,
+          "people_vs_elite": 2.5,
+          "judicial_independence": 0.5,
+          "executive_power": 1.33,
+          "regions": 6.33,
+          "lrecon": 4.7,
+          "galtan": 1.09
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Tweede Kamer, zetelverdeling juni 2026",
-      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
-    },
-    {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "TK2025 election programme and parliamentary record up to Nov 2026.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 5,
+        "CLI": 4,
+        "TEC": 3,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [10, "m"],
+        "eco_reg": [-15, "m"],
+        "eco_lab": [-25, "m"],
+        "eco_tax": [-35, "m"],
+        "soc_fam": [-85, "h"],
+        "soc_lgbt": [-95, "h"],
+        "soc_rel": [-75, "h"],
+        "soc_mor": [-75, "h"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-30, "m"],
+        "lib_speech": [10, "m"],
+        "lib_emerg": [-45, "m"],
+        "mig_lvl": [-55, "m"],
+        "mig_asy": [-60, "m"],
+        "mig_int": [-45, "m"],
+        "mig_nat": [-52, "m"],
+        "int_eu": [-100, "h"],
+        "int_trade": [-60, "h"],
+        "int_def": [-85, "h"],
+        "int_aid": [-70, "h"],
+        "cli_amb": [-85, "m"],
+        "cli_pay": [-65, "m"],
+        "cli_nat": [-42, "m"],
+        "cli_intl": [-95, "m"],
+        "tec_ai": [5, "m"],
+        "tec_bio": [45, "m"],
+        "tec_nuc": [40, "m"],
+        "tec_big": [-45, "m"],
+        "dem_trust": [-50, "m"],
+        "dem_direct": [-30, "m"],
+        "dem_courts": [-80, "m"],
+        "dem_central": [-2, "m"]
+      },
+      "notes": {
+        "ECO": "Pan-European social liberal, pro investment and innovation.",
+        "SOC": "Strongly progressive.",
+        "LIB": "Pro privacy.",
+        "MIG": "European, humane migration policy.",
+        "INT": "A federal Europe is the core aim.",
+        "CLI": "Ambitious climate policy at EU level.",
+        "TEC": "Pro innovation with EU regulation.",
+        "DEM": "Institutional; pro-European democratic reform."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://voltnederland.org/"
+        },
+        {
+          "title": "Tweede Kamer, zetelverdeling juni 2026",
+          "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "mig_nat": {
+            "hand": -85,
+            "ches": -20,
+            "new": -52
+          },
+          "cli_nat": {
+            "hand": -60,
+            "ches": -24,
+            "new": -42
+          },
+          "dem_central": {
+            "hand": -30,
+            "ches": 27,
+            "new": -2
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

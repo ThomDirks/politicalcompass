@@ -4,75 +4,582 @@
   "name": "Grüne",
   "full_name": "Bündnis 90/Die Grünen",
   "country": "DE",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026."
+  "active": {
+    "from": 1980,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 4,
-    "LIB": 3,
-    "MIG": 3,
-    "INT": 4,
-    "CLI": 5,
-    "TEC": 2,
-    "DEM": 2
-  },
-  "facets": {
-    "eco_own": [-30, "m"],
-    "eco_reg": [-50, "m"],
-    "eco_lab": [-45, "m"],
-    "eco_tax": [-55, "m"],
-    "soc_fam": [-85, "h"],
-    "soc_lgbt": [-95, "h"],
-    "soc_rel": [-55, "h"],
-    "soc_mor": [-65, "h"],
-    "lib_priv": [-55, "m"],
-    "lib_just": [-35, "m"],
-    "lib_speech": [30, "m"],
-    "lib_emerg": [-40, "m"],
-    "mig_lvl": [-55, "m"],
-    "mig_asy": [-65, "m"],
-    "mig_int": [-50, "m"],
-    "mig_nat": [-75, "m"],
-    "int_eu": [-90, "h"],
-    "int_trade": [-45, "h"],
-    "int_def": [-90, "h"],
-    "int_aid": [-70, "h"],
-    "cli_amb": [-95, "h"],
-    "cli_pay": [-80, "h"],
-    "cli_nat": [-75, "h"],
-    "cli_intl": [-95, "h"],
-    "tec_ai": [-15, "m"],
-    "tec_bio": [-55, "m"],
-    "tec_nuc": [-95, "m"],
-    "tec_big": [-60, "m"],
-    "dem_trust": [-70, "m"],
-    "dem_direct": [10, "m"],
-    "dem_courts": [-80, "m"],
-    "dem_central": [-30, "m"]
-  },
-  "notes": {
-    "ECO": "Green market economy with more public investment and taxes on wealth.",
-    "SOC": "Strongly progressive.",
-    "LIB": "Civil liberties; supports action against online hate.",
-    "MIG": "Humane asylum, open society.",
-    "INT": "Strongly pro-EU, hawkish on Russia, firm Ukraine support.",
-    "CLI": "Core issue.",
-    "TEC": "Against nuclear and GMOs.",
-    "DEM": "Institutional; supports federal referendums."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://www.gruene.de/"
+      "year": 1999,
+      "label": "CHES 1999",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 1999, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-56, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": -29,
+        "SOC": -76
+      },
+      "ches": {
+        "party_id": "304",
+        "party": "Grunen",
+        "items": {
+          "eu_position": 5.67,
+          "lrecon": 3.53,
+          "galtan": 1.2
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2002,
+      "label": "CHES 2002",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2002, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-79, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": -10,
+        "SOC": -61
+      },
+      "ches": {
+        "party_id": "304",
+        "party": "Grunen",
+        "items": {
+          "eu_position": 6.36,
+          "lrecon": 4.5,
+          "galtan": 1.93
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "label": "CHES 2006",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2006, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [10, "h"],
+        "eco_lab": null,
+        "eco_tax": [-28, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-90, "h"],
+        "soc_rel": [-46, "h"],
+        "soc_mor": [-90, "h"],
+        "lib_priv": null,
+        "lib_just": [-60, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-63, "h"],
+        "mig_asy": null,
+        "mig_int": [-74, "h"],
+        "mig_nat": [-77, "h"],
+        "int_eu": [-61, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-17, "h"]
+      },
+      "proxies": {
+        "ECO": -20,
+        "SOC": -71
+      },
+      "ches": {
+        "party_id": "304",
+        "party": "Grunen",
+        "items": {
+          "deregulation": 5.5,
+          "redistribution": 3.29,
+          "spendvtax": 3.88,
+          "sociallifestyle": 0.5,
+          "religious_principles": 2.71,
+          "civlib_laworder": 2.0,
+          "immigrate_policy": 1.86,
+          "multiculturalism": 1.29,
+          "nationalism": 1.14,
+          "eu_position": 5.82,
+          "regions": 4.14,
+          "lrecon": 4.0,
+          "galtan": 1.45
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "label": "CHES 2010",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2010, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-28, "h"],
+        "eco_lab": null,
+        "eco_tax": [-39, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-77, "h"],
+        "soc_rel": [-61, "h"],
+        "soc_mor": [-77, "h"],
+        "lib_priv": null,
+        "lib_just": [-63, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-65, "h"],
+        "mig_asy": null,
+        "mig_int": [-56, "h"],
+        "mig_nat": null,
+        "int_eu": [-67, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-53, "h"],
+        "cli_pay": null,
+        "cli_nat": [-53, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-29, "h"]
+      },
+      "proxies": {
+        "ECO": -22,
+        "SOC": -62
+      },
+      "ches": {
+        "party_id": "304",
+        "party": "Grunen",
+        "items": {
+          "deregulation": 3.6,
+          "redistribution": 2.87,
+          "spendvtax": 3.2,
+          "sociallifestyle": 1.13,
+          "religious_principles": 1.93,
+          "civlib_laworder": 1.87,
+          "immigrate_policy": 1.73,
+          "multiculturalism": 2.2,
+          "eu_position": 6.0,
+          "environment": 2.33,
+          "regions": 3.57,
+          "lrecon": 3.88,
+          "galtan": 1.88
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-32, "h"],
+        "eco_lab": null,
+        "eco_tax": [-40, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-70, "h"],
+        "soc_rel": [-60, "h"],
+        "soc_mor": [-70, "h"],
+        "lib_priv": null,
+        "lib_just": [-46, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-58, "h"],
+        "mig_asy": null,
+        "mig_int": [-76, "h"],
+        "mig_nat": [-72, "h"],
+        "int_eu": [-74, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-71, "h"],
+        "cli_pay": null,
+        "cli_nat": [-71, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-60, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [11, "h"]
+      },
+      "proxies": {
+        "ECO": -30,
+        "SOC": -57
+      },
+      "ches": {
+        "party_id": "304",
+        "party": "Grunen",
+        "items": {
+          "deregulation": 3.4,
+          "redistribution": 3.2,
+          "spendvtax": 2.82,
+          "sociallifestyle": 1.5,
+          "religious_principles": 2.0,
+          "civlib_laworder": 2.7,
+          "immigrate_policy": 2.09,
+          "multiculturalism": 1.2,
+          "nationalism": 1.4,
+          "eu_position": 6.23,
+          "environment": 1.45,
+          "antielite_salience": 2.0,
+          "regions": 5.57,
+          "lrecon": 3.5,
+          "galtan": 2.15
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-34, "h"],
+        "eco_lab": null,
+        "eco_tax": [-34, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-83, "h"],
+        "soc_rel": [-62, "h"],
+        "soc_mor": [-83, "h"],
+        "lib_priv": null,
+        "lib_just": [-63, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-66, "h"],
+        "mig_asy": null,
+        "mig_int": [-62, "h"],
+        "mig_nat": [-78, "h"],
+        "int_eu": [-92, "h"],
+        "int_trade": [-22, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-69, "h"],
+        "cli_pay": null,
+        "cli_nat": [-69, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-64, "h"],
+        "dem_direct": [-2, "h"],
+        "dem_courts": null,
+        "dem_central": [-17, "h"]
+      },
+      "proxies": {
+        "ECO": -24,
+        "SOC": -78
+      },
+      "ches": {
+        "party_id": "304",
+        "party": "Grunen",
+        "items": {
+          "deregulation": 3.29,
+          "redistribution": 3.42,
+          "spendvtax": 3.16,
+          "sociallifestyle": 0.84,
+          "religious_principles": 1.9,
+          "civlib_laworder": 1.85,
+          "immigrate_policy": 1.7,
+          "multiculturalism": 1.9,
+          "nationalism": 1.11,
+          "eu_position": 6.76,
+          "protectionism": 3.88,
+          "environment": 1.55,
+          "antielite_salience": 1.8,
+          "people_vs_elite": 4.9,
+          "regions": 4.15,
+          "lrecon": 3.81,
+          "galtan": 1.1
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-30, "h"],
+        "eco_lab": null,
+        "eco_tax": [-48, "h"],
+        "soc_fam": [-58, "h"],
+        "soc_lgbt": [-64, "h"],
+        "soc_rel": [-45, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [-62, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-51, "h"],
+        "mig_asy": null,
+        "mig_int": [-72, "h"],
+        "mig_nat": [-74, "h"],
+        "int_eu": [-93, "h"],
+        "int_trade": [-6, "h"],
+        "int_def": [-52, "h"],
+        "int_aid": null,
+        "cli_amb": [-89, "h"],
+        "cli_pay": null,
+        "cli_nat": [-82, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-50, "h"],
+        "dem_direct": [-4, "h"],
+        "dem_courts": [-64, "h"],
+        "dem_central": [13, "h"]
+      },
+      "proxies": {
+        "ECO": -33,
+        "SOC": -68
+      },
+      "ches": {
+        "party_id": "304",
+        "party": "Grunen",
+        "items": {
+          "deregulation": 3.5,
+          "redistribution": 3.06,
+          "spendvtax": 2.17,
+          "womens_rights": 2.11,
+          "lgbtq_rights": 1.8,
+          "religious_principles": 2.75,
+          "civlib_laworder": 1.89,
+          "immigrate_policy": 2.47,
+          "multiculturalism": 1.39,
+          "nationalism": 1.29,
+          "eu_position": 6.79,
+          "protectionism": 4.71,
+          "eu_russia": 2.4,
+          "climate_change": 0.56,
+          "environment": 0.9,
+          "antielite_salience": 2.5,
+          "people_vs_elite": 4.82,
+          "judicial_independence": 1.0,
+          "executive_power": 2.58,
+          "regions": 5.67,
+          "lrecon": 3.37,
+          "galtan": 1.61
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Bundestagswahl 2025 programme and record up to Nov 2026.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-30, "m"],
+        "eco_reg": [-50, "m"],
+        "eco_lab": [-45, "m"],
+        "eco_tax": [-55, "m"],
+        "soc_fam": [-85, "h"],
+        "soc_lgbt": [-95, "h"],
+        "soc_rel": [-55, "h"],
+        "soc_mor": [-65, "h"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-35, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [-40, "m"],
+        "mig_lvl": [-55, "m"],
+        "mig_asy": [-65, "m"],
+        "mig_int": [-50, "m"],
+        "mig_nat": [-75, "m"],
+        "int_eu": [-90, "h"],
+        "int_trade": [-26, "m"],
+        "int_def": [-71, "m"],
+        "int_aid": [-70, "h"],
+        "cli_amb": [-95, "h"],
+        "cli_pay": [-80, "h"],
+        "cli_nat": [-75, "h"],
+        "cli_intl": [-95, "h"],
+        "tec_ai": [-15, "m"],
+        "tec_bio": [-55, "m"],
+        "tec_nuc": [-95, "m"],
+        "tec_big": [-60, "m"],
+        "dem_trust": [-70, "m"],
+        "dem_direct": [10, "m"],
+        "dem_courts": [-80, "m"],
+        "dem_central": [-8, "m"]
+      },
+      "notes": {
+        "ECO": "Green market economy with more public investment and taxes on wealth.",
+        "SOC": "Strongly progressive.",
+        "LIB": "Civil liberties; supports action against online hate.",
+        "MIG": "Humane asylum, open society.",
+        "INT": "Strongly pro-EU, hawkish on Russia, firm Ukraine support.",
+        "CLI": "Core issue.",
+        "TEC": "Against nuclear and GMOs.",
+        "DEM": "Institutional; supports federal referendums."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://www.gruene.de/"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "int_trade": {
+            "hand": -45,
+            "ches": -6,
+            "new": -26
+          },
+          "int_def": {
+            "hand": -90,
+            "ches": -52,
+            "new": -71
+          },
+          "dem_central": {
+            "hand": -30,
+            "ches": 13,
+            "new": -8
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

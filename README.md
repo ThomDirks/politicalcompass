@@ -1,24 +1,36 @@
 # PCompass
 
-A political orientation test that goes further than left/right and auth/lib. You get a profile on eight axes and 32 facets, a short type code, and a comparison with parties (and later politicians) from the Netherlands, Germany, the United Kingdom and the United States.
+A political orientation test that goes further than left/right and auth/lib. You get a profile on eight axes and 32 facets, a short type code, and a comparison with current and historical parties (and later politicians) from the Netherlands, Germany, the United Kingdom and the United States.
 
-Because "left" in one country can be "right" in another, scores are measured on absolute scales and then read against a country frame of your choice.
+Because "left" in one country can be "right" in another, scores are measured on absolute scales and then read against a country frame of your choice. Every party has dated snapshots, so you can also see how parties drifted over the years.
 
 ## Repository layout
 
 | Path | What it holds |
 |------|---------------|
-| [`docs/model.md`](docs/model.md) | How the model works: axes, facets, scoring, type code, country frames |
-| [`docs/party-overview.md`](docs/party-overview.md) | Generated table of all party profiles per country |
+| [`docs/model.md`](docs/model.md) | How the model works: axes, facets, scoring, type code, country frames, snapshots, drift |
+| [`docs/party-overview.md`](docs/party-overview.md) | Current profile of every party, per country, plus former parties |
+| [`docs/drift.md`](docs/drift.md) | Every snapshot of every party over time |
+| [`docs/calibration.md`](docs/calibration.md) | Hand scores compared with the Chapel Hill Expert Survey 2024 |
 | `data/model.json` | Axes, facets and the anchors that define each scale |
 | `data/countries/` | Country frames: parties, weights, local topics |
-| `data/actors/<country>/` | One profile per party (politicians later) |
-| `tools/validate.py` | Checks all data and regenerates the overview |
+| `data/actors/<country>/` | One file per party with all its snapshots |
+| `data/ches_mapping.json` | How CHES items map onto PCompass facets |
+| `tools/` | Import, calibration and validation scripts |
+
+## Data sources
+
+- **Hand-scored profiles** for current parties (November 2026) and for historical parties and eras.
+- **Chapel Hill Expert Survey 1999-2024** for European parties: Jolly et al. and Rovny et al., [chesdata.eu](https://www.chesdata.eu/). The data is downloaded by the import script, not stored in this repository.
+
+## Scripts
+
+```
+python tools/import_ches.py      # (re)import CHES snapshots
+python tools/calibrate_ches.py   # calibrate new hand snapshots against CHES 2024
+python tools/validate.py --report
+```
 
 ## Status
 
-Model spec and first draft profiles for 34 parties. The profiles still need to be calibrated against the Chapel Hill Expert Survey and voting advice tools. Next up: the question bank.
-
-```
-python tools/validate.py --report
-```
+Model spec, 56 parties with 230 snapshots. All hand scores are drafts. Next up: the question bank.

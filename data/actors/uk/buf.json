@@ -1,0 +1,81 @@
+{
+  "id": "uk-buf",
+  "type": "party",
+  "name": "BUF",
+  "full_name": "British Union of Fascists",
+  "country": "UK",
+  "active": {
+    "from": 1932,
+    "to": 1940
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1936,
+      "label": "1932 to 1940",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). Scored on the 1930s.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 5,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-20, "m"],
+        "eco_reg": [-70, "m"],
+        "eco_lab": [80, "m"],
+        "eco_tax": [0, "m"],
+        "soc_fam": [90, "m"],
+        "soc_lgbt": [80, "m"],
+        "soc_rel": [20, "m"],
+        "soc_mor": [60, "m"],
+        "lib_priv": [90, "h"],
+        "lib_just": [90, "h"],
+        "lib_speech": [90, "h"],
+        "lib_emerg": [95, "h"],
+        "mig_lvl": [90, "h"],
+        "mig_asy": [90, "h"],
+        "mig_int": [90, "h"],
+        "mig_nat": [100, "h"],
+        "int_eu": [80, "m"],
+        "int_trade": [80, "m"],
+        "int_def": [60, "m"],
+        "int_aid": [80, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [95, "l"],
+        "dem_direct": [0, "l"],
+        "dem_courts": [90, "l"],
+        "dem_central": [90, "l"]
+      },
+      "notes": {
+        "ECO": "Corporate state, protectionist planning.",
+        "SOC": "Traditional order.",
+        "LIB": "Paramilitary, authoritarian.",
+        "MIG": "Antisemitic and nationalist.",
+        "INT": "Pro-Nazi Germany and Fascist Italy, imperial autarky.",
+        "CLI": "Not on the agenda.",
+        "TEC": "Not scored.",
+        "DEM": "Wanted to replace parliament with a corporate state."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: British Union of Fascists",
+          "url": "https://en.wikipedia.org/wiki/British_Union_of_Fascists"
+        }
+      ]
+    }
+  ]
+}

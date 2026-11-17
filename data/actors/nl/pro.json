@@ -4,79 +4,106 @@
   "name": "PRO",
   "full_name": "Progressief Nederland (formerly GroenLinks-PvdA)",
   "country": "NL",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "GroenLinks-PvdA TK2025 programme; the parties merged into PRO in June 2026."
+  "active": {
+    "from": 2026,
+    "to": null
   },
+  "predecessors": [
+    "nl-pvda",
+    "nl-gl"
+  ],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 4,
-    "SOC": 3,
-    "LIB": 2,
-    "MIG": 3,
-    "INT": 3,
-    "CLI": 5,
-    "TEC": 2,
-    "DEM": 2
-  },
-  "facets": {
-    "eco_own": [-55, "h"],
-    "eco_reg": [-60, "h"],
-    "eco_lab": [-70, "h"],
-    "eco_tax": [-70, "h"],
-    "soc_fam": [-80, "h"],
-    "soc_lgbt": [-95, "h"],
-    "soc_rel": [-70, "h"],
-    "soc_mor": [-65, "h"],
-    "lib_priv": [-55, "m"],
-    "lib_just": [-45, "m"],
-    "lib_speech": [20, "m"],
-    "lib_emerg": [-50, "m"],
-    "mig_lvl": [-50, "h"],
-    "mig_asy": [-70, "h"],
-    "mig_int": [-55, "h"],
-    "mig_nat": [-70, "h"],
-    "int_eu": [-75, "m"],
-    "int_trade": [-10, "m"],
-    "int_def": [-60, "m"],
-    "int_aid": [-80, "m"],
-    "cli_amb": [-90, "h"],
-    "cli_pay": [-80, "h"],
-    "cli_nat": [-75, "h"],
-    "cli_intl": [-90, "h"],
-    "tec_ai": [-50, "m"],
-    "tec_bio": [-10, "m"],
-    "tec_nuc": [-25, "m"],
-    "tec_big": [-70, "m"],
-    "dem_trust": [-60, "m"],
-    "dem_direct": [-10, "m"],
-    "dem_courts": [-75, "m"],
-    "dem_central": [-20, "m"]
-  },
-  "notes": {
-    "ECO": "Higher taxes on wealth and profits, more public housing, stronger worker rights.",
-    "SOC": "Progressive on all social issues.",
-    "LIB": "Civil liberties; supports enforcement against hate speech.",
-    "MIG": "Humane asylum policy, against restrictive measures.",
-    "INT": "Pro-EU and pro NATO, critical of some trade deals.",
-    "CLI": "Climate is a core issue: fast phase-out, polluters pay.",
-    "TEC": "Cautious on AI, strict on big tech; divided on nuclear.",
-    "DEM": "Institutional, defends the rule of law."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Binnenlands Bestuur: GroenLinks-PvdA wordt Progressief Nederland",
-      "url": "https://www.binnenlandsbestuur.nl/bestuur-en-organisatie/groenlinks-pvda-wordt-progressief-nederland-roepnaam-pro"
-    },
-    {
-      "title": "Tweede Kamer, zetelverdeling juni 2026",
-      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
-    },
-    {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "GroenLinks-PvdA TK2025 programme; the parties merged into PRO in June 2026.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-55, "h"],
+        "eco_reg": [-60, "h"],
+        "eco_lab": [-70, "h"],
+        "eco_tax": [-70, "h"],
+        "soc_fam": [-80, "h"],
+        "soc_lgbt": [-95, "h"],
+        "soc_rel": [-70, "h"],
+        "soc_mor": [-65, "h"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-45, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [-50, "m"],
+        "mig_lvl": [-50, "h"],
+        "mig_asy": [-70, "h"],
+        "mig_int": [-55, "h"],
+        "mig_nat": [-45, "m"],
+        "int_eu": [-75, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [-60, "m"],
+        "int_aid": [-80, "m"],
+        "cli_amb": [-90, "h"],
+        "cli_pay": [-80, "h"],
+        "cli_nat": [-75, "h"],
+        "cli_intl": [-90, "h"],
+        "tec_ai": [-50, "m"],
+        "tec_bio": [-10, "m"],
+        "tec_nuc": [-25, "m"],
+        "tec_big": [-70, "m"],
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-38, "m"],
+        "dem_courts": [-75, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "Higher taxes on wealth and profits, more public housing, stronger worker rights.",
+        "SOC": "Progressive on all social issues.",
+        "LIB": "Civil liberties; supports enforcement against hate speech.",
+        "MIG": "Humane asylum policy, against restrictive measures.",
+        "INT": "Pro-EU and pro NATO, critical of some trade deals.",
+        "CLI": "Climate is a core issue: fast phase-out, polluters pay.",
+        "TEC": "Cautious on AI, strict on big tech; divided on nuclear.",
+        "DEM": "Institutional, defends the rule of law."
+      },
+      "sources": [
+        {
+          "title": "Binnenlands Bestuur: GroenLinks-PvdA wordt Progressief Nederland",
+          "url": "https://www.binnenlandsbestuur.nl/bestuur-en-organisatie/groenlinks-pvda-wordt-progressief-nederland-roepnaam-pro"
+        },
+        {
+          "title": "Tweede Kamer, zetelverdeling juni 2026",
+          "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (nl-pvda + nl-gl)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "mig_nat": {
+            "hand": -70,
+            "ches": -20,
+            "new": -45
+          },
+          "dem_direct": {
+            "hand": -10,
+            "ches": -65,
+            "new": -38
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

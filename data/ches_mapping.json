@@ -1,0 +1,439 @@
+{
+  "source": {
+    "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+    "url": "https://github.com/chesdata/chesdata.github.io/releases/download/ches-trend/1999-2024_CHES_dataset_meansV2.csv",
+    "homepage": "https://www.chesdata.eu/ches-europe/",
+    "citation": "Rovny, Polk, Bakker, Hooghe, Jolly, Marks, Steenbergen and Vachudova (2025). 25 Years of Political Party Positions in Europe: The Chapel Hill Expert Survey, 1999-2024. Electoral Studies."
+  },
+  "transforms": {
+    "t10": "0..10 scale: (x - 5) * 20",
+    "eu7": "1..7 scale, 7 = strongly in favour: (4 - x) / 3 * 100"
+  },
+  "facets": {
+    "eco_reg": {
+      "vars": [
+        "deregulation"
+      ],
+      "t": "t10"
+    },
+    "eco_tax": {
+      "vars": [
+        "redistribution",
+        "spendvtax"
+      ],
+      "t": "t10",
+      "combine": "mean"
+    },
+    "soc_fam": {
+      "vars": [
+        "womens_rights"
+      ],
+      "t": "t10"
+    },
+    "soc_lgbt": {
+      "vars": [
+        "lgbtq_rights",
+        "sociallifestyle"
+      ],
+      "t": "t10",
+      "combine": "first"
+    },
+    "soc_rel": {
+      "vars": [
+        "religious_principles"
+      ],
+      "t": "t10"
+    },
+    "soc_mor": {
+      "vars": [
+        "sociallifestyle"
+      ],
+      "t": "t10"
+    },
+    "lib_just": {
+      "vars": [
+        "civlib_laworder"
+      ],
+      "t": "t10"
+    },
+    "mig_lvl": {
+      "vars": [
+        "immigrate_policy"
+      ],
+      "t": "t10"
+    },
+    "mig_int": {
+      "vars": [
+        "multiculturalism"
+      ],
+      "t": "t10"
+    },
+    "mig_nat": {
+      "vars": [
+        "nationalism"
+      ],
+      "t": "t10"
+    },
+    "int_eu": {
+      "vars": [
+        "eu_position"
+      ],
+      "t": "eu7"
+    },
+    "int_trade": {
+      "vars": [
+        "protectionism"
+      ],
+      "t": "t10"
+    },
+    "int_def": {
+      "vars": [
+        "eu_russia"
+      ],
+      "t": "t10"
+    },
+    "cli_amb": {
+      "vars": [
+        "climate_change",
+        "environment"
+      ],
+      "t": "t10",
+      "combine": "first"
+    },
+    "cli_nat": {
+      "vars": [
+        "environment"
+      ],
+      "t": "t10"
+    },
+    "dem_trust": {
+      "vars": [
+        "antielite_salience"
+      ],
+      "t": "t10"
+    },
+    "dem_direct": {
+      "vars": [
+        "people_vs_elite"
+      ],
+      "t": "t10"
+    },
+    "dem_courts": {
+      "vars": [
+        "judicial_independence",
+        "executive_power"
+      ],
+      "t": "t10",
+      "combine": "mean"
+    },
+    "dem_central": {
+      "vars": [
+        "regions"
+      ],
+      "t": "t10"
+    }
+  },
+  "proxies": {
+    "ECO": {
+      "var": "lrecon",
+      "t": "t10",
+      "note": "Overall economic left/right"
+    },
+    "SOC": {
+      "var": "galtan",
+      "t": "t10",
+      "note": "GAL-TAN; also captures authority and nationalism"
+    }
+  },
+  "notes": [
+    "dem_trust uses anti-elite salience (how much a party uses anti-elite rhetoric), which is a proxy for its position.",
+    "int_def uses eu_russia (defend against Russia vs. trade and diplomacy with Russia), only available in 2024.",
+    "cli_nat uses general environmental sustainability vs. growth.",
+    "dem_courts combines judicial independence and executive power (horizontal accountability). CHES executive_power is not mapped to lib_emerg, which is about emergency powers and restrictions on assembly."
+  ],
+  "parties": [
+    {
+      "c": "10",
+      "p": "1001",
+      "actor": "nl-cda"
+    },
+    {
+      "c": "10",
+      "p": "1002",
+      "actor": "nl-pvda",
+      "new": {
+        "name": "PvdA",
+        "full_name": "Partij van de Arbeid",
+        "active": {
+          "from": 1946,
+          "to": 2026
+        },
+        "successor": "nl-pro"
+      }
+    },
+    {
+      "c": "10",
+      "p": "1003",
+      "actor": "nl-vvd"
+    },
+    {
+      "c": "10",
+      "p": "1004",
+      "actor": "nl-d66"
+    },
+    {
+      "c": "10",
+      "p": "1005",
+      "actor": "nl-gl",
+      "new": {
+        "name": "GroenLinks",
+        "full_name": "GroenLinks",
+        "active": {
+          "from": 1990,
+          "to": 2026
+        },
+        "successor": "nl-pro"
+      }
+    },
+    {
+      "c": "10",
+      "p": "1006",
+      "actor": "nl-sgp"
+    },
+    {
+      "c": "10",
+      "p": "1009",
+      "actor": "nl-cd",
+      "new": {
+        "name": "CD",
+        "full_name": "Centrumdemocraten",
+        "active": {
+          "from": 1984,
+          "to": 2002
+        }
+      }
+    },
+    {
+      "c": "10",
+      "p": "1014",
+      "actor": "nl-sp"
+    },
+    {
+      "c": "10",
+      "p": "1015",
+      "actor": "nl-lpf"
+    },
+    {
+      "c": "10",
+      "p": "1016",
+      "actor": "nl-cu"
+    },
+    {
+      "c": "10",
+      "p": "1017",
+      "actor": "nl-pvv"
+    },
+    {
+      "c": "10",
+      "p": "1018",
+      "actor": "nl-pvdd"
+    },
+    {
+      "c": "10",
+      "p": "1020",
+      "actor": "nl-50plus"
+    },
+    {
+      "c": "10",
+      "p": "1050",
+      "actor": "nl-denk"
+    },
+    {
+      "c": "10",
+      "p": "1051",
+      "actor": "nl-fvd"
+    },
+    {
+      "c": "10",
+      "p": "1052",
+      "actor": "nl-volt"
+    },
+    {
+      "c": "10",
+      "p": "1054",
+      "actor": "nl-bbb"
+    },
+    {
+      "c": "10",
+      "p": "1056",
+      "actor": "nl-nsc",
+      "new": {
+        "name": "NSC",
+        "full_name": "Nieuw Sociaal Contract",
+        "active": {
+          "from": 2023,
+          "to": null
+        }
+      }
+    },
+    {
+      "c": "3",
+      "p": "301",
+      "actor": "de-cdu"
+    },
+    {
+      "c": "3",
+      "p": "302",
+      "actor": "de-spd"
+    },
+    {
+      "c": "3",
+      "p": "303",
+      "actor": "de-fdp"
+    },
+    {
+      "c": "3",
+      "p": "304",
+      "actor": "de-gruene"
+    },
+    {
+      "c": "3",
+      "p": "305",
+      "actor": "de-rep",
+      "new": {
+        "name": "REP",
+        "full_name": "Die Republikaner",
+        "active": {
+          "from": 1983,
+          "to": null
+        }
+      }
+    },
+    {
+      "c": "3",
+      "p": "306",
+      "actor": "de-linke"
+    },
+    {
+      "c": "3",
+      "p": "308",
+      "actor": "de-csu"
+    },
+    {
+      "c": "3",
+      "p": "309",
+      "years": [
+        "1999"
+      ],
+      "actor": "de-dvu",
+      "new": {
+        "name": "DVU",
+        "full_name": "Deutsche Volksunion",
+        "active": {
+          "from": 1971,
+          "to": 2011
+        }
+      }
+    },
+    {
+      "c": "3",
+      "p": "309",
+      "years": [
+        "2014"
+      ],
+      "actor": "de-npd",
+      "new": {
+        "name": "NPD",
+        "full_name": "Nationaldemokratische Partei Deutschlands (Die Heimat since 2023)",
+        "active": {
+          "from": 1964,
+          "to": null
+        }
+      }
+    },
+    {
+      "c": "3",
+      "p": "310",
+      "actor": "de-afd"
+    },
+    {
+      "c": "3",
+      "p": "311",
+      "actor": "de-piraten",
+      "new": {
+        "name": "Piraten",
+        "full_name": "Piratenpartei Deutschland",
+        "active": {
+          "from": 2006,
+          "to": null
+        }
+      }
+    },
+    {
+      "c": "3",
+      "p": "313",
+      "actor": "de-bsw"
+    },
+    {
+      "c": "11",
+      "p": "1101",
+      "actor": "uk-con"
+    },
+    {
+      "c": "11",
+      "p": "1102",
+      "actor": "uk-labour"
+    },
+    {
+      "c": "11",
+      "p": "1104",
+      "actor": "uk-ld"
+    },
+    {
+      "c": "11",
+      "p": "1105",
+      "actor": "uk-snp"
+    },
+    {
+      "c": "11",
+      "p": "1106",
+      "actor": "uk-plaid"
+    },
+    {
+      "c": "11",
+      "p": "1107",
+      "actor": "uk-green"
+    },
+    {
+      "c": "11",
+      "p": "1108",
+      "actor": "uk-ukip",
+      "new": {
+        "name": "UKIP",
+        "full_name": "UK Independence Party",
+        "active": {
+          "from": 1993,
+          "to": null
+        }
+      }
+    },
+    {
+      "c": "11",
+      "p": "1109",
+      "actor": "uk-bnp",
+      "new": {
+        "name": "BNP",
+        "full_name": "British National Party",
+        "active": {
+          "from": 1982,
+          "to": null
+        }
+      }
+    },
+    {
+      "c": "11",
+      "p": "1110",
+      "actor": "uk-reform"
+    }
+  ]
+}

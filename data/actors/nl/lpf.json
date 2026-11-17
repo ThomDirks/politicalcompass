@@ -1,0 +1,144 @@
+{
+  "id": "nl-lpf",
+  "type": "party",
+  "name": "LPF",
+  "full_name": "Lijst Pim Fortuyn",
+  "country": "NL",
+  "active": {
+    "from": 2002,
+    "to": 2008
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2002,
+      "label": "CHES 2002",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2002, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [41, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": 62,
+        "SOC": 9
+      },
+      "ches": {
+        "party_id": "1015",
+        "party": "LPF",
+        "items": {
+          "eu_position": 2.78,
+          "lrecon": 8.11,
+          "galtan": 5.44
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "label": "2002 election",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). Scored on Pim Fortuyn's 2002 programme.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [40, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [40, "m"],
+        "eco_tax": [30, "m"],
+        "soc_fam": [-30, "m"],
+        "soc_lgbt": [-70, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-40, "m"],
+        "lib_priv": [30, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [-60, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [80, "h"],
+        "mig_asy": [85, "h"],
+        "mig_int": [80, "h"],
+        "mig_nat": [60, "h"],
+        "int_eu": [40, "m"],
+        "int_trade": [-20, "m"],
+        "int_def": [-50, "m"],
+        "int_aid": [40, "m"],
+        "cli_amb": [20, "l"],
+        "cli_pay": [30, "l"],
+        "cli_nat": [20, "l"],
+        "cli_intl": [10, "l"],
+        "tec_ai": null,
+        "tec_bio": [20, "l"],
+        "tec_nuc": [30, "l"],
+        "tec_big": null,
+        "dem_trust": [80, "l"],
+        "dem_direct": [80, "l"],
+        "dem_courts": [20, "l"],
+        "dem_central": [0, "l"]
+      },
+      "notes": {
+        "ECO": "Smaller government, less bureaucracy in healthcare and education.",
+        "SOC": "Socially liberal: Fortuyn was openly gay and defended liberal freedoms against Islam.",
+        "LIB": "Tough on crime, wanted to scrap the constitutional ban on discrimination for free speech.",
+        "MIG": "Stop immigration, called Islam a 'backward culture'.",
+        "INT": "Critical of the EU's growth and bureaucracy.",
+        "CLI": "Little focus.",
+        "TEC": "Little profile.",
+        "DEM": "Attacked the 'Purple' coalition elite, wanted elected mayors and referendums."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Pim Fortuyn List",
+          "url": "https://en.wikipedia.org/wiki/Pim_Fortuyn_List"
+        },
+        {
+          "title": "Wikipedia: Pim Fortuyn",
+          "url": "https://en.wikipedia.org/wiki/Pim_Fortuyn"
+        }
+      ]
+    }
+  ]
+}

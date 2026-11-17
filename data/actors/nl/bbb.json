@@ -4,79 +4,191 @@
   "name": "BBB",
   "full_name": "BoerBurgerBeweging",
   "country": "NL",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  "active": {
+    "from": 2019,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 2,
-    "LIB": 2,
-    "MIG": 4,
-    "INT": 2,
-    "CLI": 5,
-    "TEC": 1,
-    "DEM": 4
-  },
-  "facets": {
-    "eco_own": [-5, "m"],
-    "eco_reg": [15, "m"],
-    "eco_lab": [0, "m"],
-    "eco_tax": [10, "m"],
-    "soc_fam": [30, "m"],
-    "soc_lgbt": [5, "m"],
-    "soc_rel": [15, "m"],
-    "soc_mor": [20, "m"],
-    "lib_priv": [20, "m"],
-    "lib_just": [60, "m"],
-    "lib_speech": [-20, "m"],
-    "lib_emerg": [10, "m"],
-    "mig_lvl": [60, "m"],
-    "mig_asy": [75, "m"],
-    "mig_int": [55, "m"],
-    "mig_nat": [60, "m"],
-    "int_eu": [40, "m"],
-    "int_trade": [40, "m"],
-    "int_def": [-50, "m"],
-    "int_aid": [50, "m"],
-    "cli_amb": [45, "h"],
-    "cli_pay": [65, "h"],
-    "cli_nat": [95, "h"],
-    "cli_intl": [40, "h"],
-    "tec_ai": [0, "l"],
-    "tec_bio": [30, "l"],
-    "tec_nuc": [80, "l"],
-    "tec_big": [-10, "l"],
-    "dem_trust": [45, "m"],
-    "dem_direct": [50, "m"],
-    "dem_courts": [20, "m"],
-    "dem_central": [-60, "m"]
-  },
-  "notes": {
-    "ECO": "Centre-right with focus on rural services.",
-    "SOC": "Mildly conservative.",
-    "LIB": "Tough on crime.",
-    "MIG": "Restrictive on asylum.",
-    "INT": "EU-critical, against the Mercosur deal.",
-    "CLI": "Core issue: protect farmers against nitrogen and nature rules.",
-    "TEC": "Open to gene editing in crops, pro nuclear.",
-    "DEM": "Regions against The Hague, anti-establishment tone."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://boerburgerbeweging.nl/"
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [29, "h"],
+        "eco_lab": null,
+        "eco_tax": [22, "h"],
+        "soc_fam": [20, "h"],
+        "soc_lgbt": [28, "h"],
+        "soc_rel": [17, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [48, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [58, "h"],
+        "mig_asy": null,
+        "mig_int": [53, "h"],
+        "mig_nat": [7, "h"],
+        "int_eu": [47, "h"],
+        "int_trade": [73, "h"],
+        "int_def": [0, "h"],
+        "int_aid": null,
+        "cli_amb": [73, "h"],
+        "cli_pay": null,
+        "cli_nat": [44, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [60, "h"],
+        "dem_direct": [-10, "h"],
+        "dem_courts": [9, "h"],
+        "dem_central": [-53, "h"]
+      },
+      "proxies": {
+        "ECO": 40,
+        "SOC": 53
+      },
+      "ches": {
+        "party_id": "1054",
+        "party": "BBB",
+        "items": {
+          "deregulation": 6.43,
+          "redistribution": 6.22,
+          "spendvtax": 6.0,
+          "womens_rights": 6.0,
+          "lgbtq_rights": 6.4,
+          "religious_principles": 5.83,
+          "civlib_laworder": 7.4,
+          "immigrate_policy": 7.92,
+          "multiculturalism": 7.64,
+          "nationalism": 5.33,
+          "eu_position": 2.58,
+          "protectionism": 8.67,
+          "eu_russia": 5.0,
+          "climate_change": 8.67,
+          "environment": 7.2,
+          "antielite_salience": 8.0,
+          "people_vs_elite": 4.5,
+          "judicial_independence": 2.5,
+          "executive_power": 8.4,
+          "regions": 2.33,
+          "lrecon": 7.0,
+          "galtan": 7.67
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Tweede Kamer, zetelverdeling juni 2026",
-      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
-    },
-    {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "TK2025 election programme and parliamentary record up to Nov 2026.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 4,
+        "INT": 2,
+        "CLI": 5,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-5, "m"],
+        "eco_reg": [15, "m"],
+        "eco_lab": [0, "m"],
+        "eco_tax": [10, "m"],
+        "soc_fam": [30, "m"],
+        "soc_lgbt": [5, "m"],
+        "soc_rel": [15, "m"],
+        "soc_mor": [20, "m"],
+        "lib_priv": [20, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [-20, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [60, "m"],
+        "mig_asy": [75, "m"],
+        "mig_int": [55, "m"],
+        "mig_nat": [34, "m"],
+        "int_eu": [40, "m"],
+        "int_trade": [40, "m"],
+        "int_def": [-25, "m"],
+        "int_aid": [50, "m"],
+        "cli_amb": [45, "h"],
+        "cli_pay": [65, "h"],
+        "cli_nat": [70, "m"],
+        "cli_intl": [40, "h"],
+        "tec_ai": [0, "l"],
+        "tec_bio": [30, "l"],
+        "tec_nuc": [80, "l"],
+        "tec_big": [-10, "l"],
+        "dem_trust": [45, "m"],
+        "dem_direct": [20, "m"],
+        "dem_courts": [20, "m"],
+        "dem_central": [-60, "m"]
+      },
+      "notes": {
+        "ECO": "Centre-right with focus on rural services.",
+        "SOC": "Mildly conservative.",
+        "LIB": "Tough on crime.",
+        "MIG": "Restrictive on asylum.",
+        "INT": "EU-critical, against the Mercosur deal.",
+        "CLI": "Core issue: protect farmers against nitrogen and nature rules.",
+        "TEC": "Open to gene editing in crops, pro nuclear.",
+        "DEM": "Regions against The Hague, anti-establishment tone."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://boerburgerbeweging.nl/"
+        },
+        {
+          "title": "Tweede Kamer, zetelverdeling juni 2026",
+          "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "mig_nat": {
+            "hand": 60,
+            "ches": 7,
+            "new": 34
+          },
+          "int_def": {
+            "hand": -50,
+            "ches": 0,
+            "new": -25
+          },
+          "cli_nat": {
+            "hand": 95,
+            "ches": 44,
+            "new": 70
+          },
+          "dem_direct": {
+            "hand": 50,
+            "ches": -10,
+            "new": 20
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

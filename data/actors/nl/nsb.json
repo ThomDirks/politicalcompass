@@ -1,0 +1,81 @@
+{
+  "id": "nl-nsb",
+  "type": "party",
+  "name": "NSB",
+  "full_name": "Nationaal-Socialistische Beweging",
+  "country": "NL",
+  "active": {
+    "from": 1931,
+    "to": 1945
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1936,
+      "label": "1931 to 1945",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). Scored on the 1930s programme and wartime collaboration.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 5,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-10, "m"],
+        "eco_reg": [-70, "m"],
+        "eco_lab": [90, "m"],
+        "eco_tax": [0, "m"],
+        "soc_fam": [90, "m"],
+        "soc_lgbt": [90, "m"],
+        "soc_rel": [30, "m"],
+        "soc_mor": [70, "m"],
+        "lib_priv": [90, "h"],
+        "lib_just": [90, "h"],
+        "lib_speech": [90, "h"],
+        "lib_emerg": [95, "h"],
+        "mig_lvl": [80, "h"],
+        "mig_asy": [90, "h"],
+        "mig_int": [90, "h"],
+        "mig_nat": [100, "h"],
+        "int_eu": [90, "m"],
+        "int_trade": [80, "m"],
+        "int_def": [60, "m"],
+        "int_aid": [90, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [95, "l"],
+        "dem_direct": [0, "l"],
+        "dem_courts": [90, "l"],
+        "dem_central": [90, "l"]
+      },
+      "notes": {
+        "ECO": "Corporatist economy under state direction.",
+        "SOC": "Traditional family and moral order.",
+        "LIB": "Authoritarian; collaborated with the German occupation.",
+        "MIG": "Nationalist, antisemitic from the mid-1930s, complicit in deportations.",
+        "INT": "Aligned with Nazi Germany.",
+        "CLI": "Not on the agenda.",
+        "TEC": "Not scored.",
+        "DEM": "Rejected parliamentary democracy for a leader state."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: National Socialist Movement in the Netherlands",
+          "url": "https://en.wikipedia.org/wiki/National_Socialist_Movement_in_the_Netherlands"
+        }
+      ]
+    }
+  ]
+}

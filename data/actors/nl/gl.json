@@ -1,0 +1,496 @@
+{
+  "id": "nl-gl",
+  "type": "party",
+  "name": "GroenLinks",
+  "full_name": "GroenLinks",
+  "country": "NL",
+  "active": {
+    "from": 1990,
+    "to": 2026
+  },
+  "predecessors": [],
+  "successors": [
+    "nl-pro"
+  ],
+  "status": "ches-only",
+  "snapshots": [
+    {
+      "year": 1999,
+      "label": "CHES 1999",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 1999, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-15, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": -52,
+        "SOC": -62
+      },
+      "ches": {
+        "party_id": "1005",
+        "party": "GL",
+        "items": {
+          "eu_position": 4.45,
+          "lrecon": 2.4,
+          "galtan": 1.91
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "label": "CHES 2002",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2002, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-46, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": -62,
+        "SOC": -71
+      },
+      "ches": {
+        "party_id": "1005",
+        "party": "GL",
+        "items": {
+          "eu_position": 5.38,
+          "lrecon": 1.89,
+          "galtan": 1.44
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "label": "CHES 2006",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2006, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-60, "h"],
+        "eco_lab": null,
+        "eco_tax": [-50, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-70, "h"],
+        "soc_rel": [-60, "h"],
+        "soc_mor": [-70, "h"],
+        "lib_priv": null,
+        "lib_just": [-30, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-57, "h"],
+        "mig_asy": null,
+        "mig_int": [-50, "h"],
+        "mig_nat": [-36, "h"],
+        "int_eu": [-48, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-20, "h"]
+      },
+      "proxies": {
+        "ECO": -60,
+        "SOC": -52
+      },
+      "ches": {
+        "party_id": "1005",
+        "party": "GL",
+        "items": {
+          "deregulation": 2.0,
+          "redistribution": 3.14,
+          "spendvtax": 1.86,
+          "sociallifestyle": 1.5,
+          "religious_principles": 2.0,
+          "civlib_laworder": 3.5,
+          "immigrate_policy": 2.17,
+          "multiculturalism": 2.5,
+          "nationalism": 3.2,
+          "eu_position": 5.45,
+          "regions": 4.0,
+          "lrecon": 2.0,
+          "galtan": 2.4
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "label": "CHES 2010",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2010, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-25, "h"],
+        "eco_lab": null,
+        "eco_tax": [-48, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-73, "h"],
+        "soc_rel": [-60, "h"],
+        "soc_mor": [-73, "h"],
+        "lib_priv": null,
+        "lib_just": [-51, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-47, "h"],
+        "mig_asy": null,
+        "mig_int": [-53, "h"],
+        "mig_nat": null,
+        "int_eu": [-74, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-69, "h"],
+        "cli_pay": null,
+        "cli_nat": [-69, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-10, "h"]
+      },
+      "proxies": {
+        "ECO": -40,
+        "SOC": -61
+      },
+      "ches": {
+        "party_id": "1005",
+        "party": "GL",
+        "items": {
+          "deregulation": 3.75,
+          "redistribution": 2.82,
+          "spendvtax": 2.38,
+          "sociallifestyle": 1.36,
+          "religious_principles": 2.0,
+          "civlib_laworder": 2.45,
+          "immigrate_policy": 2.64,
+          "multiculturalism": 2.36,
+          "eu_position": 6.21,
+          "environment": 1.55,
+          "regions": 4.5,
+          "lrecon": 3.0,
+          "galtan": 1.93
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-36, "h"],
+        "eco_lab": null,
+        "eco_tax": [-36, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-82, "h"],
+        "soc_rel": [-67, "h"],
+        "soc_mor": [-82, "h"],
+        "lib_priv": null,
+        "lib_just": [-64, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-78, "h"],
+        "mig_asy": null,
+        "mig_int": [-67, "h"],
+        "mig_nat": [-72, "h"],
+        "int_eu": [-85, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-75, "h"],
+        "cli_pay": null,
+        "cli_nat": [-75, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-66, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-20, "h"]
+      },
+      "proxies": {
+        "ECO": -47,
+        "SOC": -80
+      },
+      "ches": {
+        "party_id": "1005",
+        "party": "GL",
+        "items": {
+          "deregulation": 3.22,
+          "redistribution": 3.67,
+          "spendvtax": 2.75,
+          "sociallifestyle": 0.88,
+          "religious_principles": 1.67,
+          "civlib_laworder": 1.78,
+          "immigrate_policy": 1.12,
+          "multiculturalism": 1.67,
+          "nationalism": 1.38,
+          "eu_position": 6.55,
+          "environment": 1.25,
+          "antielite_salience": 1.71,
+          "regions": 4.0,
+          "lrecon": 2.67,
+          "galtan": 1.0
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-52, "h"],
+        "eco_lab": null,
+        "eco_tax": [-59, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-67, "h"],
+        "soc_rel": [-68, "h"],
+        "soc_mor": [-67, "h"],
+        "lib_priv": null,
+        "lib_just": [-53, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-68, "h"],
+        "mig_asy": null,
+        "mig_int": [-70, "h"],
+        "mig_nat": [-65, "h"],
+        "int_eu": [-82, "h"],
+        "int_trade": [-7, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-69, "h"],
+        "cli_pay": null,
+        "cli_nat": [-69, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-40, "h"],
+        "dem_direct": [0, "h"],
+        "dem_courts": null,
+        "dem_central": [15, "h"]
+      },
+      "proxies": {
+        "ECO": -52,
+        "SOC": -83
+      },
+      "ches": {
+        "party_id": "1005",
+        "party": "GL",
+        "items": {
+          "deregulation": 2.42,
+          "redistribution": 2.18,
+          "spendvtax": 1.92,
+          "sociallifestyle": 1.64,
+          "religious_principles": 1.58,
+          "civlib_laworder": 2.33,
+          "immigrate_policy": 1.62,
+          "multiculturalism": 1.5,
+          "nationalism": 1.75,
+          "eu_position": 6.46,
+          "protectionism": 4.64,
+          "environment": 1.54,
+          "antielite_salience": 3.0,
+          "people_vs_elite": 5.0,
+          "regions": 5.75,
+          "lrecon": 2.38,
+          "galtan": 0.85
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-49, "h"],
+        "eco_lab": null,
+        "eco_tax": [-61, "h"],
+        "soc_fam": [-76, "h"],
+        "soc_lgbt": [-88, "h"],
+        "soc_rel": [-73, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [-60, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-58, "h"],
+        "mig_asy": null,
+        "mig_int": [-56, "h"],
+        "mig_nat": [-13, "h"],
+        "int_eu": [-78, "h"],
+        "int_trade": [33, "h"],
+        "int_def": [-40, "h"],
+        "int_aid": null,
+        "cli_amb": [-97, "h"],
+        "cli_pay": null,
+        "cli_nat": [-52, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-64, "h"],
+        "dem_direct": [-60, "h"],
+        "dem_courts": [-83, "h"],
+        "dem_central": [-13, "h"]
+      },
+      "proxies": {
+        "ECO": -50,
+        "SOC": -82
+      },
+      "ches": {
+        "party_id": "1005",
+        "party": "GL",
+        "items": {
+          "deregulation": 2.57,
+          "redistribution": 2.9,
+          "spendvtax": 1.0,
+          "womens_rights": 1.2,
+          "lgbtq_rights": 0.6,
+          "religious_principles": 1.33,
+          "civlib_laworder": 2.0,
+          "immigrate_policy": 2.08,
+          "multiculturalism": 2.18,
+          "nationalism": 4.33,
+          "eu_position": 6.33,
+          "protectionism": 6.67,
+          "eu_russia": 3.0,
+          "climate_change": 0.17,
+          "environment": 2.4,
+          "antielite_salience": 1.78,
+          "people_vs_elite": 2.0,
+          "judicial_independence": 0.5,
+          "executive_power": 1.17,
+          "regions": 4.33,
+          "lrecon": 2.5,
+          "galtan": 0.92
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    }
+  ]
+}

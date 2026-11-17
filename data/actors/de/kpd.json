@@ -1,0 +1,81 @@
+{
+  "id": "de-kpd",
+  "type": "party",
+  "name": "KPD",
+  "full_name": "Kommunistische Partei Deutschlands",
+  "country": "DE",
+  "active": {
+    "from": 1918,
+    "to": 1956
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1928,
+      "label": "Weimar Republic",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). Scored on the Weimar era.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-100, "h"],
+        "eco_reg": [-100, "h"],
+        "eco_lab": [-100, "h"],
+        "eco_tax": [-100, "h"],
+        "soc_fam": [-60, "m"],
+        "soc_lgbt": [-40, "m"],
+        "soc_rel": [-100, "m"],
+        "soc_mor": [-70, "m"],
+        "lib_priv": [80, "m"],
+        "lib_just": [40, "m"],
+        "lib_speech": [80, "m"],
+        "lib_emerg": [100, "m"],
+        "mig_lvl": [-50, "l"],
+        "mig_asy": [-80, "l"],
+        "mig_int": [-60, "l"],
+        "mig_nat": [-100, "l"],
+        "int_eu": [50, "l"],
+        "int_trade": [50, "l"],
+        "int_def": [0, "l"],
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [100, "l"],
+        "dem_direct": [50, "l"],
+        "dem_courts": [100, "l"],
+        "dem_central": [80, "l"]
+      },
+      "notes": {
+        "ECO": "Abolish private ownership, planned economy.",
+        "SOC": "Women's equality, campaigned against the abortion ban, militantly atheist.",
+        "LIB": "Aimed at a dictatorship of the proletariat on the Soviet model.",
+        "MIG": "Internationalist and anti-nationalist.",
+        "INT": "Against Versailles and the League of Nations, loyal to the Comintern.",
+        "CLI": "Not on the agenda.",
+        "TEC": "Not scored.",
+        "DEM": "Anti-system: rejected the Weimar Republic and its courts."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Communist Party of Germany",
+          "url": "https://en.wikipedia.org/wiki/Communist_Party_of_Germany"
+        }
+      ]
+    }
+  ]
+}

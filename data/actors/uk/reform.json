@@ -4,83 +4,253 @@
   "name": "Reform UK",
   "full_name": "Reform UK",
   "country": "UK",
-  "period": {
-    "from": "2024",
-    "to": null,
-    "basis": "Positions and record up to Nov 2026."
+  "active": {
+    "from": 2018,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 3,
-    "LIB": 3,
-    "MIG": 5,
-    "INT": 3,
-    "CLI": 4,
-    "TEC": 2,
-    "DEM": 4
-  },
-  "facets": {
-    "eco_own": [0, "m"],
-    "eco_reg": [45, "m"],
-    "eco_lab": [65, "m"],
-    "eco_tax": [45, "m"],
-    "soc_fam": [45, "m"],
-    "soc_lgbt": [40, "m"],
-    "soc_rel": [20, "m"],
-    "soc_mor": [30, "m"],
-    "lib_priv": [-10, "m"],
-    "lib_just": [80, "m"],
-    "lib_speech": [-60, "m"],
-    "lib_emerg": [0, "m"],
-    "mig_lvl": [90, "h"],
-    "mig_asy": [100, "h"],
-    "mig_int": [75, "h"],
-    "mig_nat": [80, "h"],
-    "int_eu": [80, "m"],
-    "int_trade": [20, "m"],
-    "int_def": [-20, "m"],
-    "int_aid": [80, "m"],
-    "cli_amb": [95, "h"],
-    "cli_pay": [100, "h"],
-    "cli_nat": [60, "h"],
-    "cli_intl": [90, "h"],
-    "tec_ai": [40, "m"],
-    "tec_bio": [40, "m"],
-    "tec_nuc": [60, "m"],
-    "tec_big": [20, "m"],
-    "dem_trust": [85, "m"],
-    "dem_direct": [55, "m"],
-    "dem_courts": [60, "m"],
-    "dem_central": [30, "m"]
-  },
-  "notes": {
-    "ECO": "Under Jenrick: restore the two-child cap, scrap Labour's worker and renter protections.",
-    "SOC": "Patriotic curriculum, gender-critical.",
-    "LIB": "Tough on crime, 'free speech' agenda, against digital ID.",
-    "MIG": "Mass deportations, leave the ECHR, a deportation command.",
-    "INT": "Brexit party; in NATO, ambivalent on Ukraine.",
-    "CLI": "Scrap net zero, maximise oil and gas.",
-    "TEC": "Rapid nuclear scale-up.",
-    "DEM": "Anti-establishment; attacks on the Bank of England and OBR."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://www.reformparty.uk/"
+      "year": 2019,
+      "label": "CHES 2019 (as BREXIT)",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [27, "h"],
+        "eco_lab": null,
+        "eco_tax": [30, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [71, "h"],
+        "soc_rel": [86, "h"],
+        "soc_mor": [71, "h"],
+        "lib_priv": null,
+        "lib_just": [62, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [72, "h"],
+        "mig_asy": null,
+        "mig_int": [50, "h"],
+        "mig_nat": [76, "h"],
+        "int_eu": [71, "h"],
+        "int_trade": [40, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [50, "h"],
+        "cli_pay": null,
+        "cli_nat": [50, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [20, "h"],
+        "dem_direct": [-8, "h"],
+        "dem_courts": null,
+        "dem_central": [14, "h"]
+      },
+      "proxies": {
+        "ECO": 38,
+        "SOC": 72
+      },
+      "ches": {
+        "party_id": "1110",
+        "party": "BREXIT",
+        "items": {
+          "deregulation": 6.33,
+          "redistribution": 6.38,
+          "spendvtax": 6.6,
+          "sociallifestyle": 8.57,
+          "religious_principles": 9.29,
+          "civlib_laworder": 8.1,
+          "immigrate_policy": 8.6,
+          "multiculturalism": 7.5,
+          "nationalism": 8.8,
+          "eu_position": 1.88,
+          "protectionism": 7.0,
+          "environment": 7.5,
+          "antielite_salience": 6.0,
+          "people_vs_elite": 4.62,
+          "regions": 5.7,
+          "lrecon": 6.89,
+          "galtan": 8.62
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Reuters factbox: Reform UK's platform",
-      "url": "https://theprint.in/world/factbox-reform-uks-platform-deportations-patriotism-and-save-our-pubs/2881114"
+      "year": 2024,
+      "label": "CHES 2024 (as REF UK)",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [44, "h"],
+        "eco_lab": null,
+        "eco_tax": [56, "h"],
+        "soc_fam": [42, "h"],
+        "soc_lgbt": [56, "h"],
+        "soc_rel": [13, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [94, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [96, "h"],
+        "mig_asy": null,
+        "mig_int": [87, "h"],
+        "mig_nat": [96, "h"],
+        "int_eu": [98, "h"],
+        "int_trade": [22, "h"],
+        "int_def": [-25, "h"],
+        "int_aid": null,
+        "cli_amb": [64, "h"],
+        "cli_pay": null,
+        "cli_nat": [71, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [88, "h"],
+        "dem_direct": [31, "h"],
+        "dem_courts": [63, "h"],
+        "dem_central": [80, "h"]
+      },
+      "proxies": {
+        "ECO": 68,
+        "SOC": 82
+      },
+      "ches": {
+        "party_id": "1110",
+        "party": "REF UK",
+        "items": {
+          "deregulation": 7.18,
+          "redistribution": 8.0,
+          "spendvtax": 7.6,
+          "womens_rights": 7.08,
+          "lgbtq_rights": 7.82,
+          "religious_principles": 5.67,
+          "civlib_laworder": 9.71,
+          "immigrate_policy": 9.81,
+          "multiculturalism": 9.37,
+          "nationalism": 9.82,
+          "eu_position": 1.05,
+          "protectionism": 6.09,
+          "eu_russia": 3.75,
+          "climate_change": 8.18,
+          "environment": 8.56,
+          "antielite_salience": 9.4,
+          "people_vs_elite": 6.56,
+          "judicial_independence": 6.67,
+          "executive_power": 9.67,
+          "regions": 9.0,
+          "lrecon": 8.39,
+          "galtan": 9.1
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Reform would restore two-child benefit cap in full",
-      "url": "https://www.expressandstar.com/uk-news/reform-would-restore-two-child-benefit-cap-in-full-jenrick-to-pledge-5634844"
-    },
-    {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Positions and record up to Nov 2026.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 4,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [0, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [65, "m"],
+        "eco_tax": [45, "m"],
+        "soc_fam": [45, "m"],
+        "soc_lgbt": [40, "m"],
+        "soc_rel": [20, "m"],
+        "soc_mor": [30, "m"],
+        "lib_priv": [-10, "m"],
+        "lib_just": [80, "m"],
+        "lib_speech": [-60, "m"],
+        "lib_emerg": [0, "m"],
+        "mig_lvl": [90, "h"],
+        "mig_asy": [100, "h"],
+        "mig_int": [75, "h"],
+        "mig_nat": [80, "h"],
+        "int_eu": [80, "m"],
+        "int_trade": [20, "m"],
+        "int_def": [-20, "m"],
+        "int_aid": [80, "m"],
+        "cli_amb": [95, "h"],
+        "cli_pay": [100, "h"],
+        "cli_nat": [60, "h"],
+        "cli_intl": [90, "h"],
+        "tec_ai": [40, "m"],
+        "tec_bio": [40, "m"],
+        "tec_nuc": [60, "m"],
+        "tec_big": [20, "m"],
+        "dem_trust": [85, "m"],
+        "dem_direct": [55, "m"],
+        "dem_courts": [60, "m"],
+        "dem_central": [55, "m"]
+      },
+      "notes": {
+        "ECO": "Under Jenrick: restore the two-child cap, scrap Labour's worker and renter protections.",
+        "SOC": "Patriotic curriculum, gender-critical.",
+        "LIB": "Tough on crime, 'free speech' agenda, against digital ID.",
+        "MIG": "Mass deportations, leave the ECHR, a deportation command.",
+        "INT": "Brexit party; in NATO, ambivalent on Ukraine.",
+        "CLI": "Scrap net zero, maximise oil and gas.",
+        "TEC": "Rapid nuclear scale-up.",
+        "DEM": "Anti-establishment; attacks on the Bank of England and OBR."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://www.reformparty.uk/"
+        },
+        {
+          "title": "Reuters factbox: Reform UK's platform",
+          "url": "https://theprint.in/world/factbox-reform-uks-platform-deportations-patriotism-and-save-our-pubs/2881114"
+        },
+        {
+          "title": "Reform would restore two-child benefit cap in full",
+          "url": "https://www.expressandstar.com/uk-news/reform-would-restore-two-child-benefit-cap-in-full-jenrick-to-pledge-5634844"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "dem_central": {
+            "hand": 30,
+            "ches": 80,
+            "new": 55
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

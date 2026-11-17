@@ -1,0 +1,81 @@
+{
+  "id": "de-sed",
+  "type": "party",
+  "name": "SED",
+  "full_name": "Sozialistische Einheitspartei Deutschlands",
+  "country": "DE",
+  "active": {
+    "from": 1946,
+    "to": 1989
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1980,
+      "label": "GDR (1949 to 1989)",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). Scored on the GDR regime in the 1970s and 1980s.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 5,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-100, "h"],
+        "eco_reg": [-100, "h"],
+        "eco_lab": [0, "h"],
+        "eco_tax": [-90, "h"],
+        "soc_fam": [-50, "m"],
+        "soc_lgbt": [-20, "m"],
+        "soc_rel": [-90, "m"],
+        "soc_mor": [-60, "m"],
+        "lib_priv": [100, "h"],
+        "lib_just": [90, "h"],
+        "lib_speech": [100, "h"],
+        "lib_emerg": [100, "h"],
+        "mig_lvl": [80, "m"],
+        "mig_asy": [60, "m"],
+        "mig_int": [80, "m"],
+        "mig_nat": [20, "m"],
+        "int_eu": [-40, "m"],
+        "int_trade": [80, "m"],
+        "int_def": [-70, "m"],
+        "int_aid": [-20, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [80, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [0, "l"],
+        "tec_nuc": [70, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "l"],
+        "dem_direct": [-50, "l"],
+        "dem_courts": [100, "l"],
+        "dem_central": [100, "l"]
+      },
+      "notes": {
+        "ECO": "State ownership and central planning; job guarantee but no independent unions.",
+        "SOC": "Women in work and childcare, legal abortion from 1972, state atheism.",
+        "LIB": "Stasi surveillance, censorship, political prisoners.",
+        "MIG": "Closed borders, segregated contract workers.",
+        "INT": "Firmly in the Warsaw Pact and Comecon.",
+        "CLI": "Heavy lignite use with severe environmental damage.",
+        "TEC": "Nuclear power plants, state technology programmes.",
+        "DEM": "One-party state with controlled courts and full centralisation."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Socialist Unity Party of Germany",
+          "url": "https://en.wikipedia.org/wiki/Socialist_Unity_Party_of_Germany"
+        }
+      ]
+    }
+  ]
+}

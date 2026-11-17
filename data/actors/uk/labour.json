@@ -4,75 +4,780 @@
   "name": "Labour",
   "full_name": "Labour Party",
   "country": "UK",
-  "period": {
-    "from": "2024",
-    "to": null,
-    "basis": "Positions and record up to Nov 2026. In government since July 2024."
+  "active": {
+    "from": 1900,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 4,
-    "SOC": 2,
-    "LIB": 3,
-    "MIG": 4,
-    "INT": 3,
-    "CLI": 3,
-    "TEC": 3,
-    "DEM": 2
-  },
-  "facets": {
-    "eco_own": [-20, "h"],
-    "eco_reg": [-20, "h"],
-    "eco_lab": [-45, "h"],
-    "eco_tax": [-20, "h"],
-    "soc_fam": [-50, "m"],
-    "soc_lgbt": [-45, "m"],
-    "soc_rel": [-30, "m"],
-    "soc_mor": [-15, "m"],
-    "lib_priv": [40, "m"],
-    "lib_just": [40, "m"],
-    "lib_speech": [40, "m"],
-    "lib_emerg": [25, "m"],
-    "mig_lvl": [35, "h"],
-    "mig_asy": [40, "h"],
-    "mig_int": [25, "h"],
-    "mig_nat": [5, "h"],
-    "int_eu": [-20, "m"],
-    "int_trade": [-50, "m"],
-    "int_def": [-85, "m"],
-    "int_aid": [30, "m"],
-    "cli_amb": [-60, "h"],
-    "cli_pay": [-30, "h"],
-    "cli_nat": [10, "h"],
-    "cli_intl": [-75, "h"],
-    "tec_ai": [60, "m"],
-    "tec_bio": [50, "m"],
-    "tec_nuc": [75, "m"],
-    "tec_big": [15, "m"],
-    "dem_trust": [-50, "m"],
-    "dem_direct": [-55, "m"],
-    "dem_courts": [-40, "m"],
-    "dem_central": [-30, "m"]
-  },
-  "notes": {
-    "ECO": "Rail renationalisation, GB Energy, Employment Rights Act; fiscal caution.",
-    "SOC": "Progressive, cautious on gender identity after the Supreme Court ruling.",
-    "LIB": "Digital ID plans, Online Safety Act, proscription of protest groups.",
-    "MIG": "Aims to cut net migration sharply, tougher asylum rules.",
-    "INT": "EU reset without rejoining; aid cut to 0.3%.",
-    "CLI": "Clean power by 2030; planning reform eases development.",
-    "TEC": "Pro AI growth, pro nuclear.",
-    "DEM": "Institutional; devolution to English mayors."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://labour.org.uk/"
+      "year": 1945,
+      "label": "Attlee era",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). Attlee government.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 1,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-85, "h"],
+        "eco_reg": [-70, "h"],
+        "eco_lab": [-70, "h"],
+        "eco_tax": [-75, "h"],
+        "soc_fam": [20, "m"],
+        "soc_lgbt": [60, "m"],
+        "soc_rel": [0, "m"],
+        "soc_mor": [40, "m"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [-30, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [10, "l"],
+        "int_eu": [0, "m"],
+        "int_trade": [40, "m"],
+        "int_def": [-70, "m"],
+        "int_aid": [-20, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-10, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-40, "l"],
+        "dem_direct": [-60, "l"],
+        "dem_courts": [-30, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "Nationalised coal, rail, steel and the Bank of England; founded the NHS.",
+        "SOC": "Homosexuality and abortion stayed illegal.",
+        "LIB": "Kept wartime controls for years.",
+        "MIG": "British Nationality Act 1948 opened citizenship to the Commonwealth.",
+        "INT": "Founder of NATO, sceptical of European integration.",
+        "CLI": "National Parks Act 1949.",
+        "TEC": "Launched the British atomic programme.",
+        "DEM": "Centralised state planning."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Attlee ministry",
+          "url": "https://en.wikipedia.org/wiki/Attlee_ministry"
+        }
+      ]
     },
     {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 1983,
+      "label": "Michael Foot era",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). 1983 manifesto under Michael Foot.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 5,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-95, "h"],
+        "eco_reg": [-80, "h"],
+        "eco_lab": [-90, "h"],
+        "eco_tax": [-80, "h"],
+        "soc_fam": [-30, "m"],
+        "soc_lgbt": [-20, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-30, "m"],
+        "lib_priv": [-10, "l"],
+        "lib_just": [0, "l"],
+        "lib_speech": [0, "l"],
+        "lib_emerg": [-20, "l"],
+        "mig_lvl": [-10, "l"],
+        "mig_asy": [-20, "l"],
+        "mig_int": [-20, "l"],
+        "mig_nat": [-30, "l"],
+        "int_eu": [90, "h"],
+        "int_trade": [70, "h"],
+        "int_def": [60, "h"],
+        "int_aid": [-60, "h"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [-60, "m"],
+        "tec_big": null,
+        "dem_trust": [-10, "l"],
+        "dem_direct": [10, "l"],
+        "dem_courts": [-10, "l"],
+        "dem_central": [-20, "l"]
+      },
+      "notes": {
+        "ECO": "Wide nationalisation, import controls, planning agreements.",
+        "SOC": "Progressive for its time.",
+        "LIB": "Moderate.",
+        "MIG": "Moderate.",
+        "INT": "Leave the EEC, unilateral nuclear disarmament.",
+        "CLI": "Not on the agenda.",
+        "TEC": "Against nuclear expansion.",
+        "DEM": "Moderately anti-establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: 1983 Labour Party manifesto",
+          "url": "https://en.wikipedia.org/wiki/1983_Labour_Party_manifesto"
+        }
+      ]
+    },
+    {
+      "year": 1997,
+      "label": "Blair era",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). New Labour, 1997 manifesto and first term.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [10, "h"],
+        "eco_reg": [20, "h"],
+        "eco_lab": [-20, "h"],
+        "eco_tax": [0, "h"],
+        "soc_fam": [-30, "m"],
+        "soc_lgbt": [-40, "m"],
+        "soc_rel": [-30, "m"],
+        "soc_mor": [-20, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [50, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [0, "m"],
+        "mig_asy": [20, "m"],
+        "mig_int": [0, "m"],
+        "mig_nat": [-20, "m"],
+        "int_eu": [-40, "m"],
+        "int_trade": [-60, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-40, "m"],
+        "cli_amb": [-30, "m"],
+        "cli_pay": [-10, "m"],
+        "cli_nat": [-10, "m"],
+        "cli_intl": [-50, "m"],
+        "tec_ai": null,
+        "tec_bio": [0, "l"],
+        "tec_nuc": [0, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "l"],
+        "dem_direct": [-20, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [-60, "l"]
+      },
+      "notes": {
+        "ECO": "Kept Thatcher's market reforms, added a minimum wage and Bank of England independence.",
+        "SOC": "Gradual liberalisation, equalised age of consent.",
+        "LIB": "'Tough on crime, tough on the causes of crime'.",
+        "MIG": "Moderate.",
+        "INT": "Pro-European, Atlanticist, raised aid.",
+        "CLI": "Signed Kyoto.",
+        "TEC": "Little profile.",
+        "DEM": "Devolution, Human Rights Act, Lords reform."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: New Labour",
+          "url": "https://en.wikipedia.org/wiki/New_Labour"
+        }
+      ]
+    },
+    {
+      "year": 1999,
+      "label": "CHES 1999",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 1999, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-46, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": -3,
+        "SOC": -10
+      },
+      "ches": {
+        "party_id": "1102",
+        "party": "LAB",
+        "items": {
+          "eu_position": 5.38,
+          "lrecon": 4.85,
+          "galtan": 4.5
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2002,
+      "label": "CHES 2002",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2002, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [-41, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": 6,
+        "SOC": -3
+      },
+      "ches": {
+        "party_id": "1102",
+        "party": "LAB",
+        "items": {
+          "eu_position": 5.22,
+          "lrecon": 5.28,
+          "galtan": 4.83
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "label": "CHES 2006",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2006, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [20, "h"],
+        "eco_lab": null,
+        "eco_tax": [-19, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-37, "h"],
+        "soc_rel": [0, "h"],
+        "soc_mor": [-37, "h"],
+        "lib_priv": null,
+        "lib_just": [43, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [30, "h"],
+        "mig_asy": null,
+        "mig_int": [28, "h"],
+        "mig_nat": [6, "h"],
+        "int_eu": [-41, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-9, "h"]
+      },
+      "proxies": {
+        "ECO": -11,
+        "SOC": -7
+      },
+      "ches": {
+        "party_id": "1102",
+        "party": "LAB",
+        "items": {
+          "deregulation": 6.0,
+          "redistribution": 4.38,
+          "spendvtax": 3.67,
+          "sociallifestyle": 3.14,
+          "religious_principles": 5.0,
+          "civlib_laworder": 7.14,
+          "immigrate_policy": 6.5,
+          "multiculturalism": 6.38,
+          "nationalism": 5.29,
+          "eu_position": 5.22,
+          "regions": 4.57,
+          "lrecon": 4.44,
+          "galtan": 4.67
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "label": "CHES 2010",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2010, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-11, "h"],
+        "eco_lab": null,
+        "eco_tax": [-38, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-53, "h"],
+        "soc_rel": [-15, "h"],
+        "soc_mor": [-53, "h"],
+        "lib_priv": null,
+        "lib_just": [21, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [11, "h"],
+        "mig_asy": null,
+        "mig_int": [-23, "h"],
+        "mig_nat": null,
+        "int_eu": [-27, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [5, "h"],
+        "cli_pay": null,
+        "cli_nat": [5, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-25, "h"]
+      },
+      "proxies": {
+        "ECO": -20,
+        "SOC": -19
+      },
+      "ches": {
+        "party_id": "1102",
+        "party": "LAB",
+        "items": {
+          "deregulation": 4.43,
+          "redistribution": 3.36,
+          "spendvtax": 2.87,
+          "sociallifestyle": 2.36,
+          "religious_principles": 4.25,
+          "civlib_laworder": 6.07,
+          "immigrate_policy": 5.57,
+          "multiculturalism": 3.83,
+          "eu_position": 4.8,
+          "environment": 5.23,
+          "regions": 3.75,
+          "lrecon": 4.0,
+          "galtan": 4.07
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-10, "h"],
+        "eco_lab": null,
+        "eco_tax": [-25, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-60, "h"],
+        "soc_rel": [-3, "h"],
+        "soc_mor": [-60, "h"],
+        "lib_priv": null,
+        "lib_just": [0, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [9, "h"],
+        "mig_asy": null,
+        "mig_int": [-23, "h"],
+        "mig_nat": [-17, "h"],
+        "int_eu": [-52, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [0, "h"],
+        "cli_pay": null,
+        "cli_nat": [0, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-20, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-13, "h"]
+      },
+      "proxies": {
+        "ECO": -23,
+        "SOC": -31
+      },
+      "ches": {
+        "party_id": "1102",
+        "party": "LAB",
+        "items": {
+          "deregulation": 4.5,
+          "redistribution": 3.33,
+          "spendvtax": 4.14,
+          "sociallifestyle": 2.0,
+          "religious_principles": 4.83,
+          "civlib_laworder": 5.0,
+          "immigrate_policy": 5.43,
+          "multiculturalism": 3.83,
+          "nationalism": 4.17,
+          "eu_position": 5.57,
+          "environment": 5.0,
+          "antielite_salience": 4.0,
+          "regions": 4.33,
+          "lrecon": 3.86,
+          "galtan": 3.43
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-75, "h"],
+        "eco_lab": null,
+        "eco_tax": [-66, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-75, "h"],
+        "soc_rel": [-37, "h"],
+        "soc_mor": [-75, "h"],
+        "lib_priv": null,
+        "lib_just": [-35, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-29, "h"],
+        "mig_asy": null,
+        "mig_int": [-37, "h"],
+        "mig_nat": [-40, "h"],
+        "int_eu": [0, "h"],
+        "int_trade": [23, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-36, "h"],
+        "cli_pay": null,
+        "cli_nat": [-36, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-1, "h"],
+        "dem_direct": [-14, "h"],
+        "dem_courts": null,
+        "dem_central": [-20, "h"]
+      },
+      "proxies": {
+        "ECO": -61,
+        "SOC": -54
+      },
+      "ches": {
+        "party_id": "1102",
+        "party": "LAB",
+        "items": {
+          "deregulation": 1.25,
+          "redistribution": 1.59,
+          "spendvtax": 1.82,
+          "sociallifestyle": 1.24,
+          "religious_principles": 3.17,
+          "civlib_laworder": 3.27,
+          "immigrate_policy": 3.53,
+          "multiculturalism": 3.14,
+          "nationalism": 3.0,
+          "eu_position": 4.0,
+          "protectionism": 6.15,
+          "environment": 3.18,
+          "antielite_salience": 4.94,
+          "people_vs_elite": 4.31,
+          "regions": 4.0,
+          "lrecon": 1.94,
+          "galtan": 2.29
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-17, "h"],
+        "eco_lab": null,
+        "eco_tax": [-35, "h"],
+        "soc_fam": [-52, "h"],
+        "soc_lgbt": [-47, "h"],
+        "soc_rel": [-29, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [-8, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [2, "h"],
+        "mig_asy": null,
+        "mig_int": [-34, "h"],
+        "mig_nat": [-29, "h"],
+        "int_eu": [-14, "h"],
+        "int_trade": [-31, "h"],
+        "int_def": [-70, "h"],
+        "int_aid": null,
+        "cli_amb": [-40, "h"],
+        "cli_pay": null,
+        "cli_nat": [-44, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-68, "h"],
+        "dem_direct": [-49, "h"],
+        "dem_courts": [-41, "h"],
+        "dem_central": [-44, "h"]
+      },
+      "proxies": {
+        "ECO": -28,
+        "SOC": -33
+      },
+      "ches": {
+        "party_id": "1102",
+        "party": "LAB",
+        "items": {
+          "deregulation": 4.13,
+          "redistribution": 3.55,
+          "spendvtax": 3.0,
+          "womens_rights": 2.38,
+          "lgbtq_rights": 2.64,
+          "religious_principles": 3.57,
+          "civlib_laworder": 4.62,
+          "immigrate_policy": 5.1,
+          "multiculturalism": 3.32,
+          "nationalism": 3.55,
+          "eu_position": 4.43,
+          "protectionism": 3.45,
+          "eu_russia": 1.5,
+          "climate_change": 3.0,
+          "environment": 2.8,
+          "antielite_salience": 1.6,
+          "people_vs_elite": 2.56,
+          "judicial_independence": 1.43,
+          "executive_power": 4.5,
+          "regions": 2.8,
+          "lrecon": 3.62,
+          "galtan": 3.33
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Positions and record up to Nov 2026. In government since July 2024.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-20, "h"],
+        "eco_reg": [-20, "h"],
+        "eco_lab": [-45, "h"],
+        "eco_tax": [-20, "h"],
+        "soc_fam": [-50, "m"],
+        "soc_lgbt": [-45, "m"],
+        "soc_rel": [-30, "m"],
+        "soc_mor": [-15, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [16, "m"],
+        "lib_speech": [40, "m"],
+        "lib_emerg": [25, "m"],
+        "mig_lvl": [35, "h"],
+        "mig_asy": [40, "h"],
+        "mig_int": [-4, "m"],
+        "mig_nat": [5, "h"],
+        "int_eu": [-20, "m"],
+        "int_trade": [-50, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [30, "m"],
+        "cli_amb": [-60, "h"],
+        "cli_pay": [-30, "h"],
+        "cli_nat": [-17, "m"],
+        "cli_intl": [-75, "h"],
+        "tec_ai": [60, "m"],
+        "tec_bio": [50, "m"],
+        "tec_nuc": [75, "m"],
+        "tec_big": [15, "m"],
+        "dem_trust": [-50, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-40, "m"],
+        "dem_central": [-30, "m"]
+      },
+      "notes": {
+        "ECO": "Rail renationalisation, GB Energy, Employment Rights Act; fiscal caution.",
+        "SOC": "Progressive, cautious on gender identity after the Supreme Court ruling.",
+        "LIB": "Digital ID plans, Online Safety Act, proscription of protest groups.",
+        "MIG": "Aims to cut net migration sharply, tougher asylum rules.",
+        "INT": "EU reset without rejoining; aid cut to 0.3%.",
+        "CLI": "Clean power by 2030; planning reform eases development.",
+        "TEC": "Pro AI growth, pro nuclear.",
+        "DEM": "Institutional; devolution to English mayors."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://labour.org.uk/"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "lib_just": {
+            "hand": 40,
+            "ches": -8,
+            "new": 16
+          },
+          "mig_int": {
+            "hand": 25,
+            "ches": -34,
+            "new": -4
+          },
+          "cli_nat": {
+            "hand": 10,
+            "ches": -44,
+            "new": -17
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

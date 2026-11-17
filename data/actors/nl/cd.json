@@ -1,0 +1,75 @@
+{
+  "id": "nl-cd",
+  "type": "party",
+  "name": "CD",
+  "full_name": "Centrumdemocraten",
+  "country": "NL",
+  "active": {
+    "from": 1984,
+    "to": 2002
+  },
+  "predecessors": [],
+  "successors": [],
+  "status": "ches-only",
+  "snapshots": [
+    {
+      "year": 1999,
+      "label": "CHES 1999",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 1999, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": null,
+        "eco_lab": null,
+        "eco_tax": null,
+        "soc_fam": null,
+        "soc_lgbt": null,
+        "soc_rel": null,
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": null,
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": null,
+        "mig_asy": null,
+        "mig_int": null,
+        "mig_nat": null,
+        "int_eu": [85, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": null,
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": null
+      },
+      "proxies": {
+        "ECO": 71,
+        "SOC": 85
+      },
+      "ches": {
+        "party_id": "1009",
+        "party": "CD",
+        "items": {
+          "eu_position": 1.44,
+          "lrecon": 8.57,
+          "galtan": 9.25
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    }
+  ]
+}

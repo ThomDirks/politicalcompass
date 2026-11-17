@@ -1,0 +1,160 @@
+{
+  "id": "de-piraten",
+  "type": "party",
+  "name": "Piraten",
+  "full_name": "Piratenpartei Deutschland",
+  "country": "DE",
+  "active": {
+    "from": 2006,
+    "to": null
+  },
+  "predecessors": [],
+  "successors": [],
+  "status": "ches-only",
+  "snapshots": [
+    {
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-53, "h"],
+        "eco_lab": null,
+        "eco_tax": [-40, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-83, "h"],
+        "soc_rel": [-75, "h"],
+        "soc_mor": [-83, "h"],
+        "lib_priv": null,
+        "lib_just": [-60, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-50, "h"],
+        "mig_asy": null,
+        "mig_int": [-60, "h"],
+        "mig_nat": [-75, "h"],
+        "int_eu": [-24, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-33, "h"],
+        "cli_pay": null,
+        "cli_nat": [-33, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [37, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [-60, "h"]
+      },
+      "proxies": {
+        "ECO": -35,
+        "SOC": -62
+      },
+      "ches": {
+        "party_id": "311",
+        "party": "Piraten",
+        "items": {
+          "deregulation": 2.33,
+          "redistribution": 3.0,
+          "spendvtax": 3.0,
+          "sociallifestyle": 0.83,
+          "religious_principles": 1.25,
+          "civlib_laworder": 2.0,
+          "immigrate_policy": 2.5,
+          "multiculturalism": 2.0,
+          "nationalism": 1.25,
+          "eu_position": 4.71,
+          "environment": 3.33,
+          "antielite_salience": 6.86,
+          "regions": 2.0,
+          "lrecon": 3.25,
+          "galtan": 1.91
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-60, "h"],
+        "eco_lab": null,
+        "eco_tax": [-42, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-82, "h"],
+        "soc_rel": [-85, "h"],
+        "soc_mor": [-82, "h"],
+        "lib_priv": null,
+        "lib_just": [-87, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-75, "h"],
+        "mig_asy": null,
+        "mig_int": [-70, "h"],
+        "mig_nat": [-77, "h"],
+        "int_eu": [-83, "h"],
+        "int_trade": [-40, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-10, "h"],
+        "cli_pay": null,
+        "cli_nat": [-10, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [76, "h"],
+        "dem_direct": [78, "h"],
+        "dem_courts": null,
+        "dem_central": [0, "h"]
+      },
+      "proxies": {
+        "ECO": -52,
+        "SOC": -73
+      },
+      "ches": {
+        "party_id": "311",
+        "party": "Piraten",
+        "items": {
+          "deregulation": 2.0,
+          "redistribution": 2.5,
+          "spendvtax": 3.25,
+          "sociallifestyle": 0.88,
+          "religious_principles": 0.75,
+          "civlib_laworder": 0.67,
+          "immigrate_policy": 1.25,
+          "multiculturalism": 1.5,
+          "nationalism": 1.14,
+          "eu_position": 6.5,
+          "protectionism": 3.0,
+          "environment": 4.5,
+          "antielite_salience": 8.8,
+          "people_vs_elite": 8.9,
+          "regions": 5.0,
+          "lrecon": 2.4,
+          "galtan": 1.33
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    }
+  ]
+}

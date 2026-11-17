@@ -67,32 +67,52 @@ Relative labels come from the distance to the centre. A user at −30 on Economy
 
 ## Actors: parties and politicians
 
-Every party or politician is an **actor** with a profile in `data/actors/<country>/<id>.json`. Profiles are dated with a `period`, so the same party can have several profiles over time (Labour 1997 and Labour 2024, for example). Individual politicians use the same format, with `type: "politician"` and a link to their party.
+Every party or politician is an **actor** with one file in `data/actors/<country>/<id>.json`. An actor holds its identity (name, country, years active, predecessors and successors) and a list of dated **snapshots**. Individual politicians will use the same format with `type: "politician"`.
 
 ```json
 {
-  "id": "nl-d66",
+  "id": "uk-labour",
   "type": "party",
-  "name": "D66",
-  "country": "NL",
-  "period": { "from": "2025", "to": null, "basis": "What the score is based on" },
+  "name": "Labour",
+  "country": "UK",
+  "active": { "from": 1900, "to": null },
+  "predecessors": [],
   "status": "draft",
-  "salience": { "ECO": 3, "SOC": 4, "...": 0 },
-  "facets": { "eco_own": [15, "m"], "...": [0, "l"] },
-  "notes": { "ECO": "Short evidence per axis", "...": "" },
-  "sources": [{ "title": "...", "url": "..." }]
+  "snapshots": [
+    { "year": 1945, "method": "hand", "label": "Attlee era", "facets": { "eco_own": [-85, "m"], "...": null } },
+    { "year": 2019, "method": "ches", "label": "CHES 2019", "facets": { "eco_reg": [-80, "h"], "...": null }, "proxies": { "ECO": -70 } },
+    { "year": 2026, "method": "hand", "label": "Current (Nov 2026)", "facets": { "...": [0, "m"] } }
+  ]
 }
 ```
 
-Each facet score has a confidence: **h** (clear, documented position), **m** (direction known, size estimated) or **l** (thin evidence).
+Each facet score is `[score, confidence]`: **h** (clear, documented position), **m** (direction known, size estimated) or **l** (thin evidence). `null` means no data for that facet in that snapshot.
 
-### Status of the current profiles
+### Two kinds of snapshots
 
-The first profiles are **drafts**. They were scored by hand from party programmes, voting behaviour and public positions as of November 2026. They are a starting point, not a measurement. Before going live they should be calibrated against independent data:
+**Hand-scored (`method: "hand"`).** Scored against the facet anchors from programmes, votes and conduct in office. Every current snapshot scores all 32 facets. Historical snapshots leave a facet `null` only when the issue did not exist yet (AI in 1936, climate deals in 1965). Hand snapshots also carry salience and a short note per axis.
 
-- **Chapel Hill Expert Survey 2024** for NL, DE and UK parties. It covers economy, GAL-TAN, EU, immigration, environment, civil liberties, anti-elite rhetoric and judicial independence, which maps onto about half the facets.
-- **Voting advice tools** (StemWijzer, Kieskompas, Wahl-O-Mat) where parties answer statements themselves.
-- **Roll-call votes** for individual politicians later (Tweede Kamer, Bundestag and UK Parliament open data, Voteview for the US Congress).
+**Expert survey (`method: "ches"`).** Imported from the Chapel Hill Expert Survey trend file, 1999 to 2024, with `tools/import_ches.py`. CHES asks about 20 of the 32 facets (mapping in `data/ches_mapping.json`); the rest stay `null`. In 1999 and 2002 CHES only asked overall economic left/right, GAL-TAN and EU position, so those snapshots carry axis **proxies** for Economy and Social values instead of facet detail. The raw CHES values are stored in each snapshot for transparency.
+
+### Calibration
+
+The current hand scores were checked against CHES 2024 with `tools/calibrate_ches.py`. Where the two differed by 35 points or more on a facet, the score became the average of both, unless there is a documented reason to keep the hand score (for example a policy change after 2024). Every adjustment and every exception is recorded in the snapshot under `calibration`. `docs/calibration.md` lists the remaining differences.
+
+### Drift
+
+Because every actor has dated snapshots, PCompass can show how a party moved over time: Labour from Attlee to Foot to Blair to Corbyn and Starmer, or the VVD's swing on migration. `docs/drift.md` lists every snapshot per party. Things to keep in mind when reading drift:
+
+- Compare like with like. CHES rows only cover the facets CHES asks about, and early waves only have proxies. A jump between a CHES row and a hand row can partly be the change of method.
+- Scales are absolute. A 1936 party is measured against today's anchors, so most historical parties look traditional on social values. That is accurate in absolute terms. Reading a party relative to its own time needs historical country frames, which are a later step.
+- Merged parties keep their history through `predecessors`: PRO links to PvdA and GroenLinks, CDA to KVP and ARP, Die Linke to the SED via the PDS.
+
+### Historical parties
+
+Former parties are included when they were large or historically significant: for example NSDAP, KPD, Zentrum and SED in Germany; NSB, KVP, ARP, CPN, LPF, PvdA and GroenLinks in the Netherlands; BUF, SDP, UKIP and BNP in the UK; and the Dixiecrats in the US. They are scored on the same scales as current parties, which makes it possible to show plainly where an answer pattern overlaps with, for example, fascist or communist programmes. Profiles of totalitarian parties describe their programme and conduct in office factually, including persecution and genocide where relevant.
+
+## Possible simplification
+
+Eight axes may be too many for the main result screen. Since every axis is the mean of its facets, axes can later be **bracketed** into fewer groups (for example an economic, a cultural and an institutional block) without rescoring anything. This is still open.
 
 ## Matching
 

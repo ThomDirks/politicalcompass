@@ -4,79 +4,399 @@
   "name": "PvdD",
   "full_name": "Partij voor de Dieren",
   "country": "NL",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  "active": {
+    "from": 2002,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 2,
-    "LIB": 3,
-    "MIG": 2,
-    "INT": 2,
-    "CLI": 5,
-    "TEC": 3,
-    "DEM": 2
-  },
-  "facets": {
-    "eco_own": [-60, "m"],
-    "eco_reg": [-75, "m"],
-    "eco_lab": [-60, "m"],
-    "eco_tax": [-70, "m"],
-    "soc_fam": [-75, "m"],
-    "soc_lgbt": [-85, "m"],
-    "soc_rel": [-70, "m"],
-    "soc_mor": [-55, "m"],
-    "lib_priv": [-75, "m"],
-    "lib_just": [-50, "m"],
-    "lib_speech": [0, "m"],
-    "lib_emerg": [-55, "m"],
-    "mig_lvl": [-40, "m"],
-    "mig_asy": [-65, "m"],
-    "mig_int": [-45, "m"],
-    "mig_nat": [-60, "m"],
-    "int_eu": [20, "m"],
-    "int_trade": [55, "m"],
-    "int_def": [10, "m"],
-    "int_aid": [-70, "m"],
-    "cli_amb": [-100, "h"],
-    "cli_pay": [-90, "h"],
-    "cli_nat": [-100, "h"],
-    "cli_intl": [-95, "h"],
-    "tec_ai": [-55, "m"],
-    "tec_bio": [-85, "m"],
-    "tec_nuc": [-85, "m"],
-    "tec_big": [-75, "m"],
-    "dem_trust": [0, "m"],
-    "dem_direct": [40, "m"],
-    "dem_courts": [-60, "m"],
-    "dem_central": [-20, "m"]
-  },
-  "notes": {
-    "ECO": "Anti-growth, against corporate power.",
-    "SOC": "Progressive.",
-    "LIB": "Strong on privacy and civil liberties.",
-    "MIG": "Humane asylum.",
-    "INT": "EU-critical from the left, against free trade deals.",
-    "CLI": "Animals and climate first: halve livestock, fast transition.",
-    "TEC": "Against GMOs and nuclear.",
-    "DEM": "Supports referendums."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://www.partijvoordedieren.nl/"
+      "year": 2010,
+      "label": "CHES 2010",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2010, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-20, "h"],
+        "eco_lab": null,
+        "eco_tax": [-23, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-44, "h"],
+        "soc_rel": [-4, "h"],
+        "soc_mor": [-44, "h"],
+        "lib_priv": null,
+        "lib_just": [-16, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-30, "h"],
+        "mig_asy": null,
+        "mig_int": [-25, "h"],
+        "mig_nat": null,
+        "int_eu": [12, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-68, "h"],
+        "cli_pay": null,
+        "cli_nat": [-68, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": null,
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [0, "h"]
+      },
+      "proxies": {
+        "ECO": -29,
+        "SOC": -24
+      },
+      "ches": {
+        "party_id": "1018",
+        "party": "PvdD",
+        "items": {
+          "deregulation": 4.0,
+          "redistribution": 4.17,
+          "spendvtax": 3.57,
+          "sociallifestyle": 2.8,
+          "religious_principles": 4.8,
+          "civlib_laworder": 4.2,
+          "immigrate_policy": 3.5,
+          "multiculturalism": 3.75,
+          "eu_position": 3.62,
+          "environment": 1.62,
+          "regions": 5.0,
+          "lrecon": 3.56,
+          "galtan": 3.8
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Tweede Kamer, zetelverdeling juni 2026",
-      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-75, "h"],
+        "eco_lab": null,
+        "eco_tax": [-46, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-60, "h"],
+        "soc_rel": [-73, "h"],
+        "soc_mor": [-60, "h"],
+        "lib_priv": null,
+        "lib_just": [-45, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-53, "h"],
+        "mig_asy": null,
+        "mig_int": [-40, "h"],
+        "mig_nat": [0, "h"],
+        "int_eu": [10, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-83, "h"],
+        "cli_pay": null,
+        "cli_nat": [-83, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [0, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [0, "h"]
+      },
+      "proxies": {
+        "ECO": -51,
+        "SOC": -53
+      },
+      "ches": {
+        "party_id": "1018",
+        "party": "PvdD",
+        "items": {
+          "deregulation": 1.25,
+          "redistribution": 2.67,
+          "spendvtax": 2.75,
+          "sociallifestyle": 2.0,
+          "religious_principles": 1.33,
+          "civlib_laworder": 2.75,
+          "immigrate_policy": 2.33,
+          "multiculturalism": 3.0,
+          "nationalism": 5.0,
+          "eu_position": 3.71,
+          "environment": 0.86,
+          "antielite_salience": 5.0,
+          "regions": 5.0,
+          "lrecon": 2.43,
+          "galtan": 2.33
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-60, "h"],
+        "eco_lab": null,
+        "eco_tax": [-45, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [-52, "h"],
+        "soc_rel": [-54, "h"],
+        "soc_mor": [-52, "h"],
+        "lib_priv": null,
+        "lib_just": [-46, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-36, "h"],
+        "mig_asy": null,
+        "mig_int": [-24, "h"],
+        "mig_nat": [-14, "h"],
+        "int_eu": [45, "h"],
+        "int_trade": [54, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-80, "h"],
+        "cli_pay": null,
+        "cli_nat": [-80, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [18, "h"],
+        "dem_direct": [26, "h"],
+        "dem_courts": null,
+        "dem_central": [40, "h"]
+      },
+      "proxies": {
+        "ECO": -36,
+        "SOC": -42
+      },
+      "ches": {
+        "party_id": "1018",
+        "party": "PVdD",
+        "items": {
+          "deregulation": 2.0,
+          "redistribution": 3.11,
+          "spendvtax": 2.36,
+          "sociallifestyle": 2.38,
+          "religious_principles": 2.29,
+          "civlib_laworder": 2.71,
+          "immigrate_policy": 3.22,
+          "multiculturalism": 3.8,
+          "nationalism": 4.3,
+          "eu_position": 2.64,
+          "protectionism": 7.71,
+          "environment": 1.0,
+          "antielite_salience": 5.92,
+          "people_vs_elite": 6.29,
+          "regions": 7.0,
+          "lrecon": 3.18,
+          "galtan": 2.92
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-66, "h"],
+        "eco_lab": null,
+        "eco_tax": [-48, "h"],
+        "soc_fam": [-64, "h"],
+        "soc_lgbt": [-68, "h"],
+        "soc_rel": [-56, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [-68, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-52, "h"],
+        "mig_asy": null,
+        "mig_int": [-34, "h"],
+        "mig_nat": [-53, "h"],
+        "int_eu": [17, "h"],
+        "int_trade": [50, "h"],
+        "int_def": [-20, "h"],
+        "int_aid": null,
+        "cli_amb": [-90, "h"],
+        "cli_pay": null,
+        "cli_nat": [-56, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-18, "h"],
+        "dem_direct": [-60, "h"],
+        "dem_courts": [-71, "h"],
+        "dem_central": [20, "h"]
+      },
+      "proxies": {
+        "ECO": -55,
+        "SOC": -55
+      },
+      "ches": {
+        "party_id": "1018",
+        "party": "PvdD",
+        "items": {
+          "deregulation": 1.71,
+          "redistribution": 4.22,
+          "spendvtax": 1.0,
+          "womens_rights": 1.8,
+          "lgbtq_rights": 1.6,
+          "religious_principles": 2.2,
+          "civlib_laworder": 1.6,
+          "immigrate_policy": 2.4,
+          "multiculturalism": 3.3,
+          "nationalism": 2.33,
+          "eu_position": 3.5,
+          "protectionism": 7.5,
+          "eu_russia": 4.0,
+          "climate_change": 0.5,
+          "environment": 2.2,
+          "antielite_salience": 4.12,
+          "people_vs_elite": 2.0,
+          "judicial_independence": 0.5,
+          "executive_power": 2.4,
+          "regions": 6.0,
+          "lrecon": 2.27,
+          "galtan": 2.25
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "TK2025 election programme and parliamentary record up to Nov 2026.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 5,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-60, "m"],
+        "eco_reg": [-75, "m"],
+        "eco_lab": [-60, "m"],
+        "eco_tax": [-70, "m"],
+        "soc_fam": [-75, "m"],
+        "soc_lgbt": [-85, "m"],
+        "soc_rel": [-70, "m"],
+        "soc_mor": [-55, "m"],
+        "lib_priv": [-75, "m"],
+        "lib_just": [-50, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [-40, "m"],
+        "mig_asy": [-65, "m"],
+        "mig_int": [-45, "m"],
+        "mig_nat": [-60, "m"],
+        "int_eu": [20, "m"],
+        "int_trade": [55, "m"],
+        "int_def": [10, "m"],
+        "int_aid": [-70, "m"],
+        "cli_amb": [-100, "h"],
+        "cli_pay": [-90, "h"],
+        "cli_nat": [-78, "m"],
+        "cli_intl": [-95, "h"],
+        "tec_ai": [-55, "m"],
+        "tec_bio": [-85, "m"],
+        "tec_nuc": [-85, "m"],
+        "tec_big": [-75, "m"],
+        "dem_trust": [0, "m"],
+        "dem_direct": [-10, "m"],
+        "dem_courts": [-60, "m"],
+        "dem_central": [0, "m"]
+      },
+      "notes": {
+        "ECO": "Anti-growth, against corporate power.",
+        "SOC": "Progressive.",
+        "LIB": "Strong on privacy and civil liberties.",
+        "MIG": "Humane asylum.",
+        "INT": "EU-critical from the left, against free trade deals.",
+        "CLI": "Animals and climate first: halve livestock, fast transition.",
+        "TEC": "Against GMOs and nuclear.",
+        "DEM": "Supports referendums."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://www.partijvoordedieren.nl/"
+        },
+        {
+          "title": "Tweede Kamer, zetelverdeling juni 2026",
+          "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "cli_nat": {
+            "hand": -100,
+            "ches": -56,
+            "new": -78
+          },
+          "dem_direct": {
+            "hand": 40,
+            "ches": -60,
+            "new": -10
+          },
+          "dem_central": {
+            "hand": -20,
+            "ches": 20,
+            "new": 0
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

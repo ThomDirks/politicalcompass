@@ -4,79 +4,253 @@
   "name": "DENK",
   "full_name": "DENK",
   "country": "NL",
-  "period": {
-    "from": "2025",
-    "to": null,
-    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  "active": {
+    "from": 2015,
+    "to": null
   },
+  "predecessors": [],
   "status": "draft",
-  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
-  "salience": {
-    "ECO": 3,
-    "SOC": 2,
-    "LIB": 3,
-    "MIG": 5,
-    "INT": 3,
-    "CLI": 1,
-    "TEC": 1,
-    "DEM": 3
-  },
-  "facets": {
-    "eco_own": [-35, "m"],
-    "eco_reg": [-45, "m"],
-    "eco_lab": [-50, "m"],
-    "eco_tax": [-55, "m"],
-    "soc_fam": [35, "m"],
-    "soc_lgbt": [40, "m"],
-    "soc_rel": [25, "m"],
-    "soc_mor": [45, "m"],
-    "lib_priv": [-50, "m"],
-    "lib_just": [-30, "m"],
-    "lib_speech": [50, "m"],
-    "lib_emerg": [-30, "m"],
-    "mig_lvl": [-55, "h"],
-    "mig_asy": [-65, "h"],
-    "mig_int": [-85, "h"],
-    "mig_nat": [-75, "h"],
-    "int_eu": [-20, "m"],
-    "int_trade": [-10, "m"],
-    "int_def": [0, "m"],
-    "int_aid": [-60, "m"],
-    "cli_amb": [-30, "l"],
-    "cli_pay": [-20, "l"],
-    "cli_nat": [-10, "l"],
-    "cli_intl": [-40, "l"],
-    "tec_ai": [-20, "l"],
-    "tec_bio": [0, "l"],
-    "tec_nuc": [0, "l"],
-    "tec_big": [-30, "l"],
-    "dem_trust": [10, "l"],
-    "dem_direct": [0, "l"],
-    "dem_courts": [-40, "l"],
-    "dem_central": [0, "l"]
-  },
-  "notes": {
-    "ECO": "Left on welfare and housing.",
-    "SOC": "Socially conservative on family and LGBTQ issues.",
-    "LIB": "Against ethnic profiling; wants stricter laws on discrimination and Islamophobia.",
-    "MIG": "Core issue: anti-racism, against assimilation demands.",
-    "INT": "Critical of Israel and Western foreign policy.",
-    "CLI": "Moderate.",
-    "TEC": "Little profile.",
-    "DEM": "Critical of institutional racism, otherwise loyal to the system."
-  },
-  "sources": [
+  "snapshots": [
     {
-      "title": "Party website",
-      "url": "https://www.bewegingdenk.nl/"
+      "year": 2019,
+      "label": "CHES 2019",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2019, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-18, "h"],
+        "eco_lab": null,
+        "eco_tax": [-34, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [24, "h"],
+        "soc_rel": [46, "h"],
+        "soc_mor": [24, "h"],
+        "lib_priv": null,
+        "lib_just": [-43, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-69, "h"],
+        "mig_asy": null,
+        "mig_int": [-87, "h"],
+        "mig_nat": [-18, "h"],
+        "int_eu": [-22, "h"],
+        "int_trade": [20, "h"],
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [-16, "h"],
+        "cli_pay": null,
+        "cli_nat": [-16, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [25, "h"],
+        "dem_direct": [26, "h"],
+        "dem_courts": null,
+        "dem_central": [33, "h"]
+      },
+      "proxies": {
+        "ECO": -30,
+        "SOC": 51
+      },
+      "ches": {
+        "party_id": "1050",
+        "party": "DENK",
+        "items": {
+          "deregulation": 4.12,
+          "redistribution": 3.12,
+          "spendvtax": 3.43,
+          "sociallifestyle": 6.22,
+          "religious_principles": 7.3,
+          "civlib_laworder": 2.83,
+          "immigrate_policy": 1.56,
+          "multiculturalism": 0.64,
+          "nationalism": 4.09,
+          "eu_position": 4.67,
+          "protectionism": 6.0,
+          "environment": 4.2,
+          "antielite_salience": 6.27,
+          "people_vs_elite": 6.29,
+          "regions": 6.67,
+          "lrecon": 3.5,
+          "galtan": 7.55
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Tweede Kamer, zetelverdeling juni 2026",
-      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+      "year": 2024,
+      "label": "CHES 2024",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2024, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-33, "h"],
+        "eco_lab": null,
+        "eco_tax": [-28, "h"],
+        "soc_fam": [55, "h"],
+        "soc_lgbt": [48, "h"],
+        "soc_rel": [63, "h"],
+        "soc_mor": null,
+        "lib_priv": null,
+        "lib_just": [-35, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [-76, "h"],
+        "mig_asy": null,
+        "mig_int": [-62, "h"],
+        "mig_nat": [-53, "h"],
+        "int_eu": [-10, "h"],
+        "int_trade": [0, "h"],
+        "int_def": [0, "h"],
+        "int_aid": null,
+        "cli_amb": [0, "h"],
+        "cli_pay": null,
+        "cli_nat": [0, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [5, "h"],
+        "dem_direct": [-70, "h"],
+        "dem_courts": [-48, "h"],
+        "dem_central": [10, "h"]
+      },
+      "proxies": {
+        "ECO": -28,
+        "SOC": 26
+      },
+      "ches": {
+        "party_id": "1050",
+        "party": "DENK",
+        "items": {
+          "deregulation": 3.33,
+          "redistribution": 3.62,
+          "womens_rights": 7.75,
+          "lgbtq_rights": 7.4,
+          "religious_principles": 8.17,
+          "civlib_laworder": 3.25,
+          "immigrate_policy": 1.22,
+          "multiculturalism": 1.89,
+          "nationalism": 2.33,
+          "eu_position": 4.29,
+          "protectionism": 5.0,
+          "eu_russia": 5.0,
+          "climate_change": 5.0,
+          "environment": 5.0,
+          "antielite_salience": 5.25,
+          "people_vs_elite": 1.5,
+          "judicial_independence": 0.5,
+          "executive_power": 4.67,
+          "regions": 5.5,
+          "lrecon": 3.6,
+          "galtan": 6.29
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
     },
     {
-      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
-      "url": "https://www.chesdata.eu/"
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "TK2025 election programme and parliamentary record up to Nov 2026.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-35, "m"],
+        "eco_reg": [-45, "m"],
+        "eco_lab": [-50, "m"],
+        "eco_tax": [-55, "m"],
+        "soc_fam": [35, "m"],
+        "soc_lgbt": [40, "m"],
+        "soc_rel": [44, "m"],
+        "soc_mor": [45, "m"],
+        "lib_priv": [-50, "m"],
+        "lib_just": [-30, "m"],
+        "lib_speech": [50, "m"],
+        "lib_emerg": [-30, "m"],
+        "mig_lvl": [-55, "h"],
+        "mig_asy": [-65, "h"],
+        "mig_int": [-85, "h"],
+        "mig_nat": [-75, "h"],
+        "int_eu": [-20, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [0, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-30, "l"],
+        "cli_pay": [-20, "l"],
+        "cli_nat": [-10, "l"],
+        "cli_intl": [-40, "l"],
+        "tec_ai": [-20, "l"],
+        "tec_bio": [0, "l"],
+        "tec_nuc": [0, "l"],
+        "tec_big": [-30, "l"],
+        "dem_trust": [10, "l"],
+        "dem_direct": [-35, "m"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [0, "l"]
+      },
+      "notes": {
+        "ECO": "Left on welfare and housing.",
+        "SOC": "Socially conservative on family and LGBTQ issues.",
+        "LIB": "Against ethnic profiling; wants stricter laws on discrimination and Islamophobia.",
+        "MIG": "Core issue: anti-racism, against assimilation demands.",
+        "INT": "Critical of Israel and Western foreign policy.",
+        "CLI": "Moderate.",
+        "TEC": "Little profile.",
+        "DEM": "Critical of institutional racism, otherwise loyal to the system."
+      },
+      "sources": [
+        {
+          "title": "Party website",
+          "url": "https://www.bewegingdenk.nl/"
+        },
+        {
+          "title": "Tweede Kamer, zetelverdeling juni 2026",
+          "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+        },
+        {
+          "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+          "url": "https://www.chesdata.eu/"
+        }
+      ],
+      "calibration": {
+        "against": "CHES 2024 (own)",
+        "rule": "average where gap >= 35",
+        "adjusted": {
+          "soc_rel": {
+            "hand": 25,
+            "ches": 63,
+            "new": 44
+          },
+          "dem_direct": {
+            "hand": 0,
+            "ches": -70,
+            "new": -35
+          }
+        },
+        "kept": {}
+      }
     }
   ]
 }

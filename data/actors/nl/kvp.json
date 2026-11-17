@@ -1,0 +1,81 @@
+{
+  "id": "nl-kvp",
+  "type": "party",
+  "name": "KVP",
+  "full_name": "Katholieke Volkspartij",
+  "country": "NL",
+  "active": {
+    "from": 1945,
+    "to": 1980
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1965,
+      "label": "1945 to 1980",
+      "method": "hand",
+      "basis": "Hand-scored from the historical record (programme and conduct in office). Scored on the 1960s.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 5,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [0, "m"],
+        "eco_reg": [5, "m"],
+        "eco_lab": [-20, "m"],
+        "eco_tax": [-20, "m"],
+        "soc_fam": [80, "m"],
+        "soc_lgbt": [90, "m"],
+        "soc_rel": [90, "m"],
+        "soc_mor": [90, "m"],
+        "lib_priv": [20, "m"],
+        "lib_just": [40, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [20, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [40, "l"],
+        "mig_nat": [20, "l"],
+        "int_eu": [-60, "m"],
+        "int_trade": [-40, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-30, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [40, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "l"],
+        "dem_direct": [-60, "l"],
+        "dem_courts": [-50, "l"],
+        "dem_central": [-20, "l"]
+      },
+      "notes": {
+        "ECO": "Built the welfare state together with PvdA.",
+        "SOC": "Catholic positions on family, divorce, abortion and euthanasia.",
+        "LIB": "Moderate.",
+        "MIG": "Pillarised society; little focus on migration.",
+        "INT": "Founding supporter of European integration and NATO.",
+        "CLI": "Not on the agenda.",
+        "TEC": "Supported early nuclear energy.",
+        "DEM": "Establishment party of the pillarised system."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Catholic People's Party",
+          "url": "https://en.wikipedia.org/wiki/Catholic_People's_Party"
+        }
+      ]
+    }
+  ]
+}

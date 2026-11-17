@@ -1,0 +1,87 @@
+{
+  "id": "de-npd",
+  "type": "party",
+  "name": "NPD",
+  "full_name": "Nationaldemokratische Partei Deutschlands (Die Heimat since 2023)",
+  "country": "DE",
+  "active": {
+    "from": 1964,
+    "to": null
+  },
+  "predecessors": [],
+  "successors": [],
+  "status": "ches-only",
+  "snapshots": [
+    {
+      "year": 2014,
+      "label": "CHES 2014",
+      "method": "ches",
+      "basis": "Chapel Hill Expert Survey 2014, expert means. Facets without a matching CHES item are null.",
+      "facets": {
+        "eco_own": null,
+        "eco_reg": [-33, "h"],
+        "eco_lab": null,
+        "eco_tax": [4, "h"],
+        "soc_fam": null,
+        "soc_lgbt": [90, "h"],
+        "soc_rel": [-13, "h"],
+        "soc_mor": [90, "h"],
+        "lib_priv": null,
+        "lib_just": [93, "h"],
+        "lib_speech": null,
+        "lib_emerg": null,
+        "mig_lvl": [80, "h"],
+        "mig_asy": null,
+        "mig_int": [100, "h"],
+        "mig_nat": [98, "h"],
+        "int_eu": [78, "h"],
+        "int_trade": null,
+        "int_def": null,
+        "int_aid": null,
+        "cli_amb": [10, "h"],
+        "cli_pay": null,
+        "cli_nat": [10, "h"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [82, "h"],
+        "dem_direct": null,
+        "dem_courts": null,
+        "dem_central": [20, "h"]
+      },
+      "proxies": {
+        "ECO": 7,
+        "SOC": 96
+      },
+      "ches": {
+        "party_id": "309",
+        "party": "NPD",
+        "items": {
+          "deregulation": 3.33,
+          "redistribution": 5.6,
+          "spendvtax": 4.8,
+          "sociallifestyle": 9.5,
+          "religious_principles": 4.33,
+          "civlib_laworder": 9.67,
+          "immigrate_policy": 9.0,
+          "multiculturalism": 10.0,
+          "nationalism": 9.89,
+          "eu_position": 1.67,
+          "environment": 5.5,
+          "antielite_salience": 9.11,
+          "regions": 6.0,
+          "lrecon": 5.33,
+          "galtan": 9.82
+        }
+      },
+      "sources": [
+        {
+          "title": "Chapel Hill Expert Survey trend file 1999-2024 (means, V2)",
+          "url": "https://www.chesdata.eu/ches-europe/"
+        }
+      ]
+    }
+  ]
+}
