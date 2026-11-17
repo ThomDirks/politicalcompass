@@ -1,6 +1,6 @@
 # PCompass
 
-A political orientation test that goes further than left/right and auth/lib. You get one of sixteen political types (each with its own character), a profile on eight axes and 32 facets, and a comparison with current and historical parties (and later politicians) from the Netherlands, Germany, the United Kingdom and the United States.
+A political orientation test that goes further than left/right and auth/lib. You get one of eighteen political types in nine camps (each with its own character), a profile on eight axes and 32 facets, and a comparison with current and historical parties (and later politicians) from the Netherlands, Germany, the United Kingdom and the United States.
 
 Because "left" in one country can be "right" in another, scores are measured on absolute scales and then read against a country frame of your choice. Every party has dated snapshots, so you can also see how parties drifted over the years.
 
@@ -18,7 +18,7 @@ Because "left" in one country can be "right" in another, scores are measured on 
 | `data/countries/` | Country frames: parties, weights, local topics |
 | `data/actors/<country>/` | One file per party with all its snapshots |
 | `data/ches_mapping.json` | How CHES items map onto PCompass facets |
-| `data/types.json` | The sixteen political types, their dimensions and descriptions |
+| `data/types.json` | The nine camps and eighteen political types, their dimensions and descriptions |
 | `data/questions.json` | The question bank: 96 statements, salience questions, country versions |
 | `index.html` | The website, built from `web/template.html` and `web/characters.js` with `tools/build_web.py`. Live at https://thomdirks.github.io/politicalcompass/ |
 | `tools/` | Import, calibration, validation, scoring and build scripts |

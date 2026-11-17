@@ -93,21 +93,24 @@ if {s["axis"] for s in questions["salience"]["items"]} != set(AXIS_IDS):
     err("questions: salience items must cover every axis")
 
 T = pcmodel.TYPES
-letters = [(d["neg"]["letter"], d["pos"]["letter"]) for d in T["dimensions"]]
-expected = {a + b + c + d for a in letters[0] for b in letters[1] for c in letters[2] for d in letters[3]}
+core = [d for d in T["dimensions"] if d["kind"] != "suffix"]
+opts = [[d[k]["letter"] for k in ("neg", "mid", "pos") if k in d] for d in core]
+expected = {""}
+for o in opts:
+    expected = {e + l for e in expected for l in o}
 if set(pcmodel.TYPE_BY_CODE) != expected:
-    err("types: the 16 type codes don't match the dimension letters")
+    err(f"types: type codes don't match the dimension letters ({len(expected)} expected)")
+camps = {c["id"] for c in T["camps"]}
+for t in T["types"]:
+    if t["code"][:2] not in camps:
+        err(f"types: {t['code']} has no camp")
+    for c in t["clash"]:
+        if c not in pcmodel.TYPE_BY_CODE:
+            err(f"types: {t['code']} clashes with unknown type {c}")
 for d in T["dimensions"]:
     for ax in d["axes"]:
         if ax not in AXIS_IDS:
             err(f"types: dimension {d['id']} uses unknown axis {ax}")
-for t in T["types"]:
-    for c in t["clash"]:
-        if c not in pcmodel.TYPE_BY_CODE:
-            err(f"types: {t['code']} clashes with unknown type {c}")
-for aid in T["no_examples"]["actors"]:
-    if aid not in actors:
-        err(f"types: no_examples lists unknown actor {aid}")
 
 if errors:
     print("\n".join(errors))
@@ -132,8 +135,8 @@ HEAD = "| Party | Type | " + " | ".join(AXIS_IDS) + " |\n|---|---|" + "---:|" * 
 
 
 def ptype(sc):
-    code = pcmodel.political_type(sc)
-    return f"{code} {pcmodel.TYPE_BY_CODE[code]['name']}" if code else "?"
+    code = pcmodel.political_type(sc, suffix=True)
+    return f"{code} {pcmodel.TYPE_BY_CODE[code[:3]]['name']}" if code else "?"
 
 ov = []
 for code, fr in frames.items():

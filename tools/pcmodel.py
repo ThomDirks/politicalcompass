@@ -93,13 +93,24 @@ def dimension_scores(axes):
     return out
 
 
-def political_type(axes):
-    """Four-letter type code, e.g. CPIE. None if a dimension has no data."""
+def _letter(d, v):
+    if d["kind"] == "three":
+        if v <= -d["band"]:
+            return d["neg"]["letter"]
+        if v >= d["band"]:
+            return d["pos"]["letter"]
+        return d["mid"]["letter"]
+    return d["neg"]["letter"] if v < 0 else d["pos"]["letter"]
+
+
+def political_type(axes, suffix=False):
+    """Type code from the camp (economy x culture) and power, e.g. CPI.
+    With suffix=True the future letter is added: CPI-e. None if data is missing."""
     dims = dimension_scores(axes)
-    letters = []
-    for d in TYPES["dimensions"]:
-        v = dims[d["id"]]
-        if v is None:
-            return None
-        letters.append(d["neg"]["letter"] if v < 0 else d["pos"]["letter"])
-    return "".join(letters)
+    if any(v is None for v in dims.values()):
+        return None
+    code = "".join(_letter(d, dims[d["id"]]) for d in TYPES["dimensions"] if d["kind"] != "suffix")
+    if suffix:
+        fut = [d for d in TYPES["dimensions"] if d["kind"] == "suffix"][0]
+        code += "-" + _letter(fut, dims[fut["id"]])
+    return code

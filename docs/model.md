@@ -38,22 +38,24 @@ An axis score is the mean of its four facets. Facets carry equal weight for now.
 
 ## Political types
 
-The eight axes are bracketed into four **dimensions**, each with two poles and a letter:
+The eight axes are bracketed into four **dimensions**:
 
-| Dimension | Axes | − pole | + pole |
-|---|---|---|---|
-| Economy | Economy | C Collective | M Market |
-| Culture | Social values, Liberty vs order, Migration and identity | P Progressive | T Traditional |
-| Power | International, Democracy and institutions | I Institutional | S Sovereigntist |
-| Future | Climate and environment, Technology | E Ecological | G Growth |
+| Dimension | Axes | Letters |
+|---|---|---|
+| Economy | Economy | **C** Collective, **B** Balanced, **M** Market |
+| Culture | Social values, Liberty vs order, Migration and identity | **P** Progressive, **N** Neutral, **T** Traditional |
+| Power | International, Democracy and institutions | **I** Institutional, **S** Sovereigntist |
+| Future | Climate and environment, Technology | **e** Ecological, **g** Growth (small letter) |
 
-A dimension score is the mean of its axes. The side you lean to on each gives one letter, and the four letters give one of **sixteen types**, grouped in four families by the first two letters: Progressives (CP), Communitarians (CT), Liberals (MP) and Conservatives (MT). The strength of the lean is shown as a percentage, 50% plus half the absolute score.
+A dimension score is the mean of its axes. Economy and culture each have a **centre band**: a score within 20 points of zero gives the middle letter (B or N). Together they place you in one of **nine camps** on a 3x3 map, from the progressive left (CP) to the conservative right (MT), with the centre (BN) in the middle. Power splits every camp into two types, which gives **eighteen types**. Future adds a small letter, so a full code reads like `CPI-e` or `MTS-g`.
 
-Each type has a name, a tagline, a description, what it cares about most, which types it most often clashes with, and an animated character on the website. All of this is in [`data/types.json`](../data/types.json).
+The structure is deliberately political rather than borrowed from personality tests: it has a real centre, the camps form a map, and the code has three letters plus a modifier.
 
-Parties get a type the same way, from their current profile. Totalitarian or paramilitary movements (NSDAP, NSB, BUF, SED, KPD) are not shown as examples of a type: the model measures policy positions, not violence or the destruction of democracy, so a type label would say too little about them. Their profiles stay available.
+Each type has a name, a tagline, a description, what it cares about most, which types it often clashes with, and an animated character on the website. All of this is in [`data/types.json`](../data/types.json).
 
-Parties cluster in a few types, because real party programmes bundle economic and cultural views in a few common ways. People mix views more freely, so every type is reachable from the test.
+Parties get a type the same way, from their current profile, including former parties. A type describes policy positions only, not how a party gained or used power, and type pages say so next to the list of former parties.
+
+Parties cluster in a few types, because party programmes bundle economic and cultural views in a few common ways. People mix views more freely, so every type is reachable from the test.
 
 ## Salience
 

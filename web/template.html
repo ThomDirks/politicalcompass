@@ -306,6 +306,29 @@ footer { border-top: 1px solid var(--rule); padding: 22px var(--gutter) 40px; fo
 a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
 @keyframes ch-hop { 40% { transform: translateY(-10px); } }
 
+/* ---------- camp map ---------- */
+.campmap { display: grid; grid-template-columns: 9.5rem repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 30px; }
+.cm-col { font-weight: 600; padding: 0 2px 6px; border-bottom: 2px solid var(--ink); align-self: end; }
+.cm-row { font-weight: 600; padding: 12px 10px 0 0; border-right: 2px solid var(--ink); }
+.cm-row span { display: block; font-weight: 400; color: var(--muted); font-size: .85rem; }
+.cm-col b, .cm-row b { font-family: var(--display); font-variation-settings: "wdth" 70; font-size: 1.25rem; margin-right: 4px; }
+.camp { border-top: 4px solid var(--fam); background: color-mix(in srgb, var(--fam) 7%, var(--paper)); padding: 10px 10px 12px; display: grid; gap: 8px; align-content: start; }
+.camp-name { font-size: 1.05rem; font-variation-settings: "wdth" 82; }
+.camp-types { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+.camp .tcard .stage { padding: 10px 10px 0; position: relative; }
+.camp .tcard .stage .ch { max-width: 120px; }
+.camp .tname { font-size: .98rem; }
+.camp .tbody { padding: 10px 10px 12px; }
+.camp .ttag { font-size: .8rem; }
+.tcard .yours { position: absolute; top: 6px; left: 6px; font-size: .72rem; padding: 2px 7px; }
+.dimbar .zone { position: absolute; top: 0; bottom: 0; background: var(--tint); }
+.dimbar .zone.mid { background: color-mix(in srgb, var(--fam) 14%, var(--tint)); }
+.dimbar { background: transparent; overflow: visible; }
+.dimbar .zone + .zone { border-left: 2px solid var(--paper); }
+.dimbar b { top: -4px; bottom: -4px; width: 14px; margin-left: -7px; border-radius: 50%; background: var(--fam); border: 2px solid var(--ink); }
+.dimlabels span:nth-child(2):not(:last-child) { text-align: center; }
+.codebox .sfx { font-size: 1.5rem; padding-top: 6px; }
+
 /* ---------- types ---------- */
 .stage { background: color-mix(in srgb, var(--fam) 17%, var(--sheet)); }
 .dimlist { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; border-top: 1px solid var(--rule); margin-top: 26px; }
@@ -325,7 +348,7 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
 .tcode { font-weight: 700; font-size: .85rem; color: color-mix(in srgb, var(--fam) 80%, var(--ink)); }
 .ttag { font-size: .88rem; color: var(--muted); }
 
-.mini-types { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 10px 8px; margin-top: 8px; }
+.mini-types { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 10px 8px; margin-top: 8px; }
 .mini-types a { display: grid; gap: 6px; text-decoration: none; justify-items: center; text-align: center; font-size: .8rem; font-weight: 600; line-height: 1.15; }
 .mini-types .stage { width: 100%; border-radius: 50% 50% 4px 4px; padding: 10px 8px 0; border: 1.5px solid var(--ink); }
 .mini-types a:hover span { text-decoration: underline; text-underline-offset: 3px; }
@@ -370,7 +393,10 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
 
 @media (max-width: 860px) {
   .types-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .mini-types { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .mini-types { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .campmap { grid-template-columns: minmax(0, 1fr); }
+  .cm-col, .cm-corner { display: none; }
+  .cm-row { border-right: 0; border-bottom: 2px solid var(--ink); padding: 18px 0 6px; }
   .tpage, .you-hero { grid-template-columns: minmax(0, 1fr); }
   .tstage { position: static; }
   .you-hero .stage { max-width: 260px; }
@@ -378,6 +404,7 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
   .progress div span { display: none; }
 }
 @media (max-width: 520px) {
+  .mini-types { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .mark[data-v="-3"], .mark[data-v="3"] { --d: 44px; }
   .mark[data-v="-2"], .mark[data-v="2"] { --d: 38px; }
   .mark[data-v="-1"], .mark[data-v="1"] { --d: 33px; }
@@ -552,11 +579,13 @@ function answeredCount() {
 }
 function hasResults() { return S.finished && Object.values(S.answers).some(v => v !== null); }
 
-/* ---------- political types ---------- */
+/* ---------- political types: nine camps x power, future as suffix ---------- */
 const TY = DATA.types;
 const TYPE = Object.fromEntries(TY.types.map(t => [t.code, t]));
-const FAM = Object.fromEntries(TY.families.map(f => [f.id, f]));
-const NO_EX = new Set(TY.no_examples.actors);
+const CAMP = Object.fromEntries(TY.camps.map(c => [c.id, c]));
+const DIM = Object.fromEntries(TY.dimensions.map(d => [d.id, d]));
+const CORE = TY.dimensions.filter(d => d.kind !== "suffix");
+const FUT = TY.dimensions.find(d => d.kind === "suffix");
 function dimsOf(axes) {
   const out = {};
   TY.dimensions.forEach(d => {
@@ -565,14 +594,20 @@ function dimsOf(axes) {
   });
   return out;
 }
+function letterOf(d, v) {
+  if (d.kind === "three") return v <= -d.band ? d.neg.letter : v >= d.band ? d.pos.letter : d.mid.letter;
+  return v < 0 ? d.neg.letter : d.pos.letter;
+}
+function poleOf(d, letter) { return [d.neg, d.mid, d.pos].find(p => p && p.letter === letter); }
 function ptypeOf(axes) {
   const dims = dimsOf(axes);
   if (TY.dimensions.some(d => dims[d.id] === null)) return null;
-  return TY.dimensions.map(d => dims[d.id] < 0 ? d.neg.letter : d.pos.letter).join("");
+  return CORE.map(d => letterOf(d, dims[d.id])).join("");
 }
-const famOf = code => FAM[code.slice(0, 2)];
-const famStyle = code => `--fam:${famOf(code).color}`;
-const ch = (code, label) => charSvg(code, famOf(code).color, label ? { label } : {});
+function suffixOf(axes) { const v = dimsOf(axes)[FUT.id]; return v === null ? "" : letterOf(FUT, v); }
+const campOf = code => CAMP[code.slice(0, 2)];
+const famStyle = code => `--fam:${campOf(code).color}`;
+const ch = (code, label) => charSvg(code, campOf(code).color, label ? { label } : {});
 const plain = t => t.name.replace(/^The /, "");
 const article = t => /^[AEIOU]/.test(plain(t)) ? "an" : "a";
 function dimBars(axes) {
@@ -580,24 +615,29 @@ function dimBars(axes) {
   return `<div class="dims">${TY.dimensions.map(d => {
     const v = dims[d.id];
     if (v === null) return "";
-    const share = Math.round(50 + Math.abs(v) / 2);
-    const neg = v < 0;
-    const fill = neg ? `left:${50 - Math.abs(v) / 2}%;right:50%` : `left:50%;right:${50 - Math.abs(v) / 2}%`;
-    return `<div class="dim"><span class="dimname">${esc(d.name)}</span>
-      <div class="dimlabels"><span class="${neg ? "win" : ""}">${neg ? share + "% " : ""}${esc(d.neg.label)}</span><span class="${neg ? "" : "win"}">${esc(d.pos.label)}${neg ? "" : " " + share + "%"}</span></div>
-      <div class="dimbar" role="img" aria-label="${esc(d.name)}: ${share}% ${esc(neg ? d.neg.label : d.pos.label)}"><b style="${fill}"></b><i></i></div></div>`;
+    const L = letterOf(d, v);
+    const pos = (v + 100) / 2;
+    const zones = d.kind === "three"
+      ? `<span class="zone" style="left:0;width:${(100 - d.band) / 2}%"></span><span class="zone mid" style="left:${(100 - d.band) / 2}%;width:${d.band}%"></span><span class="zone" style="left:${(100 + d.band) / 2}%;right:0"></span>`
+      : `<span class="zone" style="left:0;width:50%"></span><span class="zone" style="left:50%;right:0"></span>`;
+    const poles = [d.neg, d.mid, d.pos].filter(Boolean);
+    return `<div class="dim"><span class="dimname">${esc(d.name)}${d.kind === "suffix" ? ' <span class="muted small">(small letter)</span>' : ""}</span>
+      <div class="dimlabels">${poles.map(p => `<span class="${p.letter === L ? "win" : ""}">${p.letter} ${esc(p.label)}</span>`).join("")}</div>
+      <div class="dimbar" role="img" aria-label="${esc(d.name)}: ${esc(poleOf(d, L).label)}">${zones}<b style="left:${pos}%"></b></div></div>`;
   }).join("")}</div>`;
 }
-function typeCard(t) {
+function typeCard(t, mine, short) {
   return `<a class="tcard" href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}">
-    <span class="stage">${ch(t.code)}</span>
-    <span class="tbody"><span class="tname">${esc(t.name)}</span><span class="tcode">${t.code}</span><span class="ttag">${esc(t.tagline)}</span></span></a>`;
+    <span class="stage">${mine ? '<span class="yours">Your type</span>' : ""}${ch(t.code)}</span>
+    <span class="tbody"><span class="tname">${esc(short ? plain(t) : t.name)}</span><span class="tcode">${t.code}</span><span class="ttag">${esc(t.tagline)}</span></span></a>`;
 }
 function typeChip(code) {
-  const t = TYPE[code];
-  return `<a class="typechip" href="#type-${code.toLowerCase()}" style="${famStyle(code)}"><span class="stage">${ch(code)}</span><span>${esc(t.name)} (${code})</span></a>`;
+  const t = TYPE[code.slice(0, 3)];
+  return `<a class="typechip" href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}"><span class="stage">${ch(t.code)}</span><span>${esc(t.name)} (${code})</span></a>`;
 }
 function actorType(a) { return ptypeOf(snapAxes(current(a))); }
+function actorFull(a) { const ax = snapAxes(current(a)); const c = ptypeOf(ax); return c ? `${c}-${suffixOf(ax)}` : null; }
+function myAxes() { return hasResults() ? axisFromFacets(f => facetScores(S.answers)[f]) : null; }
 
 /* ---------- pencil marks ---------- */
 const SCRIBBLE = "M14 30 C18 34 21 40 24 45 C29 33 36 22 48 12";
@@ -668,10 +708,10 @@ function renderHome() {
     </div>
   </div>
   <div class="measures">
-    <h2>Sixteen political types</h2>
-    <p class="muted">Your answers place you on four dimensions: economy, culture, power and the future. The combination gives one of sixteen types. Which one are you?</p>
+    <h2>Eighteen political types</h2>
+    <p class="muted">Where you stand on the economy and on culture puts you in one of nine camps. How much you trust the system decides which of its two types you are. Which one are you?</p>
     <div class="mini-types">
-      ${TY.families.map(f => TY.types.filter(t => t.code.startsWith(f.id)).map(t => `<a href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}"><span class="stage">${ch(t.code)}</span><span>${esc(t.name)}</span></a>`).join("")).join("")}
+      ${TY.types.map(t => `<a href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}"><span class="stage">${ch(t.code)}</span><span>${esc(t.name)}</span></a>`).join("")}
     </div>
   </div>`;
   $("#v-home").querySelectorAll("[data-country]").forEach(b => b.onclick = () => { S.country = b.dataset.country; save(); renderHome(); });
@@ -812,13 +852,14 @@ function renderResults() {
 
   const code = ptypeOf(axes);
   const T = code ? TYPE[code] : null;
+  const suf = code ? suffixOf(axes) : "";
   $("#v-results").innerHTML = `
   ${T ? `<div class="you-hero" style="${famStyle(code)}">
     <div class="stage">${ch(code, T.name)}</div>
     <div class="text">
       <h1>You're ${article(T)} ${esc(plain(T))}.</h1>
       <p class="lead">${esc(T.tagline)}</p>
-      <div class="meta-row"><span class="tcode" style="font-size:1rem">${code}</span><span>${esc(famOf(code).name)} family</span><a href="#type-${code.toLowerCase()}">Read about the ${esc(plain(T))}</a></div>
+      <div class="meta-row"><span class="tcode" style="font-size:1.1rem">${code}-${suf}</span><span>${esc(campOf(code).name)} camp</span><a href="#type-${code.toLowerCase()}">Read about the ${esc(plain(T))}</a></div>
       <p class="muted small">Based on ${answered} answers, compared with ${CNAME[cc]}.</p>
       <div class="seg" role="group" aria-label="Compare with" style="justify-self:start">
         ${COUNTRIES.map(c => `<button type="button" data-country="${c}" aria-pressed="${cc === c}">${c}</button>`).join("")}
@@ -828,8 +869,9 @@ function renderResults() {
 
   <div class="rgrid" style="margin-top:36px">
     <div class="block">
-      <h2>Your four dimensions</h2>
+      <h2>Where your type comes from</h2>
       <div style="${code ? famStyle(code) : "--fam:var(--ink)"}">${dimBars(axes)}</div>
+      ${suf ? `<p class="small muted">The small ${suf}: ${esc(TY.future_notes[suf])}</p>` : ""}
     </div>
     <div class="block">
       <h2>What ${T ? `${esc(plain(T))}s` : "you"} care about</h2>
@@ -1000,7 +1042,7 @@ function renderParty(id) {
     <h1>${esc(a.name)}</h1>
     <p class="lead">${esc(a.full !== a.name ? a.full + ", " : "")}${CNAME[a.country].replace(/^the /, "")}, ${years(a)}.</p>
     ${links.length ? `<p class="small">${links.map(([w, p]) => `${w} <a href="#party-${p}">${esc(ACT[p].name)}</a>`).join(". ")}.</p>` : ""}
-    ${ptypeOf(axes) && !NO_EX.has(a.id) ? typeChip(ptypeOf(axes)) : ""}
+    ${ptypeOf(axes) ? typeChip(`${ptypeOf(axes)}-${suffixOf(axes)}`) : ""}
   </div>
   <div class="rgrid">
     <div>
@@ -1059,47 +1101,59 @@ function renderParty(id) {
 
 /* ---------- types ---------- */
 function renderTypes() {
-  const mine = hasResults() ? ptypeOf(axisFromFacets(f => facetScores(S.answers)[f])) : null;
+  const ma = myAxes();
+  const mine = ma ? ptypeOf(ma) : null;
+  const E = DIM.econ, C = DIM.culture, P = DIM.power;
+  const cols = [E.neg, E.mid, E.pos], rows = [C.neg, C.mid, C.pos];
   $("#v-types").innerHTML = `
-    <h1>Sixteen political types</h1>
-    <p class="lead" style="margin-top:14px">Your answers place you on four dimensions, each with two sides. The four letters of your type say which side you lean to on each. Types describe patterns of views, not parties: plenty of people share a type with parties they would never vote for.</p>
-    <div class="dimlist">${TY.dimensions.map(d => `<div><b>${esc(d.name)}</b><span class="letters">${d.neg.letter} ${esc(d.neg.label)} or ${d.pos.letter} ${esc(d.pos.label)}</span><span class="muted small">${esc(d.question)}</span></div>`).join("")}</div>
-    ${TY.families.map(f => `<section class="fam-sec" style="--fam:${f.color}">
-      <div class="fam-head"><h2>${esc(f.name)}</h2><p class="muted">${esc(f.summary)}</p></div>
-      <div class="types-grid">${TY.types.filter(t => t.code.startsWith(f.id)).map(t => typeCard(t).replace('<span class="tname">', mine === t.code ? '<span class="yours">Your type</span><span class="tname">' : '<span class="tname">')).join("")}</div>
-    </section>`).join("")}`;
+    <h1>Eighteen political types</h1>
+    <p class="lead" style="margin-top:14px">Your views on the economy and on culture place you in one of nine camps, including the centre. Within each camp, trust in the system splits two types: ${esc(P.neg.label)} (${P.neg.letter}) or ${esc(P.pos.label)} (${P.pos.letter}). A small letter at the end says whether you lean ${esc(FUT.neg.label.toLowerCase())} (${FUT.neg.letter}) or towards ${esc(FUT.pos.label.toLowerCase())} (${FUT.pos.letter}).</p>
+    <div class="campmap" role="table" aria-label="Map of the nine camps">
+      <div class="cm-corner" aria-hidden="true"></div>
+      ${cols.map(c => `<div class="cm-col" role="columnheader"><b>${c.letter}</b> ${esc(c.label)} economy</div>`).join("")}
+      ${rows.map(r => `<div class="cm-row" role="rowheader"><b>${r.letter}</b> ${esc(r.label)}<span> on culture</span></div>
+        ${cols.map(c => { const camp = CAMP[c.letter + r.letter]; return `<section class="camp" role="cell" style="--fam:${camp.color}">
+          <h2 class="camp-name">${esc(camp.name)}</h2>
+          <div class="camp-types">${["I", "S"].map(p => { const t = TYPE[c.letter + r.letter + p]; return typeCard(t, mine === t.code, true); }).join("")}</div>
+        </section>`; }).join("")}`).join("")}
+    </div>
+    <p class="small muted" style="margin-top:18px">The left card in each camp is ${esc(P.neg.label.toLowerCase())}, the right card ${esc(P.pos.label.toLowerCase())}.</p>`;
 }
 
 function renderType(code) {
-  const T = TYPE[code], F = famOf(code);
-  const mine = hasResults() ? ptypeOf(axisFromFacets(f => facetScores(S.answers)[f])) : null;
-  const members = DATA.actors.filter(a => !NO_EX.has(a.id) && actorType(a) === code);
+  const T = TYPE[code], camp = campOf(code);
+  const ma = myAxes();
+  const mine = ma ? ptypeOf(ma) : null;
+  const members = DATA.actors.filter(a => actorType(a) === code);
   const cur = members.filter(a => inAnyFrame(a.id));
   const former = members.filter(a => !inAnyFrame(a.id));
   const total = DATA.actors.filter(a => inAnyFrame(a.id)).length;
+  const twin = TYPE[code.slice(0, 2) + (code[2] === "I" ? "S" : "I")];
   $("#v-type").innerHTML = `
   <a class="back" href="#types">All types</a>
   <div class="tpage" style="${famStyle(code)};margin-top:14px">
     <div class="tstage stage">
       ${ch(code, T.name)}
-      <div class="codebox">${code.split("").map((l, i) => { const d = TY.dimensions[i]; return `<div><b>${l}</b><span>${esc(l === d.neg.letter ? d.neg.label : d.pos.label)}</span></div>`; }).join("")}</div>
+      <div class="codebox">${code.split("").map((l, i) => { const d = CORE[i]; return `<div><b>${l}</b><span>${esc(poleOf(d, l).label)}</span></div>`; }).join("")}
+        <div><b class="sfx">e/g</b><span>${esc(FUT.neg.label)} or ${esc(FUT.pos.label.toLowerCase())}</span></div></div>
     </div>
     <div class="tcontent">
       <div class="block" style="gap:12px">
         ${mine === code ? `<span class="yours" style="justify-self:start">Your type</span>` : ""}
         <h1>${esc(T.name)}</h1>
         <p class="lead">${esc(T.tagline)}</p>
-        <p class="muted">${code}, ${esc(F.name)} family. ${esc(F.summary)}</p>
+        <p class="muted">${code}, ${esc(camp.name)} camp. ${esc(camp.summary)}</p>
       </div>
       <div class="about">${T.about.map(p => `<p>${esc(p)}</p>`).join("")}</div>
       <div class="block" style="gap:10px"><h3>What matters most</h3><ul class="cares">${T.cares.map(c => `<li>${esc(c)}</li>`).join("")}</ul></div>
+      <div class="block" style="gap:10px"><h3>Same camp, other side</h3><div class="clash"><a href="#type-${twin.code.toLowerCase()}" style="${famStyle(twin.code)}"><span class="stage">${ch(twin.code)}</span><span>${esc(twin.name)}<br><span class="muted small">${esc(poleOf(DIM.power, twin.code[2]).label)}</span></span></a></div></div>
       <div class="block" style="gap:10px"><h3>Often at odds with</h3><div class="clash">${T.clash.map(c => `<a href="#type-${c.toLowerCase()}" style="${famStyle(c)}"><span class="stage">${ch(c)}</span><span>${esc(TYPE[c].name)}</span></a>`).join("")}</div></div>
       <div class="block ex" style="gap:10px">
         <h3>Parties with this profile</h3>
-        ${cur.length ? `<p>${COUNTRIES.map(c => { const l = cur.filter(a => a.country === c); return l.length ? `<b>${c}:</b> ${l.map(a => `<a href="#party-${a.id}">${esc(a.name)}</a>`).join(", ")}` : ""; }).filter(Boolean).join(". ")}.</p>
+        ${cur.length ? `<p>${COUNTRIES.map(c => { const l = cur.filter(a => a.country === c); return l.length ? `<b>${c}:</b> ${l.map(a => `<a href="#party-${a.id}">${esc(a.name)}</a> <span class="muted small">${actorFull(a).slice(-2)}</span>`).join(", ")}` : ""; }).filter(Boolean).join(". ")}.</p>
           <p class="muted small">${cur.length} of the ${total} current parties in the four countries.</p>`
         : `<p class="muted">None of the ${total} current parties in the four countries. That's normal: parties bundle views in a few common ways, while people mix them much more freely.</p>`}
-        ${former.length ? `<p class="small">Former parties and earlier eras: ${former.map(a => `<a href="#party-${a.id}">${esc(a.name)}</a> (${a.country})`).join(", ")}.</p>` : ""}
+        ${former.length ? `<p class="small"><b>Former parties and earlier eras:</b> ${former.map(a => `<a href="#party-${a.id}">${esc(a.name)}</a> (${a.country})`).join(", ")}.</p><p class="small muted">${esc(TY.former_note)}</p>` : ""}
       </div>
       ${mine && mine !== code ? `<p class="small muted">Your own type is <a href="#type-${mine.toLowerCase()}">${esc(TYPE[mine].name)}</a>.</p>` : ""}
       ${!mine ? `<div class="actions"><a class="btn" href="#test">Find your type</a></div>` : ""}
@@ -1120,7 +1174,7 @@ function renderMethod() {
     <h2>The statements</h2>
     <p>The full test has ${nItems} statements, three per part. Quick mode uses one per part. On every topic, half the statements point one way and half the other, so agreeing with everything doesn't push you to one side. Some statements use a local example for the country you pick.</p>
     <h2>Types</h2>
-    <p>The eight topics are grouped into four dimensions. Economy is the economy topic. Culture combines social values, liberty versus order, and migration. Power combines international affairs and democracy. Future combines climate and technology. The side you lean to on each gives one letter, and the four letters give one of sixteen types. The percentages show how strongly you lean.</p>
+    <p>The eight topics are grouped into four dimensions. Economy is the economy topic. Culture combines social values, liberty versus order, and migration. Each of these two has a centre band (scores within 20 points of zero), so together they make a map of nine camps. Power combines international affairs and democracy and splits each camp into two types, eighteen in total. Future combines climate and technology and adds a small letter, e or g, to your code.</p>
     <h2>Countries</h2>
     <p>Scores are absolute: the same answers give the same scores everywhere. The country you pick decides which parties you're compared with and what counts as average there. The average is the mean of that country's parties, weighted by votes at the last national election (or current seats in the Netherlands, after the PVV split).</p>
     <h2>Parties</h2>
