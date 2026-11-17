@@ -19,7 +19,7 @@ Because "left" in one country can be "right" in another, scores are measured on 
 | `data/actors/<country>/` | One file per party with all its snapshots |
 | `data/ches_mapping.json` | How CHES items map onto PCompass facets |
 | `data/questions.json` | The question bank: 96 statements, salience questions, country versions |
-| `web/` | The website: `template.html` is the source, `index.html` is built with `tools/build_web.py` and needs no server |
+| `index.html` | The website, built from `web/template.html` with `tools/build_web.py`. Live at https://thomdirks.github.io/politicalcompass/ |
 | `tools/` | Import, calibration, validation, scoring and build scripts |
 
 ## Data sources
@@ -35,9 +35,9 @@ python tools/calibrate_ches.py   # calibrate new hand snapshots against CHES 202
 python tools/validate.py --report
 python tools/score.py --selftest --noise 1   # can the questions tell parties apart?
 python tools/score.py --simulate nl-vvd      # answer as a party's supporter would
-python tools/build_web.py                    # rebuild web/index.html after data changes
+python tools/build_web.py                    # rebuild index.html, then commit it to update the live site
 ```
 
 ## Status
 
-Model spec, 56 parties with 230 snapshots, and a 96-statement question bank with scoring and matching. All hand scores are drafts. A first version of the website is in `web/`. Next up: type codes.
+Model spec, 56 parties with 230 snapshots, and a 96-statement question bank with scoring and matching. All hand scores are drafts. The website is live at https://thomdirks.github.io/politicalcompass/. Next up: type codes.

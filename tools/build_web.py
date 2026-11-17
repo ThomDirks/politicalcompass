@@ -1,4 +1,7 @@
-"""Build the website: inlines the data into web/template.html -> web/index.html.
+"""Build the website: inlines the data into web/template.html -> index.html.
+
+The built index.html sits at the repository root, so GitHub Pages
+("Deploy from a branch", main, / root) serves it at the site address.
 
 Usage: python tools/build_web.py
 """
@@ -55,6 +58,6 @@ tpl = open(os.path.join(ROOT, "web", "template.html"), encoding="utf-8").read()
 js = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 html = tpl.replace("/*__DATA__*/null", js)
 assert html != tpl, "data placeholder not found"
-out = os.path.join(ROOT, "web", "index.html")
+out = os.path.join(ROOT, "index.html")
 open(out, "w", encoding="utf-8").write(html)
-print(f"wrote web/index.html ({len(html) // 1024} KB)")
+print(f"wrote index.html ({len(html) // 1024} KB)")
