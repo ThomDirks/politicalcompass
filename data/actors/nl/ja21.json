@@ -1,0 +1,82 @@
+{
+  "id": "nl-ja21",
+  "type": "party",
+  "name": "JA21",
+  "full_name": "JA21",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 2,
+    "LIB": 4,
+    "MIG": 5,
+    "INT": 3,
+    "CLI": 3,
+    "TEC": 1,
+    "DEM": 3
+  },
+  "facets": {
+    "eco_own": [60, "m"],
+    "eco_reg": [55, "m"],
+    "eco_lab": [50, "m"],
+    "eco_tax": [55, "m"],
+    "soc_fam": [25, "m"],
+    "soc_lgbt": [-10, "m"],
+    "soc_rel": [10, "m"],
+    "soc_mor": [20, "m"],
+    "lib_priv": [40, "m"],
+    "lib_just": [75, "m"],
+    "lib_speech": [-30, "m"],
+    "lib_emerg": [20, "m"],
+    "mig_lvl": [75, "h"],
+    "mig_asy": [85, "h"],
+    "mig_int": [75, "h"],
+    "mig_nat": [65, "h"],
+    "int_eu": [35, "m"],
+    "int_trade": [-55, "m"],
+    "int_def": [-75, "m"],
+    "int_aid": [70, "m"],
+    "cli_amb": [55, "m"],
+    "cli_pay": [65, "m"],
+    "cli_nat": [60, "m"],
+    "cli_intl": [40, "m"],
+    "tec_ai": [40, "l"],
+    "tec_bio": [40, "l"],
+    "tec_nuc": [90, "l"],
+    "tec_big": [20, "l"],
+    "dem_trust": [30, "m"],
+    "dem_direct": [65, "m"],
+    "dem_courts": [20, "m"],
+    "dem_central": [0, "m"]
+  },
+  "notes": {
+    "ECO": "Conservative-liberal: lower taxes, smaller government.",
+    "SOC": "Mildly conservative, secular.",
+    "LIB": "Tough on crime; strong free speech stance.",
+    "MIG": "Strict limits on migration and asylum.",
+    "INT": "Eurosceptic without Nexit; pro free trade and NATO.",
+    "CLI": "Against costly climate and nitrogen rules.",
+    "TEC": "Strongly pro nuclear.",
+    "DEM": "Binding referendum; critical of 'cartel politics'."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.ja21.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

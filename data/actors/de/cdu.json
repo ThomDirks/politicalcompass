@@ -1,0 +1,78 @@
+{
+  "id": "de-cdu",
+  "type": "party",
+  "name": "CDU",
+  "full_name": "Christlich Demokratische Union Deutschlands",
+  "country": "DE",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026. Leads the Merz government with CSU and SPD."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 3,
+    "LIB": 4,
+    "MIG": 4,
+    "INT": 3,
+    "CLI": 2,
+    "TEC": 3,
+    "DEM": 1
+  },
+  "facets": {
+    "eco_own": [40, "h"],
+    "eco_reg": [35, "h"],
+    "eco_lab": [15, "h"],
+    "eco_tax": [35, "h"],
+    "soc_fam": [30, "m"],
+    "soc_lgbt": [10, "m"],
+    "soc_rel": [30, "m"],
+    "soc_mor": [35, "m"],
+    "lib_priv": [40, "h"],
+    "lib_just": [60, "h"],
+    "lib_speech": [0, "h"],
+    "lib_emerg": [15, "h"],
+    "mig_lvl": [45, "h"],
+    "mig_asy": [60, "h"],
+    "mig_int": [45, "h"],
+    "mig_nat": [30, "h"],
+    "int_eu": [-50, "h"],
+    "int_trade": [-60, "h"],
+    "int_def": [-90, "h"],
+    "int_aid": [10, "h"],
+    "cli_amb": [0, "m"],
+    "cli_pay": [30, "m"],
+    "cli_nat": [25, "m"],
+    "cli_intl": [-40, "m"],
+    "tec_ai": [50, "m"],
+    "tec_bio": [30, "m"],
+    "tec_nuc": [50, "m"],
+    "tec_big": [-5, "m"],
+    "dem_trust": [-55, "m"],
+    "dem_direct": [-55, "m"],
+    "dem_courts": [-55, "m"],
+    "dem_central": [-40, "m"]
+  },
+  "notes": {
+    "ECO": "Social market economy, lower business taxes, reform of Bürgergeld.",
+    "SOC": "Christian democratic; against cannabis legalisation.",
+    "LIB": "More police powers, IP address retention.",
+    "MIG": "Border turnbacks and stricter asylum under Merz.",
+    "INT": "Pro-EU, strong NATO and Ukraine support.",
+    "CLI": "Keeps the 2045 target, reverses the heating law.",
+    "TEC": "Open to nuclear research and SMRs, pro AI.",
+    "DEM": "Institutional, federalist."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.cdu.de/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

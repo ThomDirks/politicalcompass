@@ -1,0 +1,82 @@
+{
+  "id": "nl-pvv",
+  "type": "party",
+  "name": "PVV",
+  "full_name": "Partij voor de Vrijheid",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 2,
+    "LIB": 3,
+    "MIG": 5,
+    "INT": 3,
+    "CLI": 3,
+    "TEC": 1,
+    "DEM": 3
+  },
+  "facets": {
+    "eco_own": [-20, "m"],
+    "eco_reg": [-10, "m"],
+    "eco_lab": [-15, "m"],
+    "eco_tax": [-25, "m"],
+    "soc_fam": [30, "m"],
+    "soc_lgbt": [15, "m"],
+    "soc_rel": [15, "m"],
+    "soc_mor": [20, "m"],
+    "lib_priv": [40, "m"],
+    "lib_just": [70, "m"],
+    "lib_speech": [-10, "m"],
+    "lib_emerg": [30, "m"],
+    "mig_lvl": [85, "h"],
+    "mig_asy": [95, "h"],
+    "mig_int": [85, "h"],
+    "mig_nat": [85, "h"],
+    "int_eu": [65, "m"],
+    "int_trade": [30, "m"],
+    "int_def": [20, "m"],
+    "int_aid": [90, "m"],
+    "cli_amb": [70, "h"],
+    "cli_pay": [80, "h"],
+    "cli_nat": [75, "h"],
+    "cli_intl": [70, "h"],
+    "tec_ai": [10, "l"],
+    "tec_bio": [20, "l"],
+    "tec_nuc": [80, "l"],
+    "tec_big": [0, "l"],
+    "dem_trust": [70, "m"],
+    "dem_direct": [80, "m"],
+    "dem_courts": [45, "m"],
+    "dem_central": [10, "m"]
+  },
+  "notes": {
+    "ECO": "Welfare chauvinist: protect pensions and healthcare, abolish the own-risk deductible.",
+    "SOC": "Defends a Judeo-Christian culture; frames LGBTQ rights against Islam.",
+    "LIB": "Tough on crime; opposes hate speech prosecutions but wants Quran and mosque bans.",
+    "MIG": "Core issue: asylum stop, far less immigration, anti-Islam.",
+    "INT": "EU-critical, cut aid; backs NATO but sceptical of Ukraine spending.",
+    "CLI": "Scrap the climate law and nitrogen rules; pro fossil fuel and nuclear.",
+    "TEC": "Pro nuclear; little programme on AI or big tech.",
+    "DEM": "Anti-elite, binding referendums; a party without members."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.pvv.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

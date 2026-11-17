@@ -1,0 +1,74 @@
+{
+  "id": "us-gop",
+  "type": "party",
+  "name": "Republicans",
+  "full_name": "Republican Party",
+  "country": "US",
+  "period": {
+    "from": "2024",
+    "to": null,
+    "basis": "Trump-era party: 2024 platform and second Trump administration up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 4,
+    "LIB": 4,
+    "MIG": 5,
+    "INT": 4,
+    "CLI": 3,
+    "TEC": 3,
+    "DEM": 5
+  },
+  "facets": {
+    "eco_own": [70, "h"],
+    "eco_reg": [65, "h"],
+    "eco_lab": [60, "h"],
+    "eco_tax": [65, "h"],
+    "soc_fam": [65, "h"],
+    "soc_lgbt": [70, "h"],
+    "soc_rel": [65, "h"],
+    "soc_mor": [70, "h"],
+    "lib_priv": [40, "m"],
+    "lib_just": [85, "m"],
+    "lib_speech": [20, "m"],
+    "lib_emerg": [80, "m"],
+    "mig_lvl": [90, "h"],
+    "mig_asy": [95, "h"],
+    "mig_int": [75, "h"],
+    "mig_nat": [75, "h"],
+    "int_eu": [80, "h"],
+    "int_trade": [95, "h"],
+    "int_def": [45, "h"],
+    "int_aid": [90, "h"],
+    "cli_amb": [100, "h"],
+    "cli_pay": [100, "h"],
+    "cli_nat": [70, "h"],
+    "cli_intl": [100, "h"],
+    "tec_ai": [90, "m"],
+    "tec_bio": [20, "m"],
+    "tec_nuc": [85, "m"],
+    "tec_big": [40, "m"],
+    "dem_trust": [85, "h"],
+    "dem_direct": [0, "h"],
+    "dem_courts": [45, "h"],
+    "dem_central": [0, "h"]
+  },
+  "notes": {
+    "ECO": "Tax cuts, Medicaid cuts, deregulation.",
+    "SOC": "Abortion restrictions, against gender transition care, Christian conservative base.",
+    "LIB": "Tough on crime, National Guard deployments, emergency declarations.",
+    "MIG": "Mass deportations, asylum restrictions, challenge to birthright citizenship.",
+    "INT": "Tariffs, America First, USAID closed, sceptical of NATO.",
+    "CLI": "Left the Paris Agreement, maximise fossil fuels.",
+    "TEC": "AI deregulation, pro nuclear; vaccine scepticism in health policy.",
+    "DEM": "Anti-establishment: attacks on courts, media and the civil service."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://gop.com/"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "nl-dna",
+  "type": "party",
+  "name": "DNA",
+  "full_name": "De Nederlandse Alliantie (Groep Markuszower in parliament)",
+  "country": "NL",
+  "period": {
+    "from": "2026",
+    "to": null,
+    "basis": "Split from PVV in January 2026, founded as a party in April 2026. Inferred from the PVV record and the group's stated differences."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 2,
+    "LIB": 3,
+    "MIG": 5,
+    "INT": 3,
+    "CLI": 3,
+    "TEC": 1,
+    "DEM": 3
+  },
+  "facets": {
+    "eco_own": [10, "l"],
+    "eco_reg": [15, "l"],
+    "eco_lab": [10, "l"],
+    "eco_tax": [15, "l"],
+    "soc_fam": [25, "l"],
+    "soc_lgbt": [15, "l"],
+    "soc_rel": [15, "l"],
+    "soc_mor": [20, "l"],
+    "lib_priv": [40, "l"],
+    "lib_just": [70, "l"],
+    "lib_speech": [-10, "l"],
+    "lib_emerg": [30, "l"],
+    "mig_lvl": [80, "l"],
+    "mig_asy": [90, "l"],
+    "mig_int": [80, "l"],
+    "mig_nat": [80, "l"],
+    "int_eu": [50, "l"],
+    "int_trade": [10, "l"],
+    "int_def": [-20, "l"],
+    "int_aid": [80, "l"],
+    "cli_amb": [55, "l"],
+    "cli_pay": [70, "l"],
+    "cli_nat": [65, "l"],
+    "cli_intl": [50, "l"],
+    "tec_ai": [20, "l"],
+    "tec_bio": [20, "l"],
+    "tec_nuc": [80, "l"],
+    "tec_big": [10, "l"],
+    "dem_trust": [45, "l"],
+    "dem_direct": [50, "l"],
+    "dem_courts": [30, "l"],
+    "dem_central": [0, "l"]
+  },
+  "notes": {
+    "ECO": "No programme yet; expected to be more market-friendly than PVV.",
+    "SOC": "Assumed close to PVV.",
+    "LIB": "Assumed close to PVV.",
+    "MIG": "Same core migration agenda as PVV.",
+    "INT": "Pro NATO and pro Israel; less hostile to the EU than PVV.",
+    "CLI": "Assumed close to PVV, slightly softer.",
+    "TEC": "Assumed pro nuclear.",
+    "DEM": "Members' party, open to working with the cabinet; less anti-system than PVV."
+  },
+  "sources": [
+    {
+      "title": "Parlement.com: afsplitsing Groep Markuszower",
+      "url": "https://parlement.com/afsplitsing-groep-markuszower-2026"
+    },
+    {
+      "title": "NOS: nieuwe partij De Nederlandse Alliantie",
+      "url": "https://nos.nl/l/2611342"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    }
+  ]
+}

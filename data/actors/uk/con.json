@@ -1,0 +1,78 @@
+{
+  "id": "uk-con",
+  "type": "party",
+  "name": "Conservatives",
+  "full_name": "Conservative and Unionist Party",
+  "country": "UK",
+  "period": {
+    "from": "2024",
+    "to": null,
+    "basis": "Positions and record up to Nov 2026. Opposition under Kemi Badenoch."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 5,
+    "SOC": 2,
+    "LIB": 3,
+    "MIG": 4,
+    "INT": 3,
+    "CLI": 3,
+    "TEC": 2,
+    "DEM": 2
+  },
+  "facets": {
+    "eco_own": [65, "h"],
+    "eco_reg": [55, "h"],
+    "eco_lab": [60, "h"],
+    "eco_tax": [55, "h"],
+    "soc_fam": [25, "m"],
+    "soc_lgbt": [20, "m"],
+    "soc_rel": [10, "m"],
+    "soc_mor": [20, "m"],
+    "lib_priv": [40, "m"],
+    "lib_just": [70, "m"],
+    "lib_speech": [-30, "m"],
+    "lib_emerg": [15, "m"],
+    "mig_lvl": [70, "h"],
+    "mig_asy": [80, "h"],
+    "mig_int": [55, "h"],
+    "mig_nat": [45, "h"],
+    "int_eu": [30, "m"],
+    "int_trade": [-65, "m"],
+    "int_def": [-85, "m"],
+    "int_aid": [45, "m"],
+    "cli_amb": [50, "h"],
+    "cli_pay": [75, "h"],
+    "cli_nat": [40, "h"],
+    "cli_intl": [40, "h"],
+    "tec_ai": [60, "m"],
+    "tec_bio": [60, "m"],
+    "tec_nuc": [80, "m"],
+    "tec_big": [30, "m"],
+    "dem_trust": [5, "m"],
+    "dem_direct": [-40, "m"],
+    "dem_courts": [40, "m"],
+    "dem_central": [20, "m"]
+  },
+  "notes": {
+    "ECO": "Lower taxes, smaller state, cut welfare.",
+    "SOC": "Gender-critical, mildly conservative.",
+    "LIB": "Tough on crime; free speech on campus.",
+    "MIG": "Leave the ECHR, deport illegal migrants, cap migration.",
+    "INT": "Outside the EU, free trade, strong NATO.",
+    "CLI": "Pledge to repeal the Climate Change Act, maximise North Sea output.",
+    "TEC": "Pro tech and nuclear.",
+    "DEM": "Unionist; would curb judicial review through ECHR exit."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.conservatives.com/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

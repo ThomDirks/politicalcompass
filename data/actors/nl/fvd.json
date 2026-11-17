@@ -1,0 +1,82 @@
+{
+  "id": "nl-fvd",
+  "type": "party",
+  "name": "FvD",
+  "full_name": "Forum voor Democratie",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 2,
+    "SOC": 4,
+    "LIB": 3,
+    "MIG": 5,
+    "INT": 5,
+    "CLI": 4,
+    "TEC": 2,
+    "DEM": 5
+  },
+  "facets": {
+    "eco_own": [30, "m"],
+    "eco_reg": [35, "m"],
+    "eco_lab": [20, "m"],
+    "eco_tax": [40, "m"],
+    "soc_fam": [80, "h"],
+    "soc_lgbt": [60, "h"],
+    "soc_rel": [55, "h"],
+    "soc_mor": [50, "h"],
+    "lib_priv": [-40, "m"],
+    "lib_just": [60, "m"],
+    "lib_speech": [-60, "m"],
+    "lib_emerg": [-60, "m"],
+    "mig_lvl": [95, "h"],
+    "mig_asy": [100, "h"],
+    "mig_int": [90, "h"],
+    "mig_nat": [95, "h"],
+    "int_eu": [95, "h"],
+    "int_trade": [35, "h"],
+    "int_def": [60, "h"],
+    "int_aid": [95, "h"],
+    "cli_amb": [95, "h"],
+    "cli_pay": [95, "h"],
+    "cli_nat": [85, "h"],
+    "cli_intl": [95, "h"],
+    "tec_ai": [-30, "l"],
+    "tec_bio": [-40, "l"],
+    "tec_nuc": [60, "l"],
+    "tec_big": [-30, "l"],
+    "dem_trust": [95, "h"],
+    "dem_direct": [90, "h"],
+    "dem_courts": [60, "h"],
+    "dem_central": [-20, "h"]
+  },
+  "notes": {
+    "ECO": "Lower taxes, sceptical of central banks and a digital euro.",
+    "SOC": "Strongly conservative on family and gender.",
+    "LIB": "Against Covid-style measures and digital ID; tough on crime.",
+    "MIG": "Remigration, end asylum.",
+    "INT": "Nexit, critical of NATO, Russia-friendly.",
+    "CLI": "Rejects climate policy entirely.",
+    "TEC": "Suspicious of digital control, vaccines and big tech censorship; pro nuclear.",
+    "DEM": "Strongly anti-establishment, binding referendums."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://fvd.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

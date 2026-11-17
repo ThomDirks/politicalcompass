@@ -1,0 +1,78 @@
+{
+  "id": "de-csu",
+  "type": "party",
+  "name": "CSU",
+  "full_name": "Christlich-Soziale Union in Bayern",
+  "country": "DE",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 4,
+    "LIB": 4,
+    "MIG": 5,
+    "INT": 3,
+    "CLI": 2,
+    "TEC": 3,
+    "DEM": 2
+  },
+  "facets": {
+    "eco_own": [35, "m"],
+    "eco_reg": [30, "m"],
+    "eco_lab": [10, "m"],
+    "eco_tax": [35, "m"],
+    "soc_fam": [45, "m"],
+    "soc_lgbt": [25, "m"],
+    "soc_rel": [45, "m"],
+    "soc_mor": [50, "m"],
+    "lib_priv": [50, "m"],
+    "lib_just": [75, "m"],
+    "lib_speech": [5, "m"],
+    "lib_emerg": [25, "m"],
+    "mig_lvl": [60, "h"],
+    "mig_asy": [70, "h"],
+    "mig_int": [60, "h"],
+    "mig_nat": [50, "h"],
+    "int_eu": [-35, "m"],
+    "int_trade": [-50, "m"],
+    "int_def": [-85, "m"],
+    "int_aid": [20, "m"],
+    "cli_amb": [5, "m"],
+    "cli_pay": [40, "m"],
+    "cli_nat": [45, "m"],
+    "cli_intl": [-30, "m"],
+    "tec_ai": [55, "m"],
+    "tec_bio": [20, "m"],
+    "tec_nuc": [65, "m"],
+    "tec_big": [0, "m"],
+    "dem_trust": [-45, "m"],
+    "dem_direct": [-30, "m"],
+    "dem_courts": [-45, "m"],
+    "dem_central": [-75, "m"]
+  },
+  "notes": {
+    "ECO": "Like CDU, with strong focus on Bavarian industry and farmers.",
+    "SOC": "More conservative than CDU on family and religion.",
+    "LIB": "Hardline on security.",
+    "MIG": "Most restrictive of the union parties.",
+    "INT": "Pro-EU but critical of Brussels bureaucracy.",
+    "CLI": "Against the heating law and the combustion engine ban.",
+    "TEC": "Pro nuclear return, pro tech.",
+    "DEM": "Strongly federalist, Bavaria first."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.csu.de/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

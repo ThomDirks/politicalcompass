@@ -1,0 +1,20 @@
+{
+  "code": "UK",
+  "name": "United Kingdom",
+  "legislature": "House of Commons",
+  "weight_basis": "GB vote share at the 2024 general election (%). Vote share is used because first-past-the-post seats distort the centre. Restore Britain did not exist yet and has weight 0.",
+  "parties": {
+    "uk-labour": 33.7, "uk-con": 23.7, "uk-reform": 14.3, "uk-ld": 12.2,
+    "uk-green": 6.7, "uk-snp": 2.5, "uk-plaid": 0.7, "uk-restore": 0
+  },
+  "local_topics": {
+    "ECO": ["two-child benefit cap", "rail and water nationalisation", "Employment Rights Act"],
+    "SOC": ["assisted dying bill", "gender recognition after the Supreme Court ruling", "faith schools"],
+    "LIB": ["digital ID", "Online Safety Act", "protest laws"],
+    "MIG": ["small boats", "leaving the ECHR", "net migration targets"],
+    "INT": ["rejoining the EU or customs union", "aid budget cut", "AUKUS and NATO spending"],
+    "CLI": ["net zero 2050", "North Sea oil and gas licences", "planning reform and nature"],
+    "TEC": ["AI growth zones", "Sizewell C and small modular reactors", "precision breeding"],
+    "DEM": ["electoral reform", "House of Lords", "Scottish and Welsh independence"]
+  }
+}

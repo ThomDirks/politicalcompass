@@ -1,0 +1,78 @@
+{
+  "id": "de-afd",
+  "type": "party",
+  "name": "AfD",
+  "full_name": "Alternative für Deutschland",
+  "country": "DE",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 4,
+    "LIB": 3,
+    "MIG": 5,
+    "INT": 4,
+    "CLI": 4,
+    "TEC": 2,
+    "DEM": 5
+  },
+  "facets": {
+    "eco_own": [25, "m"],
+    "eco_reg": [30, "m"],
+    "eco_lab": [10, "m"],
+    "eco_tax": [35, "m"],
+    "soc_fam": [80, "h"],
+    "soc_lgbt": [65, "h"],
+    "soc_rel": [25, "h"],
+    "soc_mor": [55, "h"],
+    "lib_priv": [-20, "m"],
+    "lib_just": [80, "m"],
+    "lib_speech": [-45, "m"],
+    "lib_emerg": [-20, "m"],
+    "mig_lvl": [95, "h"],
+    "mig_asy": [100, "h"],
+    "mig_int": [90, "h"],
+    "mig_nat": [95, "h"],
+    "int_eu": [85, "h"],
+    "int_trade": [20, "h"],
+    "int_def": [65, "h"],
+    "int_aid": [90, "h"],
+    "cli_amb": [100, "h"],
+    "cli_pay": [95, "h"],
+    "cli_nat": [70, "h"],
+    "cli_intl": [100, "h"],
+    "tec_ai": [15, "l"],
+    "tec_bio": [0, "l"],
+    "tec_nuc": [90, "l"],
+    "tec_big": [-10, "l"],
+    "dem_trust": [90, "h"],
+    "dem_direct": [90, "h"],
+    "dem_courts": [45, "h"],
+    "dem_central": [-30, "h"]
+  },
+  "notes": {
+    "ECO": "Lower taxes, abolish inheritance tax, pensions for natives first.",
+    "SOC": "Traditional family, against gender policy.",
+    "LIB": "Tough on crime; against hate speech laws and Covid measures.",
+    "MIG": "Remigration, closed borders.",
+    "INT": "Dexit as an option, end Ukraine support, Russia-friendly.",
+    "CLI": "Denies the need for climate policy, wants coal and nuclear back.",
+    "TEC": "Strongly pro nuclear.",
+    "DEM": "Anti-establishment, Swiss-style referendums."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.afd.de/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

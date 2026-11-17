@@ -1,0 +1,78 @@
+{
+  "id": "uk-green",
+  "type": "party",
+  "name": "Greens",
+  "full_name": "Green Party of England and Wales",
+  "country": "UK",
+  "period": {
+    "from": "2024",
+    "to": null,
+    "basis": "Positions and record up to Nov 2026. Led by Zack Polanski."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 3,
+    "LIB": 3,
+    "MIG": 3,
+    "INT": 3,
+    "CLI": 5,
+    "TEC": 2,
+    "DEM": 3
+  },
+  "facets": {
+    "eco_own": [-85, "m"],
+    "eco_reg": [-85, "m"],
+    "eco_lab": [-80, "m"],
+    "eco_tax": [-85, "m"],
+    "soc_fam": [-85, "h"],
+    "soc_lgbt": [-95, "h"],
+    "soc_rel": [-60, "h"],
+    "soc_mor": [-80, "h"],
+    "lib_priv": [-75, "m"],
+    "lib_just": [-55, "m"],
+    "lib_speech": [-20, "m"],
+    "lib_emerg": [-60, "m"],
+    "mig_lvl": [-70, "m"],
+    "mig_asy": [-85, "m"],
+    "mig_int": [-60, "m"],
+    "mig_nat": [-75, "m"],
+    "int_eu": [-55, "m"],
+    "int_trade": [20, "m"],
+    "int_def": [40, "m"],
+    "int_aid": [-80, "m"],
+    "cli_amb": [-100, "h"],
+    "cli_pay": [-85, "h"],
+    "cli_nat": [-85, "h"],
+    "cli_intl": [-95, "h"],
+    "tec_ai": [-40, "m"],
+    "tec_bio": [-60, "m"],
+    "tec_nuc": [-90, "m"],
+    "tec_big": [-80, "m"],
+    "dem_trust": [20, "m"],
+    "dem_direct": [30, "m"],
+    "dem_courts": [-60, "m"],
+    "dem_central": [-60, "m"]
+  },
+  "notes": {
+    "ECO": "Eco-socialist turn: wealth tax, public ownership.",
+    "SOC": "Strongly progressive, drug legalisation.",
+    "LIB": "Strong civil liberties.",
+    "MIG": "Open, humane asylum.",
+    "INT": "Rejoin the EU; sceptical of NATO.",
+    "CLI": "Core issue.",
+    "TEC": "Against nuclear and GMOs.",
+    "DEM": "Left-populist tone, electoral reform."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://greenparty.org.uk/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

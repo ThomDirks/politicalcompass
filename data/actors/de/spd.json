@@ -1,0 +1,78 @@
+{
+  "id": "de-spd",
+  "type": "party",
+  "name": "SPD",
+  "full_name": "Sozialdemokratische Partei Deutschlands",
+  "country": "DE",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 5,
+    "SOC": 3,
+    "LIB": 2,
+    "MIG": 3,
+    "INT": 3,
+    "CLI": 3,
+    "TEC": 2,
+    "DEM": 2
+  },
+  "facets": {
+    "eco_own": [-30, "h"],
+    "eco_reg": [-45, "h"],
+    "eco_lab": [-65, "h"],
+    "eco_tax": [-55, "h"],
+    "soc_fam": [-55, "m"],
+    "soc_lgbt": [-70, "m"],
+    "soc_rel": [-45, "m"],
+    "soc_mor": [-45, "m"],
+    "lib_priv": [10, "m"],
+    "lib_just": [10, "m"],
+    "lib_speech": [30, "m"],
+    "lib_emerg": [-10, "m"],
+    "mig_lvl": [-5, "m"],
+    "mig_asy": [-15, "m"],
+    "mig_int": [-20, "m"],
+    "mig_nat": [-45, "m"],
+    "int_eu": [-70, "m"],
+    "int_trade": [-40, "m"],
+    "int_def": [-70, "m"],
+    "int_aid": [-45, "m"],
+    "cli_amb": [-55, "m"],
+    "cli_pay": [-45, "m"],
+    "cli_nat": [-35, "m"],
+    "cli_intl": [-70, "m"],
+    "tec_ai": [-10, "m"],
+    "tec_bio": [0, "m"],
+    "tec_nuc": [-60, "m"],
+    "tec_big": [-45, "m"],
+    "dem_trust": [-60, "m"],
+    "dem_direct": [-20, "m"],
+    "dem_courts": [-65, "m"],
+    "dem_central": [-30, "m"]
+  },
+  "notes": {
+    "ECO": "Higher minimum wage, wealth tax, strong unions.",
+    "SOC": "Progressive.",
+    "LIB": "Moderate; supports enforcement against hate speech.",
+    "MIG": "Has moved stricter in coalition with CDU.",
+    "INT": "Pro-EU and pro NATO, with a peace wing in the party.",
+    "CLI": "Supports the 2045 target with social compensation.",
+    "TEC": "Against a nuclear return.",
+    "DEM": "Institutional."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.spd.de/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

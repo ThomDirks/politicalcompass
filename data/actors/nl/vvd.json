@@ -1,0 +1,82 @@
+{
+  "id": "nl-vvd",
+  "type": "party",
+  "name": "VVD",
+  "full_name": "Volkspartij voor Vrijheid en Democratie",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 5,
+    "SOC": 2,
+    "LIB": 4,
+    "MIG": 4,
+    "INT": 3,
+    "CLI": 2,
+    "TEC": 2,
+    "DEM": 1
+  },
+  "facets": {
+    "eco_own": [55, "h"],
+    "eco_reg": [45, "h"],
+    "eco_lab": [40, "h"],
+    "eco_tax": [45, "h"],
+    "soc_fam": [-20, "m"],
+    "soc_lgbt": [-50, "m"],
+    "soc_rel": [-40, "m"],
+    "soc_mor": [-30, "m"],
+    "lib_priv": [35, "h"],
+    "lib_just": [55, "h"],
+    "lib_speech": [-10, "h"],
+    "lib_emerg": [15, "h"],
+    "mig_lvl": [45, "h"],
+    "mig_asy": [65, "h"],
+    "mig_int": [55, "h"],
+    "mig_nat": [35, "h"],
+    "int_eu": [-15, "h"],
+    "int_trade": [-70, "h"],
+    "int_def": [-80, "h"],
+    "int_aid": [30, "h"],
+    "cli_amb": [10, "m"],
+    "cli_pay": [25, "m"],
+    "cli_nat": [30, "m"],
+    "cli_intl": [-20, "m"],
+    "tec_ai": [50, "m"],
+    "tec_bio": [55, "m"],
+    "tec_nuc": [85, "m"],
+    "tec_big": [35, "m"],
+    "dem_trust": [-50, "m"],
+    "dem_direct": [-70, "m"],
+    "dem_courts": [-35, "m"],
+    "dem_central": [10, "m"]
+  },
+  "notes": {
+    "ECO": "Liberal-conservative: lower taxes, flexible labour market, smaller state.",
+    "SOC": "Secular and liberal; supports euthanasia and regulated cannabis.",
+    "LIB": "Law and order, more police powers.",
+    "MIG": "Strict asylum policy, migration caps.",
+    "INT": "Pro-EU but frugal; free trade; strong NATO; cut aid.",
+    "CLI": "Accepts EU targets, resists extra national costs.",
+    "TEC": "Pro nuclear and innovation.",
+    "DEM": "Institutional; against referendums."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.vvd.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

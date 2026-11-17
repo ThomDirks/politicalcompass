@@ -1,0 +1,78 @@
+{
+  "id": "uk-ld",
+  "type": "party",
+  "name": "Lib Dems",
+  "full_name": "Liberal Democrats",
+  "country": "UK",
+  "period": {
+    "from": "2024",
+    "to": null,
+    "basis": "Positions and record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 3,
+    "LIB": 4,
+    "MIG": 2,
+    "INT": 4,
+    "CLI": 4,
+    "TEC": 2,
+    "DEM": 3
+  },
+  "facets": {
+    "eco_own": [-5, "m"],
+    "eco_reg": [-25, "m"],
+    "eco_lab": [-30, "m"],
+    "eco_tax": [-30, "m"],
+    "soc_fam": [-75, "m"],
+    "soc_lgbt": [-85, "m"],
+    "soc_rel": [-60, "m"],
+    "soc_mor": [-55, "m"],
+    "lib_priv": [-75, "h"],
+    "lib_just": [-30, "h"],
+    "lib_speech": [-10, "h"],
+    "lib_emerg": [-55, "h"],
+    "mig_lvl": [-30, "m"],
+    "mig_asy": [-60, "m"],
+    "mig_int": [-40, "m"],
+    "mig_nat": [-55, "m"],
+    "int_eu": [-70, "h"],
+    "int_trade": [-65, "h"],
+    "int_def": [-85, "h"],
+    "int_aid": [-60, "h"],
+    "cli_amb": [-75, "m"],
+    "cli_pay": [-55, "m"],
+    "cli_nat": [-55, "m"],
+    "cli_intl": [-85, "m"],
+    "tec_ai": [10, "m"],
+    "tec_bio": [40, "m"],
+    "tec_nuc": [20, "m"],
+    "tec_big": [-45, "m"],
+    "dem_trust": [-45, "m"],
+    "dem_direct": [-20, "m"],
+    "dem_courts": [-70, "m"],
+    "dem_central": [-60, "m"]
+  },
+  "notes": {
+    "ECO": "Centrist, more money for the NHS and care.",
+    "SOC": "Socially liberal.",
+    "LIB": "Civil liberties are core: against digital ID and surveillance.",
+    "MIG": "Humane, safe routes for asylum.",
+    "INT": "Customs union now, rejoin the EU long-term.",
+    "CLI": "Ambitious climate policy.",
+    "TEC": "Moderate.",
+    "DEM": "Electoral reform, federalism."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.libdems.org.uk/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

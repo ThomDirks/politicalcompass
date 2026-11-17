@@ -1,0 +1,78 @@
+{
+  "id": "uk-labour",
+  "type": "party",
+  "name": "Labour",
+  "full_name": "Labour Party",
+  "country": "UK",
+  "period": {
+    "from": "2024",
+    "to": null,
+    "basis": "Positions and record up to Nov 2026. In government since July 2024."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 2,
+    "LIB": 3,
+    "MIG": 4,
+    "INT": 3,
+    "CLI": 3,
+    "TEC": 3,
+    "DEM": 2
+  },
+  "facets": {
+    "eco_own": [-20, "h"],
+    "eco_reg": [-20, "h"],
+    "eco_lab": [-45, "h"],
+    "eco_tax": [-20, "h"],
+    "soc_fam": [-50, "m"],
+    "soc_lgbt": [-45, "m"],
+    "soc_rel": [-30, "m"],
+    "soc_mor": [-15, "m"],
+    "lib_priv": [40, "m"],
+    "lib_just": [40, "m"],
+    "lib_speech": [40, "m"],
+    "lib_emerg": [25, "m"],
+    "mig_lvl": [35, "h"],
+    "mig_asy": [40, "h"],
+    "mig_int": [25, "h"],
+    "mig_nat": [5, "h"],
+    "int_eu": [-20, "m"],
+    "int_trade": [-50, "m"],
+    "int_def": [-85, "m"],
+    "int_aid": [30, "m"],
+    "cli_amb": [-60, "h"],
+    "cli_pay": [-30, "h"],
+    "cli_nat": [10, "h"],
+    "cli_intl": [-75, "h"],
+    "tec_ai": [60, "m"],
+    "tec_bio": [50, "m"],
+    "tec_nuc": [75, "m"],
+    "tec_big": [15, "m"],
+    "dem_trust": [-50, "m"],
+    "dem_direct": [-55, "m"],
+    "dem_courts": [-40, "m"],
+    "dem_central": [-30, "m"]
+  },
+  "notes": {
+    "ECO": "Rail renationalisation, GB Energy, Employment Rights Act; fiscal caution.",
+    "SOC": "Progressive, cautious on gender identity after the Supreme Court ruling.",
+    "LIB": "Digital ID plans, Online Safety Act, proscription of protest groups.",
+    "MIG": "Aims to cut net migration sharply, tougher asylum rules.",
+    "INT": "EU reset without rejoining; aid cut to 0.3%.",
+    "CLI": "Clean power by 2030; planning reform eases development.",
+    "TEC": "Pro AI growth, pro nuclear.",
+    "DEM": "Institutional; devolution to English mayors."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://labour.org.uk/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

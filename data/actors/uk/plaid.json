@@ -1,0 +1,78 @@
+{
+  "id": "uk-plaid",
+  "type": "party",
+  "name": "Plaid Cymru",
+  "full_name": "Plaid Cymru",
+  "country": "UK",
+  "period": {
+    "from": "2024",
+    "to": null,
+    "basis": "Positions and record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 2,
+    "LIB": 2,
+    "MIG": 2,
+    "INT": 3,
+    "CLI": 3,
+    "TEC": 1,
+    "DEM": 5
+  },
+  "facets": {
+    "eco_own": [-50, "m"],
+    "eco_reg": [-55, "m"],
+    "eco_lab": [-60, "m"],
+    "eco_tax": [-60, "m"],
+    "soc_fam": [-75, "m"],
+    "soc_lgbt": [-80, "m"],
+    "soc_rel": [-50, "m"],
+    "soc_mor": [-45, "m"],
+    "lib_priv": [-45, "l"],
+    "lib_just": [-25, "l"],
+    "lib_speech": [20, "l"],
+    "lib_emerg": [-40, "l"],
+    "mig_lvl": [-45, "m"],
+    "mig_asy": [-65, "m"],
+    "mig_int": [-35, "m"],
+    "mig_nat": [10, "m"],
+    "int_eu": [-80, "m"],
+    "int_trade": [-30, "m"],
+    "int_def": [-30, "m"],
+    "int_aid": [-55, "m"],
+    "cli_amb": [-80, "m"],
+    "cli_pay": [-55, "m"],
+    "cli_nat": [-20, "m"],
+    "cli_intl": [-80, "m"],
+    "tec_ai": [-10, "l"],
+    "tec_bio": [-30, "l"],
+    "tec_nuc": [-20, "l"],
+    "tec_big": [-40, "l"],
+    "dem_trust": [-30, "l"],
+    "dem_direct": [10, "l"],
+    "dem_courts": [-45, "l"],
+    "dem_central": [-95, "l"]
+  },
+  "notes": {
+    "ECO": "Left of centre.",
+    "SOC": "Progressive.",
+    "LIB": "Civil liberties.",
+    "MIG": "Welcoming.",
+    "INT": "Rejoin the EU.",
+    "CLI": "Ambitious, with protection for Welsh farming.",
+    "TEC": "Mixed on nuclear.",
+    "DEM": "Welsh independence long-term; protect the Welsh language."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.partyof.wales/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "de-bsw",
+  "type": "party",
+  "name": "BSW",
+  "full_name": "Bündnis Sahra Wagenknecht",
+  "country": "DE",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026. Not in the Bundestag (4.98%)."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 2,
+    "LIB": 3,
+    "MIG": 4,
+    "INT": 5,
+    "CLI": 2,
+    "TEC": 1,
+    "DEM": 4
+  },
+  "facets": {
+    "eco_own": [-50, "m"],
+    "eco_reg": [-55, "m"],
+    "eco_lab": [-60, "m"],
+    "eco_tax": [-60, "m"],
+    "soc_fam": [20, "m"],
+    "soc_lgbt": [10, "m"],
+    "soc_rel": [0, "m"],
+    "soc_mor": [15, "m"],
+    "lib_priv": [-40, "m"],
+    "lib_just": [35, "m"],
+    "lib_speech": [-50, "m"],
+    "lib_emerg": [-50, "m"],
+    "mig_lvl": [60, "h"],
+    "mig_asy": [70, "h"],
+    "mig_int": [55, "h"],
+    "mig_nat": [35, "h"],
+    "int_eu": [45, "h"],
+    "int_trade": [45, "h"],
+    "int_def": [85, "h"],
+    "int_aid": [20, "h"],
+    "cli_amb": [40, "m"],
+    "cli_pay": [70, "m"],
+    "cli_nat": [20, "m"],
+    "cli_intl": [20, "m"],
+    "tec_ai": [-20, "l"],
+    "tec_bio": [-10, "l"],
+    "tec_nuc": [-10, "l"],
+    "tec_big": [-60, "l"],
+    "dem_trust": [70, "l"],
+    "dem_direct": [75, "l"],
+    "dem_courts": [-10, "l"],
+    "dem_central": [-10, "l"]
+  },
+  "notes": {
+    "ECO": "Left on wages, pensions and social security.",
+    "SOC": "Culturally conservative, against 'woke' politics.",
+    "LIB": "Against Covid-style measures and speech restrictions.",
+    "MIG": "Restrictive on migration.",
+    "INT": "Peace with Russia, against weapons for Ukraine, EU-critical.",
+    "CLI": "Against costly climate rules, wants cheap Russian gas.",
+    "TEC": "Little profile; critical of big tech.",
+    "DEM": "Anti-establishment, pro referendums."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://bsw-vg.de/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

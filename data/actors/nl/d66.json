@@ -1,0 +1,82 @@
+{
+  "id": "nl-d66",
+  "type": "party",
+  "name": "D66",
+  "full_name": "Democraten 66",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026. Leads the Jetten minority cabinet (D66, VVD, CDA)."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 4,
+    "LIB": 2,
+    "MIG": 2,
+    "INT": 4,
+    "CLI": 4,
+    "TEC": 3,
+    "DEM": 3
+  },
+  "facets": {
+    "eco_own": [15, "m"],
+    "eco_reg": [-5, "m"],
+    "eco_lab": [-5, "m"],
+    "eco_tax": [-10, "m"],
+    "soc_fam": [-75, "h"],
+    "soc_lgbt": [-90, "h"],
+    "soc_rel": [-80, "h"],
+    "soc_mor": [-85, "h"],
+    "lib_priv": [-30, "m"],
+    "lib_just": [-10, "m"],
+    "lib_speech": [5, "m"],
+    "lib_emerg": [-40, "m"],
+    "mig_lvl": [-20, "m"],
+    "mig_asy": [-30, "m"],
+    "mig_int": [-15, "m"],
+    "mig_nat": [-55, "m"],
+    "int_eu": [-90, "h"],
+    "int_trade": [-70, "h"],
+    "int_def": [-80, "h"],
+    "int_aid": [-50, "h"],
+    "cli_amb": [-70, "h"],
+    "cli_pay": [-55, "h"],
+    "cli_nat": [-55, "h"],
+    "cli_intl": [-80, "h"],
+    "tec_ai": [10, "m"],
+    "tec_bio": [55, "m"],
+    "tec_nuc": [55, "m"],
+    "tec_big": [-30, "m"],
+    "dem_trust": [-75, "h"],
+    "dem_direct": [-5, "h"],
+    "dem_courts": [-80, "h"],
+    "dem_central": [-20, "h"]
+  },
+  "notes": {
+    "ECO": "Social liberal; invest in education and housing construction.",
+    "SOC": "Strongly progressive: euthanasia, drug regulation, LGBTQ rights.",
+    "LIB": "Civil liberties, moderate on policing.",
+    "MIG": "EU-level asylum approach, open to labour and knowledge migration.",
+    "INT": "Strongly pro-European with federalist leanings.",
+    "CLI": "Ambitious climate and nitrogen policy.",
+    "TEC": "Pro science, open to nuclear, wants stricter big tech rules.",
+    "DEM": "Defends institutions; wants constitutional review; supports a corrective referendum."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://d66.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

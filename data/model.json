@@ -1,0 +1,193 @@
+{
+  "version": "0.1.0",
+  "scale": { "min": -100, "max": 100, "centre_band": 15 },
+  "axes": [
+    {
+      "id": "ECO", "name": "Economy",
+      "neg": { "letter": "C", "label": "Collective", "summary": "The state and society steer the economy, share risks and redistribute." },
+      "pos": { "letter": "M", "label": "Market", "summary": "Markets, private ownership and low taxes decide most outcomes." },
+      "facets": [
+        { "id": "eco_own", "name": "Ownership of key sectors",
+          "neg": "Energy, rail, water, healthcare and housing largely publicly owned.",
+          "mid": "Mixed: some public services and utilities public, the rest private.",
+          "pos": "Almost everything private, including healthcare, rail and utilities." },
+        { "id": "eco_reg", "name": "Market regulation and housing",
+          "neg": "Heavy regulation, price and rent controls, large public housing sector.",
+          "mid": "Targeted rules where markets fail.",
+          "pos": "Minimal regulation, no price or rent controls." },
+        { "id": "eco_lab", "name": "Labour and workers' rights",
+          "neg": "Strong unions, high minimum wage, strong job protection and co-determination.",
+          "mid": "Statutory minimum wage and basic protections, otherwise flexible.",
+          "pos": "Flexible hire and fire, weak or no minimum wage, limited union rights." },
+        { "id": "eco_tax", "name": "Tax and welfare",
+          "neg": "High, steeply progressive taxes funding generous, broad welfare.",
+          "mid": "Moderately progressive taxes and a conditional safety net.",
+          "pos": "Low, flat taxes and a minimal safety net." }
+      ]
+    },
+    {
+      "id": "SOC", "name": "Social values",
+      "neg": { "letter": "P", "label": "Progressive", "summary": "Individual choice in private life, active equality policy, secular state." },
+      "pos": { "letter": "T", "label": "Traditional", "summary": "Traditional family, religion and moral norms shape law and public life." },
+      "facets": [
+        { "id": "soc_fam", "name": "Family and gender roles",
+          "neg": "Active gender equality policy, all family forms treated equally.",
+          "mid": "Formal equality without active steering.",
+          "pos": "Law and policy promote the traditional family and gender roles." },
+        { "id": "soc_lgbt", "name": "LGBTQ rights",
+          "neg": "Full equality, legal gender self-identification, strong protections.",
+          "mid": "Same-sex marriage accepted, cautious on gender identity policy.",
+          "pos": "Against same-sex marriage, restricts legal gender change." },
+        { "id": "soc_rel", "name": "Religion in public life",
+          "neg": "Strict separation, no public funding or privileges for religion.",
+          "mid": "Neutral state that accommodates religious institutions.",
+          "pos": "Religion should guide law, education and public morals." },
+        { "id": "soc_mor", "name": "Personal morality laws",
+          "neg": "Legal abortion on request, euthanasia, regulated drugs and sex work.",
+          "mid": "Current Western European compromise: some of these legal, under conditions.",
+          "pos": "Ban or strongly restrict abortion, euthanasia, drugs and sex work." }
+      ]
+    },
+    {
+      "id": "LIB", "name": "Liberty vs order",
+      "neg": { "letter": "F", "label": "Freedom", "summary": "Limit state power over citizens, even at some cost to security." },
+      "pos": { "letter": "O", "label": "Order", "summary": "Give the state the powers it needs to keep order and security." },
+      "facets": [
+        { "id": "lib_priv", "name": "Surveillance and privacy",
+          "neg": "No mass surveillance or data retention, strong encryption, no digital ID.",
+          "mid": "Targeted surveillance with judicial oversight.",
+          "pos": "Broad surveillance, data retention, camera and ID systems." },
+        { "id": "lib_just", "name": "Policing and justice",
+          "neg": "Rehabilitation first, shorter sentences, fewer police powers.",
+          "mid": "Balance between punishment and rehabilitation.",
+          "pos": "Tough sentencing, more police with broad powers." },
+        { "id": "lib_speech", "name": "Limits on speech",
+          "neg": "Minimal legal limits on speech, protest or content online.",
+          "mid": "Incitement and direct threats banned, little beyond that.",
+          "pos": "Broad limits: hate speech and disinformation laws, platform duties, protest or campus restrictions. Counts restrictions from any direction." },
+        { "id": "lib_emerg", "name": "Emergency and executive powers",
+          "neg": "Tight limits on emergency powers, lockdowns and restrictions on assembly.",
+          "mid": "Emergency powers exist with time limits and parliamentary control.",
+          "pos": "Broad powers to govern by decree and restrict assembly in a crisis." }
+      ]
+    },
+    {
+      "id": "MIG", "name": "Migration and identity",
+      "neg": { "letter": "W", "label": "Welcoming", "summary": "More migration, generous asylum, a civic and plural identity." },
+      "pos": { "letter": "R", "label": "Restrictive", "summary": "Much less migration, strict asylum, protect national culture." },
+      "facets": [
+        { "id": "mig_lvl", "name": "Immigration levels",
+          "neg": "Much higher immigration, close to open borders.",
+          "mid": "Roughly current managed levels.",
+          "pos": "Near zero or net-negative immigration, including deportations of residents." },
+        { "id": "mig_asy", "name": "Asylum and refugees",
+          "neg": "Generous asylum, more resettlement, fewer detentions.",
+          "mid": "Refugee Convention obligations met, faster procedures.",
+          "pos": "Close asylum entirely, leave or ignore the Refugee Convention." },
+        { "id": "mig_int", "name": "Integration",
+          "neg": "Multicultural model, no assimilation demands.",
+          "mid": "Language and civic requirements, cultural freedom otherwise.",
+          "pos": "Strict assimilation, limits on religious or cultural expression." },
+        { "id": "mig_nat", "name": "National culture and identity",
+          "neg": "Civic, post-national identity, de-emphasise national culture.",
+          "mid": "Pride in national culture without exclusive claims.",
+          "pos": "Ethno-cultural nationalism, protect the native culture first." }
+      ]
+    },
+    {
+      "id": "INT", "name": "International",
+      "neg": { "letter": "G", "label": "Global", "summary": "Pool sovereignty, trade freely, act through alliances." },
+      "pos": { "letter": "N", "label": "National", "summary": "Keep sovereignty, protect the home market, go it alone." },
+      "facets": [
+        { "id": "int_eu", "name": "Supranational integration",
+          "neg": "Federal Europe or much stronger international institutions. US frame: UN, WTO, treaties.",
+          "mid": "Membership with selective cooperation.",
+          "pos": "Leave the EU or withdraw from international bodies." },
+        { "id": "int_trade", "name": "Trade",
+          "neg": "Free trade, more trade agreements.",
+          "mid": "Trade deals with safeguards for some sectors.",
+          "pos": "Tariffs and protection of domestic industry." },
+        { "id": "int_def", "name": "Alliances and collective defence",
+          "neg": "Strong commitment to NATO and allies, firm support for Ukraine.",
+          "mid": "In alliances, reluctant on commitments abroad.",
+          "pos": "Leave alliances or non-alignment, no military support abroad. Pacifist and nationalist reasons both count." },
+        { "id": "int_aid", "name": "Development aid",
+          "neg": "Aid well above 0.7% of GNI.",
+          "mid": "Around current levels.",
+          "pos": "Abolish development aid." }
+      ]
+    },
+    {
+      "id": "CLI", "name": "Climate and environment",
+      "neg": { "letter": "E", "label": "Ecological", "summary": "Climate and nature come first, even at real economic cost." },
+      "pos": { "letter": "D", "label": "Developmental", "summary": "Growth, affordability and land use come before climate and nature targets." },
+      "facets": [
+        { "id": "cli_amb", "name": "Climate ambition",
+          "neg": "Net zero well before 2040, legally binding.",
+          "mid": "Current EU and Paris-aligned targets, flexible on timing.",
+          "pos": "Abandon targets, climate policy not needed." },
+        { "id": "cli_pay", "name": "Transition costs and mandates",
+          "neg": "Accept high carbon prices and bans on fossil heating and cars.",
+          "mid": "Carbon pricing with compensation, few bans.",
+          "pos": "No carbon taxes or mandates, maximise fossil output." },
+        { "id": "cli_nat", "name": "Nature and agriculture",
+          "neg": "Sharp cuts in livestock and nitrogen, large-scale nature restoration.",
+          "mid": "Gradual measures, farmers compensated.",
+          "pos": "Farming and development first, scrap nature rules." },
+        { "id": "cli_intl", "name": "International climate deals",
+          "neg": "Strengthen Paris, large climate finance contributions.",
+          "mid": "Stay in Paris, meet commitments.",
+          "pos": "Leave Paris and climate finance." }
+      ]
+    },
+    {
+      "id": "TEC", "name": "Technology",
+      "neg": { "letter": "S", "label": "Sceptical", "summary": "Slow down and tightly control new technology." },
+      "pos": { "letter": "A", "label": "Accelerating", "summary": "Adopt new technology fast, regulate lightly." },
+      "facets": [
+        { "id": "tec_ai", "name": "AI and automation",
+          "neg": "Strict limits, moratoria on advanced AI, protect jobs from automation.",
+          "mid": "Risk-based regulation such as the EU AI Act.",
+          "pos": "Minimal regulation, push adoption, pre-empt local rules." },
+        { "id": "tec_bio", "name": "Biotech and genetics",
+          "neg": "Ban GMOs and gene editing in food and humans.",
+          "mid": "Case-by-case approval.",
+          "pos": "Permissive on GMOs, gene editing and new medical biotech." },
+        { "id": "tec_nuc", "name": "Nuclear and new energy technology",
+          "neg": "Phase out nuclear, against CCS and geoengineering.",
+          "mid": "Keep existing plants, open to research.",
+          "pos": "Build new nuclear and SMRs, back other new energy technology." },
+        { "id": "tec_big", "name": "Power of big tech",
+          "neg": "Break up platforms, strong content and data rules.",
+          "mid": "Competition and data rules like the EU DMA and DSA.",
+          "pos": "Leave platforms largely alone." }
+      ]
+    },
+    {
+      "id": "DEM", "name": "Democracy and institutions",
+      "neg": { "letter": "I", "label": "Institutional", "summary": "Trust and defend institutions, experts, courts and representative democracy." },
+      "pos": { "letter": "V", "label": "Vox populi", "summary": "The people against the elite, direct democracy, curb unelected power." },
+      "facets": [
+        { "id": "dem_trust", "name": "Trust in institutions and experts",
+          "neg": "Defends institutions, experts and established media.",
+          "mid": "Critical but loyal to the system.",
+          "pos": "Institutions, experts and media seen as a hostile elite." },
+        { "id": "dem_direct", "name": "Direct democracy",
+          "neg": "Purely representative, no referendums.",
+          "mid": "Occasional consultative referendums.",
+          "pos": "Binding referendums and citizens' initiatives on most issues." },
+        { "id": "dem_courts", "name": "Power of the courts",
+          "neg": "Strong independent courts with constitutional review.",
+          "mid": "Independent courts, parliament has the last word.",
+          "pos": "Curb judges and judicial review, more political control." },
+        { "id": "dem_central", "name": "Centralisation",
+          "neg": "Strong regional or local autonomy, up to independence.",
+          "mid": "Current division of power.",
+          "pos": "Power concentrated at national level.",
+          "note": "Does not load cleanly on this axis. Flagged for validation." }
+      ]
+    }
+  ],
+  "salience": { "min": 1, "max": 5, "meaning": "How central the axis is to the actor's programme and campaigns." },
+  "confidence": { "h": "Clear, documented position", "m": "Position known in direction, size estimated", "l": "Thin evidence, mostly inferred" }
+}

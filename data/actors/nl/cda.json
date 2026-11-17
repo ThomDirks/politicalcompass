@@ -1,0 +1,82 @@
+{
+  "id": "nl-cda",
+  "type": "party",
+  "name": "CDA",
+  "full_name": "Christen-Democratisch Appèl",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 3,
+    "LIB": 3,
+    "MIG": 3,
+    "INT": 3,
+    "CLI": 2,
+    "TEC": 1,
+    "DEM": 2
+  },
+  "facets": {
+    "eco_own": [20, "m"],
+    "eco_reg": [5, "m"],
+    "eco_lab": [-10, "m"],
+    "eco_tax": [10, "m"],
+    "soc_fam": [35, "m"],
+    "soc_lgbt": [-20, "m"],
+    "soc_rel": [25, "m"],
+    "soc_mor": [40, "m"],
+    "lib_priv": [25, "m"],
+    "lib_just": [45, "m"],
+    "lib_speech": [0, "m"],
+    "lib_emerg": [10, "m"],
+    "mig_lvl": [30, "m"],
+    "mig_asy": [40, "m"],
+    "mig_int": [45, "m"],
+    "mig_nat": [25, "m"],
+    "int_eu": [-45, "h"],
+    "int_trade": [-40, "h"],
+    "int_def": [-80, "h"],
+    "int_aid": [-10, "h"],
+    "cli_amb": [-25, "m"],
+    "cli_pay": [-10, "m"],
+    "cli_nat": [10, "m"],
+    "cli_intl": [-45, "m"],
+    "tec_ai": [10, "l"],
+    "tec_bio": [20, "l"],
+    "tec_nuc": [80, "l"],
+    "tec_big": [-30, "l"],
+    "dem_trust": [-55, "m"],
+    "dem_direct": [-50, "m"],
+    "dem_courts": [-50, "m"],
+    "dem_central": [-40, "m"]
+  },
+  "notes": {
+    "ECO": "Social market economy, family-friendly taxes.",
+    "SOC": "Christian democratic: against 'completed life' euthanasia and drug legalisation.",
+    "LIB": "Law and order, community policing.",
+    "MIG": "Controlled migration, stricter asylum.",
+    "INT": "Pro-EU, strong NATO.",
+    "CLI": "Moderate climate policy, farmer-friendly on nitrogen.",
+    "TEC": "Pro nuclear.",
+    "DEM": "Institutional; subsidiarity and strong local government."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.cda.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

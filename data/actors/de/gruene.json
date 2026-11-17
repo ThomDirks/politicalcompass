@@ -1,0 +1,78 @@
+{
+  "id": "de-gruene",
+  "type": "party",
+  "name": "Grüne",
+  "full_name": "Bündnis 90/Die Grünen",
+  "country": "DE",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "Bundestagswahl 2025 programme and record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 4,
+    "LIB": 3,
+    "MIG": 3,
+    "INT": 4,
+    "CLI": 5,
+    "TEC": 2,
+    "DEM": 2
+  },
+  "facets": {
+    "eco_own": [-30, "m"],
+    "eco_reg": [-50, "m"],
+    "eco_lab": [-45, "m"],
+    "eco_tax": [-55, "m"],
+    "soc_fam": [-85, "h"],
+    "soc_lgbt": [-95, "h"],
+    "soc_rel": [-55, "h"],
+    "soc_mor": [-65, "h"],
+    "lib_priv": [-55, "m"],
+    "lib_just": [-35, "m"],
+    "lib_speech": [30, "m"],
+    "lib_emerg": [-40, "m"],
+    "mig_lvl": [-55, "m"],
+    "mig_asy": [-65, "m"],
+    "mig_int": [-50, "m"],
+    "mig_nat": [-75, "m"],
+    "int_eu": [-90, "h"],
+    "int_trade": [-45, "h"],
+    "int_def": [-90, "h"],
+    "int_aid": [-70, "h"],
+    "cli_amb": [-95, "h"],
+    "cli_pay": [-80, "h"],
+    "cli_nat": [-75, "h"],
+    "cli_intl": [-95, "h"],
+    "tec_ai": [-15, "m"],
+    "tec_bio": [-55, "m"],
+    "tec_nuc": [-95, "m"],
+    "tec_big": [-60, "m"],
+    "dem_trust": [-70, "m"],
+    "dem_direct": [10, "m"],
+    "dem_courts": [-80, "m"],
+    "dem_central": [-30, "m"]
+  },
+  "notes": {
+    "ECO": "Green market economy with more public investment and taxes on wealth.",
+    "SOC": "Strongly progressive.",
+    "LIB": "Civil liberties; supports action against online hate.",
+    "MIG": "Humane asylum, open society.",
+    "INT": "Strongly pro-EU, hawkish on Russia, firm Ukraine support.",
+    "CLI": "Core issue.",
+    "TEC": "Against nuclear and GMOs.",
+    "DEM": "Institutional; supports federal referendums."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.gruene.de/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

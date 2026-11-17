@@ -1,0 +1,82 @@
+{
+  "id": "nl-50plus",
+  "type": "party",
+  "name": "50PLUS",
+  "full_name": "50PLUS",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 4,
+    "SOC": 1,
+    "LIB": 2,
+    "MIG": 2,
+    "INT": 1,
+    "CLI": 1,
+    "TEC": 1,
+    "DEM": 2
+  },
+  "facets": {
+    "eco_own": [-20, "m"],
+    "eco_reg": [-10, "m"],
+    "eco_lab": [-15, "m"],
+    "eco_tax": [-35, "m"],
+    "soc_fam": [0, "l"],
+    "soc_lgbt": [-30, "l"],
+    "soc_rel": [-20, "l"],
+    "soc_mor": [-45, "l"],
+    "lib_priv": [10, "l"],
+    "lib_just": [35, "l"],
+    "lib_speech": [0, "l"],
+    "lib_emerg": [0, "l"],
+    "mig_lvl": [25, "l"],
+    "mig_asy": [30, "l"],
+    "mig_int": [35, "l"],
+    "mig_nat": [20, "l"],
+    "int_eu": [-20, "l"],
+    "int_trade": [-20, "l"],
+    "int_def": [-55, "l"],
+    "int_aid": [20, "l"],
+    "cli_amb": [10, "l"],
+    "cli_pay": [35, "l"],
+    "cli_nat": [20, "l"],
+    "cli_intl": [-10, "l"],
+    "tec_ai": [0, "l"],
+    "tec_bio": [10, "l"],
+    "tec_nuc": [45, "l"],
+    "tec_big": [-20, "l"],
+    "dem_trust": [0, "l"],
+    "dem_direct": [30, "l"],
+    "dem_courts": [-30, "l"],
+    "dem_central": [0, "l"]
+  },
+  "notes": {
+    "ECO": "Pensions and elderly care first.",
+    "SOC": "Supports euthanasia for 'completed life'.",
+    "LIB": "Moderate on crime.",
+    "MIG": "Moderately restrictive.",
+    "INT": "Moderate, pro-EU.",
+    "CLI": "Concerned about costs for older people.",
+    "TEC": "Little profile.",
+    "DEM": "Mildly anti-establishment."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://50pluspartij.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

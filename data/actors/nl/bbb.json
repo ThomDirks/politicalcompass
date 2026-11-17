@@ -1,0 +1,82 @@
+{
+  "id": "nl-bbb",
+  "type": "party",
+  "name": "BBB",
+  "full_name": "BoerBurgerBeweging",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 2,
+    "LIB": 2,
+    "MIG": 4,
+    "INT": 2,
+    "CLI": 5,
+    "TEC": 1,
+    "DEM": 4
+  },
+  "facets": {
+    "eco_own": [-5, "m"],
+    "eco_reg": [15, "m"],
+    "eco_lab": [0, "m"],
+    "eco_tax": [10, "m"],
+    "soc_fam": [30, "m"],
+    "soc_lgbt": [5, "m"],
+    "soc_rel": [15, "m"],
+    "soc_mor": [20, "m"],
+    "lib_priv": [20, "m"],
+    "lib_just": [60, "m"],
+    "lib_speech": [-20, "m"],
+    "lib_emerg": [10, "m"],
+    "mig_lvl": [60, "m"],
+    "mig_asy": [75, "m"],
+    "mig_int": [55, "m"],
+    "mig_nat": [60, "m"],
+    "int_eu": [40, "m"],
+    "int_trade": [40, "m"],
+    "int_def": [-50, "m"],
+    "int_aid": [50, "m"],
+    "cli_amb": [45, "h"],
+    "cli_pay": [65, "h"],
+    "cli_nat": [95, "h"],
+    "cli_intl": [40, "h"],
+    "tec_ai": [0, "l"],
+    "tec_bio": [30, "l"],
+    "tec_nuc": [80, "l"],
+    "tec_big": [-10, "l"],
+    "dem_trust": [45, "m"],
+    "dem_direct": [50, "m"],
+    "dem_courts": [20, "m"],
+    "dem_central": [-60, "m"]
+  },
+  "notes": {
+    "ECO": "Centre-right with focus on rural services.",
+    "SOC": "Mildly conservative.",
+    "LIB": "Tough on crime.",
+    "MIG": "Restrictive on asylum.",
+    "INT": "EU-critical, against the Mercosur deal.",
+    "CLI": "Core issue: protect farmers against nitrogen and nature rules.",
+    "TEC": "Open to gene editing in crops, pro nuclear.",
+    "DEM": "Regions against The Hague, anti-establishment tone."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://boerburgerbeweging.nl/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

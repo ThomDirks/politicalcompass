@@ -1,0 +1,20 @@
+{
+  "code": "DE",
+  "name": "Germany",
+  "legislature": "Bundestag",
+  "weight_basis": "Second vote share at the 2025 Bundestag election (%). Includes BSW and FDP, which narrowly missed the 5% threshold.",
+  "parties": {
+    "de-cdu": 22.55, "de-afd": 20.80, "de-spd": 16.41, "de-gruene": 11.61,
+    "de-linke": 8.77, "de-csu": 5.97, "de-bsw": 4.98, "de-fdp": 4.33
+  },
+  "local_topics": {
+    "ECO": ["Bürgergeld reform", "debt brake (Schuldenbremse)", "rent cap (Mietpreisbremse)"],
+    "SOC": ["cannabis law", "abortion law (§218)", "self-determination law for gender"],
+    "LIB": ["IP address retention", "NetzDG and online hate", "Verfassungsschutz and party bans"],
+    "MIG": ["border turnbacks", "family reunification", "citizenship reform"],
+    "INT": ["Bundeswehr spending and conscription", "Taurus and Ukraine", "EU-Mercosur"],
+    "CLI": ["heating law (Heizungsgesetz)", "combustion engine ban 2035", "coal phase-out"],
+    "TEC": ["nuclear phase-out", "digitalisation of administration", "AI and industry"],
+    "DEM": ["federal referendums", "Federal Constitutional Court", "Länder versus Bund"]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "uk-snp",
+  "type": "party",
+  "name": "SNP",
+  "full_name": "Scottish National Party",
+  "country": "UK",
+  "period": {
+    "from": "2024",
+    "to": null,
+    "basis": "Positions and record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 3,
+    "LIB": 2,
+    "MIG": 2,
+    "INT": 4,
+    "CLI": 3,
+    "TEC": 1,
+    "DEM": 5
+  },
+  "facets": {
+    "eco_own": [-40, "m"],
+    "eco_reg": [-45, "m"],
+    "eco_lab": [-55, "m"],
+    "eco_tax": [-55, "m"],
+    "soc_fam": [-70, "m"],
+    "soc_lgbt": [-75, "m"],
+    "soc_rel": [-55, "m"],
+    "soc_mor": [-45, "m"],
+    "lib_priv": [-40, "m"],
+    "lib_just": [-10, "m"],
+    "lib_speech": [40, "m"],
+    "lib_emerg": [-20, "m"],
+    "mig_lvl": [-50, "m"],
+    "mig_asy": [-60, "m"],
+    "mig_int": [-40, "m"],
+    "mig_nat": [-10, "m"],
+    "int_eu": [-85, "h"],
+    "int_trade": [-40, "h"],
+    "int_def": [-30, "h"],
+    "int_aid": [-60, "h"],
+    "cli_amb": [-75, "m"],
+    "cli_pay": [-50, "m"],
+    "cli_nat": [-30, "m"],
+    "cli_intl": [-80, "m"],
+    "tec_ai": [0, "l"],
+    "tec_bio": [-30, "l"],
+    "tec_nuc": [-80, "l"],
+    "tec_big": [-35, "l"],
+    "dem_trust": [-30, "h"],
+    "dem_direct": [20, "h"],
+    "dem_courts": [-50, "h"],
+    "dem_central": [-100, "h"]
+  },
+  "notes": {
+    "ECO": "Social democratic.",
+    "SOC": "Progressive.",
+    "LIB": "Passed the Scottish Hate Crime Act.",
+    "MIG": "Wants more migration to Scotland.",
+    "INT": "Rejoin the EU; in NATO, against Trident.",
+    "CLI": "Ambitious targets.",
+    "TEC": "No new nuclear in Scotland, GM ban.",
+    "DEM": "Independence is the core aim."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://www.snp.org/"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "nl-volt",
+  "type": "party",
+  "name": "Volt",
+  "full_name": "Volt Nederland",
+  "country": "NL",
+  "period": {
+    "from": "2025",
+    "to": null,
+    "basis": "TK2025 election programme and parliamentary record up to Nov 2026."
+  },
+  "status": "draft",
+  "method": "Hand-scored against the facet anchors in data/model.json. To be calibrated against CHES 2024 and voting advice tools.",
+  "salience": {
+    "ECO": 3,
+    "SOC": 3,
+    "LIB": 3,
+    "MIG": 3,
+    "INT": 5,
+    "CLI": 4,
+    "TEC": 3,
+    "DEM": 3
+  },
+  "facets": {
+    "eco_own": [10, "m"],
+    "eco_reg": [-15, "m"],
+    "eco_lab": [-25, "m"],
+    "eco_tax": [-35, "m"],
+    "soc_fam": [-85, "h"],
+    "soc_lgbt": [-95, "h"],
+    "soc_rel": [-75, "h"],
+    "soc_mor": [-75, "h"],
+    "lib_priv": [-55, "m"],
+    "lib_just": [-30, "m"],
+    "lib_speech": [10, "m"],
+    "lib_emerg": [-45, "m"],
+    "mig_lvl": [-55, "m"],
+    "mig_asy": [-60, "m"],
+    "mig_int": [-45, "m"],
+    "mig_nat": [-85, "m"],
+    "int_eu": [-100, "h"],
+    "int_trade": [-60, "h"],
+    "int_def": [-85, "h"],
+    "int_aid": [-70, "h"],
+    "cli_amb": [-85, "m"],
+    "cli_pay": [-65, "m"],
+    "cli_nat": [-60, "m"],
+    "cli_intl": [-95, "m"],
+    "tec_ai": [5, "m"],
+    "tec_bio": [45, "m"],
+    "tec_nuc": [40, "m"],
+    "tec_big": [-45, "m"],
+    "dem_trust": [-50, "m"],
+    "dem_direct": [-30, "m"],
+    "dem_courts": [-80, "m"],
+    "dem_central": [-30, "m"]
+  },
+  "notes": {
+    "ECO": "Pan-European social liberal, pro investment and innovation.",
+    "SOC": "Strongly progressive.",
+    "LIB": "Pro privacy.",
+    "MIG": "European, humane migration policy.",
+    "INT": "A federal Europe is the core aim.",
+    "CLI": "Ambitious climate policy at EU level.",
+    "TEC": "Pro innovation with EU regulation.",
+    "DEM": "Institutional; pro-European democratic reform."
+  },
+  "sources": [
+    {
+      "title": "Party website",
+      "url": "https://voltnederland.org/"
+    },
+    {
+      "title": "Tweede Kamer, zetelverdeling juni 2026",
+      "url": "https://www.tweedekamer.nl/sites/default/files/2026-06/zetelverdeling%20Juni%202026%20NL.pdf"
+    },
+    {
+      "title": "Chapel Hill Expert Survey 2024 (calibration target)",
+      "url": "https://www.chesdata.eu/"
+    }
+  ]
+}
