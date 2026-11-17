@@ -1,0 +1,157 @@
+{
+  "version": "0.1.0",
+  "dimensions": [
+    { "id": "econ", "name": "Economy", "axes": ["ECO"],
+      "neg": { "letter": "C", "label": "Collective" }, "pos": { "letter": "M", "label": "Market" },
+      "question": "Who should steer the economy: society through the state, or markets?" },
+    { "id": "culture", "name": "Culture", "axes": ["SOC", "LIB", "MIG"],
+      "neg": { "letter": "P", "label": "Progressive" }, "pos": { "letter": "T", "label": "Traditional" },
+      "question": "Open, plural and free in private life, or rooted in tradition, order and national identity?" },
+    { "id": "power", "name": "Power", "axes": ["INT", "DEM"],
+      "neg": { "letter": "I", "label": "Institutional" }, "pos": { "letter": "S", "label": "Sovereigntist" },
+      "question": "Trust shared institutions, experts and alliances, or take power back to the nation and its people?" },
+    { "id": "future", "name": "Future", "axes": ["CLI", "TEC"],
+      "neg": { "letter": "E", "label": "Ecological" }, "pos": { "letter": "G", "label": "Growth" },
+      "question": "Slow down to protect the planet, or grow and innovate our way forward?" }
+  ],
+  "families": [
+    { "id": "CP", "name": "Progressives", "color": "#2F7A6E", "summary": "Collective economics and progressive values. They want a fairer society and an open one." },
+    { "id": "CT", "name": "Communitarians", "color": "#7B4A78", "summary": "Collective economics and traditional values. They want security for working people and strong communities." },
+    { "id": "MP", "name": "Liberals", "color": "#B98A1E", "summary": "Market economics and progressive values. They want freedom in the economy and in private life." },
+    { "id": "MT", "name": "Conservatives", "color": "#3D5A89", "summary": "Market economics and traditional values. They want prosperity, order and continuity." }
+  ],
+  "no_examples": {
+    "actors": ["de-nsdap", "nl-nsb", "uk-buf", "de-sed", "de-kpd"],
+    "reason": "Totalitarian or paramilitary movements are not shown as examples of a type. The model measures policy positions, not violence or the destruction of democracy, so a type label would say too little about them. Their profiles stay available on the party pages."
+  },
+  "types": [
+    { "code": "CPIE", "name": "The Gardener", "prop": "plant",
+      "tagline": "Grow a fairer society and a liveable planet, through institutions that work together.",
+      "about": [
+        "Gardeners want a society that looks after people and nature at the same time. They back strong public services, equal rights and serious climate policy, and they believe big problems need shared institutions: the EU, international courts, independent experts.",
+        "Change, for them, should be steady and well planned rather than revolutionary. Critics say the plans that sound good in Brussels or Berlin can feel distant to the people who end up paying for them."
+      ],
+      "cares": ["Climate and nature", "Equal rights", "Public services"],
+      "clash": ["MTSG", "MTSE"] },
+    { "code": "CPIG", "name": "The Builder", "prop": "blueprint",
+      "tagline": "Jobs, homes and infrastructure first. Progress you can see.",
+      "about": [
+        "Builders are social democrats in a hard hat. They want fair wages, good public services and a tolerant society, but they measure progress in houses built, power stations running and factories kept open.",
+        "Technology and growth are tools to lift people up, and institutions are there to deliver them. Greens say Builders move too slowly on climate; the right says they spend too freely."
+      ],
+      "cares": ["Work and wages", "Housing", "Modern infrastructure"],
+      "clash": ["CPSE", "MPSG"] },
+    { "code": "CPSE", "name": "The Activist", "prop": "placard",
+      "tagline": "The system is broken, and the planet can't wait for it to fix itself.",
+      "about": [
+        "Activists combine left-wing economics and progressive values with a deep distrust of the powers that be: big business, distant institutions, sometimes the EU itself. They like direct action, referendums and grassroots movements.",
+        "They would rather slow growth than use up the planet. Opponents call them idealists. Activists reply that most rights we now take for granted once looked idealistic too."
+      ],
+      "cares": ["Climate justice", "Inequality", "People power"],
+      "clash": ["MTIG", "MPIG"] },
+    { "code": "CPSG", "name": "The Organizer", "prop": "megaphone",
+      "tagline": "Working people deserve a bigger share, and they'll have to fight for it.",
+      "about": [
+        "Organizers think in terms of solidarity: unions, strikes, public ownership. They're socially progressive but impatient with institutions that seem to protect the comfortable.",
+        "They back industry and good industrial jobs, and they're wary of climate rules that cost workers more than the wealthy. Critics say their economics would scare off investment."
+      ],
+      "cares": ["Wages and unions", "Public ownership", "A say for workers"],
+      "clash": ["MPSG", "MTIG"] },
+    { "code": "CTIE", "name": "The Steward", "prop": "lantern",
+      "tagline": "We hold this world in trust. Care for your neighbour, care for the land.",
+      "about": [
+        "Stewards pair a social conscience with traditional values, often rooted in faith. They want a strong safety net and support for families, are cautious about euthanasia and drugs, and see protecting nature as a moral duty.",
+        "They value institutions and international cooperation. Progressives find them too moralistic; the right finds them too generous with public money."
+      ],
+      "cares": ["Family and community", "Care for the vulnerable", "Nature"],
+      "clash": ["MPSG", "MPSE"] },
+    { "code": "CTIG", "name": "The Neighbour", "prop": "pie",
+      "tagline": "Strong communities, decent work, and a steady hand on the wheel.",
+      "about": [
+        "Neighbours are the old centre of many democracies: social on the economy, moderate to conservative on culture, loyal to institutions and practical about growth.",
+        "They want a welfare state that rewards work, some control over migration and a government that keeps things running without drama. Activists find them too cautious, Challengers too comfortable with the establishment."
+      ],
+      "cares": ["Community and family", "Stability", "Fair work"],
+      "clash": ["CPSE", "MTSG"] },
+    { "code": "CTSE", "name": "The Villager", "prop": "basket",
+      "tagline": "Keep it local, keep it human, keep it ours.",
+      "about": [
+        "Villagers distrust both big government and big business. They want decisions made close to home, value tradition and local identity, and are sceptical of fast technological change and globalisation.",
+        "They tend to favour a strong safety net and the protection of the landscape they grew up in. Critics say small-scale thinking can't solve problems that cross borders."
+      ],
+      "cares": ["Local control", "Tradition", "The landscape"],
+      "clash": ["MPIG", "MPIE"] },
+    { "code": "CTSG", "name": "The Tribune", "prop": "pennant",
+      "tagline": "Protect working people first: from the market, from the elite, from change that moves too fast.",
+      "about": [
+        "Tribunes combine left-leaning economics with conservative views on migration and culture, and a strong distrust of the political class. They want good pensions and secure jobs, less immigration, and power back from Brussels and the experts.",
+        "Affordable energy comes before climate targets. The left calls this nationalism, the right calls it big-government populism. Tribunes say they're the only ones who listen."
+      ],
+      "cares": ["Jobs and pensions", "Migration", "Sovereignty"],
+      "clash": ["MPIE", "CPIE"] },
+    { "code": "MPIE", "name": "The Cosmopolitan", "prop": "suitcase",
+      "tagline": "Open to ideas, trade and people, with a green plan for the economy.",
+      "about": [
+        "Cosmopolitans are market-friendly progressives. They like free trade, the EU and personal freedom, and they want climate policy that works through markets: carbon prices, innovation, smart rules.",
+        "They trust experts and international institutions to run a connected world. Critics say they speak mainly for well-educated city dwellers, who gain most from openness."
+      ],
+      "cares": ["Europe and global cooperation", "Personal freedom", "Climate"],
+      "clash": ["CTSG", "MTSG"] },
+    { "code": "MPIG", "name": "The Innovator", "prop": "rocket",
+      "tagline": "Free markets, free people, and technology that moves us forward.",
+      "about": [
+        "Innovators are classic liberals with an eye on the future: lower taxes, less red tape, personal freedom and a strong rule of law. They're enthusiastic about AI, biotech and nuclear power.",
+        "They believe growth solves more problems than it creates. The left says they underestimate inequality; greens say they bet too much on technology arriving in time."
+      ],
+      "cares": ["Enterprise", "Innovation", "Personal freedom"],
+      "clash": ["CPSE", "CTSE"] },
+    { "code": "MPSE", "name": "The Free Thinker", "prop": "plane",
+      "tagline": "Leave people alone, and watch anyone who wants to run their lives, governments and tech giants included.",
+      "about": [
+        "Free Thinkers combine market economics with socially liberal views and a strong suspicion of concentrated power. They defend privacy, free speech and civil liberties, and are critical of surveillance and big tech.",
+        "They see nature as something worth conserving, on people's own terms. Critics say distrust of every institution leaves nobody able to solve shared problems."
+      ],
+      "cares": ["Privacy and civil liberties", "Self-reliance", "Nature"],
+      "clash": ["MTIG", "CPSG"] },
+    { "code": "MPSG", "name": "The Maverick", "prop": "coin",
+      "tagline": "Less state, more freedom, and nobody telling you what to think.",
+      "about": [
+        "Mavericks are libertarians at heart. They want low taxes and light regulation, are relaxed about how people live, and distrust politicians, central banks and international bodies alike.",
+        "They welcome new technology and see most climate rules as government overreach. Critics say a small state leaves the weakest to fend for themselves."
+      ],
+      "cares": ["Low taxes", "Free speech", "Independence"],
+      "clash": ["CPSG", "CPIE"] },
+    { "code": "MTIE", "name": "The Warden", "prop": "binoculars",
+      "tagline": "Conserve what works: the economy, the institutions and the countryside.",
+      "about": [
+        "Wardens are conservatives in the literal sense. They favour a market economy and traditional values, respect institutions and the rule of law, and see protecting landscapes and nature as part of protecting the nation.",
+        "Change should be gradual and well considered. Growth-first conservatives find them too cautious, progressives too attached to the past."
+      ],
+      "cares": ["Tradition", "Stable institutions", "Nature and heritage"],
+      "clash": ["MPSG", "CPSE"] },
+    { "code": "MTIG", "name": "The Statesman", "prop": "briefcase",
+      "tagline": "Prosperity, order and reliable allies.",
+      "about": [
+        "Statesmen are the mainstream centre-right. They want a competitive economy with moderate taxes, law and order, controlled migration, and firm commitments to allies and international agreements.",
+        "They back growth and new technology and prefer steady governing to grand gestures. The left sees them as defenders of privilege; the populist right sees them as the establishment."
+      ],
+      "cares": ["The economy", "Security", "Stability"],
+      "clash": ["CPSE", "MTSG"] },
+    { "code": "MTSE", "name": "The Homesteader", "prop": "wheat",
+      "tagline": "Self-reliance, family and land, far from the bureaucrats.",
+      "about": [
+        "Homesteaders want a small state, strong families and local communities, and as little interference from distant governments as possible.",
+        "They are sceptical of fast-moving technology and of rules made far from home, and they care about land, food and the countryside on their own terms. Critics say they underestimate problems that need national or global answers."
+      ],
+      "cares": ["Family", "Land and farming", "Self-reliance"],
+      "clash": ["MPIE", "CPIE"] },
+    { "code": "MTSG", "name": "The Challenger", "prop": "microphone",
+      "tagline": "Take back control: of the borders, the money and the country.",
+      "about": [
+        "Challengers combine conservative values and market economics with a strong push against the political establishment. They want much less immigration, power returned from international bodies, lower taxes and cheap energy.",
+        "They see most climate policy as a cost imposed by elites. Critics say they divide society; Challengers say they speak for people the mainstream stopped listening to."
+      ],
+      "cares": ["Borders", "National sovereignty", "Cost of living"],
+      "clash": ["CPIE", "MPIE"] }
+  ]
+}

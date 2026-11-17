@@ -10,93 +10,93 @@ Marks: **~** = axis based on a single facet, **ᵖ** = CHES proxy (overall left/
 
 ## Germany
 
-| Party | Code | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
+| Party | Type | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| CDU | `MTOR-GxAI` | +31 | +26 | +29 | +45 | -48 | +4 | +31 | -51 |
-| AfD | `MTxR-NDAV` | +25 | +56 | -1 | +95 | +65 | +91 | +24 | +49 |
-| SPD | `CPxW-GESI` | -49 | -54 | +10 | -21 | -44 | -51 | -29 | -37 |
-| Grüne | `CPFW-GESI` | -45 | -75 | -25 | -61 | -64 | -86 | -56 | -37 |
-| Die Linke | `CPFW-xESx` | -88 | -71 | -40 | -69 | +9 | -68 | -69 | +1 |
-| CSU | `MTOR-GDAI` | +28 | +37 | +39 | +60 | -31 | +15 | +35 | -49 |
-| BSW | `CxFR-NDSV` | -56 | +2 | -26 | +55 | +49 | +38 | -25 | +34 |
-| FDP | `MPFR-GxAI` | +64 | -58 | -40 | +18 | -54 | +8 | +58 | -38 |
-| *Centre* | `xxxR-xxxI` | *-7* | *-7* | *+1* | *+21* | *-13* | *-1* | *-2* | *-15* |
+| CDU | MTIG The Statesman | +31 | +26 | +29 | +45 | -48 | +4 | +31 | -51 |
+| AfD | MTSG The Challenger | +25 | +56 | -1 | +95 | +65 | +91 | +24 | +49 |
+| SPD | CPIE The Gardener | -49 | -54 | +10 | -21 | -44 | -51 | -29 | -37 |
+| Grüne | CPIE The Gardener | -45 | -75 | -25 | -61 | -64 | -86 | -56 | -37 |
+| Die Linke | CPSE The Activist | -88 | -71 | -40 | -69 | +9 | -68 | -69 | +1 |
+| CSU | MTIG The Statesman | +28 | +37 | +39 | +60 | -31 | +15 | +35 | -49 |
+| BSW | CTSG The Tribune | -56 | +2 | -26 | +55 | +49 | +38 | -25 | +34 |
+| FDP | MPIG The Innovator | +64 | -58 | -40 | +18 | -54 | +8 | +58 | -38 |
+| *Centre* | CTIE The Steward | *-7* | *-7* | *+1* | *+21* | *-13* | *-1* | *-2* | *-15* |
 
 Centre weights: Second vote share at the 2025 Bundestag election (%). Includes BSW and FDP, which narrowly missed the 5% threshold.
 
 ## Netherlands
 
-| Party | Code | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
+| Party | Type | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| D66 | `xPFW-GEAI` | -1 | -82 | -26 | -26 | -68 | -65 | +22 | -49 |
-| VVD | `MPOR-GxAI` | +46 | -30 | +24 | +50 | -34 | +11 | +56 | -36 |
-| PRO | `CPFW-GESI` | -64 | -78 | -32 | -55 | -56 | -84 | -39 | -48 |
-| PVV | `xTOR-NDAV` | -10 | +20 | +32 | +79 | +51 | +74 | +28 | +56 |
-| CDA | `xTOR-GEAI` | +6 | +20 | +20 | +35 | -39 | -18 | +20 | -43 |
-| JA21 | `MxOR-xDAV` | +55 | +11 | +26 | +75 | -6 | +55 | +48 | +29 |
-| DNA | `xTOR-NDAV` | +12 | +19 | +32 | +82 | +30 | +60 | +32 | +31 |
-| FvD | `MTFR-NDxV` | +31 | +57 | -25 | +87 | +64 | +92 | -10 | +63 |
-| BBB | `xTOR-NDAx` | +5 | +18 | +18 | +56 | +26 | +55 | +25 | +6 |
-| SGP | `MTOR-xDxI` | +20 | +92 | +30 | +47 | +5 | +32 | -1 | -35 |
-| DENK | `CTFW-GExI` | -46 | +41 | -15 | -70 | -22 | -25 | -12 | -16 |
-| PvdD | `CPFW-xESI` | -66 | -71 | -45 | -52 | +4 | -91 | -75 | -18 |
-| CU | `CTxx-GESI` | -28 | +50 | +2 | -4 | -34 | -45 | -21 | -50 |
-| SP | `CPFx-NESV` | -80 | -36 | -19 | -2 | +18 | -41 | -38 | +18 |
-| 50PLUS | `CPxR-Gxxx` | -20 | -24 | +11 | +28 | -19 | +14 | +9 | +0 |
-| Volt | `CPFW-GExI` | -16 | -82 | -30 | -53 | -79 | -72 | +11 | -40 |
-| *Centre* | `xPxR-Gxxx` | *-1* | *-19* | *+3* | *+22* | *-19* | *-6* | *+15* | *-14* |
+| D66 | CPIE The Gardener | -1 | -82 | -26 | -26 | -68 | -65 | +22 | -49 |
+| VVD | MTIG The Statesman | +46 | -30 | +24 | +50 | -34 | +11 | +56 | -36 |
+| PRO | CPIE The Gardener | -64 | -78 | -32 | -55 | -56 | -84 | -39 | -48 |
+| PVV | CTSG The Tribune | -10 | +20 | +32 | +79 | +51 | +74 | +28 | +56 |
+| CDA | MTIG The Statesman | +6 | +20 | +20 | +35 | -39 | -18 | +20 | -43 |
+| JA21 | MTSG The Challenger | +55 | +11 | +26 | +75 | -6 | +55 | +48 | +29 |
+| DNA | MTSG The Challenger | +12 | +19 | +32 | +82 | +30 | +60 | +32 | +31 |
+| FvD | MTSG The Challenger | +31 | +57 | -25 | +87 | +64 | +92 | -10 | +63 |
+| BBB | MTSG The Challenger | +5 | +18 | +18 | +56 | +26 | +55 | +25 | +6 |
+| SGP | MTIG The Statesman | +20 | +92 | +30 | +47 | +5 | +32 | -1 | -35 |
+| DENK | CPIE The Gardener | -46 | +41 | -15 | -70 | -22 | -25 | -12 | -16 |
+| PvdD | CPIE The Gardener | -66 | -71 | -45 | -52 | +4 | -91 | -75 | -18 |
+| CU | CTIE The Steward | -28 | +50 | +2 | -4 | -34 | -45 | -21 | -50 |
+| SP | CPSE The Activist | -80 | -36 | -19 | -2 | +18 | -41 | -38 | +18 |
+| 50PLUS | CTIG The Neighbour | -20 | -24 | +11 | +28 | -19 | +14 | +9 | +0 |
+| Volt | CPIE The Gardener | -16 | -82 | -30 | -53 | -79 | -72 | +11 | -40 |
+| *Centre* | CTIG The Neighbour | *-1* | *-19* | *+3* | *+22* | *-19* | *-6* | *+15* | *-14* |
 
 Centre weights: Current seats in the Tweede Kamer, June 2026 (150 seats). Seats are used instead of the 2025 vote because PVV split after the election.
 
 ## United Kingdom
 
-| Party | Code | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
+| Party | Type | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Labour | `CPOR-GEAI` | -26 | -35 | +30 | +19 | -31 | -46 | +50 | -44 |
-| Conservatives | `MTOR-xDAx` | +59 | +19 | +24 | +62 | -7 | +46 | +58 | +6 |
-| Reform UK | `MTxR-NDAV` | +39 | +34 | +2 | +86 | +40 | +86 | +40 | +64 |
-| Lib Dems | `CPFW-GExI` | -22 | -69 | -42 | -46 | -70 | -68 | +6 | -49 |
-| Greens | `CPFW-GESI` | -84 | -80 | -52 | -72 | -25 | -91 | -68 | -23 |
-| SNP | `CPxW-GESI` | -49 | -61 | -8 | -40 | -58 | -54 | -36 | -40 |
-| Plaid Cymru | `CPFW-GESI` | -56 | -58 | -22 | -34 | -49 | -52 | -25 | -40 |
-| Restore Britain | `MTxR-NDAV` | +50 | +48 | +2 | +98 | +58 | +90 | +30 | +65 |
-| *Centre* | `xPxR-GxAx` | *+1* | *-19* | *+8* | *+23* | *-20* | *-9* | *+33* | *-14* |
+| Labour | CTIG The Neighbour | -26 | -35 | +30 | +19 | -31 | -46 | +50 | -44 |
+| Conservatives | MTIG The Statesman | +59 | +19 | +24 | +62 | -7 | +46 | +58 | +6 |
+| Reform UK | MTSG The Challenger | +39 | +34 | +2 | +86 | +40 | +86 | +40 | +64 |
+| Lib Dems | CPIE The Gardener | -22 | -69 | -42 | -46 | -70 | -68 | +6 | -49 |
+| Greens | CPIE The Gardener | -84 | -80 | -52 | -72 | -25 | -91 | -68 | -23 |
+| SNP | CPIE The Gardener | -49 | -61 | -8 | -40 | -58 | -54 | -36 | -40 |
+| Plaid Cymru | CPIE The Gardener | -56 | -58 | -22 | -34 | -49 | -52 | -25 | -40 |
+| Restore Britain | MTSG The Challenger | +50 | +48 | +2 | +98 | +58 | +90 | +30 | +65 |
+| *Centre* | MTIG The Statesman | *+1* | *-19* | *+8* | *+23* | *-20* | *-9* | *+33* | *-14* |
 
 Centre weights: GB vote share at the 2024 general election (%). Vote share is used because first-past-the-post seats distort the centre. Restore Britain did not exist yet and has weight 0.
 
 ## United States
 
-| Party | Code | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
+| Party | Type | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Republicans | `MTOR-NDAV` | +65 | +68 | +56 | +84 | +78 | +92 | +59 | +32 |
-| Democrats | `CPxW-GExI` | -30 | -60 | -8 | -42 | -56 | -56 | -4 | -30 |
-| *Centre* | `MxOR-xDAx` | *+19* | *+6* | *+25* | *+22* | *+13* | *+20* | *+28* | *+2* |
+| Republicans | MTSG The Challenger | +65 | +68 | +56 | +84 | +78 | +92 | +59 | +32 |
+| Democrats | CPIE The Gardener | -30 | -60 | -8 | -42 | -56 | -56 | -4 | -30 |
+| *Centre* | MTSG The Challenger | *+19* | *+6* | *+25* | *+22* | *+13* | *+20* | *+28* | *+2* |
 
 Centre weights: Approximate national House popular vote in 2024 (%).
 
 ## Former and minor parties
 
-| Party | Code | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
+| Party | Type | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Zentrum (DE, 1870–1933) | `xTOx-xx?I` | -12 | +91 | +35 | +12 | -10 | +0~ | · | -42 |
-| KPD (DE, 1918–1956) | `CPOW-Nx?V` | -100 | -68 | +75 | -72 | +33 | +0~ | · | +82 |
-| NSDAP (DE, 1920–1945) | `xTOR-Nx?V` | -1 | +75 | +100 | +100 | +92 | +0~ | · | +75 |
-| SED (DE, 1946–1989) | `CPOR-xDAV` | -72 | -55 | +98 | +60 | -12 | +80~ | +35 | +22 |
-| NPD (DE, 1964–) | `xTOR-Nx?V` | -14 | +56 | +93~ | +93 | +78~ | +10 | · | +51 |
-| DVU (DE, 1971–2011) | `MT??-N???` | +44ᵖ | +95ᵖ | · | · | +81~ | · | · | · |
-| REP (DE, 1983–) | `MT??-N???` | +44ᵖ | +88ᵖ | · | · | +75~ | · | · | · |
-| Piraten (DE, 2006–) | `CPFW-Gx?V` | -51 | -83 | -87~ | -74 | -62 | -10 | · | +51 |
-| ARP (NL, 1879–1980) | `xTOR-GxAI` | +8 | +89 | +26 | +22 | -42 | +0~ | +30~ | -45 |
-| CPN (NL, 1909–1991) | `CPFW-NESV` | -96 | -68 | -35 | -52 | +32 | -20~ | -50 | +15 |
-| NSB (NL, 1931–1945) | `xTOR-Nx?V` | +2 | +70 | +91 | +90 | +80 | +0~ | · | +69 |
-| KVP (NL, 1945–1980) | `xTOR-GxAI` | -9 | +88 | +22 | +20 | -52 | +0~ | +40~ | -48 |
-| PvdA (NL, 1946–2026) | `CPFW-GE?I` | -52 | -66 | -40~ | -32 | -37 | -55 | · | -50 |
-| CD (NL, 1984–2002) | `MT??-N???` | +71ᵖ | +85ᵖ | · | · | +85~ | · | · | · |
-| GroenLinks (NL, 1990–2026) | `CPFW-GE?I` | -55 | -79 | -60~ | -42 | -28 | -74 | · | -55 |
-| LPF (NL, 2002–2008) | `MPxR-xDAV` | +39 | -45 | +12 | +76 | +2 | +20 | +25 | +45 |
-| NSC (NL, 2023–) | `xTOR-xx?I` | +3 | +17 | +44~ | +33 | -1 | +8 | · | -38 |
-| BUF (UK, 1932–1940) | `xTOR-Nx?V` | -2 | +62 | +91 | +92 | +75 | +0~ | · | +69 |
-| SDP (UK, 1981–1988) | `CPxW-GEAI` | -15 | -32 | -2 | -18 | -62 | -20~ | +20~ | -40 |
-| BNP (UK, 1982–) | `CTOR-ND?V` | -36 | +73 | +98~ | +100 | +93~ | +53 | · | +77~ |
-| UKIP (UK, 1993–) | `MTOR-ND?V` | +44 | +51 | +80~ | +86 | +58 | +72 | · | +59 |
-| Dixiecrats (US, 1948–1948) | `MTOR-Gx?x` | +45 | +80 | +50 | +82 | -17 | +0~ | · | +0 |
+| Zentrum (DE, 1870–1933) | CTIG The Neighbour | -12 | +91 | +35 | +12 | -10 | +0~ | · | -42 |
+| KPD (DE, 1918–1956) | CPSG The Organizer | -100 | -68 | +75 | -72 | +33 | +0~ | · | +82 |
+| NSDAP (DE, 1920–1945) | CTSG The Tribune | -1 | +75 | +100 | +100 | +92 | +0~ | · | +75 |
+| SED (DE, 1946–1989) | CTSG The Tribune | -72 | -55 | +98 | +60 | -12 | +80~ | +35 | +22 |
+| NPD (DE, 1964–) | CTSG The Tribune | -14 | +56 | +93~ | +93 | +78~ | +10 | · | +51 |
+| DVU (DE, 1971–2011) | ? | +44ᵖ | +95ᵖ | · | · | +81~ | · | · | · |
+| REP (DE, 1983–) | ? | +44ᵖ | +88ᵖ | · | · | +75~ | · | · | · |
+| Piraten (DE, 2006–) | CPIE The Gardener | -51 | -83 | -87~ | -74 | -62 | -10 | · | +51 |
+| ARP (NL, 1879–1980) | MTIG The Statesman | +8 | +89 | +26 | +22 | -42 | +0~ | +30~ | -45 |
+| CPN (NL, 1909–1991) | CPSE The Activist | -96 | -68 | -35 | -52 | +32 | -20~ | -50 | +15 |
+| NSB (NL, 1931–1945) | MTSG The Challenger | +2 | +70 | +91 | +90 | +80 | +0~ | · | +69 |
+| KVP (NL, 1945–1980) | CTIG The Neighbour | -9 | +88 | +22 | +20 | -52 | +0~ | +40~ | -48 |
+| PvdA (NL, 1946–2026) | CPIE The Gardener | -52 | -66 | -40~ | -32 | -37 | -55 | · | -50 |
+| CD (NL, 1984–2002) | ? | +71ᵖ | +85ᵖ | · | · | +85~ | · | · | · |
+| GroenLinks (NL, 1990–2026) | CPIE The Gardener | -55 | -79 | -60~ | -42 | -28 | -74 | · | -55 |
+| LPF (NL, 2002–2008) | MTSG The Challenger | +39 | -45 | +12 | +76 | +2 | +20 | +25 | +45 |
+| NSC (NL, 2023–) | MTIG The Statesman | +3 | +17 | +44~ | +33 | -1 | +8 | · | -38 |
+| BUF (UK, 1932–1940) | CTSG The Tribune | -2 | +62 | +91 | +92 | +75 | +0~ | · | +69 |
+| SDP (UK, 1981–1988) | CPIG The Builder | -15 | -32 | -2 | -18 | -62 | -20~ | +20~ | -40 |
+| BNP (UK, 1982–) | CTSG The Tribune | -36 | +73 | +98~ | +100 | +93~ | +53 | · | +77~ |
+| UKIP (UK, 1993–) | MTSG The Challenger | +44 | +51 | +80~ | +86 | +58 | +72 | · | +59 |
+| Dixiecrats (US, 1948–1948) | MTIG The Statesman | +45 | +80 | +50 | +82 | -17 | +0~ | · | +0 |

@@ -71,3 +71,35 @@ def centre(frame, actors):
         for ax in AXIS_IDS:
             c[ax] += sc[ax][0] * w / total
     return c
+
+
+# ---------- political types (4 dimensions bracketing the 8 axes) ----------
+
+TYPES = json.load(open(os.path.join(ROOT, "data", "types.json"), encoding="utf-8"))
+TYPE_BY_CODE = {t["code"]: t for t in TYPES["types"]}
+
+
+def dimension_scores(axes):
+    """axes: {axis: (score, ...)} or {axis: score}. Returns {dim_id: score or None}."""
+    out = {}
+    for d in TYPES["dimensions"]:
+        vals = []
+        for ax in d["axes"]:
+            v = axes.get(ax)
+            v = v[0] if isinstance(v, tuple) else v
+            if v is not None:
+                vals.append(v)
+        out[d["id"]] = sum(vals) / len(vals) if vals else None
+    return out
+
+
+def political_type(axes):
+    """Four-letter type code, e.g. CPIE. None if a dimension has no data."""
+    dims = dimension_scores(axes)
+    letters = []
+    for d in TYPES["dimensions"]:
+        v = dims[d["id"]]
+        if v is None:
+            return None
+        letters.append(d["neg"]["letter"] if v < 0 else d["pos"]["letter"])
+    return "".join(letters)

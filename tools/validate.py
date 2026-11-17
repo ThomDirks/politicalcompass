@@ -92,6 +92,23 @@ for ax in AXIS_IDS:
 if {s["axis"] for s in questions["salience"]["items"]} != set(AXIS_IDS):
     err("questions: salience items must cover every axis")
 
+T = pcmodel.TYPES
+letters = [(d["neg"]["letter"], d["pos"]["letter"]) for d in T["dimensions"]]
+expected = {a + b + c + d for a in letters[0] for b in letters[1] for c in letters[2] for d in letters[3]}
+if set(pcmodel.TYPE_BY_CODE) != expected:
+    err("types: the 16 type codes don't match the dimension letters")
+for d in T["dimensions"]:
+    for ax in d["axes"]:
+        if ax not in AXIS_IDS:
+            err(f"types: dimension {d['id']} uses unknown axis {ax}")
+for t in T["types"]:
+    for c in t["clash"]:
+        if c not in pcmodel.TYPE_BY_CODE:
+            err(f"types: {t['code']} clashes with unknown type {c}")
+for aid in T["no_examples"]["actors"]:
+    if aid not in actors:
+        err(f"types: no_examples lists unknown actor {aid}")
+
 if errors:
     print("\n".join(errors))
     sys.exit(1)
@@ -111,16 +128,21 @@ def centre(fr):
     return {ax: (v, 4, False) for ax, v in pcmodel.centre(fr, actors).items()}
 
 
-HEAD = "| Party | Code | " + " | ".join(AXIS_IDS) + " |\n|---|---|" + "---:|" * len(AXIS_IDS)
+HEAD = "| Party | Type | " + " | ".join(AXIS_IDS) + " |\n|---|---|" + "---:|" * len(AXIS_IDS)
+
+
+def ptype(sc):
+    code = pcmodel.political_type(sc)
+    return f"{code} {pcmodel.TYPE_BY_CODE[code]['name']}" if code else "?"
 
 ov = []
 for code, fr in frames.items():
     ov.append(f"\n## {fr['name']}\n\n{HEAD}")
     for pid in sorted(fr["parties"], key=lambda p: -fr["parties"][p]):
         sc = axis_scores(current(actors[pid]))
-        ov.append(f"| {actors[pid]['name']} | `{type_code(sc)}` | " + " | ".join(fmt(sc[ax]) for ax in AXIS_IDS) + " |")
+        ov.append(f"| {actors[pid]['name']} | {ptype(sc)} | " + " | ".join(fmt(sc[ax]) for ax in AXIS_IDS) + " |")
     cen = centre(fr)
-    ov.append(f"| *Centre* | `{type_code(cen)}` | " + " | ".join(f"*{fmt(cen[ax])}*" for ax in AXIS_IDS) + " |")
+    ov.append(f"| *Centre* | {ptype(cen)} | " + " | ".join(f"*{fmt(cen[ax])}*" for ax in AXIS_IDS) + " |")
     ov.append(f"\nCentre weights: {fr['weight_basis']}")
 former = [a for a in actors.values() if all(a["id"] not in fr["parties"] for fr in frames.values())]
 ov.append(f"\n## Former and minor parties\n\n{HEAD}")
@@ -128,7 +150,7 @@ for a in sorted(former, key=lambda a: (a["country"], (a["active"].get("from") or
     snap = current(a)
     sc = axis_scores(snap)
     yrs = f"{a['active'].get('from') or '?'}–{a['active'].get('to') or ''}"
-    ov.append(f"| {a['name']} ({a['country']}, {yrs}) | `{type_code(sc)}` | " + " | ".join(fmt(sc[ax]) for ax in AXIS_IDS) + " |")
+    ov.append(f"| {a['name']} ({a['country']}, {yrs}) | {ptype(sc)} | " + " | ".join(fmt(sc[ax]) for ax in AXIS_IDS) + " |")
 overview = "\n".join(ov)
 
 dr = []

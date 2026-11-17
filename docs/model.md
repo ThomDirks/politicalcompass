@@ -36,16 +36,24 @@ Some notes on choices:
 
 An axis score is the mean of its four facets. Facets carry equal weight for now. Once response data exists, weights can be estimated instead of assumed.
 
-## Type code
+## Political types
 
-Each axis gives one letter, the pole the score leans towards. A score inside ±15 gives an **x**, so people near the middle are not forced into a box. The eight letters are shown in two groups of four:
+The eight axes are bracketed into four **dimensions**, each with two poles and a letter:
 
-```
-ECO SOC LIB MIG - INT CLI TEC DEM
- C   P   F   W  -  G   E   A   I      e.g. CPFW-GEAI
-```
+| Dimension | Axes | − pole | + pole |
+|---|---|---|---|
+| Economy | Economy | C Collective | M Market |
+| Culture | Social values, Liberty vs order, Migration and identity | P Progressive | T Traditional |
+| Power | International, Democracy and institutions | I Institutional | S Sovereigntist |
+| Future | Climate and environment, Technology | E Ecological | G Growth |
 
-The letters are a working set and may change.
+A dimension score is the mean of its axes. The side you lean to on each gives one letter, and the four letters give one of **sixteen types**, grouped in four families by the first two letters: Progressives (CP), Communitarians (CT), Liberals (MP) and Conservatives (MT). The strength of the lean is shown as a percentage, 50% plus half the absolute score.
+
+Each type has a name, a tagline, a description, what it cares about most, which types it most often clashes with, and an animated character on the website. All of this is in [`data/types.json`](../data/types.json).
+
+Parties get a type the same way, from their current profile. Totalitarian or paramilitary movements (NSDAP, NSB, BUF, SED, KPD) are not shown as examples of a type: the model measures policy positions, not violence or the destruction of democracy, so a type label would say too little about them. Their profiles stay available.
+
+Parties cluster in a few types, because real party programmes bundle economic and cultural views in a few common ways. People mix views more freely, so every type is reachable from the test.
 
 ## Salience
 
