@@ -193,6 +193,8 @@ kbd { font: 600 .8rem var(--body); border: 1px solid var(--rule); border-bottom-
 .track .zero { position: absolute; left: 50%; top: 5px; width: 1px; height: 16px; background: var(--muted); }
 .track .tick { position: absolute; top: 9px; width: 1px; height: 8px; background: var(--rule); }
 .track .ctr { position: absolute; top: 2px; transform: translateX(-50%); width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 8px solid var(--muted); }
+.track .avg { position: absolute; top: 5px; transform: translateX(-50%); width: 16px; height: 16px; border-radius: 50%; background: var(--fam, var(--ink)); border: 2px solid var(--ink); }
+.lg-avg { width: 12px; height: 12px; border-radius: 50%; background: var(--fam, var(--ink)); border: 2px solid var(--ink); display: inline-block; }
 .track .party { position: absolute; top: 6px; transform: translateX(-50%); width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--ink); background: var(--sheet); }
 .track .you { position: absolute; top: 0; transform: translateX(-50%); width: 26px; height: 26px; }
 .track .you svg { width: 100%; height: 100%; overflow: visible; }
@@ -474,7 +476,7 @@ const SAL = DATA.questions.salience;
 
 /* ---------- state ---------- */
 const KEY = "pcompass-v1";
-let S = { country: "NL", mode: "quick", answers: {}, salience: {}, idx: 0, stage: "statements", finished: false };
+let S = { country: "NL", mode: "quick", answers: {}, akey: {}, salience: {}, idx: 0, stage: "statements", finished: false };
 try { const saved = JSON.parse(localStorage.getItem(KEY) || "null"); if (saved) S = Object.assign(S, saved); } catch (e) {}
 if (window.claude?.hot?.data && Object.keys(window.claude.hot.data).length) S = Object.assign(S, window.claude.hot.data);
 function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
@@ -494,9 +496,16 @@ function orderedItems(mode) {
   const byAxis = AX.map(a => pool.filter(i => FAXIS[i.facet] === a.id));
   const out = [];
   for (let r = 0; out.length < pool.length; r++) byAxis.forEach(list => { if (list[r]) out.push(list[r]); });
+  if (mode === "full") CHECKS.forEach((c, i) => out.splice(Math.floor(out.length * (0.5 + i * 0.06)), 0, Object.assign({ check: true }, c)));
   return out;
 }
-const itemText = (it, cc) => (it.local && it.local[cc]) || it.text;
+function itemLocal(it, cc) {
+  const loc = it.local && it.local[cc];
+  if (!loc) return { text: it.text, key: it.key };
+  return typeof loc === "string" ? { text: loc, key: it.key } : loc;
+}
+const itemText = (it, cc) => itemLocal(it, cc).text;
+const CHECKS = DATA.questions.checks || [];
 
 /* ---------- scoring (same rules as tools/score.py) ---------- */
 function facetScores(answers) {
@@ -504,7 +513,8 @@ function facetScores(answers) {
   DATA.questions.items.forEach(it => {
     const v = answers[it.id];
     if (v === null || v === undefined) return;
-    (acc[it.facet] = acc[it.facet] || []).push(v * it.key);
+    const key = (S.akey && S.akey[it.id]) || itemLocal(it, S.country).key;
+    (acc[it.facet] = acc[it.facet] || []).push(v * key);
   });
   const out = {};
   FIDS.forEach(f => { const a = acc[f]; out[f] = a ? Math.round(a.reduce((x, y) => x + y, 0) / a.length / 3 * 100) : null; });
@@ -599,11 +609,15 @@ function letterOf(d, v) {
   return v < 0 ? d.neg.letter : d.pos.letter;
 }
 function poleOf(d, letter) { return [d.neg, d.mid, d.pos].find(p => p && p.letter === letter); }
-function ptypeOf(axes) {
-  const dims = dimsOf(axes);
-  if (TY.dimensions.some(d => dims[d.id] === null)) return null;
-  return CORE.map(d => letterOf(d, dims[d.id])).join("");
+const AXW = TY.alignment.axis_weights;
+function alignmentsOf(axes) {
+  const vals = Object.keys(AXW).filter(a => axes[a] !== null && axes[a] !== undefined);
+  if (!vals.length) return [];
+  const den = vals.reduce((x, a) => x + AXW[a], 0);
+  return TY.types.map(t => ({ code: t.code, pct: 100 - vals.reduce((x, a) => x + AXW[a] * Math.abs(axes[a] - t.profile[a]), 0) / den / 2 }))
+    .sort((x, y) => y.pct - x.pct);
 }
+function ptypeOf(axes) { const al = alignmentsOf(axes); return al.length ? al[0].code : null; }
 function suffixOf(axes) { const v = dimsOf(axes)[FUT.id]; return v === null ? "" : letterOf(FUT, v); }
 const campOf = code => CAMP[code.slice(0, 2)];
 const famStyle = code => `--fam:${campOf(code).color}`;
@@ -626,6 +640,46 @@ function dimBars(axes) {
       <div class="dimbar" role="img" aria-label="${esc(d.name)}: ${esc(poleOf(d, L).label)}">${zones}<b style="left:${pos}%"></b></div></div>`;
   }).join("")}</div>`;
 }
+function avgTrack(you, avg, ctr) {
+  return `<div class="track" aria-hidden="true"><span class="line"></span>
+    ${[-100, -50, 50, 100].map(t => `<span class="tick" style="left:${pctX(t)}%"></span>`).join("")}
+    <span class="zero"></span>
+    ${ctr !== null && ctr !== undefined ? `<span class="ctr" style="left:${pctX(ctr)}%"></span>` : ""}
+    <span class="avg" style="left:${pctX(avg)}%"></span>
+    ${you !== null && you !== undefined ? youMark().replace('class="you"', `class="you" style="left:${pctX(you)}%"`) : ""}
+  </div>`;
+}
+function profileMeters(axes, code, cc) {
+  const T = TYPE[code];
+  const ctr = cc ? centre(cc) : null;
+  return `<div class="axes">${AX.map(a => {
+    const v = axes ? axes[a.id] : null, avg = T.profile[a.id];
+    let read = fmt(avg);
+    if (v !== null && v !== undefined) {
+      const d = v - avg;
+      read = Math.abs(d) < 15 ? `close to the typical ${esc(plain(T))}`
+        : `${Math.abs(d) >= 40 ? "much " : ""}more ${esc((d < 0 ? a.neg.label : a.pos.label).toLowerCase())} than the typical ${esc(plain(T))}`;
+    }
+    return `<div class="axrow"><div class="axbtn" style="cursor:default">
+      <span class="axtop"><span class="axname">${esc(a.name)}</span><span class="axread">${read}</span></span>
+      ${avgTrack(v, avg, ctr ? ctr[a.id] : null)}
+      <span class="polelabels"><span>${esc(a.neg.label)}</span><span>${esc(a.pos.label)}</span></span></div></div>`;
+  }).join("")}</div>`;
+}
+function countryContext(code, cc) {
+  const T = TYPE[code];
+  const ctr = centre(cc);
+  const parties = Object.keys(DATA.frames[cc].parties).map(id => {
+    const ax = snapAxes(current(ACT[id]));
+    const al = alignmentsOf(ax).find(x => x.code === code);
+    return { a: ACT[id], pct: al ? al.pct : 0 };
+  }).sort((x, y) => y.pct - x.pct).slice(0, 3);
+  const topic = { INT: "international affairs", DEM: "democracy", LIB: "liberty and order", MIG: "migration", CLI: "climate", TEC: "technology", SOC: "social values", ECO: "the economy" };
+  const diffs = AX.map(a => ({ a, d: T.profile[a.id] - ctr[a.id] })).sort((x, y) => Math.abs(y.d) - Math.abs(x.d)).slice(0, 2)
+    .filter(x => Math.abs(x.d) >= 10)
+    .map(x => `more ${esc((x.d < 0 ? x.a.neg.label : x.a.pos.label).toLowerCase())} on ${topic[x.a.id]}`);
+  return `<p>Compared with the average in ${CNAME[cc]}, the typical ${esc(plain(T))} is ${diffs.length ? diffs.join(", and ") : "close to the middle on every topic"}. The parties closest to this profile there are ${parties.map(p => `<a href="#party-${p.a.id}">${esc(p.a.name)}</a> <span class="muted num">${Math.round(p.pct)}%</span>`).join(", ")}.</p>`;
+}
 function typeCard(t, mine, short) {
   return `<a class="tcard" href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}">
     <span class="stage">${mine ? '<span class="yours">Your type</span>' : ""}${ch(t.code)}</span>
@@ -634,6 +688,39 @@ function typeCard(t, mine, short) {
 function typeChip(code) {
   const t = TYPE[code.slice(0, 3)];
   return `<a class="typechip" href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}"><span class="stage">${ch(t.code)}</span><span>${esc(t.name)} (${code})</span></a>`;
+}
+function consistency() {
+  if (S.mode !== "full") return null;
+  const pairScores = [];
+  CHECKS.forEach(c => {
+    const a = S.answers[c.pair], b = S.answers[c.id];
+    if (a === null || a === undefined || b === null || b === undefined) return;
+    const expected = c.same ? a : -a;
+    pairScores.push(1 - Math.max(0, Math.abs(b - expected) - 1) / 5);
+  });
+  const facetScores_ = [];
+  const byFacet = {};
+  DATA.questions.items.forEach(it => {
+    const v = S.answers[it.id];
+    if (v === null || v === undefined) return;
+    (byFacet[it.facet] = byFacet[it.facet] || []).push(v * ((S.akey && S.akey[it.id]) || itemLocal(it, S.country).key));
+  });
+  Object.values(byFacet).forEach(vals => {
+    if (vals.length < 2) return;
+    const spread = Math.max(...vals) - Math.min(...vals);
+    facetScores_.push(1 - Math.max(0, spread - 2) / 4);
+  });
+  const all = Object.values(S.answers).filter(v => v !== null && v !== undefined);
+  if (all.length < 20) return null;
+  const counts = {};
+  all.forEach(v => { counts[v] = (counts[v] || 0) + 1; });
+  const sameShare = Math.max(...Object.values(counts)) / all.length;
+  const mean = arr => arr.length ? arr.reduce((x, y) => x + y, 0) / arr.length : 1;
+  let score = 100 * (0.5 * mean(pairScores) + 0.5 * mean(facetScores_));
+  if (sameShare > 0.7) score *= 0.6;
+  score = Math.round(Math.max(0, Math.min(100, score)));
+  const level = score >= 85 ? "high" : score >= 70 ? "medium" : "low";
+  return { score, level, sameShare, pairs: pairScores.length };
 }
 function actorType(a) { return ptypeOf(snapAxes(current(a))); }
 function actorFull(a) { const ax = snapAxes(current(a)); const c = ptypeOf(ax); return c ? `${c}-${suffixOf(ax)}` : null; }
@@ -716,8 +803,8 @@ function renderHome() {
   </div>`;
   $("#v-home").querySelectorAll("[data-country]").forEach(b => b.onclick = () => { S.country = b.dataset.country; save(); renderHome(); });
   $("#v-home").querySelectorAll("input[name=mode]").forEach(r => r.onchange = () => { S.mode = r.value; S.idx = 0; S.finished = false; S.stage = "statements"; save(); renderHome(); });
-  const rs = $("#restart"); if (rs) rs.onclick = () => { S.answers = {}; S.salience = {}; S.idx = 0; S.stage = "statements"; S.finished = false; save(); renderHome(); };
-  bindScale($("#v-home"), first, v => { S.answers[first.id] = v; S.idx = 1; S.finished = false; S.stage = "statements"; save(); setTimeout(() => { location.hash = "test"; }, 420); });
+  const rs = $("#restart"); if (rs) rs.onclick = () => { S.answers = {}; S.akey = {}; S.salience = {}; S.idx = 0; S.stage = "statements"; S.finished = false; save(); renderHome(); };
+  bindScale($("#v-home"), first, v => { S.answers[first.id] = v; S.akey[first.id] = itemLocal(first, S.country).key; S.idx = 1; S.finished = false; S.stage = "statements"; save(); setTimeout(() => { location.hash = "test"; }, 420); });
 }
 
 function scaleHtml(item, ctx) {
@@ -746,16 +833,16 @@ function renderTest() {
   if (S.idx >= items.length) S.idx = items.length - 1;
   const it = items[S.idx];
   const perAxis = AX.map(a => {
-    const list = items.filter(i => FAXIS[i.facet] === a.id);
+    const list = items.filter(i => !i.check && FAXIS[i.facet] === a.id);
     return { a, total: list.length, done: list.filter(i => i.id in S.answers).length };
   });
   $("#v-test").innerHTML = `
   <div class="testwrap">
     <div class="progress" aria-label="Progress per topic">
-      ${perAxis.map(p => `<div class="${FAXIS[it.facet] === p.a.id ? "now" : ""}"><span>${esc(p.a.name.split(" ")[0])}</span><i><b style="width:${p.done / p.total * 100}%"></b></i></div>`).join("")}
+      ${perAxis.map(p => `<div class="${!it.check && FAXIS[it.facet] === p.a.id ? "now" : ""}"><span>${esc(p.a.name.split(" ")[0])}</span><i><b style="width:${p.done / p.total * 100}%"></b></i></div>`).join("")}
     </div>
     <div class="slip">
-      <div class="slip-head"><span class="num">Statement ${S.idx + 1} of ${items.length}</span><span>${esc(FACET[it.facet].name)}</span></div>
+      <div class="slip-head"><span class="num">Statement ${S.idx + 1} of ${items.length}</span><span>${it.check ? "" : esc(FACET[it.facet].name)}</span></div>
       <p class="statement" id="stmt">${esc(itemText(it, S.country))}</p>
       ${scaleHtml(it, "test")}
       <div class="slip-foot">
@@ -770,7 +857,7 @@ function renderTest() {
     if (S.idx < items.length - 1) { S.idx++; save(); renderTest(); $("#stmt")?.focus?.(); }
     else { S.stage = "salience"; save(); renderTest(); }
   };
-  bindScale($("#v-test"), it, v => { S.answers[it.id] = v; save(); setTimeout(next, 380); });
+  bindScale($("#v-test"), it, v => { S.answers[it.id] = v; if (!it.check) S.akey[it.id] = itemLocal(it, S.country).key; save(); setTimeout(next, 380); });
   $("#skip").onclick = () => { S.answers[it.id] = null; next(); };
   $("#prev").onclick = () => { if (S.idx > 0) { S.idx--; save(); renderTest(); } };
 }
@@ -850,36 +937,47 @@ function renderResults() {
     return { c, best, diffs };
   });
 
-  const code = ptypeOf(axes);
+  const al = alignmentsOf(axes);
+  const code = al.length ? al[0].code : null;
   const T = code ? TYPE[code] : null;
   const suf = code ? suffixOf(axes) : "";
+  const next = al[1] ? TYPE[al[1].code] : null;
+  const cons = consistency();
   $("#v-results").innerHTML = `
   ${T ? `<div class="you-hero" style="${famStyle(code)}">
     <div class="stage">${ch(code, T.name)}</div>
     <div class="text">
-      <h1>You're ${article(T)} ${esc(plain(T))}.</h1>
+      <p class="muted" style="margin-bottom:-6px">Your views align most closely with</p>
+      <h1>${esc(T.name)}</h1>
       <p class="lead">${esc(T.tagline)}</p>
-      <div class="meta-row"><span class="tcode" style="font-size:1.1rem">${code}-${suf}</span><span>${esc(campOf(code).name)} camp</span><a href="#type-${code.toLowerCase()}">Read about the ${esc(plain(T))}</a></div>
+      <div class="meta-row"><span class="tcode" style="font-size:1.1rem">${code}-${suf}</span><span><b class="num">${Math.round(al[0].pct)}%</b> alignment</span>${next ? `<span>Next closest: <a href="#type-${next.code.toLowerCase()}">${esc(next.name)}</a> <span class="num muted">${Math.round(al[1].pct)}%</span></span>` : ""}</div>
+      <p class="small">${cons ? `Answer consistency: <b>${cons.level}</b> <span class="muted num">(${cons.score}%)</span>. ${cons.level === "low" ? "Several answers point in different directions, so treat this result as a rough indication." : cons.level === "medium" ? "A few answers point in different directions; the result is a good indication." : "Your answers hang together well."}` : `<span class="muted">The full test adds a consistency check to this result.</span>`}</p>
       <p class="muted small">Based on ${answered} answers, compared with ${CNAME[cc]}.</p>
       <div class="seg" role="group" aria-label="Compare with" style="justify-self:start">
         ${COUNTRIES.map(c => `<button type="button" data-country="${c}" aria-pressed="${cc === c}">${c}</button>`).join("")}
       </div>
     </div>
-  </div>` : `<div class="rhead"><h1>Your profile</h1><p class="muted">Answer at least one statement on every topic to get a type.</p></div>`}
+  </div>` : `<div class="rhead"><h1>Your profile</h1><p class="muted">Answer some statements first to see your alignment.</p></div>`}
 
-  <div class="rgrid" style="margin-top:36px">
-    <div class="block">
-      <h2>Where your type comes from</h2>
-      <div style="${code ? famStyle(code) : "--fam:var(--ink)"}">${dimBars(axes)}</div>
-      ${suf ? `<p class="small muted">The small ${suf}: ${esc(TY.future_notes[suf])}</p>` : ""}
+  ${T ? `<div class="rgrid" style="margin-top:36px">
+    <div class="block" style="${famStyle(code)}">
+      <h2>You and the typical ${esc(plain(T))}</h2>
+      <div class="legend">
+        <span><svg class="lg-you" viewBox="0 0 26 26"><path d="${CROSS}" fill="none" stroke="#C8272D" stroke-width="3.4" stroke-linecap="round"/></svg>You</span>
+        <span><i class="lg-avg"></i>Typical ${esc(plain(T))}</span>
+        <span><i class="lg-ctr"></i>Average in ${CNAME[cc]}</span>
+      </div>
+      ${profileMeters(axes, code, cc)}
+      <p class="small muted">Alignment means your views are closer to this profile than to any other, not that you share every view. Where you differ, you differ.${suf ? ` The small ${suf} in your code: ${esc(TY.future_notes[suf].charAt(0).toLowerCase() + TY.future_notes[suf].slice(1))}` : ""}</p>
     </div>
     <div class="block">
-      <h2>What ${T ? `${esc(plain(T))}s` : "you"} care about</h2>
-      ${T ? `<ul class="cares">${T.cares.map(c => `<li>${esc(c)}</li>`).join("")}</ul>
-      <p>${esc(T.about[0])}</p>
-      <div class="clash">${T.clash.map(c => `<a href="#type-${c.toLowerCase()}" style="${famStyle(c)}"><span class="stage">${ch(c)}</span><span>Often at odds with<br>${esc(TYPE[c].name)}</span></a>`).join("")}</div>` : ""}
+      <h2>What ${esc(plain(T))}s care about</h2>
+      <ul class="cares">${T.cares.map(c => `<li>${esc(c)}</li>`).join("")}</ul>
+      ${T.about.map(p => `<p>${esc(p)}</p>`).join("")}
+      ${countryContext(code, cc)}
+      <div class="clash">${T.clash.map(c => `<a href="#type-${c.toLowerCase()}" style="${famStyle(c)}"><span class="stage">${ch(c)}</span><span>Often at odds with<br>${esc(TYPE[c].name)}</span></a>`).join("")}</div>
     </div>
-  </div>
+  </div>` : ""}
 
   <div class="rgrid">
     <div>
@@ -958,7 +1056,7 @@ function renderResults() {
   });
   $("#t-all").onchange = e => { ui.allCountries = e.target.checked; renderResults(); };
   $("#t-hist").onchange = e => { ui.includeHistoric = e.target.checked; renderResults(); };
-  $("#again").onclick = () => { S.answers = {}; S.salience = {}; S.idx = 0; S.stage = "statements"; S.finished = false; save(); location.hash = "home"; };
+  $("#again").onclick = () => { S.answers = {}; S.akey = {}; S.salience = {}; S.idx = 0; S.stage = "statements"; S.finished = false; save(); location.hash = "home"; };
 }
 
 /* ---------- parties ---------- */
@@ -1107,7 +1205,7 @@ function renderTypes() {
   const cols = [E.neg, E.mid, E.pos], rows = [C.neg, C.mid, C.pos];
   $("#v-types").innerHTML = `
     <h1>Eighteen political types</h1>
-    <p class="lead" style="margin-top:14px">Your views on the economy and on culture place you in one of nine camps, including the centre. Within each camp, trust in the system splits two types: ${esc(P.neg.label)} (${P.neg.letter}) or ${esc(P.pos.label)} (${P.pos.letter}). A small letter at the end says whether you lean ${esc(FUT.neg.label.toLowerCase())} (${FUT.neg.letter}) or towards ${esc(FUT.pos.label.toLowerCase())} (${FUT.pos.letter}).</p>
+    <p class="lead" style="margin-top:14px">Every type has a typical profile across all eight topics. Your result is the type whose profile is closest to your answers, and you see where you differ from it. The types are arranged on a map of nine camps by economy and culture, including the centre. Within each camp, trust in the system splits two types: ${esc(P.neg.label)} (${P.neg.letter}) or ${esc(P.pos.label)} (${P.pos.letter}). A small letter at the end says whether you lean ${esc(FUT.neg.label.toLowerCase())} (${FUT.neg.letter}) or towards ${esc(FUT.pos.label.toLowerCase())} (${FUT.pos.letter}).</p>
     <div class="campmap" role="table" aria-label="Map of the nine camps">
       <div class="cm-corner" aria-hidden="true"></div>
       ${cols.map(c => `<div class="cm-col" role="columnheader"><b>${c.letter}</b> ${esc(c.label)} economy</div>`).join("")}
@@ -1145,6 +1243,12 @@ function renderType(code) {
         <p class="muted">${code}, ${esc(camp.name)} camp. ${esc(camp.summary)}</p>
       </div>
       <div class="about">${T.about.map(p => `<p>${esc(p)}</p>`).join("")}</div>
+      <div class="block" style="gap:10px"><h3>In ${CNAME[S.country]}</h3>${countryContext(code, S.country)}<p class="small muted">Change the country on the home page or your results.</p></div>
+      <div class="block" style="gap:8px"><h3>The typical ${esc(plain(T))}${ma ? ", and you" : ""}</h3>
+        <div class="legend">${ma ? `<span><svg class="lg-you" viewBox="0 0 26 26"><path d="${CROSS}" fill="none" stroke="#C8272D" stroke-width="3.4" stroke-linecap="round"/></svg>You</span>` : ""}<span><i class="lg-avg"></i>Typical ${esc(plain(T))}</span><span><i class="lg-ctr"></i>Average in ${CNAME[S.country]}</span></div>
+        ${profileMeters(ma, code, S.country)}
+        ${ma ? `<p class="small muted">Your alignment with ${esc(T.name)}: <b class="num">${Math.round(alignmentsOf(ma).find(x => x.code === code).pct)}%</b>.</p>` : ""}
+      </div>
       <div class="block" style="gap:10px"><h3>What matters most</h3><ul class="cares">${T.cares.map(c => `<li>${esc(c)}</li>`).join("")}</ul></div>
       <div class="block" style="gap:10px"><h3>Same camp, other side</h3><div class="clash"><a href="#type-${twin.code.toLowerCase()}" style="${famStyle(twin.code)}"><span class="stage">${ch(twin.code)}</span><span>${esc(twin.name)}<br><span class="muted small">${esc(poleOf(DIM.power, twin.code[2]).label)}</span></span></a></div></div>
       <div class="block" style="gap:10px"><h3>Often at odds with</h3><div class="clash">${T.clash.map(c => `<a href="#type-${c.toLowerCase()}" style="${famStyle(c)}"><span class="stage">${ch(c)}</span><span>${esc(TYPE[c].name)}</span></a>`).join("")}</div></div>
@@ -1174,7 +1278,9 @@ function renderMethod() {
     <h2>The statements</h2>
     <p>The full test has ${nItems} statements, three per part. Quick mode uses one per part. On every topic, half the statements point one way and half the other, so agreeing with everything doesn't push you to one side. Some statements use a local example for the country you pick.</p>
     <h2>Types</h2>
-    <p>The eight topics are grouped into four dimensions. Economy is the economy topic. Culture combines social values, liberty versus order, and migration. Each of these two has a centre band (scores within 20 points of zero), so together they make a map of nine camps. Power combines international affairs and democracy and splits each camp into two types, eighteen in total. Future combines climate and technology and adds a small letter, e or g, to your code.</p>
+    <p>Each of the eighteen types has a typical profile: an average position on all eight topics. Your result is the type whose profile is closest to yours, shown as an alignment percentage, with the next closest type beside it. Meters show where you sit compared with the typical member of your type, so mixed views stay visible. The types are arranged on a map of nine camps by economy and culture, and split by trust in the system. The small letter at the end of your code (e or g) comes from your own views on climate and technology.</p>
+    <h2>Answer consistency</h2>
+    <p>The full test repeats a few statements in different words and checks whether answers within a topic point the same way. That gives a consistency score with your result. A low score doesn't mean your views are wrong; it means the result is less certain.</p>
     <h2>Countries</h2>
     <p>Scores are absolute: the same answers give the same scores everywhere. The country you pick decides which parties you're compared with and what counts as average there. The average is the mean of that country's parties, weighted by votes at the last national election (or current seats in the Netherlands, after the PVV split).</p>
     <h2>Parties</h2>

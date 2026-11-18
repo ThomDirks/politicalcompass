@@ -103,14 +103,35 @@ def _letter(d, v):
     return d["neg"]["letter"] if v < 0 else d["pos"]["letter"]
 
 
+def alignments(axes):
+    """Alignment with every type: 100 minus half the weighted mean absolute
+    distance to the type's average profile. Sorted best first."""
+    w = TYPES["alignment"]["axis_weights"]
+    vals = {}
+    for ax, wt in w.items():
+        v = axes.get(ax)
+        v = v[0] if isinstance(v, tuple) else v
+        if v is not None:
+            vals[ax] = (v, wt)
+    if not vals:
+        return []
+    out = []
+    for t in TYPES["types"]:
+        num = sum(wt * abs(v - t["profile"][ax]) for ax, (v, wt) in vals.items())
+        den = sum(wt for _, wt in vals.values())
+        out.append((t["code"], 100 - num / den / 2))
+    return sorted(out, key=lambda x: -x[1])
+
+
 def political_type(axes, suffix=False):
-    """Type code from the camp (economy x culture) and power, e.g. CPI.
-    With suffix=True the future letter is added: CPI-e. None if data is missing."""
-    dims = dimension_scores(axes)
-    if any(v is None for v in dims.values()):
+    """Closest type by average profile, e.g. CPI. With suffix=True the future
+    letter from the actor's own scores is added: CPI-e."""
+    al = alignments(axes)
+    if not al:
         return None
-    code = "".join(_letter(d, dims[d["id"]]) for d in TYPES["dimensions"] if d["kind"] != "suffix")
+    code = al[0][0]
     if suffix:
         fut = [d for d in TYPES["dimensions"] if d["kind"] == "suffix"][0]
-        code += "-" + _letter(fut, dims[fut["id"]])
+        v = dimension_scores(axes)[fut["id"]]
+        code += "-" + (_letter(fut, v) if v is not None else "?")
     return code

@@ -38,24 +38,25 @@ An axis score is the mean of its four facets. Facets carry equal weight for now.
 
 ## Political types
 
-The eight axes are bracketed into four **dimensions**:
+There are **eighteen types**, arranged on a map of **nine camps** by economy (Collective, Balanced, Market) and culture (Progressive, Neutral, Traditional), and split within each camp by power: **I** Institutional or **S** Sovereigntist. Codes read like `CPI` or `MNS`.
 
-| Dimension | Axes | Letters |
-|---|---|---|
-| Economy | Economy | **C** Collective, **B** Balanced, **M** Market |
-| Culture | Social values, Liberty vs order, Migration and identity | **P** Progressive, **N** Neutral, **T** Traditional |
-| Power | International, Democracy and institutions | **I** Institutional, **S** Sovereigntist |
-| Future | Climate and environment, Technology | **e** Ecological, **g** Growth (small letter) |
+### Closest alignment, not a box
 
-A dimension score is the mean of its axes. Economy and culture each have a **centre band**: a score within 20 points of zero gives the middle letter (B or N). Together they place you in one of **nine camps** on a 3x3 map, from the progressive left (CP) to the conservative right (MT), with the centre (BN) in the middle. Power splits every camp into two types, which gives **eighteen types**. Future adds a small letter, so a full code reads like `CPI-e` or `MTS-g`.
+Every type has a **typical profile**: an average position on all eight axes, stored in [`data/types.json`](../data/types.json). A person or party is aligned with the type whose profile is closest, measured as the weighted mean distance across the eight axes (climate and technology count half). The result is shown as an **alignment percentage**, 100 minus half that distance, together with the next closest type.
 
-The structure is deliberately political rather than borrowed from personality tests: it has a real centre, the camps form a map, and the code has three letters plus a modifier.
+Because the profile covers all eight axes, mixed views stay visible instead of averaging out. The results page shows a meter per axis with the person's position, the typical profile of their type and the national average. Someone like Pim Fortuyn aligns with the Independent, and the meters show where he differs: much more progressive on social values, more restrictive on migration.
 
-Each type has a name, a tagline, a description, what it cares about most, which types it often clashes with, and an animated character on the website. All of this is in [`data/types.json`](../data/types.json).
+The small letter after the code (**e** Ecological or **g** Growth) comes from the person's own climate and technology scores, not from the type.
 
-Parties get a type the same way, from their current profile, including former parties. A type describes policy positions only, not how a party gained or used power, and type pages say so next to the list of former parties.
+### Descriptions
 
-Parties cluster in a few types, because party programmes bundle economic and cultural views in a few common ways. People mix views more freely, so every type is reachable from the test.
+Each type is described from its own point of view, in a positive light. A political view isn't wrong for being held, and the purpose of the test is to help people recognise where they stand, not to persuade them. Type pages and results also place the type in the selected country: how the typical profile compares with the national average, and which parties come closest there.
+
+Parties get a type the same way, from their current profile, including former parties. A type describes policy positions only, not how a party gained or used power.
+
+### Checking the spread
+
+`tools/simulate.py` generates respondents (party-like, mixed and careless), answers the questions for them and reports how the types fill up and how the consistency score behaves. With the current design every type is reachable, the centre types take about 9% each, and the median alignment is around 90%. This tests the design against assumptions, not against real people.
 
 ## Salience
 

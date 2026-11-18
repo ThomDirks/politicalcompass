@@ -4,10 +4,26 @@ The question bank lives in [`data/questions.json`](../data/questions.json). A re
 
 ## What's in the bank
 
-- **96 statements**, three per facet, answered on a 7-point scale from *strongly disagree* (−3) to *strongly agree* (+3). *No opinion* skips the statement.
+- **96 statements**, three per facet, plus 8 consistency checks in the full test, answered on a 7-point scale from *strongly disagree* (−3) to *strongly agree* (+3). *No opinion* skips the statement.
 - **8 salience questions**, one per axis: "How much do these topics matter to you?", from *not at all* (0) to *it decides my vote* (4).
 - **Quick mode**: one statement per facet, 32 in total. **Deep mode**: all 96.
 - **27 country versions** that swap in a local example (the Mietpreisbremse, nitrogen, small boats, Paris withdrawal) while measuring the same thing.
+
+## Country versions
+
+Some debates are specific to a country, and some statements only make sense in one country. A statement can have a country version that replaces the general text. A country version can push in its own direction: in the Netherlands the abortion statement is about taking abortion out of the criminal code, in Germany about §218, in the UK about removing it from criminal law for providers too, in the US about legality nationwide. Each answer is scored with the direction of the version that was shown.
+
+General statements are written as concepts or debate points, so they still work where something is already legal ("Ending a pregnancy in the first months should be the woman's decision alone"). The validator checks that every topic stays balanced in every country, not just in the general version.
+
+## Answer consistency (full test)
+
+The full test adds **8 check statements** that restate an earlier statement in other words, half of them as its mirror image. They aren't scored. The consistency score combines:
+
+- how closely each check answer matches the original
+- whether answers within a topic point the same way
+- a penalty when more than 70% of all answers are identical
+
+Scores of 85 and up count as high, 70 to 84 as medium, below 70 as low. In simulation, careful respondents score 98 to 100 and careless ones at most about 71, with 86% of careless ones flagged as low. These thresholds should be revisited once real answers exist. Quick mode has no checks and shows no score.
 
 ## How the statements are written
 

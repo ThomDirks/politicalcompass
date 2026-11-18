@@ -97,6 +97,10 @@
       "text": "Basic healthcare should be provided by the state, not by private insurers.",
       "local": {
         "NL": "Health insurance should be run by one public fund instead of competing private insurers.",
+        "UK": {
+          "text": "The NHS should stay fully public, without private companies providing treatment.",
+          "key": -1
+        },
         "US": "The government should provide health insurance for everyone, replacing private insurance."
       }
     },
@@ -115,7 +119,8 @@
       "text": "Rents should be capped by law.",
       "local": {
         "NL": "The rent rules that now cover mid-range homes should be extended to more of the private rental market.",
-        "DE": "The rent cap (Mietpreisbremse) should be tightened and apply everywhere in Germany."
+        "DE": "The rent cap (Mietpreisbremse) should be tightened and apply everywhere in Germany.",
+        "US": "Cities should be allowed to cap how much rents can rise."
       }
     },
     {
@@ -144,7 +149,10 @@
       "facet": "eco_lab",
       "key": -1,
       "quick": false,
-      "text": "The minimum wage should go up substantially, even if some jobs disappear as a result."
+      "text": "The minimum wage should go up substantially, even if some jobs disappear as a result.",
+      "local": {
+        "US": "The federal minimum wage should go up substantially, even if some jobs disappear as a result."
+      }
     },
     {
       "id": "eco_tax_1",
@@ -240,7 +248,25 @@
       "facet": "soc_mor",
       "key": -1,
       "quick": true,
-      "text": "Abortion should be legal on request in the first months of pregnancy."
+      "text": "Ending a pregnancy in the first months should be the woman's decision alone.",
+      "local": {
+        "NL": {
+          "text": "Abortion should be removed from the criminal code and treated purely as healthcare.",
+          "key": -1
+        },
+        "DE": {
+          "text": "Abortion in the first twelve weeks should be fully legal, not just exempt from punishment as it is now under §218.",
+          "key": -1
+        },
+        "UK": {
+          "text": "Abortion should be taken out of criminal law entirely, for doctors and providers too.",
+          "key": -1
+        },
+        "US": {
+          "text": "Abortion should be legal nationwide in the first months of pregnancy.",
+          "key": -1
+        }
+      }
     },
     {
       "id": "soc_mor_2",
@@ -249,7 +275,15 @@
       "quick": false,
       "text": "Adults should be able to buy soft drugs such as cannabis legally from regulated shops.",
       "local": {
-        "NL": "Cannabis growing for coffeeshops should be fully legalised and regulated."
+        "NL": "Cannabis growing for coffeeshops should be fully legalised and regulated.",
+        "DE": {
+          "text": "Germany's partial legalisation of cannabis should be kept, not reversed.",
+          "key": -1
+        },
+        "US": {
+          "text": "Cannabis should be legal across the whole country.",
+          "key": -1
+        }
       }
     },
     {
@@ -257,7 +291,21 @@
       "facet": "soc_mor",
       "key": 1,
       "quick": false,
-      "text": "Doctors should never help patients end their life, even when they are suffering unbearably."
+      "text": "Doctors should never help patients end their life, even when they are suffering unbearably.",
+      "local": {
+        "NL": {
+          "text": "Euthanasia should not be extended to older people who feel their life is complete.",
+          "key": 1
+        },
+        "DE": {
+          "text": "Assisted suicide should be tightly restricted by law instead of left largely unregulated.",
+          "key": 1
+        },
+        "UK": {
+          "text": "Assisted dying should stay illegal, even for terminally ill adults.",
+          "key": 1
+        }
+      }
     },
     {
       "id": "lib_priv_1",
@@ -553,7 +601,10 @@
       "facet": "cli_amb",
       "key": -1,
       "quick": false,
-      "text": "This country should reach net zero emissions well before 2050."
+      "text": "This country should reach net zero emissions well before 2050.",
+      "local": {
+        "DE": "Germany should stick to climate neutrality by 2045, even if that slows the economy."
+      }
     },
     {
       "id": "cli_pay_1",
@@ -805,6 +856,56 @@
       "key": -1,
       "quick": false,
       "text": "Local communities know better than the national government what they need."
+    }
+  ],
+  "checks": [
+    {
+      "id": "chk_1",
+      "pair": "eco_tax_1",
+      "same": true,
+      "text": "The richest people should contribute considerably more in tax."
+    },
+    {
+      "id": "chk_2",
+      "pair": "mig_lvl_1",
+      "same": false,
+      "text": "The number of people moving to this country is fine as it is, or could even be higher."
+    },
+    {
+      "id": "chk_3",
+      "pair": "cli_amb_1",
+      "same": true,
+      "text": "Protecting the climate matters more to me than economic growth."
+    },
+    {
+      "id": "chk_4",
+      "pair": "lib_just_2",
+      "same": false,
+      "text": "Punishment, not rehabilitation, should be the main purpose of prison."
+    },
+    {
+      "id": "chk_5",
+      "pair": "dem_trust_1",
+      "same": true,
+      "text": "Most politicians care more about their own careers than about ordinary people."
+    },
+    {
+      "id": "chk_6",
+      "pair": "int_trade_1",
+      "same": true,
+      "text": "Protecting home industry with taxes on imports is a good idea."
+    },
+    {
+      "id": "chk_7",
+      "pair": "soc_lgbt_1",
+      "same": true,
+      "text": "Two men or two women should be able to marry and adopt, just like anyone else."
+    },
+    {
+      "id": "chk_8",
+      "pair": "tec_nuc_1",
+      "same": true,
+      "text": "Nuclear power should play a bigger part in our energy supply."
     }
   ]
 }

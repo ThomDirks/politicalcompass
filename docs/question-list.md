@@ -12,6 +12,7 @@ Agreeing with a **+** statement moves you towards the + pole of the axis, a **�
 - `eco_own_2` +: Private companies usually run services like rail and energy more efficiently than the government does.
 - `eco_own_3` −: Basic healthcare should be provided by the state, not by private insurers.
   - NL: Health insurance should be run by one public fund instead of competing private insurers.
+  - UK (−): The NHS should stay fully public, without private companies providing treatment.
   - US: The government should provide health insurance for everyone, replacing private insurance.
 
 **Market regulation and housing**
@@ -20,6 +21,7 @@ Agreeing with a **+** statement moves you towards the + pole of the axis, a **�
 - `eco_reg_2` −: Rents should be capped by law.
   - NL: The rent rules that now cover mid-range homes should be extended to more of the private rental market.
   - DE: The rent cap (Mietpreisbremse) should be tightened and apply everywhere in Germany.
+  - US: Cities should be allowed to cap how much rents can rise.
 - `eco_reg_3` +: Strict rules for businesses cost more jobs than they protect.
 
 **Labour and workers' rights**
@@ -27,6 +29,7 @@ Agreeing with a **+** statement moves you towards the + pole of the axis, a **�
 - `eco_lab_1` − Q: Employers should find it harder to fire people.
 - `eco_lab_2` +: Companies should be free to hire people on flexible or temporary contracts as much as they like.
 - `eco_lab_3` −: The minimum wage should go up substantially, even if some jobs disappear as a result.
+  - US: The federal minimum wage should go up substantially, even if some jobs disappear as a result.
 
 **Tax and welfare**
 
@@ -59,10 +62,19 @@ Agreeing with a **+** statement moves you towards the + pole of the axis, a **�
 
 **Personal morality laws**
 
-- `soc_mor_1` − Q: Abortion should be legal on request in the first months of pregnancy.
+- `soc_mor_1` − Q: Ending a pregnancy in the first months should be the woman's decision alone.
+  - NL (−): Abortion should be removed from the criminal code and treated purely as healthcare.
+  - DE (−): Abortion in the first twelve weeks should be fully legal, not just exempt from punishment as it is now under §218.
+  - UK (−): Abortion should be taken out of criminal law entirely, for doctors and providers too.
+  - US (−): Abortion should be legal nationwide in the first months of pregnancy.
 - `soc_mor_2` −: Adults should be able to buy soft drugs such as cannabis legally from regulated shops.
   - NL: Cannabis growing for coffeeshops should be fully legalised and regulated.
+  - DE (−): Germany's partial legalisation of cannabis should be kept, not reversed.
+  - US (−): Cannabis should be legal across the whole country.
 - `soc_mor_3` +: Doctors should never help patients end their life, even when they are suffering unbearably.
+  - NL (+): Euthanasia should not be extended to older people who feel their life is complete.
+  - DE (+): Assisted suicide should be tightly restricted by law instead of left largely unregulated.
+  - UK (+): Assisted dying should stay illegal, even for terminally ill adults.
 
 ## Liberty vs order (Freedom − / Order +)
 
@@ -160,6 +172,7 @@ Agreeing with a **+** statement moves you towards the + pole of the axis, a **�
 - `cli_amb_1` −: Fighting climate change should come first, even if it slows economic growth.
 - `cli_amb_2` + Q: Climate targets should be delayed if they make life too expensive.
 - `cli_amb_3` −: This country should reach net zero emissions well before 2050.
+  - DE: Germany should stick to climate neutrality by 2045, even if that slows the economy.
 
 **Transition costs and mandates**
 
@@ -238,3 +251,16 @@ Agreeing with a **+** statement moves you towards the + pole of the axis, a **�
   - US: States, not the federal government, should decide most issues.
 - `dem_central_2` +: Important decisions should be made nationally, so the same rules apply everywhere.
 - `dem_central_3` −: Local communities know better than the national government what they need.
+
+## Consistency checks (full test only, not scored)
+
+Each check restates an earlier statement. **Same** means a consistent answer matches it, **mirror** means a consistent answer is its opposite.
+
+- `chk_1` (same as `eco_tax_1`): The richest people should contribute considerably more in tax.
+- `chk_2` (mirror of `mig_lvl_1`): The number of people moving to this country is fine as it is, or could even be higher.
+- `chk_3` (same as `cli_amb_1`): Protecting the climate matters more to me than economic growth.
+- `chk_4` (mirror of `lib_just_2`): Punishment, not rehabilitation, should be the main purpose of prison.
+- `chk_5` (same as `dem_trust_1`): Most politicians care more about their own careers than about ordinary people.
+- `chk_6` (same as `int_trade_1`): Protecting home industry with taxes on imports is a good idea.
+- `chk_7` (same as `soc_lgbt_1`): Two men or two women should be able to marry and adopt, just like anyone else.
+- `chk_8` (same as `tec_nuc_1`): Nuclear power should play a bigger part in our energy supply.

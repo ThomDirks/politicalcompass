@@ -1,6 +1,6 @@
 # PCompass
 
-A political orientation test that goes further than left/right and auth/lib. You get one of eighteen political types in nine camps (each with its own character), a profile on eight axes and 32 facets, and a comparison with current and historical parties (and later politicians) from the Netherlands, Germany, the United Kingdom and the United States.
+A political orientation test that goes further than left/right and auth/lib. You see which of eighteen political types your views align with most closely (each with its own character), how you differ from that type on every topic, a profile on eight axes and 32 facets, and a comparison with current and historical parties (and later politicians) from the Netherlands, Germany, the United Kingdom and the United States.
 
 Because "left" in one country can be "right" in another, scores are measured on absolute scales and then read against a country frame of your choice. Every party has dated snapshots, so you can also see how parties drifted over the years.
 
@@ -36,6 +36,7 @@ python tools/calibrate_ches.py   # calibrate new hand snapshots against CHES 202
 python tools/validate.py --report
 python tools/score.py --selftest --noise 1   # can the questions tell parties apart?
 python tools/score.py --simulate nl-vvd      # answer as a party's supporter would
+python tools/simulate.py                     # how types fill up, how the consistency score behaves
 python tools/build_web.py                    # rebuild index.html, then commit it to update the live site
 ```
 

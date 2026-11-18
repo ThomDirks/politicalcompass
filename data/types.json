@@ -1,162 +1,686 @@
 {
-  "version": "0.2.0",
-  "structure": "Nine camps on a 3x3 map (economy x culture, each with a centre), split by power into eighteen types. Future is a lowercase suffix.",
+  "version": "0.3.0",
+  "structure": "Nine camps on a 3x3 map (economy x culture, each with a centre), split by power into eighteen types. Every type has an average profile on the eight axes; a person or party is aligned with the type whose average profile is closest. Future is a lowercase suffix taken from the person's own scores.",
   "dimensions": [
-    { "id": "econ", "name": "Economy", "axes": ["ECO"], "kind": "three", "band": 20,
-      "neg": { "letter": "C", "label": "Collective" }, "mid": { "letter": "B", "label": "Balanced" }, "pos": { "letter": "M", "label": "Market" },
-      "question": "Who should steer the economy: society through the state, markets, or a mix?" },
-    { "id": "culture", "name": "Culture", "axes": ["SOC", "LIB", "MIG"], "kind": "three", "band": 20,
-      "neg": { "letter": "P", "label": "Progressive" }, "mid": { "letter": "N", "label": "Neutral" }, "pos": { "letter": "T", "label": "Traditional" },
-      "question": "Open, plural and free in private life, rooted in tradition, order and national identity, or somewhere in between?" },
-    { "id": "power", "name": "Power", "axes": ["INT", "DEM"], "kind": "two",
-      "neg": { "letter": "I", "label": "Institutional" }, "pos": { "letter": "S", "label": "Sovereigntist" },
-      "question": "Trust shared institutions, experts and alliances, or take power back to the nation and its people?" },
-    { "id": "future", "name": "Future", "axes": ["CLI", "TEC"], "kind": "suffix",
-      "neg": { "letter": "e", "label": "Ecological" }, "pos": { "letter": "g", "label": "Growth" },
-      "question": "Slow down to protect the planet, or grow and innovate our way forward?" }
+    {
+      "id": "econ",
+      "name": "Economy",
+      "axes": [
+        "ECO"
+      ],
+      "kind": "three",
+      "band": 20,
+      "neg": {
+        "letter": "C",
+        "label": "Collective"
+      },
+      "mid": {
+        "letter": "B",
+        "label": "Balanced"
+      },
+      "pos": {
+        "letter": "M",
+        "label": "Market"
+      },
+      "question": "Who should steer the economy: society through the state, markets, or a mix?"
+    },
+    {
+      "id": "culture",
+      "name": "Culture",
+      "axes": [
+        "SOC",
+        "LIB",
+        "MIG"
+      ],
+      "kind": "three",
+      "band": 20,
+      "neg": {
+        "letter": "P",
+        "label": "Progressive"
+      },
+      "mid": {
+        "letter": "N",
+        "label": "Neutral"
+      },
+      "pos": {
+        "letter": "T",
+        "label": "Traditional"
+      },
+      "question": "Open, plural and free in private life, rooted in tradition, order and national identity, or somewhere in between?"
+    },
+    {
+      "id": "power",
+      "name": "Power",
+      "axes": [
+        "INT",
+        "DEM"
+      ],
+      "kind": "two",
+      "neg": {
+        "letter": "I",
+        "label": "Institutional"
+      },
+      "pos": {
+        "letter": "S",
+        "label": "Sovereigntist"
+      },
+      "question": "Trust shared institutions, experts and alliances, or take power back to the nation and its people?"
+    },
+    {
+      "id": "future",
+      "name": "Future",
+      "axes": [
+        "CLI",
+        "TEC"
+      ],
+      "kind": "suffix",
+      "neg": {
+        "letter": "e",
+        "label": "Ecological"
+      },
+      "pos": {
+        "letter": "g",
+        "label": "Growth"
+      },
+      "question": "Slow down to protect the planet, or grow and innovate our way forward?"
+    }
   ],
   "future_notes": {
     "e": "Leans ecological: willing to accept costs and limits to protect climate and nature, and cautious about new technology.",
     "g": "Leans towards growth: affordability and innovation come first, and climate rules should not hold the economy back."
   },
   "camps": [
-    { "id": "CP", "name": "Progressive left",     "color": "#2F7A6E", "summary": "Collective economics and progressive values." },
-    { "id": "BP", "name": "Progressive centre",   "color": "#37789C", "summary": "A mixed economy and progressive values." },
-    { "id": "MP", "name": "Progressive right",    "color": "#B98A1E", "summary": "Market economics and progressive values." },
-    { "id": "CN", "name": "Left",                 "color": "#5C8A3A", "summary": "Collective economics, in the middle on culture." },
-    { "id": "BN", "name": "Centre",               "color": "#6E7380", "summary": "In the middle on both the economy and culture." },
-    { "id": "MN", "name": "Right",                "color": "#C06E2E", "summary": "Market economics, in the middle on culture." },
-    { "id": "CT", "name": "Conservative left",    "color": "#7B4A78", "summary": "Collective economics and traditional values." },
-    { "id": "BT", "name": "Conservative centre",  "color": "#8A5A3C", "summary": "A mixed economy and traditional values." },
-    { "id": "MT", "name": "Conservative right",   "color": "#3D5A89", "summary": "Market economics and traditional values." }
+    {
+      "id": "CP",
+      "name": "Progressive left",
+      "color": "#2F7A6E",
+      "summary": "Collective economics and progressive values."
+    },
+    {
+      "id": "BP",
+      "name": "Progressive centre",
+      "color": "#37789C",
+      "summary": "A mixed economy and progressive values."
+    },
+    {
+      "id": "MP",
+      "name": "Progressive right",
+      "color": "#B98A1E",
+      "summary": "Market economics and progressive values."
+    },
+    {
+      "id": "CN",
+      "name": "Left",
+      "color": "#5C8A3A",
+      "summary": "Collective economics, in the middle on culture."
+    },
+    {
+      "id": "BN",
+      "name": "Centre",
+      "color": "#6E7380",
+      "summary": "In the middle on both the economy and culture."
+    },
+    {
+      "id": "MN",
+      "name": "Right",
+      "color": "#C06E2E",
+      "summary": "Market economics, in the middle on culture."
+    },
+    {
+      "id": "CT",
+      "name": "Conservative left",
+      "color": "#7B4A78",
+      "summary": "Collective economics and traditional values."
+    },
+    {
+      "id": "BT",
+      "name": "Conservative centre",
+      "color": "#8A5A3C",
+      "summary": "A mixed economy and traditional values."
+    },
+    {
+      "id": "MT",
+      "name": "Conservative right",
+      "color": "#3D5A89",
+      "summary": "Market economics and traditional values."
+    }
   ],
   "former_note": "Former parties are listed for comparison. A type describes policy positions only, not how a party gained or used power.",
   "types": [
-    { "code": "CPI", "name": "The Gardener", "prop": "plant",
-      "tagline": "Grow a fairer society and a liveable planet, through institutions that work together.",
+    {
+      "code": "CPI",
+      "name": "The Gardener",
+      "prop": "plant",
+      "tagline": "Grow a fairer society and a liveable planet, together.",
       "about": [
-        "Gardeners want a society that looks after people and nature at the same time. They back strong public services, equal rights and serious climate policy, and they believe big problems need shared institutions: the EU, international courts, independent experts.",
-        "Change, for them, should be steady and well planned rather than revolutionary. Critics say plans that sound good in Brussels or Berlin can feel distant to the people who end up paying for them."
+        "Gardeners see society as something you tend together. Good schools, healthcare and public transport give everyone a fair start, and equal rights mean nobody is left out because of who they are or who they love. Climate and nature aren't a side issue: they're the ground everything else grows in.",
+        "They believe the big problems of this century don't stop at borders, so they put their trust in cooperation: the EU, international agreements, scientists and experts working on solutions. Patient, well-planned change is how lasting progress is made."
       ],
-      "cares": ["Equal rights", "Public services", "Climate and nature"], "clash": ["MTS", "BTS"] },
-    { "code": "CPS", "name": "The Activist", "prop": "placard",
-      "tagline": "The system is broken, and change can't wait for it to fix itself.",
+      "cares": [
+        "Equal rights",
+        "Public services",
+        "Climate and nature"
+      ],
+      "clash": [
+        "MTS",
+        "BTS"
+      ],
+      "profile": {
+        "ECO": -50,
+        "SOC": -55,
+        "LIB": -25,
+        "MIG": -45,
+        "INT": -50,
+        "CLI": -60,
+        "TEC": -15,
+        "DEM": -45
+      }
+    },
+    {
+      "code": "CPS",
+      "name": "The Activist",
+      "prop": "placard",
+      "tagline": "The system works for the few. It's time it worked for everyone.",
       "about": [
-        "Activists combine left-wing economics and progressive values with a deep distrust of the powers that be: big business, distant institutions, sometimes the EU itself. They like direct action, referendums and grassroots movements.",
-        "Opponents call them idealists. Activists reply that most rights we now take for granted once looked idealistic too."
+        "Activists see a world where wealth and power pile up at the top while ordinary people pay the price. They want real change, not tinkering at the edges: fair wages, affordable homes, public ownership of what everyone needs, and equal rights for all.",
+        "They don't wait for permission from those in charge. Movements, protests, unions and referendums are how people have won every right they have, and Activists are proud to stand in that tradition."
       ],
-      "cares": ["Inequality", "People power", "Social justice"], "clash": ["MTI", "MPI"] },
-    { "code": "BPI", "name": "The Cosmopolitan", "prop": "suitcase",
-      "tagline": "Open to ideas, trade and people, with a steady hand on the economy.",
+      "cares": [
+        "Social justice",
+        "People power",
+        "Inequality"
+      ],
+      "clash": [
+        "MTI",
+        "MPI"
+      ],
+      "profile": {
+        "ECO": -70,
+        "SOC": -60,
+        "LIB": -50,
+        "MIG": -55,
+        "INT": 10,
+        "CLI": -65,
+        "TEC": -40,
+        "DEM": 25
+      }
+    },
+    {
+      "code": "BPI",
+      "name": "The Cosmopolitan",
+      "prop": "suitcase",
+      "tagline": "Open to the world, and open-minded at home.",
       "about": [
-        "Cosmopolitans are socially liberal and economically pragmatic: markets where they work, a safety net where they don't. They like the EU, free movement and international cooperation, and trust experts to manage a connected world.",
-        "Critics say they speak mainly for well-educated city dwellers, who gain most from openness and lose least from change."
+        "Cosmopolitans feel at home in a connected world. They value freedom to live as you choose, to travel, study and work across borders, and they see diversity as a strength. On the economy they're practical: markets where they work, a safety net where they don't.",
+        "They believe good decisions come from knowledge and cooperation, which is why they back the EU, international institutions and independent experts. For them, openness is how a country stays prosperous and free."
       ],
-      "cares": ["Europe and global cooperation", "Personal freedom", "Education"], "clash": ["BTS", "CTS"] },
-    { "code": "BPS", "name": "The Free Thinker", "prop": "plane",
-      "tagline": "Leave people alone, and watch anyone who wants to run their lives, governments and tech giants included.",
+      "cares": [
+        "Europe and global cooperation",
+        "Personal freedom",
+        "Education"
+      ],
+      "clash": [
+        "BTS",
+        "CTS"
+      ],
+      "profile": {
+        "ECO": -5,
+        "SOC": -55,
+        "LIB": -25,
+        "MIG": -35,
+        "INT": -65,
+        "CLI": -35,
+        "TEC": 25,
+        "DEM": -50
+      }
+    },
+    {
+      "code": "BPS",
+      "name": "The Free Thinker",
+      "prop": "plane",
+      "tagline": "Live and let live, and keep an eye on anyone with too much power.",
       "about": [
-        "Free Thinkers are socially liberal, middle-of-the-road on the economy, and suspicious of concentrated power. They defend privacy, free speech and civil liberties, and are critical of surveillance, big tech and distant bureaucracies.",
-        "They prefer decisions made close to the people they affect. Critics say distrust of every institution leaves nobody able to solve shared problems."
+        "Free Thinkers care above all about the freedom to think, speak and live as you see fit. They're open-minded on social questions and practical on the economy, and they're quick to notice when governments, corporations or tech platforms start to know or decide too much.",
+        "Privacy, free speech and civil liberties are their red lines. They prefer decisions made close to the people they affect, and they trust people more than institutions to work things out."
       ],
-      "cares": ["Privacy and civil liberties", "Free speech", "Local control"], "clash": ["MTI", "CNI"] },
-    { "code": "MPI", "name": "The Innovator", "prop": "rocket",
-      "tagline": "Free markets, free people, and technology that moves us forward.",
+      "cares": [
+        "Privacy and civil liberties",
+        "Free speech",
+        "Local control"
+      ],
+      "clash": [
+        "MTI",
+        "CNI"
+      ],
+      "profile": {
+        "ECO": 0,
+        "SOC": -50,
+        "LIB": -55,
+        "MIG": -15,
+        "INT": 10,
+        "CLI": -25,
+        "TEC": 0,
+        "DEM": 30
+      }
+    },
+    {
+      "code": "MPI",
+      "name": "The Innovator",
+      "prop": "rocket",
+      "tagline": "Free markets, free people, and a future worth building.",
       "about": [
-        "Innovators are classic liberals with an eye on the future: lower taxes, less red tape, personal freedom and a strong rule of law. They tend to welcome new technology and believe enterprise solves more problems than government does.",
-        "The left says they underestimate inequality; conservatives say they move too fast on social questions."
+        "Innovators believe in the power of people with ideas. Low taxes, less red tape and open markets give entrepreneurs the room to create jobs and prosperity, and personal freedom applies just as much to how people live their lives.",
+        "They're optimistic about technology, from AI to clean energy and medicine, and see a strong rule of law and international cooperation as the foundation that lets innovation flourish."
       ],
-      "cares": ["Enterprise", "Innovation", "Personal freedom"], "clash": ["CPS", "CNS"] },
-    { "code": "MPS", "name": "The Maverick", "prop": "coin",
-      "tagline": "Less state, more freedom, and nobody telling you what to think.",
+      "cares": [
+        "Enterprise",
+        "Innovation",
+        "Personal freedom"
+      ],
+      "clash": [
+        "CPS",
+        "CNS"
+      ],
+      "profile": {
+        "ECO": 55,
+        "SOC": -40,
+        "LIB": -20,
+        "MIG": 0,
+        "INT": -50,
+        "CLI": 5,
+        "TEC": 55,
+        "DEM": -40
+      }
+    },
+    {
+      "code": "MPS",
+      "name": "The Maverick",
+      "prop": "coin",
+      "tagline": "Your life, your money, your choice.",
       "about": [
-        "Mavericks are libertarians at heart. They want low taxes and light regulation, are relaxed about how people live, and distrust politicians, central banks and international bodies alike.",
-        "Critics say a small state leaves the weakest to fend for themselves. Mavericks say a big one leaves everyone dependent."
+        "Mavericks want as much freedom as possible: to keep what you earn, to run your own life and to say what you think. They're relaxed about how other people live, as long as nobody forces their choices on anyone else.",
+        "They're sceptical of politicians, central planners and international bodies that make rules from a distance, and they trust free people and free markets to do better than any government."
       ],
-      "cares": ["Low taxes", "Free speech", "Independence"], "clash": ["CNS", "CTI"] },
-    { "code": "CNI", "name": "The Builder", "prop": "blueprint",
-      "tagline": "Decent jobs, affordable homes, and a state that actually delivers.",
+      "cares": [
+        "Low taxes",
+        "Free speech",
+        "Independence"
+      ],
+      "clash": [
+        "CNS",
+        "CTI"
+      ],
+      "profile": {
+        "ECO": 65,
+        "SOC": -30,
+        "LIB": -50,
+        "MIG": 20,
+        "INT": 35,
+        "CLI": 50,
+        "TEC": 50,
+        "DEM": 45
+      }
+    },
+    {
+      "code": "CNI",
+      "name": "The Builder",
+      "prop": "blueprint",
+      "tagline": "Decent jobs, affordable homes, and a state that delivers.",
       "about": [
-        "Builders are social democrats of the practical kind. They want fair wages, good public services and strong unions, and they measure progress in houses built, hospitals open and trains on time.",
-        "On culture they sit in the middle, wary of both culture wars. Critics on the left find them too cautious; critics on the right say they spend too freely."
+        "Builders believe in a society that works for working people. Fair wages, secure jobs, affordable housing and public services that actually function: that's what makes life good, and it's what government is for.",
+        "They're practical rather than ideological, and stay out of culture wars. They trust institutions to get things done and measure success in homes built, hospitals open and trains running on time."
       ],
-      "cares": ["Work and wages", "Housing", "Public services"], "clash": ["MPS", "BNS"] },
-    { "code": "CNS", "name": "The Organizer", "prop": "megaphone",
-      "tagline": "Working people deserve a bigger share, and they'll have to fight for it.",
+      "cares": [
+        "Work and wages",
+        "Housing",
+        "Public services"
+      ],
+      "clash": [
+        "MPS",
+        "BNS"
+      ],
+      "profile": {
+        "ECO": -45,
+        "SOC": -5,
+        "LIB": 10,
+        "MIG": 10,
+        "INT": -35,
+        "CLI": -20,
+        "TEC": 10,
+        "DEM": -35
+      }
+    },
+    {
+      "code": "CNS",
+      "name": "The Organizer",
+      "prop": "megaphone",
+      "tagline": "Working people built this country. They deserve their fair share.",
       "about": [
-        "Organizers think in terms of solidarity: unions, strikes, public ownership. They distrust the political and economic elite, and are often critical of the EU and international agreements that seem to serve big business.",
-        "On culture they're in the middle, and some are sceptical of high migration. Critics say their economics would scare off investment."
+        "Organizers stand for solidarity. They want strong unions, fair wages, public ownership of essentials and a welfare state that protects people when times get hard. Ordinary workers, not shareholders or bureaucrats, should come first.",
+        "They're wary of elites, distant institutions and trade deals that seem to serve big business more than working communities, and they believe change comes from people organising together."
       ],
-      "cares": ["Wages and unions", "Public ownership", "A fair share"], "clash": ["MPI", "BPI"] },
-    { "code": "BNI", "name": "The Pragmatist", "prop": "scales",
-      "tagline": "What works, works. No dogma, just results.",
+      "cares": [
+        "Wages and unions",
+        "Public ownership",
+        "A fair share"
+      ],
+      "clash": [
+        "MPI",
+        "BPI"
+      ],
+      "profile": {
+        "ECO": -60,
+        "SOC": 0,
+        "LIB": -15,
+        "MIG": 30,
+        "INT": 40,
+        "CLI": 0,
+        "TEC": -15,
+        "DEM": 40
+      }
+    },
+    {
+      "code": "BNI",
+      "name": "The Pragmatist",
+      "prop": "scales",
+      "tagline": "Look at what works, then do it well.",
       "about": [
-        "Pragmatists sit in the middle on the economy and on culture, and they like it there. They judge policy case by case, trust institutions to weigh the evidence, and prefer compromise to confrontation.",
-        "Supporters call that common sense. Critics from both sides say the centre too often splits the difference instead of choosing."
+        "Pragmatists judge every question on its merits. They're comfortable in the middle on the economy and on culture, not out of indecision but because real life rarely fits one ideology. Evidence, experience and common sense guide them.",
+        "They value stable institutions, sound government and the art of compromise. To them, a country runs best when people with different views can sit at the same table and find solutions that last."
       ],
-      "cares": ["Stability", "Good governance", "Compromise"], "clash": ["CPS", "MTS"] },
-    { "code": "BNS", "name": "The Outsider", "prop": "phone",
-      "tagline": "Not left, not right. Just done with the people in charge.",
+      "cares": [
+        "Stability",
+        "Good governance",
+        "Compromise"
+      ],
+      "clash": [
+        "CPS",
+        "MTS"
+      ],
+      "profile": {
+        "ECO": 0,
+        "SOC": 0,
+        "LIB": 10,
+        "MIG": 10,
+        "INT": -35,
+        "CLI": -5,
+        "TEC": 15,
+        "DEM": -40
+      }
+    },
+    {
+      "code": "BNS",
+      "name": "The Outsider",
+      "prop": "phone",
+      "tagline": "Not left, not right. Just a say in how things are run.",
       "about": [
-        "Outsiders hold middle-of-the-road views on the economy and culture, but they have lost faith in the political class. They want more say through referendums, more transparency and fewer decisions made behind closed doors or in Brussels.",
-        "Critics say anger at the system doesn't amount to a programme. Outsiders say the system stopped listening long ago."
+        "Outsiders hold practical, middle-of-the-road views, but they've had enough of politics that happens far away from them. They want transparency, honest answers and real influence through referendums and citizens' initiatives.",
+        "They look at problems without party glasses. For them, democracy means the people decide, not a closed circle of politicians, lobbyists and officials."
       ],
-      "cares": ["Transparency", "A say for citizens", "Cost of living"], "clash": ["BNI", "BPI"] },
-    { "code": "MNI", "name": "The Trader", "prop": "tablet",
-      "tagline": "Keep the economy open and the government lean.",
+      "cares": [
+        "Transparency",
+        "A say for citizens",
+        "Cost of living"
+      ],
+      "clash": [
+        "BNI",
+        "BPI"
+      ],
+      "profile": {
+        "ECO": 0,
+        "SOC": 5,
+        "LIB": -10,
+        "MIG": 35,
+        "INT": 35,
+        "CLI": 25,
+        "TEC": 0,
+        "DEM": 50
+      }
+    },
+    {
+      "code": "MNI",
+      "name": "The Trader",
+      "prop": "tablet",
+      "tagline": "A strong economy is what pays for everything else.",
       "about": [
-        "Traders are market liberals with moderate views on culture. They want lower taxes, less regulation, free trade and sound public finances, and they trust institutions and international agreements to keep markets stable.",
-        "Critics say they treat society as an economy; Traders say a strong economy is what pays for society."
+        "Traders believe prosperity comes from enterprise, open markets and sound public finances. Lower taxes, fewer rules and free trade let businesses grow, and a growing economy is what funds good public services.",
+        "They take a moderate line on social questions and value reliable institutions, international agreements and a government that keeps its books in order."
       ],
-      "cares": ["Sound finances", "Free trade", "Enterprise"], "clash": ["CNS", "BTS"] },
-    { "code": "MNS", "name": "The Independent", "prop": "opensign",
-      "tagline": "Let me run my own life and my own business, and keep the politicians out of it.",
+      "cares": [
+        "Sound finances",
+        "Free trade",
+        "Enterprise"
+      ],
+      "clash": [
+        "CNS",
+        "BTS"
+      ],
+      "profile": {
+        "ECO": 45,
+        "SOC": -5,
+        "LIB": 20,
+        "MIG": 30,
+        "INT": -35,
+        "CLI": 15,
+        "TEC": 45,
+        "DEM": -35
+      }
+    },
+    {
+      "code": "MNS",
+      "name": "The Independent",
+      "prop": "opensign",
+      "tagline": "Let people run their own lives, and their own businesses.",
       "about": [
-        "Independents combine market economics with a distrust of governments and institutions, often from running a small business or working for themselves. They want lower taxes, fewer rules and power closer to home.",
-        "They're in the middle on culture. Critics say they underestimate what public services and shared rules do for them."
+        "Independents value self-reliance. Many work for themselves or run a small business, and they know what it takes. They want lower taxes, fewer rules and decisions made close to home.",
+        "They're broadly tolerant on social questions but want a clear say over who comes into the country and how it's run. They trust their own judgement more than that of politicians and distant institutions."
       ],
-      "cares": ["Small business", "Low taxes", "Self-reliance"], "clash": ["CNI", "CTI"] },
-    { "code": "CTI", "name": "The Steward", "prop": "lantern",
-      "tagline": "We hold this world in trust. Care for your neighbour, care for the land.",
+      "cares": [
+        "Small business",
+        "Low taxes",
+        "Self-reliance"
+      ],
+      "clash": [
+        "CNI",
+        "CTI"
+      ],
+      "profile": {
+        "ECO": 45,
+        "SOC": -15,
+        "LIB": -10,
+        "MIG": 50,
+        "INT": 35,
+        "CLI": 45,
+        "TEC": 25,
+        "DEM": 50
+      }
+    },
+    {
+      "code": "CTI",
+      "name": "The Steward",
+      "prop": "lantern",
+      "tagline": "Care for your neighbour, and for the world we hold in trust.",
       "about": [
-        "Stewards pair a social conscience with traditional values, often rooted in faith. They want a strong safety net and support for families, are cautious about euthanasia and drugs, and value institutions and international cooperation.",
-        "Progressives find them too moralistic; the right finds them too generous with public money."
+        "Stewards combine a strong social conscience with traditional values, often rooted in faith. They want a society that protects the vulnerable, supports families and treats life with care, from beginning to end.",
+        "They see protecting nature as a moral duty and value cooperation, institutions and the rule of law. For Stewards, community and responsibility matter more than individual gain."
       ],
-      "cares": ["Family and community", "Care for the vulnerable", "Moral responsibility"], "clash": ["MPS", "BPS"] },
-    { "code": "CTS", "name": "The Tribune", "prop": "pennant",
-      "tagline": "Protect working people first: from the market, from the elite, from change that moves too fast.",
+      "cares": [
+        "Family and community",
+        "Care for the vulnerable",
+        "Moral responsibility"
+      ],
+      "clash": [
+        "MPS",
+        "BPS"
+      ],
+      "profile": {
+        "ECO": -30,
+        "SOC": 50,
+        "LIB": 25,
+        "MIG": 10,
+        "INT": -35,
+        "CLI": -35,
+        "TEC": -15,
+        "DEM": -40
+      }
+    },
+    {
+      "code": "CTS",
+      "name": "The Tribune",
+      "prop": "pennant",
+      "tagline": "Look after your own people first.",
       "about": [
-        "Tribunes combine left-leaning economics with conservative views on migration and culture, and a strong distrust of the political class. They want good pensions and secure jobs, less immigration, and power back from distant institutions.",
-        "The left calls this nationalism, the right calls it big-government populism. Tribunes say they're the only ones who listen."
+        "Tribunes stand up for working people and the communities they come from. They want secure jobs, good pensions and public services, and they want their country to stay recognisably theirs, with control over migration and over its own decisions.",
+        "They distrust a political class that seems to have forgotten ordinary people, and believe a nation's first duty is to its own citizens."
       ],
-      "cares": ["Jobs and pensions", "Migration", "Sovereignty"], "clash": ["BPI", "MPI"] },
-    { "code": "BTI", "name": "The Neighbour", "prop": "pie",
+      "cares": [
+        "Jobs and pensions",
+        "Migration",
+        "Sovereignty"
+      ],
+      "clash": [
+        "BPI",
+        "MPI"
+      ],
+      "profile": {
+        "ECO": -45,
+        "SOC": 35,
+        "LIB": 30,
+        "MIG": 65,
+        "INT": 55,
+        "CLI": 40,
+        "TEC": -10,
+        "DEM": 55
+      }
+    },
+    {
+      "code": "BTI",
+      "name": "The Neighbour",
+      "prop": "pie",
       "tagline": "Family, community and a steady hand on the wheel.",
       "about": [
-        "Neighbours are the Christian democratic and conservative centre: a social market economy, strong families and communities, respect for tradition, and loyalty to institutions and alliances.",
-        "They want a welfare state that rewards work and some control over migration. Progressives find them too traditional, populists too comfortable with the establishment."
+        "Neighbours value the things that hold a society together: family, community, tradition and shared norms. They support a social market economy where hard work is rewarded and nobody falls through the cracks.",
+        "They trust institutions, alliances and the rule of law, and prefer careful, responsible government to grand experiments. Stability, for them, is something to protect."
       ],
-      "cares": ["Family and community", "Stability", "Fair work"], "clash": ["CPS", "BNS"] },
-    { "code": "BTS", "name": "The Homesteader", "prop": "wheat",
+      "cares": [
+        "Family and community",
+        "Stability",
+        "Fair work"
+      ],
+      "clash": [
+        "CPS",
+        "BNS"
+      ],
+      "profile": {
+        "ECO": 10,
+        "SOC": 35,
+        "LIB": 35,
+        "MIG": 35,
+        "INT": -45,
+        "CLI": 0,
+        "TEC": 20,
+        "DEM": -50
+      }
+    },
+    {
+      "code": "BTS",
+      "name": "The Homesteader",
+      "prop": "wheat",
       "tagline": "Our land, our traditions, and our say over both.",
       "about": [
-        "Homesteaders are traditional on culture, in the middle on the economy, and distrustful of distant institutions. They want much less immigration, protection for national culture and the countryside, and decisions taken at home rather than abroad.",
-        "Supporters see them as defending a way of life. Critics say they draw the line around 'us' too tightly."
+        "Homesteaders are rooted in their country, its culture and its countryside. They want to protect a way of life that took generations to build, with strong families, local communities and much more control over migration.",
+        "They believe decisions about a country belong to its own people, not to distant institutions, and they're proud to stand up for that."
       ],
-      "cares": ["National culture", "Migration", "The countryside"], "clash": ["BPI", "CPI"] },
-    { "code": "MTI", "name": "The Statesman", "prop": "briefcase",
+      "cares": [
+        "National culture",
+        "Migration",
+        "The countryside"
+      ],
+      "clash": [
+        "BPI",
+        "CPI"
+      ],
+      "profile": {
+        "ECO": 0,
+        "SOC": 45,
+        "LIB": 40,
+        "MIG": 80,
+        "INT": 65,
+        "CLI": 55,
+        "TEC": 15,
+        "DEM": 60
+      }
+    },
+    {
+      "code": "MTI",
+      "name": "The Statesman",
+      "prop": "briefcase",
       "tagline": "Prosperity, order and reliable allies.",
       "about": [
-        "Statesmen are the mainstream centre-right. They want a competitive economy with moderate taxes, law and order, controlled migration, and firm commitments to allies and international agreements.",
-        "They prefer steady governing to grand gestures. The left sees them as defenders of privilege; the populist right sees them as the establishment."
+        "Statesmen believe in a strong economy, safe streets and a country that keeps its word. Moderate taxes and enterprise create prosperity; law and order and controlled migration keep society stable.",
+        "They value tradition, strong institutions and firm alliances, and prefer steady, responsible government to grand gestures. Leadership, for them, means getting the basics right."
       ],
-      "cares": ["The economy", "Security", "Stability"], "clash": ["CPS", "BNS"] },
-    { "code": "MTS", "name": "The Challenger", "prop": "microphone",
-      "tagline": "Take back control: of the borders, the money and the country.",
+      "cares": [
+        "The economy",
+        "Security",
+        "Stability"
+      ],
+      "clash": [
+        "CPS",
+        "BNS"
+      ],
+      "profile": {
+        "ECO": 45,
+        "SOC": 30,
+        "LIB": 45,
+        "MIG": 50,
+        "INT": -40,
+        "CLI": 15,
+        "TEC": 40,
+        "DEM": -45
+      }
+    },
+    {
+      "code": "MTS",
+      "name": "The Challenger",
+      "prop": "microphone",
+      "tagline": "Take back control of the borders, the money and the country.",
       "about": [
-        "Challengers combine conservative values and market economics with a strong push against the political establishment. They want much less immigration, power returned from international bodies, lower taxes and cheap energy.",
-        "Critics say they divide society; Challengers say they speak for people the mainstream stopped listening to."
+        "Challengers want their country back in the hands of its people. They stand for secure borders, lower taxes, affordable energy and pride in national identity and tradition.",
+        "They're not afraid to take on the political establishment, international bodies or the media when they think those have stopped listening, and they see themselves as the voice of people who were ignored for too long."
       ],
-      "cares": ["Borders", "National sovereignty", "Cost of living"], "clash": ["CPI", "BPI"] }
-  ]
+      "cares": [
+        "Borders",
+        "National sovereignty",
+        "Cost of living"
+      ],
+      "clash": [
+        "CPI",
+        "BPI"
+      ],
+      "profile": {
+        "ECO": 45,
+        "SOC": 55,
+        "LIB": 50,
+        "MIG": 85,
+        "INT": 70,
+        "CLI": 85,
+        "TEC": 35,
+        "DEM": 65
+      }
+    }
+  ],
+  "alignment": {
+    "axis_weights": {
+      "ECO": 1,
+      "SOC": 1,
+      "LIB": 1,
+      "MIG": 1,
+      "INT": 1,
+      "DEM": 1,
+      "CLI": 0.5,
+      "TEC": 0.5
+    },
+    "note": "Climate and technology count half, because they are shown separately as the small letter."
+  }
 }

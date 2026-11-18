@@ -84,11 +84,20 @@ for f, items in per_facet.items():
         err(f"questions: facet {f} has fewer than 3 items")
     if sum(i["quick"] for i in items) != 1:
         err(f"questions: facet {f} needs exactly one quick-mode item")
-for ax in AXIS_IDS:
-    for mode, sel in (("all", lambda i: True), ("quick", lambda i: i["quick"])):
-        keys = [i["key"] for f, items in per_facet.items() if FACET_AXIS[f] == ax for i in items if sel(i)]
-        if sum(keys) != 0:
-            err(f"questions: axis {ax} is unbalanced in {mode} mode ({keys.count(1)} towards + vs {keys.count(-1)} towards -)")
+def eff_key(item, cc):
+    loc = item.get("local", {}).get(cc)
+    return loc["key"] if isinstance(loc, dict) else item["key"]
+
+
+for cc in [None] + list(frames):
+    for ax in AXIS_IDS:
+        for mode, sel in (("all", lambda i: True), ("quick", lambda i: i["quick"])):
+            keys = [eff_key(i, cc) for f, items in per_facet.items() if FACET_AXIS[f] == ax for i in items if sel(i)]
+            if sum(keys) != 0:
+                err(f"questions: axis {ax} is unbalanced in {mode} mode for {cc or 'the general version'} ({keys.count(1)} towards + vs {keys.count(-1)} towards -)")
+for c in questions.get("checks", []):
+    if c["pair"] not in ids:
+        err(f"questions: check {c['id']} pairs with unknown item {c['pair']}")
 if {s["axis"] for s in questions["salience"]["items"]} != set(AXIS_IDS):
     err("questions: salience items must cover every axis")
 
@@ -218,7 +227,14 @@ if "--report" in sys.argv:
             for i in per_facet[fct["id"]]:
                 ql.append(f"- `{i['id']}` {'+' if i['key'] > 0 else '−'}{' Q' if i['quick'] else ''}: {i['text']}")
                 for cc, t in i.get("local", {}).items():
-                    ql.append(f"  - {cc}: {t}")
+                    if isinstance(t, dict):
+                        ql.append(f"  - {cc} ({'+' if t['key'] > 0 else '−'}): {t['text']}")
+                    else:
+                        ql.append(f"  - {cc}: {t}")
+    ql.append("\n## Consistency checks (full test only, not scored)\n")
+    ql.append("Each check restates an earlier statement. **Same** means a consistent answer matches it, **mirror** means a consistent answer is its opposite.\n")
+    for c in questions.get("checks", []):
+        ql.append(f"- `{c['id']}` ({'same as' if c['same'] else 'mirror of'} `{c['pair']}`): {c['text']}")
     with open(os.path.join(ROOT, "docs/question-list.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(ql) + "\n")
     print("\nwrote docs/party-overview.md, docs/drift.md, docs/calibration.md, docs/question-list.md")

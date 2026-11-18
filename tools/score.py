@@ -29,18 +29,28 @@ def items_for(quick=False):
     return [i for i in ITEMS if i["quick"] or not quick]
 
 
+def local_for(item, country=None):
+    loc = item.get("local", {}).get(country)
+    if loc is None:
+        return item["text"], item["key"]
+    if isinstance(loc, str):
+        return loc, item["key"]
+    return loc["text"], loc["key"]
+
+
 def text_for(item, country=None):
-    return item.get("local", {}).get(country, item["text"])
+    return local_for(item, country)[0]
 
 
-def score_answers(answers):
-    """Facet score = mean of (answer x key) / 3 x 100 over answered items."""
+def score_answers(answers, country=None):
+    """Facet score = mean of (answer x key) / 3 x 100 over answered items.
+    The key comes from the country version the statement was shown in."""
     sums = {f: [] for f in FACET_IDS}
     for item in ITEMS:
         v = answers.get(item["id"])
         if v is None:
             continue
-        sums[item["facet"]].append(v * item["key"])
+        sums[item["facet"]].append(v * local_for(item, country)[1])
     return {f: (round(sum(v) / len(v) / 3 * 100) if v else None) for f, v in sums.items()}
 
 
@@ -104,7 +114,7 @@ def simulate(actor, quick=False, noise=0, rng=None):
         if p is None:
             answers[item["id"]] = None
             continue
-        v = round(p[0] / 100 * 3 * item["key"])
+        v = round(p[0] / 100 * 3 * local_for(item, actor["country"])[1])
         if noise:
             if rng.random() < 0.1:
                 answers[item["id"]] = None
@@ -116,7 +126,7 @@ def simulate(actor, quick=False, noise=0, rng=None):
 
 
 def report(answers, salience, country, actors, frames, top=5):
-    facets = score_answers(answers)
+    facets = score_answers(answers, country)
     axes = axis_scores(facets)
     print("Type code:", type_code(axes))
     print("Axes:", "  ".join(f"{ax} {axes[ax][0]:+.0f}" if axes[ax][0] is not None else f"{ax} ·" for ax in AXIS_IDS))
@@ -145,7 +155,7 @@ def selftest(actors, frames, quick, noise=0, trials=1):
             confused = Counter()
             for _ in range(trials):
                 answers, sal = simulate(actors[pid], quick, noise, rng)
-                rows = [r for r in match(score_answers(answers), sal, actors, frames, code) if r[3]]
+                rows = [r for r in match(score_answers(answers, code), sal, actors, frames, code) if r[3]]
                 ids = [r[1]["id"] for r in rows]
                 first += ids[0] == pid
                 top3 += pid in ids[:3]
