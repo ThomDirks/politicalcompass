@@ -26,7 +26,7 @@ MIN_COVERAGE = 0.5  # share of the user's weighted facets a party must cover to 
 
 
 def items_for(quick=False):
-    return [i for i in ITEMS if i["quick"] or not quick]
+    return [i for i in ITEMS if (i["quick"] if quick else i.get("full", True))]
 
 
 def local_for(item, country=None):

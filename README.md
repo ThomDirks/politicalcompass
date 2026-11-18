@@ -19,7 +19,7 @@ Because "left" in one country can be "right" in another, scores are measured on 
 | `data/actors/<country>/` | One file per party with all its snapshots |
 | `data/ches_mapping.json` | How CHES items map onto PCompass facets |
 | `data/types.json` | The nine camps and eighteen political types, their dimensions and descriptions |
-| `data/questions.json` | The question bank: 96 statements, salience questions, country versions |
+| `data/questions.json` | The question bank: 109 statements (concept and policy), consistency checks, salience questions, country versions |
 | `index.html` | The website, built from `web/template.html` and `web/characters.js` with `tools/build_web.py`. Live at https://thomdirks.github.io/politicalcompass/ |
 | `tools/` | Import, calibration, validation, scoring and build scripts |
 

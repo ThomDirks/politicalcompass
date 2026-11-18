@@ -4,10 +4,15 @@ The question bank lives in [`data/questions.json`](../data/questions.json). A re
 
 ## What's in the bank
 
-- **96 statements**, three per facet, plus 8 consistency checks in the full test, answered on a 7-point scale from *strongly disagree* (−3) to *strongly agree* (+3). *No opinion* skips the statement.
+The bank holds more statements than any test asks, so statements can be rotated as debates change.
+
+- **109 statements** across the 32 facets, each tagged as a **concept** (a principle that doesn't depend on current policy, such as "Some things, like water and healthcare, should never be run for profit") or **policy** (a current debate, such as rent caps or the Mercosur deal). 54 are concepts, and every facet has at least one.
+- **Quick mode** asks 32 concept statements, one per facet, without country versions. Concepts age slowly and mean the same in every country, which suits a short test. Quick mode has no consistency checks.
+- **The full test** asks 104 statements, concepts and policy mixed, with country versions where the national debate differs, plus 8 consistency checks.
+- **Reserve:** 5 statements are in the bank but not asked right now (for example cannabis legalisation and residence for long-term undocumented residents). They can replace policy statements that go out of date, as long as the balance per axis holds.
 - **8 salience questions**, one per axis: "How much do these topics matter to you?", from *not at all* (0) to *it decides my vote* (4).
-- **Quick mode**: one statement per facet, 32 in total. **Deep mode**: all 96.
-- **27 country versions** that swap in a local example (the Mietpreisbremse, nitrogen, small boats, Paris withdrawal) while measuring the same thing.
+
+The validator enforces the structure: exactly one quick statement per facet and it must be a concept without country versions, at least three full-test statements and at least one concept per facet, and balanced directions per axis in both modes and in every country.
 
 ## Country versions
 
@@ -55,7 +60,7 @@ A party is only ranked if its profile covers at least half of what you answered.
 |---|---|---:|---:|
 | Deep | 0 | 100% | 100% |
 | Quick | 0 | 100% | 100% |
-| Deep | 1 | 98% | 100% |
+| Deep | 1 | 99% | 100% |
 | Quick | 1 | 92% | 100% |
 | Deep | 2 | 92% | 100% |
 | Quick | 2 | 77% | 97% |

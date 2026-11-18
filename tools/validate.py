@@ -80,10 +80,17 @@ for item in questions["items"]:
             err(f"questions: {item['id']} has a variant for unknown country {cc}")
     per_facet[item["facet"]].append(item)
 for f, items in per_facet.items():
-    if len(items) < 3:
-        err(f"questions: facet {f} has fewer than 3 items")
+    if sum(i.get("full", True) for i in items) < 3:
+        err(f"questions: facet {f} has fewer than 3 items in the full test")
     if sum(i["quick"] for i in items) != 1:
         err(f"questions: facet {f} needs exactly one quick-mode item")
+    if not any(i.get("kind") == "concept" for i in items):
+        err(f"questions: facet {f} has no concept statement")
+    for i in items:
+        if i.get("kind") not in ("concept", "policy"):
+            err(f"questions: {i['id']} needs kind concept or policy")
+        if i["quick"] and (i.get("kind") != "concept" or i.get("local")):
+            err(f"questions: quick item {i['id']} must be a concept statement without country versions")
 def eff_key(item, cc):
     loc = item.get("local", {}).get(cc)
     return loc["key"] if isinstance(loc, dict) else item["key"]
@@ -91,13 +98,14 @@ def eff_key(item, cc):
 
 for cc in [None] + list(frames):
     for ax in AXIS_IDS:
-        for mode, sel in (("all", lambda i: True), ("quick", lambda i: i["quick"])):
+        for mode, sel in (("full", lambda i: i.get("full", True)), ("quick", lambda i: i["quick"])):
             keys = [eff_key(i, cc) for f, items in per_facet.items() if FACET_AXIS[f] == ax for i in items if sel(i)]
             if sum(keys) != 0:
                 err(f"questions: axis {ax} is unbalanced in {mode} mode for {cc or 'the general version'} ({keys.count(1)} towards + vs {keys.count(-1)} towards -)")
 for c in questions.get("checks", []):
-    if c["pair"] not in ids:
-        err(f"questions: check {c['id']} pairs with unknown item {c['pair']}")
+    pair = next((i for i in questions["items"] if i["id"] == c["pair"]), None)
+    if not pair or not pair.get("full", True):
+        err(f"questions: check {c['id']} must pair with a statement in the full test")
 if {s["axis"] for s in questions["salience"]["items"]} != set(AXIS_IDS):
     err("questions: salience items must cover every axis")
 
@@ -219,13 +227,14 @@ if "--report" in sys.argv:
                 "Compares the current hand-scored snapshot with the CHES 2024 snapshot on facets both cover. "
                 "Gaps can be real change since 2024 (new leaders, new coalitions) or scoring error.\n\n" + calibration + "\n")
     ql = ["# Question list\n", gen.strip() + "\n", "Agreeing with a **+** statement moves you towards the + pole of the axis, a **−** statement towards the − pole. "
-          "**Q** marks the statement used in quick mode. Country versions replace the general text when that country is selected."]
+          "**Q** marks the statement used in quick mode (always a concept statement). Concept statements are about principles; policy statements are about current debates and will be rotated over time. Reserve statements are in the bank but not asked. Country versions replace the general text when that country is selected."]
     for a in AXES:
         ql.append(f"\n## {a['name']} ({a['neg']['label']} − / {a['pos']['label']} +)")
         for fct in a["facets"]:
             ql.append(f"\n**{fct['name']}**\n")
             for i in per_facet[fct["id"]]:
-                ql.append(f"- `{i['id']}` {'+' if i['key'] > 0 else '−'}{' Q' if i['quick'] else ''}: {i['text']}")
+                tags = ("Q " if i["quick"] else "") + ("concept" if i.get("kind") == "concept" else "policy") + ("" if i.get("full", True) else ", reserve")
+                ql.append(f"- `{i['id']}` {'+' if i['key'] > 0 else '−'} ({tags}): {i['text']}")
                 for cc, t in i.get("local", {}).items():
                     if isinstance(t, dict):
                         ql.append(f"  - {cc} ({'+' if t['key'] > 0 else '−'}): {t['text']}")

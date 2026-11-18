@@ -79,15 +79,19 @@
       "id": "eco_own_1",
       "facet": "eco_own",
       "key": -1,
-      "quick": true,
-      "text": "Energy, water and public transport should be owned by the government, not by private companies."
+      "quick": false,
+      "text": "Energy, water and public transport should be owned by the government, not by private companies.",
+      "kind": "policy",
+      "full": false
     },
     {
       "id": "eco_own_2",
       "facet": "eco_own",
       "key": 1,
       "quick": false,
-      "text": "Private companies usually run services like rail and energy more efficiently than the government does."
+      "text": "Private companies usually run services like rail and energy more efficiently than the government does.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "eco_own_3",
@@ -102,14 +106,27 @@
           "key": -1
         },
         "US": "The government should provide health insurance for everyone, replacing private insurance."
-      }
+      },
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "eco_own_4",
+      "facet": "eco_own",
+      "key": -1,
+      "quick": true,
+      "text": "Some things, like water and healthcare, should never be run for profit.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "eco_reg_1",
       "facet": "eco_reg",
       "key": 1,
       "quick": true,
-      "text": "The government should interfere as little as possible in how businesses set their prices."
+      "text": "The government should interfere as little as possible in how businesses set their prices.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "eco_reg_2",
@@ -121,28 +138,36 @@
         "NL": "The rent rules that now cover mid-range homes should be extended to more of the private rental market.",
         "DE": "The rent cap (Mietpreisbremse) should be tightened and apply everywhere in Germany.",
         "US": "Cities should be allowed to cap how much rents can rise."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "eco_reg_3",
       "facet": "eco_reg",
       "key": 1,
       "quick": false,
-      "text": "Strict rules for businesses cost more jobs than they protect."
+      "text": "Strict rules for businesses cost more jobs than they protect.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "eco_lab_1",
       "facet": "eco_lab",
       "key": -1,
-      "quick": true,
-      "text": "Employers should find it harder to fire people."
+      "quick": false,
+      "text": "Employers should find it harder to fire people.",
+      "kind": "policy",
+      "full": false
     },
     {
       "id": "eco_lab_2",
       "facet": "eco_lab",
       "key": 1,
       "quick": false,
-      "text": "Companies should be free to hire people on flexible or temporary contracts as much as they like."
+      "text": "Companies should be free to hire people on flexible or temporary contracts as much as they like.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "eco_lab_3",
@@ -152,77 +177,108 @@
       "text": "The minimum wage should go up substantially, even if some jobs disappear as a result.",
       "local": {
         "US": "The federal minimum wage should go up substantially, even if some jobs disappear as a result."
-      }
+      },
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "eco_lab_4",
+      "facet": "eco_lab",
+      "key": -1,
+      "quick": true,
+      "text": "Without strong unions, working people get a raw deal.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "eco_tax_1",
       "facet": "eco_tax",
       "key": -1,
       "quick": false,
-      "text": "People with high incomes should pay a much larger share of their income in tax than they do now."
+      "text": "People with high incomes should pay a much larger share of their income in tax than they do now.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "eco_tax_2",
       "facet": "eco_tax",
       "key": 1,
       "quick": false,
-      "text": "Benefits should be kept low, so that working always pays clearly more than not working."
+      "text": "Benefits should be kept low, so that working always pays clearly more than not working.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "eco_tax_3",
       "facet": "eco_tax",
       "key": 1,
       "quick": true,
-      "text": "I would rather pay less tax than have more public services."
+      "text": "I would rather pay less tax than have more public services.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "soc_fam_1",
       "facet": "soc_fam",
       "key": 1,
       "quick": true,
-      "text": "Young children are generally better off when one parent stays at home."
+      "text": "Young children are generally better off when one parent stays at home.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "soc_fam_2",
       "facet": "soc_fam",
       "key": -1,
       "quick": false,
-      "text": "The government should actively work to close the pay gap between men and women."
+      "text": "The government should actively work to close the pay gap between men and women.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "soc_fam_3",
       "facet": "soc_fam",
       "key": -1,
       "quick": false,
-      "text": "The government should treat all households the same, whether or not people are married."
+      "text": "The government should treat all households the same, whether or not people are married.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "soc_lgbt_1",
       "facet": "soc_lgbt",
       "key": -1,
       "quick": true,
-      "text": "Same-sex couples should have exactly the same rights as other couples, including adoption."
+      "text": "Same-sex couples should have exactly the same rights as other couples, including adoption.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "soc_lgbt_2",
       "facet": "soc_lgbt",
       "key": 1,
       "quick": false,
-      "text": "Changing your legal gender should require a medical diagnosis, not just a personal declaration."
+      "text": "Changing your legal gender should require a medical diagnosis, not just a personal declaration.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "soc_lgbt_3",
       "facet": "soc_lgbt",
       "key": 1,
       "quick": false,
-      "text": "Schools should leave topics like sexual orientation and gender identity to parents."
+      "text": "Schools should leave topics like sexual orientation and gender identity to parents.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "soc_rel_1",
       "facet": "soc_rel",
       "key": 1,
       "quick": true,
-      "text": "Politicians should let religious values guide their decisions."
+      "text": "Politicians should let religious values guide their decisions.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "soc_rel_2",
@@ -234,20 +290,24 @@
         "NL": "Religious schools should no longer receive the same public funding as public schools.",
         "DE": "The state should stop collecting church tax on behalf of the churches.",
         "US": "Public money should never go to religious schools, for example through vouchers."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "soc_rel_3",
       "facet": "soc_rel",
       "key": 1,
       "quick": false,
-      "text": "The country's Christian roots should be visible in its laws and public life."
+      "text": "The country's Christian roots should be visible in its laws and public life.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "soc_mor_1",
       "facet": "soc_mor",
       "key": -1,
-      "quick": true,
+      "quick": false,
       "text": "Ending a pregnancy in the first months should be the woman's decision alone.",
       "local": {
         "NL": {
@@ -266,7 +326,9 @@
           "text": "Abortion should be legal nationwide in the first months of pregnancy.",
           "key": -1
         }
-      }
+      },
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "soc_mor_2",
@@ -284,7 +346,9 @@
           "text": "Cannabis should be legal across the whole country.",
           "key": -1
         }
-      }
+      },
+      "kind": "policy",
+      "full": false
     },
     {
       "id": "soc_mor_3",
@@ -305,21 +369,36 @@
           "text": "Assisted dying should stay illegal, even for terminally ill adults.",
           "key": 1
         }
-      }
+      },
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "soc_mor_4",
+      "facet": "soc_mor",
+      "key": -1,
+      "quick": true,
+      "text": "The state should stay out of adults' private choices, as long as they don't harm anyone else.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "lib_priv_1",
       "facet": "lib_priv",
       "key": 1,
-      "quick": true,
-      "text": "Police should be allowed to use facial recognition cameras in public places."
+      "quick": false,
+      "text": "Police should be allowed to use facial recognition cameras in public places.",
+      "kind": "policy",
+      "full": false
     },
     {
       "id": "lib_priv_2",
       "facet": "lib_priv",
       "key": -1,
       "quick": false,
-      "text": "Messaging apps should never be forced to give governments access to encrypted messages."
+      "text": "Messaging apps should never be forced to give governments access to encrypted messages.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "lib_priv_3",
@@ -329,105 +408,153 @@
       "text": "A national digital ID would give the government too much information about its citizens.",
       "local": {
         "UK": "A compulsory digital ID for proving the right to work would give the government too much control."
-      }
+      },
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "lib_priv_4",
+      "facet": "lib_priv",
+      "key": 1,
+      "quick": true,
+      "text": "If you have nothing to hide, you have nothing to fear from being watched.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "lib_just_1",
       "facet": "lib_just",
       "key": 1,
       "quick": false,
-      "text": "Sentences for serious crimes should be much longer."
+      "text": "Sentences for serious crimes should be much longer.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "lib_just_2",
       "facet": "lib_just",
       "key": -1,
       "quick": true,
-      "text": "Prisons should focus on rehabilitation rather than punishment."
+      "text": "Prisons should focus on rehabilitation rather than punishment.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "lib_just_3",
       "facet": "lib_just",
       "key": -1,
       "quick": false,
-      "text": "Police should need stronger evidence before they can stop and search someone."
+      "text": "Police should need stronger evidence before they can stop and search someone.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "lib_speech_1",
       "facet": "lib_speech",
       "key": 1,
       "quick": false,
-      "text": "Spreading hateful views about groups of people should be a criminal offence."
+      "text": "Spreading hateful views about groups of people should be a criminal offence.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "lib_speech_2",
       "facet": "lib_speech",
       "key": -1,
       "quick": true,
-      "text": "People should be free to say offensive things, even if many find them hurtful."
+      "text": "People should be free to say offensive things, even if many find them hurtful.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "lib_speech_3",
       "facet": "lib_speech",
       "key": 1,
       "quick": false,
-      "text": "Social media companies should be legally required to remove false information."
+      "text": "Social media companies should be legally required to remove false information.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "lib_emerg_1",
       "facet": "lib_emerg",
       "key": 1,
       "quick": true,
-      "text": "In a crisis such as a pandemic, the government should be able to impose restrictions without waiting for parliament."
+      "text": "In a crisis such as a pandemic, the government should be able to impose restrictions without waiting for parliament.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "lib_emerg_2",
       "facet": "lib_emerg",
       "key": -1,
       "quick": false,
-      "text": "The right to protest should be protected, even when protests seriously disrupt daily life."
+      "text": "The right to protest should be protected, even when protests seriously disrupt daily life.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "lib_emerg_3",
       "facet": "lib_emerg",
       "key": 1,
       "quick": false,
-      "text": "The government should be able to ban groups whose protests it considers extremist."
+      "text": "The government should be able to ban groups whose protests it considers extremist.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "mig_lvl_1",
       "facet": "mig_lvl",
       "key": 1,
       "quick": false,
-      "text": "Immigration to this country should be reduced significantly."
+      "text": "Immigration to this country should be reduced significantly.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "mig_lvl_2",
       "facet": "mig_lvl",
       "key": -1,
-      "quick": true,
-      "text": "This country needs more immigrants to fill jobs and support an ageing population."
+      "quick": false,
+      "text": "This country needs more immigrants to fill jobs and support an ageing population.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "mig_lvl_3",
       "facet": "mig_lvl",
       "key": -1,
       "quick": false,
-      "text": "People who have lived here illegally for many years should get a chance to stay legally."
+      "text": "People who have lived here illegally for many years should get a chance to stay legally.",
+      "kind": "policy",
+      "full": false
+    },
+    {
+      "id": "mig_lvl_4",
+      "facet": "mig_lvl",
+      "key": -1,
+      "quick": true,
+      "text": "Immigration makes a country richer, both culturally and economically.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "mig_asy_1",
       "facet": "mig_asy",
       "key": 1,
-      "quick": true,
-      "text": "This country should take in fewer asylum seekers, even if that means breaking international agreements."
+      "quick": false,
+      "text": "This country should take in fewer asylum seekers, even if that means breaking international agreements.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "mig_asy_2",
       "facet": "mig_asy",
       "key": -1,
-      "quick": false,
-      "text": "Refugees fleeing war should be welcomed, even in large numbers."
+      "quick": true,
+      "text": "Refugees fleeing war should be welcomed, even in large numbers.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "mig_asy_3",
@@ -438,60 +565,76 @@
       "local": {
         "UK": "Asylum seekers who arrive by small boat should be sent to another country to have their claims processed.",
         "US": "Asylum seekers should wait in other countries while their claims are processed."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "mig_int_1",
       "facet": "mig_int",
       "key": 1,
-      "quick": false,
-      "text": "Immigrants should adapt to the customs of this country."
+      "quick": true,
+      "text": "Immigrants should adapt to the customs of this country.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "mig_int_2",
       "facet": "mig_int",
       "key": -1,
-      "quick": true,
-      "text": "It's good for society when immigrants keep their own culture and traditions."
+      "quick": false,
+      "text": "It's good for society when immigrants keep their own culture and traditions.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "mig_int_3",
       "facet": "mig_int",
       "key": 1,
       "quick": false,
-      "text": "Judges and police officers should not be allowed to wear religious symbols such as a headscarf at work."
+      "text": "Judges and police officers should not be allowed to wear religious symbols such as a headscarf at work.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "mig_nat_1",
       "facet": "mig_nat",
       "key": 1,
       "quick": true,
-      "text": "Our national culture is under threat and needs protecting."
+      "text": "Our national culture is under threat and needs protecting.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "mig_nat_2",
       "facet": "mig_nat",
       "key": -1,
       "quick": false,
-      "text": "I feel more like a citizen of the world than of my own country."
+      "text": "I feel more like a citizen of the world than of my own country.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "mig_nat_3",
       "facet": "mig_nat",
       "key": -1,
       "quick": false,
-      "text": "Newcomers should have the same access to social housing as people born here."
+      "text": "Newcomers should have the same access to social housing as people born here.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "int_eu_1",
       "facet": "int_eu",
       "key": -1,
-      "quick": true,
+      "quick": false,
       "text": "The EU should get more power, even if national governments lose some.",
       "local": {
         "UK": "The UK should rejoin the EU.",
         "US": "The United States should work more through international organisations such as the UN, even if that limits what it can do alone."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "int_eu_2",
@@ -502,7 +645,9 @@
       "local": {
         "UK": "Laws made in Britain should always take priority over international courts and treaties.",
         "US": "International agreements should never override American law."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "int_eu_3",
@@ -513,14 +658,27 @@
       "local": {
         "UK": "Britain would be better off back inside the EU's single market.",
         "US": "International organisations such as the UN and the WTO are good for the United States."
-      }
+      },
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "int_eu_4",
+      "facet": "int_eu",
+      "key": -1,
+      "quick": true,
+      "text": "Countries achieve more by making decisions together than by going it alone.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "int_trade_1",
       "facet": "int_trade",
       "key": 1,
       "quick": true,
-      "text": "Tariffs on imports are a good way to protect jobs at home."
+      "text": "Tariffs on imports are a good way to protect jobs at home.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "int_trade_2",
@@ -531,70 +689,99 @@
       "local": {
         "NL": "The EU trade deal with South American countries (Mercosur) is good for our economy.",
         "DE": "The EU trade deal with South American countries (Mercosur) is good for our economy."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "int_trade_3",
       "facet": "int_trade",
       "key": 1,
       "quick": false,
-      "text": "Farmers and industry here should be protected against cheaper foreign competition."
+      "text": "Farmers and industry here should be protected against cheaper foreign competition.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "int_def_1",
       "facet": "int_def",
       "key": -1,
-      "quick": true,
-      "text": "We should keep supporting Ukraine militarily for as long as it takes."
+      "quick": false,
+      "text": "We should keep supporting Ukraine militarily for as long as it takes.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "int_def_2",
       "facet": "int_def",
       "key": 1,
       "quick": false,
-      "text": "NATO membership does this country more harm than good."
+      "text": "NATO membership does this country more harm than good.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "int_def_3",
       "facet": "int_def",
       "key": -1,
-      "quick": false,
-      "text": "Allies should come to each other's defence, even far from home."
+      "quick": true,
+      "text": "Allies should come to each other's defence, even far from home.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "int_aid_1",
       "facet": "int_aid",
       "key": 1,
-      "quick": true,
-      "text": "Development aid to poorer countries should be cut."
+      "quick": false,
+      "text": "Development aid to poorer countries should be cut.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "int_aid_2",
       "facet": "int_aid",
       "key": -1,
       "quick": false,
-      "text": "Rich countries have a duty to help poorer countries, even if it costs a lot."
+      "text": "Rich countries have a duty to help poorer countries, even if it costs a lot.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "int_aid_3",
       "facet": "int_aid",
       "key": 1,
       "quick": false,
-      "text": "Development aid should only go to countries that take back their own citizens who were refused asylum."
+      "text": "Development aid should only go to countries that take back their own citizens who were refused asylum.",
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "int_aid_4",
+      "facet": "int_aid",
+      "key": 1,
+      "quick": true,
+      "text": "A government's money should go to its own citizens before anyone else.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "cli_amb_1",
       "facet": "cli_amb",
       "key": -1,
-      "quick": false,
-      "text": "Fighting climate change should come first, even if it slows economic growth."
+      "quick": true,
+      "text": "Fighting climate change should come first, even if it slows economic growth.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "cli_amb_2",
       "facet": "cli_amb",
       "key": 1,
-      "quick": true,
-      "text": "Climate targets should be delayed if they make life too expensive."
+      "quick": false,
+      "text": "Climate targets should be delayed if they make life too expensive.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "cli_amb_3",
@@ -604,21 +791,27 @@
       "text": "This country should reach net zero emissions well before 2050.",
       "local": {
         "DE": "Germany should stick to climate neutrality by 2045, even if that slows the economy."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "cli_pay_1",
       "facet": "cli_pay",
       "key": -1,
-      "quick": true,
-      "text": "Petrol, diesel and gas should be taxed more heavily to cut emissions."
+      "quick": false,
+      "text": "Petrol, diesel and gas should be taxed more heavily to cut emissions.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "cli_pay_2",
       "facet": "cli_pay",
       "key": 1,
       "quick": false,
-      "text": "The sale of new petrol and diesel cars should not be banned."
+      "text": "The sale of new petrol and diesel cars should not be banned.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "cli_pay_3",
@@ -628,234 +821,350 @@
       "text": "People should be free to choose between a gas boiler and a heat pump without government rules.",
       "local": {
         "DE": "The heating law (Gebäudeenergiegesetz) should be scrapped."
-      }
+      },
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "cli_pay_4",
+      "facet": "cli_pay",
+      "key": 1,
+      "quick": true,
+      "text": "Climate policy shouldn't make ordinary people's lives more expensive.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "cli_nat_1",
       "facet": "cli_nat",
       "key": -1,
-      "quick": true,
+      "quick": false,
       "text": "Livestock farming should be reduced to protect nature.",
       "local": {
         "NL": "The number of livestock should be reduced to bring down nitrogen emissions."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "cli_nat_2",
       "facet": "cli_nat",
       "key": 1,
       "quick": false,
-      "text": "Building homes and roads should come before protecting nature areas."
+      "text": "Building homes and roads should come before protecting nature areas.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "cli_nat_3",
       "facet": "cli_nat",
       "key": -1,
       "quick": false,
-      "text": "More farmland should be turned back into nature."
+      "text": "More farmland should be turned back into nature.",
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "cli_nat_4",
+      "facet": "cli_nat",
+      "key": -1,
+      "quick": true,
+      "text": "Nature has value of its own, whatever it's worth to people.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "cli_intl_1",
       "facet": "cli_intl",
       "key": -1,
       "quick": false,
-      "text": "Rich countries should pay poorer countries to help them cope with climate change."
+      "text": "Rich countries should pay poorer countries to help them cope with climate change.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "cli_intl_2",
       "facet": "cli_intl",
       "key": 1,
-      "quick": true,
+      "quick": false,
       "text": "This country should leave the Paris climate agreement.",
       "local": {
         "US": "Leaving the Paris climate agreement was the right decision."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "cli_intl_3",
       "facet": "cli_intl",
       "key": 1,
-      "quick": false,
-      "text": "There is little point in cutting our emissions while big countries like China keep polluting."
+      "quick": true,
+      "text": "There is little point in cutting our emissions while big countries like China keep polluting.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "tec_ai_1",
       "facet": "tec_ai",
       "key": 1,
-      "quick": true,
-      "text": "AI should be developed as fast as possible, with few restrictions."
+      "quick": false,
+      "text": "AI should be developed as fast as possible, with few restrictions.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "tec_ai_2",
       "facet": "tec_ai",
       "key": -1,
       "quick": false,
-      "text": "Development of the most powerful AI systems should be paused until we know they are safe."
+      "text": "Development of the most powerful AI systems should be paused until we know they are safe.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "tec_ai_3",
       "facet": "tec_ai",
       "key": -1,
       "quick": false,
-      "text": "Companies should have to protect jobs before replacing workers with AI or robots."
+      "text": "Companies should have to protect jobs before replacing workers with AI or robots.",
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "tec_ai_4",
+      "facet": "tec_ai",
+      "key": -1,
+      "quick": true,
+      "text": "Decisions about people's lives should never be left to machines.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "tec_bio_1",
       "facet": "tec_bio",
       "key": 1,
       "quick": false,
-      "text": "Genetically modified crops should be allowed in our food."
+      "text": "Genetically modified crops should be allowed in our food.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "tec_bio_2",
       "facet": "tec_bio",
       "key": -1,
-      "quick": true,
-      "text": "Editing the genes of human embryos should be banned."
+      "quick": false,
+      "text": "Editing the genes of human embryos should be banned.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "tec_bio_3",
       "facet": "tec_bio",
       "key": 1,
       "quick": false,
-      "text": "Gene editing to prevent serious hereditary diseases should be allowed."
+      "text": "Gene editing to prevent serious hereditary diseases should be allowed.",
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "tec_bio_4",
+      "facet": "tec_bio",
+      "key": 1,
+      "quick": true,
+      "text": "Changing genes to cure disease is progress we should welcome.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "tec_nuc_1",
       "facet": "tec_nuc",
       "key": 1,
-      "quick": true,
+      "quick": false,
       "text": "This country should build new nuclear power plants.",
       "local": {
         "DE": "Germany should bring back nuclear power."
-      }
+      },
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "tec_nuc_2",
       "facet": "tec_nuc",
       "key": -1,
       "quick": false,
-      "text": "Nuclear power is too risky to be part of our energy future."
+      "text": "Nuclear power is too risky to be part of our energy future.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "tec_nuc_3",
       "facet": "tec_nuc",
       "key": 1,
       "quick": false,
-      "text": "Capturing CO2 and storing it underground is worth investing in."
+      "text": "Capturing CO2 and storing it underground is worth investing in.",
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "tec_nuc_4",
+      "facet": "tec_nuc",
+      "key": 1,
+      "quick": true,
+      "text": "New technology, not doing without, is how we'll solve our energy problems.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "tec_big_1",
       "facet": "tec_big",
       "key": -1,
-      "quick": true,
-      "text": "Big tech companies such as Google, Meta and Amazon should be broken up."
+      "quick": false,
+      "text": "Big tech companies such as Google, Meta and Amazon should be broken up.",
+      "kind": "policy",
+      "full": true
     },
     {
       "id": "tec_big_2",
       "facet": "tec_big",
       "key": 1,
       "quick": false,
-      "text": "Governments already regulate tech companies too much."
+      "text": "Governments already regulate tech companies too much.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "tec_big_3",
       "facet": "tec_big",
       "key": -1,
       "quick": false,
-      "text": "Social media should be banned for children under 16."
+      "text": "Social media should be banned for children under 16.",
+      "kind": "policy",
+      "full": true
+    },
+    {
+      "id": "tec_big_4",
+      "facet": "tec_big",
+      "key": -1,
+      "quick": true,
+      "text": "A handful of tech companies have far too much power over our lives.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_trust_1",
       "facet": "dem_trust",
       "key": 1,
       "quick": true,
-      "text": "Politicians and experts mostly look after their own interests, not those of ordinary people."
+      "text": "Politicians and experts mostly look after their own interests, not those of ordinary people.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_trust_2",
       "facet": "dem_trust",
       "key": -1,
       "quick": false,
-      "text": "Scientists and experts should have a big say in government decisions."
+      "text": "Scientists and experts should have a big say in government decisions.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_trust_3",
       "facet": "dem_trust",
       "key": -1,
       "quick": false,
-      "text": "Mainstream news media generally do a good job of reporting honestly."
+      "text": "Mainstream news media generally do a good job of reporting honestly.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_direct_1",
       "facet": "dem_direct",
       "key": 1,
-      "quick": true,
-      "text": "Citizens should be able to force a binding referendum on important issues."
+      "quick": false,
+      "text": "Citizens should be able to force a binding referendum on important issues.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_direct_2",
       "facet": "dem_direct",
       "key": -1,
-      "quick": false,
-      "text": "Complex decisions are better left to elected representatives than to referendums."
+      "quick": true,
+      "text": "Complex decisions are better left to elected representatives than to referendums.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_direct_3",
       "facet": "dem_direct",
       "key": 1,
       "quick": false,
-      "text": "The people, not politicians, should make the most important decisions."
+      "text": "The people, not politicians, should make the most important decisions.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_courts_1",
       "facet": "dem_courts",
       "key": -1,
-      "quick": true,
+      "quick": false,
       "text": "Judges should be able to strike down laws that break the constitution.",
       "local": {
         "NL": "Courts should be allowed to test laws against the constitution, which they currently can't in the Netherlands.",
         "UK": "Courts should be able to overrule Parliament when a law breaches human rights."
-      }
+      },
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_courts_2",
       "facet": "dem_courts",
       "key": 1,
-      "quick": false,
-      "text": "Elected politicians, not judges, should have the final say on important issues."
+      "quick": true,
+      "text": "Elected politicians, not judges, should have the final say on important issues.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_courts_3",
       "facet": "dem_courts",
       "key": 1,
       "quick": false,
-      "text": "The government should be able to ignore court rulings that go against the will of the people."
+      "text": "The government should be able to ignore court rulings that go against the will of the people.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_central_1",
       "facet": "dem_central",
       "key": -1,
-      "quick": true,
+      "quick": false,
       "text": "Regions and cities should get more power to make their own decisions.",
       "local": {
         "UK": "Scotland and Wales should get more self-government, up to independence if they want it.",
         "US": "States, not the federal government, should decide most issues."
-      }
+      },
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_central_2",
       "facet": "dem_central",
       "key": 1,
       "quick": false,
-      "text": "Important decisions should be made nationally, so the same rules apply everywhere."
+      "text": "Important decisions should be made nationally, so the same rules apply everywhere.",
+      "kind": "concept",
+      "full": true
     },
     {
       "id": "dem_central_3",
       "facet": "dem_central",
       "key": -1,
-      "quick": false,
-      "text": "Local communities know better than the national government what they need."
+      "quick": true,
+      "text": "Local communities know better than the national government what they need.",
+      "kind": "concept",
+      "full": true
     }
   ],
   "checks": [

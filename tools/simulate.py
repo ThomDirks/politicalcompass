@@ -14,7 +14,8 @@ from collections import Counter
 
 from actorio import ROOT, load_all
 from pcmodel import AXES, FACET_AXIS, FACET_IDS, TYPE_BY_CODE, axis_scores, current, load_frames, alignments
-from score import ITEMS, local_for, score_answers
+from score import local_for, score_answers, items_for
+ITEMS = items_for(quick=False)
 
 Q = json.load(open(os.path.join(ROOT, "data", "questions.json"), encoding="utf-8"))
 CHECKS = Q["checks"]

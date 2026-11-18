@@ -491,7 +491,7 @@ const pctX = v => (v + 100) / 2;
 const fmt = v => (v > 0 ? "+" : "") + Math.round(v);
 
 function orderedItems(mode) {
-  const pool = DATA.questions.items.filter(i => mode === "full" || i.quick);
+  const pool = DATA.questions.items.filter(i => mode === "full" ? i.full !== false : i.quick);
   // round-robin over axes, so the test moves between topics
   const byAxis = AX.map(a => pool.filter(i => FAXIS[i.facet] === a.id));
   const out = [];
@@ -775,8 +775,8 @@ function renderHome() {
       <div class="field">
         <span id="lbl-mode">Length</span>
         <div class="choice" role="radiogroup" aria-labelledby="lbl-mode">
-          <label><input type="radio" name="mode" value="quick" ${S.mode === "quick" ? "checked" : ""}><span><b>Quick</b><span class="muted small">32 statements, one per topic. About 5 minutes.</span></span></label>
-          <label><input type="radio" name="mode" value="full" ${S.mode === "full" ? "checked" : ""}><span><b>Full</b><span class="muted small">96 statements, more precise. About 15 minutes.</span></span></label>
+          <label><input type="radio" name="mode" value="quick" ${S.mode === "quick" ? "checked" : ""}><span><b>Quick</b><span class="muted small">32 statements on the principles behind each topic. About 5 minutes.</span></span></label>
+          <label><input type="radio" name="mode" value="full" ${S.mode === "full" ? "checked" : ""}><span><b>Full</b><span class="muted small">104 statements, more precise. About 15 minutes.</span></span></label>
         </div>
       </div>
       <div class="actions">
@@ -951,7 +951,7 @@ function renderResults() {
       <h1>${esc(T.name)}</h1>
       <p class="lead">${esc(T.tagline)}</p>
       <div class="meta-row"><span class="tcode" style="font-size:1.1rem">${code}-${suf}</span><span><b class="num">${Math.round(al[0].pct)}%</b> alignment</span>${next ? `<span>Next closest: <a href="#type-${next.code.toLowerCase()}">${esc(next.name)}</a> <span class="num muted">${Math.round(al[1].pct)}%</span></span>` : ""}</div>
-      <p class="small">${cons ? `Answer consistency: <b>${cons.level}</b> <span class="muted num">(${cons.score}%)</span>. ${cons.level === "low" ? "Several answers point in different directions, so treat this result as a rough indication." : cons.level === "medium" ? "A few answers point in different directions; the result is a good indication." : "Your answers hang together well."}` : `<span class="muted">The full test adds a consistency check to this result.</span>`}</p>
+      ${cons ? `<p class="small">Answer consistency: <b>${cons.level}</b> <span class="muted num">(${cons.score}%)</span>. ${cons.level === "low" ? "Several answers point in different directions, so treat this result as a rough indication." : cons.level === "medium" ? "A few answers point in different directions; the result is a good indication." : "Your answers hang together well."}</p>` : ""}
       <p class="muted small">Based on ${answered} answers, compared with ${CNAME[cc]}.</p>
       <div class="seg" role="group" aria-label="Compare with" style="justify-self:start">
         ${COUNTRIES.map(c => `<button type="button" data-country="${c}" aria-pressed="${cc === c}">${c}</button>`).join("")}
