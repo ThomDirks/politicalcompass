@@ -1,0 +1,82 @@
+{
+  "id": "us-knownothing",
+  "type": "party",
+  "extra": true,
+  "name": "Know Nothing",
+  "full_name": "American Party",
+  "country": "US",
+  "active": {
+    "from": 1854,
+    "to": 1860
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1856,
+      "label": "1856 election",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 1,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 5,
+        "INT": 2,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [10, "l"],
+        "eco_reg": [10, "l"],
+        "eco_lab": [10, "l"],
+        "eco_tax": [10, "l"],
+        "soc_fam": [70, "l"],
+        "soc_lgbt": [70, "l"],
+        "soc_rel": [70, "l"],
+        "soc_mor": [70, "l"],
+        "lib_priv": [40, "l"],
+        "lib_just": [40, "l"],
+        "lib_speech": [40, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [95, "l"],
+        "mig_asy": [95, "l"],
+        "mig_int": [95, "l"],
+        "mig_nat": [95, "l"],
+        "int_eu": null,
+        "int_trade": [50, "l"],
+        "int_def": [50, "l"],
+        "int_aid": [50, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [55, "l"],
+        "dem_direct": [55, "l"],
+        "dem_courts": [55, "l"],
+        "dem_central": [55, "l"]
+      },
+      "notes": {
+        "ECO": "Scored at topic level from the party's programme (1856 election).",
+        "SOC": "Protestant nativism.",
+        "LIB": "Scored at topic level from the party's programme (1856 election).",
+        "MIG": "Against Catholic immigration; a 21-year wait for citizenship.",
+        "INT": "Scored at topic level from the party's programme (1856 election).",
+        "CLI": "Scored at topic level from the party's programme (1856 election).",
+        "TEC": "Scored at topic level from the party's programme (1856 election).",
+        "DEM": "Scored at topic level from the party's programme (1856 election)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Know Nothing",
+          "url": "https://en.wikipedia.org/wiki/Know_Nothing"
+        }
+      ]
+    }
+  ]
+}

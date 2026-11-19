@@ -6,52 +6,62 @@ Politicians and public figures, scored on their stated views (speeches, writing,
 
 | Type | People |
 |---|---|
-| CPI The Gardener | 12: Olaf Scholz, Robert Habeck, Frans Timmermans, Joop den Uyl, Willem Drees, Wim Kok, Jeremy Corbyn, Nicola Sturgeon, Alexandria Ocasio-Cortez, Bernie Sanders, Joe Biden, Kamala Harris |
-| CPS The Activist | 9: Gregor Gysi, Heidi Reichinnek, Rosa Luxemburg, Lilian Marijnissen, Marianne Thieme, Caroline Lucas, Tony Benn, Zack Polanski, Noam Chomsky |
-| BPI The Cosmopolitan | 9: Laurens Dassen, Rob Jetten, Sigrid Kaag, Ed Davey, Nick Clegg, Paddy Ashdown, Roy Jenkins, Barack Obama, Michael Bloomberg |
+| CPI The Gardener | 22: Annalena Baerbock, Joschka Fischer, Lars Klingbeil, Olaf Scholz, Robert Habeck, Femke Halsema, Frans Timmermans, Jesse Klaver, Joop den Uyl, Willem Drees, Wim Kok, Alex Salmond, Jeremy Corbyn, Nicola Sturgeon, Alexandria Ocasio-Cortez, Bernie Sanders, Elizabeth Warren, Hillary Clinton, Joe Biden, Kamala Harris, Pete Buttigieg, Zohran Mamdani |
+| CPS The Activist | 15: Gregor Gysi, Heidi Reichinnek, Petra Kelly, Rosa Luxemburg, Esther Ouwehand, Lilian Marijnissen, Marianne Thieme, Sylvana Simons, Caroline Lucas, Gerry Adams, Tony Benn, Zack Polanski, Jill Stein, Noam Chomsky, Ralph Nader |
+| BPI The Cosmopolitan | 11: Hans van Mierlo, Jan Terlouw, Laurens Dassen, Rob Jetten, Sigrid Kaag, Ed Davey, Nick Clegg, Paddy Ashdown, Roy Jenkins, Barack Obama, Michael Bloomberg |
 | BPS The Free Thinker | 6: Marina Weisband, John Stuart Mill, Andrew Yang, Edward Snowden, Henry David Thoreau, Thomas Paine |
 | MPI The Innovator | 5: Christian Lindner, Guido Westerwelle, Hans-Dietrich Genscher, Marie-Agnes Strack-Zimmermann, Otto Graf Lambsdorff |
-| MPS The Maverick | 5: Frank Schäffler, Ayn Rand, Gary Johnson, Milton Friedman, Ron Paul |
-| CNI The Builder | 7: Helmut Schmidt, Willy Brandt, Clement Attlee, Harold Wilson, Keir Starmer, Maurice Glasman, Lyndon B. Johnson |
-| CNS The Organizer | 7: Amira Mohamed Ali, Oskar Lafontaine, Sahra Wagenknecht, Jan Marijnissen, Arthur Scargill, Bob Crow, Peter Shore |
-| BNI The Pragmatist | 5: Boris Palmer, Gerhard Schröder, Gordon Brown, Tony Blair, Bill Clinton |
-| BNS The Outsider | 5: Caroline van der Plas, Mona Keijzer, Robert F. Kennedy Jr., Ross Perot, Tulsi Gabbard |
-| MNI The Trader | 10: Ayaan Hirsi Ali, Dilan Yeşilgöz, Frits Bolkestein, Mark Rutte, Boris Johnson, David Cameron, George Osborne, Kemi Badenoch, Ruth Davidson, Ronald Reagan |
+| MPS The Maverick | 6: Frank Schäffler, Ayn Rand, Chase Oliver, Gary Johnson, Milton Friedman, Ron Paul |
+| CNI The Builder | 11: Friedrich Ebert, Helmut Schmidt, Willy Brandt, Andy Burnham, Clement Attlee, David Lloyd George, Ed Miliband, Harold Wilson, Keir Starmer, Maurice Glasman, Lyndon B. Johnson |
+| CNS The Organizer | 10: Amira Mohamed Ali, Oskar Lafontaine, Sahra Wagenknecht, Emile Roemer, Jan Marijnissen, Arthur Scargill, Bob Crow, Michael Foot, Peter Shore, Eugene V. Debs |
+| BNI The Pragmatist | 6: Boris Palmer, Gerhard Schröder, Gordon Brown, Tony Blair, William Gladstone, Bill Clinton |
+| BNS The Outsider | 6: Caroline van der Plas, Hendrik Koekoek, Mona Keijzer, Robert F. Kennedy Jr., Ross Perot, Tulsi Gabbard |
+| MNI The Trader | 14: Gustav Stresemann, Ayaan Hirsi Ali, Dilan Yeşilgöz, Frits Bolkestein, Hans Wiegel, Mark Rutte, Boris Johnson, David Cameron, George Osborne, Kemi Badenoch, Rishi Sunak, Ruth Davidson, Barry Goldwater, Ronald Reagan |
 | MNS The Independent | 7: Bernd Lucke, Joost Eerdmans, Pim Fortuyn, Wybren van Haga, Daniel Hannan, Douglas Carswell, Liz Truss |
 | CTI The Steward | 8: Ludwig Windthorst, Gert-Jan Segers, Mirjam Bikker, Stephan van Baarle, Keir Hardie, Jimmy Carter, John F. Kennedy, Theodore Roosevelt |
 | CTS The Tribune | 5: George Galloway, Paul Embery, Franklin D. Roosevelt, Huey Long, William Jennings Bryan |
-| BTI The Neighbour | 8: Angela Merkel, Armin Laschet, Hubert Aiwanger, Abraham Kuyper, Henri Bontenbal, Jan Peter Balkenende, Kees van der Staaij, Pieter Omtzigt |
-| BTS The Homesteader | 7: Björn Höcke, Tino Chrupalla, Fleur Agema, Geert Wilders, Hans Janmaat, Martin Bosma, Nick Griffin |
-| MTI The Statesman | 10: Friedrich Merz, Helmut Kohl, Konrad Adenauer, Ruud Lubbers, John Major, Margaret Thatcher, Theresa May, Winston Churchill, Dwight D. Eisenhower, George W. Bush |
-| MTS The Challenger | 9: Alice Weidel, Thierry Baudet, Enoch Powell, Nigel Farage, Donald Trump, JD Vance, Pat Buchanan, Steve Bannon, Tucker Carlson |
+| BTI The Neighbour | 10: Angela Merkel, Armin Laschet, Hubert Aiwanger, Abraham Kuyper, Dries van Agt, Henri Bontenbal, Jan Peter Balkenende, Kees van der Staaij, Pieter Omtzigt, Abraham Lincoln |
+| BTS The Homesteader | 9: Björn Höcke, Tino Chrupalla, Fleur Agema, Geert Wilders, Hans Janmaat, Martin Bosma, Ian Paisley, Nick Griffin, George Wallace |
+| MTI The Statesman | 16: Franz Josef Strauß, Friedrich Merz, Helmut Kohl, Konrad Adenauer, Ludwig Erhard, Markus Söder, Ruud Lubbers, Benjamin Disraeli, John Major, Margaret Thatcher, Theresa May, Winston Churchill, Dwight D. Eisenhower, George W. Bush, Mitt Romney, Richard Nixon |
+| MTS The Challenger | 11: Alice Weidel, Hans-Georg Maaßen, Thierry Baudet, Enoch Powell, Nigel Farage, Donald Trump, JD Vance, Pat Buchanan, Ron DeSantis, Steve Bannon, Tucker Carlson |
 
 | Person | Role | Year | Type | Next closest | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
 |---|---|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Alice Weidel (DE) | Co-leader of the AfD | 2026 | MTS-g The Challenger (93%) | The Homesteader | +35 | +56 | -1 | +95 | +65 | +91 | +24 | +49 |
 | Amira Mohamed Ali (DE) | Co-leader of BSW | 2026 | CNS-g The Organizer (94%) | The Outsider | -56 | +2 | -26 | +55 | +49 | +38 | -25 | +34 |
 | Angela Merkel (DE) | Chancellor 2005 to 2021 (CDU) | 2015 | BTI-e The Neighbour (92%) | The Pragmatist | +31 | +16 | +29 | +0 | -58 | -16 | +4 | -51 |
+| Annalena Baerbock (DE) | Greens co-leader, foreign minister 2021 to 2025 | 2023 | CPI-e The Gardener (93%) | The Cosmopolitan | -45 | -75 | -25 | -61 | -68 | -86 | -56 | -37 |
 | Armin Laschet (DE) | CDU leader 2021, Minister-President of North Rhine-Westphalia | 2021 | BTI-g The Neighbour (96%) | The Statesman | +31 | +26 | +29 | +30 | -58 | +4 | +31 | -51 |
 | Bernd Lucke (DE) | Economist, AfD founder 2013 | 2014 | MNS-g The Independent (92%) | The Outsider | +55 | +20 | +10 | +35 | +55 | +30 | +25 | +45 |
 | Björn Höcke (DE) | Leader of the AfD in Thuringia | 2026 | BTS-g The Homesteader (92%) | The Challenger | -15 | +56 | -1 | +95 | +65 | +91 | +24 | +49 |
 | Boris Palmer (DE) | Mayor of Tübingen, formerly Greens | 2024 | BNI-e The Pragmatist (87%) | The Builder | +0 | -35 | +10 | +4 | -34 | -86 | -56 | +18 |
 | Christian Lindner (DE) | FDP leader 2013 to 2025, finance minister 2021 to 2024 | 2024 | MPI-g The Innovator (95%) | The Trader | +64 | -58 | -40 | +18 | -54 | +8 | +58 | -38 |
 | Frank Schäffler (DE) | FDP member of the Bundestag, euro critic | 2026 | MPS-g The Maverick (88%) | The Innovator | +79 | -58 | -60 | +28 | -28 | +8 | +58 | +18 |
+| Franz Josef Strauß (DE) | Leader of the CSU 1961 to 1988, Minister-President of Bavaria | 1980 | MTI-g The Statesman (93%) | The Neighbour | +28 | +52 | +54 | +65 | -32 | +65~ | +50 | -49 |
+| Friedrich Ebert (DE) | First President of the Weimar Republic (SPD) | 1919 | CNI-e The Builder (94%) | The Pragmatist | -64 | -14 | +40 | -1 | -35 | -25~ | · | -37 |
 | Friedrich Merz (DE) | Chancellor, leader of the CDU | 2026 | MTI-g The Statesman (97%) | The Neighbour | +41 | +26 | +29 | +50 | -48 | +4 | +31 | -51 |
 | Gerhard Schröder (DE) | Chancellor 1998 to 2005 (SPD) | 2003 | BNI-e The Pragmatist (92%) | The Builder | -14 | -39 | +10 | -6 | -44 | -41 | -15 | -37 |
 | Gregor Gysi (DE) | Leading figure of Die Linke | 2026 | CPS-e The Activist (93%) | The Gardener | -88 | -71 | -40 | -69 | +9 | -68 | -69 | +1 |
 | Guido Westerwelle (DE) | FDP leader 2001 to 2011, foreign minister | 2009 | MPI-g The Innovator (94%) | The Trader | +69 | -58 | -40 | +18 | -54 | +12 | +50 | -38 |
+| Gustav Stresemann (DE) | Chancellor 1923, foreign minister 1923 to 1929 (DVP) | 1925 | MNI-g The Trader (94%) | The Statesman | +50 | +35 | +20 | +20 | -20 | +20~ | · | -30 |
 | Hans-Dietrich Genscher (DE) | Foreign minister 1974 to 1992 (FDP) | 1985 | MPI-g The Innovator (94%) | The Trader | +64 | -53 | -40 | +18 | -66 | +30 | +55 | -38 |
+| Hans-Georg Maaßen (DE) | Former head of the domestic intelligence service, leader of the WerteUnion | 2025 | MTS-g The Challenger (94%) | The Homesteader | +55 | +50 | +40 | +80 | +40 | +60 | +30 | +55 |
 | Heidi Reichinnek (DE) | Leader of Die Linke in the Bundestag | 2026 | CPS-e The Activist (93%) | The Gardener | -88 | -71 | -40 | -69 | +9 | -68 | -69 | +1 |
 | Helmut Kohl (DE) | Chancellor 1982 to 1998 (CDU) | 1990 | MTI-g The Statesman (94%) | The Neighbour | +31 | +41 | +29 | +45 | -61 | +19 | +45 | -51 |
 | Helmut Schmidt (DE) | Chancellor 1974 to 1982 (SPD) | 1978 | CNI-g The Builder (94%) | The Pragmatist | -39 | -34 | +30 | +9 | -52 | -10~ | +30 | -37 |
 | Hubert Aiwanger (DE) | Leader of the Free Voters, Bavarian economy minister | 2026 | BTI-g The Neighbour (91%) | The Statesman | +2 | +37 | +39 | +60 | -16 | +25 | +20 | +1 |
+| Joschka Fischer (DE) | Foreign minister and Vice Chancellor 1998 to 2005 (Greens) | 1999 | CPI-e The Gardener (92%) | The Cosmopolitan | -35 | -75 | -25 | -61 | -59 | -81 | -75 | -37 |
 | Konrad Adenauer (DE) | Chancellor 1949 to 1963 (CDU) | 1955 | MTI-g The Statesman (93%) | The Neighbour | +31 | +66 | +44 | +65 | -50 | +25~ | +50~ | -51 |
+| Lars Klingbeil (DE) | SPD co-leader, Vice Chancellor and finance minister | 2026 | CPI-e The Gardener (94%) | The Builder | -44 | -54 | +10 | -21 | -53 | -51 | -29 | -37 |
+| Ludwig Erhard (DE) | Economy minister 1949 to 1963, Chancellor 1963 to 1966 (CDU) | 1957 | MTI-g The Statesman (94%) | The Neighbour | +51 | +51 | +29 | +60 | -48 | +45~ | +50~ | -51 |
 | Ludwig Windthorst (DE) | Leader of the Centre Party in the Kulturkampf | 1880 | CTI-g The Steward (90%) | The Neighbour | -12 | +91 | +35 | +12 | +0 | +0~ | · | -42 |
 | Marie-Agnes Strack-Zimmermann (DE) | FDP member of the European Parliament, defence expert | 2026 | MPI-g The Innovator (95%) | The Trader | +64 | -58 | -40 | +18 | -54 | +8 | +58 | -38 |
 | Marina Weisband (DE) | Former political director of the Pirate Party, now with the Greens | 2012 | BPS-e The Free Thinker (93%) | The Activist | -15 | -55 | -65 | -45 | -5 | -35 | -5 | +40 |
+| Markus Söder (DE) | Minister-President of Bavaria, leader of the CSU | 2026 | MTI-g The Statesman (96%) | The Neighbour | +28 | +37 | +39 | +60 | -31 | +15 | +35 | -49 |
 | Olaf Scholz (DE) | Chancellor 2021 to 2025 (SPD) | 2022 | CPI-e The Gardener (93%) | The Builder | -39 | -54 | +10 | -21 | -53 | -51 | -29 | -37 |
 | Oskar Lafontaine (DE) | SPD leader, later co-founder of Die Linke and BSW figure | 2024 | CNS-g The Organizer (94%) | The Outsider | -56 | +2 | -26 | +55 | +49 | +38 | -25 | +34 |
 | Otto Graf Lambsdorff (DE) | Economy minister 1977 to 1984, FDP leader 1988 to 1993 | 1982 | MPI-g The Innovator (94%) | The Trader | +74 | -48 | -40 | +18 | -54 | +40~ | +55 | -38 |
+| Petra Kelly (DE) | Co-founder of the Greens | 1983 | CPS-e The Activist (93%) | The Gardener | -70 | -75 | -45 | -61 | -0 | -75~ | -95 | -2 |
 | Robert Habeck (DE) | Vice Chancellor and economy minister 2021 to 2025 (Greens) | 2024 | CPI-e The Gardener (92%) | The Cosmopolitan | -35 | -75 | -25 | -61 | -64 | -86 | -56 | -37 |
 | Rosa Luxemburg (DE) | Socialist theorist, co-founder of the KPD | 1918 | CPS-g The Activist (82%) | The Organizer | -100 | -68 | +35 | -72 | +25 | +0~ | · | +68 |
 | Sahra Wagenknecht (DE) | Founder of BSW | 2026 | CNS-g The Organizer (94%) | The Outsider | -56 | +2 | -26 | +55 | +49 | +38 | -25 | +34 |
@@ -61,15 +71,24 @@ Politicians and public figures, scored on their stated views (speeches, writing,
 | Ayaan Hirsi Ali (NL) | VVD MP 2003 to 2006, writer | 2005 | MNI-g The Trader (88%) | The Innovator | +46 | -45 | +14 | +80 | -14 | +11 | +58 | +4 |
 | Caroline van der Plas (NL) | Leader of BBB | 2026 | BNS-g The Outsider (90%) | The Independent | +5 | +18 | +18 | +56 | +26 | +55 | +25 | +6 |
 | Dilan Yeşilgöz (NL) | Leader of the VVD | 2026 | MNI-g The Trader (95%) | The Statesman | +46 | -30 | +24 | +60 | -34 | +11 | +56 | -36 |
+| Dries van Agt (NL) | Prime Minister 1977 to 1982 (CDA) | 1977 | BTI-g The Neighbour (94%) | The Statesman | +6 | +40 | +20 | +45 | -39 | +30~ | +50 | -43 |
+| Emile Roemer (NL) | Leader of the SP 2010 to 2015 | 2012 | CNS-e The Organizer (91%) | The Activist | -80 | -26 | -19 | +22 | +20 | -41 | -38 | +18 |
+| Esther Ouwehand (NL) | Leader of the Party for the Animals | 2026 | CPS-e The Activist (93%) | The Gardener | -66 | -71 | -45 | -52 | +4 | -91 | -75 | -18 |
+| Femke Halsema (NL) | GroenLinks leader 2002 to 2010, mayor of Amsterdam | 2008 | CPI-e The Gardener (92%) | The Activist | -59 | -86 | -48 | -65 | -56 | -84 | -35 | -48 |
 | Fleur Agema (NL) | PVV minister of health 2024 to 2025 | 2025 | BTS-g The Homesteader (95%) | The Tribune | -10 | +20 | +32 | +79 | +51 | +74 | +28 | +56 |
 | Frans Timmermans (NL) | Former EU climate commissioner and GroenLinks-PvdA leader | 2025 | CPI-e The Gardener (93%) | The Cosmopolitan | -64 | -78 | -32 | -55 | -66 | -89 | -39 | -48 |
 | Frits Bolkestein (NL) | VVD leader 1990 to 1998, EU commissioner | 1995 | MNI-g The Trader (89%) | The Independent | +46 | -30 | +24 | +70 | -1 | +26 | +70 | +4 |
 | Geert Wilders (NL) | Leader of the PVV | 2026 | BTS-g The Homesteader (95%) | The Tribune | -10 | +20 | +32 | +79 | +51 | +74 | +28 | +56 |
 | Gert-Jan Segers (NL) | Leader of the ChristenUnie 2015 to 2023 | 2021 | CTI-e The Steward (96%) | The Builder | -28 | +50 | +2 | -4 | -34 | -45 | -21 | -50 |
 | Hans Janmaat (NL) | Leader of the Centre Democrats | 1994 | BTS-g The Homesteader (93%) | The Tribune | -20 | +20 | +32 | +79 | +51 | +79 | +50 | +56 |
+| Hans Wiegel (NL) | VVD leader 1971 to 1982, deputy prime minister | 1977 | MNI-g The Trader (96%) | The Statesman | +46 | -20 | +24 | +35 | -34 | +50~ | +60 | -31 |
+| Hans van Mierlo (NL) | Founder of D66 | 1967 | BPI-g The Cosmopolitan (93%) | The Innovator | -1 | -68 | -26 | -11 | -58 | -35~ | +55~ | -12 |
+| Hendrik Koekoek (NL) | Founder and leader of the Boerenpartij | 1963 | BNS-g The Outsider (89%) | The Independent | +45 | +50 | +20 | +30 | +40 | +30~ | +0~ | +70 |
 | Henri Bontenbal (NL) | Leader of the CDA | 2026 | BTI-g The Neighbour (96%) | The Pragmatist | +6 | +20 | +20 | +35 | -39 | -18 | +20 | -43 |
 | Jan Marijnissen (NL) | Leader of the SP 1988 to 2015 | 2006 | CNS-e The Organizer (92%) | The Outsider | -80 | -11 | -4 | +38 | +18 | -21 | -37 | +18 |
 | Jan Peter Balkenende (NL) | Prime Minister 2002 to 2010 (CDA) | 2006 | BTI-g The Neighbour (97%) | The Pragmatist | +11 | +30 | +20 | +35 | -39 | -18 | +23 | -43 |
+| Jan Terlouw (NL) | D66 leader 1973 to 1982, writer | 1981 | BPI-e The Cosmopolitan (94%) | The Gardener | -1 | -72 | -26 | -11 | -68 | -60~ | -20 | -49 |
+| Jesse Klaver (NL) | GroenLinks leader 2015 to 2023, leader of GroenLinks-PvdA | 2026 | CPI-e The Gardener (93%) | The Cosmopolitan | -64 | -78 | -32 | -55 | -56 | -94 | -39 | -48 |
 | Joop den Uyl (NL) | Prime Minister 1973 to 1977 (PvdA) | 1975 | CPI-e The Gardener (95%) | The Cosmopolitan | -79 | -52 | -32 | -35 | -56 | -50~ | +2 | -48 |
 | Joost Eerdmans (NL) | Leader of JA21 | 2026 | MNS-g The Independent (87%) | The Trader | +55 | +11 | +26 | +75 | -6 | +55 | +48 | +29 |
 | Kees van der Staaij (NL) | Leader of the SGP 2010 to 2023 | 2020 | BTI-g The Neighbour (87%) | The Statesman | +20 | +92 | +30 | +47 | +5 | +32 | -1 | -35 |
@@ -86,24 +105,32 @@ Politicians and public figures, scored on their stated views (speeches, writing,
 | Ruud Lubbers (NL) | Prime Minister 1982 to 1994 (CDA) | 1985 | MTI-g The Statesman (95%) | The Neighbour | +26 | +35 | +20 | +40 | -39 | +12 | +50 | -43 |
 | Sigrid Kaag (NL) | D66 leader 2020 to 2023, deputy prime minister | 2021 | BPI-e The Cosmopolitan (96%) | The Gardener | -1 | -82 | -26 | -26 | -68 | -65 | +22 | -49 |
 | Stephan van Baarle (NL) | Leader of DENK | 2026 | CTI-e The Steward (87%) | The Builder | -46 | +41 | -15 | -70 | -22 | -25 | -12 | -16 |
+| Sylvana Simons (NL) | Founder of BIJ1 | 2021 | CPS-e The Activist (93%) | The Free Thinker | -85 | -80 | -50 | -90 | +20 | -75 | -30 | +35 |
 | Thierry Baudet (NL) | Founder and leader of FvD | 2026 | MTS-g The Challenger (91%) | The Homesteader | +31 | +57 | -25 | +87 | +64 | +92 | -10 | +63 |
 | Willem Drees (NL) | Prime Minister 1948 to 1958 (PvdA) | 1955 | CPI-e The Gardener (95%) | The Cosmopolitan | -64 | -38 | -18 | -30 | -56 | -50~ | -5~ | -48 |
 | Wim Kok (NL) | Prime Minister 1994 to 2002 (PvdA) | 1998 | CPI-e The Gardener (97%) | The Cosmopolitan | -39 | -68 | -32 | -40 | -56 | -64 | -18 | -48 |
 | Wybren van Haga (NL) | Founder of BVNL | 2023 | MNS-g The Independent (91%) | The Outsider | +20 | +18 | -2 | +71 | +26 | +55 | +25 | +26 |
+| Alex Salmond (UK) | First Minister of Scotland 2007 to 2014, founder of Alba | 2014 | CPI-e The Gardener (94%) | The Cosmopolitan | -34 | -46 | -8 | -40 | -58 | -44 | -36 | -40 |
+| Andy Burnham (UK) | Mayor of Greater Manchester (Labour) | 2026 | CNI-g The Builder (91%) | The Pragmatist | -46 | -35 | +30 | +19 | -31 | -46 | +50 | -2 |
 | Arthur Scargill (UK) | NUM leader, founder of the Socialist Labour Party | 1984 | CNS-g The Organizer (91%) | The Outsider | -90 | -5 | +0 | +10 | +60 | +30~ | -20 | +55 |
+| Benjamin Disraeli (UK) | Prime Minister 1868 and 1874 to 1880 (Conservative) | 1874 | MTI-g The Statesman (89%) | The Neighbour | +40 | +72 | +42 | +65 | +10 | +20~ | · | -20 |
 | Bob Crow (UK) | General secretary of the RMT rail union | 2010 | CNS-e The Organizer (92%) | The Tribune | -85 | +15 | +10 | +25 | +65 | +10 | -15 | +55 |
 | Boris Johnson (UK) | Prime Minister 2019 to 2022 (Conservative) | 2019 | MNI-g The Trader (90%) | The Statesman | +44 | +9 | +24 | +48 | +2 | -9 | +58 | +6 |
 | Caroline Lucas (UK) | Green Party leader and MP for Brighton Pavilion 2010 to 2024 | 2020 | CPS-e The Activist (88%) | The Gardener | -84 | -80 | -52 | -72 | -25 | -91 | -68 | -23 |
 | Clement Attlee (UK) | Prime Minister 1945 to 1951 (Labour) | 1945 | CNI-g The Builder (89%) | The Steward | -75 | +30 | +25 | -5 | -17 | -10~ | +60~ | -18 |
 | Daniel Hannan (UK) | Conservative MEP 1999 to 2020, Brexit campaigner | 2016 | MNS-g The Independent (90%) | The Maverick | +79 | -1 | -16 | +38 | -1 | +46 | +68 | +36 |
 | David Cameron (UK) | Prime Minister 2010 to 2016 (Conservative) | 2013 | MNI-g The Trader (93%) | The Statesman | +59 | -1 | +24 | +48 | -30 | +21 | +58 | +6 |
+| David Lloyd George (UK) | Chancellor 1908 to 1915, Prime Minister 1916 to 1922 (Liberal) | 1909 | CNI-g The Builder (90%) | The Steward | -31 | +30 | -20 | +10 | -47 | +0~ | · | +0 |
 | Douglas Carswell (UK) | MP 2005 to 2017, Conservative then UKIP | 2015 | MNS-g The Independent (92%) | The Maverick | +79 | +4 | -11 | +48 | +4 | +46 | +72 | +46 |
 | Ed Davey (UK) | Leader of the Liberal Democrats | 2026 | BPI-e The Cosmopolitan (93%) | The Gardener | -22 | -69 | -42 | -46 | -70 | -68 | +6 | -49 |
+| Ed Miliband (UK) | Labour leader 2010 to 2015, energy secretary | 2026 | CNI-e The Builder (91%) | The Pragmatist | -41 | -35 | +30 | +19 | -31 | -70 | +50 | -44 |
 | Enoch Powell (UK) | Conservative, then Ulster Unionist MP | 1968 | MTS-g The Challenger (85%) | The Homesteader | +80 | +62 | +42 | +90 | +14 | +20~ | +80~ | +25 |
 | George Galloway (UK) | Leader of the Workers Party of Britain | 2024 | CTS-g The Tribune (93%) | The Organizer | -65 | +30 | +20 | +25 | +65 | +25 | -10 | +65 |
 | George Osborne (UK) | Chancellor of the Exchequer 2010 to 2016 (Conservative) | 2013 | MNI-g The Trader (94%) | The Statesman | +59 | -6 | +24 | +38 | -37 | +31 | +58 | +6 |
+| Gerry Adams (UK) | President of Sinn Féin 1983 to 2018 | 2010 | CPS-e The Activist (90%) | The Free Thinker | -55 | -40 | -15 | -30 | +2 | -40 | +0 | +25 |
 | Gordon Brown (UK) | Prime Minister 2007 to 2010 (Labour) | 2008 | BNI-e The Pragmatist (91%) | The Builder | -8 | -30 | +40 | +0 | -55 | -25 | +0 | -45 |
 | Harold Wilson (UK) | Prime Minister 1964 to 1970 and 1974 to 1976 (Labour) | 1966 | CNI-g The Builder (89%) | The Steward | -75 | +20 | +25 | -5 | -12 | -10~ | +60~ | -18 |
+| Ian Paisley (UK) | Founder of the DUP, First Minister of Northern Ireland 2007 to 2008 | 1998 | BTS-g The Homesteader (89%) | The Tribune | -15 | +90 | +45 | +35 | +61 | +35 | +0 | +40 |
 | Jeremy Corbyn (UK) | Labour leader 2015 to 2020 | 2019 | CPI-e The Gardener (91%) | The Activist | -71 | -55 | -25 | -36 | +8 | -70 | +30 | -29 |
 | John Major (UK) | Prime Minister 1990 to 1997 (Conservative) | 1992 | MTI-g The Statesman (94%) | The Trader | +65 | +38 | +42 | +45 | -50 | +20~ | +50 | -10 |
 | John Stuart Mill (UK) | Philosopher and Liberal MP, author of On Liberty | 1865 | BPS-e The Free Thinker (93%) | The Activist | +15 | -35 | -65 | -25 | -10 | -10~ | · | +15 |
@@ -113,6 +140,7 @@ Politicians and public figures, scored on their stated views (speeches, writing,
 | Liz Truss (UK) | Prime Minister 2022 (Conservative) | 2022 | MNS-g The Independent (86%) | The Trader | +79 | +19 | +24 | +58 | -7 | +71 | +68 | +36 |
 | Margaret Thatcher (UK) | Prime Minister 1979 to 1990 (Conservative) | 1987 | MTI-g The Statesman (93%) | The Trader | +80 | +42 | +42 | +45 | -34 | +20~ | +50 | -10 |
 | Maurice Glasman (UK) | Labour peer, founder of Blue Labour | 2024 | CNI-g The Builder (85%) | The Tribune | -36 | +10 | +45 | +59 | +9 | -46 | +50 | -4 |
+| Michael Foot (UK) | Labour leader 1980 to 1983 | 1983 | CNS-e The Organizer (86%) | The Activist | -86 | -30 | -8 | -20 | +48 | -20~ | -60~ | -8 |
 | Nick Clegg (UK) | Liberal Democrat leader and deputy prime minister 2010 to 2015 | 2010 | BPI-e The Cosmopolitan (94%) | The Gardener | +12 | -69 | -42 | -46 | -70 | -68 | +26 | -49 |
 | Nick Griffin (UK) | Leader of the BNP 1999 to 2014 | 2009 | BTS-g The Homesteader (91%) | The Challenger | -20 | +70 | +60 | +95 | +85 | +30 | +0 | +70 |
 | Nicola Sturgeon (UK) | First Minister of Scotland 2014 to 2023 (SNP) | 2020 | CPI-e The Gardener (96%) | The Cosmopolitan | -49 | -61 | -8 | -40 | -58 | -54 | -36 | -40 |
@@ -120,28 +148,38 @@ Politicians and public figures, scored on their stated views (speeches, writing,
 | Paddy Ashdown (UK) | Leader of the Liberal Democrats 1988 to 1999 | 1997 | BPI-e The Cosmopolitan (95%) | The Gardener | -22 | -69 | -42 | -46 | -66 | -58 | +30 | -49 |
 | Paul Embery (UK) | Trade unionist and Blue Labour writer | 2024 | CTS-g The Tribune (96%) | The Organizer | -55 | +40 | +25 | +45 | +55 | +20 | -10 | +55 |
 | Peter Shore (UK) | Labour cabinet minister, leading Eurosceptic | 1975 | CNS-e The Organizer (92%) | The Builder | -86 | +0 | -8 | +10 | +40 | -20~ | -60~ | +8 |
+| Rishi Sunak (UK) | Prime Minister 2022 to 2024 (Conservative) | 2023 | MNI-g The Trader (87%) | The Statesman | +59 | +19 | +24 | +62 | -7 | +56 | +69 | +6 |
 | Roy Jenkins (UK) | Labour Home Secretary, co-founder of the SDP | 1981 | BPI-g The Cosmopolitan (95%) | The Innovator | -15 | -42 | -12 | -18 | -62 | -20~ | +20~ | -40 |
 | Ruth Davidson (UK) | Leader of the Scottish Conservatives 2011 to 2019 | 2016 | MNI-g The Trader (94%) | The Statesman | +59 | -16 | +24 | +32 | -41 | +26 | +58 | -4 |
 | Theresa May (UK) | Prime Minister 2016 to 2019 (Conservative) | 2017 | MTI-g The Statesman (90%) | The Trader | +39 | +19 | +34 | +68 | -18 | +46 | +58 | +6 |
 | Tony Benn (UK) | Labour MP and minister, leader of the Labour left | 1983 | CPS-e The Activist (87%) | The Organizer | -98 | -40 | -22 | -20 | +38 | -20~ | -60~ | +18 |
 | Tony Blair (UK) | Prime Minister 1997 to 2007 (Labour) | 1997 | BNI-e The Pragmatist (92%) | The Builder | +2 | -30 | +30 | +0 | -59 | -25 | +0 | -45 |
+| William Gladstone (UK) | Prime Minister four times between 1868 and 1894 (Liberal) | 1880 | BNI-g The Pragmatist (90%) | The Steward | +14 | +50 | -20 | +10 | -27 | +0~ | · | -10 |
 | Winston Churchill (UK) | Prime Minister 1940 to 1945 and 1951 to 1955 (Conservative) | 1951 | MTI-g The Statesman (92%) | The Trader | +45 | +68 | +52 | +60 | -38 | +20~ | +80~ | -10 |
 | Zack Polanski (UK) | Leader of the Green Party of England and Wales | 2026 | CPS-e The Activist (88%) | The Gardener | -84 | -80 | -52 | -72 | -25 | -91 | -68 | -23 |
+| Abraham Lincoln (US) | President 1861 to 1865 (Republican) | 1860 | BTI-g The Neighbour (89%) | The Steward | -10 | +40 | +20 | +40 | +43 | +0~ | · | -35 |
 | Alexandria Ocasio-Cortez (US) | Representative from New York (Democrat) | 2026 | CPI-e The Gardener (90%) | The Activist | -75 | -70 | -8 | -68 | -56 | -88 | -4 | -15 |
 | Andrew Yang (US) | Founder of the Forward Party, 2020 Democratic candidate | 2024 | BPS-e The Free Thinker (94%) | The Outsider | -5 | -35 | -30 | -15 | +0 | -25 | +15 | +50 |
 | Ayn Rand (US) | Novelist and philosopher of Objectivism | 1960 | MPS-g The Maverick (93%) | The Independent | +95 | -35 | -45 | -10 | +20 | +50~ | +70~ | +40 |
 | Barack Obama (US) | President 2009 to 2017 (Democrat) | 2012 | BPI-e The Cosmopolitan (93%) | The Gardener | -25 | -55 | +0 | -32 | -62 | -56 | -4 | -30 |
+| Barry Goldwater (US) | Senator from Arizona, 1964 Republican nominee | 1964 | MNI-g The Trader (87%) | The Statesman | +86 | +60 | +18 | +30 | -28 | +40~ | +70~ | +12 |
 | Bernie Sanders (US) | Senator from Vermont (independent, caucuses with the Democrats) | 2026 | CPI-e The Gardener (92%) | The Activist | -70 | -60 | -8 | -42 | -38 | -71 | -4 | +0 |
 | Bill Clinton (US) | President 1993 to 2001 (Democrat) | 1996 | BNI-e The Pragmatist (94%) | The Builder | -5 | -12 | +28 | +8 | -52 | -28 | +10 | -22 |
+| Chase Oliver (US) | Libertarian presidential candidate 2024 | 2024 | MPS-g The Maverick (89%) | The Free Thinker | +85 | -45 | -75 | -40 | +21 | +60 | +60 | +55 |
 | Donald Trump (US) | President (Republican) | 2026 | MTS-g The Challenger (93%) | The Homesteader | +65 | +68 | +56 | +84 | +78 | +92 | +59 | +32 |
 | Dwight D. Eisenhower (US) | President 1953 to 1961 (Republican) | 1956 | MTI-g The Statesman (93%) | The Neighbour | +20 | +65 | +35 | +45 | -40 | +20~ | +60~ | -30 |
 | Edward Snowden (US) | Whistleblower and privacy campaigner | 2020 | BPS-e The Free Thinker (92%) | The Maverick | +10 | -30 | -85 | -10 | +25 | -10 | +5 | +55 |
+| Elizabeth Warren (US) | Senator from Massachusetts (Democrat) | 2026 | CPI-e The Gardener (95%) | The Cosmopolitan | -60 | -60 | -8 | -42 | -56 | -56 | -12 | -20 |
+| Eugene V. Debs (US) | Socialist Party presidential candidate, five times | 1912 | CNS-g The Organizer (91%) | The Outsider | -90 | -10 | -30 | -10 | +63 | +0~ | · | +45 |
 | Franklin D. Roosevelt (US) | President 1933 to 1945 (Democrat) | 1936 | CTS-e The Tribune (90%) | The Organizer | -58 | +62 | +30 | +60 | +15 | -30~ | · | +40 |
 | Gary Johnson (US) | Libertarian presidential candidate 2012 and 2016 | 2016 | MPS-g The Maverick (94%) | The Independent | +75 | -30 | -60 | -25 | +40 | +45 | +50 | +40 |
 | George W. Bush (US) | President 2001 to 2009 (Republican) | 2004 | MTI-g The Statesman (89%) | The Trader | +64 | +65 | +61 | +36 | -31 | +58 | +55 | -10 |
+| George Wallace (US) | Governor of Alabama, 1968 American Independent candidate | 1968 | BTS-g The Homesteader (89%) | The Tribune | -20 | +80 | +80 | +70 | +40 | +30~ | +10~ | +75 |
 | Henry David Thoreau (US) | Essayist, author of Civil Disobedience | 1849 | BPS-e The Free Thinker (91%) | The Maverick | +5 | -25 | -75 | -20 | +30 | -40~ | · | +70 |
+| Hillary Clinton (US) | Secretary of State 2009 to 2013, 2016 Democratic nominee | 2016 | CPI-e The Gardener (94%) | The Cosmopolitan | -20 | -60 | -8 | -42 | -58 | -56 | -4 | -30 |
 | Huey Long (US) | Governor and Senator of Louisiana (Democrat) | 1934 | CTS-e The Tribune (87%) | The Homesteader | -82 | +62 | +45 | +60 | +35 | -30~ | · | +82 |
 | JD Vance (US) | Vice President (Republican) | 2026 | MTS-g The Challenger (94%) | The Homesteader | +55 | +68 | +56 | +84 | +78 | +92 | +59 | +32 |
+| Jill Stein (US) | Green presidential candidate 2012, 2016 and 2024 | 2024 | CPS-e The Activist (93%) | The Free Thinker | -75 | -65 | -40 | -60 | +45 | -85 | -45 | +45 |
 | Jimmy Carter (US) | President 1977 to 1981 (Democrat) | 1978 | CTI-g The Steward (89%) | The Builder | -49 | +52 | +18 | -18 | -70 | -60~ | +60~ | -22 |
 | Joe Biden (US) | President 2021 to 2025 (Democrat) | 2022 | CPI-e The Gardener (95%) | The Cosmopolitan | -35 | -60 | -8 | -42 | -48 | -56 | -4 | -30 |
 | John F. Kennedy (US) | President 1961 to 1963 (Democrat) | 1962 | CTI-g The Steward (90%) | The Builder | -39 | +38 | +18 | -18 | -59 | -30~ | +60~ | -18 |
@@ -149,9 +187,14 @@ Politicians and public figures, scored on their stated views (speeches, writing,
 | Lyndon B. Johnson (US) | President 1963 to 1969 (Democrat) | 1965 | CNI-g The Builder (89%) | The Steward | -59 | +38 | +18 | -18 | -56 | -30~ | +60~ | -18 |
 | Michael Bloomberg (US) | Mayor of New York 2002 to 2013 | 2020 | BPI-e The Cosmopolitan (91%) | The Gardener | +15 | -60 | +18 | -42 | -56 | -56 | +11 | -30 |
 | Milton Friedman (US) | Economist, author of Capitalism and Freedom | 1980 | MPS-g The Maverick (91%) | The Free Thinker | +90 | -20 | -55 | -10 | -10 | +40~ | +50 | +35 |
+| Mitt Romney (US) | Governor of Massachusetts, 2012 Republican nominee | 2012 | MTI-g The Statesman (90%) | The Trader | +69 | +65 | +61 | +46 | -31 | +58 | +55 | -25 |
 | Noam Chomsky (US) | Linguist and left-libertarian writer | 2016 | CPS-e The Activist (94%) | The Free Thinker | -75 | -55 | -65 | -60 | +25 | -60 | -20 | +55 |
 | Pat Buchanan (US) | Commentator, presidential candidate 1992, 1996 and 2000 | 1996 | MTS-g The Challenger (86%) | The Homesteader | +36 | +85 | +32 | +65 | +16 | +40~ | +45 | +28 |
+| Pete Buttigieg (US) | Transportation secretary 2021 to 2025 (Democrat) | 2024 | CPI-e The Gardener (94%) | The Cosmopolitan | -20 | -60 | -8 | -42 | -56 | -56 | +6 | -30 |
+| Ralph Nader (US) | Consumer advocate, Green presidential candidate 2000 | 2000 | CPS-e The Activist (92%) | The Free Thinker | -75 | -50 | -35 | -45 | +45 | -85 | -45 | +45 |
+| Richard Nixon (US) | President 1969 to 1974 (Republican) | 1972 | MTI-g The Statesman (92%) | The Trader | +41 | +60 | +48 | +30 | -38 | +10~ | +70~ | -8 |
 | Robert F. Kennedy Jr. (US) | Independent candidate 2024, health secretary | 2024 | BNS-e The Outsider (93%) | The Organizer | -10 | +5 | -15 | +30 | +35 | -10 | -50 | +80 |
+| Ron DeSantis (US) | Governor of Florida (Republican) | 2026 | MTS-g The Challenger (92%) | The Homesteader | +75 | +68 | +56 | +84 | +78 | +92 | +59 | +22 |
 | Ron Paul (US) | Republican Congressman, presidential candidate 2008 and 2012 | 2012 | MPS-g The Maverick (85%) | The Independent | +90 | +30 | -60 | +45 | +70 | +70 | +30 | +75 |
 | Ronald Reagan (US) | President 1981 to 1989 (Republican) | 1984 | MNI-g The Trader (89%) | The Statesman | +71 | +60 | +32 | +30 | -29 | +40~ | +45 | -8 |
 | Ross Perot (US) | Independent and Reform Party presidential candidate 1992 and 1996 | 1992 | BNS-g The Outsider (92%) | The Independent | +25 | -5 | +10 | +30 | +55 | +20 | +20 | +70 |
@@ -161,3 +204,4 @@ Politicians and public figures, scored on their stated views (speeches, writing,
 | Tucker Carlson (US) | Media host and commentator | 2026 | MTS-g The Challenger (94%) | The Homesteader | +30 | +68 | +56 | +84 | +86 | +92 | +29 | +32 |
 | Tulsi Gabbard (US) | Democratic Congresswoman, 2020 presidential candidate | 2020 | BNS-e The Outsider (93%) | The Organizer | -15 | -5 | -20 | +15 | +50 | -15 | -5 | +55 |
 | William Jennings Bryan (US) | Democratic presidential nominee 1896, 1900 and 1908 | 1896 | CTS-e The Tribune (86%) | The Homesteader | -58 | +96 | +50 | +80 | +45 | -30~ | · | +80 |
+| Zohran Mamdani (US) | Mayor of New York City (Democrat, DSA) | 2026 | CPI-e The Gardener (91%) | The Activist | -80 | -60 | -18 | -62 | -24 | -56 | -4 | -15 |

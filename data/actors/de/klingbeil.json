@@ -1,0 +1,83 @@
+{
+  "id": "de-klingbeil",
+  "type": "person",
+  "kind": "politician",
+  "name": "Lars Klingbeil",
+  "full_name": "SPD co-leader, Vice Chancellor and finance minister",
+  "country": "DE",
+  "active": {
+    "from": 2005,
+    "to": null
+  },
+  "party": "de-spd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the SPD profile (Current (Nov 2026)), adjusted where Lars Klingbeil's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-25, "l"],
+        "eco_reg": [-40, "l"],
+        "eco_lab": [-60, "l"],
+        "eco_tax": [-50, "l"],
+        "soc_fam": [-55, "m"],
+        "soc_lgbt": [-70, "m"],
+        "soc_rel": [-45, "m"],
+        "soc_mor": [-45, "m"],
+        "lib_priv": [10, "m"],
+        "lib_just": [10, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [-10, "m"],
+        "mig_lvl": [-5, "m"],
+        "mig_asy": [-15, "m"],
+        "mig_int": [-20, "m"],
+        "mig_nat": [-45, "m"],
+        "int_eu": [-70, "m"],
+        "int_trade": [-17, "m"],
+        "int_def": [-80, "l"],
+        "int_aid": [-45, "m"],
+        "cli_amb": [-55, "m"],
+        "cli_pay": [-45, "m"],
+        "cli_nat": [-35, "m"],
+        "cli_intl": [-70, "m"],
+        "tec_ai": [-10, "m"],
+        "tec_bio": [0, "m"],
+        "tec_nuc": [-60, "m"],
+        "tec_big": [-45, "m"],
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-20, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-2, "m"]
+      },
+      "notes": {
+        "ECO": "From the SPD's pragmatic centre.",
+        "SOC": "In line with the SPD profile (Current (Nov 2026)).",
+        "LIB": "In line with the SPD profile (Current (Nov 2026)).",
+        "MIG": "In line with the SPD profile (Current (Nov 2026)).",
+        "INT": "Pushed the SPD towards higher defence spending.",
+        "CLI": "In line with the SPD profile (Current (Nov 2026)).",
+        "TEC": "In line with the SPD profile (Current (Nov 2026)).",
+        "DEM": "In line with the SPD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Lars Klingbeil",
+          "url": "https://en.wikipedia.org/wiki/Lars_Klingbeil"
+        }
+      ]
+    }
+  ]
+}

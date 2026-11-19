@@ -1,0 +1,82 @@
+{
+  "id": "de-dvp",
+  "type": "party",
+  "extra": true,
+  "name": "DVP",
+  "full_name": "Deutsche Volkspartei",
+  "country": "DE",
+  "active": {
+    "from": 1918,
+    "to": 1933
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1925,
+      "label": "Stresemann era",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [50, "l"],
+        "eco_reg": [50, "l"],
+        "eco_lab": [50, "l"],
+        "eco_tax": [50, "l"],
+        "soc_fam": [35, "l"],
+        "soc_lgbt": [35, "l"],
+        "soc_rel": [35, "l"],
+        "soc_mor": [35, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [20, "l"],
+        "mig_asy": [20, "l"],
+        "mig_int": [20, "l"],
+        "mig_nat": [20, "l"],
+        "int_eu": null,
+        "int_trade": [0, "l"],
+        "int_def": [0, "l"],
+        "int_aid": [0, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-15, "l"],
+        "dem_direct": [-15, "l"],
+        "dem_courts": [-15, "l"],
+        "dem_central": [-15, "l"]
+      },
+      "notes": {
+        "ECO": "National liberals close to industry.",
+        "SOC": "Scored at topic level from the party's programme (Stresemann era).",
+        "LIB": "Scored at topic level from the party's programme (Stresemann era).",
+        "MIG": "Scored at topic level from the party's programme (Stresemann era).",
+        "INT": "Under Stresemann, reconciliation with France and the Locarno treaties.",
+        "CLI": "Scored at topic level from the party's programme (Stresemann era).",
+        "TEC": "Scored at topic level from the party's programme (Stresemann era).",
+        "DEM": "Came to accept the republic it had first opposed."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Deutsche Volkspartei",
+          "url": "https://en.wikipedia.org/wiki/Deutsche_Volkspartei"
+        }
+      ]
+    }
+  ]
+}

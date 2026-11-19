@@ -1,0 +1,82 @@
+{
+  "id": "nl-bvnl",
+  "type": "party",
+  "extra": true,
+  "name": "BVNL",
+  "full_name": "Belang van Nederland",
+  "country": "NL",
+  "active": {
+    "from": 2021,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2023,
+      "label": "2023 election",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 4,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [55, "l"],
+        "eco_reg": [55, "l"],
+        "eco_lab": [55, "l"],
+        "eco_tax": [55, "l"],
+        "soc_fam": [25, "l"],
+        "soc_lgbt": [25, "l"],
+        "soc_rel": [25, "l"],
+        "soc_mor": [25, "l"],
+        "lib_priv": [-10, "l"],
+        "lib_just": [-10, "l"],
+        "lib_speech": [-10, "l"],
+        "lib_emerg": [-60, "m"],
+        "mig_lvl": [65, "l"],
+        "mig_asy": [65, "l"],
+        "mig_int": [65, "l"],
+        "mig_nat": [65, "l"],
+        "int_eu": [85, "m"],
+        "int_trade": [60, "l"],
+        "int_def": [60, "l"],
+        "int_aid": [60, "l"],
+        "cli_amb": [75, "l"],
+        "cli_pay": [75, "l"],
+        "cli_nat": [75, "l"],
+        "cli_intl": [75, "l"],
+        "tec_ai": [30, "l"],
+        "tec_bio": [30, "l"],
+        "tec_nuc": [30, "l"],
+        "tec_big": [30, "l"],
+        "dem_trust": [70, "l"],
+        "dem_direct": [70, "l"],
+        "dem_courts": [70, "l"],
+        "dem_central": [70, "l"]
+      },
+      "notes": {
+        "ECO": "Lower taxes and less regulation.",
+        "SOC": "Scored at topic level from the party's programme (2023 election).",
+        "LIB": "Against lockdowns and covid passes.",
+        "MIG": "Wants immigration brought down sharply.",
+        "INT": "For a Nexit referendum.",
+        "CLI": "Against nitrogen and climate rules.",
+        "TEC": "Scored at topic level from the party's programme (2023 election).",
+        "DEM": "Against party politics and the Hague establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Belang van Nederland",
+          "url": "https://en.wikipedia.org/wiki/Belang_van_Nederland"
+        }
+      ]
+    }
+  ]
+}

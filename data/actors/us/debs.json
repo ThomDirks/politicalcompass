@@ -1,0 +1,83 @@
+{
+  "id": "us-debs",
+  "type": "person",
+  "kind": "politician",
+  "name": "Eugene V. Debs",
+  "full_name": "Socialist Party presidential candidate, five times",
+  "country": "US",
+  "active": {
+    "from": 1893,
+    "to": 1926
+  },
+  "party": "us-socialist",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1912,
+      "label": "1912 campaign",
+      "method": "hand",
+      "basis": "Starts from the Socialist Party profile (Debs campaign), adjusted where Eugene V. Debs's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 1,
+        "LIB": 3,
+        "MIG": 1,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-90, "l"],
+        "eco_reg": [-90, "l"],
+        "eco_lab": [-90, "l"],
+        "eco_tax": [-90, "l"],
+        "soc_fam": [-10, "l"],
+        "soc_lgbt": [-10, "l"],
+        "soc_rel": [-10, "l"],
+        "soc_mor": [-10, "l"],
+        "lib_priv": [-30, "l"],
+        "lib_just": [-30, "l"],
+        "lib_speech": [-30, "l"],
+        "lib_emerg": [-30, "l"],
+        "mig_lvl": [-10, "l"],
+        "mig_asy": [-10, "l"],
+        "mig_int": [-10, "l"],
+        "mig_nat": [-10, "l"],
+        "int_eu": null,
+        "int_trade": [50, "l"],
+        "int_def": [90, "m"],
+        "int_aid": [50, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [45, "l"],
+        "dem_direct": [45, "l"],
+        "dem_courts": [45, "l"],
+        "dem_central": [45, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Socialist Party profile (Debs campaign).",
+        "SOC": "In line with the Socialist Party profile (Debs campaign).",
+        "LIB": "In line with the Socialist Party profile (Debs campaign).",
+        "MIG": "In line with the Socialist Party profile (Debs campaign).",
+        "INT": "In line with the Socialist Party profile (Debs campaign).",
+        "CLI": "In line with the Socialist Party profile (Debs campaign).",
+        "TEC": "In line with the Socialist Party profile (Debs campaign).",
+        "DEM": "In line with the Socialist Party profile (Debs campaign)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Eugene V. Debs",
+          "url": "https://en.wikipedia.org/wiki/Eugene_V._Debs"
+        }
+      ]
+    }
+  ]
+}

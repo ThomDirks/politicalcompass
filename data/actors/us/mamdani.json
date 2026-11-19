@@ -1,0 +1,83 @@
+{
+  "id": "us-mamdani",
+  "type": "person",
+  "kind": "politician",
+  "name": "Zohran Mamdani",
+  "full_name": "Mayor of New York City (Democrat, DSA)",
+  "country": "US",
+  "active": {
+    "from": 2021,
+    "to": null
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Mayor",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (Current (Nov 2026)), adjusted where Zohran Mamdani's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-65, "l"],
+        "eco_reg": [-80, "l"],
+        "eco_lab": [-90, "l"],
+        "eco_tax": [-85, "l"],
+        "soc_fam": [-60, "m"],
+        "soc_lgbt": [-80, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-60, "m"],
+        "lib_priv": [0, "l"],
+        "lib_just": [-20, "l"],
+        "lib_speech": [-5, "l"],
+        "lib_emerg": [-45, "l"],
+        "mig_lvl": [-50, "l"],
+        "mig_asy": [-65, "l"],
+        "mig_int": [-70, "l"],
+        "mig_nat": [-65, "l"],
+        "int_eu": [-60, "m"],
+        "int_trade": [-35, "m"],
+        "int_def": [60, "l"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-65, "m"],
+        "cli_pay": [-40, "m"],
+        "cli_nat": [-40, "m"],
+        "cli_intl": [-80, "m"],
+        "tec_ai": [-10, "m"],
+        "tec_bio": [20, "m"],
+        "tec_nuc": [20, "m"],
+        "tec_big": [-45, "m"],
+        "dem_trust": [-50, "l"],
+        "dem_direct": [5, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [25, "l"]
+      },
+      "notes": {
+        "ECO": "Democratic socialist: rent freezes, free buses, city-run grocery stores and higher taxes on the rich.",
+        "SOC": "In line with the Democrats profile (Current (Nov 2026)).",
+        "LIB": "Wants to shift money from policing to public safety services.",
+        "MIG": "Defends New York as a sanctuary city.",
+        "INT": "Critical of US military aid to Israel.",
+        "CLI": "In line with the Democrats profile (Current (Nov 2026)).",
+        "TEC": "In line with the Democrats profile (Current (Nov 2026)).",
+        "DEM": "Won against the party establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Zohran Mamdani",
+          "url": "https://en.wikipedia.org/wiki/Zohran_Mamdani"
+        }
+      ]
+    }
+  ]
+}

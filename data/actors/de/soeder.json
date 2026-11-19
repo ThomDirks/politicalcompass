@@ -1,0 +1,83 @@
+{
+  "id": "de-soeder",
+  "type": "person",
+  "kind": "politician",
+  "name": "Markus Söder",
+  "full_name": "Minister-President of Bavaria, leader of the CSU",
+  "country": "DE",
+  "active": {
+    "from": 1994,
+    "to": null
+  },
+  "party": "de-csu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the CSU profile (Current (Nov 2026)), adjusted where Markus Söder's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 4,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [35, "m"],
+        "eco_reg": [30, "m"],
+        "eco_lab": [10, "m"],
+        "eco_tax": [35, "m"],
+        "soc_fam": [28, "m"],
+        "soc_lgbt": [25, "m"],
+        "soc_rel": [45, "m"],
+        "soc_mor": [50, "m"],
+        "lib_priv": [50, "m"],
+        "lib_just": [75, "m"],
+        "lib_speech": [5, "m"],
+        "lib_emerg": [25, "m"],
+        "mig_lvl": [60, "m"],
+        "mig_asy": [70, "m"],
+        "mig_int": [60, "m"],
+        "mig_nat": [50, "m"],
+        "int_eu": [-35, "m"],
+        "int_trade": [-25, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [20, "m"],
+        "cli_amb": [5, "m"],
+        "cli_pay": [40, "m"],
+        "cli_nat": [45, "m"],
+        "cli_intl": [-30, "m"],
+        "tec_ai": [55, "m"],
+        "tec_bio": [20, "m"],
+        "tec_nuc": [65, "m"],
+        "tec_big": [0, "m"],
+        "dem_trust": [-45, "m"],
+        "dem_direct": [-30, "m"],
+        "dem_courts": [-45, "m"],
+        "dem_central": [-75, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CSU profile (Current (Nov 2026)).",
+        "SOC": "In line with the CSU profile (Current (Nov 2026)).",
+        "LIB": "In line with the CSU profile (Current (Nov 2026)).",
+        "MIG": "In line with the CSU profile (Current (Nov 2026)).",
+        "INT": "In line with the CSU profile (Current (Nov 2026)).",
+        "CLI": "In line with the CSU profile (Current (Nov 2026)).",
+        "TEC": "In line with the CSU profile (Current (Nov 2026)).",
+        "DEM": "In line with the CSU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Markus Söder",
+          "url": "https://en.wikipedia.org/wiki/Markus_Söder"
+        }
+      ]
+    }
+  ]
+}

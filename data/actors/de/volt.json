@@ -1,0 +1,82 @@
+{
+  "id": "de-volt",
+  "type": "party",
+  "extra": true,
+  "name": "Volt",
+  "full_name": "Volt Deutschland",
+  "country": "DE",
+  "active": {
+    "from": 2018,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 5,
+        "CLI": 4,
+        "TEC": 3,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-10, "l"],
+        "eco_reg": [-10, "l"],
+        "eco_lab": [-10, "l"],
+        "eco_tax": [-10, "l"],
+        "soc_fam": [-60, "l"],
+        "soc_lgbt": [-60, "l"],
+        "soc_rel": [-60, "l"],
+        "soc_mor": [-60, "l"],
+        "lib_priv": [-30, "l"],
+        "lib_just": [-30, "l"],
+        "lib_speech": [-30, "l"],
+        "lib_emerg": [-30, "l"],
+        "mig_lvl": [-45, "l"],
+        "mig_asy": [-45, "l"],
+        "mig_int": [-45, "l"],
+        "mig_nat": [-45, "l"],
+        "int_eu": [-85, "l"],
+        "int_trade": [-85, "l"],
+        "int_def": [-85, "l"],
+        "int_aid": [-85, "l"],
+        "cli_amb": [-55, "l"],
+        "cli_pay": [-55, "l"],
+        "cli_nat": [-55, "l"],
+        "cli_intl": [-55, "l"],
+        "tec_ai": [25, "l"],
+        "tec_bio": [25, "l"],
+        "tec_nuc": [25, "l"],
+        "tec_big": [25, "l"],
+        "dem_trust": [-40, "l"],
+        "dem_direct": [-40, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [-40, "l"]
+      },
+      "notes": {
+        "ECO": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "SOC": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "LIB": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "MIG": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "INT": "A federal Europe with its own government.",
+        "CLI": "Climate neutrality ahead of national targets.",
+        "TEC": "Digital government and innovation-friendly rules.",
+        "DEM": "Scored at topic level from the party's programme (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Volt Deutschland",
+          "url": "https://en.wikipedia.org/wiki/Volt_Deutschland"
+        }
+      ]
+    }
+  ]
+}

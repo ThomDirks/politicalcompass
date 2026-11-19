@@ -1,0 +1,83 @@
+{
+  "id": "uk-paisley",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ian Paisley",
+  "full_name": "Founder of the DUP, First Minister of Northern Ireland 2007 to 2008",
+  "country": "UK",
+  "active": {
+    "from": 1971,
+    "to": 2010
+  },
+  "party": "uk-dup",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1998,
+      "label": "Against the Good Friday Agreement",
+      "method": "hand",
+      "basis": "Starts from the DUP profile (Current (Nov 2026)), adjusted where Ian Paisley's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 5,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-15, "l"],
+        "eco_reg": [-15, "l"],
+        "eco_lab": [-15, "l"],
+        "eco_tax": [-15, "l"],
+        "soc_fam": [90, "l"],
+        "soc_lgbt": [90, "l"],
+        "soc_rel": [90, "l"],
+        "soc_mor": [90, "l"],
+        "lib_priv": [45, "l"],
+        "lib_just": [45, "l"],
+        "lib_speech": [45, "l"],
+        "lib_emerg": [45, "l"],
+        "mig_lvl": [35, "l"],
+        "mig_asy": [35, "l"],
+        "mig_int": [35, "l"],
+        "mig_nat": [35, "l"],
+        "int_eu": [80, "m"],
+        "int_trade": [55, "l"],
+        "int_def": [55, "l"],
+        "int_aid": [55, "l"],
+        "cli_amb": [35, "l"],
+        "cli_pay": [35, "l"],
+        "cli_nat": [35, "l"],
+        "cli_intl": [35, "l"],
+        "tec_ai": null,
+        "tec_bio": [0, "l"],
+        "tec_nuc": [0, "l"],
+        "tec_big": null,
+        "dem_trust": [40, "l"],
+        "dem_direct": [40, "l"],
+        "dem_courts": [40, "l"],
+        "dem_central": [40, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the DUP profile (Current (Nov 2026)).",
+        "SOC": "Free Presbyterian preacher and the loudest voice of 'Ulster says no'; deeply conservative on morals.",
+        "LIB": "In line with the DUP profile (Current (Nov 2026)).",
+        "MIG": "In line with the DUP profile (Current (Nov 2026)).",
+        "INT": "In line with the DUP profile (Current (Nov 2026)).",
+        "CLI": "In line with the DUP profile (Current (Nov 2026)).",
+        "TEC": "In line with the DUP profile (Current (Nov 2026)).",
+        "DEM": "Opposed the 1998 agreement, later shared power with Sinn Féin."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ian Paisley",
+          "url": "https://en.wikipedia.org/wiki/Ian_Paisley"
+        }
+      ]
+    }
+  ]
+}

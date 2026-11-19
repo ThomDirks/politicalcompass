@@ -1,0 +1,85 @@
+{
+  "id": "uk-ilp",
+  "type": "party",
+  "extra": true,
+  "name": "ILP",
+  "full_name": "Independent Labour Party",
+  "country": "UK",
+  "active": {
+    "from": 1893,
+    "to": 1975
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1932,
+      "label": "After leaving Labour",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 1,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-80, "l"],
+        "eco_reg": [-80, "l"],
+        "eco_lab": [-80, "l"],
+        "eco_tax": [-80, "l"],
+        "soc_fam": [10, "l"],
+        "soc_lgbt": [10, "l"],
+        "soc_rel": [10, "l"],
+        "soc_mor": [10, "l"],
+        "lib_priv": [-20, "l"],
+        "lib_just": [-20, "l"],
+        "lib_speech": [-20, "l"],
+        "lib_emerg": [-20, "l"],
+        "mig_lvl": [0, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [0, "l"],
+        "int_eu": null,
+        "int_trade": [30, "l"],
+        "int_def": [90, "m"],
+        "int_aid": [30, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [40, "l"],
+        "dem_direct": [40, "l"],
+        "dem_courts": [40, "l"],
+        "dem_central": [40, "l"]
+      },
+      "notes": {
+        "ECO": "'Socialism in our time'.",
+        "SOC": "Scored at topic level from the party's programme (After leaving Labour).",
+        "LIB": "Scored at topic level from the party's programme (After leaving Labour).",
+        "MIG": "Scored at topic level from the party's programme (After leaving Labour).",
+        "INT": "Pacifist through two world wars.",
+        "CLI": "Scored at topic level from the party's programme (After leaving Labour).",
+        "TEC": "Scored at topic level from the party's programme (After leaving Labour).",
+        "DEM": "Scored at topic level from the party's programme (After leaving Labour)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Independent Labour Party",
+          "url": "https://en.wikipedia.org/wiki/Independent_Labour_Party"
+        }
+      ]
+    }
+  ],
+  "successors": [
+    "uk-labour"
+  ]
+}

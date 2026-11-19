@@ -1,0 +1,83 @@
+{
+  "id": "de-baerbock",
+  "type": "person",
+  "kind": "politician",
+  "name": "Annalena Baerbock",
+  "full_name": "Greens co-leader, foreign minister 2021 to 2025",
+  "country": "DE",
+  "active": {
+    "from": 2013,
+    "to": null
+  },
+  "party": "de-gruene",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2023,
+      "label": "Foreign minister",
+      "method": "hand",
+      "basis": "Starts from the Grüne profile (Current (Nov 2026)), adjusted where Annalena Baerbock's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-30, "m"],
+        "eco_reg": [-50, "m"],
+        "eco_lab": [-45, "m"],
+        "eco_tax": [-55, "m"],
+        "soc_fam": [-85, "m"],
+        "soc_lgbt": [-95, "m"],
+        "soc_rel": [-55, "m"],
+        "soc_mor": [-65, "m"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-35, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [-40, "m"],
+        "mig_lvl": [-55, "m"],
+        "mig_asy": [-65, "m"],
+        "mig_int": [-50, "m"],
+        "mig_nat": [-75, "m"],
+        "int_eu": [-90, "m"],
+        "int_trade": [-26, "m"],
+        "int_def": [-85, "l"],
+        "int_aid": [-70, "m"],
+        "cli_amb": [-95, "m"],
+        "cli_pay": [-80, "m"],
+        "cli_nat": [-75, "m"],
+        "cli_intl": [-95, "m"],
+        "tec_ai": [-15, "m"],
+        "tec_bio": [-55, "m"],
+        "tec_nuc": [-95, "m"],
+        "tec_big": [-60, "m"],
+        "dem_trust": [-70, "m"],
+        "dem_direct": [10, "m"],
+        "dem_courts": [-80, "m"],
+        "dem_central": [-8, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Grüne profile (Current (Nov 2026)).",
+        "SOC": "In line with the Grüne profile (Current (Nov 2026)).",
+        "LIB": "In line with the Grüne profile (Current (Nov 2026)).",
+        "MIG": "In line with the Grüne profile (Current (Nov 2026)).",
+        "INT": "'Feminist foreign policy' and strong support for arming Ukraine.",
+        "CLI": "In line with the Grüne profile (Current (Nov 2026)).",
+        "TEC": "In line with the Grüne profile (Current (Nov 2026)).",
+        "DEM": "In line with the Grüne profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Annalena Baerbock",
+          "url": "https://en.wikipedia.org/wiki/Annalena_Baerbock"
+        }
+      ]
+    }
+  ]
+}

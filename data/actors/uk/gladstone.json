@@ -1,0 +1,83 @@
+{
+  "id": "uk-gladstone",
+  "type": "person",
+  "kind": "politician",
+  "name": "William Gladstone",
+  "full_name": "Prime Minister four times between 1868 and 1894 (Liberal)",
+  "country": "UK",
+  "active": {
+    "from": 1832,
+    "to": 1895
+  },
+  "party": "uk-liberal",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1880,
+      "label": "Midlothian campaign",
+      "method": "hand",
+      "basis": "Starts from the Liberal Party profile (1906 landslide), adjusted where William Gladstone's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 1,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [20, "l"],
+        "eco_reg": [20, "l"],
+        "eco_lab": [20, "l"],
+        "eco_tax": [-5, "l"],
+        "soc_fam": [50, "l"],
+        "soc_lgbt": [50, "l"],
+        "soc_rel": [50, "l"],
+        "soc_mor": [50, "l"],
+        "lib_priv": [-20, "l"],
+        "lib_just": [-20, "l"],
+        "lib_speech": [-20, "l"],
+        "lib_emerg": [-20, "l"],
+        "mig_lvl": [10, "l"],
+        "mig_asy": [10, "l"],
+        "mig_int": [10, "l"],
+        "mig_nat": [10, "l"],
+        "int_eu": null,
+        "int_trade": [-80, "m"],
+        "int_def": [30, "l"],
+        "int_aid": [-30, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-10, "l"],
+        "dem_direct": [-10, "l"],
+        "dem_courts": [-10, "l"],
+        "dem_central": [-10, "l"]
+      },
+      "notes": {
+        "ECO": "Free trade, low taxes and 'retrenchment' of public spending.",
+        "SOC": "Devout Anglican moralist.",
+        "LIB": "In line with the Liberal Party profile (1906 landslide).",
+        "MIG": "In line with the Liberal Party profile (1906 landslide).",
+        "INT": "Against imperial adventures; for Irish Home Rule.",
+        "CLI": "In line with the Liberal Party profile (1906 landslide).",
+        "TEC": "In line with the Liberal Party profile (1906 landslide).",
+        "DEM": "In line with the Liberal Party profile (1906 landslide)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: William Gladstone",
+          "url": "https://en.wikipedia.org/wiki/William_Gladstone"
+        }
+      ]
+    }
+  ]
+}

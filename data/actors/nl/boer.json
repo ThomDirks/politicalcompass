@@ -1,0 +1,82 @@
+{
+  "id": "nl-boer",
+  "type": "party",
+  "extra": true,
+  "name": "Boerenpartij",
+  "full_name": "Boerenpartij",
+  "country": "NL",
+  "active": {
+    "from": 1958,
+    "to": 1981
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1963,
+      "label": "1963 election",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [45, "l"],
+        "eco_reg": [45, "l"],
+        "eco_lab": [45, "l"],
+        "eco_tax": [45, "l"],
+        "soc_fam": [50, "l"],
+        "soc_lgbt": [50, "l"],
+        "soc_rel": [50, "l"],
+        "soc_mor": [50, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [30, "l"],
+        "mig_asy": [30, "l"],
+        "mig_int": [30, "l"],
+        "mig_nat": [30, "l"],
+        "int_eu": [40, "l"],
+        "int_trade": [40, "l"],
+        "int_def": [40, "l"],
+        "int_aid": [40, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [30, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [0, "l"],
+        "tec_big": null,
+        "dem_trust": [70, "l"],
+        "dem_direct": [70, "l"],
+        "dem_courts": [70, "l"],
+        "dem_central": [70, "l"]
+      },
+      "notes": {
+        "ECO": "Against state interference in farming, above all the compulsory Landbouwschap levies.",
+        "SOC": "Rural and traditional.",
+        "LIB": "Scored at topic level from the party's programme (1963 election).",
+        "MIG": "Scored at topic level from the party's programme (1963 election).",
+        "INT": "Against European farm policy and Brussels rules.",
+        "CLI": "Scored at topic level from the party's programme (1963 election).",
+        "TEC": "Scored at topic level from the party's programme (1963 election).",
+        "DEM": "Hendrik Koekoek's protest party against The Hague and its corporatist bodies."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Farmers' Party (Netherlands)",
+          "url": "https://en.wikipedia.org/wiki/Farmers'_Party_(Netherlands)"
+        }
+      ]
+    }
+  ]
+}

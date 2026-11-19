@@ -20,9 +20,14 @@ Marks: **~** = axis based on a single facet, **ᵖ** = CHES proxy (overall left/
 | CSU | MTI-g The Statesman | +28 | +37 | +39 | +60 | -31 | +15 | +35 | -49 |
 | BSW | CNS-g The Organizer | -56 | +2 | -26 | +55 | +49 | +38 | -25 | +34 |
 | FDP | MPI-g The Innovator | +64 | -58 | -40 | +18 | -54 | +8 | +58 | -38 |
-| *Centre* | BNI-e The Pragmatist | *-7* | *-7* | *+1* | *+21* | *-13* | *-1* | *-2* | *-15* |
+| Freie Wähler | BNS-g The Outsider | +10 | +25 | +20 | +35 | +10 | +20 | +0 | +58 |
+| Tierschutzpartei | CPI-e The Gardener | -35 | -40 | -10 | -30 | -20 | -70 | -50 | +10 |
+| Volt | BPI-e The Cosmopolitan | -10 | -60 | -30 | -45 | -85 | -55 | +25 | -40 |
+| ÖDP | BNS-e The Outsider | -15 | +16 | -10 | +0 | +0 | -75 | -70 | +25 |
+| SSW | CPI-e The Gardener | -35 | -35 | -15 | -25 | -50 | -40 | +10 | -20 |
+| *Centre* | BNI-e The Pragmatist | *-8* | *-7* | *+1* | *+20* | *-14* | *-3* | *-3* | *-14* |
 
-Centre weights: Second vote share at the 2025 Bundestag election (%). Includes BSW and FDP, which narrowly missed the 5% threshold.
+Centre weights: Second vote share at the 2025 Bundestag election (%). Includes BSW and FDP, which narrowly missed the 5% threshold. Smaller parties: Freie Wähler, Tierschutzpartei, Volt, ÖDP and SSW at their 2025 second-vote share.
 
 ## Netherlands
 
@@ -44,9 +49,11 @@ Centre weights: Second vote share at the 2025 Bundestag election (%). Includes B
 | SP | CPS-e The Activist | -80 | -36 | -19 | -2 | +18 | -41 | -38 | +18 |
 | 50PLUS | CNI-g The Builder | -20 | -24 | +11 | +28 | -19 | +14 | +9 | +0 |
 | Volt | BPI-e The Cosmopolitan | -16 | -82 | -30 | -53 | -79 | -72 | +11 | -40 |
+| BIJ1 | CPS-e The Activist | -85 | -80 | -50 | -90 | +20 | -75 | -30 | +35 |
+| BVNL | MNS-g The Independent | +55 | +25 | -22 | +65 | +66 | +75 | +30 | +70 |
 | *Centre* | BNI-g The Pragmatist | *-1* | *-19* | *+3* | *+22* | *-19* | *-6* | *+15* | *-14* |
 
-Centre weights: Current seats in the Tweede Kamer, June 2026 (150 seats). Seats are used instead of the 2025 vote because PVV split after the election.
+Centre weights: Current seats in the Tweede Kamer, June 2026 (150 seats). Seats are used instead of the 2025 vote because PVV split after the election. BIJ1 and BVNL hold no seats and count at 0.
 
 ## United Kingdom
 
@@ -59,10 +66,16 @@ Centre weights: Current seats in the Tweede Kamer, June 2026 (150 seats). Seats 
 | Greens | CPS-e The Activist | -84 | -80 | -52 | -72 | -25 | -91 | -68 | -23 |
 | SNP | CPI-e The Gardener | -49 | -61 | -8 | -40 | -58 | -54 | -36 | -40 |
 | Plaid Cymru | CPI-e The Gardener | -56 | -58 | -22 | -34 | -49 | -52 | -25 | -40 |
+| Sinn Féin | CPS-e The Activist | -55 | -40 | -15 | -30 | +2 | -40 | +0 | +25 |
+| Workers Party | CTS-g The Tribune | -70 | +35 | +20 | +30 | +74 | +30 | -10 | +65 |
+| DUP | BTS-g The Homesteader | -15 | +75 | +45 | +35 | +61 | +35 | +0 | +10 |
+| Alliance | BPI-e The Cosmopolitan | -10 | -45 | -15 | -35 | -60 | -45 | +15 | -40 |
+| SDLP | CNI-e The Builder | -40 | -10 | -10 | -30 | -55 | -40 | +5 | -30 |
 | Restore Britain | MTS-g The Challenger | +50 | +48 | +2 | +98 | +58 | +90 | +30 | +65 |
-| *Centre* | BNI-g The Pragmatist | *+1* | *-19* | *+8* | *+23* | *-20* | *-9* | *+33* | *-14* |
+| Your Party | CPS-e The Activist | -80 | -55 | -40 | -60 | +36 | -60 | -20 | +45 |
+| *Centre* | BNI-g The Pragmatist | *-0* | *-19* | *+8* | *+23* | *-19* | *-9* | *+32* | *-13* |
 
-Centre weights: GB vote share at the 2024 general election (%). Vote share is used because first-past-the-post seats distort the centre. Restore Britain did not exist yet and has weight 0.
+Centre weights: GB vote share at the 2024 general election (%). Vote share is used because first-past-the-post seats distort the centre. Restore Britain did not exist yet and has weight 0. Northern Irish parties and the Workers Party at their 2024 share; Your Party (founded 2025) at 0.
 
 ## United States
 
@@ -70,33 +83,63 @@ Centre weights: GB vote share at the 2024 general election (%). Vote share is us
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Republicans | MTS-g The Challenger | +65 | +68 | +56 | +84 | +78 | +92 | +59 | +32 |
 | Democrats | CPI-e The Gardener | -30 | -60 | -8 | -42 | -56 | -56 | -4 | -30 |
+| Libertarian | MPS-g The Maverick | +85 | -30 | -75 | -20 | +21 | +60 | +60 | +55 |
+| Green | CPS-e The Activist | -75 | -65 | -40 | -60 | +45 | -85 | -45 | +45 |
+| Constitution | MTS-g The Challenger | +70 | +90 | +30 | +75 | +85 | +85 | +20 | +70 |
+| Forward | BNS-g The Outsider | +0 | -15 | -10 | +10 | -10 | -10 | +25 | +59 |
 | *Centre* | MNI-g The Trader | *+19* | *+6* | *+25* | *+22* | *+13* | *+20* | *+28* | *+2* |
 
-Centre weights: Approximate national House popular vote in 2024 (%).
+Centre weights: Approximate national House popular vote in 2024 (%). Third parties are listed for comparison at 0, as they won no House seats.
 
 ## Former and minor parties
 
 | Party | Type | ECO | SOC | LIB | MIG | INT | CLI | TEC | DEM |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | Zentrum (DE, 1870–1933) | CTI-g The Steward | -12 | +91 | +35 | +12 | -10 | +0~ | · | -42 |
+| USPD (DE, 1917–1931) | CNS-g The Organizer | -85 | -10 | -20 | -10 | +57 | +20~ | · | +45 |
+| DDP (DE, 1918–1930) | BNI-g The Pragmatist | +5 | +10 | -20 | +0 | -10 | +20~ | · | -50 |
+| DNVP (DE, 1918–1933) | MTS-g The Challenger | +25 | +80 | +75 | +70 | +27 | +20~ | · | +85 |
+| DVP (DE, 1918–1933) | MNI-g The Trader | +50 | +35 | +20 | +20 | +0 | +20~ | · | -15 |
 | KPD (DE, 1918–1956) | CPS-g The Activist | -100 | -68 | +75 | -72 | +33 | +0~ | · | +82 |
 | NSDAP (DE, 1920–1945) | BTS-g The Homesteader | -1 | +75 | +100 | +100 | +92 | +0~ | · | +75 |
 | SED (DE, 1946–1989) | CTS-g The Tribune | -72 | -55 | +98 | +60 | -12 | +80~ | +35 | +22 |
 | NPD (DE, 1964–) | BTS-g The Homesteader | -14 | +56 | +93~ | +93 | +78~ | +10 | · | +51 |
 | DVU (DE, 1971–2011) | MTS-? The Challenger | +44ᵖ | +95ᵖ | · | · | +81~ | · | · | · |
 | REP (DE, 1983–) | MTS-? The Challenger | +44ᵖ | +88ᵖ | · | · | +75~ | · | · | · |
+| PDS (DE, 1990–2007) | CPS-e The Activist | -70 | -35 | -25 | -40 | +48 | -30 | -10 | +30 |
 | Piraten (DE, 2006–) | CPS-e The Activist | -51 | -83 | -87~ | -74 | -62 | -10 | · | +51 |
+| WerteUnion (DE, 2024–) | MTS-g The Challenger | +55 | +50 | +40 | +80 | +40 | +60 | +30 | +55 |
 | ARP (NL, 1879–1980) | BTI-g The Neighbour | +8 | +89 | +26 | +22 | -42 | +0~ | +30~ | -45 |
+| CHU (NL, 1908–1980) | BTI-g The Neighbour | +15 | +65 | +35 | +20 | -18 | +15~ | +10~ | -40 |
 | CPN (NL, 1909–1991) | CPS-e The Activist | -96 | -68 | -35 | -52 | +32 | -20~ | -50 | +15 |
 | NSB (NL, 1931–1945) | BTS-g The Homesteader | +2 | +70 | +91 | +90 | +80 | +0~ | · | +69 |
 | KVP (NL, 1945–1980) | BTI-g The Neighbour | -9 | +88 | +22 | +20 | -52 | +0~ | +40~ | -48 |
 | PvdA (NL, 1946–2026) | CPI-e The Gardener | -52 | -66 | -40~ | -32 | -37 | -55 | · | -50 |
+| GPV (NL, 1948–2003) | CTI-e The Steward | -5 | +75 | +30 | +20 | +51 | -10 | -55 | -20 |
+| PSP (NL, 1957–1991) | CPS-e The Activist | -75 | -55 | -45 | -45 | +19 | -45~ | -70 | +30 |
+| Boerenpartij (NL, 1958–1981) | BNS-g The Outsider | +45 | +50 | +20 | +30 | +40 | +30~ | +0~ | +70 |
+| PPR (NL, 1968–1990) | CPS-e The Activist | -55 | -55 | -30 | -40 | +0 | -60~ | -70 | +20 |
+| DS'70 (NL, 1970–1983) | MNI-g The Trader | +39 | -15 | +15 | +10 | -36 | +10~ | +30~ | -10 |
 | CD (NL, 1984–2002) | MTS-? The Challenger | +71ᵖ | +85ᵖ | · | · | +85~ | · | · | · |
 | GroenLinks (NL, 1990–2026) | CPI-e The Gardener | -55 | -79 | -60~ | -42 | -28 | -74 | · | -55 |
+| Leefbaar Nederland (NL, 1999–2007) | BNS-g The Outsider | +10 | -10 | +10 | +30 | +20 | +10 | +10 | +75 |
 | LPF (NL, 2002–2008) | MNS-g The Independent | +39 | -45 | +12 | +76 | +2 | +20 | +25 | +45 |
 | NSC (NL, 2023–) | BTI-g The Neighbour | +3 | +17 | +44~ | +33 | -1 | +8 | · | -38 |
+| Liberal Party (UK, 1859–1988) | BNI-g The Pragmatist | -11 | +30 | -20 | +10 | -47 | +0~ | · | -10 |
+| ILP (UK, 1893–1975) | CNS-g The Organizer | -80 | +10 | -20 | +0 | +50 | +0~ | · | +40 |
+| CPGB (UK, 1920–1991) | CNS-g The Organizer | -95 | +0 | +50 | -10 | +65 | +10~ | +30~ | +60 |
 | BUF (UK, 1932–1940) | BTS-g The Homesteader | -2 | +62 | +91 | +92 | +75 | +0~ | · | +69 |
+| National Front (UK, 1967–) | BTS-g The Homesteader | -10 | +75 | +70 | +100 | +85 | +20~ | +0 | +75 |
 | SDP (UK, 1981–1988) | BPI-g The Cosmopolitan | -15 | -32 | -2 | -18 | -62 | -20~ | +20~ | -40 |
 | BNP (UK, 1982–) | BTS-g The Homesteader | -36 | +73 | +98~ | +100 | +93~ | +53 | · | +77~ |
 | UKIP (UK, 1993–) | MTS-g The Challenger | +44 | +51 | +80~ | +86 | +58 | +72 | · | +59 |
+| Respect (UK, 2004–2016) | CNS-e The Organizer | -75 | +15 | -20 | -45 | +65 | -20 | -10 | +60 |
+| Alba (UK, 2021–) | BNS-g The Outsider | -30 | +30 | +0 | -10 | +0 | -10 | +10 | +52 |
+| Whig (US, 1833–1856) | BTI-g The Neighbour | -10 | +45 | +20 | +40 | +43 | +0~ | · | -30 |
+| Know Nothing (US, 1854–1860) | BTS-g The Homesteader | +10 | +70 | +40 | +95 | +50 | +0~ | · | +55 |
+| People's Party (US, 1891–1908) | CNS-g The Organizer | -65 | +50 | +10 | +40 | +30 | +0~ | · | +60 |
+| Socialist Party (US, 1901–1972) | CNS-g The Organizer | -90 | -10 | -30 | -10 | +63 | +0~ | · | +45 |
+| Progressive (1912) (US, 1912–1916) | CNS-e The Organizer | -35 | +25 | +10 | +25 | -13 | -40~ | · | +56 |
 | Dixiecrats (US, 1948–1948) | MTI-g The Statesman | +45 | +80 | +50 | +82 | -17 | +0~ | · | +0 |
+| American Independent (US, 1967–) | BTS-g The Homesteader | -20 | +80 | +80 | +70 | +40 | +30~ | +10~ | +75 |
+| Reform (US, 1995–) | BNS-g The Outsider | +30 | +0 | +10 | +30 | +60 | +20 | +20 | +70 |

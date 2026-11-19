@@ -1,0 +1,83 @@
+{
+  "id": "us-wallace",
+  "type": "person",
+  "kind": "politician",
+  "name": "George Wallace",
+  "full_name": "Governor of Alabama, 1968 American Independent candidate",
+  "country": "US",
+  "active": {
+    "from": 1963,
+    "to": 1987
+  },
+  "party": "us-aip",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1968,
+      "label": "1968 campaign",
+      "method": "hand",
+      "basis": "Starts from the American Independent profile (Wallace campaign), adjusted where George Wallace's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 5,
+        "LIB": 5,
+        "MIG": 3,
+        "INT": 2,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-20, "l"],
+        "eco_reg": [-20, "l"],
+        "eco_lab": [-20, "l"],
+        "eco_tax": [-20, "l"],
+        "soc_fam": [80, "l"],
+        "soc_lgbt": [80, "l"],
+        "soc_rel": [80, "l"],
+        "soc_mor": [80, "l"],
+        "lib_priv": [80, "l"],
+        "lib_just": [80, "l"],
+        "lib_speech": [80, "l"],
+        "lib_emerg": [80, "l"],
+        "mig_lvl": [70, "l"],
+        "mig_asy": [70, "l"],
+        "mig_int": [70, "l"],
+        "mig_nat": [70, "l"],
+        "int_eu": [40, "l"],
+        "int_trade": [40, "l"],
+        "int_def": [40, "l"],
+        "int_aid": [40, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [30, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [10, "l"],
+        "tec_big": null,
+        "dem_trust": [75, "l"],
+        "dem_direct": [75, "l"],
+        "dem_courts": [75, "l"],
+        "dem_central": [75, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the American Independent profile (Wallace campaign).",
+        "SOC": "In line with the American Independent profile (Wallace campaign).",
+        "LIB": "In line with the American Independent profile (Wallace campaign).",
+        "MIG": "In line with the American Independent profile (Wallace campaign).",
+        "INT": "In line with the American Independent profile (Wallace campaign).",
+        "CLI": "In line with the American Independent profile (Wallace campaign).",
+        "TEC": "In line with the American Independent profile (Wallace campaign).",
+        "DEM": "In line with the American Independent profile (Wallace campaign)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: George Wallace",
+          "url": "https://en.wikipedia.org/wiki/George_Wallace"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "de-erhard",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ludwig Erhard",
+  "full_name": "Economy minister 1949 to 1963, Chancellor 1963 to 1966 (CDU)",
+  "country": "DE",
+  "active": {
+    "from": 1949,
+    "to": 1977
+  },
+  "party": "de-cdu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1957,
+      "label": "Economy minister",
+      "method": "hand",
+      "basis": "Starts from the CDU profile (Current (Nov 2026)), adjusted where Ludwig Erhard's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [60, "l"],
+        "eco_reg": [55, "l"],
+        "eco_lab": [35, "l"],
+        "eco_tax": [55, "l"],
+        "soc_fam": [55, "l"],
+        "soc_lgbt": [35, "l"],
+        "soc_rel": [55, "l"],
+        "soc_mor": [60, "l"],
+        "lib_priv": [40, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [60, "l"],
+        "mig_asy": [75, "l"],
+        "mig_int": [60, "l"],
+        "mig_nat": [45, "l"],
+        "int_eu": [-50, "m"],
+        "int_trade": [-60, "m"],
+        "int_def": [-90, "m"],
+        "int_aid": [10, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [45, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [50, "m"],
+        "tec_big": null,
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [-40, "m"]
+      },
+      "notes": {
+        "ECO": "Father of the social market economy: free prices, competition, 'Wohlstand für alle'.",
+        "SOC": "Values of the 1950s.",
+        "LIB": "In line with the CDU profile (Current (Nov 2026)).",
+        "MIG": "Guest-worker era, not yet a divide.",
+        "INT": "In line with the CDU profile (Current (Nov 2026)).",
+        "CLI": "Not yet an issue.",
+        "TEC": "In line with the CDU profile (Current (Nov 2026)).",
+        "DEM": "In line with the CDU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ludwig Erhard",
+          "url": "https://en.wikipedia.org/wiki/Ludwig_Erhard"
+        }
+      ]
+    }
+  ]
+}

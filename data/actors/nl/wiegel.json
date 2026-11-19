@@ -1,0 +1,83 @@
+{
+  "id": "nl-wiegel",
+  "type": "person",
+  "kind": "politician",
+  "name": "Hans Wiegel",
+  "full_name": "VVD leader 1971 to 1982, deputy prime minister",
+  "country": "NL",
+  "active": {
+    "from": 1967,
+    "to": 2000
+  },
+  "party": "nl-vvd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1977,
+      "label": "VVD leader",
+      "method": "hand",
+      "basis": "Starts from the VVD profile (Current (Nov 2026)), adjusted where Hans Wiegel's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [55, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [40, "m"],
+        "eco_tax": [45, "m"],
+        "soc_fam": [-10, "l"],
+        "soc_lgbt": [-19, "l"],
+        "soc_rel": [-30, "l"],
+        "soc_mor": [-20, "l"],
+        "lib_priv": [35, "m"],
+        "lib_just": [55, "m"],
+        "lib_speech": [-10, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [30, "l"],
+        "mig_asy": [50, "l"],
+        "mig_int": [40, "l"],
+        "mig_nat": [20, "l"],
+        "int_eu": [-15, "m"],
+        "int_trade": [-70, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [30, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [50, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [45, "l"],
+        "tec_nuc": [75, "l"],
+        "tec_big": null,
+        "dem_trust": [-50, "m"],
+        "dem_direct": [-50, "l"],
+        "dem_courts": [-35, "m"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "Turned the VVD into a popular party of 'gewone mensen' who want lower taxes.",
+        "SOC": "Liberal, judged by 1970s norms.",
+        "LIB": "In line with the VVD profile (Current (Nov 2026)).",
+        "MIG": "Not yet a divide.",
+        "INT": "In line with the VVD profile (Current (Nov 2026)).",
+        "CLI": "Climate was not yet on the agenda.",
+        "TEC": "In line with the VVD profile (Current (Nov 2026)).",
+        "DEM": "Later blocked the referendum bill in the Senate ('Nacht van Wiegel')."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Hans Wiegel",
+          "url": "https://en.wikipedia.org/wiki/Hans_Wiegel"
+        }
+      ]
+    }
+  ]
+}

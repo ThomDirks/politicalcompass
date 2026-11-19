@@ -1,0 +1,83 @@
+{
+  "id": "nl-halsema",
+  "type": "person",
+  "kind": "politician",
+  "name": "Femke Halsema",
+  "full_name": "GroenLinks leader 2002 to 2010, mayor of Amsterdam",
+  "country": "NL",
+  "active": {
+    "from": 1998,
+    "to": null
+  },
+  "party": "nl-pro",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2008,
+      "label": "GroenLinks leader",
+      "method": "hand",
+      "basis": "Starts from the PRO profile (Current (Nov 2026)), adjusted where Femke Halsema's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-50, "l"],
+        "eco_reg": [-55, "l"],
+        "eco_lab": [-65, "l"],
+        "eco_tax": [-65, "l"],
+        "soc_fam": [-90, "l"],
+        "soc_lgbt": [-100, "l"],
+        "soc_rel": [-80, "l"],
+        "soc_mor": [-75, "l"],
+        "lib_priv": [-70, "l"],
+        "lib_just": [-60, "l"],
+        "lib_speech": [5, "l"],
+        "lib_emerg": [-65, "l"],
+        "mig_lvl": [-60, "l"],
+        "mig_asy": [-80, "l"],
+        "mig_int": [-65, "l"],
+        "mig_nat": [-55, "l"],
+        "int_eu": [-75, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [-60, "m"],
+        "int_aid": [-80, "m"],
+        "cli_amb": [-90, "m"],
+        "cli_pay": [-80, "m"],
+        "cli_nat": [-75, "m"],
+        "cli_intl": [-90, "m"],
+        "tec_ai": null,
+        "tec_bio": [-10, "m"],
+        "tec_nuc": [-25, "m"],
+        "tec_big": [-70, "m"],
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-38, "m"],
+        "dem_courts": [-75, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "Led GroenLinks' 'left-liberal' turn.",
+        "SOC": "Progressive on every social question.",
+        "LIB": "Strong on civil liberties and privacy.",
+        "MIG": "Liberal on asylum and integration.",
+        "INT": "In line with the PRO profile (Current (Nov 2026)).",
+        "CLI": "In line with the PRO profile (Current (Nov 2026)).",
+        "TEC": "In line with the PRO profile (Current (Nov 2026)).",
+        "DEM": "In line with the PRO profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Femke Halsema",
+          "url": "https://en.wikipedia.org/wiki/Femke_Halsema"
+        }
+      ]
+    }
+  ]
+}

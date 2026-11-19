@@ -1,0 +1,82 @@
+{
+  "id": "de-fw",
+  "type": "party",
+  "extra": true,
+  "name": "Freie Wähler",
+  "full_name": "Freie Wähler",
+  "country": "DE",
+  "active": {
+    "from": 2009,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current (Nov 2026)",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [10, "l"],
+        "eco_reg": [10, "l"],
+        "eco_lab": [10, "l"],
+        "eco_tax": [10, "l"],
+        "soc_fam": [25, "l"],
+        "soc_lgbt": [25, "l"],
+        "soc_rel": [25, "l"],
+        "soc_mor": [25, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [35, "l"],
+        "mig_asy": [35, "l"],
+        "mig_int": [35, "l"],
+        "mig_nat": [35, "l"],
+        "int_eu": [10, "l"],
+        "int_trade": [10, "l"],
+        "int_def": [10, "l"],
+        "int_aid": [10, "l"],
+        "cli_amb": [20, "l"],
+        "cli_pay": [20, "l"],
+        "cli_nat": [20, "l"],
+        "cli_intl": [20, "l"],
+        "tec_ai": [0, "l"],
+        "tec_bio": [0, "l"],
+        "tec_nuc": [0, "l"],
+        "tec_big": [0, "l"],
+        "dem_trust": [40, "l"],
+        "dem_direct": [80, "m"],
+        "dem_courts": [40, "l"],
+        "dem_central": [70, "m"]
+      },
+      "notes": {
+        "ECO": "Middle class, small business and farmers.",
+        "SOC": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "LIB": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "MIG": "Wants limits on irregular migration.",
+        "INT": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "CLI": "Against what it sees as over-regulation of heating and farming.",
+        "TEC": "Scored at topic level from the party's programme (Current (Nov 2026)).",
+        "DEM": "Local independent lists turned party: direct democracy and power to towns and regions."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Free Voters",
+          "url": "https://en.wikipedia.org/wiki/Free_Voters"
+        }
+      ]
+    }
+  ]
+}

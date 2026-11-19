@@ -1,0 +1,83 @@
+{
+  "id": "us-goldwater",
+  "type": "person",
+  "kind": "politician",
+  "name": "Barry Goldwater",
+  "full_name": "Senator from Arizona, 1964 Republican nominee",
+  "country": "US",
+  "active": {
+    "from": 1953,
+    "to": 1987
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1964,
+      "label": "1964 nominee",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Reagan era), adjusted where Barry Goldwater's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [85, "l"],
+        "eco_reg": [90, "l"],
+        "eco_lab": [85, "l"],
+        "eco_tax": [85, "l"],
+        "soc_fam": [60, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [50, "m"],
+        "soc_mor": [60, "m"],
+        "lib_priv": [15, "l"],
+        "lib_just": [55, "l"],
+        "lib_speech": [-5, "l"],
+        "lib_emerg": [5, "l"],
+        "mig_lvl": [20, "m"],
+        "mig_asy": [30, "m"],
+        "mig_int": [30, "m"],
+        "mig_nat": [40, "m"],
+        "int_eu": [-10, "m"],
+        "int_trade": [-40, "m"],
+        "int_def": [-90, "l"],
+        "int_aid": [30, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [40, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [70, "m"],
+        "tec_big": null,
+        "dem_trust": [60, "l"],
+        "dem_direct": [10, "l"],
+        "dem_courts": [20, "l"],
+        "dem_central": [-40, "l"]
+      },
+      "notes": {
+        "ECO": "'Extremism in the defense of liberty is no vice': small government and lower taxes.",
+        "SOC": "In line with the Republicans profile (Reagan era).",
+        "LIB": "Libertarian streak; later backed gay service members.",
+        "MIG": "In line with the Republicans profile (Reagan era).",
+        "INT": "Hard-line anti-communist.",
+        "CLI": "In line with the Republicans profile (Reagan era).",
+        "TEC": "In line with the Republicans profile (Reagan era).",
+        "DEM": "Against the Washington establishment of both parties."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Barry Goldwater",
+          "url": "https://en.wikipedia.org/wiki/Barry_Goldwater"
+        }
+      ]
+    }
+  ]
+}

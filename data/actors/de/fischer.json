@@ -1,0 +1,83 @@
+{
+  "id": "de-fischer",
+  "type": "person",
+  "kind": "politician",
+  "name": "Joschka Fischer",
+  "full_name": "Foreign minister and Vice Chancellor 1998 to 2005 (Greens)",
+  "country": "DE",
+  "active": {
+    "from": 1983,
+    "to": 2006
+  },
+  "party": "de-gruene",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1999,
+      "label": "Foreign minister",
+      "method": "hand",
+      "basis": "Starts from the Grüne profile (Current (Nov 2026)), adjusted where Joschka Fischer's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-20, "l"],
+        "eco_reg": [-40, "l"],
+        "eco_lab": [-35, "l"],
+        "eco_tax": [-45, "l"],
+        "soc_fam": [-85, "m"],
+        "soc_lgbt": [-95, "m"],
+        "soc_rel": [-55, "m"],
+        "soc_mor": [-65, "m"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-35, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [-40, "m"],
+        "mig_lvl": [-55, "m"],
+        "mig_asy": [-65, "m"],
+        "mig_int": [-50, "m"],
+        "mig_nat": [-75, "m"],
+        "int_eu": [-90, "l"],
+        "int_trade": [-26, "m"],
+        "int_def": [-50, "l"],
+        "int_aid": [-70, "m"],
+        "cli_amb": [-90, "l"],
+        "cli_pay": [-75, "l"],
+        "cli_nat": [-70, "l"],
+        "cli_intl": [-90, "l"],
+        "tec_ai": null,
+        "tec_bio": [-55, "m"],
+        "tec_nuc": [-95, "m"],
+        "tec_big": null,
+        "dem_trust": [-70, "m"],
+        "dem_direct": [10, "m"],
+        "dem_courts": [-80, "m"],
+        "dem_central": [-8, "m"]
+      },
+      "notes": {
+        "ECO": "Led the pragmatic 'Realo' wing.",
+        "SOC": "In line with the Grüne profile (Current (Nov 2026)).",
+        "LIB": "In line with the Grüne profile (Current (Nov 2026)).",
+        "MIG": "In line with the Grüne profile (Current (Nov 2026)).",
+        "INT": "Backed the Kosovo intervention ('never again Auschwitz') and a federal Europe.",
+        "CLI": "Climate policy was taking shape under red-green.",
+        "TEC": "In line with the Grüne profile (Current (Nov 2026)).",
+        "DEM": "In line with the Grüne profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Joschka Fischer",
+          "url": "https://en.wikipedia.org/wiki/Joschka_Fischer"
+        }
+      ]
+    }
+  ]
+}

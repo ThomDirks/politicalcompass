@@ -1,0 +1,82 @@
+{
+  "id": "uk-workers",
+  "type": "party",
+  "extra": true,
+  "name": "Workers Party",
+  "full_name": "Workers Party of Britain",
+  "country": "UK",
+  "active": {
+    "from": 2019,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "2024 election",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-70, "l"],
+        "eco_reg": [-70, "l"],
+        "eco_lab": [-70, "l"],
+        "eco_tax": [-70, "l"],
+        "soc_fam": [35, "l"],
+        "soc_lgbt": [35, "l"],
+        "soc_rel": [35, "l"],
+        "soc_mor": [35, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [30, "l"],
+        "mig_asy": [30, "l"],
+        "mig_int": [30, "l"],
+        "mig_nat": [30, "l"],
+        "int_eu": [70, "l"],
+        "int_trade": [70, "l"],
+        "int_def": [85, "m"],
+        "int_aid": [70, "l"],
+        "cli_amb": [30, "l"],
+        "cli_pay": [30, "l"],
+        "cli_nat": [30, "l"],
+        "cli_intl": [30, "l"],
+        "tec_ai": [-10, "l"],
+        "tec_bio": [-10, "l"],
+        "tec_nuc": [-10, "l"],
+        "tec_big": [-10, "l"],
+        "dem_trust": [65, "l"],
+        "dem_direct": [65, "l"],
+        "dem_courts": [65, "l"],
+        "dem_central": [65, "l"]
+      },
+      "notes": {
+        "ECO": "Old-fashioned socialism: nationalisation and strong unions.",
+        "SOC": "Socially conservative on gender and family.",
+        "LIB": "Scored at topic level from the party's programme (2024 election).",
+        "MIG": "Scored at topic level from the party's programme (2024 election).",
+        "INT": "Against NATO and Western wars.",
+        "CLI": "Scored at topic level from the party's programme (2024 election).",
+        "TEC": "Scored at topic level from the party's programme (2024 election).",
+        "DEM": "Against both main parties."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Workers Party of Britain",
+          "url": "https://en.wikipedia.org/wiki/Workers_Party_of_Britain"
+        }
+      ]
+    }
+  ]
+}

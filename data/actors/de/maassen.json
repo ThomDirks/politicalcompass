@@ -1,0 +1,83 @@
+{
+  "id": "de-maassen",
+  "type": "person",
+  "kind": "politician",
+  "name": "Hans-Georg Maaßen",
+  "full_name": "Former head of the domestic intelligence service, leader of the WerteUnion",
+  "country": "DE",
+  "active": {
+    "from": 2012,
+    "to": null
+  },
+  "party": "de-werteunion",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2025,
+      "label": "WerteUnion",
+      "method": "hand",
+      "basis": "Starts from the WerteUnion profile (Founding programme), adjusted where Hans-Georg Maaßen's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 2,
+        "CLI": 3,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [55, "l"],
+        "eco_reg": [55, "l"],
+        "eco_lab": [55, "l"],
+        "eco_tax": [55, "l"],
+        "soc_fam": [50, "l"],
+        "soc_lgbt": [50, "l"],
+        "soc_rel": [50, "l"],
+        "soc_mor": [50, "l"],
+        "lib_priv": [40, "l"],
+        "lib_just": [40, "l"],
+        "lib_speech": [40, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [80, "l"],
+        "mig_asy": [80, "l"],
+        "mig_int": [80, "l"],
+        "mig_nat": [80, "l"],
+        "int_eu": [40, "l"],
+        "int_trade": [40, "l"],
+        "int_def": [40, "l"],
+        "int_aid": [40, "l"],
+        "cli_amb": [60, "l"],
+        "cli_pay": [60, "l"],
+        "cli_nat": [60, "l"],
+        "cli_intl": [60, "l"],
+        "tec_ai": [30, "l"],
+        "tec_bio": [30, "l"],
+        "tec_nuc": [30, "l"],
+        "tec_big": [30, "l"],
+        "dem_trust": [55, "l"],
+        "dem_direct": [55, "l"],
+        "dem_courts": [55, "l"],
+        "dem_central": [55, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the WerteUnion profile (Founding programme).",
+        "SOC": "In line with the WerteUnion profile (Founding programme).",
+        "LIB": "In line with the WerteUnion profile (Founding programme).",
+        "MIG": "In line with the WerteUnion profile (Founding programme).",
+        "INT": "In line with the WerteUnion profile (Founding programme).",
+        "CLI": "In line with the WerteUnion profile (Founding programme).",
+        "TEC": "In line with the WerteUnion profile (Founding programme).",
+        "DEM": "In line with the WerteUnion profile (Founding programme)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Hans-Georg Maaßen",
+          "url": "https://en.wikipedia.org/wiki/Hans-Georg_Maaßen"
+        }
+      ]
+    }
+  ]
+}

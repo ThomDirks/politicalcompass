@@ -1,0 +1,83 @@
+{
+  "id": "nl-vanmierlo",
+  "type": "person",
+  "kind": "politician",
+  "name": "Hans van Mierlo",
+  "full_name": "Founder of D66",
+  "country": "NL",
+  "active": {
+    "from": 1966,
+    "to": 1998
+  },
+  "party": "nl-d66",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1967,
+      "label": "D66 founding",
+      "method": "hand",
+      "basis": "Starts from the D66 profile (Current (Nov 2026)), adjusted where Hans van Mierlo's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 4,
+        "TEC": 3,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [15, "m"],
+        "eco_reg": [-5, "m"],
+        "eco_lab": [-5, "m"],
+        "eco_tax": [-10, "m"],
+        "soc_fam": [-60, "l"],
+        "soc_lgbt": [-75, "l"],
+        "soc_rel": [-65, "l"],
+        "soc_mor": [-70, "l"],
+        "lib_priv": [-30, "m"],
+        "lib_just": [-37, "m"],
+        "lib_speech": [5, "m"],
+        "lib_emerg": [-40, "m"],
+        "mig_lvl": [-5, "l"],
+        "mig_asy": [-15, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [-23, "l"],
+        "int_eu": [-80, "l"],
+        "int_trade": [-60, "l"],
+        "int_def": [-50, "l"],
+        "int_aid": [-40, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-35, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [55, "m"],
+        "tec_big": null,
+        "dem_trust": [-10, "l"],
+        "dem_direct": [60, "l"],
+        "dem_courts": [-80, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the D66 profile (Current (Nov 2026)).",
+        "SOC": "Progressive for the 1960s, measured against today's norms.",
+        "LIB": "In line with the D66 profile (Current (Nov 2026)).",
+        "MIG": "Migration was not a political divide.",
+        "INT": "In line with the D66 profile (Current (Nov 2026)).",
+        "CLI": "Climate was not yet an issue.",
+        "TEC": "In line with the D66 profile (Current (Nov 2026)).",
+        "DEM": "Founded D66 to 'blow up' the pillarised party system: an elected prime minister, elected mayors and referendums."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Hans van Mierlo",
+          "url": "https://en.wikipedia.org/wiki/Hans_van_Mierlo"
+        }
+      ]
+    }
+  ]
+}

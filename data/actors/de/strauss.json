@@ -1,0 +1,83 @@
+{
+  "id": "de-strauss",
+  "type": "person",
+  "kind": "politician",
+  "name": "Franz Josef Strauß",
+  "full_name": "Leader of the CSU 1961 to 1988, Minister-President of Bavaria",
+  "country": "DE",
+  "active": {
+    "from": 1949,
+    "to": 1988
+  },
+  "party": "de-csu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1980,
+      "label": "Chancellor candidate",
+      "method": "hand",
+      "basis": "Starts from the CSU profile (Current (Nov 2026)), adjusted where Franz Josef Strauß's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 4,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [35, "m"],
+        "eco_reg": [30, "m"],
+        "eco_lab": [10, "m"],
+        "eco_tax": [35, "m"],
+        "soc_fam": [43, "l"],
+        "soc_lgbt": [40, "l"],
+        "soc_rel": [60, "l"],
+        "soc_mor": [65, "l"],
+        "lib_priv": [65, "l"],
+        "lib_just": [90, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [65, "l"],
+        "mig_asy": [75, "l"],
+        "mig_int": [65, "l"],
+        "mig_nat": [55, "l"],
+        "int_eu": [-35, "m"],
+        "int_trade": [-25, "m"],
+        "int_def": [-90, "l"],
+        "int_aid": [20, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [65, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [20, "m"],
+        "tec_nuc": [80, "l"],
+        "tec_big": null,
+        "dem_trust": [-45, "m"],
+        "dem_direct": [-30, "m"],
+        "dem_courts": [-45, "m"],
+        "dem_central": [-75, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CSU profile (Current (Nov 2026)).",
+        "SOC": "Catholic conservative: 'right of the CSU there can be no democratic party'.",
+        "LIB": "Hard line on law and order in the 1970s.",
+        "MIG": "In line with the CSU profile (Current (Nov 2026)).",
+        "INT": "Hawkish Cold Warrior, built up the Bundeswehr as defence minister.",
+        "CLI": "Not yet a political issue.",
+        "TEC": "Champion of nuclear power and aerospace.",
+        "DEM": "In line with the CSU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Franz Josef Strauß",
+          "url": "https://en.wikipedia.org/wiki/Franz_Josef_Strauß"
+        }
+      ]
+    }
+  ]
+}

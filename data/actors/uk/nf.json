@@ -1,0 +1,82 @@
+{
+  "id": "uk-nf",
+  "type": "party",
+  "extra": true,
+  "name": "National Front",
+  "full_name": "National Front",
+  "country": "UK",
+  "active": {
+    "from": 1967,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1977,
+      "label": "1970s peak",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-10, "l"],
+        "eco_reg": [-10, "l"],
+        "eco_lab": [-10, "l"],
+        "eco_tax": [-10, "l"],
+        "soc_fam": [75, "l"],
+        "soc_lgbt": [75, "l"],
+        "soc_rel": [75, "l"],
+        "soc_mor": [75, "l"],
+        "lib_priv": [70, "l"],
+        "lib_just": [70, "l"],
+        "lib_speech": [70, "l"],
+        "lib_emerg": [70, "l"],
+        "mig_lvl": [100, "l"],
+        "mig_asy": [100, "l"],
+        "mig_int": [100, "l"],
+        "mig_nat": [100, "l"],
+        "int_eu": [85, "l"],
+        "int_trade": [85, "l"],
+        "int_def": [85, "l"],
+        "int_aid": [85, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [0, "l"],
+        "tec_nuc": [0, "l"],
+        "tec_big": null,
+        "dem_trust": [75, "l"],
+        "dem_direct": [75, "l"],
+        "dem_courts": [75, "l"],
+        "dem_central": [75, "l"]
+      },
+      "notes": {
+        "ECO": "Scored at topic level from the party's programme (1970s peak).",
+        "SOC": "Scored at topic level from the party's programme (1970s peak).",
+        "LIB": "Scored at topic level from the party's programme (1970s peak).",
+        "MIG": "Wanted non-white immigration stopped and 'compulsory repatriation'.",
+        "INT": "Against the EEC and the Commonwealth.",
+        "CLI": "Scored at topic level from the party's programme (1970s peak).",
+        "TEC": "Scored at topic level from the party's programme (1970s peak).",
+        "DEM": "Hostile to the parliamentary establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: National Front (UK)",
+          "url": "https://en.wikipedia.org/wiki/National_Front_(UK)"
+        }
+      ]
+    }
+  ]
+}

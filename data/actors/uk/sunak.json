@@ -1,0 +1,83 @@
+{
+  "id": "uk-sunak",
+  "type": "person",
+  "kind": "politician",
+  "name": "Rishi Sunak",
+  "full_name": "Prime Minister 2022 to 2024 (Conservative)",
+  "country": "UK",
+  "active": {
+    "from": 2015,
+    "to": null
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2023,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Current (Nov 2026)), adjusted where Rishi Sunak's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [65, "m"],
+        "eco_reg": [55, "m"],
+        "eco_lab": [60, "m"],
+        "eco_tax": [55, "m"],
+        "soc_fam": [25, "m"],
+        "soc_lgbt": [20, "m"],
+        "soc_rel": [10, "m"],
+        "soc_mor": [20, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [-30, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [70, "m"],
+        "mig_asy": [80, "m"],
+        "mig_int": [55, "m"],
+        "mig_nat": [45, "m"],
+        "int_eu": [52, "m"],
+        "int_trade": [-40, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [45, "m"],
+        "cli_amb": [40, "l"],
+        "cli_pay": [85, "l"],
+        "cli_nat": [50, "l"],
+        "cli_intl": [50, "l"],
+        "tec_ai": [60, "l"],
+        "tec_bio": [75, "l"],
+        "tec_nuc": [95, "l"],
+        "tec_big": [45, "l"],
+        "dem_trust": [5, "m"],
+        "dem_direct": [-40, "m"],
+        "dem_courts": [40, "m"],
+        "dem_central": [20, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "SOC": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "LIB": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "MIG": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "INT": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "CLI": "Slowed net zero measures such as the petrol car ban.",
+        "TEC": "Hosted the first AI Safety Summit, pro-innovation.",
+        "DEM": "In line with the Conservatives profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Rishi Sunak",
+          "url": "https://en.wikipedia.org/wiki/Rishi_Sunak"
+        }
+      ]
+    }
+  ]
+}

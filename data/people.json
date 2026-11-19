@@ -2917,6 +2917,971 @@
     "INT": "Pro-Brexit trade unionist.",
     "DEM": "Critical of a metropolitan elite in politics and media."
    }
+  },
+  {
+   "id": "nl-vanmierlo",
+   "name": "Hans van Mierlo",
+   "role": "Founder of D66",
+   "active": {
+    "from": 1966,
+    "to": 1998
+   },
+   "year": 1967,
+   "label": "D66 founding",
+   "base": "nl-d66",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 15,
+    "MIG": 15,
+    "CLI": 20,
+    "INT": 10
+   },
+   "facets": {
+    "dem_direct": 60,
+    "dem_trust": -10
+   },
+   "notes": {
+    "DEM": "Founded D66 to 'blow up' the pillarised party system: an elected prime minister, elected mayors and referendums.",
+    "SOC": "Progressive for the 1960s, measured against today's norms.",
+    "MIG": "Migration was not a political divide.",
+    "CLI": "Climate was not yet an issue."
+   }
+  },
+  {
+   "id": "nl-terlouw",
+   "name": "Jan Terlouw",
+   "role": "D66 leader 1973 to 1982, writer",
+   "active": {
+    "from": 1971,
+    "to": 1991
+   },
+   "year": 1981,
+   "label": "D66 leader",
+   "base": "nl-d66",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 10,
+    "MIG": 15,
+    "TEC": -25,
+    "CLI": -5
+   },
+   "facets": {
+    "tec_nuc": -70
+   },
+   "notes": {
+    "TEC": "Physicist who turned against nuclear power.",
+    "CLI": "Early warner about the environment; later known for his 'touw van vertrouwen' speech on climate.",
+    "SOC": "Progressive for the early 1980s.",
+    "MIG": "Before migration was the dividing line it is now."
+   }
+  },
+  {
+   "id": "nl-halsema",
+   "name": "Femke Halsema",
+   "role": "GroenLinks leader 2002 to 2010, mayor of Amsterdam",
+   "active": {
+    "from": 1998,
+    "to": null
+   },
+   "year": 2008,
+   "label": "GroenLinks leader",
+   "base": "nl-pro",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 5,
+    "SOC": -10,
+    "LIB": -15,
+    "MIG": -10
+   },
+   "notes": {
+    "ECO": "Led GroenLinks' 'left-liberal' turn.",
+    "LIB": "Strong on civil liberties and privacy.",
+    "SOC": "Progressive on every social question.",
+    "MIG": "Liberal on asylum and integration."
+   }
+  },
+  {
+   "id": "nl-klaver",
+   "name": "Jesse Klaver",
+   "role": "GroenLinks leader 2015 to 2023, leader of GroenLinks-PvdA",
+   "active": {
+    "from": 2010,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-pro",
+   "base_year": 2026,
+   "axes": {
+    "CLI": -10
+   },
+   "notes": {
+    "CLI": "Made climate the centre of GroenLinks' campaigns."
+   }
+  },
+  {
+   "id": "nl-roemer",
+   "name": "Emile Roemer",
+   "role": "Leader of the SP 2010 to 2015",
+   "active": {
+    "from": 2006,
+    "to": 2023
+   },
+   "year": 2012,
+   "label": "SP leader",
+   "base": "nl-sp",
+   "base_year": 2026,
+   "axes": {
+    "MIG": 25,
+    "SOC": 10
+   },
+   "facets": {
+    "int_eu": 45
+   },
+   "notes": {
+    "MIG": "Warned about labour migration from eastern Europe undercutting wages.",
+    "SOC": "Down-to-earth, less focused on cultural questions.",
+    "INT": "'Not one euro more to Greece': critical of EU rescue funds."
+   }
+  },
+  {
+   "id": "nl-vanagt",
+   "name": "Dries van Agt",
+   "role": "Prime Minister 1977 to 1982 (CDA)",
+   "active": {
+    "from": 1971,
+    "to": 2024
+   },
+   "year": 1977,
+   "label": "Prime Minister",
+   "base": "nl-cda",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 20,
+    "MIG": 10,
+    "CLI": 20
+   },
+   "notes": {
+    "SOC": "Catholic and conservative on abortion and euthanasia in the 1970s.",
+    "MIG": "Before migration was a political divide.",
+    "CLI": "Climate was not yet an issue."
+   }
+  },
+  {
+   "id": "nl-koekoek",
+   "name": "Hendrik Koekoek",
+   "role": "Founder and leader of the Boerenpartij",
+   "active": {
+    "from": 1958,
+    "to": 1981
+   },
+   "year": 1963,
+   "label": "Boerenpartij",
+   "base": "nl-boer",
+   "base_year": 1963
+  },
+  {
+   "id": "nl-wiegel",
+   "name": "Hans Wiegel",
+   "role": "VVD leader 1971 to 1982, deputy prime minister",
+   "active": {
+    "from": 1967,
+    "to": 2000
+   },
+   "year": 1977,
+   "label": "VVD leader",
+   "base": "nl-vvd",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 10,
+    "MIG": -15,
+    "CLI": 20,
+    "TEC": -10
+   },
+   "facets": {
+    "dem_direct": -50
+   },
+   "notes": {
+    "ECO": "Turned the VVD into a popular party of 'gewone mensen' who want lower taxes.",
+    "SOC": "Liberal, judged by 1970s norms.",
+    "MIG": "Not yet a divide.",
+    "DEM": "Later blocked the referendum bill in the Senate ('Nacht van Wiegel').",
+    "CLI": "Climate was not yet on the agenda."
+   }
+  },
+  {
+   "id": "nl-ouwehand",
+   "name": "Esther Ouwehand",
+   "role": "Leader of the Party for the Animals",
+   "active": {
+    "from": 2006,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-pvdd",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-simons",
+   "name": "Sylvana Simons",
+   "role": "Founder of BIJ1",
+   "active": {
+    "from": 2016,
+    "to": 2023
+   },
+   "year": 2021,
+   "label": "BIJ1 MP",
+   "base": "nl-bij1",
+   "base_year": 2025
+  },
+  {
+   "id": "de-stresemann",
+   "name": "Gustav Stresemann",
+   "role": "Chancellor 1923, foreign minister 1923 to 1929 (DVP)",
+   "active": {
+    "from": 1907,
+    "to": 1929
+   },
+   "year": 1925,
+   "label": "Foreign minister",
+   "base": "de-dvp",
+   "base_year": 1925,
+   "axes": {
+    "INT": -20,
+    "DEM": -15
+   },
+   "notes": {
+    "INT": "Locarno and Germany's entry into the League of Nations; Nobel Peace Prize 1926.",
+    "DEM": "A monarchist turned 'republican by reason' who defended Weimar."
+   }
+  },
+  {
+   "id": "de-ebert",
+   "name": "Friedrich Ebert",
+   "role": "First President of the Weimar Republic (SPD)",
+   "active": {
+    "from": 1900,
+    "to": 1925
+   },
+   "year": 1919,
+   "label": "President",
+   "base": "de-spd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -15,
+    "SOC": 40,
+    "MIG": 20,
+    "LIB": 30,
+    "CLI": 10
+   },
+   "notes": {
+    "ECO": "Social democrat of the old school: unions and the eight-hour day.",
+    "SOC": "Measured against today's norms.",
+    "LIB": "Put down revolutionary uprisings to protect the new republic.",
+    "MIG": "Not an issue in his time.",
+    "DEM": "Chose parliamentary democracy over a council republic."
+   }
+  },
+  {
+   "id": "de-erhard",
+   "name": "Ludwig Erhard",
+   "role": "Economy minister 1949 to 1963, Chancellor 1963 to 1966 (CDU)",
+   "active": {
+    "from": 1949,
+    "to": 1977
+   },
+   "year": 1957,
+   "label": "Economy minister",
+   "base": "de-cdu",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 20,
+    "SOC": 25,
+    "MIG": 15,
+    "CLI": 20
+   },
+   "notes": {
+    "ECO": "Father of the social market economy: free prices, competition, 'Wohlstand für alle'.",
+    "SOC": "Values of the 1950s.",
+    "MIG": "Guest-worker era, not yet a divide.",
+    "CLI": "Not yet an issue."
+   }
+  },
+  {
+   "id": "de-strauss",
+   "name": "Franz Josef Strauß",
+   "role": "Leader of the CSU 1961 to 1988, Minister-President of Bavaria",
+   "active": {
+    "from": 1949,
+    "to": 1988
+   },
+   "year": 1980,
+   "label": "Chancellor candidate",
+   "base": "de-csu",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 15,
+    "LIB": 15,
+    "CLI": 20,
+    "MIG": 5
+   },
+   "facets": {
+    "tec_nuc": 80,
+    "int_def": -90
+   },
+   "notes": {
+    "SOC": "Catholic conservative: 'right of the CSU there can be no democratic party'.",
+    "LIB": "Hard line on law and order in the 1970s.",
+    "INT": "Hawkish Cold Warrior, built up the Bundeswehr as defence minister.",
+    "TEC": "Champion of nuclear power and aerospace.",
+    "CLI": "Not yet a political issue."
+   }
+  },
+  {
+   "id": "de-kelly",
+   "name": "Petra Kelly",
+   "role": "Co-founder of the Greens",
+   "active": {
+    "from": 1979,
+    "to": 1992
+   },
+   "year": 1983,
+   "label": "Green MP",
+   "base": "de-gruene",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -25,
+    "DEM": 35,
+    "TEC": -35,
+    "INT": 30,
+    "LIB": -20
+   },
+   "facets": {
+    "int_def": 95,
+    "tec_nuc": -100
+   },
+   "notes": {
+    "ECO": "Ecological and anti-capitalist roots of the early Greens.",
+    "DEM": "'Anti-party party': grassroots democracy against the establishment.",
+    "TEC": "Against nuclear power and nuclear weapons.",
+    "INT": "Pacifist, against NATO missiles.",
+    "LIB": "Human rights and nonviolence."
+   }
+  },
+  {
+   "id": "de-fischer",
+   "name": "Joschka Fischer",
+   "role": "Foreign minister and Vice Chancellor 1998 to 2005 (Greens)",
+   "active": {
+    "from": 1983,
+    "to": 2006
+   },
+   "year": 1999,
+   "label": "Foreign minister",
+   "base": "de-gruene",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10,
+    "CLI": 5
+   },
+   "facets": {
+    "int_def": -50,
+    "int_eu": -90
+   },
+   "notes": {
+    "ECO": "Led the pragmatic 'Realo' wing.",
+    "INT": "Backed the Kosovo intervention ('never again Auschwitz') and a federal Europe.",
+    "CLI": "Climate policy was taking shape under red-green."
+   }
+  },
+  {
+   "id": "de-soeder",
+   "name": "Markus Söder",
+   "role": "Minister-President of Bavaria, leader of the CSU",
+   "active": {
+    "from": 1994,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-csu",
+   "base_year": 2026
+  },
+  {
+   "id": "de-klingbeil",
+   "name": "Lars Klingbeil",
+   "role": "SPD co-leader, Vice Chancellor and finance minister",
+   "active": {
+    "from": 2005,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-spd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 5
+   },
+   "facets": {
+    "int_def": -80
+   },
+   "notes": {
+    "ECO": "From the SPD's pragmatic centre.",
+    "INT": "Pushed the SPD towards higher defence spending."
+   }
+  },
+  {
+   "id": "de-baerbock",
+   "name": "Annalena Baerbock",
+   "role": "Greens co-leader, foreign minister 2021 to 2025",
+   "active": {
+    "from": 2013,
+    "to": null
+   },
+   "year": 2023,
+   "label": "Foreign minister",
+   "base": "de-gruene",
+   "base_year": 2026,
+   "facets": {
+    "int_def": -85
+   },
+   "notes": {
+    "INT": "'Feminist foreign policy' and strong support for arming Ukraine."
+   }
+  },
+  {
+   "id": "de-maassen",
+   "name": "Hans-Georg Maaßen",
+   "role": "Former head of the domestic intelligence service, leader of the WerteUnion",
+   "active": {
+    "from": 2012,
+    "to": null
+   },
+   "year": 2025,
+   "label": "WerteUnion",
+   "base": "de-werteunion",
+   "base_year": 2025
+  },
+  {
+   "id": "uk-lloydgeorge",
+   "name": "David Lloyd George",
+   "role": "Chancellor 1908 to 1915, Prime Minister 1916 to 1922 (Liberal)",
+   "active": {
+    "from": 1890,
+    "to": 1945
+   },
+   "year": 1909,
+   "label": "People's Budget",
+   "base": "uk-liberal",
+   "base_year": 1906,
+   "axes": {
+    "ECO": -20,
+    "DEM": 10
+   },
+   "notes": {
+    "ECO": "The 'People's Budget': taxes on land and the rich to pay for pensions and national insurance.",
+    "DEM": "Took on the House of Lords."
+   }
+  },
+  {
+   "id": "uk-gladstone",
+   "name": "William Gladstone",
+   "role": "Prime Minister four times between 1868 and 1894 (Liberal)",
+   "active": {
+    "from": 1832,
+    "to": 1895
+   },
+   "year": 1880,
+   "label": "Midlothian campaign",
+   "base": "uk-liberal",
+   "base_year": 1906,
+   "axes": {
+    "ECO": 25,
+    "SOC": 20
+   },
+   "facets": {
+    "int_def": 30
+   },
+   "notes": {
+    "ECO": "Free trade, low taxes and 'retrenchment' of public spending.",
+    "SOC": "Devout Anglican moralist.",
+    "INT": "Against imperial adventures; for Irish Home Rule."
+   }
+  },
+  {
+   "id": "uk-disraeli",
+   "name": "Benjamin Disraeli",
+   "role": "Prime Minister 1868 and 1874 to 1880 (Conservative)",
+   "active": {
+    "from": 1837,
+    "to": 1881
+   },
+   "year": 1874,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 1987,
+   "axes": {
+    "ECO": -40,
+    "SOC": 30,
+    "MIG": 20,
+    "DEM": -10
+   },
+   "facets": {
+    "int_def": -60,
+    "int_trade": 50
+   },
+   "notes": {
+    "ECO": "'One Nation' Toryism: public health and factory acts for the working class.",
+    "SOC": "Church, Crown and traditional order.",
+    "INT": "Imperialist; made Victoria Empress of India.",
+    "MIG": "Not an issue in his time."
+   }
+  },
+  {
+   "id": "uk-paisley",
+   "name": "Ian Paisley",
+   "role": "Founder of the DUP, First Minister of Northern Ireland 2007 to 2008",
+   "active": {
+    "from": 1971,
+    "to": 2010
+   },
+   "year": 1998,
+   "label": "Against the Good Friday Agreement",
+   "base": "uk-dup",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 15,
+    "DEM": 30
+   },
+   "notes": {
+    "SOC": "Free Presbyterian preacher and the loudest voice of 'Ulster says no'; deeply conservative on morals.",
+    "DEM": "Opposed the 1998 agreement, later shared power with Sinn Féin."
+   }
+  },
+  {
+   "id": "uk-adams",
+   "name": "Gerry Adams",
+   "role": "President of Sinn Féin 1983 to 2018",
+   "active": {
+    "from": 1983,
+    "to": 2018
+   },
+   "year": 2010,
+   "label": "Sinn Féin president",
+   "base": "uk-sf",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-emiliband",
+   "name": "Ed Miliband",
+   "role": "Labour leader 2010 to 2015, energy secretary",
+   "active": {
+    "from": 2005,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Energy secretary",
+   "base": "uk-labour",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -15,
+    "CLI": -25
+   },
+   "notes": {
+    "ECO": "'Predistribution', energy price freezes and responsible capitalism.",
+    "CLI": "Wrote the Climate Change Act as minister in 2008; now drives clean power by 2030."
+   }
+  },
+  {
+   "id": "uk-sunak",
+   "name": "Rishi Sunak",
+   "role": "Prime Minister 2022 to 2024 (Conservative)",
+   "active": {
+    "from": 2015,
+    "to": null
+   },
+   "year": 2023,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "CLI": 10,
+    "TEC": 15
+   },
+   "facets": {
+    "tec_ai": 60
+   },
+   "notes": {
+    "CLI": "Slowed net zero measures such as the petrol car ban.",
+    "TEC": "Hosted the first AI Safety Summit, pro-innovation."
+   }
+  },
+  {
+   "id": "uk-foot",
+   "name": "Michael Foot",
+   "role": "Labour leader 1980 to 1983",
+   "active": {
+    "from": 1945,
+    "to": 1992
+   },
+   "year": 1983,
+   "label": "Labour leader",
+   "base": "uk-labour",
+   "base_year": 1983,
+   "facets": {
+    "int_def": 90
+   },
+   "notes": {
+    "INT": "Lifelong campaigner for nuclear disarmament."
+   }
+  },
+  {
+   "id": "uk-salmond",
+   "name": "Alex Salmond",
+   "role": "First Minister of Scotland 2007 to 2014, founder of Alba",
+   "active": {
+    "from": 1987,
+    "to": 2024
+   },
+   "year": 2014,
+   "label": "Independence referendum",
+   "base": "uk-snp",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 15,
+    "SOC": 15,
+    "CLI": 10
+   },
+   "notes": {
+    "ECO": "Wanted low corporation tax for an independent Scotland, alongside free tuition.",
+    "SOC": "More traditional than the SNP after him.",
+    "CLI": "Backed renewables and North Sea oil alike."
+   }
+  },
+  {
+   "id": "uk-burnham",
+   "name": "Andy Burnham",
+   "role": "Mayor of Greater Manchester (Labour)",
+   "active": {
+    "from": 2001,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "uk-labour",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -20,
+    "DEM": 15
+   },
+   "facets": {
+    "dem_central": 90
+   },
+   "notes": {
+    "ECO": "Public control of buses and rail, against austerity.",
+    "DEM": "'King of the North': power to the regions, against Westminster centralism."
+   }
+  },
+  {
+   "id": "us-lincoln",
+   "name": "Abraham Lincoln",
+   "role": "President 1861 to 1865 (Republican)",
+   "active": {
+    "from": 1834,
+    "to": 1865
+   },
+   "year": 1860,
+   "label": "1860 campaign",
+   "base": "us-whig",
+   "base_year": 1844,
+   "axes": {
+    "SOC": -5,
+    "DEM": -5
+   },
+   "notes": {
+    "SOC": "Against the spread of slavery; later abolition through the Thirteenth Amendment.",
+    "DEM": "'Government of the people, by the people, for the people.'",
+    "ECO": "Whig economics: tariffs, railways, homesteads."
+   }
+  },
+  {
+   "id": "us-debs",
+   "name": "Eugene V. Debs",
+   "role": "Socialist Party presidential candidate, five times",
+   "active": {
+    "from": 1893,
+    "to": 1926
+   },
+   "year": 1912,
+   "label": "1912 campaign",
+   "base": "us-socialist",
+   "base_year": 1912
+  },
+  {
+   "id": "us-goldwater",
+   "name": "Barry Goldwater",
+   "role": "Senator from Arizona, 1964 Republican nominee",
+   "active": {
+    "from": 1953,
+    "to": 1987
+   },
+   "year": 1964,
+   "label": "1964 nominee",
+   "base": "us-gop",
+   "base_year": 1980,
+   "axes": {
+    "ECO": 15,
+    "LIB": -15,
+    "DEM": 20
+   },
+   "facets": {
+    "int_def": -90
+   },
+   "notes": {
+    "ECO": "'Extremism in the defense of liberty is no vice': small government and lower taxes.",
+    "LIB": "Libertarian streak; later backed gay service members.",
+    "INT": "Hard-line anti-communist.",
+    "DEM": "Against the Washington establishment of both parties."
+   }
+  },
+  {
+   "id": "us-nixon",
+   "name": "Richard Nixon",
+   "role": "President 1969 to 1974 (Republican)",
+   "active": {
+    "from": 1947,
+    "to": 1974
+   },
+   "year": 1972,
+   "label": "President",
+   "base": "us-gop",
+   "base_year": 1980,
+   "axes": {
+    "ECO": -30,
+    "CLI": -30,
+    "LIB": 15,
+    "INT": -10
+   },
+   "notes": {
+    "ECO": "Accepted wage and price controls and a large federal role.",
+    "CLI": "Created the EPA and signed the Clean Air Act.",
+    "LIB": "Law and order and the 'silent majority'.",
+    "INT": "Détente with the Soviet Union and the opening to China."
+   }
+  },
+  {
+   "id": "us-wallace",
+   "name": "George Wallace",
+   "role": "Governor of Alabama, 1968 American Independent candidate",
+   "active": {
+    "from": 1963,
+    "to": 1987
+   },
+   "year": 1968,
+   "label": "1968 campaign",
+   "base": "us-aip",
+   "base_year": 1968
+  },
+  {
+   "id": "us-nader",
+   "name": "Ralph Nader",
+   "role": "Consumer advocate, Green presidential candidate 2000",
+   "kind": "public figure",
+   "active": {
+    "from": 1965,
+    "to": null
+   },
+   "year": 2000,
+   "label": "2000 campaign",
+   "base": "us-green",
+   "base_year": 2024,
+   "axes": {
+    "SOC": 15,
+    "MIG": 15,
+    "LIB": 5
+   },
+   "notes": {
+    "ECO": "Against corporate power and for consumer protection.",
+    "SOC": "Focused on economics more than culture.",
+    "MIG": "Less outspoken on immigration than today's Greens."
+   }
+  },
+  {
+   "id": "us-hclinton",
+   "name": "Hillary Clinton",
+   "role": "Secretary of State 2009 to 2013, 2016 Democratic nominee",
+   "active": {
+    "from": 2001,
+    "to": 2016
+   },
+   "year": 2016,
+   "label": "2016 nominee",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10
+   },
+   "facets": {
+    "int_def": -75
+   },
+   "notes": {
+    "ECO": "Centrist economics with an expanded Affordable Care Act.",
+    "INT": "Interventionist on Libya and Syria."
+   }
+  },
+  {
+   "id": "us-warren",
+   "name": "Elizabeth Warren",
+   "role": "Senator from Massachusetts (Democrat)",
+   "active": {
+    "from": 2013,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -30,
+    "DEM": 10
+   },
+   "facets": {
+    "tec_big": -80
+   },
+   "notes": {
+    "ECO": "A wealth tax and tough regulation of Wall Street.",
+    "TEC": "Wants to break up big tech.",
+    "DEM": "Fights corporate influence in Washington."
+   }
+  },
+  {
+   "id": "us-romney",
+   "name": "Mitt Romney",
+   "role": "Governor of Massachusetts, 2012 Republican nominee",
+   "active": {
+    "from": 2003,
+    "to": 2025
+   },
+   "year": 2012,
+   "label": "2012 nominee",
+   "base": "us-gop",
+   "base_year": 2004,
+   "axes": {
+    "ECO": 5,
+    "MIG": 10,
+    "DEM": -15
+   },
+   "notes": {
+    "ECO": "Business-minded fiscal conservative; built a health plan in Massachusetts.",
+    "MIG": "Spoke of 'self-deportation' in 2012.",
+    "DEM": "Institutionalist; later the only Republican senator to vote to convict Trump twice."
+   }
+  },
+  {
+   "id": "us-desantis",
+   "name": "Ron DeSantis",
+   "role": "Governor of Florida (Republican)",
+   "active": {
+    "from": 2013,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "us-gop",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10,
+    "DEM": -10
+   },
+   "notes": {
+    "ECO": "More conventional small-government conservative than Trump.",
+    "DEM": "Works through state institutions; 'where woke goes to die'."
+   }
+  },
+  {
+   "id": "us-buttigieg",
+   "name": "Pete Buttigieg",
+   "role": "Transportation secretary 2021 to 2025 (Democrat)",
+   "active": {
+    "from": 2012,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Transportation secretary",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10,
+    "TEC": 10
+   },
+   "notes": {
+    "ECO": "Pragmatic centrist on the economy.",
+    "TEC": "Infrastructure, EVs and innovation."
+   }
+  },
+  {
+   "id": "us-mamdani",
+   "name": "Zohran Mamdani",
+   "role": "Mayor of New York City (Democrat, DSA)",
+   "active": {
+    "from": 2021,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Mayor",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -50,
+    "MIG": -20,
+    "DEM": 15,
+    "LIB": -10
+   },
+   "facets": {
+    "int_def": 60
+   },
+   "notes": {
+    "ECO": "Democratic socialist: rent freezes, free buses, city-run grocery stores and higher taxes on the rich.",
+    "MIG": "Defends New York as a sanctuary city.",
+    "DEM": "Won against the party establishment.",
+    "LIB": "Wants to shift money from policing to public safety services.",
+    "INT": "Critical of US military aid to Israel."
+   }
+  },
+  {
+   "id": "us-oliver",
+   "name": "Chase Oliver",
+   "role": "Libertarian presidential candidate 2024",
+   "active": {
+    "from": 2020,
+    "to": null
+   },
+   "year": 2024,
+   "label": "2024 candidate",
+   "base": "us-libertarian",
+   "base_year": 2024,
+   "axes": {
+    "SOC": -15,
+    "MIG": -20
+   },
+   "notes": {
+    "SOC": "Openly gay, progressive on social questions.",
+    "MIG": "Wants to make legal immigration much easier."
+   }
+  },
+  {
+   "id": "us-stein",
+   "name": "Jill Stein",
+   "role": "Green presidential candidate 2012, 2016 and 2024",
+   "active": {
+    "from": 2002,
+    "to": null
+   },
+   "year": 2024,
+   "label": "2024 candidate",
+   "base": "us-green",
+   "base_year": 2024
   }
  ]
 }

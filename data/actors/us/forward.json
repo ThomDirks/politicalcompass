@@ -1,0 +1,82 @@
+{
+  "id": "us-forward",
+  "type": "party",
+  "extra": true,
+  "name": "Forward",
+  "full_name": "Forward Party",
+  "country": "US",
+  "active": {
+    "from": 2022,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 1,
+        "SOC": 1,
+        "LIB": 1,
+        "MIG": 1,
+        "INT": 1,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [0, "l"],
+        "eco_reg": [0, "l"],
+        "eco_lab": [0, "l"],
+        "eco_tax": [0, "l"],
+        "soc_fam": [-15, "l"],
+        "soc_lgbt": [-15, "l"],
+        "soc_rel": [-15, "l"],
+        "soc_mor": [-15, "l"],
+        "lib_priv": [-10, "l"],
+        "lib_just": [-10, "l"],
+        "lib_speech": [-10, "l"],
+        "lib_emerg": [-10, "l"],
+        "mig_lvl": [10, "l"],
+        "mig_asy": [10, "l"],
+        "mig_int": [10, "l"],
+        "mig_nat": [10, "l"],
+        "int_eu": [-10, "l"],
+        "int_trade": [-10, "l"],
+        "int_def": [-10, "l"],
+        "int_aid": [-10, "l"],
+        "cli_amb": [-10, "l"],
+        "cli_pay": [-10, "l"],
+        "cli_nat": [-10, "l"],
+        "cli_intl": [-10, "l"],
+        "tec_ai": [25, "l"],
+        "tec_bio": [25, "l"],
+        "tec_nuc": [25, "l"],
+        "tec_big": [25, "l"],
+        "dem_trust": [55, "l"],
+        "dem_direct": [70, "m"],
+        "dem_courts": [55, "l"],
+        "dem_central": [55, "l"]
+      },
+      "notes": {
+        "ECO": "Scored at topic level from the party's programme (Current).",
+        "SOC": "Scored at topic level from the party's programme (Current).",
+        "LIB": "Scored at topic level from the party's programme (Current).",
+        "MIG": "Scored at topic level from the party's programme (Current).",
+        "INT": "Scored at topic level from the party's programme (Current).",
+        "CLI": "Scored at topic level from the party's programme (Current).",
+        "TEC": "Optimistic about technology in government.",
+        "DEM": "Not left, not right, forward: ranked-choice voting and open primaries to break the two-party system."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Forward Party (United States)",
+          "url": "https://en.wikipedia.org/wiki/Forward_Party_(United_States)"
+        }
+      ]
+    }
+  ]
+}

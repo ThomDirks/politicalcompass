@@ -1,0 +1,82 @@
+{
+  "id": "nl-ds70",
+  "type": "party",
+  "extra": true,
+  "name": "DS'70",
+  "full_name": "Democratisch Socialisten '70",
+  "country": "NL",
+  "active": {
+    "from": 1970,
+    "to": 1983
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1971,
+      "label": "1971 election",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [35, "l"],
+        "eco_reg": [35, "l"],
+        "eco_lab": [35, "l"],
+        "eco_tax": [50, "m"],
+        "soc_fam": [-15, "l"],
+        "soc_lgbt": [-15, "l"],
+        "soc_rel": [-15, "l"],
+        "soc_mor": [-15, "l"],
+        "lib_priv": [15, "l"],
+        "lib_just": [15, "l"],
+        "lib_speech": [15, "l"],
+        "lib_emerg": [15, "l"],
+        "mig_lvl": [10, "l"],
+        "mig_asy": [10, "l"],
+        "mig_int": [10, "l"],
+        "mig_nat": [10, "l"],
+        "int_eu": [-25, "l"],
+        "int_trade": [-25, "l"],
+        "int_def": [-70, "m"],
+        "int_aid": [-25, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [10, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [30, "l"],
+        "tec_big": null,
+        "dem_trust": [-10, "l"],
+        "dem_direct": [-10, "l"],
+        "dem_courts": [-10, "l"],
+        "dem_central": [-10, "l"]
+      },
+      "notes": {
+        "ECO": "Split from the PvdA over spending: wanted sound public finances and lower taxes.",
+        "SOC": "Scored at topic level from the party's programme (1971 election).",
+        "LIB": "Scored at topic level from the party's programme (1971 election).",
+        "MIG": "Scored at topic level from the party's programme (1971 election).",
+        "INT": "Strongly Atlanticist at a time when the PvdA turned against NATO policy.",
+        "CLI": "Scored at topic level from the party's programme (1971 election).",
+        "TEC": "Scored at topic level from the party's programme (1971 election).",
+        "DEM": "Wanted an elected prime minister and a more decisive government."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Democratisch Socialisten '70",
+          "url": "https://en.wikipedia.org/wiki/Democratisch_Socialisten_'70"
+        }
+      ]
+    }
+  ]
+}

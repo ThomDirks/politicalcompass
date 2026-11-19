@@ -1,0 +1,83 @@
+{
+  "id": "nl-terlouw",
+  "type": "person",
+  "kind": "politician",
+  "name": "Jan Terlouw",
+  "full_name": "D66 leader 1973 to 1982, writer",
+  "country": "NL",
+  "active": {
+    "from": 1971,
+    "to": 1991
+  },
+  "party": "nl-d66",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1981,
+      "label": "D66 leader",
+      "method": "hand",
+      "basis": "Starts from the D66 profile (Current (Nov 2026)), adjusted where Jan Terlouw's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 4,
+        "TEC": 3,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [15, "m"],
+        "eco_reg": [-5, "m"],
+        "eco_lab": [-5, "m"],
+        "eco_tax": [-10, "m"],
+        "soc_fam": [-65, "l"],
+        "soc_lgbt": [-80, "l"],
+        "soc_rel": [-70, "l"],
+        "soc_mor": [-75, "l"],
+        "lib_priv": [-30, "m"],
+        "lib_just": [-37, "m"],
+        "lib_speech": [5, "m"],
+        "lib_emerg": [-40, "m"],
+        "mig_lvl": [-5, "l"],
+        "mig_asy": [-15, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [-23, "l"],
+        "int_eu": [-90, "m"],
+        "int_trade": [-70, "m"],
+        "int_def": [-60, "m"],
+        "int_aid": [-50, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-60, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [30, "l"],
+        "tec_nuc": [-70, "l"],
+        "tec_big": null,
+        "dem_trust": [-75, "m"],
+        "dem_direct": [-22, "m"],
+        "dem_courts": [-80, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the D66 profile (Current (Nov 2026)).",
+        "SOC": "Progressive for the early 1980s.",
+        "LIB": "In line with the D66 profile (Current (Nov 2026)).",
+        "MIG": "Before migration was the dividing line it is now.",
+        "INT": "In line with the D66 profile (Current (Nov 2026)).",
+        "CLI": "Early warner about the environment; later known for his 'touw van vertrouwen' speech on climate.",
+        "TEC": "Physicist who turned against nuclear power.",
+        "DEM": "In line with the D66 profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Jan Terlouw",
+          "url": "https://en.wikipedia.org/wiki/Jan_Terlouw"
+        }
+      ]
+    }
+  ]
+}

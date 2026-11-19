@@ -1,0 +1,83 @@
+{
+  "id": "de-ebert",
+  "type": "person",
+  "kind": "politician",
+  "name": "Friedrich Ebert",
+  "full_name": "First President of the Weimar Republic (SPD)",
+  "country": "DE",
+  "active": {
+    "from": 1900,
+    "to": 1925
+  },
+  "party": "de-spd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1919,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the SPD profile (Current (Nov 2026)), adjusted where Friedrich Ebert's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-45, "l"],
+        "eco_reg": [-60, "l"],
+        "eco_lab": [-80, "l"],
+        "eco_tax": [-70, "l"],
+        "soc_fam": [-15, "l"],
+        "soc_lgbt": [-30, "l"],
+        "soc_rel": [-5, "l"],
+        "soc_mor": [-5, "l"],
+        "lib_priv": [40, "l"],
+        "lib_just": [40, "l"],
+        "lib_speech": [60, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [15, "l"],
+        "mig_asy": [5, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [-25, "l"],
+        "int_eu": null,
+        "int_trade": [-17, "m"],
+        "int_def": [-43, "m"],
+        "int_aid": [-45, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-25, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-20, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-2, "m"]
+      },
+      "notes": {
+        "ECO": "Social democrat of the old school: unions and the eight-hour day.",
+        "SOC": "Measured against today's norms.",
+        "LIB": "Put down revolutionary uprisings to protect the new republic.",
+        "MIG": "Not an issue in his time.",
+        "INT": "In line with the SPD profile (Current (Nov 2026)).",
+        "CLI": "In line with the SPD profile (Current (Nov 2026)).",
+        "TEC": "In line with the SPD profile (Current (Nov 2026)).",
+        "DEM": "Chose parliamentary democracy over a council republic."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Friedrich Ebert",
+          "url": "https://en.wikipedia.org/wiki/Friedrich_Ebert"
+        }
+      ]
+    }
+  ]
+}

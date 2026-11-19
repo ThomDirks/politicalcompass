@@ -1,0 +1,82 @@
+{
+  "id": "de-dnvp",
+  "type": "party",
+  "extra": true,
+  "name": "DNVP",
+  "full_name": "Deutschnationale Volkspartei",
+  "country": "DE",
+  "active": {
+    "from": 1918,
+    "to": 1933
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1928,
+      "label": "1928 election",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 4,
+        "MIG": 3,
+        "INT": 5,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [25, "l"],
+        "eco_reg": [25, "l"],
+        "eco_lab": [25, "l"],
+        "eco_tax": [25, "l"],
+        "soc_fam": [80, "l"],
+        "soc_lgbt": [80, "l"],
+        "soc_rel": [80, "l"],
+        "soc_mor": [80, "l"],
+        "lib_priv": [75, "l"],
+        "lib_just": [75, "l"],
+        "lib_speech": [75, "l"],
+        "lib_emerg": [75, "l"],
+        "mig_lvl": [70, "l"],
+        "mig_asy": [70, "l"],
+        "mig_int": [70, "l"],
+        "mig_nat": [70, "l"],
+        "int_eu": null,
+        "int_trade": [85, "l"],
+        "int_def": [-90, "m"],
+        "int_aid": [85, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [85, "l"],
+        "dem_direct": [85, "l"],
+        "dem_courts": [85, "l"],
+        "dem_central": [85, "l"]
+      },
+      "notes": {
+        "ECO": "Spoke for landowners and heavy industry.",
+        "SOC": "Protestant, nationalist and antisemitic.",
+        "LIB": "Scored at topic level from the party's programme (1928 election).",
+        "MIG": "Scored at topic level from the party's programme (1928 election).",
+        "INT": "Rejected the Versailles treaty and reparations.",
+        "CLI": "Scored at topic level from the party's programme (1928 election).",
+        "TEC": "Scored at topic level from the party's programme (1928 election).",
+        "DEM": "Monarchist and hostile to the Weimar Republic."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Deutschnationale Volkspartei",
+          "url": "https://en.wikipedia.org/wiki/Deutschnationale_Volkspartei"
+        }
+      ]
+    }
+  ]
+}

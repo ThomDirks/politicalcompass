@@ -1,0 +1,82 @@
+{
+  "id": "us-libertarian",
+  "type": "party",
+  "extra": true,
+  "name": "Libertarian",
+  "full_name": "Libertarian Party",
+  "country": "US",
+  "active": {
+    "from": 1971,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "2024 platform",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 5,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [85, "l"],
+        "eco_reg": [85, "l"],
+        "eco_lab": [85, "l"],
+        "eco_tax": [85, "l"],
+        "soc_fam": [-30, "l"],
+        "soc_lgbt": [-30, "l"],
+        "soc_rel": [-30, "l"],
+        "soc_mor": [-30, "l"],
+        "lib_priv": [-75, "l"],
+        "lib_just": [-75, "l"],
+        "lib_speech": [-75, "l"],
+        "lib_emerg": [-75, "l"],
+        "mig_lvl": [-20, "l"],
+        "mig_asy": [-20, "l"],
+        "mig_int": [-20, "l"],
+        "mig_nat": [-20, "l"],
+        "int_eu": [55, "l"],
+        "int_trade": [-80, "m"],
+        "int_def": [55, "l"],
+        "int_aid": [55, "l"],
+        "cli_amb": [60, "l"],
+        "cli_pay": [60, "l"],
+        "cli_nat": [60, "l"],
+        "cli_intl": [60, "l"],
+        "tec_ai": [60, "l"],
+        "tec_bio": [60, "l"],
+        "tec_nuc": [60, "l"],
+        "tec_big": [60, "l"],
+        "dem_trust": [55, "l"],
+        "dem_direct": [55, "l"],
+        "dem_courts": [55, "l"],
+        "dem_central": [55, "l"]
+      },
+      "notes": {
+        "ECO": "Minimal government and the lowest taxes.",
+        "SOC": "Leaves personal choices to individuals.",
+        "LIB": "Drug legalisation, an end to surveillance and the war on drugs.",
+        "MIG": "Scored at topic level from the party's programme (2024 platform).",
+        "INT": "Non-intervention abroad, free trade.",
+        "CLI": "Scored at topic level from the party's programme (2024 platform).",
+        "TEC": "Scored at topic level from the party's programme (2024 platform).",
+        "DEM": "Scored at topic level from the party's programme (2024 platform)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Libertarian Party (United States)",
+          "url": "https://en.wikipedia.org/wiki/Libertarian_Party_(United_States)"
+        }
+      ]
+    }
+  ]
+}

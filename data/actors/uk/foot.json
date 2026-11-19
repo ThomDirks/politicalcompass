@@ -1,0 +1,83 @@
+{
+  "id": "uk-foot",
+  "type": "person",
+  "kind": "politician",
+  "name": "Michael Foot",
+  "full_name": "Labour leader 1980 to 1983",
+  "country": "UK",
+  "active": {
+    "from": 1945,
+    "to": 1992
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1983,
+      "label": "Labour leader",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Michael Foot era), adjusted where Michael Foot's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 5,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-95, "m"],
+        "eco_reg": [-80, "m"],
+        "eco_lab": [-90, "m"],
+        "eco_tax": [-80, "m"],
+        "soc_fam": [-30, "m"],
+        "soc_lgbt": [-20, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-30, "m"],
+        "lib_priv": [-10, "l"],
+        "lib_just": [0, "l"],
+        "lib_speech": [0, "l"],
+        "lib_emerg": [-20, "l"],
+        "mig_lvl": [-10, "l"],
+        "mig_asy": [-20, "l"],
+        "mig_int": [-20, "l"],
+        "mig_nat": [-30, "l"],
+        "int_eu": [90, "m"],
+        "int_trade": [70, "m"],
+        "int_def": [90, "l"],
+        "int_aid": [-60, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [-60, "m"],
+        "tec_big": null,
+        "dem_trust": [-10, "l"],
+        "dem_direct": [10, "l"],
+        "dem_courts": [-10, "l"],
+        "dem_central": [-20, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Labour profile (Michael Foot era).",
+        "SOC": "In line with the Labour profile (Michael Foot era).",
+        "LIB": "In line with the Labour profile (Michael Foot era).",
+        "MIG": "In line with the Labour profile (Michael Foot era).",
+        "INT": "Lifelong campaigner for nuclear disarmament.",
+        "CLI": "In line with the Labour profile (Michael Foot era).",
+        "TEC": "In line with the Labour profile (Michael Foot era).",
+        "DEM": "In line with the Labour profile (Michael Foot era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Michael Foot",
+          "url": "https://en.wikipedia.org/wiki/Michael_Foot"
+        }
+      ]
+    }
+  ]
+}

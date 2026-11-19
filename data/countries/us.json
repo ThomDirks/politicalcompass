@@ -2,16 +2,55 @@
   "code": "US",
   "name": "United States",
   "legislature": "House of Representatives",
-  "weight_basis": "Approximate national House popular vote in 2024 (%).",
-  "parties": { "us-gop": 50.0, "us-dem": 47.2 },
+  "weight_basis": "Approximate national House popular vote in 2024 (%). Third parties are listed for comparison at 0, as they won no House seats.",
+  "parties": {
+    "us-gop": 50.0,
+    "us-dem": 47.2,
+    "us-libertarian": 0,
+    "us-green": 0,
+    "us-constitution": 0,
+    "us-forward": 0
+  },
   "local_topics": {
-    "ECO": ["Affordable Care Act and Medicaid", "federal minimum wage", "tax cuts for high earners"],
-    "SOC": ["abortion after Dobbs", "transgender athletes and care", "school prayer"],
-    "LIB": ["policing and qualified immunity", "National Guard deployments", "campus protest"],
-    "MIG": ["mass deportations and ICE", "the border wall", "birthright citizenship"],
-    "INT": ["tariffs", "NATO and Ukraine", "USAID"],
-    "CLI": ["Paris Agreement", "Inflation Reduction Act clean energy credits", "drilling on federal land"],
-    "TEC": ["federal pre-emption of state AI laws", "breaking up big tech", "nuclear restart"],
-    "DEM": ["Supreme Court reform", "independent agencies", "states' rights"]
+    "ECO": [
+      "Affordable Care Act and Medicaid",
+      "federal minimum wage",
+      "tax cuts for high earners"
+    ],
+    "SOC": [
+      "abortion after Dobbs",
+      "transgender athletes and care",
+      "school prayer"
+    ],
+    "LIB": [
+      "policing and qualified immunity",
+      "National Guard deployments",
+      "campus protest"
+    ],
+    "MIG": [
+      "mass deportations and ICE",
+      "the border wall",
+      "birthright citizenship"
+    ],
+    "INT": [
+      "tariffs",
+      "NATO and Ukraine",
+      "USAID"
+    ],
+    "CLI": [
+      "Paris Agreement",
+      "Inflation Reduction Act clean energy credits",
+      "drilling on federal land"
+    ],
+    "TEC": [
+      "federal pre-emption of state AI laws",
+      "breaking up big tech",
+      "nuclear restart"
+    ],
+    "DEM": [
+      "Supreme Court reform",
+      "independent agencies",
+      "states' rights"
+    ]
   }
 }

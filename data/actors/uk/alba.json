@@ -1,0 +1,82 @@
+{
+  "id": "uk-alba",
+  "type": "party",
+  "extra": true,
+  "name": "Alba",
+  "full_name": "Alba Party",
+  "country": "UK",
+  "active": {
+    "from": 2021,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "2024 election",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 3,
+        "LIB": 1,
+        "MIG": 1,
+        "INT": 5,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-30, "l"],
+        "eco_reg": [-30, "l"],
+        "eco_lab": [-30, "l"],
+        "eco_tax": [-30, "l"],
+        "soc_fam": [30, "l"],
+        "soc_lgbt": [30, "m"],
+        "soc_rel": [30, "l"],
+        "soc_mor": [30, "l"],
+        "lib_priv": [0, "l"],
+        "lib_just": [0, "l"],
+        "lib_speech": [0, "l"],
+        "lib_emerg": [0, "l"],
+        "mig_lvl": [-10, "l"],
+        "mig_asy": [-10, "l"],
+        "mig_int": [-10, "l"],
+        "mig_nat": [-10, "l"],
+        "int_eu": [0, "l"],
+        "int_trade": [0, "l"],
+        "int_def": [0, "l"],
+        "int_aid": [0, "l"],
+        "cli_amb": [-10, "l"],
+        "cli_pay": [-10, "l"],
+        "cli_nat": [-10, "l"],
+        "cli_intl": [-10, "l"],
+        "tec_ai": [10, "l"],
+        "tec_bio": [10, "l"],
+        "tec_nuc": [10, "l"],
+        "tec_big": [10, "l"],
+        "dem_trust": [40, "l"],
+        "dem_direct": [40, "l"],
+        "dem_courts": [40, "l"],
+        "dem_central": [90, "m"]
+      },
+      "notes": {
+        "ECO": "Scored at topic level from the party's programme (2024 election).",
+        "SOC": "Gender-critical on self-identification.",
+        "LIB": "Scored at topic level from the party's programme (2024 election).",
+        "MIG": "Scored at topic level from the party's programme (2024 election).",
+        "INT": "Founded by Alex Salmond to push for Scottish independence faster.",
+        "CLI": "Scored at topic level from the party's programme (2024 election).",
+        "TEC": "Scored at topic level from the party's programme (2024 election).",
+        "DEM": "Impatient with the SNP and Westminster alike."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Alba Party",
+          "url": "https://en.wikipedia.org/wiki/Alba_Party"
+        }
+      ]
+    }
+  ]
+}

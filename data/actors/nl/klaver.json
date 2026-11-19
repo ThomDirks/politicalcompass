@@ -1,0 +1,83 @@
+{
+  "id": "nl-klaver",
+  "type": "person",
+  "kind": "politician",
+  "name": "Jesse Klaver",
+  "full_name": "GroenLinks leader 2015 to 2023, leader of GroenLinks-PvdA",
+  "country": "NL",
+  "active": {
+    "from": 2010,
+    "to": null
+  },
+  "party": "nl-pro",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the PRO profile (Current (Nov 2026)), adjusted where Jesse Klaver's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-55, "m"],
+        "eco_reg": [-60, "m"],
+        "eco_lab": [-70, "m"],
+        "eco_tax": [-70, "m"],
+        "soc_fam": [-80, "m"],
+        "soc_lgbt": [-95, "m"],
+        "soc_rel": [-70, "m"],
+        "soc_mor": [-65, "m"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-45, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [-50, "m"],
+        "mig_lvl": [-50, "m"],
+        "mig_asy": [-70, "m"],
+        "mig_int": [-55, "m"],
+        "mig_nat": [-45, "m"],
+        "int_eu": [-75, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [-60, "m"],
+        "int_aid": [-80, "m"],
+        "cli_amb": [-100, "l"],
+        "cli_pay": [-90, "l"],
+        "cli_nat": [-85, "l"],
+        "cli_intl": [-100, "l"],
+        "tec_ai": [-50, "m"],
+        "tec_bio": [-10, "m"],
+        "tec_nuc": [-25, "m"],
+        "tec_big": [-70, "m"],
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-38, "m"],
+        "dem_courts": [-75, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the PRO profile (Current (Nov 2026)).",
+        "SOC": "In line with the PRO profile (Current (Nov 2026)).",
+        "LIB": "In line with the PRO profile (Current (Nov 2026)).",
+        "MIG": "In line with the PRO profile (Current (Nov 2026)).",
+        "INT": "In line with the PRO profile (Current (Nov 2026)).",
+        "CLI": "Made climate the centre of GroenLinks' campaigns.",
+        "TEC": "In line with the PRO profile (Current (Nov 2026)).",
+        "DEM": "In line with the PRO profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Jesse Klaver",
+          "url": "https://en.wikipedia.org/wiki/Jesse_Klaver"
+        }
+      ]
+    }
+  ]
+}

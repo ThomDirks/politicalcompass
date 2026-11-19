@@ -1,0 +1,83 @@
+{
+  "id": "us-desantis",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ron DeSantis",
+  "full_name": "Governor of Florida (Republican)",
+  "country": "US",
+  "active": {
+    "from": 2013,
+    "to": null
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Current (Nov 2026)), adjusted where Ron DeSantis's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 4,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [80, "l"],
+        "eco_reg": [75, "l"],
+        "eco_lab": [70, "l"],
+        "eco_tax": [75, "l"],
+        "soc_fam": [65, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [65, "m"],
+        "soc_mor": [70, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [85, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [80, "m"],
+        "mig_lvl": [90, "m"],
+        "mig_asy": [95, "m"],
+        "mig_int": [75, "m"],
+        "mig_nat": [75, "m"],
+        "int_eu": [80, "m"],
+        "int_trade": [95, "m"],
+        "int_def": [45, "m"],
+        "int_aid": [90, "m"],
+        "cli_amb": [100, "m"],
+        "cli_pay": [100, "m"],
+        "cli_nat": [70, "m"],
+        "cli_intl": [100, "m"],
+        "tec_ai": [90, "m"],
+        "tec_bio": [20, "m"],
+        "tec_nuc": [85, "m"],
+        "tec_big": [40, "m"],
+        "dem_trust": [75, "l"],
+        "dem_direct": [-10, "l"],
+        "dem_courts": [35, "l"],
+        "dem_central": [-10, "l"]
+      },
+      "notes": {
+        "ECO": "More conventional small-government conservative than Trump.",
+        "SOC": "In line with the Republicans profile (Current (Nov 2026)).",
+        "LIB": "In line with the Republicans profile (Current (Nov 2026)).",
+        "MIG": "In line with the Republicans profile (Current (Nov 2026)).",
+        "INT": "In line with the Republicans profile (Current (Nov 2026)).",
+        "CLI": "In line with the Republicans profile (Current (Nov 2026)).",
+        "TEC": "In line with the Republicans profile (Current (Nov 2026)).",
+        "DEM": "Works through state institutions; 'where woke goes to die'."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ron DeSantis",
+          "url": "https://en.wikipedia.org/wiki/Ron_DeSantis"
+        }
+      ]
+    }
+  ]
+}

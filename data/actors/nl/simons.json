@@ -1,0 +1,83 @@
+{
+  "id": "nl-simons",
+  "type": "person",
+  "kind": "politician",
+  "name": "Sylvana Simons",
+  "full_name": "Founder of BIJ1",
+  "country": "NL",
+  "active": {
+    "from": 2016,
+    "to": 2023
+  },
+  "party": "nl-bij1",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2021,
+      "label": "BIJ1 MP",
+      "method": "hand",
+      "basis": "Starts from the BIJ1 profile (2025 election), adjusted where Sylvana Simons's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 2,
+        "CLI": 4,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-85, "l"],
+        "eco_reg": [-85, "l"],
+        "eco_lab": [-85, "l"],
+        "eco_tax": [-85, "l"],
+        "soc_fam": [-80, "l"],
+        "soc_lgbt": [-80, "l"],
+        "soc_rel": [-80, "l"],
+        "soc_mor": [-80, "l"],
+        "lib_priv": [-40, "l"],
+        "lib_just": [-80, "m"],
+        "lib_speech": [-40, "l"],
+        "lib_emerg": [-40, "l"],
+        "mig_lvl": [-90, "l"],
+        "mig_asy": [-90, "l"],
+        "mig_int": [-90, "l"],
+        "mig_nat": [-90, "l"],
+        "int_eu": [-20, "m"],
+        "int_trade": [10, "l"],
+        "int_def": [80, "m"],
+        "int_aid": [10, "l"],
+        "cli_amb": [-75, "l"],
+        "cli_pay": [-75, "l"],
+        "cli_nat": [-75, "l"],
+        "cli_intl": [-75, "l"],
+        "tec_ai": [-30, "l"],
+        "tec_bio": [-30, "l"],
+        "tec_nuc": [-30, "l"],
+        "tec_big": [-30, "l"],
+        "dem_trust": [35, "l"],
+        "dem_direct": [35, "l"],
+        "dem_courts": [35, "l"],
+        "dem_central": [35, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the BIJ1 profile (2025 election).",
+        "SOC": "In line with the BIJ1 profile (2025 election).",
+        "LIB": "In line with the BIJ1 profile (2025 election).",
+        "MIG": "In line with the BIJ1 profile (2025 election).",
+        "INT": "In line with the BIJ1 profile (2025 election).",
+        "CLI": "In line with the BIJ1 profile (2025 election).",
+        "TEC": "In line with the BIJ1 profile (2025 election).",
+        "DEM": "In line with the BIJ1 profile (2025 election)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Sylvana Simons",
+          "url": "https://en.wikipedia.org/wiki/Sylvana_Simons"
+        }
+      ]
+    }
+  ]
+}

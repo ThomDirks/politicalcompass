@@ -2,20 +2,67 @@
   "code": "NL",
   "name": "Netherlands",
   "legislature": "Tweede Kamer",
-  "weight_basis": "Current seats in the Tweede Kamer, June 2026 (150 seats). Seats are used instead of the 2025 vote because PVV split after the election.",
+  "weight_basis": "Current seats in the Tweede Kamer, June 2026 (150 seats). Seats are used instead of the 2025 vote because PVV split after the election. BIJ1 and BVNL hold no seats and count at 0.",
   "parties": {
-    "nl-d66": 26, "nl-vvd": 22, "nl-pro": 20, "nl-pvv": 19, "nl-cda": 18,
-    "nl-ja21": 9, "nl-dna": 7, "nl-fvd": 7, "nl-bbb": 3, "nl-sgp": 3,
-    "nl-denk": 3, "nl-pvdd": 3, "nl-cu": 3, "nl-sp": 3, "nl-50plus": 2, "nl-volt": 1
+    "nl-d66": 26,
+    "nl-vvd": 22,
+    "nl-pro": 20,
+    "nl-pvv": 19,
+    "nl-cda": 18,
+    "nl-ja21": 9,
+    "nl-dna": 7,
+    "nl-fvd": 7,
+    "nl-bbb": 3,
+    "nl-sgp": 3,
+    "nl-denk": 3,
+    "nl-pvdd": 3,
+    "nl-cu": 3,
+    "nl-sp": 3,
+    "nl-50plus": 2,
+    "nl-volt": 1,
+    "nl-bij1": 0,
+    "nl-bvnl": 0
   },
   "local_topics": {
-    "ECO": ["housing shortage and rent regulation", "own-risk deductible in healthcare", "box 3 wealth tax"],
-    "SOC": ["euthanasia for 'completed life'", "regulated cannabis supply", "faith-based schools (article 23)"],
-    "LIB": ["drug crime and undermining", "facial recognition by police", "demonstration rights"],
-    "MIG": ["asylum reception and the spreading law", "labour migration", "civic integration exams"],
-    "INT": ["EU budget and eurobonds", "Mercosur trade deal", "NATO 3.5% target and Ukraine support"],
-    "CLI": ["nitrogen crisis and livestock reduction", "Groningen gas and energy transition", "new nuclear plants at Borssele"],
-    "TEC": ["chip industry and ASML", "AI in government (toeslagenaffaire lessons)", "gene-edited crops"],
-    "DEM": ["binding corrective referendum", "constitutional review by courts", "elected mayors"]
+    "ECO": [
+      "housing shortage and rent regulation",
+      "own-risk deductible in healthcare",
+      "box 3 wealth tax"
+    ],
+    "SOC": [
+      "euthanasia for 'completed life'",
+      "regulated cannabis supply",
+      "faith-based schools (article 23)"
+    ],
+    "LIB": [
+      "drug crime and undermining",
+      "facial recognition by police",
+      "demonstration rights"
+    ],
+    "MIG": [
+      "asylum reception and the spreading law",
+      "labour migration",
+      "civic integration exams"
+    ],
+    "INT": [
+      "EU budget and eurobonds",
+      "Mercosur trade deal",
+      "NATO 3.5% target and Ukraine support"
+    ],
+    "CLI": [
+      "nitrogen crisis and livestock reduction",
+      "Groningen gas and energy transition",
+      "new nuclear plants at Borssele"
+    ],
+    "TEC": [
+      "chip industry and ASML",
+      "AI in government (toeslagenaffaire lessons)",
+      "gene-edited crops"
+    ],
+    "DEM": [
+      "binding corrective referendum",
+      "constitutional review by courts",
+      "elected mayors"
+    ]
   }
 }

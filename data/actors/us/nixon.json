@@ -1,0 +1,83 @@
+{
+  "id": "us-nixon",
+  "type": "person",
+  "kind": "politician",
+  "name": "Richard Nixon",
+  "full_name": "President 1969 to 1974 (Republican)",
+  "country": "US",
+  "active": {
+    "from": 1947,
+    "to": 1974
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1972,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Reagan era), adjusted where Richard Nixon's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [40, "l"],
+        "eco_reg": [45, "l"],
+        "eco_lab": [40, "l"],
+        "eco_tax": [40, "l"],
+        "soc_fam": [60, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [50, "m"],
+        "soc_mor": [60, "m"],
+        "lib_priv": [45, "l"],
+        "lib_just": [85, "l"],
+        "lib_speech": [25, "l"],
+        "lib_emerg": [35, "l"],
+        "mig_lvl": [20, "m"],
+        "mig_asy": [30, "m"],
+        "mig_int": [30, "m"],
+        "mig_nat": [40, "m"],
+        "int_eu": [-20, "l"],
+        "int_trade": [-50, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [20, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [10, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [70, "m"],
+        "tec_big": null,
+        "dem_trust": [40, "l"],
+        "dem_direct": [-10, "l"],
+        "dem_courts": [0, "l"],
+        "dem_central": [-60, "l"]
+      },
+      "notes": {
+        "ECO": "Accepted wage and price controls and a large federal role.",
+        "SOC": "In line with the Republicans profile (Reagan era).",
+        "LIB": "Law and order and the 'silent majority'.",
+        "MIG": "In line with the Republicans profile (Reagan era).",
+        "INT": "Détente with the Soviet Union and the opening to China.",
+        "CLI": "Created the EPA and signed the Clean Air Act.",
+        "TEC": "In line with the Republicans profile (Reagan era).",
+        "DEM": "In line with the Republicans profile (Reagan era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Richard Nixon",
+          "url": "https://en.wikipedia.org/wiki/Richard_Nixon"
+        }
+      ]
+    }
+  ]
+}

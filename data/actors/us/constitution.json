@@ -1,0 +1,82 @@
+{
+  "id": "us-constitution",
+  "type": "party",
+  "extra": true,
+  "name": "Constitution",
+  "full_name": "Constitution Party",
+  "country": "US",
+  "active": {
+    "from": 1992,
+    "to": null
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "2024 platform",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 5,
+        "LIB": 2,
+        "MIG": 4,
+        "INT": 4,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [70, "l"],
+        "eco_reg": [70, "l"],
+        "eco_lab": [70, "l"],
+        "eco_tax": [70, "l"],
+        "soc_fam": [90, "l"],
+        "soc_lgbt": [90, "l"],
+        "soc_rel": [90, "l"],
+        "soc_mor": [90, "l"],
+        "lib_priv": [30, "l"],
+        "lib_just": [30, "l"],
+        "lib_speech": [30, "l"],
+        "lib_emerg": [30, "l"],
+        "mig_lvl": [75, "l"],
+        "mig_asy": [75, "l"],
+        "mig_int": [75, "l"],
+        "mig_nat": [75, "l"],
+        "int_eu": [85, "l"],
+        "int_trade": [85, "l"],
+        "int_def": [85, "l"],
+        "int_aid": [85, "l"],
+        "cli_amb": [85, "l"],
+        "cli_pay": [85, "l"],
+        "cli_nat": [85, "l"],
+        "cli_intl": [85, "l"],
+        "tec_ai": [20, "l"],
+        "tec_bio": [20, "l"],
+        "tec_nuc": [20, "l"],
+        "tec_big": [20, "l"],
+        "dem_trust": [70, "l"],
+        "dem_direct": [70, "l"],
+        "dem_courts": [70, "l"],
+        "dem_central": [70, "l"]
+      },
+      "notes": {
+        "ECO": "Scored at topic level from the party's programme (2024 platform).",
+        "SOC": "Government according to Christian principles; against abortion without exceptions.",
+        "LIB": "Scored at topic level from the party's programme (2024 platform).",
+        "MIG": "Scored at topic level from the party's programme (2024 platform).",
+        "INT": "Leave the UN and NATO.",
+        "CLI": "Scored at topic level from the party's programme (2024 platform).",
+        "TEC": "Scored at topic level from the party's programme (2024 platform).",
+        "DEM": "A federal government limited strictly to the Constitution."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Constitution Party (United States)",
+          "url": "https://en.wikipedia.org/wiki/Constitution_Party_(United_States)"
+        }
+      ]
+    }
+  ]
+}

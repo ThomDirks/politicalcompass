@@ -1,0 +1,83 @@
+{
+  "id": "uk-burnham",
+  "type": "person",
+  "kind": "politician",
+  "name": "Andy Burnham",
+  "full_name": "Mayor of Greater Manchester (Labour)",
+  "country": "UK",
+  "active": {
+    "from": 2001,
+    "to": null
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Current (Nov 2026)), adjusted where Andy Burnham's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-40, "l"],
+        "eco_reg": [-40, "l"],
+        "eco_lab": [-65, "l"],
+        "eco_tax": [-40, "l"],
+        "soc_fam": [-50, "m"],
+        "soc_lgbt": [-45, "m"],
+        "soc_rel": [-30, "m"],
+        "soc_mor": [-15, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [16, "m"],
+        "lib_speech": [40, "m"],
+        "lib_emerg": [25, "m"],
+        "mig_lvl": [35, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [-4, "m"],
+        "mig_nat": [5, "m"],
+        "int_eu": [-20, "m"],
+        "int_trade": [-50, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [30, "m"],
+        "cli_amb": [-60, "m"],
+        "cli_pay": [-30, "m"],
+        "cli_nat": [-17, "m"],
+        "cli_intl": [-75, "m"],
+        "tec_ai": [60, "m"],
+        "tec_bio": [50, "m"],
+        "tec_nuc": [75, "m"],
+        "tec_big": [15, "m"],
+        "dem_trust": [-35, "l"],
+        "dem_direct": [-40, "l"],
+        "dem_courts": [-25, "l"],
+        "dem_central": [90, "l"]
+      },
+      "notes": {
+        "ECO": "Public control of buses and rail, against austerity.",
+        "SOC": "In line with the Labour profile (Current (Nov 2026)).",
+        "LIB": "In line with the Labour profile (Current (Nov 2026)).",
+        "MIG": "In line with the Labour profile (Current (Nov 2026)).",
+        "INT": "In line with the Labour profile (Current (Nov 2026)).",
+        "CLI": "In line with the Labour profile (Current (Nov 2026)).",
+        "TEC": "In line with the Labour profile (Current (Nov 2026)).",
+        "DEM": "'King of the North': power to the regions, against Westminster centralism."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Andy Burnham",
+          "url": "https://en.wikipedia.org/wiki/Andy_Burnham"
+        }
+      ]
+    }
+  ]
+}

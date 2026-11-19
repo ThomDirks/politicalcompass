@@ -1,0 +1,83 @@
+{
+  "id": "de-stresemann",
+  "type": "person",
+  "kind": "politician",
+  "name": "Gustav Stresemann",
+  "full_name": "Chancellor 1923, foreign minister 1923 to 1929 (DVP)",
+  "country": "DE",
+  "active": {
+    "from": 1907,
+    "to": 1929
+  },
+  "party": "de-dvp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1925,
+      "label": "Foreign minister",
+      "method": "hand",
+      "basis": "Starts from the DVP profile (Stresemann era), adjusted where Gustav Stresemann's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [50, "l"],
+        "eco_reg": [50, "l"],
+        "eco_lab": [50, "l"],
+        "eco_tax": [50, "l"],
+        "soc_fam": [35, "l"],
+        "soc_lgbt": [35, "l"],
+        "soc_rel": [35, "l"],
+        "soc_mor": [35, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [20, "l"],
+        "mig_asy": [20, "l"],
+        "mig_int": [20, "l"],
+        "mig_nat": [20, "l"],
+        "int_eu": null,
+        "int_trade": [-20, "l"],
+        "int_def": [-20, "l"],
+        "int_aid": [-20, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-30, "l"],
+        "dem_direct": [-30, "l"],
+        "dem_courts": [-30, "l"],
+        "dem_central": [-30, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the DVP profile (Stresemann era).",
+        "SOC": "In line with the DVP profile (Stresemann era).",
+        "LIB": "In line with the DVP profile (Stresemann era).",
+        "MIG": "In line with the DVP profile (Stresemann era).",
+        "INT": "Locarno and Germany's entry into the League of Nations; Nobel Peace Prize 1926.",
+        "CLI": "In line with the DVP profile (Stresemann era).",
+        "TEC": "In line with the DVP profile (Stresemann era).",
+        "DEM": "A monarchist turned 'republican by reason' who defended Weimar."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Gustav Stresemann",
+          "url": "https://en.wikipedia.org/wiki/Gustav_Stresemann"
+        }
+      ]
+    }
+  ]
+}

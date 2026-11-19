@@ -1,0 +1,82 @@
+{
+  "id": "de-uspd",
+  "type": "party",
+  "extra": true,
+  "name": "USPD",
+  "full_name": "Unabhängige Sozialdemokratische Partei Deutschlands",
+  "country": "DE",
+  "active": {
+    "from": 1917,
+    "to": 1931
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1919,
+      "label": "1919 National Assembly",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 1,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-85, "l"],
+        "eco_reg": [-85, "l"],
+        "eco_lab": [-85, "l"],
+        "eco_tax": [-85, "l"],
+        "soc_fam": [-10, "l"],
+        "soc_lgbt": [-10, "l"],
+        "soc_rel": [-10, "l"],
+        "soc_mor": [-10, "l"],
+        "lib_priv": [-20, "l"],
+        "lib_just": [-20, "l"],
+        "lib_speech": [-20, "l"],
+        "lib_emerg": [-20, "l"],
+        "mig_lvl": [-10, "l"],
+        "mig_asy": [-10, "l"],
+        "mig_int": [-10, "l"],
+        "mig_nat": [-10, "l"],
+        "int_eu": null,
+        "int_trade": [40, "l"],
+        "int_def": [90, "m"],
+        "int_aid": [40, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [45, "l"],
+        "dem_direct": [45, "l"],
+        "dem_courts": [45, "l"],
+        "dem_central": [45, "l"]
+      },
+      "notes": {
+        "ECO": "Socialisation of industry.",
+        "SOC": "Scored at topic level from the party's programme (1919 National Assembly).",
+        "LIB": "Scored at topic level from the party's programme (1919 National Assembly).",
+        "MIG": "Scored at topic level from the party's programme (1919 National Assembly).",
+        "INT": "Split from the SPD over its support for the First World War.",
+        "CLI": "Scored at topic level from the party's programme (1919 National Assembly).",
+        "TEC": "Scored at topic level from the party's programme (1919 National Assembly).",
+        "DEM": "Wanted workers' councils alongside or instead of parliament."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Unabhängige Sozialdemokratische Partei Deutschlands",
+          "url": "https://en.wikipedia.org/wiki/Unabhängige_Sozialdemokratische_Partei_Deutschlands"
+        }
+      ]
+    }
+  ]
+}

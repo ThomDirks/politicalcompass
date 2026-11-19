@@ -1,0 +1,82 @@
+{
+  "id": "us-progressive",
+  "type": "party",
+  "extra": true,
+  "name": "Progressive (1912)",
+  "full_name": "Progressive Party",
+  "country": "US",
+  "active": {
+    "from": 1912,
+    "to": 1916
+  },
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1912,
+      "label": "Bull Moose platform",
+      "method": "hand",
+      "basis": "Scored by hand at topic level from programmes and record, with single parts set where the party differs. Draft.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-35, "l"],
+        "eco_reg": [-35, "l"],
+        "eco_lab": [-35, "l"],
+        "eco_tax": [-35, "l"],
+        "soc_fam": [25, "l"],
+        "soc_lgbt": [25, "l"],
+        "soc_rel": [25, "l"],
+        "soc_mor": [25, "l"],
+        "lib_priv": [10, "l"],
+        "lib_just": [10, "l"],
+        "lib_speech": [10, "l"],
+        "lib_emerg": [10, "l"],
+        "mig_lvl": [25, "l"],
+        "mig_asy": [25, "l"],
+        "mig_int": [25, "l"],
+        "mig_nat": [25, "l"],
+        "int_eu": null,
+        "int_trade": [10, "l"],
+        "int_def": [-60, "m"],
+        "int_aid": [10, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-40, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [45, "l"],
+        "dem_direct": [90, "m"],
+        "dem_courts": [45, "l"],
+        "dem_central": [45, "l"]
+      },
+      "notes": {
+        "ECO": "Regulate the trusts, minimum wages for women, social insurance.",
+        "SOC": "Scored at topic level from the party's programme (Bull Moose platform).",
+        "LIB": "Scored at topic level from the party's programme (Bull Moose platform).",
+        "MIG": "Scored at topic level from the party's programme (Bull Moose platform).",
+        "INT": "Scored at topic level from the party's programme (Bull Moose platform).",
+        "CLI": "Conservation of forests and natural resources.",
+        "TEC": "Scored at topic level from the party's programme (Bull Moose platform).",
+        "DEM": "Primaries, recall, referendums and votes for women."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Progressive Party (United States, 1912)",
+          "url": "https://en.wikipedia.org/wiki/Progressive_Party_(United_States,_1912)"
+        }
+      ]
+    }
+  ]
+}

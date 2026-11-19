@@ -121,9 +121,13 @@ Because every actor has dated snapshots, PCompass can show how a party moved ove
 
 Former parties are included when they were large or historically significant: for example NSDAP, KPD, Zentrum and SED in Germany; NSB, KVP, ARP, CPN, LPF, PvdA and GroenLinks in the Netherlands; BUF, SDP, UKIP and BNP in the UK; and the Dixiecrats in the US. They are scored on the same scales as current parties, which makes it possible to show plainly where an answer pattern overlaps with, for example, fascist or communist programmes. Profiles of totalitarian parties describe their programme and conduct in office factually, including persecution and genocide where relevant.
 
+### Smaller and historical parties scored at topic level
+
+43 further parties are kept in `data/parties_extra.json` and built with `tools/build_parties_extra.py`: Northern Irish parties, the German minor parties that stood in 2025, Weimar parties (DNVP, DDP, DVP, USPD), Dutch parties that merged into GroenLinks, CDA and ChristenUnie (PPR, PSP, CHU, GPV), protest parties (Boerenpartij, Leefbaar Nederland, BVNL), and American third parties from the Whigs and Know Nothings to the Libertarians, Greens and Forward. They get one score per topic, with single parts set where the party clearly differs inside a topic, so their confidence is lower than for the main parties. Parties that stood at the last national election are in the country frame at their vote share (0 where they won no seats under a seat-based frame), which hardly moves the centre but lists them as current.
+
 ### People
 
-134 politicians and public figures, current and past, from the four countries, with at least five for every type (the validator enforces this). They are written in `data/people.json` and built into `data/actors/` by `tools/build_people.py`. Each person has one snapshot at a moment in their career (Thatcher in 1987, Merkel in 2015, Fortuyn in 2002).
+178 politicians and public figures, current and past, from the four countries, with at least five for every type (the validator enforces this). They are written in `data/people.json` and built into `data/actors/` by `tools/build_people.py`. Each person has one snapshot at a moment in their career (Thatcher in 1987, Merkel in 2015, Fortuyn in 2002).
 
 - **Views, not actions.** A person is scored on what they said and stood for: speeches, writing, the programmes they ran on. What they did with power is not scored. This is the opposite of party snapshots, which also use record in office.
 - **From a party, then adjusted.** Most people start from their party's hand snapshot closest to their era (`base`, `base_year`). `axes` moves every facet of an axis by a number of points, `facets` sets single facets, and every change carries a note. Unchanged parts follow the party, with confidence lowered one step. Rutte, for example, starts from today's VVD and moves 15 points towards open on migration and towards global on international affairs.

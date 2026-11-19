@@ -1,0 +1,83 @@
+{
+  "id": "us-lincoln",
+  "type": "person",
+  "kind": "politician",
+  "name": "Abraham Lincoln",
+  "full_name": "President 1861 to 1865 (Republican)",
+  "country": "US",
+  "active": {
+    "from": 1834,
+    "to": 1865
+  },
+  "party": "us-whig",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1860,
+      "label": "1860 campaign",
+      "method": "hand",
+      "basis": "Starts from the Whig profile (Clay campaign), adjusted where Abraham Lincoln's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 1,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-10, "l"],
+        "eco_reg": [-10, "l"],
+        "eco_lab": [-10, "l"],
+        "eco_tax": [-10, "l"],
+        "soc_fam": [40, "l"],
+        "soc_lgbt": [40, "l"],
+        "soc_rel": [40, "l"],
+        "soc_mor": [40, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [40, "l"],
+        "mig_asy": [40, "l"],
+        "mig_int": [40, "l"],
+        "mig_nat": [40, "l"],
+        "int_eu": null,
+        "int_trade": [70, "m"],
+        "int_def": [30, "l"],
+        "int_aid": [30, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [-35, "l"],
+        "dem_direct": [-35, "l"],
+        "dem_courts": [-35, "l"],
+        "dem_central": [-35, "l"]
+      },
+      "notes": {
+        "ECO": "Whig economics: tariffs, railways, homesteads.",
+        "SOC": "Against the spread of slavery; later abolition through the Thirteenth Amendment.",
+        "LIB": "In line with the Whig profile (Clay campaign).",
+        "MIG": "In line with the Whig profile (Clay campaign).",
+        "INT": "In line with the Whig profile (Clay campaign).",
+        "CLI": "In line with the Whig profile (Clay campaign).",
+        "TEC": "In line with the Whig profile (Clay campaign).",
+        "DEM": "'Government of the people, by the people, for the people.'"
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Abraham Lincoln",
+          "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln"
+        }
+      ]
+    }
+  ]
+}
