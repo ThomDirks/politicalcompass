@@ -496,7 +496,6 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
     <a href="#test" data-nav="test">Test</a>
     <a href="#types" data-nav="types">Types</a>
     <a href="#results" data-nav="results">Results</a>
-    <a href="#export" data-nav="export">Export</a>
     <a href="#parties" data-nav="parties">Parties</a>
     <a href="#people" data-nav="people">People</a>
     <a href="#method" data-nav="method">Method</a>
@@ -803,7 +802,7 @@ function show(view, navAs) {
   document.querySelectorAll("[data-nav]").forEach(a => {
     const nav = a.dataset.nav;
     const v = navAs || (view === "party" && pFilter.kind === "people" ? "people" : view);
-    if (nav === v || (v === "party" && nav === "parties") || (view === "type" && nav === "types")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    if (nav === v || (v === "export" && nav === "results") || (v === "party" && nav === "parties") || (view === "type" && nav === "types")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
 }
 
@@ -1022,8 +1021,11 @@ function renderResults() {
       <div class="meta-row"><span class="tcode" style="font-size:1.1rem">${code}-${suf}</span><span><b class="num">${Math.round(al[0].pct)}%</b> alignment</span>${next ? `<span>Next closest: <a href="#type-${next.code.toLowerCase()}">${esc(next.name)}</a> <span class="num muted">${Math.round(al[1].pct)}%</span></span>` : ""}</div>
       ${cons ? `<p class="small">Answer consistency: <b>${cons.level}</b> <span class="muted num">(${cons.score}%)</span>. ${cons.level === "low" ? "Several answers point in different directions, so treat this result as a rough indication." : cons.level === "medium" ? "A few answers point in different directions; the result is a good indication." : "Your answers hang together well."}</p>` : ""}
       <p class="muted small">Based on ${answered} answers, compared with ${CNAME[cc]}.</p>
-      <div class="seg" role="group" aria-label="Compare with" style="justify-self:start">
-        ${COUNTRIES.map(c => `<button type="button" data-country="${c}" aria-pressed="${cc === c}">${c}</button>`).join("")}
+      <div style="display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center">
+        <div class="seg" role="group" aria-label="Compare with">
+          ${COUNTRIES.map(c => `<button type="button" data-country="${c}" aria-pressed="${cc === c}">${c}</button>`).join("")}
+        </div>
+        <a class="btn ghost" href="#export">Export as PDF</a>
       </div>
     </div>
   </div>` : `<div class="rhead"><h1>Your profile</h1><p class="muted">Answer some statements first to see your alignment.</p></div>`}
@@ -1122,7 +1124,6 @@ function renderResults() {
 
       <div class="block">
         <div class="actions">
-          <a class="btn" href="#export">Export your profile</a>
           <a class="btn ghost" href="#test">Review answers</a>
           <button type="button" class="linkbtn" id="again">Take the test again</button>
         </div>
