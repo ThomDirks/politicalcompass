@@ -1,0 +1,83 @@
+{
+  "id": "uk-thatcher",
+  "type": "person",
+  "kind": "politician",
+  "name": "Margaret Thatcher",
+  "full_name": "Prime Minister 1979 to 1990 (Conservative)",
+  "country": "UK",
+  "active": {
+    "from": 1959,
+    "to": 1992
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1987,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Thatcher era), adjusted where Margaret Thatcher's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [85, "m"],
+        "eco_reg": [80, "m"],
+        "eco_lab": [85, "m"],
+        "eco_tax": [70, "m"],
+        "soc_fam": [50, "m"],
+        "soc_lgbt": [60, "m"],
+        "soc_rel": [20, "m"],
+        "soc_mor": [40, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [30, "m"],
+        "mig_lvl": [50, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [40, "m"],
+        "mig_nat": [50, "m"],
+        "int_eu": [-10, "m"],
+        "int_trade": [-70, "m"],
+        "int_def": [-95, "m"],
+        "int_aid": [40, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [20, "m"],
+        "tec_nuc": [80, "m"],
+        "tec_big": null,
+        "dem_trust": [-20, "l"],
+        "dem_direct": [-60, "l"],
+        "dem_courts": [-20, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Conservatives profile (Thatcher era).",
+        "SOC": "In line with the Conservatives profile (Thatcher era).",
+        "LIB": "In line with the Conservatives profile (Thatcher era).",
+        "MIG": "In line with the Conservatives profile (Thatcher era).",
+        "INT": "In line with the Conservatives profile (Thatcher era).",
+        "CLI": "In line with the Conservatives profile (Thatcher era).",
+        "TEC": "In line with the Conservatives profile (Thatcher era).",
+        "DEM": "In line with the Conservatives profile (Thatcher era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Margaret Thatcher",
+          "url": "https://en.wikipedia.org/wiki/Margaret_Thatcher"
+        }
+      ]
+    }
+  ]
+}

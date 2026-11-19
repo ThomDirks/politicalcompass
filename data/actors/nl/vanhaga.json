@@ -1,0 +1,83 @@
+{
+  "id": "nl-vanhaga",
+  "type": "person",
+  "kind": "politician",
+  "name": "Wybren van Haga",
+  "full_name": "Founder of BVNL",
+  "country": "NL",
+  "active": {
+    "from": 2017,
+    "to": 2023
+  },
+  "party": "nl-bbb",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2023,
+      "label": "BVNL",
+      "method": "hand",
+      "basis": "Starts from the BBB profile (Current (Nov 2026)), adjusted where Wybren van Haga's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 4,
+        "INT": 2,
+        "CLI": 5,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [10, "l"],
+        "eco_reg": [30, "l"],
+        "eco_lab": [15, "l"],
+        "eco_tax": [25, "l"],
+        "soc_fam": [30, "m"],
+        "soc_lgbt": [5, "m"],
+        "soc_rel": [15, "m"],
+        "soc_mor": [20, "m"],
+        "lib_priv": [0, "l"],
+        "lib_just": [40, "l"],
+        "lib_speech": [-40, "l"],
+        "lib_emerg": [-10, "l"],
+        "mig_lvl": [75, "l"],
+        "mig_asy": [90, "l"],
+        "mig_int": [70, "l"],
+        "mig_nat": [49, "l"],
+        "int_eu": [40, "m"],
+        "int_trade": [40, "m"],
+        "int_def": [-25, "m"],
+        "int_aid": [50, "m"],
+        "cli_amb": [45, "m"],
+        "cli_pay": [65, "m"],
+        "cli_nat": [70, "m"],
+        "cli_intl": [40, "m"],
+        "tec_ai": [0, "l"],
+        "tec_bio": [30, "l"],
+        "tec_nuc": [80, "l"],
+        "tec_big": [-10, "l"],
+        "dem_trust": [65, "l"],
+        "dem_direct": [40, "l"],
+        "dem_courts": [40, "l"],
+        "dem_central": [-40, "l"]
+      },
+      "notes": {
+        "ECO": "Businessman, against regulation and high taxes.",
+        "SOC": "In line with the BBB profile (Current (Nov 2026)).",
+        "LIB": "Opposed lockdowns and covid passes.",
+        "MIG": "Wants migration down.",
+        "INT": "In line with the BBB profile (Current (Nov 2026)).",
+        "CLI": "In line with the BBB profile (Current (Nov 2026)).",
+        "TEC": "In line with the BBB profile (Current (Nov 2026)).",
+        "DEM": "Against party politics and 'Haagse' rules."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Wybren van Haga",
+          "url": "https://en.wikipedia.org/wiki/Wybren_van_Haga"
+        }
+      ]
+    }
+  ]
+}

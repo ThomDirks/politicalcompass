@@ -1,0 +1,83 @@
+{
+  "id": "de-weisband",
+  "type": "person",
+  "kind": "politician",
+  "name": "Marina Weisband",
+  "full_name": "Former political director of the Pirate Party, now with the Greens",
+  "country": "DE",
+  "active": {
+    "from": 2011,
+    "to": null
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2012,
+      "label": "Pirate Party",
+      "method": "hand",
+      "basis": "Scored directly from Marina Weisband's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-15, "l"],
+        "eco_reg": [-15, "l"],
+        "eco_lab": [-15, "l"],
+        "eco_tax": [-15, "l"],
+        "soc_fam": [-55, "l"],
+        "soc_lgbt": [-55, "l"],
+        "soc_rel": [-55, "l"],
+        "soc_mor": [-55, "l"],
+        "lib_priv": [-65, "l"],
+        "lib_just": [-65, "l"],
+        "lib_speech": [-65, "l"],
+        "lib_emerg": [-65, "l"],
+        "mig_lvl": [-45, "l"],
+        "mig_asy": [-45, "l"],
+        "mig_int": [-45, "l"],
+        "mig_nat": [-45, "l"],
+        "int_eu": [-5, "l"],
+        "int_trade": [-5, "l"],
+        "int_def": [-5, "l"],
+        "int_aid": [-5, "l"],
+        "cli_amb": [-35, "l"],
+        "cli_pay": [-35, "l"],
+        "cli_nat": [-35, "l"],
+        "cli_intl": [-35, "l"],
+        "tec_ai": [-5, "l"],
+        "tec_bio": [-5, "l"],
+        "tec_nuc": [-5, "l"],
+        "tec_big": [-5, "l"],
+        "dem_trust": [40, "l"],
+        "dem_direct": [40, "l"],
+        "dem_courts": [40, "l"],
+        "dem_central": [40, "l"]
+      },
+      "notes": {
+        "ECO": "Pragmatic on the economy, open to a basic income.",
+        "SOC": "Scored from Marina Weisband's stated views.",
+        "LIB": "Digital civil rights, privacy and freedom of information first.",
+        "MIG": "Scored from Marina Weisband's stated views.",
+        "INT": "Scored from Marina Weisband's stated views.",
+        "CLI": "Scored from Marina Weisband's stated views.",
+        "TEC": "Scored from Marina Weisband's stated views.",
+        "DEM": "Liquid democracy: citizens should take part directly, online, between elections."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Marina Weisband",
+          "url": "https://en.wikipedia.org/wiki/Marina_Weisband"
+        }
+      ]
+    }
+  ]
+}

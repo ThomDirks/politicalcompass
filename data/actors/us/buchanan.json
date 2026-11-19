@@ -1,0 +1,83 @@
+{
+  "id": "us-buchanan",
+  "type": "person",
+  "kind": "politician",
+  "name": "Pat Buchanan",
+  "full_name": "Commentator, presidential candidate 1992, 1996 and 2000",
+  "country": "US",
+  "active": {
+    "from": 1966,
+    "to": 2000
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1996,
+      "label": "1996 candidate",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Reagan era), adjusted where Pat Buchanan's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [35, "l"],
+        "eco_reg": [40, "l"],
+        "eco_lab": [35, "l"],
+        "eco_tax": [35, "l"],
+        "soc_fam": [85, "l"],
+        "soc_lgbt": [95, "l"],
+        "soc_rel": [75, "l"],
+        "soc_mor": [85, "l"],
+        "lib_priv": [30, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [10, "m"],
+        "lib_emerg": [20, "m"],
+        "mig_lvl": [55, "l"],
+        "mig_asy": [65, "l"],
+        "mig_int": [65, "l"],
+        "mig_nat": [75, "l"],
+        "int_eu": [35, "l"],
+        "int_trade": [5, "l"],
+        "int_def": [-50, "l"],
+        "int_aid": [75, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [40, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [20, "m"],
+        "tec_nuc": [70, "m"],
+        "tec_big": null,
+        "dem_trust": [75, "l"],
+        "dem_direct": [25, "l"],
+        "dem_courts": [35, "l"],
+        "dem_central": [-25, "l"]
+      },
+      "notes": {
+        "ECO": "Economic nationalism: tariffs to protect manufacturing jobs.",
+        "SOC": "Declared a 'culture war' for the soul of America.",
+        "LIB": "In line with the Republicans profile (Reagan era).",
+        "MIG": "Wanted a moratorium on immigration.",
+        "INT": "America First, against NAFTA and foreign wars.",
+        "CLI": "In line with the Republicans profile (Reagan era).",
+        "TEC": "In line with the Republicans profile (Reagan era).",
+        "DEM": "Insurgent against the Republican establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Pat Buchanan",
+          "url": "https://en.wikipedia.org/wiki/Pat_Buchanan"
+        }
+      ]
+    }
+  ]
+}

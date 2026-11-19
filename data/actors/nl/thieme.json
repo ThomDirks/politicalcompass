@@ -1,0 +1,83 @@
+{
+  "id": "nl-thieme",
+  "type": "person",
+  "kind": "politician",
+  "name": "Marianne Thieme",
+  "full_name": "Founder and leader of the Party for the Animals 2002 to 2019",
+  "country": "NL",
+  "active": {
+    "from": 2002,
+    "to": 2019
+  },
+  "party": "nl-pvdd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2017,
+      "label": "Party leader",
+      "method": "hand",
+      "basis": "Starts from the PvdD profile (Current (Nov 2026)), adjusted where Marianne Thieme's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 5,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-60, "m"],
+        "eco_reg": [-75, "m"],
+        "eco_lab": [-60, "m"],
+        "eco_tax": [-70, "m"],
+        "soc_fam": [-75, "m"],
+        "soc_lgbt": [-85, "m"],
+        "soc_rel": [-70, "m"],
+        "soc_mor": [-55, "m"],
+        "lib_priv": [-75, "m"],
+        "lib_just": [-50, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [-40, "m"],
+        "mig_asy": [-65, "m"],
+        "mig_int": [-45, "m"],
+        "mig_nat": [-60, "m"],
+        "int_eu": [20, "m"],
+        "int_trade": [55, "m"],
+        "int_def": [10, "m"],
+        "int_aid": [-70, "m"],
+        "cli_amb": [-100, "m"],
+        "cli_pay": [-90, "m"],
+        "cli_nat": [-78, "m"],
+        "cli_intl": [-95, "m"],
+        "tec_ai": [-55, "m"],
+        "tec_bio": [-85, "m"],
+        "tec_nuc": [-85, "m"],
+        "tec_big": [-75, "m"],
+        "dem_trust": [0, "m"],
+        "dem_direct": [-10, "m"],
+        "dem_courts": [-60, "m"],
+        "dem_central": [0, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the PvdD profile (Current (Nov 2026)).",
+        "SOC": "In line with the PvdD profile (Current (Nov 2026)).",
+        "LIB": "In line with the PvdD profile (Current (Nov 2026)).",
+        "MIG": "In line with the PvdD profile (Current (Nov 2026)).",
+        "INT": "In line with the PvdD profile (Current (Nov 2026)).",
+        "CLI": "In line with the PvdD profile (Current (Nov 2026)).",
+        "TEC": "In line with the PvdD profile (Current (Nov 2026)).",
+        "DEM": "In line with the PvdD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Marianne Thieme",
+          "url": "https://en.wikipedia.org/wiki/Marianne_Thieme"
+        }
+      ]
+    }
+  ]
+}

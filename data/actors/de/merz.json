@@ -1,0 +1,83 @@
+{
+  "id": "de-merz",
+  "type": "person",
+  "kind": "politician",
+  "name": "Friedrich Merz",
+  "full_name": "Chancellor, leader of the CDU",
+  "country": "DE",
+  "active": {
+    "from": 1989,
+    "to": null
+  },
+  "party": "de-cdu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the CDU profile (Current (Nov 2026)), adjusted where Friedrich Merz's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [50, "l"],
+        "eco_reg": [45, "l"],
+        "eco_lab": [25, "l"],
+        "eco_tax": [45, "l"],
+        "soc_fam": [30, "m"],
+        "soc_lgbt": [10, "m"],
+        "soc_rel": [30, "m"],
+        "soc_mor": [35, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [50, "l"],
+        "mig_asy": [65, "l"],
+        "mig_int": [50, "l"],
+        "mig_nat": [35, "l"],
+        "int_eu": [-50, "m"],
+        "int_trade": [-60, "m"],
+        "int_def": [-90, "m"],
+        "int_aid": [10, "m"],
+        "cli_amb": [0, "m"],
+        "cli_pay": [30, "m"],
+        "cli_nat": [25, "m"],
+        "cli_intl": [-40, "m"],
+        "tec_ai": [50, "m"],
+        "tec_bio": [30, "m"],
+        "tec_nuc": [50, "m"],
+        "tec_big": [-5, "m"],
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [-40, "m"]
+      },
+      "notes": {
+        "ECO": "More market-liberal than the CDU average.",
+        "SOC": "In line with the CDU profile (Current (Nov 2026)).",
+        "LIB": "In line with the CDU profile (Current (Nov 2026)).",
+        "MIG": "Pushed for border turnbacks and a tougher asylum line.",
+        "INT": "In line with the CDU profile (Current (Nov 2026)).",
+        "CLI": "In line with the CDU profile (Current (Nov 2026)).",
+        "TEC": "In line with the CDU profile (Current (Nov 2026)).",
+        "DEM": "In line with the CDU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Friedrich Merz",
+          "url": "https://en.wikipedia.org/wiki/Friedrich_Merz"
+        }
+      ]
+    }
+  ]
+}

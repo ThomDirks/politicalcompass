@@ -1,0 +1,83 @@
+{
+  "id": "us-bannon",
+  "type": "person",
+  "kind": "public figure",
+  "name": "Steve Bannon",
+  "full_name": "Trump strategist 2016 to 2017, media host",
+  "country": "US",
+  "active": {
+    "from": 2012,
+    "to": null
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "Commentator",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Current (Nov 2026)), adjusted where Steve Bannon's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 4,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [30, "l"],
+        "eco_reg": [25, "l"],
+        "eco_lab": [20, "l"],
+        "eco_tax": [25, "l"],
+        "soc_fam": [65, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [65, "m"],
+        "soc_mor": [70, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [85, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [80, "m"],
+        "mig_lvl": [90, "m"],
+        "mig_asy": [95, "m"],
+        "mig_int": [75, "m"],
+        "mig_nat": [75, "m"],
+        "int_eu": [80, "m"],
+        "int_trade": [95, "m"],
+        "int_def": [45, "m"],
+        "int_aid": [90, "m"],
+        "cli_amb": [100, "m"],
+        "cli_pay": [100, "m"],
+        "cli_nat": [70, "m"],
+        "cli_intl": [100, "m"],
+        "tec_ai": [55, "l"],
+        "tec_bio": [-15, "l"],
+        "tec_nuc": [50, "l"],
+        "tec_big": [5, "l"],
+        "dem_trust": [100, "l"],
+        "dem_direct": [15, "l"],
+        "dem_courts": [60, "l"],
+        "dem_central": [15, "l"]
+      },
+      "notes": {
+        "ECO": "Calls for higher taxes on the rich and an economic nationalism for workers.",
+        "SOC": "In line with the Republicans profile (Current (Nov 2026)).",
+        "LIB": "In line with the Republicans profile (Current (Nov 2026)).",
+        "MIG": "In line with the Republicans profile (Current (Nov 2026)).",
+        "INT": "In line with the Republicans profile (Current (Nov 2026)).",
+        "CLI": "In line with the Republicans profile (Current (Nov 2026)).",
+        "TEC": "Attacks big tech and AI as threats to workers.",
+        "DEM": "Wants to 'deconstruct the administrative state'."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Steve Bannon",
+          "url": "https://en.wikipedia.org/wiki/Steve_Bannon"
+        }
+      ]
+    }
+  ]
+}

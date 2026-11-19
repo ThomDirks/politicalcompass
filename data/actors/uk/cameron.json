@@ -1,0 +1,83 @@
+{
+  "id": "uk-cameron",
+  "type": "person",
+  "kind": "politician",
+  "name": "David Cameron",
+  "full_name": "Prime Minister 2010 to 2016 (Conservative)",
+  "country": "UK",
+  "active": {
+    "from": 2001,
+    "to": 2016
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2013,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Current (Nov 2026)), adjusted where David Cameron's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [65, "m"],
+        "eco_reg": [55, "m"],
+        "eco_lab": [60, "m"],
+        "eco_tax": [55, "m"],
+        "soc_fam": [5, "l"],
+        "soc_lgbt": [0, "l"],
+        "soc_rel": [-10, "l"],
+        "soc_mor": [0, "l"],
+        "lib_priv": [40, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [-30, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [55, "l"],
+        "mig_asy": [65, "l"],
+        "mig_int": [40, "l"],
+        "mig_nat": [30, "l"],
+        "int_eu": [27, "l"],
+        "int_trade": [-65, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [20, "l"],
+        "cli_amb": [5, "l"],
+        "cli_pay": [50, "l"],
+        "cli_nat": [15, "l"],
+        "cli_intl": [15, "l"],
+        "tec_ai": [60, "m"],
+        "tec_bio": [60, "m"],
+        "tec_nuc": [80, "m"],
+        "tec_big": [30, "m"],
+        "dem_trust": [5, "m"],
+        "dem_direct": [-40, "m"],
+        "dem_courts": [40, "m"],
+        "dem_central": [20, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "SOC": "Legalised same-sex marriage.",
+        "LIB": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "MIG": "Promised to cut migration to the tens of thousands, but was open to the EU's free movement.",
+        "INT": "Campaigned to Remain.",
+        "CLI": "'Vote blue, go green'.",
+        "TEC": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "DEM": "In line with the Conservatives profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: David Cameron",
+          "url": "https://en.wikipedia.org/wiki/David_Cameron"
+        }
+      ]
+    }
+  ]
+}

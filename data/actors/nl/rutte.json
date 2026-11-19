@@ -1,0 +1,83 @@
+{
+  "id": "nl-rutte",
+  "type": "person",
+  "kind": "politician",
+  "name": "Mark Rutte",
+  "full_name": "Prime Minister 2010 to 2024 (VVD), now NATO Secretary General",
+  "country": "NL",
+  "active": {
+    "from": 2006,
+    "to": 2024
+  },
+  "party": "nl-vvd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2017,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the VVD profile (Current (Nov 2026)), adjusted where Mark Rutte's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [55, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [40, "m"],
+        "eco_tax": [45, "m"],
+        "soc_fam": [-20, "m"],
+        "soc_lgbt": [-29, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-30, "m"],
+        "lib_priv": [35, "m"],
+        "lib_just": [55, "m"],
+        "lib_speech": [-10, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [30, "l"],
+        "mig_asy": [50, "l"],
+        "mig_int": [40, "l"],
+        "mig_nat": [20, "l"],
+        "int_eu": [-30, "l"],
+        "int_trade": [-85, "l"],
+        "int_def": [-95, "l"],
+        "int_aid": [15, "l"],
+        "cli_amb": [0, "l"],
+        "cli_pay": [15, "l"],
+        "cli_nat": [20, "l"],
+        "cli_intl": [-30, "l"],
+        "tec_ai": [50, "m"],
+        "tec_bio": [55, "m"],
+        "tec_nuc": [85, "m"],
+        "tec_big": [35, "m"],
+        "dem_trust": [-50, "m"],
+        "dem_direct": [-70, "m"],
+        "dem_courts": [-35, "m"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the VVD profile (Current (Nov 2026)).",
+        "SOC": "In line with the VVD profile (Current (Nov 2026)).",
+        "LIB": "In line with the VVD profile (Current (Nov 2026)).",
+        "MIG": "More moderate on migration than today's VVD, though his last cabinet fell over asylum policy.",
+        "INT": "Pragmatic pro-European and committed Atlanticist.",
+        "CLI": "Signed up to the EU's climate targets as prime minister.",
+        "TEC": "In line with the VVD profile (Current (Nov 2026)).",
+        "DEM": "In line with the VVD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Mark Rutte",
+          "url": "https://en.wikipedia.org/wiki/Mark_Rutte"
+        }
+      ]
+    }
+  ]
+}

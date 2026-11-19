@@ -1,0 +1,83 @@
+{
+  "id": "uk-farage",
+  "type": "person",
+  "kind": "politician",
+  "name": "Nigel Farage",
+  "full_name": "Leader of Reform UK",
+  "country": "UK",
+  "active": {
+    "from": 1993,
+    "to": null
+  },
+  "party": "uk-reform",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the Reform UK profile (Current (Nov 2026)), adjusted where Nigel Farage's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 4,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [0, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [65, "m"],
+        "eco_tax": [45, "m"],
+        "soc_fam": [45, "m"],
+        "soc_lgbt": [40, "m"],
+        "soc_rel": [20, "m"],
+        "soc_mor": [30, "m"],
+        "lib_priv": [-10, "m"],
+        "lib_just": [80, "m"],
+        "lib_speech": [-60, "m"],
+        "lib_emerg": [0, "m"],
+        "mig_lvl": [90, "m"],
+        "mig_asy": [100, "m"],
+        "mig_int": [75, "m"],
+        "mig_nat": [80, "m"],
+        "int_eu": [80, "m"],
+        "int_trade": [20, "m"],
+        "int_def": [-20, "m"],
+        "int_aid": [80, "m"],
+        "cli_amb": [95, "m"],
+        "cli_pay": [100, "m"],
+        "cli_nat": [60, "m"],
+        "cli_intl": [90, "m"],
+        "tec_ai": [40, "m"],
+        "tec_bio": [40, "m"],
+        "tec_nuc": [60, "m"],
+        "tec_big": [20, "m"],
+        "dem_trust": [85, "m"],
+        "dem_direct": [55, "m"],
+        "dem_courts": [60, "m"],
+        "dem_central": [55, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Reform UK profile (Current (Nov 2026)).",
+        "SOC": "In line with the Reform UK profile (Current (Nov 2026)).",
+        "LIB": "In line with the Reform UK profile (Current (Nov 2026)).",
+        "MIG": "In line with the Reform UK profile (Current (Nov 2026)).",
+        "INT": "In line with the Reform UK profile (Current (Nov 2026)).",
+        "CLI": "In line with the Reform UK profile (Current (Nov 2026)).",
+        "TEC": "In line with the Reform UK profile (Current (Nov 2026)).",
+        "DEM": "In line with the Reform UK profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Nigel Farage",
+          "url": "https://en.wikipedia.org/wiki/Nigel_Farage"
+        }
+      ]
+    }
+  ]
+}

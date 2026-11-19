@@ -49,7 +49,8 @@ data = {
     "types": types,
     "frames": {k: {"name": v["name"], "parties": v["parties"], "basis": v["weight_basis"]} for k, v in frames.items()},
     "actors": [
-        {"id": a["id"], "name": a["name"], "full": a["full_name"], "country": a["country"],
+        {"id": a["id"], "type": a["type"], "kind": a.get("kind"), "party": a.get("party"),
+         "name": a["name"], "full": a["full_name"], "country": a["country"],
          "active": a["active"], "pred": a.get("predecessors", []), "succ": a.get("successors", []),
          "snaps": [pack_snapshot(s) for s in a["snapshots"]]}
         for a in sorted(actors.values(), key=lambda a: a["id"])

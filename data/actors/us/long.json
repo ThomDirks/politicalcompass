@@ -1,0 +1,83 @@
+{
+  "id": "us-long",
+  "type": "person",
+  "kind": "politician",
+  "name": "Huey Long",
+  "full_name": "Governor and Senator of Louisiana (Democrat)",
+  "country": "US",
+  "active": {
+    "from": 1928,
+    "to": 1935
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1934,
+      "label": "Share Our Wealth",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (New Deal era), adjusted where Huey Long's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 1,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-65, "l"],
+        "eco_reg": [-85, "l"],
+        "eco_lab": [-95, "l"],
+        "eco_tax": [-85, "l"],
+        "soc_fam": [60, "m"],
+        "soc_lgbt": [90, "m"],
+        "soc_rel": [40, "m"],
+        "soc_mor": [60, "m"],
+        "lib_priv": [35, "l"],
+        "lib_just": [35, "l"],
+        "lib_speech": [35, "l"],
+        "lib_emerg": [75, "l"],
+        "mig_lvl": [60, "l"],
+        "mig_asy": [70, "l"],
+        "mig_int": [60, "l"],
+        "mig_nat": [50, "l"],
+        "int_eu": null,
+        "int_trade": [0, "l"],
+        "int_def": [70, "l"],
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-30, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [80, "l"],
+        "dem_direct": [50, "l"],
+        "dem_courts": [100, "l"],
+        "dem_central": [100, "l"]
+      },
+      "notes": {
+        "ECO": "'Share Our Wealth': cap fortunes and give every family a guaranteed income.",
+        "SOC": "In line with the Democrats profile (New Deal era).",
+        "LIB": "Ruled Louisiana with a strong hand.",
+        "MIG": "In line with the Democrats profile (New Deal era).",
+        "INT": "Isolationist.",
+        "CLI": "In line with the Democrats profile (New Deal era).",
+        "TEC": "In line with the Democrats profile (New Deal era).",
+        "DEM": "Populist against bankers and the establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Huey Long",
+          "url": "https://en.wikipedia.org/wiki/Huey_Long"
+        }
+      ]
+    }
+  ]
+}

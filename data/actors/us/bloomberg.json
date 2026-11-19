@@ -1,0 +1,83 @@
+{
+  "id": "us-bloomberg",
+  "type": "person",
+  "kind": "politician",
+  "name": "Michael Bloomberg",
+  "full_name": "Mayor of New York 2002 to 2013",
+  "country": "US",
+  "active": {
+    "from": 2002,
+    "to": 2020
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2020,
+      "label": "2020 candidate",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (Current (Nov 2026)), adjusted where Michael Bloomberg's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [30, "l"],
+        "eco_reg": [15, "l"],
+        "eco_lab": [5, "l"],
+        "eco_tax": [10, "l"],
+        "soc_fam": [-60, "m"],
+        "soc_lgbt": [-80, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-60, "m"],
+        "lib_priv": [35, "l"],
+        "lib_just": [15, "l"],
+        "lib_speech": [30, "l"],
+        "lib_emerg": [-10, "l"],
+        "mig_lvl": [-30, "m"],
+        "mig_asy": [-45, "m"],
+        "mig_int": [-50, "m"],
+        "mig_nat": [-45, "m"],
+        "int_eu": [-60, "m"],
+        "int_trade": [-35, "m"],
+        "int_def": [-70, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-65, "m"],
+        "cli_pay": [-40, "m"],
+        "cli_nat": [-40, "m"],
+        "cli_intl": [-80, "m"],
+        "tec_ai": [5, "l"],
+        "tec_bio": [35, "l"],
+        "tec_nuc": [35, "l"],
+        "tec_big": [-30, "l"],
+        "dem_trust": [-65, "m"],
+        "dem_direct": [-10, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "Business-friendly centrist on taxes and regulation.",
+        "SOC": "In line with the Democrats profile (Current (Nov 2026)).",
+        "LIB": "Backed stop-and-frisk policing for years before apologising.",
+        "MIG": "In line with the Democrats profile (Current (Nov 2026)).",
+        "INT": "In line with the Democrats profile (Current (Nov 2026)).",
+        "CLI": "In line with the Democrats profile (Current (Nov 2026)).",
+        "TEC": "Data-driven and optimistic about technology.",
+        "DEM": "In line with the Democrats profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Michael Bloomberg",
+          "url": "https://en.wikipedia.org/wiki/Michael_Bloomberg"
+        }
+      ]
+    }
+  ]
+}

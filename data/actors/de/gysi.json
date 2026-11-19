@@ -1,0 +1,83 @@
+{
+  "id": "de-gysi",
+  "type": "person",
+  "kind": "politician",
+  "name": "Gregor Gysi",
+  "full_name": "Leading figure of Die Linke",
+  "country": "DE",
+  "active": {
+    "from": 1989,
+    "to": null
+  },
+  "party": "de-linke",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the Die Linke profile (Current (Nov 2026)), adjusted where Gregor Gysi's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-85, "m"],
+        "eco_reg": [-85, "m"],
+        "eco_lab": [-90, "m"],
+        "eco_tax": [-90, "m"],
+        "soc_fam": [-80, "m"],
+        "soc_lgbt": [-90, "m"],
+        "soc_rel": [-55, "m"],
+        "soc_mor": [-60, "m"],
+        "lib_priv": [-70, "m"],
+        "lib_just": [-50, "m"],
+        "lib_speech": [15, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [-60, "m"],
+        "mig_asy": [-85, "m"],
+        "mig_int": [-60, "m"],
+        "mig_nat": [-70, "m"],
+        "int_eu": [0, "m"],
+        "int_trade": [40, "m"],
+        "int_def": [75, "m"],
+        "int_aid": [-80, "m"],
+        "cli_amb": [-50, "m"],
+        "cli_pay": [-85, "m"],
+        "cli_nat": [-55, "m"],
+        "cli_intl": [-80, "m"],
+        "tec_ai": [-45, "m"],
+        "tec_bio": [-50, "m"],
+        "tec_nuc": [-95, "m"],
+        "tec_big": [-85, "m"],
+        "dem_trust": [10, "l"],
+        "dem_direct": [24, "m"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Die Linke profile (Current (Nov 2026)).",
+        "SOC": "In line with the Die Linke profile (Current (Nov 2026)).",
+        "LIB": "In line with the Die Linke profile (Current (Nov 2026)).",
+        "MIG": "In line with the Die Linke profile (Current (Nov 2026)).",
+        "INT": "In line with the Die Linke profile (Current (Nov 2026)).",
+        "CLI": "In line with the Die Linke profile (Current (Nov 2026)).",
+        "TEC": "In line with the Die Linke profile (Current (Nov 2026)).",
+        "DEM": "In line with the Die Linke profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Gregor Gysi",
+          "url": "https://en.wikipedia.org/wiki/Gregor_Gysi"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "de-lucke",
+  "type": "person",
+  "kind": "politician",
+  "name": "Bernd Lucke",
+  "full_name": "Economist, AfD founder 2013",
+  "country": "DE",
+  "active": {
+    "from": 2013,
+    "to": 2019
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2014,
+      "label": "AfD founder",
+      "method": "hand",
+      "basis": "Scored directly from Bernd Lucke's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [55, "l"],
+        "eco_reg": [55, "l"],
+        "eco_lab": [55, "l"],
+        "eco_tax": [55, "l"],
+        "soc_fam": [20, "l"],
+        "soc_lgbt": [20, "l"],
+        "soc_rel": [20, "l"],
+        "soc_mor": [20, "l"],
+        "lib_priv": [10, "l"],
+        "lib_just": [10, "l"],
+        "lib_speech": [10, "l"],
+        "lib_emerg": [10, "l"],
+        "mig_lvl": [35, "l"],
+        "mig_asy": [35, "l"],
+        "mig_int": [35, "l"],
+        "mig_nat": [35, "l"],
+        "int_eu": [55, "l"],
+        "int_trade": [55, "l"],
+        "int_def": [55, "l"],
+        "int_aid": [55, "l"],
+        "cli_amb": [30, "l"],
+        "cli_pay": [30, "l"],
+        "cli_nat": [30, "l"],
+        "cli_intl": [30, "l"],
+        "tec_ai": [25, "l"],
+        "tec_bio": [25, "l"],
+        "tec_nuc": [25, "l"],
+        "tec_big": [25, "l"],
+        "dem_trust": [45, "l"],
+        "dem_direct": [45, "l"],
+        "dem_courts": [45, "l"],
+        "dem_central": [45, "l"]
+      },
+      "notes": {
+        "ECO": "Market economist against the euro bailouts.",
+        "SOC": "Scored from Bernd Lucke's stated views.",
+        "LIB": "Scored from Bernd Lucke's stated views.",
+        "MIG": "Wanted Canadian-style selective immigration.",
+        "INT": "Wanted an orderly break-up of the eurozone.",
+        "CLI": "Scored from Bernd Lucke's stated views.",
+        "TEC": "Scored from Bernd Lucke's stated views.",
+        "DEM": "Founded a party against 'alternativlos' politics; left when it moved further right."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Bernd Lucke",
+          "url": "https://en.wikipedia.org/wiki/Bernd_Lucke"
+        }
+      ]
+    }
+  ]
+}

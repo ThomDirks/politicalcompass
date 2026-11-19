@@ -1,0 +1,83 @@
+{
+  "id": "nl-jmarijnissen",
+  "type": "person",
+  "kind": "politician",
+  "name": "Jan Marijnissen",
+  "full_name": "Leader of the SP 1988 to 2015",
+  "country": "NL",
+  "active": {
+    "from": 1988,
+    "to": 2015
+  },
+  "party": "nl-sp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2006,
+      "label": "SP leader",
+      "method": "hand",
+      "basis": "Starts from the SP profile (Current (Nov 2026)), adjusted where Jan Marijnissen's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-85, "m"],
+        "eco_reg": [-75, "m"],
+        "eco_lab": [-80, "m"],
+        "eco_tax": [-80, "m"],
+        "soc_fam": [-15, "l"],
+        "soc_lgbt": [-13, "l"],
+        "soc_rel": [-20, "l"],
+        "soc_mor": [5, "l"],
+        "lib_priv": [-30, "l"],
+        "lib_just": [15, "l"],
+        "lib_speech": [15, "l"],
+        "lib_emerg": [-15, "l"],
+        "mig_lvl": [55, "l"],
+        "mig_asy": [10, "l"],
+        "mig_int": [55, "l"],
+        "mig_nat": [30, "l"],
+        "int_eu": [35, "m"],
+        "int_trade": [45, "m"],
+        "int_def": [20, "m"],
+        "int_aid": [-30, "m"],
+        "cli_amb": [-30, "l"],
+        "cli_pay": [-15, "l"],
+        "cli_nat": [-10, "l"],
+        "cli_intl": [-30, "l"],
+        "tec_ai": null,
+        "tec_bio": [-30, "l"],
+        "tec_nuc": [-10, "l"],
+        "tec_big": [-70, "l"],
+        "dem_trust": [40, "l"],
+        "dem_direct": [70, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [0, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the SP profile (Current (Nov 2026)).",
+        "SOC": "More conservative on culture than today's left.",
+        "LIB": "Tougher on crime than the left-liberal parties.",
+        "MIG": "Warned early about poor integration and labour migration undercutting wages.",
+        "INT": "In line with the SP profile (Current (Nov 2026)).",
+        "CLI": "Climate was not central to his SP.",
+        "TEC": "In line with the SP profile (Current (Nov 2026)).",
+        "DEM": "In line with the SP profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Jan Marijnissen",
+          "url": "https://en.wikipedia.org/wiki/Jan_Marijnissen"
+        }
+      ]
+    }
+  ]
+}

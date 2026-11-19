@@ -1,0 +1,83 @@
+{
+  "id": "uk-jenkins",
+  "type": "person",
+  "kind": "politician",
+  "name": "Roy Jenkins",
+  "full_name": "Labour Home Secretary, co-founder of the SDP",
+  "country": "UK",
+  "active": {
+    "from": 1948,
+    "to": 1987
+  },
+  "party": "uk-sdp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1981,
+      "label": "SDP founder",
+      "method": "hand",
+      "basis": "Starts from the SDP profile (1981 to 1988), adjusted where Roy Jenkins's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [0, "m"],
+        "eco_reg": [0, "m"],
+        "eco_lab": [-30, "m"],
+        "eco_tax": [-30, "m"],
+        "soc_fam": [-50, "l"],
+        "soc_lgbt": [-40, "l"],
+        "soc_rel": [-40, "l"],
+        "soc_mor": [-40, "l"],
+        "lib_priv": [-20, "l"],
+        "lib_just": [10, "l"],
+        "lib_speech": [-10, "l"],
+        "lib_emerg": [-30, "l"],
+        "mig_lvl": [-10, "l"],
+        "mig_asy": [-10, "l"],
+        "mig_int": [-20, "l"],
+        "mig_nat": [-30, "l"],
+        "int_eu": [-60, "m"],
+        "int_trade": [-60, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-50, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [20, "l"],
+        "tec_big": null,
+        "dem_trust": [-40, "l"],
+        "dem_direct": [-40, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [-40, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the SDP profile (1981 to 1988).",
+        "SOC": "As Home Secretary backed reforms on divorce, homosexuality and abortion: 'the permissive society is the civilised society'.",
+        "LIB": "Liberal on censorship and policing.",
+        "MIG": "In line with the SDP profile (1981 to 1988).",
+        "INT": "In line with the SDP profile (1981 to 1988).",
+        "CLI": "In line with the SDP profile (1981 to 1988).",
+        "TEC": "In line with the SDP profile (1981 to 1988).",
+        "DEM": "In line with the SDP profile (1981 to 1988)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Roy Jenkins",
+          "url": "https://en.wikipedia.org/wiki/Roy_Jenkins"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "uk-starmer",
+  "type": "person",
+  "kind": "politician",
+  "name": "Keir Starmer",
+  "full_name": "Prime Minister, leader of Labour",
+  "country": "UK",
+  "active": {
+    "from": 2015,
+    "to": null
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Current (Nov 2026)), adjusted where Keir Starmer's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-20, "m"],
+        "eco_reg": [-20, "m"],
+        "eco_lab": [-45, "m"],
+        "eco_tax": [-20, "m"],
+        "soc_fam": [-50, "m"],
+        "soc_lgbt": [-45, "m"],
+        "soc_rel": [-30, "m"],
+        "soc_mor": [-15, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [16, "m"],
+        "lib_speech": [40, "m"],
+        "lib_emerg": [25, "m"],
+        "mig_lvl": [35, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [-4, "m"],
+        "mig_nat": [5, "m"],
+        "int_eu": [-20, "m"],
+        "int_trade": [-50, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [30, "m"],
+        "cli_amb": [-60, "m"],
+        "cli_pay": [-30, "m"],
+        "cli_nat": [-17, "m"],
+        "cli_intl": [-75, "m"],
+        "tec_ai": [60, "m"],
+        "tec_bio": [50, "m"],
+        "tec_nuc": [75, "m"],
+        "tec_big": [15, "m"],
+        "dem_trust": [-50, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-40, "m"],
+        "dem_central": [-30, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Labour profile (Current (Nov 2026)).",
+        "SOC": "In line with the Labour profile (Current (Nov 2026)).",
+        "LIB": "In line with the Labour profile (Current (Nov 2026)).",
+        "MIG": "In line with the Labour profile (Current (Nov 2026)).",
+        "INT": "In line with the Labour profile (Current (Nov 2026)).",
+        "CLI": "In line with the Labour profile (Current (Nov 2026)).",
+        "TEC": "In line with the Labour profile (Current (Nov 2026)).",
+        "DEM": "In line with the Labour profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Keir Starmer",
+          "url": "https://en.wikipedia.org/wiki/Keir_Starmer"
+        }
+      ]
+    }
+  ]
+}

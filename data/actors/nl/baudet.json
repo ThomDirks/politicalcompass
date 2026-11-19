@@ -1,0 +1,83 @@
+{
+  "id": "nl-baudet",
+  "type": "person",
+  "kind": "politician",
+  "name": "Thierry Baudet",
+  "full_name": "Founder and leader of FvD",
+  "country": "NL",
+  "active": {
+    "from": 2016,
+    "to": null
+  },
+  "party": "nl-fvd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the FvD profile (Current (Nov 2026)), adjusted where Thierry Baudet's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 5,
+        "CLI": 4,
+        "TEC": 2,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [30, "m"],
+        "eco_reg": [35, "m"],
+        "eco_lab": [20, "m"],
+        "eco_tax": [40, "m"],
+        "soc_fam": [80, "m"],
+        "soc_lgbt": [60, "m"],
+        "soc_rel": [38, "m"],
+        "soc_mor": [50, "m"],
+        "lib_priv": [-40, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [-60, "m"],
+        "lib_emerg": [-60, "m"],
+        "mig_lvl": [95, "m"],
+        "mig_asy": [100, "m"],
+        "mig_int": [90, "m"],
+        "mig_nat": [64, "m"],
+        "int_eu": [95, "m"],
+        "int_trade": [8, "m"],
+        "int_def": [60, "m"],
+        "int_aid": [95, "m"],
+        "cli_amb": [95, "m"],
+        "cli_pay": [95, "m"],
+        "cli_nat": [85, "m"],
+        "cli_intl": [95, "m"],
+        "tec_ai": [-30, "l"],
+        "tec_bio": [-40, "l"],
+        "tec_nuc": [60, "l"],
+        "tec_big": [-30, "l"],
+        "dem_trust": [95, "m"],
+        "dem_direct": [90, "m"],
+        "dem_courts": [60, "m"],
+        "dem_central": [6, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the FvD profile (Current (Nov 2026)).",
+        "SOC": "In line with the FvD profile (Current (Nov 2026)).",
+        "LIB": "In line with the FvD profile (Current (Nov 2026)).",
+        "MIG": "In line with the FvD profile (Current (Nov 2026)).",
+        "INT": "In line with the FvD profile (Current (Nov 2026)).",
+        "CLI": "In line with the FvD profile (Current (Nov 2026)).",
+        "TEC": "In line with the FvD profile (Current (Nov 2026)).",
+        "DEM": "In line with the FvD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Thierry Baudet",
+          "url": "https://en.wikipedia.org/wiki/Thierry_Baudet"
+        }
+      ]
+    }
+  ]
+}

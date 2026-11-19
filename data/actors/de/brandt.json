@@ -1,0 +1,83 @@
+{
+  "id": "de-brandt",
+  "type": "person",
+  "kind": "politician",
+  "name": "Willy Brandt",
+  "full_name": "Chancellor 1969 to 1974 (SPD)",
+  "country": "DE",
+  "active": {
+    "from": 1957,
+    "to": 1987
+  },
+  "party": "de-spd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1972,
+      "label": "Chancellor",
+      "method": "hand",
+      "basis": "Starts from the SPD profile (Current (Nov 2026)), adjusted where Willy Brandt's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-30, "m"],
+        "eco_reg": [-45, "m"],
+        "eco_lab": [-65, "m"],
+        "eco_tax": [-55, "m"],
+        "soc_fam": [-35, "l"],
+        "soc_lgbt": [-50, "l"],
+        "soc_rel": [-25, "l"],
+        "soc_mor": [-25, "l"],
+        "lib_priv": [10, "m"],
+        "lib_just": [10, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [-10, "m"],
+        "mig_lvl": [10, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [-5, "l"],
+        "mig_nat": [-30, "l"],
+        "int_eu": [-70, "m"],
+        "int_trade": [-17, "m"],
+        "int_def": [-20, "l"],
+        "int_aid": [-45, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-15, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [-60, "m"],
+        "tec_big": null,
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-20, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-2, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the SPD profile (Current (Nov 2026)).",
+        "SOC": "'Dare more democracy': reformist for its time, measured against today's norms.",
+        "LIB": "In line with the SPD profile (Current (Nov 2026)).",
+        "MIG": "Guest-worker era; migration was not yet a major political divide.",
+        "INT": "Ostpolitik: détente with the East while staying firmly in NATO.",
+        "CLI": "Environmental protection reached the agenda, climate not yet.",
+        "TEC": "In line with the SPD profile (Current (Nov 2026)).",
+        "DEM": "In line with the SPD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Willy Brandt",
+          "url": "https://en.wikipedia.org/wiki/Willy_Brandt"
+        }
+      ]
+    }
+  ]
+}

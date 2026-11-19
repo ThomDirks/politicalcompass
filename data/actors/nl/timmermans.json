@@ -1,0 +1,83 @@
+{
+  "id": "nl-timmermans",
+  "type": "person",
+  "kind": "politician",
+  "name": "Frans Timmermans",
+  "full_name": "Former EU climate commissioner and GroenLinks-PvdA leader",
+  "country": "NL",
+  "active": {
+    "from": 1998,
+    "to": 2025
+  },
+  "party": "nl-pro",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2025,
+      "label": "GroenLinks-PvdA leader",
+      "method": "hand",
+      "basis": "Starts from the PRO profile (Current (Nov 2026)), adjusted where Frans Timmermans's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-55, "m"],
+        "eco_reg": [-60, "m"],
+        "eco_lab": [-70, "m"],
+        "eco_tax": [-70, "m"],
+        "soc_fam": [-80, "m"],
+        "soc_lgbt": [-95, "m"],
+        "soc_rel": [-70, "m"],
+        "soc_mor": [-65, "m"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-45, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [-50, "m"],
+        "mig_lvl": [-50, "m"],
+        "mig_asy": [-70, "m"],
+        "mig_int": [-55, "m"],
+        "mig_nat": [-45, "m"],
+        "int_eu": [-85, "l"],
+        "int_trade": [-20, "l"],
+        "int_def": [-70, "l"],
+        "int_aid": [-90, "l"],
+        "cli_amb": [-95, "l"],
+        "cli_pay": [-85, "l"],
+        "cli_nat": [-80, "l"],
+        "cli_intl": [-95, "l"],
+        "tec_ai": [-50, "m"],
+        "tec_bio": [-10, "m"],
+        "tec_nuc": [-25, "m"],
+        "tec_big": [-70, "m"],
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-38, "m"],
+        "dem_courts": [-75, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the PRO profile (Current (Nov 2026)).",
+        "SOC": "In line with the PRO profile (Current (Nov 2026)).",
+        "LIB": "In line with the PRO profile (Current (Nov 2026)).",
+        "MIG": "In line with the PRO profile (Current (Nov 2026)).",
+        "INT": "Long-time EU insider, strongly pro-European.",
+        "CLI": "Architect of the European Green Deal.",
+        "TEC": "In line with the PRO profile (Current (Nov 2026)).",
+        "DEM": "In line with the PRO profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Frans Timmermans",
+          "url": "https://en.wikipedia.org/wiki/Frans_Timmermans"
+        }
+      ]
+    }
+  ]
+}

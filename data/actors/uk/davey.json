@@ -1,0 +1,83 @@
+{
+  "id": "uk-davey",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ed Davey",
+  "full_name": "Leader of the Liberal Democrats",
+  "country": "UK",
+  "active": {
+    "from": 1997,
+    "to": null
+  },
+  "party": "uk-ld",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the Lib Dems profile (Current (Nov 2026)), adjusted where Ed Davey's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 4,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-5, "m"],
+        "eco_reg": [-25, "m"],
+        "eco_lab": [-30, "m"],
+        "eco_tax": [-30, "m"],
+        "soc_fam": [-75, "m"],
+        "soc_lgbt": [-85, "m"],
+        "soc_rel": [-60, "m"],
+        "soc_mor": [-55, "m"],
+        "lib_priv": [-75, "m"],
+        "lib_just": [-30, "m"],
+        "lib_speech": [-10, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [-30, "m"],
+        "mig_asy": [-60, "m"],
+        "mig_int": [-40, "m"],
+        "mig_nat": [-55, "m"],
+        "int_eu": [-70, "m"],
+        "int_trade": [-65, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-75, "m"],
+        "cli_pay": [-55, "m"],
+        "cli_nat": [-55, "m"],
+        "cli_intl": [-85, "m"],
+        "tec_ai": [10, "m"],
+        "tec_bio": [40, "m"],
+        "tec_nuc": [20, "m"],
+        "tec_big": [-45, "m"],
+        "dem_trust": [-45, "m"],
+        "dem_direct": [-20, "m"],
+        "dem_courts": [-70, "m"],
+        "dem_central": [-60, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "SOC": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "LIB": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "MIG": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "INT": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "CLI": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "TEC": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "DEM": "In line with the Lib Dems profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ed Davey",
+          "url": "https://en.wikipedia.org/wiki/Ed_Davey"
+        }
+      ]
+    }
+  ]
+}

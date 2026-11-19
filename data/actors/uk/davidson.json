@@ -1,0 +1,83 @@
+{
+  "id": "uk-davidson",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ruth Davidson",
+  "full_name": "Leader of the Scottish Conservatives 2011 to 2019",
+  "country": "UK",
+  "active": {
+    "from": 2011,
+    "to": 2021
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2016,
+      "label": "Scottish Conservative leader",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Current (Nov 2026)), adjusted where Ruth Davidson's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [65, "m"],
+        "eco_reg": [55, "m"],
+        "eco_lab": [60, "m"],
+        "eco_tax": [55, "m"],
+        "soc_fam": [-10, "l"],
+        "soc_lgbt": [-15, "l"],
+        "soc_rel": [-25, "l"],
+        "soc_mor": [-15, "l"],
+        "lib_priv": [40, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [-30, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [40, "l"],
+        "mig_asy": [50, "l"],
+        "mig_int": [25, "l"],
+        "mig_nat": [15, "l"],
+        "int_eu": [12, "l"],
+        "int_trade": [-80, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [5, "l"],
+        "cli_amb": [10, "l"],
+        "cli_pay": [55, "l"],
+        "cli_nat": [20, "l"],
+        "cli_intl": [20, "l"],
+        "tec_ai": [60, "m"],
+        "tec_bio": [60, "m"],
+        "tec_nuc": [80, "m"],
+        "tec_big": [30, "m"],
+        "dem_trust": [-5, "l"],
+        "dem_direct": [-50, "l"],
+        "dem_courts": [30, "l"],
+        "dem_central": [10, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "SOC": "Socially liberal, a prominent voice for LGBT rights.",
+        "LIB": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "MIG": "Liberal on immigration by Conservative standards.",
+        "INT": "Led the Remain side in the 2016 BBC debate at Wembley.",
+        "CLI": "Backs net zero.",
+        "TEC": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "DEM": "Unionist and institutionalist."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ruth Davidson",
+          "url": "https://en.wikipedia.org/wiki/Ruth_Davidson"
+        }
+      ]
+    }
+  ]
+}

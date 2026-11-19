@@ -1,0 +1,83 @@
+{
+  "id": "us-carlson",
+  "type": "person",
+  "kind": "public figure",
+  "name": "Tucker Carlson",
+  "full_name": "Media host and commentator",
+  "country": "US",
+  "active": {
+    "from": 2000,
+    "to": null
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Commentator",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Current (Nov 2026)), adjusted where Tucker Carlson's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 4,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [35, "l"],
+        "eco_reg": [30, "l"],
+        "eco_lab": [25, "l"],
+        "eco_tax": [30, "l"],
+        "soc_fam": [65, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [65, "m"],
+        "soc_mor": [70, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [85, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [80, "m"],
+        "mig_lvl": [90, "m"],
+        "mig_asy": [95, "m"],
+        "mig_int": [75, "m"],
+        "mig_nat": [75, "m"],
+        "int_eu": [90, "l"],
+        "int_trade": [100, "l"],
+        "int_def": [55, "l"],
+        "int_aid": [100, "l"],
+        "cli_amb": [100, "m"],
+        "cli_pay": [100, "m"],
+        "cli_nat": [70, "m"],
+        "cli_intl": [100, "m"],
+        "tec_ai": [60, "l"],
+        "tec_bio": [-10, "l"],
+        "tec_nuc": [55, "l"],
+        "tec_big": [10, "l"],
+        "dem_trust": [85, "m"],
+        "dem_direct": [0, "m"],
+        "dem_courts": [45, "m"],
+        "dem_central": [0, "m"]
+      },
+      "notes": {
+        "ECO": "Attacks private equity and argues markets should serve families first.",
+        "SOC": "In line with the Republicans profile (Current (Nov 2026)).",
+        "LIB": "In line with the Republicans profile (Current (Nov 2026)).",
+        "MIG": "In line with the Republicans profile (Current (Nov 2026)).",
+        "INT": "Against US involvement in Ukraine and new wars.",
+        "CLI": "In line with the Republicans profile (Current (Nov 2026)).",
+        "TEC": "Sceptical of big tech and AI.",
+        "DEM": "In line with the Republicans profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Tucker Carlson",
+          "url": "https://en.wikipedia.org/wiki/Tucker_Carlson"
+        }
+      ]
+    }
+  ]
+}

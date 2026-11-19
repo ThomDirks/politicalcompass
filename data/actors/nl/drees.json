@@ -1,0 +1,83 @@
+{
+  "id": "nl-drees",
+  "type": "person",
+  "kind": "politician",
+  "name": "Willem Drees",
+  "full_name": "Prime Minister 1948 to 1958 (PvdA)",
+  "country": "NL",
+  "active": {
+    "from": 1933,
+    "to": 1958
+  },
+  "party": "nl-pro",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1955,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the PRO profile (Current (Nov 2026)), adjusted where Willem Drees's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-55, "m"],
+        "eco_reg": [-60, "m"],
+        "eco_lab": [-70, "m"],
+        "eco_tax": [-70, "m"],
+        "soc_fam": [-40, "l"],
+        "soc_lgbt": [-55, "l"],
+        "soc_rel": [-30, "l"],
+        "soc_mor": [-25, "l"],
+        "lib_priv": [-40, "l"],
+        "lib_just": [-30, "l"],
+        "lib_speech": [35, "l"],
+        "lib_emerg": [-35, "l"],
+        "mig_lvl": [-25, "l"],
+        "mig_asy": [-45, "l"],
+        "mig_int": [-30, "l"],
+        "mig_nat": [-20, "l"],
+        "int_eu": [-75, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [-60, "m"],
+        "int_aid": [-80, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-50, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [-5, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-38, "m"],
+        "dem_courts": [-75, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "Built the welfare state, including the state pension that still carries his name.",
+        "SOC": "Sober and traditional in personal values, as the 1950s were.",
+        "LIB": "In line with the PRO profile (Current (Nov 2026)).",
+        "MIG": "Migration was not a political divide.",
+        "INT": "In line with the PRO profile (Current (Nov 2026)).",
+        "CLI": "Not yet an issue.",
+        "TEC": "Post-war faith in planning and progress.",
+        "DEM": "In line with the PRO profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Willem Drees",
+          "url": "https://en.wikipedia.org/wiki/Willem_Drees"
+        }
+      ]
+    }
+  ]
+}

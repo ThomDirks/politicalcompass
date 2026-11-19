@@ -421,6 +421,65 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
   .brand { font-size: 1.2rem; }
   .mast { padding: 10px 14px; }
 }
+/* ---------- export report ---------- */
+.rep-tools { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 28px; }
+.rep-tools .lead { margin-top: 10px; }
+.report { background: var(--sheet); border: 2px solid var(--ink); padding: clamp(18px, 4vw, 44px); display: grid; gap: 34px; max-width: 980px; }
+.rep-head { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 28px; align-items: center; border-bottom: 2px solid var(--ink); padding-bottom: 26px; }
+.rep-head .stage { background: color-mix(in srgb, var(--fam) 14%, var(--sheet)); border-radius: 4px; padding: 8px; }
+.rep-brand { font-family: var(--display); font-variation-settings: "wdth" 72; font-weight: 800; font-size: 1.05rem; margin: 0 0 12px; }
+.rep-type { font-size: clamp(2rem, 4.4vw, 2.9rem); margin: 2px 0 0; display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
+.rep-facts { display: flex; flex-wrap: wrap; gap: 6px 28px; margin: 0; }
+.rep-facts dt { font-size: .78rem; color: var(--muted); }
+.rep-facts dd { margin: 0; font-weight: 600; }
+.rep-sec { display: grid; gap: 12px; break-inside: auto; }
+.rep-sec h3 { font-size: 1.35rem; margin: 0; }
+.rep-two { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.rep-two > div { display: grid; gap: 12px; }
+.rep-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.rep-table caption { text-align: left; font-weight: 600; padding: 6px 0 4px; }
+.rep-table th, .rep-table td { text-align: left; vertical-align: top; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--rule); }
+.rep-table thead th { font-size: .78rem; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--ink); }
+.rep-table tr { break-inside: avoid; }
+.rep-table td.num, .rep-table th.num { width: 3em; }
+.rep-axis th { padding-top: 16px; font-family: var(--display); font-variation-settings: "wdth" 80; font-weight: 700; font-size: 1rem; }
+.rep-axis th .muted { font-family: var(--body); font-weight: 400; font-size: .8rem; }
+.rep-parts td:nth-child(2) { width: 3.2em; }
+.rep-barcol { width: 150px; }
+.rep-barcol span { display: inline-block; width: 50%; }
+.rep-barcol span + span { text-align: right; }
+.rep-bar { position: relative; display: block; height: 10px; width: 140px; margin-top: 5px; background: var(--tint); border-radius: 2px; }
+.rep-bar .mid { position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--muted); }
+.rep-bar b { position: absolute; top: -2px; width: 4px; height: 14px; margin-left: -2px; background: var(--pencil); border-radius: 1px; }
+.rep-shared td:first-child { width: 28%; }
+.rep-answers td:nth-child(3) { width: 22%; }
+.rep-answers td:nth-child(4) { width: 9.5em; }
+.rep-foot { border-top: 1px solid var(--ink); padding-top: 12px; }
+@media (max-width: 720px) {
+  .rep-head { grid-template-columns: 1fr; }
+  .rep-head .stage { max-width: 150px; }
+  .rep-two { grid-template-columns: 1fr; }
+  .rep-barcol, .rep-parts td:nth-child(3) { display: none; }
+}
+@page { size: A4; margin: 14mm 13mm 16mm; }
+@media print {
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #fff; font-size: 9.5pt; }
+  .mast, body > footer, .noprint { display: none !important; }
+  main { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  .view:not(#v-export) { display: none !important; }
+  .report, .rep-sec, .rep-two, .rep-two > div, .report .axes, .report .block { display: block !important; border: 0; padding: 0; max-width: none; background: #fff; }
+  .rep-sec { margin-top: 20px; }
+  .rep-sec > * + * { margin-top: 8px; }
+  .report .axrow { break-inside: avoid; margin-bottom: 6px; }
+  .report .legend { display: flex; }
+  .rep-head { display: grid; }
+  .rep-head { grid-template-columns: 110px minmax(0, 1fr); }
+  .rep-sec h3 { break-after: avoid; }
+  .rep-barcol, .rep-parts td:nth-child(3) { display: table-cell; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  a { text-decoration: none; }
+}
 @media (prefers-reduced-motion: reduce) {
   .ch * { animation: none !important; }
   .mark.on svg path { transition: none; }
@@ -437,7 +496,9 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
     <a href="#test" data-nav="test">Test</a>
     <a href="#types" data-nav="types">Types</a>
     <a href="#results" data-nav="results">Results</a>
+    <a href="#export" data-nav="export">Export</a>
     <a href="#parties" data-nav="parties">Parties</a>
+    <a href="#people" data-nav="people">People</a>
     <a href="#method" data-nav="method">Method</a>
   </nav>
 </header>
@@ -451,10 +512,11 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
   <section class="view" id="v-method" hidden></section>
   <section class="view" id="v-types" hidden></section>
   <section class="view" id="v-type" hidden></section>
+  <section class="view" id="v-export" hidden></section>
 </main>
 
 <footer>
-  <span>Party profiles are drafts: hand-scored and calibrated against the Chapel Hill Expert Survey 1999 to 2024.</span>
+  <span>Party and people profiles are drafts: hand-scored and calibrated against the Chapel Hill Expert Survey 1999 to 2024.</span>
   <span><a href="https://github.com/ThomDirks/politicalcompass">Source and data on GitHub</a></span>
 </footer>
 
@@ -469,6 +531,9 @@ AX.forEach(a => a.facets.forEach(f => { FAXIS[f.id] = a.id; }));
 const FACET = {};
 AX.forEach(a => a.facets.forEach(f => { FACET[f.id] = f; }));
 const ACT = Object.fromEntries(DATA.actors.map(a => [a.id, a]));
+const PARTIES = DATA.actors.filter(a => a.type === "party");
+const PEOPLE = DATA.actors.filter(a => a.type === "person");
+const isPerson = a => a.type === "person";
 const COUNTRIES = ["NL", "DE", "UK", "US"];
 const CNAME = { NL: "the Netherlands", DE: "Germany", UK: "the United Kingdom", US: "the United States" };
 const LABELS = DATA.questions.scale.labels;
@@ -482,7 +547,7 @@ if (window.claude?.hot?.data && Object.keys(window.claude.hot.data).length) S = 
 function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
 window.claude?.hot?.snapshot?.(() => S);
 
-const ui = { includeHistoric: false, allCountries: false, openAxes: new Set(), driftAxis: "ECO", snapIdx: {} };
+const ui = { includeHistoric: false, allCountries: false, peopleLocal: false, openAxes: new Set(), driftAxis: "ECO", snapIdx: {} };
 
 /* ---------- helpers ---------- */
 const $ = (sel, el = document) => el.querySelector(sel);
@@ -559,9 +624,9 @@ function similarity(user, sal, snap) {
 function inAnyFrame(id) { return COUNTRIES.some(c => id in DATA.frames[c].parties); }
 function matches(user, sal, opts) {
   const rows = [];
-  DATA.actors.forEach(a => {
-    const current_ = inAnyFrame(a.id);
-    if (!opts.historic && !current_) return;
+  (opts.people ? PEOPLE : opts.everyone ? DATA.actors : PARTIES).forEach(a => {
+    const current_ = isPerson(a) ? !a.active.to : inAnyFrame(a.id);
+    if (!opts.people && !opts.everyone && !opts.historic && !current_) return;
     if (opts.country && a.country !== opts.country) return;
     const snap = current(a);
     const sim = similarity(user, sal, snap);
@@ -733,11 +798,12 @@ function markSvg() { return `<svg viewBox="0 0 60 60" aria-hidden="true"><path d
 function youMark() { return `<span class="you" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="${CROSS}"/></svg></span>`; }
 
 /* ---------- views ---------- */
-function show(view) {
+function show(view, navAs) {
   document.querySelectorAll(".view").forEach(v => { v.hidden = v.id !== "v-" + view; });
   document.querySelectorAll("[data-nav]").forEach(a => {
     const nav = a.dataset.nav;
-    if (nav === view || (view === "party" && nav === "parties") || (view === "type" && nav === "types")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    const v = navAs || (view === "party" && pFilter.kind === "people" ? "people" : view);
+    if (nav === v || (v === "party" && nav === "parties") || (view === "type" && nav === "types")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
   });
 }
 
@@ -746,8 +812,10 @@ function route() {
   if (h.startsWith("party-") && ACT[h.slice(6)]) { renderParty(h.slice(6)); show("party"); }
   else if (h === "test") { renderTest(); show("test"); }
   else if (h === "results") { if (hasResults()) { renderResults(); show("results"); } else { location.hash = answeredCount() ? "test" : "home"; return; } }
-  else if (h === "parties") { renderParties(); show("parties"); }
+  else if (h === "parties") { pFilter.kind = "parties"; renderParties(); show("parties"); }
+  else if (h === "people") { pFilter.kind = "people"; renderParties(); show("parties", "people"); }
   else if (h === "method") { renderMethod(); show("method"); }
+  else if (h === "export") { renderExport(); show("export"); }
   else if (h === "types") { renderTypes(); show("types"); }
   else if (h.startsWith("type-") && TYPE[h.slice(5).toUpperCase()]) { renderType(h.slice(5).toUpperCase()); show("type"); }
   else { renderHome(); show("home"); }
@@ -927,6 +995,7 @@ function renderResults() {
   const ctr = centre(cc);
   const local = matches(user, S.salience, { country: ui.allCountries ? null : cc, historic: ui.includeHistoric });
   const top = local.find(r => r.current) || local[0];
+  const ppl = matches(user, S.salience, { people: true }).filter(r => !ui.peopleLocal || r.a.country === cc);
   const topAxes = top ? snapAxes(top.snap) : {};
   const answered = Object.values(S.answers).filter(v => v !== null).length;
 
@@ -1026,6 +1095,20 @@ function renderResults() {
       </div>
 
       <div class="block">
+        <h2>Closest people</h2>
+        <div class="toggles">
+          <label><input type="checkbox" id="t-plocal" ${ui.peopleLocal ? "checked" : ""}>Only ${CNAME[cc].replace(/^the /, "")}</label>
+        </div>
+        <ol class="matches">
+          ${ppl.slice(0, 8).map((r, i) => `<li><a href="#party-${r.a.id}">
+            <span class="rank num">${i + 1}</span>
+            <span><span class="pname">${esc(r.a.name)}</span> <span class="pmeta">${esc(r.a.full)}, ${r.a.country}${r.a.active.to ? `, ${r.snap.y}` : ""}</span><span class="bar"><b style="width:${Math.max(0, r.sim)}%"></b></span></span>
+            <span class="pct">${Math.round(r.sim)}%</span></a></li>`).join("")}
+        </ol>
+        <p class="small muted">Politicians and public figures from all four countries, current and past, compared on their stated views, not on what they did.</p>
+      </div>
+
+      <div class="block">
         <h2>The same answers elsewhere</h2>
         <p class="muted small">Left and right shift between countries. Here's how your answers compare with the average in each, and which party comes closest there.</p>
         <div class="tblwrap"><table class="elsewhere">
@@ -1039,6 +1122,7 @@ function renderResults() {
 
       <div class="block">
         <div class="actions">
+          <a class="btn" href="#export">Export your profile</a>
           <a class="btn ghost" href="#test">Review answers</a>
           <button type="button" class="linkbtn" id="again">Take the test again</button>
         </div>
@@ -1056,11 +1140,12 @@ function renderResults() {
   });
   $("#t-all").onchange = e => { ui.allCountries = e.target.checked; renderResults(); };
   $("#t-hist").onchange = e => { ui.includeHistoric = e.target.checked; renderResults(); };
+  $("#t-plocal").onchange = e => { ui.peopleLocal = e.target.checked; renderResults(); };
   $("#again").onclick = () => { S.answers = {}; S.akey = {}; S.salience = {}; S.idx = 0; S.stage = "statements"; S.finished = false; save(); location.hash = "home"; };
 }
 
 /* ---------- parties ---------- */
-let pFilter = { country: "all", show: "current" };
+let pFilter = { country: "all", show: "current", kind: "parties" };
 function years(a) {
   if (!a.active.from) return "";
   if (!a.active.to) return `since ${a.active.from}`;
@@ -1069,32 +1154,46 @@ function years(a) {
 function renderParties() {
   const user = hasResults() ? facetScores(S.answers) : null;
   const groups = COUNTRIES.filter(c => pFilter.country === "all" || pFilter.country === c).map(c => {
-    let list = DATA.actors.filter(a => a.country === c);
-    if (pFilter.show === "current") list = list.filter(a => a.id in DATA.frames[c].parties);
-    if (pFilter.show === "former") list = list.filter(a => !(a.id in DATA.frames[c].parties));
+    const people = pFilter.kind === "people";
+    let list = (people ? PEOPLE : PARTIES).filter(a => a.country === c);
+    const isNow = a => people ? !a.active.to : a.id in DATA.frames[c].parties;
+    if (pFilter.show === "current") list = list.filter(isNow);
+    if (pFilter.show === "former") list = list.filter(a => !isNow(a));
     const w = DATA.frames[c].parties;
-    list.sort((x, y) => (w[y.id] ?? -1) - (w[x.id] ?? -1) || (x.active.from ?? 0) - (y.active.from ?? 0));
+    if (people) list.sort((x, y) => current(y).y - current(x).y || x.name.localeCompare(y.name));
+    else list.sort((x, y) => (w[y.id] ?? -1) - (w[x.id] ?? -1) || (x.active.from ?? 0) - (y.active.from ?? 0));
     return { c, list };
   });
   $("#v-parties").innerHTML = `
-    <h1>Parties</h1>
-    <p class="lead" style="margin-top:14px">${DATA.actors.length} parties from four countries, current and former, each with one or more dated profiles. Open a party to see where it stands and how it moved over time.</p>
+    <h1>${pFilter.kind === "people" ? "People" : "Parties"}</h1>
+    <p class="lead" style="margin-top:14px">${pFilter.kind === "people"
+      ? `${PEOPLE.length} politicians and public figures from four countries, current and past. Each profile describes what they said and stood for at one moment in their career: their views, not their record in office.`
+      : `${PARTIES.length} parties from four countries, current and former, each with one or more dated profiles. Open a party to see where it stands and how it moved over time.`}</p>
     <div class="pfilters">
+      <div class="seg" role="group" aria-label="Show">
+        ${[["parties", "Parties"], ["people", "People"]].map(([k, l]) => `<button type="button" data-pk="${k}" aria-pressed="${pFilter.kind === k}">${l}</button>`).join("")}
+      </div>
       <div class="seg" role="group" aria-label="Country">
         ${["all", ...COUNTRIES].map(c => `<button type="button" data-pc="${c}" aria-pressed="${pFilter.country === c}">${c === "all" ? "All" : c}</button>`).join("")}
       </div>
       <div class="seg" role="group" aria-label="Which parties">
-        ${[["current", "In the current comparison"], ["former", "Former and minor"], ["all", "Both"]].map(([k, l]) => `<button type="button" data-ps="${k}" aria-pressed="${pFilter.show === k}">${l}</button>`).join("")}
+        ${(pFilter.kind === "people" ? [["current", "Active now"], ["former", "Past"], ["all", "Both"]] : [["current", "In the current comparison"], ["former", "Former and minor"], ["all", "Both"]]).map(([k, l]) => `<button type="button" data-ps="${k}" aria-pressed="${pFilter.show === k}">${l}</button>`).join("")}
       </div>
     </div>
     ${groups.map(g => g.list.length ? `<div class="pgroup"><h3>${({ NL: "Netherlands", DE: "Germany", UK: "United Kingdom", US: "United States" })[g.c]}</h3>
       <ul class="plist">${g.list.map(a => {
         const snap = current(a);
         const sim = user ? similarity(user, S.salience, snap) : null;
+        if (isPerson(a)) {
+          const t = TYPE[actorType(a)];
+          return `<li><a href="#party-${a.id}"><span class="pname">${esc(a.name)}${a.kind === "public figure" ? `<span class="tag">public figure</span>` : ""}</span>
+          <span class="pmeta">${esc(a.full)}. Profile ${snap.y}, ${esc(t.name)}${sim !== null ? `. Match with you: ${Math.round(sim)}%` : ""}</span></a></li>`;
+        }
         return `<li><a href="#party-${a.id}"><span class="pname">${esc(a.name)}${a.snaps.length > 1 ? `<span class="tag">${a.snaps.length} profiles</span>` : ""}</span>
           <span class="pmeta">${esc(a.full !== a.name ? a.full : "")}${a.full !== a.name ? ", " : ""}${years(a)}${sim !== null ? `. Match with you: ${Math.round(sim)}%` : ""}</span></a></li>`;
       }).join("")}</ul></div>` : "").join("")}`;
   $("#v-parties").querySelectorAll("[data-pc]").forEach(b => b.onclick = () => { pFilter.country = b.dataset.pc; renderParties(); });
+  $("#v-parties").querySelectorAll("[data-pk]").forEach(b => b.onclick = () => { location.hash = b.dataset.pk; });
   $("#v-parties").querySelectorAll("[data-ps]").forEach(b => b.onclick = () => { pFilter.show = b.dataset.ps; renderParties(); });
 }
 
@@ -1134,11 +1233,16 @@ function renderParty(id) {
   const ctr = DATA.frames[a.country] ? centre(a.country) : null;
   const links = [...a.pred.map(p => ["Continues", p]), ...a.succ.map(p => ["Continued as", p])].filter(([, p]) => ACT[p]);
   const isChes = snap.m === "ches";
+  const person = isPerson(a);
+  if (person) pFilter.kind = "people"; else pFilter.kind = "parties";
+  const base = person && a.party && ACT[a.party];
   $("#v-party").innerHTML = `
   <div class="phead">
-    <a class="back" href="#parties">All parties</a>
+    <a class="back" href="${person ? "#people" : "#parties"}">${person ? "All people" : "All parties"}</a>
     <h1>${esc(a.name)}</h1>
-    <p class="lead">${esc(a.full !== a.name ? a.full + ", " : "")}${CNAME[a.country].replace(/^the /, "")}, ${years(a)}.</p>
+    <p class="lead">${person
+      ? `${esc(a.full)}. ${CNAME[a.country].replace(/^the /, "")}, ${a.active.to ? `active ${a.active.from} to ${a.active.to}` : `active since ${a.active.from}`}.`
+      : `${esc(a.full !== a.name ? a.full + ", " : "")}${CNAME[a.country].replace(/^the /, "")}, ${years(a)}.`}</p>
     ${links.length ? `<p class="small">${links.map(([w, p]) => `${w} <a href="#party-${p}">${esc(ACT[p].name)}</a>`).join(". ")}.</p>` : ""}
     ${ptypeOf(axes) ? typeChip(`${ptypeOf(axes)}-${suffixOf(axes)}`) : ""}
   </div>
@@ -1149,7 +1253,7 @@ function renderParty(id) {
         <div class="snaps" role="group" aria-label="Profile year">
           ${a.snaps.map((s, i) => `<button type="button" class="${s.m === "ches" ? "ches" : ""}" data-si="${i}" aria-pressed="${i === idx}" title="${esc(s.l)}">${s.y}</button>`).join("")}
         </div>
-        <p class="small muted">${esc(snap.l)}. ${isChes ? "Expert survey (Chapel Hill). Covers 20 of the 32 parts; the rest are left empty." : "Scored by hand from programmes and record."}${sim !== null ? ` Match with your answers: <b class="num" style="color:var(--ink)">${Math.round(sim)}%</b>.` : ""}</p>
+        <p class="small muted">${esc(snap.l)}, ${snap.y}. ${person ? esc(snap.b || "") : isChes ? "Expert survey (Chapel Hill). Covers 20 of the 32 parts; the rest are left empty." : "Scored by hand from programmes and record."}${sim !== null ? ` Match with your answers: <b class="num" style="color:var(--ink)">${Math.round(sim)}%</b>.` : ""}</p>
         <div class="legend">
           <span><i class="lg-party"></i>${esc(a.name)} ${snap.y}</span>
           ${user ? `<span><svg class="lg-you" viewBox="0 0 26 26"><path d="${CROSS}" fill="none" stroke="#C8272D" stroke-width="3.4" stroke-linecap="round"/></svg>You</span>` : ""}
@@ -1174,16 +1278,21 @@ function renderParty(id) {
       </div>
     </div>
     <div>
-      <div class="block drift">
+      ${person ? `<div class="block">
+        <h2>Views, not actions</h2>
+        <p>This profile describes what ${esc(a.name)} said and stood for around ${snap.y}: speeches, writing and the programmes they ran on. It doesn't score what they did with power, for better or worse.</p>
+        ${base ? `<p class="small">It starts from the profile of <a href="#party-${base.id}">${esc(base.name)}</a> and moves where ${esc(a.name)}'s own views differ. The notes say where and why.</p>` : `<p class="small">Scored directly from their own views, without a party profile to start from.</p>`}
+        ${snap.y < 1990 ? `<p class="note-box">Measured on today's scales. Someone from ${snap.y < 1950 ? "the early twentieth century or before" : "the post-war decades"} often looks traditional on social values because the norms of their time were different. Parts about issues that did not exist yet, such as AI or the EU, are left empty.</p>` : ""}
+      </div>` : `<div class="block drift">
         <h2>Over time</h2>
         ${a.snaps.length > 1 ? `
         <div class="chips" role="group" aria-label="Topic">${AX.map(ax => `<button type="button" data-da="${ax.id}" aria-pressed="${ui.driftAxis === ax.id}">${esc(ax.name)}</button>`).join("")}</div>
         ${driftSvg(a, ui.driftAxis)}
         <p class="small muted">Filled dots are scored by hand, open dots come from the expert survey. Early survey years only measured overall economic and social positions.</p>` : `<p class="muted">Only one profile so far.</p>`}
-      </div>
+      </div>`}
       ${snap.n ? `<div class="block"><h2>Why these scores</h2><dl class="notes">${AX.map(ax => snap.n[ax.id] ? `<div><dt>${esc(ax.name)}</dt><dd>${esc(snap.n[ax.id])}</dd></div>` : "").join("")}</dl></div>` : ""}
       ${snap.src ? `<div class="block"><h3>Sources</h3><ul class="sources">${snap.src.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></li>`).join("")}</ul></div>` : ""}
-      ${!inAnyFrame(a.id) && a.active.to && a.active.to < 1950 ? `<p class="note-box">Historical parties are measured on today's scales. A party from the 1930s mostly looks traditional on social values because norms then were different, and the profile describes its programme and conduct in office.</p>` : ""}
+      ${!person && !inAnyFrame(a.id) && a.active.to && a.active.to < 1950 ? `<p class="note-box">Historical parties are measured on today's scales. A party from the 1930s mostly looks traditional on social values because norms then were different, and the profile describes its programme and conduct in office.</p>` : ""}
     </div>
   </div>`;
   const root = $("#v-party");
@@ -1222,10 +1331,11 @@ function renderType(code) {
   const T = TYPE[code], camp = campOf(code);
   const ma = myAxes();
   const mine = ma ? ptypeOf(ma) : null;
-  const members = DATA.actors.filter(a => actorType(a) === code);
+  const members = PARTIES.filter(a => actorType(a) === code);
+  const folk = PEOPLE.filter(a => actorType(a) === code).sort((x, y) => current(y).y - current(x).y);
   const cur = members.filter(a => inAnyFrame(a.id));
   const former = members.filter(a => !inAnyFrame(a.id));
-  const total = DATA.actors.filter(a => inAnyFrame(a.id)).length;
+  const total = PARTIES.filter(a => inAnyFrame(a.id)).length;
   const twin = TYPE[code.slice(0, 2) + (code[2] === "I" ? "S" : "I")];
   $("#v-type").innerHTML = `
   <a class="back" href="#types">All types</a>
@@ -1259,16 +1369,171 @@ function renderType(code) {
         : `<p class="muted">None of the ${total} current parties in the four countries. That's normal: parties bundle views in a few common ways, while people mix them much more freely.</p>`}
         ${former.length ? `<p class="small"><b>Former parties and earlier eras:</b> ${former.map(a => `<a href="#party-${a.id}">${esc(a.name)}</a> (${a.country})`).join(", ")}.</p><p class="small muted">${esc(TY.former_note)}</p>` : ""}
       </div>
+      ${folk.length ? `<div class="block ex" style="gap:10px">
+        <h3>People with this profile</h3>
+        <p>${COUNTRIES.map(c => { const l = folk.filter(a => a.country === c); return l.length ? `<b>${c}:</b> ${l.map(a => `<a href="#party-${a.id}">${esc(a.name)}</a> <span class="muted small">${current(a).y}</span>`).join(", ")}` : ""; }).filter(Boolean).join(". ")}.</p>
+        <p class="muted small">Politicians and public figures whose stated views, at the moment shown, come closest to this type. Views only, not actions.</p>
+      </div>` : ""}
       ${mine && mine !== code ? `<p class="small muted">Your own type is <a href="#type-${mine.toLowerCase()}">${esc(TYPE[mine].name)}</a>.</p>` : ""}
       ${!mine ? `<div class="actions"><a class="btn" href="#test">Find your type</a></div>` : ""}
     </div>
   </div>`;
 }
 
+/* ---------- export: a printable profile ---------- */
+function standpoint(f, v) {
+  return v <= -34 ? f.neg : v >= 34 ? f.pos : f.mid;
+}
+function renderExport() {
+  const root = $("#v-export");
+  if (!hasResults()) {
+    root.innerHTML = `<div class="prose"><h1>Export</h1>
+      <p class="lead">Your export is a printable report of your answers, your type and the parties and people you agree with. It needs a finished test first.</p>
+      <div class="actions"><a class="btn" href="#test">${answeredCount() ? "Continue the test" : "Start the test"}</a></div></div>`;
+    return;
+  }
+  const cc = S.country;
+  const user = facetScores(S.answers);
+  const axes = axisFromFacets(f => user[f]);
+  const al = alignmentsOf(axes);
+  const code = al[0].code, T = TYPE[code], suf = suffixOf(axes), next = TYPE[al[1].code];
+  const cons = consistency();
+  const ctr = centre(cc);
+  const items = orderedItems(S.mode).filter(it => S.answers[it.id] !== undefined);
+  const answered = items.filter(it => S.answers[it.id] !== null).length;
+  const sal = S.salience;
+
+  const local = matches(user, sal, { country: cc, historic: false });
+  const world = matches(user, sal, { historic: false });
+  const former = matches(user, sal, { historic: true }).filter(r => !r.current);
+  const folk = matches(user, sal, { people: true });
+
+  // overall match for every actor, used to flag agreement that crosses camps
+  const overall = {};
+  matches(user, sal, { everyone: true }).forEach(r => { overall[r.a.id] = r.sim; });
+  const everyone = DATA.actors.map(a => ({ a, snap: current(a) })).filter(x => overall[x.a.id] !== undefined);
+
+  // per part: who stands within 12 points of you, the least expected first
+  const shared = [];
+  AX.forEach(ax => ax.facets.forEach(f => {
+    const v = user[f.id];
+    if (v === null) return;
+    const near = everyone.map(x => ({ ...x, d: Math.abs((snapFacet(x.snap, f.id) ?? 999) - v) })).filter(x => x.d <= 12);
+    // closest first; on equal distance the one you agree with less overall goes first
+    const pick = arr => arr.sort((x, y) => x.d - y.d || overall[x.a.id] - overall[y.a.id]);
+    const parties = pick(near.filter(x => !isPerson(x.a) && inAnyFrame(x.a.id))).slice(0, 4);
+    const people = pick(near.filter(x => isPerson(x.a))).slice(0, 3);
+    shared.push({ ax, f, v, parties, people, n: near.length });
+  }));
+
+  // common ground: low overall match, but close on several parts
+  const ground = everyone.filter(x => overall[x.a.id] < 75).map(x => {
+    const close = FIDS.filter(f => user[f] !== null && snapFacet(x.snap, f) !== null && Math.abs(snapFacet(x.snap, f) - user[f]) <= 10);
+    return { ...x, close };
+  }).filter(x => x.close.length >= 4).sort((x, y) => y.close.length - x.close.length || overall[y.a.id] - overall[x.a.id]).slice(0, 10);
+
+  const who = x => `${esc(x.a.name)}${isPerson(x.a) ? "" : x.a.active.to ? `, ${esc(x.snap.l)}` : ""} <span class="muted">(${x.a.country})</span>`;
+  const row = (r, i) => `<tr><td class="num">${i + 1}</td><td>${who(r)}</td><td class="num">${Math.round(r.sim)}%</td></tr>`;
+  const mtable = (rows, caption) => `<table class="rep-table"><caption>${caption}</caption><tbody>${rows.map(row).join("")}</tbody></table>`;
+  const bar = v => `<span class="rep-bar" aria-hidden="true"><span class="mid"></span><b style="left:${pctX(v)}%"></b></span>`;
+  const today = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+
+  root.innerHTML = `
+  <div class="rep-tools noprint">
+    <div><h1>Export</h1>
+      <p class="lead">Your profile as a report you can keep. Choose “Save as PDF” as the destination in the print window.</p></div>
+    <div class="actions"><button type="button" class="btn" id="print">Save as PDF</button><a class="btn ghost" href="#results">Back to results</a></div>
+  </div>
+  <article class="report" style="${famStyle(code)}">
+    <header class="rep-head">
+      <div class="stage">${ch(code, T.name)}</div>
+      <div>
+        <p class="rep-brand">PCompass profile, ${today}</p>
+        <p class="muted" style="margin:0">Your views align most closely with</p>
+        <h2 class="rep-type">${esc(T.name)} <span class="tcode">${code}-${suf}</span></h2>
+        <p style="margin:4px 0 10px">${esc(T.tagline)}</p>
+        <dl class="rep-facts">
+          <div><dt>Alignment</dt><dd class="num">${Math.round(al[0].pct)}%</dd></div>
+          <div><dt>Next closest</dt><dd>${esc(next.name)} <span class="num muted">${Math.round(al[1].pct)}%</span></dd></div>
+          ${cons ? `<div><dt>Consistency</dt><dd>${cons.level} <span class="num muted">${cons.score}%</span></dd></div>` : ""}
+          <div><dt>Test</dt><dd>${S.mode === "full" ? "Full" : "Quick"}, ${answered} answers, compared with ${CNAME[cc]}</dd></div>
+        </dl>
+      </div>
+    </header>
+
+    <section class="rep-sec">
+      <h3>You and the typical ${esc(plain(T))}</h3>
+      <div class="legend">
+        <span><svg class="lg-you" viewBox="0 0 26 26"><path d="${CROSS}" fill="none" stroke="#C8272D" stroke-width="3.4" stroke-linecap="round"/></svg>You</span>
+        <span><i class="lg-avg"></i>Typical ${esc(plain(T))}</span>
+        <span><i class="lg-ctr"></i>Average in ${CNAME[cc]}</span>
+      </div>
+      ${profileMeters(axes, code, cc)}
+      <p class="small">${T.about.map(esc).join(" ")}</p>
+    </section>
+
+    <section class="rep-sec">
+      <h3>All 32 parts</h3>
+      <table class="rep-table rep-parts">
+        <thead><tr><th scope="col">Topic and part</th><th scope="col">You</th><th scope="col" class="rep-barcol"><span>${"−100"}</span><span>+100</span></th><th scope="col">Closest standpoint</th></tr></thead>
+        <tbody>${AX.map(ax => `<tr class="rep-axis"><th scope="rowgroup" colspan="4">${esc(ax.name)} <span class="muted">(${esc(ax.neg.label)} − / ${esc(ax.pos.label)} +), ${axes[ax.id] === null ? "not answered" : fmt(axes[ax.id])}; average in ${CNAME[cc]} ${fmt(ctr[ax.id])}</span></th></tr>
+          ${ax.facets.map(f => `<tr><td>${esc(f.name)}</td><td class="num">${user[f.id] === null ? "–" : fmt(user[f.id])}</td><td>${user[f.id] === null ? "" : bar(user[f.id])}</td><td class="small">${user[f.id] === null ? "" : esc(standpoint(f, user[f.id]))}</td></tr>`).join("")}`).join("")}</tbody>
+      </table>
+    </section>
+
+    <section class="rep-sec rep-two">
+      <div>
+        <h3>Closest parties</h3>
+        ${mtable(local.slice(0, 5), `In ${CNAME[cc]}`)}
+        ${mtable(world.slice(0, 5), "In all four countries")}
+        ${mtable(former.slice(0, 4), "Former parties and earlier eras")}
+      </div>
+      <div>
+        <h3>Closest people</h3>
+        ${mtable(folk.slice(0, 10), "Politicians and public figures, current and past")}
+        <p class="small muted">People are scored on their stated views, not on what they did.</p>
+      </div>
+    </section>
+
+    <section class="rep-sec">
+      <h3>Standpoints you share</h3>
+      <p class="small">For every part, the current parties and the people within 12 points of you, closest first. Agreement on one point often crosses camps: the overall match beside each name shows how far apart you are on everything else.</p>
+      <table class="rep-table rep-shared">
+        <thead><tr><th scope="col">Part</th><th scope="col">Parties</th><th scope="col">People</th></tr></thead>
+        <tbody>${shared.map(x => `<tr><td><b>${esc(x.f.name)}</b> <span class="num muted">${fmt(x.v)}</span></td>
+          <td>${x.parties.length ? x.parties.map(p => `${who(p)} <span class="num muted">${Math.round(overall[p.a.id])}%</span>`).join("<br>") : `<span class="muted">none this close</span>`}</td>
+          <td>${x.people.length ? x.people.map(p => `${who(p)} <span class="num muted">${Math.round(overall[p.a.id])}%</span>`).join("<br>") : `<span class="muted">none this close</span>`}</td></tr>`).join("")}</tbody>
+      </table>
+      
+    </section>
+
+    ${ground.length ? `<section class="rep-sec">
+      <h3>Common ground across camps</h3>
+      <p class="small">Parties and people who match you less than 75% overall, but stand within 10 points of you on four parts or more.</p>
+      <table class="rep-table">
+        <thead><tr><th scope="col">Who</th><th scope="col">Overall</th><th scope="col">Where you agree</th></tr></thead>
+        <tbody>${ground.map(x => `<tr><td>${who(x)}<br><span class="small muted">${esc(TYPE[actorType(x.a)].name)}</span></td><td class="num">${Math.round(overall[x.a.id])}%</td><td class="small">${x.close.map(f => esc(FACET[f].name)).join(", ")}</td></tr>`).join("")}</tbody>
+      </table>
+    </section>` : ""}
+
+    <section class="rep-sec">
+      <h3>Your answers</h3>
+      <table class="rep-table rep-answers">
+        <thead><tr><th scope="col" class="num">#</th><th scope="col">Statement</th><th scope="col">Part</th><th scope="col">Your answer</th></tr></thead>
+        <tbody>${items.map((it, i) => { const v = S.answers[it.id]; const f = it.check ? FACET[(DATA.questions.items.find(q => q.id === it.pair) || {}).facet] : FACET[it.facet];
+          return `<tr><td class="num">${i + 1}</td><td>${esc(itemText(it, cc))}</td><td class="small">${it.check ? "Check" : esc(f ? f.name : "")}</td><td>${v === null ? `<span class="muted">${esc(DATA.questions.scale.skip_label)}</span>` : esc(LABELS[v + 3])}</td></tr>`; }).join("")}</tbody>
+      </table>
+    </section>
+
+    <p class="rep-foot small muted">Made with PCompass, thomdirks.github.io/politicalcompass. Scores run from −100 to +100 on absolute scales. Alignment means your views are closer to this type than to any other, not that you share every view. Party and people profiles are drafts.</p>
+  </article>`;
+  $("#print").onclick = () => window.print();
+}
+
 /* ---------- method ---------- */
 function renderMethod() {
   const nItems = DATA.questions.items.length;
-  const nSnaps = DATA.actors.reduce((x, a) => x + a.snaps.length, 0);
+  const nSnaps = PARTIES.reduce((x, a) => x + a.snaps.length, 0);
   $("#v-method").innerHTML = `
   <div class="prose">
     <h1>How it works</h1>
@@ -1285,11 +1550,13 @@ function renderMethod() {
     <p>Scores are absolute: the same answers give the same scores everywhere. The country you pick decides which parties you're compared with and what counts as average there. The average is the mean of that country's parties, weighted by votes at the last national election (or current seats in the Netherlands, after the PVV split).</p>
     <h2>Parties</h2>
     <ul>
-      <li>${DATA.actors.length} parties with ${nSnaps} dated profiles.</li>
+      <li>${PARTIES.length} parties with ${nSnaps} dated profiles.</li>
       <li>Current profiles are scored by hand from programmes and record (November 2026), then checked against the Chapel Hill Expert Survey 2024. Where the two disagreed by 35 points or more, the score became the average of both, unless there was a documented reason to keep it.</li>
       <li>Expert survey profiles from 1999 to 2024 show how European parties moved. Earlier eras and historical parties are scored by hand.</li>
       <li>All profiles are drafts and open to correction.</li>
     </ul>
+    <h2>People</h2>
+    <p>${PEOPLE.length} politicians and public figures, current and past, at least five for every type. They are scored on what they said and stood for, not on what they did in office. Most start from their party's profile in their era and are moved where their own views differ, with a note for every change. People without a party, such as writers and campaigners, are scored directly. Historical figures are measured on today's scales, and parts about issues that did not exist in their time are left empty.</p>
     <h2>Matching</h2>
     <p>Your answers are compared with each party part by part. Topics you said matter more count more. A party is only ranked if its profile covers at least half of what you answered.</p>
     <h2>Privacy</h2>

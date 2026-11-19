@@ -1,0 +1,83 @@
+{
+  "id": "nl-bontenbal",
+  "type": "person",
+  "kind": "politician",
+  "name": "Henri Bontenbal",
+  "full_name": "Leader of the CDA",
+  "country": "NL",
+  "active": {
+    "from": 2021,
+    "to": null
+  },
+  "party": "nl-cda",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the CDA profile (Current (Nov 2026)), adjusted where Henri Bontenbal's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [20, "m"],
+        "eco_reg": [5, "m"],
+        "eco_lab": [-10, "m"],
+        "eco_tax": [10, "m"],
+        "soc_fam": [35, "m"],
+        "soc_lgbt": [-20, "m"],
+        "soc_rel": [25, "m"],
+        "soc_mor": [40, "m"],
+        "lib_priv": [25, "m"],
+        "lib_just": [45, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [30, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [45, "m"],
+        "mig_nat": [25, "m"],
+        "int_eu": [-45, "m"],
+        "int_trade": [-20, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-10, "m"],
+        "cli_amb": [-25, "m"],
+        "cli_pay": [-10, "m"],
+        "cli_nat": [10, "m"],
+        "cli_intl": [-45, "m"],
+        "tec_ai": [10, "l"],
+        "tec_bio": [20, "l"],
+        "tec_nuc": [80, "l"],
+        "tec_big": [-30, "l"],
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-50, "m"],
+        "dem_courts": [-50, "m"],
+        "dem_central": [-16, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CDA profile (Current (Nov 2026)).",
+        "SOC": "In line with the CDA profile (Current (Nov 2026)).",
+        "LIB": "In line with the CDA profile (Current (Nov 2026)).",
+        "MIG": "In line with the CDA profile (Current (Nov 2026)).",
+        "INT": "In line with the CDA profile (Current (Nov 2026)).",
+        "CLI": "In line with the CDA profile (Current (Nov 2026)).",
+        "TEC": "In line with the CDA profile (Current (Nov 2026)).",
+        "DEM": "In line with the CDA profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Henri Bontenbal",
+          "url": "https://en.wikipedia.org/wiki/Henri_Bontenbal"
+        }
+      ]
+    }
+  ]
+}

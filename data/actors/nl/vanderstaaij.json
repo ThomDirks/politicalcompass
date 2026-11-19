@@ -1,0 +1,83 @@
+{
+  "id": "nl-vanderstaaij",
+  "type": "person",
+  "kind": "politician",
+  "name": "Kees van der Staaij",
+  "full_name": "Leader of the SGP 2010 to 2023",
+  "country": "NL",
+  "active": {
+    "from": 1998,
+    "to": 2023
+  },
+  "party": "nl-sgp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2020,
+      "label": "SGP leader",
+      "method": "hand",
+      "basis": "Starts from the SGP profile (Current (Nov 2026)), adjusted where Kees van der Staaij's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 5,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [30, "m"],
+        "eco_reg": [20, "m"],
+        "eco_lab": [10, "m"],
+        "eco_tax": [20, "m"],
+        "soc_fam": [95, "m"],
+        "soc_lgbt": [85, "m"],
+        "soc_rel": [95, "m"],
+        "soc_mor": [95, "m"],
+        "lib_priv": [30, "m"],
+        "lib_just": [80, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [50, "m"],
+        "mig_asy": [45, "m"],
+        "mig_int": [60, "m"],
+        "mig_nat": [34, "m"],
+        "int_eu": [50, "m"],
+        "int_trade": [0, "m"],
+        "int_def": [-40, "m"],
+        "int_aid": [10, "m"],
+        "cli_amb": [25, "m"],
+        "cli_pay": [35, "m"],
+        "cli_nat": [50, "m"],
+        "cli_intl": [20, "m"],
+        "tec_ai": [-10, "l"],
+        "tec_bio": [-25, "l"],
+        "tec_nuc": [70, "l"],
+        "tec_big": [-40, "l"],
+        "dem_trust": [-30, "m"],
+        "dem_direct": [-70, "m"],
+        "dem_courts": [-20, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the SGP profile (Current (Nov 2026)).",
+        "SOC": "In line with the SGP profile (Current (Nov 2026)).",
+        "LIB": "In line with the SGP profile (Current (Nov 2026)).",
+        "MIG": "In line with the SGP profile (Current (Nov 2026)).",
+        "INT": "In line with the SGP profile (Current (Nov 2026)).",
+        "CLI": "In line with the SGP profile (Current (Nov 2026)).",
+        "TEC": "In line with the SGP profile (Current (Nov 2026)).",
+        "DEM": "In line with the SGP profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Kees van der Staaij",
+          "url": "https://en.wikipedia.org/wiki/Kees_van_der_Staaij"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "nl-eerdmans",
+  "type": "person",
+  "kind": "politician",
+  "name": "Joost Eerdmans",
+  "full_name": "Leader of JA21",
+  "country": "NL",
+  "active": {
+    "from": 2002,
+    "to": null
+  },
+  "party": "nl-ja21",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the JA21 profile (Current (Nov 2026)), adjusted where Joost Eerdmans's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [60, "m"],
+        "eco_reg": [55, "m"],
+        "eco_lab": [50, "m"],
+        "eco_tax": [55, "m"],
+        "soc_fam": [25, "m"],
+        "soc_lgbt": [-10, "m"],
+        "soc_rel": [10, "m"],
+        "soc_mor": [20, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [75, "m"],
+        "lib_speech": [-30, "m"],
+        "lib_emerg": [20, "m"],
+        "mig_lvl": [75, "m"],
+        "mig_asy": [85, "m"],
+        "mig_int": [75, "m"],
+        "mig_nat": [65, "m"],
+        "int_eu": [35, "m"],
+        "int_trade": [-55, "m"],
+        "int_def": [-75, "m"],
+        "int_aid": [70, "m"],
+        "cli_amb": [55, "m"],
+        "cli_pay": [65, "m"],
+        "cli_nat": [60, "m"],
+        "cli_intl": [40, "m"],
+        "tec_ai": [40, "l"],
+        "tec_bio": [40, "l"],
+        "tec_nuc": [90, "l"],
+        "tec_big": [20, "l"],
+        "dem_trust": [30, "m"],
+        "dem_direct": [65, "m"],
+        "dem_courts": [20, "m"],
+        "dem_central": [0, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the JA21 profile (Current (Nov 2026)).",
+        "SOC": "In line with the JA21 profile (Current (Nov 2026)).",
+        "LIB": "In line with the JA21 profile (Current (Nov 2026)).",
+        "MIG": "In line with the JA21 profile (Current (Nov 2026)).",
+        "INT": "In line with the JA21 profile (Current (Nov 2026)).",
+        "CLI": "In line with the JA21 profile (Current (Nov 2026)).",
+        "TEC": "In line with the JA21 profile (Current (Nov 2026)).",
+        "DEM": "In line with the JA21 profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Joost Eerdmans",
+          "url": "https://en.wikipedia.org/wiki/Joost_Eerdmans"
+        }
+      ]
+    }
+  ]
+}

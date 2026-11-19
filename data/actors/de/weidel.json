@@ -1,0 +1,83 @@
+{
+  "id": "de-weidel",
+  "type": "person",
+  "kind": "politician",
+  "name": "Alice Weidel",
+  "full_name": "Co-leader of the AfD",
+  "country": "DE",
+  "active": {
+    "from": 2013,
+    "to": null
+  },
+  "party": "de-afd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the AfD profile (Current (Nov 2026)), adjusted where Alice Weidel's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 4,
+        "CLI": 4,
+        "TEC": 2,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [35, "l"],
+        "eco_reg": [40, "l"],
+        "eco_lab": [20, "l"],
+        "eco_tax": [45, "l"],
+        "soc_fam": [80, "m"],
+        "soc_lgbt": [65, "m"],
+        "soc_rel": [25, "m"],
+        "soc_mor": [55, "m"],
+        "lib_priv": [-20, "m"],
+        "lib_just": [80, "m"],
+        "lib_speech": [-45, "m"],
+        "lib_emerg": [-20, "m"],
+        "mig_lvl": [95, "m"],
+        "mig_asy": [100, "m"],
+        "mig_int": [90, "m"],
+        "mig_nat": [95, "m"],
+        "int_eu": [85, "m"],
+        "int_trade": [20, "m"],
+        "int_def": [65, "m"],
+        "int_aid": [90, "m"],
+        "cli_amb": [100, "m"],
+        "cli_pay": [95, "m"],
+        "cli_nat": [70, "m"],
+        "cli_intl": [100, "m"],
+        "tec_ai": [15, "l"],
+        "tec_bio": [0, "l"],
+        "tec_nuc": [90, "l"],
+        "tec_big": [-10, "l"],
+        "dem_trust": [90, "m"],
+        "dem_direct": [90, "m"],
+        "dem_courts": [45, "m"],
+        "dem_central": [-30, "m"]
+      },
+      "notes": {
+        "ECO": "Economist by training, more market-liberal than the party's social wing.",
+        "SOC": "In line with the AfD profile (Current (Nov 2026)).",
+        "LIB": "In line with the AfD profile (Current (Nov 2026)).",
+        "MIG": "In line with the AfD profile (Current (Nov 2026)).",
+        "INT": "In line with the AfD profile (Current (Nov 2026)).",
+        "CLI": "In line with the AfD profile (Current (Nov 2026)).",
+        "TEC": "In line with the AfD profile (Current (Nov 2026)).",
+        "DEM": "In line with the AfD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Alice Weidel",
+          "url": "https://en.wikipedia.org/wiki/Alice_Weidel"
+        }
+      ]
+    }
+  ]
+}

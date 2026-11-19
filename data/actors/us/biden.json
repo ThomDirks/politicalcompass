@@ -1,0 +1,83 @@
+{
+  "id": "us-biden",
+  "type": "person",
+  "kind": "politician",
+  "name": "Joe Biden",
+  "full_name": "President 2021 to 2025 (Democrat)",
+  "country": "US",
+  "active": {
+    "from": 1973,
+    "to": 2025
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2022,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (Current (Nov 2026)), adjusted where Joe Biden's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-20, "l"],
+        "eco_reg": [-35, "l"],
+        "eco_lab": [-45, "l"],
+        "eco_tax": [-40, "l"],
+        "soc_fam": [-60, "m"],
+        "soc_lgbt": [-80, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-60, "m"],
+        "lib_priv": [10, "m"],
+        "lib_just": [-10, "m"],
+        "lib_speech": [5, "m"],
+        "lib_emerg": [-35, "m"],
+        "mig_lvl": [-30, "m"],
+        "mig_asy": [-45, "m"],
+        "mig_int": [-50, "m"],
+        "mig_nat": [-45, "m"],
+        "int_eu": [-60, "m"],
+        "int_trade": [20, "l"],
+        "int_def": [-90, "l"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-65, "m"],
+        "cli_pay": [-40, "m"],
+        "cli_nat": [-40, "m"],
+        "cli_intl": [-80, "m"],
+        "tec_ai": [-10, "m"],
+        "tec_bio": [20, "m"],
+        "tec_nuc": [20, "m"],
+        "tec_big": [-45, "m"],
+        "dem_trust": [-65, "m"],
+        "dem_direct": [-10, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "Industrial policy and union-friendly economics.",
+        "SOC": "In line with the Democrats profile (Current (Nov 2026)).",
+        "LIB": "In line with the Democrats profile (Current (Nov 2026)).",
+        "MIG": "In line with the Democrats profile (Current (Nov 2026)).",
+        "INT": "Kept and extended tariffs on China while rebuilding alliances and backing Ukraine.",
+        "CLI": "In line with the Democrats profile (Current (Nov 2026)).",
+        "TEC": "In line with the Democrats profile (Current (Nov 2026)).",
+        "DEM": "In line with the Democrats profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Joe Biden",
+          "url": "https://en.wikipedia.org/wiki/Joe_Biden"
+        }
+      ]
+    }
+  ]
+}

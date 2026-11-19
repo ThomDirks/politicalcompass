@@ -1,0 +1,83 @@
+{
+  "id": "nl-hirsiali",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ayaan Hirsi Ali",
+  "full_name": "VVD MP 2003 to 2006, writer",
+  "country": "NL",
+  "active": {
+    "from": 2003,
+    "to": null
+  },
+  "party": "nl-vvd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2005,
+      "label": "VVD MP",
+      "method": "hand",
+      "basis": "Starts from the VVD profile (Current (Nov 2026)), adjusted where Ayaan Hirsi Ali's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [55, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [40, "m"],
+        "eco_tax": [45, "m"],
+        "soc_fam": [-35, "l"],
+        "soc_lgbt": [-44, "l"],
+        "soc_rel": [-55, "l"],
+        "soc_mor": [-45, "l"],
+        "lib_priv": [25, "l"],
+        "lib_just": [45, "l"],
+        "lib_speech": [-20, "l"],
+        "lib_emerg": [5, "l"],
+        "mig_lvl": [75, "l"],
+        "mig_asy": [95, "l"],
+        "mig_int": [85, "l"],
+        "mig_nat": [65, "l"],
+        "int_eu": [5, "l"],
+        "int_trade": [-50, "l"],
+        "int_def": [-60, "l"],
+        "int_aid": [50, "l"],
+        "cli_amb": [10, "m"],
+        "cli_pay": [25, "m"],
+        "cli_nat": [30, "m"],
+        "cli_intl": [-20, "m"],
+        "tec_ai": null,
+        "tec_bio": [55, "m"],
+        "tec_nuc": [85, "m"],
+        "tec_big": [35, "m"],
+        "dem_trust": [-10, "l"],
+        "dem_direct": [-30, "l"],
+        "dem_courts": [5, "l"],
+        "dem_central": [50, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the VVD profile (Current (Nov 2026)).",
+        "SOC": "Fought for women's rights and secularism.",
+        "LIB": "In line with the VVD profile (Current (Nov 2026)).",
+        "MIG": "Fierce critic of Islam and of integration policy.",
+        "INT": "Sceptical of multicultural European elites.",
+        "CLI": "In line with the VVD profile (Current (Nov 2026)).",
+        "TEC": "In line with the VVD profile (Current (Nov 2026)).",
+        "DEM": "Clashed openly with the political establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ayaan Hirsi Ali",
+          "url": "https://en.wikipedia.org/wiki/Ayaan_Hirsi_Ali"
+        }
+      ]
+    }
+  ]
+}

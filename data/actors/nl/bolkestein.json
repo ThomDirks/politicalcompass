@@ -1,0 +1,83 @@
+{
+  "id": "nl-bolkestein",
+  "type": "person",
+  "kind": "politician",
+  "name": "Frits Bolkestein",
+  "full_name": "VVD leader 1990 to 1998, EU commissioner",
+  "country": "NL",
+  "active": {
+    "from": 1978,
+    "to": 2004
+  },
+  "party": "nl-vvd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1995,
+      "label": "VVD leader",
+      "method": "hand",
+      "basis": "Starts from the VVD profile (Current (Nov 2026)), adjusted where Frits Bolkestein's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [55, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [40, "m"],
+        "eco_tax": [45, "m"],
+        "soc_fam": [-20, "m"],
+        "soc_lgbt": [-29, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-30, "m"],
+        "lib_priv": [35, "m"],
+        "lib_just": [55, "m"],
+        "lib_speech": [-10, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [65, "l"],
+        "mig_asy": [85, "l"],
+        "mig_int": [75, "l"],
+        "mig_nat": [55, "l"],
+        "int_eu": [40, "l"],
+        "int_trade": [-45, "l"],
+        "int_def": [-55, "l"],
+        "int_aid": [55, "l"],
+        "cli_amb": [25, "l"],
+        "cli_pay": [40, "l"],
+        "cli_nat": [45, "l"],
+        "cli_intl": [-5, "l"],
+        "tec_ai": null,
+        "tec_bio": [55, "m"],
+        "tec_nuc": [85, "m"],
+        "tec_big": null,
+        "dem_trust": [-10, "l"],
+        "dem_direct": [-30, "l"],
+        "dem_courts": [5, "l"],
+        "dem_central": [50, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the VVD profile (Current (Nov 2026)).",
+        "SOC": "In line with the VVD profile (Current (Nov 2026)).",
+        "LIB": "In line with the VVD profile (Current (Nov 2026)).",
+        "MIG": "Broke the taboo on discussing integration and Islam in the early 1990s.",
+        "INT": "Sceptical of EU enlargement and federalism.",
+        "CLI": "Climate was a minor topic.",
+        "TEC": "In line with the VVD profile (Current (Nov 2026)).",
+        "DEM": "Liked to provoke the consensus of The Hague."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Frits Bolkestein",
+          "url": "https://en.wikipedia.org/wiki/Frits_Bolkestein"
+        }
+      ]
+    }
+  ]
+}

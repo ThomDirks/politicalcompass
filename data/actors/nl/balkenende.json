@@ -1,0 +1,83 @@
+{
+  "id": "nl-balkenende",
+  "type": "person",
+  "kind": "politician",
+  "name": "Jan Peter Balkenende",
+  "full_name": "Prime Minister 2002 to 2010 (CDA)",
+  "country": "NL",
+  "active": {
+    "from": 1998,
+    "to": 2010
+  },
+  "party": "nl-cda",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2006,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the CDA profile (Current (Nov 2026)), adjusted where Jan Peter Balkenende's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [25, "l"],
+        "eco_reg": [10, "l"],
+        "eco_lab": [-5, "l"],
+        "eco_tax": [15, "l"],
+        "soc_fam": [45, "l"],
+        "soc_lgbt": [-10, "l"],
+        "soc_rel": [35, "l"],
+        "soc_mor": [50, "l"],
+        "lib_priv": [25, "m"],
+        "lib_just": [45, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [30, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [45, "m"],
+        "mig_nat": [25, "m"],
+        "int_eu": [-45, "m"],
+        "int_trade": [-20, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-10, "m"],
+        "cli_amb": [-25, "m"],
+        "cli_pay": [-10, "m"],
+        "cli_nat": [10, "m"],
+        "cli_intl": [-45, "m"],
+        "tec_ai": null,
+        "tec_bio": [20, "l"],
+        "tec_nuc": [80, "l"],
+        "tec_big": [-30, "l"],
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-50, "m"],
+        "dem_courts": [-50, "m"],
+        "dem_central": [-16, "m"]
+      },
+      "notes": {
+        "ECO": "Reform of the welfare state and pensions.",
+        "SOC": "Norms and values: a return to decency and community.",
+        "LIB": "In line with the CDA profile (Current (Nov 2026)).",
+        "MIG": "In line with the CDA profile (Current (Nov 2026)).",
+        "INT": "In line with the CDA profile (Current (Nov 2026)).",
+        "CLI": "In line with the CDA profile (Current (Nov 2026)).",
+        "TEC": "In line with the CDA profile (Current (Nov 2026)).",
+        "DEM": "In line with the CDA profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Jan Peter Balkenende",
+          "url": "https://en.wikipedia.org/wiki/Jan_Peter_Balkenende"
+        }
+      ]
+    }
+  ]
+}

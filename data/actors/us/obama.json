@@ -1,0 +1,83 @@
+{
+  "id": "us-obama",
+  "type": "person",
+  "kind": "politician",
+  "name": "Barack Obama",
+  "full_name": "President 2009 to 2017 (Democrat)",
+  "country": "US",
+  "active": {
+    "from": 1997,
+    "to": 2017
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2012,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (Current (Nov 2026)), adjusted where Barack Obama's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-10, "l"],
+        "eco_reg": [-25, "l"],
+        "eco_lab": [-35, "l"],
+        "eco_tax": [-30, "l"],
+        "soc_fam": [-55, "l"],
+        "soc_lgbt": [-75, "l"],
+        "soc_rel": [-35, "l"],
+        "soc_mor": [-55, "l"],
+        "lib_priv": [40, "l"],
+        "lib_just": [-10, "m"],
+        "lib_speech": [5, "m"],
+        "lib_emerg": [-35, "m"],
+        "mig_lvl": [-20, "l"],
+        "mig_asy": [-35, "l"],
+        "mig_int": [-40, "l"],
+        "mig_nat": [-35, "l"],
+        "int_eu": [-60, "m"],
+        "int_trade": [-60, "l"],
+        "int_def": [-70, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-65, "m"],
+        "cli_pay": [-40, "m"],
+        "cli_nat": [-40, "m"],
+        "cli_intl": [-80, "m"],
+        "tec_ai": [-10, "m"],
+        "tec_bio": [20, "m"],
+        "tec_nuc": [20, "m"],
+        "tec_big": [-45, "m"],
+        "dem_trust": [-65, "m"],
+        "dem_direct": [-10, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "Affordable Care Act, combined with market-friendly economics.",
+        "SOC": "Came to support same-sex marriage in 2012.",
+        "LIB": "Expanded drone strikes and kept broad surveillance powers.",
+        "MIG": "Pursued a path to citizenship but also deported many people.",
+        "INT": "Free-trade supporter (TPP) and multilateralist.",
+        "CLI": "In line with the Democrats profile (Current (Nov 2026)).",
+        "TEC": "In line with the Democrats profile (Current (Nov 2026)).",
+        "DEM": "In line with the Democrats profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Barack Obama",
+          "url": "https://en.wikipedia.org/wiki/Barack_Obama"
+        }
+      ]
+    }
+  ]
+}

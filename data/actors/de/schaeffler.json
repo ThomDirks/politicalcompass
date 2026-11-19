@@ -1,0 +1,83 @@
+{
+  "id": "de-schaeffler",
+  "type": "person",
+  "kind": "politician",
+  "name": "Frank Schäffler",
+  "full_name": "FDP member of the Bundestag, euro critic",
+  "country": "DE",
+  "active": {
+    "from": 2005,
+    "to": null
+  },
+  "party": "de-fdp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the FDP profile (Current (Nov 2026)), adjusted where Frank Schäffler's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 4,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [85, "l"],
+        "eco_reg": [80, "l"],
+        "eco_lab": [65, "l"],
+        "eco_tax": [85, "l"],
+        "soc_fam": [-38, "m"],
+        "soc_lgbt": [-60, "m"],
+        "soc_rel": [-60, "m"],
+        "soc_mor": [-75, "m"],
+        "lib_priv": [-70, "l"],
+        "lib_just": [-36, "l"],
+        "lib_speech": [-60, "l"],
+        "lib_emerg": [-75, "l"],
+        "mig_lvl": [15, "l"],
+        "mig_asy": [55, "l"],
+        "mig_int": [45, "l"],
+        "mig_nat": [-5, "l"],
+        "int_eu": [45, "l"],
+        "int_trade": [-90, "m"],
+        "int_def": [-90, "m"],
+        "int_aid": [25, "m"],
+        "cli_amb": [10, "m"],
+        "cli_pay": [20, "m"],
+        "cli_nat": [30, "m"],
+        "cli_intl": [-30, "m"],
+        "tec_ai": [80, "m"],
+        "tec_bio": [70, "m"],
+        "tec_nuc": [40, "m"],
+        "tec_big": [40, "m"],
+        "dem_trust": [10, "l"],
+        "dem_direct": [30, "l"],
+        "dem_courts": [-10, "l"],
+        "dem_central": [40, "l"]
+      },
+      "notes": {
+        "ECO": "Libertarian on money and taxes.",
+        "SOC": "In line with the FDP profile (Current (Nov 2026)).",
+        "LIB": "Strongly for individual freedom against the state.",
+        "MIG": "In line with the FDP profile (Current (Nov 2026)).",
+        "INT": "Fought the euro rescue packages from inside the FDP.",
+        "CLI": "In line with the FDP profile (Current (Nov 2026)).",
+        "TEC": "In line with the FDP profile (Current (Nov 2026)).",
+        "DEM": "Distrusts central banks and Brussels."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Frank Schäffler",
+          "url": "https://en.wikipedia.org/wiki/Frank_Schäffler"
+        }
+      ]
+    }
+  ]
+}

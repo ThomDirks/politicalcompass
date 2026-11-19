@@ -1,0 +1,83 @@
+{
+  "id": "uk-glasman",
+  "type": "person",
+  "kind": "politician",
+  "name": "Maurice Glasman",
+  "full_name": "Labour peer, founder of Blue Labour",
+  "country": "UK",
+  "active": {
+    "from": 2009,
+    "to": null
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "Blue Labour",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Current (Nov 2026)), adjusted where Maurice Glasman's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-30, "l"],
+        "eco_reg": [-30, "l"],
+        "eco_lab": [-55, "l"],
+        "eco_tax": [-30, "l"],
+        "soc_fam": [-5, "l"],
+        "soc_lgbt": [0, "l"],
+        "soc_rel": [15, "l"],
+        "soc_mor": [30, "l"],
+        "lib_priv": [55, "l"],
+        "lib_just": [31, "l"],
+        "lib_speech": [55, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [75, "l"],
+        "mig_asy": [80, "l"],
+        "mig_int": [36, "l"],
+        "mig_nat": [45, "l"],
+        "int_eu": [20, "l"],
+        "int_trade": [-10, "l"],
+        "int_def": [-45, "l"],
+        "int_aid": [70, "l"],
+        "cli_amb": [-60, "m"],
+        "cli_pay": [-30, "m"],
+        "cli_nat": [-17, "m"],
+        "cli_intl": [-75, "m"],
+        "tec_ai": [60, "m"],
+        "tec_bio": [50, "m"],
+        "tec_nuc": [75, "m"],
+        "tec_big": [15, "m"],
+        "dem_trust": [-10, "l"],
+        "dem_direct": [-15, "l"],
+        "dem_courts": [0, "l"],
+        "dem_central": [10, "l"]
+      },
+      "notes": {
+        "ECO": "Workers on company boards, vocational banks and a living wage.",
+        "SOC": "'Faith, family and flag': social conservatism inside Labour.",
+        "LIB": "In line with the Labour profile (Current (Nov 2026)).",
+        "MIG": "Argued for much lower immigration.",
+        "INT": "Backed Brexit.",
+        "CLI": "In line with the Labour profile (Current (Nov 2026)).",
+        "TEC": "In line with the Labour profile (Current (Nov 2026)).",
+        "DEM": "Against the managerial liberal establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Maurice Glasman",
+          "url": "https://en.wikipedia.org/wiki/Maurice_Glasman"
+        }
+      ]
+    }
+  ]
+}

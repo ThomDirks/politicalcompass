@@ -1,0 +1,83 @@
+{
+  "id": "us-lbj",
+  "type": "person",
+  "kind": "politician",
+  "name": "Lyndon B. Johnson",
+  "full_name": "President 1963 to 1969 (Democrat)",
+  "country": "US",
+  "active": {
+    "from": 1937,
+    "to": 1969
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1965,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (Great Society era), adjusted where Lyndon B. Johnson's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-40, "l"],
+        "eco_reg": [-60, "l"],
+        "eco_lab": [-70, "l"],
+        "eco_tax": [-65, "l"],
+        "soc_fam": [20, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [20, "m"],
+        "soc_mor": [40, "m"],
+        "lib_priv": [20, "m"],
+        "lib_just": [20, "m"],
+        "lib_speech": [10, "m"],
+        "lib_emerg": [20, "m"],
+        "mig_lvl": [-20, "m"],
+        "mig_asy": [-20, "m"],
+        "mig_int": [-20, "m"],
+        "mig_nat": [-10, "m"],
+        "int_eu": [-50, "m"],
+        "int_trade": [-50, "m"],
+        "int_def": [-85, "l"],
+        "int_aid": [-40, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-30, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-50, "l"],
+        "dem_direct": [-40, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "The Great Society: Medicare, Medicaid and the war on poverty.",
+        "SOC": "In line with the Democrats profile (Great Society era).",
+        "LIB": "In line with the Democrats profile (Great Society era).",
+        "MIG": "In line with the Democrats profile (Great Society era).",
+        "INT": "Escalated in Vietnam in the name of containment.",
+        "CLI": "In line with the Democrats profile (Great Society era).",
+        "TEC": "In line with the Democrats profile (Great Society era).",
+        "DEM": "In line with the Democrats profile (Great Society era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Lyndon B. Johnson",
+          "url": "https://en.wikipedia.org/wiki/Lyndon_B._Johnson"
+        }
+      ]
+    }
+  ]
+}

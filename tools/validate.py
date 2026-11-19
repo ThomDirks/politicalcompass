@@ -28,6 +28,13 @@ for aid, a in actors.items():
     for key in ("id", "type", "name", "full_name", "country", "active", "status", "snapshots"):
         if key not in a:
             err(f"{aid}: missing '{key}'")
+    if a.get("type") not in ("party", "person"):
+        err(f"{aid}: type must be party or person")
+    if a.get("type") == "person":
+        if a.get("kind") not in ("politician", "public figure"):
+            err(f"{aid}: kind must be politician or public figure")
+        if a.get("party") and actors.get(a["party"], {}).get("type") != "party":
+            err(f"{aid}: unknown party {a['party']}")
     if not a.get("snapshots"):
         err(f"{aid}: no snapshots")
         continue
@@ -164,7 +171,7 @@ for code, fr in frames.items():
     cen = centre(fr)
     ov.append(f"| *Centre* | {ptype(cen)} | " + " | ".join(f"*{fmt(cen[ax])}*" for ax in AXIS_IDS) + " |")
     ov.append(f"\nCentre weights: {fr['weight_basis']}")
-former = [a for a in actors.values() if all(a["id"] not in fr["parties"] for fr in frames.values())]
+former = [a for a in actors.values() if a["type"] == "party" and all(a["id"] not in fr["parties"] for fr in frames.values())]
 ov.append(f"\n## Former and minor parties\n\n{HEAD}")
 for a in sorted(former, key=lambda a: (a["country"], (a["active"].get("from") or 0))):
     snap = current(a)
@@ -172,6 +179,25 @@ for a in sorted(former, key=lambda a: (a["country"], (a["active"].get("from") or
     yrs = f"{a['active'].get('from') or '?'}–{a['active'].get('to') or ''}"
     ov.append(f"| {a['name']} ({a['country']}, {yrs}) | {ptype(sc)} | " + " | ".join(fmt(sc[ax]) for ax in AXIS_IDS) + " |")
 overview = "\n".join(ov)
+
+pe = ["| Person | Role | Year | Type | Next closest | " + " | ".join(AXIS_IDS) + " |", "|---|---|---:|---|---|" + "---:|" * len(AXIS_IDS)]
+people = [a for a in actors.values() if a["type"] == "person"]
+by_type = {}
+for a in sorted(people, key=lambda a: (a["country"], a["name"])):
+    snap = current(a)
+    sc = axis_scores(snap)
+    al = pcmodel.alignments(sc)
+    by_type.setdefault(al[0][0], []).append(a["name"])
+    nxt = pcmodel.TYPE_BY_CODE[al[1][0]]["name"]
+    pe.append(f"| {a['name']} ({a['country']}) | {a['full_name']} | {snap['year']} | {ptype(sc)} ({al[0][1]:.0f}%) | {nxt} | " + " | ".join(fmt(sc[ax]) for ax in AXIS_IDS) + " |")
+for code in pcmodel.TYPE_BY_CODE:
+    if len(by_type.get(code, [])) < 5:
+        err(f"people: type {code} has {len(by_type.get(code, []))} people, need at least 5")
+pe_types = ["| Type | People |", "|---|---|"] + [f"| {code} {t['name']} | {len(by_type.get(code, []))}: {', '.join(by_type.get(code, []))} |" for code, t in pcmodel.TYPE_BY_CODE.items()]
+people_md = "\n".join(pe_types) + "\n\n" + "\n".join(pe)
+if errors:
+    print("\n".join(errors))
+    sys.exit(1)
 
 dr = []
 for a in sorted(actors.values(), key=lambda a: (a["country"], a["name"])):
@@ -202,7 +228,7 @@ for a, mad, n, big in cal_rows:
 calibration = "\n".join(cal)
 
 n_snap = sum(len(a["snapshots"]) for a in actors.values())
-print(f"OK: {len(actors)} actors, {n_snap} snapshots, {len(frames)} country frames")
+print(f"OK: {len(actors) - len(people)} parties, {len(people)} people, {n_snap} snapshots, {len(frames)} country frames")
 print(overview)
 
 if "--report" in sys.argv:
@@ -246,4 +272,9 @@ if "--report" in sys.argv:
         ql.append(f"- `{c['id']}` ({'same as' if c['same'] else 'mirror of'} `{c['pair']}`): {c['text']}")
     with open(os.path.join(ROOT, "docs/question-list.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(ql) + "\n")
-    print("\nwrote docs/party-overview.md, docs/drift.md, docs/calibration.md, docs/question-list.md")
+    with open(os.path.join(ROOT, "docs/people.md"), "w", encoding="utf-8") as f:
+        f.write("# People\n\n" + gen +
+                "Politicians and public figures, scored on their stated views (speeches, writing, programmes they stood on), not on what they did in office. "
+                "Most start from their party's profile in their era and are adjusted where their own views differ; people without a party are scored directly. "
+                "See `data/people.json` for the adjustments and `data/actors/` for the result. Every type needs at least five people.\n\n" + people_md + "\n")
+    print("\nwrote docs/party-overview.md, docs/people.md, docs/drift.md, docs/calibration.md, docs/question-list.md")

@@ -76,9 +76,9 @@ A country frame (`data/countries/<code>.json`) holds:
 
 Relative labels come from the distance to the centre. A user at −30 on Economy is close to the centre in the Netherlands but clearly left of centre in the US. The underlying score does not change between frames, only its interpretation.
 
-## Actors: parties and politicians
+## Actors: parties and people
 
-Every party or politician is an **actor** with one file in `data/actors/<country>/<id>.json`. An actor holds its identity (name, country, years active, predecessors and successors) and a list of dated **snapshots**. Individual politicians will use the same format with `type: "politician"`.
+Every party or politician is an **actor** with one file in `data/actors/<country>/<id>.json`. An actor holds its identity (name, country, years active, predecessors and successors) and a list of dated **snapshots**. Politicians and public figures use the same format with `type: "person"` (see [People](#people)).
 
 ```json
 {
@@ -120,6 +120,22 @@ Because every actor has dated snapshots, PCompass can show how a party moved ove
 ### Historical parties
 
 Former parties are included when they were large or historically significant: for example NSDAP, KPD, Zentrum and SED in Germany; NSB, KVP, ARP, CPN, LPF, PvdA and GroenLinks in the Netherlands; BUF, SDP, UKIP and BNP in the UK; and the Dixiecrats in the US. They are scored on the same scales as current parties, which makes it possible to show plainly where an answer pattern overlaps with, for example, fascist or communist programmes. Profiles of totalitarian parties describe their programme and conduct in office factually, including persecution and genocide where relevant.
+
+### People
+
+134 politicians and public figures, current and past, from the four countries, with at least five for every type (the validator enforces this). They are written in `data/people.json` and built into `data/actors/` by `tools/build_people.py`. Each person has one snapshot at a moment in their career (Thatcher in 1987, Merkel in 2015, Fortuyn in 2002).
+
+- **Views, not actions.** A person is scored on what they said and stood for: speeches, writing, the programmes they ran on. What they did with power is not scored. This is the opposite of party snapshots, which also use record in office.
+- **From a party, then adjusted.** Most people start from their party's hand snapshot closest to their era (`base`, `base_year`). `axes` moves every facet of an axis by a number of points, `facets` sets single facets, and every change carries a note. Unchanged parts follow the party, with confidence lowered one step. Rutte, for example, starts from today's VVD and moves 15 points towards open on migration and towards global on international affairs.
+- **Scored directly.** People without a fitting party, such as writers, campaigners and independents (Chomsky, Friedman, Snowden, Perot), get an absolute score per axis in `scores`, with low confidence.
+- **Era.** Facets for issues that did not exist yet are left empty: AI before 2010, big tech before 2005, EU integration before 1950, climate deals before 1985-1990, nuclear power before 1945. Like historical parties, historical people are measured on today's scales, so many look traditional on social values.
+- **No regime leaders.** Leaders of the totalitarian parties are not included as people. Those parties stay in as party profiles.
+
+`docs/people.md` lists every person with their type and next closest type.
+
+## Export
+
+The Export page turns a finished test into a printable A4 report (Save as PDF from the print window): type, alignment, next closest type and consistency; the meters against the typical member of the type; all 32 parts with the closest standpoint text from the facet anchors; the closest parties (own country, all four, former) and people; **standpoints you share**, the current parties and people within 12 points of you on each part, with their overall match so cross-camp agreement is visible; **common ground across camps**, actors under 75% overall who sit within 10 points on four parts or more; and every answer with the statement as shown.
 
 ## Possible simplification
 

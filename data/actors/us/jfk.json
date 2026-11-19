@@ -1,0 +1,83 @@
+{
+  "id": "us-jfk",
+  "type": "person",
+  "kind": "politician",
+  "name": "John F. Kennedy",
+  "full_name": "President 1961 to 1963 (Democrat)",
+  "country": "US",
+  "active": {
+    "from": 1947,
+    "to": 1963
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1962,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (Great Society era), adjusted where John F. Kennedy's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-20, "l"],
+        "eco_reg": [-40, "l"],
+        "eco_lab": [-50, "l"],
+        "eco_tax": [-45, "l"],
+        "soc_fam": [20, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [20, "m"],
+        "soc_mor": [40, "m"],
+        "lib_priv": [20, "m"],
+        "lib_just": [20, "m"],
+        "lib_speech": [10, "m"],
+        "lib_emerg": [20, "m"],
+        "mig_lvl": [-20, "m"],
+        "mig_asy": [-20, "m"],
+        "mig_int": [-20, "m"],
+        "mig_nat": [-10, "m"],
+        "int_eu": [-50, "m"],
+        "int_trade": [-50, "m"],
+        "int_def": [-95, "l"],
+        "int_aid": [-40, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-30, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-50, "l"],
+        "dem_direct": [-40, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "Proposed broad tax cuts alongside social programmes.",
+        "SOC": "In line with the Democrats profile (Great Society era).",
+        "LIB": "In line with the Democrats profile (Great Society era).",
+        "MIG": "In line with the Democrats profile (Great Society era).",
+        "INT": "Cold War hawk: 'pay any price, bear any burden'.",
+        "CLI": "In line with the Democrats profile (Great Society era).",
+        "TEC": "In line with the Democrats profile (Great Society era).",
+        "DEM": "In line with the Democrats profile (Great Society era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: John F. Kennedy",
+          "url": "https://en.wikipedia.org/wiki/John_F._Kennedy"
+        }
+      ]
+    }
+  ]
+}

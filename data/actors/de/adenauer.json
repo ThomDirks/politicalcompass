@@ -1,0 +1,83 @@
+{
+  "id": "de-adenauer",
+  "type": "person",
+  "kind": "politician",
+  "name": "Konrad Adenauer",
+  "full_name": "Chancellor 1949 to 1963 (CDU)",
+  "country": "DE",
+  "active": {
+    "from": 1946,
+    "to": 1963
+  },
+  "party": "de-cdu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1955,
+      "label": "Chancellor",
+      "method": "hand",
+      "basis": "Starts from the CDU profile (Current (Nov 2026)), adjusted where Konrad Adenauer's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [40, "m"],
+        "eco_reg": [35, "m"],
+        "eco_lab": [15, "m"],
+        "eco_tax": [35, "m"],
+        "soc_fam": [70, "l"],
+        "soc_lgbt": [50, "l"],
+        "soc_rel": [70, "l"],
+        "soc_mor": [75, "l"],
+        "lib_priv": [55, "l"],
+        "lib_just": [75, "l"],
+        "lib_speech": [15, "l"],
+        "lib_emerg": [30, "l"],
+        "mig_lvl": [65, "l"],
+        "mig_asy": [80, "l"],
+        "mig_int": [65, "l"],
+        "mig_nat": [50, "l"],
+        "int_eu": [-60, "l"],
+        "int_trade": [-60, "m"],
+        "int_def": [-90, "l"],
+        "int_aid": [10, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [25, "m"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [50, "m"],
+        "tec_big": null,
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [-40, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CDU profile (Current (Nov 2026)).",
+        "SOC": "Catholic, conservative values of the post-war era.",
+        "LIB": "Firm anti-communist law-and-order line.",
+        "MIG": "Migration was not yet a political issue.",
+        "INT": "Anchored West Germany in the West: NATO and the start of European integration.",
+        "CLI": "In line with the CDU profile (Current (Nov 2026)).",
+        "TEC": "In line with the CDU profile (Current (Nov 2026)).",
+        "DEM": "In line with the CDU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Konrad Adenauer",
+          "url": "https://en.wikipedia.org/wiki/Konrad_Adenauer"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "de-lambsdorff",
+  "type": "person",
+  "kind": "politician",
+  "name": "Otto Graf Lambsdorff",
+  "full_name": "Economy minister 1977 to 1984, FDP leader 1988 to 1993",
+  "country": "DE",
+  "active": {
+    "from": 1972,
+    "to": 1998
+  },
+  "party": "de-fdp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1982,
+      "label": "Economy minister",
+      "method": "hand",
+      "basis": "Starts from the FDP profile (Current (Nov 2026)), adjusted where Otto Graf Lambsdorff's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 4,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [80, "l"],
+        "eco_reg": [75, "l"],
+        "eco_lab": [60, "l"],
+        "eco_tax": [80, "l"],
+        "soc_fam": [-28, "l"],
+        "soc_lgbt": [-50, "l"],
+        "soc_rel": [-50, "l"],
+        "soc_mor": [-65, "l"],
+        "lib_priv": [-50, "m"],
+        "lib_just": [-16, "m"],
+        "lib_speech": [-40, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [5, "m"],
+        "mig_asy": [45, "m"],
+        "mig_int": [35, "m"],
+        "mig_nat": [-15, "m"],
+        "int_eu": [-60, "m"],
+        "int_trade": [-90, "m"],
+        "int_def": [-90, "m"],
+        "int_aid": [25, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [40, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [70, "m"],
+        "tec_nuc": [40, "m"],
+        "tec_big": null,
+        "dem_trust": [-45, "m"],
+        "dem_direct": [-25, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-15, "m"]
+      },
+      "notes": {
+        "ECO": "His 1982 paper on market reform ended the SPD-FDP coalition.",
+        "SOC": "Liberal by the standards of the early 1980s.",
+        "LIB": "In line with the FDP profile (Current (Nov 2026)).",
+        "MIG": "In line with the FDP profile (Current (Nov 2026)).",
+        "INT": "In line with the FDP profile (Current (Nov 2026)).",
+        "CLI": "Climate was not yet on the agenda.",
+        "TEC": "In line with the FDP profile (Current (Nov 2026)).",
+        "DEM": "In line with the FDP profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Otto Graf Lambsdorff",
+          "url": "https://en.wikipedia.org/wiki/Otto_Graf_Lambsdorff"
+        }
+      ]
+    }
+  ]
+}

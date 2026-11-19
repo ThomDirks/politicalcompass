@@ -1,0 +1,83 @@
+{
+  "id": "us-reagan",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ronald Reagan",
+  "full_name": "President 1981 to 1989 (Republican)",
+  "country": "US",
+  "active": {
+    "from": 1967,
+    "to": 1989
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1984,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Reagan era), adjusted where Ronald Reagan's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [70, "m"],
+        "eco_reg": [75, "m"],
+        "eco_lab": [70, "m"],
+        "eco_tax": [70, "m"],
+        "soc_fam": [60, "m"],
+        "soc_lgbt": [70, "m"],
+        "soc_rel": [50, "m"],
+        "soc_mor": [60, "m"],
+        "lib_priv": [30, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [10, "m"],
+        "lib_emerg": [20, "m"],
+        "mig_lvl": [20, "m"],
+        "mig_asy": [30, "m"],
+        "mig_int": [30, "m"],
+        "mig_nat": [40, "m"],
+        "int_eu": [-10, "m"],
+        "int_trade": [-40, "m"],
+        "int_def": [-95, "m"],
+        "int_aid": [30, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [40, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [20, "m"],
+        "tec_nuc": [70, "m"],
+        "tec_big": null,
+        "dem_trust": [40, "l"],
+        "dem_direct": [-10, "l"],
+        "dem_courts": [0, "l"],
+        "dem_central": [-60, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Republicans profile (Reagan era).",
+        "SOC": "In line with the Republicans profile (Reagan era).",
+        "LIB": "In line with the Republicans profile (Reagan era).",
+        "MIG": "In line with the Republicans profile (Reagan era).",
+        "INT": "In line with the Republicans profile (Reagan era).",
+        "CLI": "In line with the Republicans profile (Reagan era).",
+        "TEC": "In line with the Republicans profile (Reagan era).",
+        "DEM": "In line with the Republicans profile (Reagan era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ronald Reagan",
+          "url": "https://en.wikipedia.org/wiki/Ronald_Reagan"
+        }
+      ]
+    }
+  ]
+}

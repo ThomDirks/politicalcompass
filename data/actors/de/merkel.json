@@ -1,0 +1,83 @@
+{
+  "id": "de-merkel",
+  "type": "person",
+  "kind": "politician",
+  "name": "Angela Merkel",
+  "full_name": "Chancellor 2005 to 2021 (CDU)",
+  "country": "DE",
+  "active": {
+    "from": 1990,
+    "to": 2021
+  },
+  "party": "de-cdu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2015,
+      "label": "Chancellor",
+      "method": "hand",
+      "basis": "Starts from the CDU profile (Current (Nov 2026)), adjusted where Angela Merkel's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [40, "m"],
+        "eco_reg": [35, "m"],
+        "eco_lab": [15, "m"],
+        "eco_tax": [35, "m"],
+        "soc_fam": [20, "l"],
+        "soc_lgbt": [0, "l"],
+        "soc_rel": [20, "l"],
+        "soc_mor": [25, "l"],
+        "lib_priv": [40, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [0, "l"],
+        "mig_asy": [15, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [-15, "l"],
+        "int_eu": [-60, "l"],
+        "int_trade": [-70, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [0, "l"],
+        "cli_amb": [-20, "l"],
+        "cli_pay": [10, "l"],
+        "cli_nat": [5, "l"],
+        "cli_intl": [-60, "l"],
+        "tec_ai": [50, "m"],
+        "tec_bio": [30, "m"],
+        "tec_nuc": [-60, "l"],
+        "tec_big": [-5, "m"],
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [-40, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CDU profile (Current (Nov 2026)).",
+        "SOC": "Moved the CDU towards the centre; allowed the free vote that legalised same-sex marriage in 2017.",
+        "LIB": "In line with the CDU profile (Current (Nov 2026)).",
+        "MIG": "Kept the borders open in the 2015 refugee crisis ('Wir schaffen das').",
+        "INT": "Strongly committed to the EU and multilateral cooperation.",
+        "CLI": "Pushed climate targets and the Energiewende.",
+        "TEC": "Decided the nuclear phase-out after Fukushima in 2011.",
+        "DEM": "In line with the CDU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Angela Merkel",
+          "url": "https://en.wikipedia.org/wiki/Angela_Merkel"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "us-troosevelt",
+  "type": "person",
+  "kind": "politician",
+  "name": "Theodore Roosevelt",
+  "full_name": "President 1901 to 1909, Progressive candidate 1912",
+  "country": "US",
+  "active": {
+    "from": 1882,
+    "to": 1919
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1912,
+      "label": "Bull Moose",
+      "method": "hand",
+      "basis": "Scored directly from Theodore Roosevelt's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-20, "l"],
+        "eco_reg": [-20, "l"],
+        "eco_lab": [-20, "l"],
+        "eco_tax": [-20, "l"],
+        "soc_fam": [30, "l"],
+        "soc_lgbt": [30, "l"],
+        "soc_rel": [30, "l"],
+        "soc_mor": [30, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [30, "l"],
+        "mig_asy": [30, "l"],
+        "mig_int": [30, "l"],
+        "mig_nat": [30, "l"],
+        "int_eu": null,
+        "int_trade": [15, "l"],
+        "int_def": [-70, "l"],
+        "int_aid": [15, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-35, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [45, "l"],
+        "dem_direct": [45, "l"],
+        "dem_courts": [45, "l"],
+        "dem_central": [45, "l"]
+      },
+      "notes": {
+        "ECO": "Trust-busting and a 'square deal' for workers within capitalism.",
+        "SOC": "Traditional on family and national character.",
+        "LIB": "Scored from Theodore Roosevelt's stated views.",
+        "MIG": "Demanded assimilation: no 'hyphenated Americans'.",
+        "INT": "Nationalist, but for a strong military role in the world.",
+        "CLI": "Conservation: set aside vast public lands and forests.",
+        "TEC": "Scored from Theodore Roosevelt's stated views.",
+        "DEM": "Wanted primaries, recall and referendums against party bosses."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Theodore Roosevelt",
+          "url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt"
+        }
+      ]
+    }
+  ]
+}

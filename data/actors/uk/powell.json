@@ -1,0 +1,83 @@
+{
+  "id": "uk-powell",
+  "type": "person",
+  "kind": "politician",
+  "name": "Enoch Powell",
+  "full_name": "Conservative, then Ulster Unionist MP",
+  "country": "UK",
+  "active": {
+    "from": 1950,
+    "to": 1987
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1968,
+      "label": "Conservative MP",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Thatcher era), adjusted where Enoch Powell's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [85, "m"],
+        "eco_reg": [80, "m"],
+        "eco_lab": [85, "m"],
+        "eco_tax": [70, "m"],
+        "soc_fam": [70, "l"],
+        "soc_lgbt": [80, "l"],
+        "soc_rel": [40, "l"],
+        "soc_mor": [60, "l"],
+        "lib_priv": [40, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [30, "m"],
+        "mig_lvl": [95, "l"],
+        "mig_asy": [85, "l"],
+        "mig_int": [85, "l"],
+        "mig_nat": [95, "l"],
+        "int_eu": [90, "l"],
+        "int_trade": [-40, "l"],
+        "int_def": [-65, "l"],
+        "int_aid": [70, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [80, "m"],
+        "tec_big": null,
+        "dem_trust": [15, "l"],
+        "dem_direct": [-25, "l"],
+        "dem_courts": [15, "l"],
+        "dem_central": [95, "l"]
+      },
+      "notes": {
+        "ECO": "Early monetarist and free-marketeer.",
+        "SOC": "Traditional values, though he voted to decriminalise homosexuality.",
+        "LIB": "In line with the Conservatives profile (Thatcher era).",
+        "MIG": "Warned against Commonwealth immigration in the 1968 'Rivers of Blood' speech.",
+        "INT": "Opposed EEC membership and the American alliance's sway.",
+        "CLI": "In line with the Conservatives profile (Thatcher era).",
+        "TEC": "In line with the Conservatives profile (Thatcher era).",
+        "DEM": "Parliamentary sovereignty above all; left the Conservatives over Europe."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Enoch Powell",
+          "url": "https://en.wikipedia.org/wiki/Enoch_Powell"
+        }
+      ]
+    }
+  ]
+}

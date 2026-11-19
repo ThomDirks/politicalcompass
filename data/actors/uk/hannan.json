@@ -1,0 +1,83 @@
+{
+  "id": "uk-hannan",
+  "type": "person",
+  "kind": "politician",
+  "name": "Daniel Hannan",
+  "full_name": "Conservative MEP 1999 to 2020, Brexit campaigner",
+  "country": "UK",
+  "active": {
+    "from": 1999,
+    "to": null
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2016,
+      "label": "Leave campaign",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Current (Nov 2026)), adjusted where Daniel Hannan's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [85, "l"],
+        "eco_reg": [75, "l"],
+        "eco_lab": [80, "l"],
+        "eco_tax": [75, "l"],
+        "soc_fam": [5, "l"],
+        "soc_lgbt": [0, "l"],
+        "soc_rel": [-10, "l"],
+        "soc_mor": [0, "l"],
+        "lib_priv": [0, "l"],
+        "lib_just": [30, "l"],
+        "lib_speech": [-70, "l"],
+        "lib_emerg": [-25, "l"],
+        "mig_lvl": [45, "l"],
+        "mig_asy": [55, "l"],
+        "mig_int": [30, "l"],
+        "mig_nat": [20, "l"],
+        "int_eu": [95, "l"],
+        "int_trade": [-60, "l"],
+        "int_def": [-85, "m"],
+        "int_aid": [45, "m"],
+        "cli_amb": [30, "m"],
+        "cli_pay": [75, "m"],
+        "cli_nat": [40, "m"],
+        "cli_intl": [40, "m"],
+        "tec_ai": [70, "l"],
+        "tec_bio": [70, "l"],
+        "tec_nuc": [90, "l"],
+        "tec_big": [40, "l"],
+        "dem_trust": [35, "l"],
+        "dem_direct": [-10, "l"],
+        "dem_courts": [70, "l"],
+        "dem_central": [50, "l"]
+      },
+      "notes": {
+        "ECO": "Classical liberal: free markets, small state.",
+        "SOC": "Liberal on personal choices.",
+        "LIB": "Anglosphere civil-liberties tradition over state power.",
+        "MIG": "Argued for Brexit as more open to the world, not less.",
+        "INT": "Leave the EU and trade freely with everyone.",
+        "CLI": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "TEC": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "DEM": "Wants power closer to voters, away from Brussels."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Daniel Hannan",
+          "url": "https://en.wikipedia.org/wiki/Daniel_Hannan"
+        }
+      ]
+    }
+  ]
+}

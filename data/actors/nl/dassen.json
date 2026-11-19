@@ -1,0 +1,83 @@
+{
+  "id": "nl-dassen",
+  "type": "person",
+  "kind": "politician",
+  "name": "Laurens Dassen",
+  "full_name": "Lead candidate of Volt Netherlands",
+  "country": "NL",
+  "active": {
+    "from": 2018,
+    "to": null
+  },
+  "party": "nl-volt",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the Volt profile (Current (Nov 2026)), adjusted where Laurens Dassen's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 5,
+        "CLI": 4,
+        "TEC": 3,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [10, "m"],
+        "eco_reg": [-15, "m"],
+        "eco_lab": [-25, "m"],
+        "eco_tax": [-35, "m"],
+        "soc_fam": [-85, "m"],
+        "soc_lgbt": [-95, "m"],
+        "soc_rel": [-75, "m"],
+        "soc_mor": [-75, "m"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-30, "m"],
+        "lib_speech": [10, "m"],
+        "lib_emerg": [-45, "m"],
+        "mig_lvl": [-55, "m"],
+        "mig_asy": [-60, "m"],
+        "mig_int": [-45, "m"],
+        "mig_nat": [-52, "m"],
+        "int_eu": [-100, "m"],
+        "int_trade": [-60, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [-70, "m"],
+        "cli_amb": [-85, "m"],
+        "cli_pay": [-65, "m"],
+        "cli_nat": [-42, "m"],
+        "cli_intl": [-95, "m"],
+        "tec_ai": [5, "m"],
+        "tec_bio": [45, "m"],
+        "tec_nuc": [40, "m"],
+        "tec_big": [-45, "m"],
+        "dem_trust": [-50, "m"],
+        "dem_direct": [-30, "m"],
+        "dem_courts": [-80, "m"],
+        "dem_central": [-2, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the Volt profile (Current (Nov 2026)).",
+        "SOC": "In line with the Volt profile (Current (Nov 2026)).",
+        "LIB": "In line with the Volt profile (Current (Nov 2026)).",
+        "MIG": "In line with the Volt profile (Current (Nov 2026)).",
+        "INT": "In line with the Volt profile (Current (Nov 2026)).",
+        "CLI": "In line with the Volt profile (Current (Nov 2026)).",
+        "TEC": "In line with the Volt profile (Current (Nov 2026)).",
+        "DEM": "In line with the Volt profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Laurens Dassen",
+          "url": "https://en.wikipedia.org/wiki/Laurens_Dassen"
+        }
+      ]
+    }
+  ]
+}

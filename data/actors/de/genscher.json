@@ -1,0 +1,83 @@
+{
+  "id": "de-genscher",
+  "type": "person",
+  "kind": "politician",
+  "name": "Hans-Dietrich Genscher",
+  "full_name": "Foreign minister 1974 to 1992 (FDP)",
+  "country": "DE",
+  "active": {
+    "from": 1965,
+    "to": 1998
+  },
+  "party": "de-fdp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1985,
+      "label": "Foreign minister",
+      "method": "hand",
+      "basis": "Starts from the FDP profile (Current (Nov 2026)), adjusted where Hans-Dietrich Genscher's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 4,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [70, "m"],
+        "eco_reg": [65, "m"],
+        "eco_lab": [50, "m"],
+        "eco_tax": [70, "m"],
+        "soc_fam": [-33, "l"],
+        "soc_lgbt": [-55, "l"],
+        "soc_rel": [-55, "l"],
+        "soc_mor": [-70, "l"],
+        "lib_priv": [-50, "m"],
+        "lib_just": [-16, "m"],
+        "lib_speech": [-40, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [5, "m"],
+        "mig_asy": [45, "m"],
+        "mig_int": [35, "m"],
+        "mig_nat": [-15, "m"],
+        "int_eu": [-75, "l"],
+        "int_trade": [-100, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [10, "l"],
+        "cli_amb": [20, "l"],
+        "cli_pay": [30, "l"],
+        "cli_nat": [40, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [70, "m"],
+        "tec_nuc": [40, "m"],
+        "tec_big": null,
+        "dem_trust": [-45, "m"],
+        "dem_direct": [-25, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-15, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the FDP profile (Current (Nov 2026)).",
+        "SOC": "Liberal by the norms of the 1980s.",
+        "LIB": "In line with the FDP profile (Current (Nov 2026)).",
+        "MIG": "In line with the FDP profile (Current (Nov 2026)).",
+        "INT": "Architect of détente diplomacy and European integration.",
+        "CLI": "Climate was not yet a central issue.",
+        "TEC": "In line with the FDP profile (Current (Nov 2026)).",
+        "DEM": "In line with the FDP profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Hans-Dietrich Genscher",
+          "url": "https://en.wikipedia.org/wiki/Hans-Dietrich_Genscher"
+        }
+      ]
+    }
+  ]
+}

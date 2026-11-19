@@ -1,0 +1,83 @@
+{
+  "id": "uk-crow",
+  "type": "person",
+  "kind": "public figure",
+  "name": "Bob Crow",
+  "full_name": "General secretary of the RMT rail union",
+  "country": "UK",
+  "active": {
+    "from": 2002,
+    "to": 2014
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2010,
+      "label": "RMT leader",
+      "method": "hand",
+      "basis": "Scored directly from Bob Crow's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-85, "l"],
+        "eco_reg": [-85, "l"],
+        "eco_lab": [-85, "l"],
+        "eco_tax": [-85, "l"],
+        "soc_fam": [15, "l"],
+        "soc_lgbt": [15, "l"],
+        "soc_rel": [15, "l"],
+        "soc_mor": [15, "l"],
+        "lib_priv": [10, "l"],
+        "lib_just": [10, "l"],
+        "lib_speech": [10, "l"],
+        "lib_emerg": [10, "l"],
+        "mig_lvl": [25, "l"],
+        "mig_asy": [25, "l"],
+        "mig_int": [25, "l"],
+        "mig_nat": [25, "l"],
+        "int_eu": [65, "l"],
+        "int_trade": [65, "l"],
+        "int_def": [65, "l"],
+        "int_aid": [65, "l"],
+        "cli_amb": [10, "l"],
+        "cli_pay": [10, "l"],
+        "cli_nat": [10, "l"],
+        "cli_intl": [10, "l"],
+        "tec_ai": [-15, "l"],
+        "tec_bio": [-15, "l"],
+        "tec_nuc": [-15, "l"],
+        "tec_big": [-15, "l"],
+        "dem_trust": [55, "l"],
+        "dem_direct": [55, "l"],
+        "dem_courts": [55, "l"],
+        "dem_central": [55, "l"]
+      },
+      "notes": {
+        "ECO": "Renationalise the railways, strengthen the unions.",
+        "SOC": "Scored from Bob Crow's stated views.",
+        "LIB": "Scored from Bob Crow's stated views.",
+        "MIG": "Argued EU free movement undercut workers' pay.",
+        "INT": "Led the left-wing 'No2EU' campaign against the European Union.",
+        "CLI": "Scored from Bob Crow's stated views.",
+        "TEC": "Scored from Bob Crow's stated views.",
+        "DEM": "Distrusted Labour's leadership as much as the Conservatives."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Bob Crow",
+          "url": "https://en.wikipedia.org/wiki/Bob_Crow"
+        }
+      ]
+    }
+  ]
+}

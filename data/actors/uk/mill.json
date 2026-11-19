@@ -1,0 +1,83 @@
+{
+  "id": "uk-mill",
+  "type": "person",
+  "kind": "public figure",
+  "name": "John Stuart Mill",
+  "full_name": "Philosopher and Liberal MP, author of On Liberty",
+  "country": "UK",
+  "active": {
+    "from": 1859,
+    "to": 1873
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1865,
+      "label": "Liberal MP",
+      "method": "hand",
+      "basis": "Scored directly from John Stuart Mill's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [15, "l"],
+        "eco_reg": [15, "l"],
+        "eco_lab": [15, "l"],
+        "eco_tax": [15, "l"],
+        "soc_fam": [-35, "l"],
+        "soc_lgbt": [-35, "l"],
+        "soc_rel": [-35, "l"],
+        "soc_mor": [-35, "l"],
+        "lib_priv": [-65, "l"],
+        "lib_just": [-65, "l"],
+        "lib_speech": [-65, "l"],
+        "lib_emerg": [-65, "l"],
+        "mig_lvl": [-25, "l"],
+        "mig_asy": [-25, "l"],
+        "mig_int": [-25, "l"],
+        "mig_nat": [-25, "l"],
+        "int_eu": null,
+        "int_trade": [-10, "l"],
+        "int_def": [-10, "l"],
+        "int_aid": [-10, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-10, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [15, "l"],
+        "dem_direct": [15, "l"],
+        "dem_courts": [15, "l"],
+        "dem_central": [15, "l"]
+      },
+      "notes": {
+        "ECO": "Free trade, with growing sympathy for cooperatives and taxing inherited wealth.",
+        "SOC": "Argued for women's suffrage in Parliament in 1867.",
+        "LIB": "The harm principle: the state may only restrict what harms others.",
+        "MIG": "Scored from John Stuart Mill's stated views.",
+        "INT": "Scored from John Stuart Mill's stated views.",
+        "CLI": "Scored from John Stuart Mill's stated views.",
+        "TEC": "Scored from John Stuart Mill's stated views.",
+        "DEM": "Supported representative democracy with safeguards against the tyranny of the majority."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: John Stuart Mill",
+          "url": "https://en.wikipedia.org/wiki/John_Stuart_Mill"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "de-laschet",
+  "type": "person",
+  "kind": "politician",
+  "name": "Armin Laschet",
+  "full_name": "CDU leader 2021, Minister-President of North Rhine-Westphalia",
+  "country": "DE",
+  "active": {
+    "from": 1994,
+    "to": null
+  },
+  "party": "de-cdu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2021,
+      "label": "Chancellor candidate",
+      "method": "hand",
+      "basis": "Starts from the CDU profile (Current (Nov 2026)), adjusted where Armin Laschet's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [40, "m"],
+        "eco_reg": [35, "m"],
+        "eco_lab": [15, "m"],
+        "eco_tax": [35, "m"],
+        "soc_fam": [30, "m"],
+        "soc_lgbt": [10, "m"],
+        "soc_rel": [30, "m"],
+        "soc_mor": [35, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [30, "l"],
+        "mig_asy": [45, "l"],
+        "mig_int": [30, "l"],
+        "mig_nat": [15, "l"],
+        "int_eu": [-60, "l"],
+        "int_trade": [-70, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [0, "l"],
+        "cli_amb": [0, "m"],
+        "cli_pay": [30, "m"],
+        "cli_nat": [25, "m"],
+        "cli_intl": [-40, "m"],
+        "tec_ai": [50, "m"],
+        "tec_bio": [30, "m"],
+        "tec_nuc": [50, "m"],
+        "tec_big": [-5, "m"],
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [-40, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CDU profile (Current (Nov 2026)).",
+        "SOC": "In line with the CDU profile (Current (Nov 2026)).",
+        "LIB": "In line with the CDU profile (Current (Nov 2026)).",
+        "MIG": "Germany's first integration minister at state level; defended Merkel's refugee policy.",
+        "INT": "Strongly European, from the Aachen border region.",
+        "CLI": "In line with the CDU profile (Current (Nov 2026)).",
+        "TEC": "In line with the CDU profile (Current (Nov 2026)).",
+        "DEM": "In line with the CDU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Armin Laschet",
+          "url": "https://en.wikipedia.org/wiki/Armin_Laschet"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "uk-clegg",
+  "type": "person",
+  "kind": "politician",
+  "name": "Nick Clegg",
+  "full_name": "Liberal Democrat leader and deputy prime minister 2010 to 2015",
+  "country": "UK",
+  "active": {
+    "from": 1999,
+    "to": 2017
+  },
+  "party": "uk-ld",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2010,
+      "label": "Deputy PM",
+      "method": "hand",
+      "basis": "Starts from the Lib Dems profile (Current (Nov 2026)), adjusted where Nick Clegg's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 4,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [30, "l"],
+        "eco_reg": [10, "l"],
+        "eco_lab": [5, "l"],
+        "eco_tax": [5, "l"],
+        "soc_fam": [-75, "m"],
+        "soc_lgbt": [-85, "m"],
+        "soc_rel": [-60, "m"],
+        "soc_mor": [-55, "m"],
+        "lib_priv": [-75, "m"],
+        "lib_just": [-30, "m"],
+        "lib_speech": [-10, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [-30, "m"],
+        "mig_asy": [-60, "m"],
+        "mig_int": [-40, "m"],
+        "mig_nat": [-55, "m"],
+        "int_eu": [-70, "m"],
+        "int_trade": [-65, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-75, "m"],
+        "cli_pay": [-55, "m"],
+        "cli_nat": [-55, "m"],
+        "cli_intl": [-85, "m"],
+        "tec_ai": [30, "l"],
+        "tec_bio": [60, "l"],
+        "tec_nuc": [40, "l"],
+        "tec_big": [-25, "l"],
+        "dem_trust": [-45, "m"],
+        "dem_direct": [-20, "m"],
+        "dem_courts": [-70, "m"],
+        "dem_central": [-60, "m"]
+      },
+      "notes": {
+        "ECO": "From the 'Orange Book' wing that favours markets and lower taxes.",
+        "SOC": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "LIB": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "MIG": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "INT": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "CLI": "In line with the Lib Dems profile (Current (Nov 2026)).",
+        "TEC": "Later went to work for Meta; consistently optimistic about technology.",
+        "DEM": "In line with the Lib Dems profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Nick Clegg",
+          "url": "https://en.wikipedia.org/wiki/Nick_Clegg"
+        }
+      ]
+    }
+  ]
+}

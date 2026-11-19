@@ -1,0 +1,83 @@
+{
+  "id": "us-paine",
+  "type": "person",
+  "kind": "public figure",
+  "name": "Thomas Paine",
+  "full_name": "Pamphleteer of the American and French revolutions",
+  "country": "US",
+  "active": {
+    "from": 1774,
+    "to": 1809
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1792,
+      "label": "Rights of Man",
+      "method": "hand",
+      "basis": "Scored directly from Thomas Paine's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-10, "l"],
+        "eco_reg": [-10, "l"],
+        "eco_lab": [-10, "l"],
+        "eco_tax": [-10, "l"],
+        "soc_fam": [-35, "l"],
+        "soc_lgbt": [-35, "l"],
+        "soc_rel": [-35, "l"],
+        "soc_mor": [-35, "l"],
+        "lib_priv": [-50, "l"],
+        "lib_just": [-50, "l"],
+        "lib_speech": [-50, "l"],
+        "lib_emerg": [-50, "l"],
+        "mig_lvl": [-40, "l"],
+        "mig_asy": [-40, "l"],
+        "mig_int": [-40, "l"],
+        "mig_nat": [-40, "l"],
+        "int_eu": null,
+        "int_trade": [15, "l"],
+        "int_def": [15, "l"],
+        "int_aid": [15, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [60, "l"],
+        "dem_direct": [60, "l"],
+        "dem_courts": [60, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "Proposed old-age pensions and a citizen's endowment funded by a land tax, inside a free economy.",
+        "SOC": "Attacked organised religion and opposed slavery, radical for his age.",
+        "LIB": "Rights belong to individuals, not granted by kings.",
+        "MIG": "Scored from Thomas Paine's stated views.",
+        "INT": "Scored from Thomas Paine's stated views.",
+        "CLI": "Climate had no meaning as a political issue in his time.",
+        "TEC": "Scored from Thomas Paine's stated views.",
+        "DEM": "Hereditary rule is illegitimate; power must come from the people."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Thomas Paine",
+          "url": "https://en.wikipedia.org/wiki/Thomas_Paine"
+        }
+      ]
+    }
+  ]
+}

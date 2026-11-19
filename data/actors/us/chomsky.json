@@ -1,0 +1,83 @@
+{
+  "id": "us-chomsky",
+  "type": "person",
+  "kind": "public figure",
+  "name": "Noam Chomsky",
+  "full_name": "Linguist and left-libertarian writer",
+  "country": "US",
+  "active": {
+    "from": 1967,
+    "to": null
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2016,
+      "label": "Writer",
+      "method": "hand",
+      "basis": "Scored directly from Noam Chomsky's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-75, "l"],
+        "eco_reg": [-75, "l"],
+        "eco_lab": [-75, "l"],
+        "eco_tax": [-75, "l"],
+        "soc_fam": [-55, "l"],
+        "soc_lgbt": [-55, "l"],
+        "soc_rel": [-55, "l"],
+        "soc_mor": [-55, "l"],
+        "lib_priv": [-65, "l"],
+        "lib_just": [-65, "l"],
+        "lib_speech": [-65, "l"],
+        "lib_emerg": [-65, "l"],
+        "mig_lvl": [-60, "l"],
+        "mig_asy": [-60, "l"],
+        "mig_int": [-60, "l"],
+        "mig_nat": [-60, "l"],
+        "int_eu": [25, "l"],
+        "int_trade": [25, "l"],
+        "int_def": [25, "l"],
+        "int_aid": [25, "l"],
+        "cli_amb": [-60, "l"],
+        "cli_pay": [-60, "l"],
+        "cli_nat": [-60, "l"],
+        "cli_intl": [-60, "l"],
+        "tec_ai": [-20, "l"],
+        "tec_bio": [-20, "l"],
+        "tec_nuc": [-20, "l"],
+        "tec_big": [-20, "l"],
+        "dem_trust": [55, "l"],
+        "dem_direct": [55, "l"],
+        "dem_courts": [55, "l"],
+        "dem_central": [55, "l"]
+      },
+      "notes": {
+        "ECO": "Anarcho-syndicalist: workers should run the economy, not owners or the state.",
+        "SOC": "Scored from Noam Chomsky's stated views.",
+        "LIB": "Absolute defender of free speech, including for views he despises.",
+        "MIG": "Scored from Noam Chomsky's stated views.",
+        "INT": "Critic of US foreign policy and of free-trade deals written for corporations.",
+        "CLI": "Calls climate change one of the two great threats to humanity.",
+        "TEC": "Scored from Noam Chomsky's stated views.",
+        "DEM": "Sees mainstream institutions and media as serving concentrated power."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Noam Chomsky",
+          "url": "https://en.wikipedia.org/wiki/Noam_Chomsky"
+        }
+      ]
+    }
+  ]
+}

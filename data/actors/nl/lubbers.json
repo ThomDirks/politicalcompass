@@ -1,0 +1,83 @@
+{
+  "id": "nl-lubbers",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ruud Lubbers",
+  "full_name": "Prime Minister 1982 to 1994 (CDA)",
+  "country": "NL",
+  "active": {
+    "from": 1973,
+    "to": 1994
+  },
+  "party": "nl-cda",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1985,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the CDA profile (Current (Nov 2026)), adjusted where Ruud Lubbers's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [40, "l"],
+        "eco_reg": [25, "l"],
+        "eco_lab": [10, "l"],
+        "eco_tax": [30, "l"],
+        "soc_fam": [50, "l"],
+        "soc_lgbt": [-5, "l"],
+        "soc_rel": [40, "l"],
+        "soc_mor": [55, "l"],
+        "lib_priv": [25, "m"],
+        "lib_just": [45, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [35, "l"],
+        "mig_asy": [45, "l"],
+        "mig_int": [50, "l"],
+        "mig_nat": [30, "l"],
+        "int_eu": [-45, "m"],
+        "int_trade": [-20, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-10, "m"],
+        "cli_amb": [-5, "l"],
+        "cli_pay": [10, "l"],
+        "cli_nat": [30, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [20, "l"],
+        "tec_nuc": [80, "l"],
+        "tec_big": null,
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-50, "m"],
+        "dem_courts": [-50, "m"],
+        "dem_central": [-16, "m"]
+      },
+      "notes": {
+        "ECO": "'No-nonsense' policy: spending cuts, wage restraint and privatisation.",
+        "SOC": "Christian democratic values of the 1980s.",
+        "LIB": "In line with the CDA profile (Current (Nov 2026)).",
+        "MIG": "In line with the CDA profile (Current (Nov 2026)).",
+        "INT": "In line with the CDA profile (Current (Nov 2026)).",
+        "CLI": "Environmental policy grew under his governments; climate was not yet central.",
+        "TEC": "In line with the CDA profile (Current (Nov 2026)).",
+        "DEM": "In line with the CDA profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ruud Lubbers",
+          "url": "https://en.wikipedia.org/wiki/Ruud_Lubbers"
+        }
+      ]
+    }
+  ]
+}

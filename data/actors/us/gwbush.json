@@ -1,0 +1,83 @@
+{
+  "id": "us-gwbush",
+  "type": "person",
+  "kind": "politician",
+  "name": "George W. Bush",
+  "full_name": "President 2001 to 2009 (Republican)",
+  "country": "US",
+  "active": {
+    "from": 1995,
+    "to": 2009
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2004,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (George W. Bush era), adjusted where George W. Bush's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 4,
+        "LIB": 5,
+        "MIG": 3,
+        "INT": 5,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [65, "m"],
+        "eco_reg": [60, "m"],
+        "eco_lab": [60, "m"],
+        "eco_tax": [70, "m"],
+        "soc_fam": [60, "m"],
+        "soc_lgbt": [80, "m"],
+        "soc_rel": [60, "m"],
+        "soc_mor": [60, "m"],
+        "lib_priv": [80, "m"],
+        "lib_just": [75, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [70, "m"],
+        "mig_lvl": [30, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [30, "m"],
+        "mig_nat": [45, "m"],
+        "int_eu": [10, "m"],
+        "int_trade": [-40, "m"],
+        "int_def": [-85, "m"],
+        "int_aid": [-10, "m"],
+        "cli_amb": [50, "m"],
+        "cli_pay": [60, "m"],
+        "cli_nat": [40, "m"],
+        "cli_intl": [80, "m"],
+        "tec_ai": null,
+        "tec_bio": [40, "l"],
+        "tec_nuc": [70, "l"],
+        "tec_big": null,
+        "dem_trust": [-10, "l"],
+        "dem_direct": [-20, "l"],
+        "dem_courts": [10, "l"],
+        "dem_central": [-20, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Republicans profile (George W. Bush era).",
+        "SOC": "In line with the Republicans profile (George W. Bush era).",
+        "LIB": "In line with the Republicans profile (George W. Bush era).",
+        "MIG": "In line with the Republicans profile (George W. Bush era).",
+        "INT": "In line with the Republicans profile (George W. Bush era).",
+        "CLI": "In line with the Republicans profile (George W. Bush era).",
+        "TEC": "In line with the Republicans profile (George W. Bush era).",
+        "DEM": "In line with the Republicans profile (George W. Bush era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: George W. Bush",
+          "url": "https://en.wikipedia.org/wiki/George_W._Bush"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "uk-churchill",
+  "type": "person",
+  "kind": "politician",
+  "name": "Winston Churchill",
+  "full_name": "Prime Minister 1940 to 1945 and 1951 to 1955 (Conservative)",
+  "country": "UK",
+  "active": {
+    "from": 1900,
+    "to": 1964
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1951,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Thatcher era), adjusted where Winston Churchill's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [50, "l"],
+        "eco_reg": [45, "l"],
+        "eco_lab": [50, "l"],
+        "eco_tax": [35, "l"],
+        "soc_fam": [75, "l"],
+        "soc_lgbt": [85, "l"],
+        "soc_rel": [45, "l"],
+        "soc_mor": [65, "l"],
+        "lib_priv": [50, "l"],
+        "lib_just": [80, "l"],
+        "lib_speech": [40, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [65, "l"],
+        "mig_asy": [55, "l"],
+        "mig_int": [55, "l"],
+        "mig_nat": [65, "l"],
+        "int_eu": [-30, "l"],
+        "int_trade": [-70, "m"],
+        "int_def": [-90, "l"],
+        "int_aid": [40, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [80, "m"],
+        "tec_big": null,
+        "dem_trust": [-20, "l"],
+        "dem_direct": [-60, "l"],
+        "dem_courts": [-20, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "Accepted the post-war welfare state and the NHS in his second term.",
+        "SOC": "Traditional values of his era.",
+        "LIB": "Strong state in war and in matters of order.",
+        "MIG": "Imperial era; restrictive views on immigration by today's standards.",
+        "INT": "Called for a 'United States of Europe' for the continent and built the Atlantic alliance.",
+        "CLI": "In line with the Conservatives profile (Thatcher era).",
+        "TEC": "In line with the Conservatives profile (Thatcher era).",
+        "DEM": "In line with the Conservatives profile (Thatcher era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Winston Churchill",
+          "url": "https://en.wikipedia.org/wiki/Winston_Churchill"
+        }
+      ]
+    }
+  ]
+}

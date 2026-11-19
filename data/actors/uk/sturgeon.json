@@ -1,0 +1,83 @@
+{
+  "id": "uk-sturgeon",
+  "type": "person",
+  "kind": "politician",
+  "name": "Nicola Sturgeon",
+  "full_name": "First Minister of Scotland 2014 to 2023 (SNP)",
+  "country": "UK",
+  "active": {
+    "from": 1999,
+    "to": 2023
+  },
+  "party": "uk-snp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2020,
+      "label": "First Minister",
+      "method": "hand",
+      "basis": "Starts from the SNP profile (Current (Nov 2026)), adjusted where Nicola Sturgeon's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 3,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-40, "m"],
+        "eco_reg": [-45, "m"],
+        "eco_lab": [-55, "m"],
+        "eco_tax": [-55, "m"],
+        "soc_fam": [-70, "m"],
+        "soc_lgbt": [-75, "m"],
+        "soc_rel": [-55, "m"],
+        "soc_mor": [-45, "m"],
+        "lib_priv": [-40, "m"],
+        "lib_just": [-10, "m"],
+        "lib_speech": [40, "m"],
+        "lib_emerg": [-20, "m"],
+        "mig_lvl": [-50, "m"],
+        "mig_asy": [-60, "m"],
+        "mig_int": [-40, "m"],
+        "mig_nat": [-10, "m"],
+        "int_eu": [-85, "m"],
+        "int_trade": [-40, "m"],
+        "int_def": [-48, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-56, "m"],
+        "cli_pay": [-50, "m"],
+        "cli_nat": [-30, "m"],
+        "cli_intl": [-80, "m"],
+        "tec_ai": [0, "l"],
+        "tec_bio": [-30, "l"],
+        "tec_nuc": [-80, "l"],
+        "tec_big": [-35, "l"],
+        "dem_trust": [-30, "m"],
+        "dem_direct": [20, "m"],
+        "dem_courts": [-50, "m"],
+        "dem_central": [-100, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the SNP profile (Current (Nov 2026)).",
+        "SOC": "In line with the SNP profile (Current (Nov 2026)).",
+        "LIB": "In line with the SNP profile (Current (Nov 2026)).",
+        "MIG": "In line with the SNP profile (Current (Nov 2026)).",
+        "INT": "In line with the SNP profile (Current (Nov 2026)).",
+        "CLI": "In line with the SNP profile (Current (Nov 2026)).",
+        "TEC": "In line with the SNP profile (Current (Nov 2026)).",
+        "DEM": "In line with the SNP profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Nicola Sturgeon",
+          "url": "https://en.wikipedia.org/wiki/Nicola_Sturgeon"
+        }
+      ]
+    }
+  ]
+}

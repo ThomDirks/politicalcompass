@@ -1,0 +1,83 @@
+{
+  "id": "us-eisenhower",
+  "type": "person",
+  "kind": "politician",
+  "name": "Dwight D. Eisenhower",
+  "full_name": "President 1953 to 1961 (Republican)",
+  "country": "US",
+  "active": {
+    "from": 1952,
+    "to": 1961
+  },
+  "party": "us-gop",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1956,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Republicans profile (Eisenhower era), adjusted where Dwight D. Eisenhower's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [30, "m"],
+        "eco_reg": [20, "m"],
+        "eco_lab": [10, "m"],
+        "eco_tax": [20, "m"],
+        "soc_fam": [60, "m"],
+        "soc_lgbt": [90, "m"],
+        "soc_rel": [40, "m"],
+        "soc_mor": [70, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [50, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [20, "m"],
+        "mig_lvl": [50, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [50, "m"],
+        "mig_nat": [40, "m"],
+        "int_eu": [-40, "m"],
+        "int_trade": [-20, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-20, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-40, "l"],
+        "dem_direct": [-40, "l"],
+        "dem_courts": [-20, "l"],
+        "dem_central": [-20, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Republicans profile (Eisenhower era).",
+        "SOC": "In line with the Republicans profile (Eisenhower era).",
+        "LIB": "In line with the Republicans profile (Eisenhower era).",
+        "MIG": "In line with the Republicans profile (Eisenhower era).",
+        "INT": "In line with the Republicans profile (Eisenhower era).",
+        "CLI": "In line with the Republicans profile (Eisenhower era).",
+        "TEC": "In line with the Republicans profile (Eisenhower era).",
+        "DEM": "In line with the Republicans profile (Eisenhower era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Dwight D. Eisenhower",
+          "url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower"
+        }
+      ]
+    }
+  ]
+}

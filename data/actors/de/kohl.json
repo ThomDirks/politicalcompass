@@ -1,0 +1,83 @@
+{
+  "id": "de-kohl",
+  "type": "person",
+  "kind": "politician",
+  "name": "Helmut Kohl",
+  "full_name": "Chancellor 1982 to 1998 (CDU)",
+  "country": "DE",
+  "active": {
+    "from": 1959,
+    "to": 1998
+  },
+  "party": "de-cdu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1990,
+      "label": "Chancellor",
+      "method": "hand",
+      "basis": "Starts from the CDU profile (Current (Nov 2026)), adjusted where Helmut Kohl's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 3,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [40, "m"],
+        "eco_reg": [35, "m"],
+        "eco_lab": [15, "m"],
+        "eco_tax": [35, "m"],
+        "soc_fam": [45, "l"],
+        "soc_lgbt": [25, "l"],
+        "soc_rel": [45, "l"],
+        "soc_mor": [50, "l"],
+        "lib_priv": [40, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [45, "m"],
+        "mig_asy": [60, "m"],
+        "mig_int": [45, "m"],
+        "mig_nat": [30, "m"],
+        "int_eu": [-65, "l"],
+        "int_trade": [-75, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [-5, "l"],
+        "cli_amb": [15, "l"],
+        "cli_pay": [45, "l"],
+        "cli_nat": [40, "l"],
+        "cli_intl": [-25, "l"],
+        "tec_ai": null,
+        "tec_bio": [30, "m"],
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-55, "m"],
+        "dem_direct": [-55, "m"],
+        "dem_courts": [-55, "m"],
+        "dem_central": [-40, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CDU profile (Current (Nov 2026)).",
+        "SOC": "Christian democratic values of the 1980s and 1990s.",
+        "LIB": "In line with the CDU profile (Current (Nov 2026)).",
+        "MIG": "In line with the CDU profile (Current (Nov 2026)).",
+        "INT": "Drove European integration and the euro, and reunification within NATO.",
+        "CLI": "Created the federal environment ministry; climate was only emerging.",
+        "TEC": "Supported nuclear power.",
+        "DEM": "In line with the CDU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Helmut Kohl",
+          "url": "https://en.wikipedia.org/wiki/Helmut_Kohl"
+        }
+      ]
+    }
+  ]
+}

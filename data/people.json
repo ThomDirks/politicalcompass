@@ -1,0 +1,2922 @@
+{
+ "about": "Politician profiles. Each starts from a party snapshot of their era (base, base_year) and is adjusted where the person's own stated views differ: 'axes' shifts all facets of an axis, 'facets' sets a facet. Views only, not actions. Built into data/actors by tools/build_people.py.",
+ "people": [
+  {
+   "id": "nl-wilders",
+   "name": "Geert Wilders",
+   "role": "Leader of the PVV",
+   "active": {
+    "from": 1998,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-pvv",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-jetten",
+   "name": "Rob Jetten",
+   "role": "Prime Minister, leader of D66",
+   "active": {
+    "from": 2017,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-d66",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-yesilgoz",
+   "name": "Dilan Yeşilgöz",
+   "wiki": "Dilan Yeşilgöz-Zegerius",
+   "role": "Leader of the VVD",
+   "active": {
+    "from": 2017,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-vvd",
+   "base_year": 2026,
+   "axes": {
+    "MIG": 10
+   },
+   "notes": {
+    "MIG": "Leads the VVD's tougher line on asylum and migration."
+   }
+  },
+  {
+   "id": "nl-timmermans",
+   "name": "Frans Timmermans",
+   "role": "Former EU climate commissioner and GroenLinks-PvdA leader",
+   "active": {
+    "from": 1998,
+    "to": 2025
+   },
+   "year": 2025,
+   "label": "GroenLinks-PvdA leader",
+   "base": "nl-pro",
+   "base_year": 2026,
+   "axes": {
+    "INT": -10,
+    "CLI": -5
+   },
+   "notes": {
+    "INT": "Long-time EU insider, strongly pro-European.",
+    "CLI": "Architect of the European Green Deal."
+   }
+  },
+  {
+   "id": "nl-vanderplas",
+   "name": "Caroline van der Plas",
+   "role": "Leader of BBB",
+   "active": {
+    "from": 2019,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-bbb",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-rutte",
+   "name": "Mark Rutte",
+   "role": "Prime Minister 2010 to 2024 (VVD), now NATO Secretary General",
+   "active": {
+    "from": 2006,
+    "to": 2024
+   },
+   "year": 2017,
+   "label": "Prime Minister",
+   "base": "nl-vvd",
+   "base_year": 2026,
+   "axes": {
+    "MIG": -15,
+    "INT": -15,
+    "CLI": -10
+   },
+   "notes": {
+    "MIG": "More moderate on migration than today's VVD, though his last cabinet fell over asylum policy.",
+    "INT": "Pragmatic pro-European and committed Atlanticist.",
+    "CLI": "Signed up to the EU's climate targets as prime minister."
+   }
+  },
+  {
+   "id": "nl-fortuyn",
+   "name": "Pim Fortuyn",
+   "role": "Founder of the LPF",
+   "active": {
+    "from": 2001,
+    "to": 2002
+   },
+   "year": 2002,
+   "label": "2002 election",
+   "base": "nl-lpf",
+   "base_year": 2002
+  },
+  {
+   "id": "nl-denuyl",
+   "name": "Joop den Uyl",
+   "role": "Prime Minister 1973 to 1977 (PvdA)",
+   "active": {
+    "from": 1956,
+    "to": 1986
+   },
+   "year": 1975,
+   "label": "Prime Minister",
+   "base": "nl-pro",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -15,
+    "SOC": 25,
+    "MIG": 20,
+    "CLI": 25,
+    "TEC": 20
+   },
+   "notes": {
+    "ECO": "Wanted to spread 'knowledge, power and income': a more equal society through the state.",
+    "SOC": "Progressive for the 1970s, but measured against today's norms.",
+    "MIG": "Migration was hardly a political divide in his time.",
+    "CLI": "Environment was an emerging concern, climate not yet.",
+    "TEC": "Broadly optimistic about planning and technology."
+   }
+  },
+  {
+   "id": "nl-lubbers",
+   "name": "Ruud Lubbers",
+   "role": "Prime Minister 1982 to 1994 (CDA)",
+   "active": {
+    "from": 1973,
+    "to": 1994
+   },
+   "year": 1985,
+   "label": "Prime Minister",
+   "base": "nl-cda",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 20,
+    "SOC": 15,
+    "MIG": 5,
+    "CLI": 20
+   },
+   "notes": {
+    "ECO": "'No-nonsense' policy: spending cuts, wage restraint and privatisation.",
+    "SOC": "Christian democratic values of the 1980s.",
+    "CLI": "Environmental policy grew under his governments; climate was not yet central."
+   }
+  },
+  {
+   "id": "nl-baudet",
+   "name": "Thierry Baudet",
+   "role": "Founder and leader of FvD",
+   "active": {
+    "from": 2016,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-fvd",
+   "base_year": 2026
+  },
+  {
+   "id": "de-merz",
+   "name": "Friedrich Merz",
+   "role": "Chancellor, leader of the CDU",
+   "active": {
+    "from": 1989,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-cdu",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10,
+    "MIG": 5
+   },
+   "notes": {
+    "ECO": "More market-liberal than the CDU average.",
+    "MIG": "Pushed for border turnbacks and a tougher asylum line."
+   }
+  },
+  {
+   "id": "de-merkel",
+   "name": "Angela Merkel",
+   "role": "Chancellor 2005 to 2021 (CDU)",
+   "active": {
+    "from": 1990,
+    "to": 2021
+   },
+   "year": 2015,
+   "label": "Chancellor",
+   "base": "de-cdu",
+   "base_year": 2026,
+   "axes": {
+    "MIG": -45,
+    "SOC": -10,
+    "CLI": -20,
+    "INT": -10
+   },
+   "facets": {
+    "tec_nuc": -60
+   },
+   "notes": {
+    "MIG": "Kept the borders open in the 2015 refugee crisis ('Wir schaffen das').",
+    "SOC": "Moved the CDU towards the centre; allowed the free vote that legalised same-sex marriage in 2017.",
+    "CLI": "Pushed climate targets and the Energiewende.",
+    "TEC": "Decided the nuclear phase-out after Fukushima in 2011.",
+    "INT": "Strongly committed to the EU and multilateral cooperation."
+   }
+  },
+  {
+   "id": "de-scholz",
+   "name": "Olaf Scholz",
+   "role": "Chancellor 2021 to 2025 (SPD)",
+   "active": {
+    "from": 1998,
+    "to": 2025
+   },
+   "year": 2022,
+   "label": "Chancellor",
+   "base": "de-spd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10
+   },
+   "facets": {
+    "int_def": -80
+   },
+   "notes": {
+    "ECO": "Fiscally cautious, from the SPD's centrist wing.",
+    "INT": "Announced the 'Zeitenwende': more defence spending and support for Ukraine."
+   }
+  },
+  {
+   "id": "de-weidel",
+   "name": "Alice Weidel",
+   "role": "Co-leader of the AfD",
+   "active": {
+    "from": 2013,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-afd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10
+   },
+   "notes": {
+    "ECO": "Economist by training, more market-liberal than the party's social wing."
+   }
+  },
+  {
+   "id": "de-wagenknecht",
+   "name": "Sahra Wagenknecht",
+   "role": "Founder of BSW",
+   "active": {
+    "from": 1991,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-bsw",
+   "base_year": 2026
+  },
+  {
+   "id": "de-habeck",
+   "name": "Robert Habeck",
+   "role": "Vice Chancellor and economy minister 2021 to 2025 (Greens)",
+   "active": {
+    "from": 2004,
+    "to": 2025
+   },
+   "year": 2024,
+   "label": "Economy minister",
+   "base": "de-gruene",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10
+   },
+   "notes": {
+    "ECO": "Pragmatic on industry and energy security as economy minister."
+   }
+  },
+  {
+   "id": "de-lindner",
+   "name": "Christian Lindner",
+   "role": "FDP leader 2013 to 2025, finance minister 2021 to 2024",
+   "active": {
+    "from": 2000,
+    "to": 2025
+   },
+   "year": 2024,
+   "label": "Finance minister",
+   "base": "de-fdp",
+   "base_year": 2026
+  },
+  {
+   "id": "de-kohl",
+   "name": "Helmut Kohl",
+   "role": "Chancellor 1982 to 1998 (CDU)",
+   "active": {
+    "from": 1959,
+    "to": 1998
+   },
+   "year": 1990,
+   "label": "Chancellor",
+   "base": "de-cdu",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 15,
+    "CLI": 15,
+    "INT": -15
+   },
+   "facets": {
+    "tec_nuc": 60
+   },
+   "notes": {
+    "SOC": "Christian democratic values of the 1980s and 1990s.",
+    "INT": "Drove European integration and the euro, and reunification within NATO.",
+    "CLI": "Created the federal environment ministry; climate was only emerging.",
+    "TEC": "Supported nuclear power."
+   }
+  },
+  {
+   "id": "de-brandt",
+   "name": "Willy Brandt",
+   "role": "Chancellor 1969 to 1974 (SPD)",
+   "active": {
+    "from": 1957,
+    "to": 1987
+   },
+   "year": 1972,
+   "label": "Chancellor",
+   "base": "de-spd",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 20,
+    "MIG": 15,
+    "CLI": 20
+   },
+   "facets": {
+    "int_def": -20
+   },
+   "notes": {
+    "SOC": "'Dare more democracy': reformist for its time, measured against today's norms.",
+    "INT": "Ostpolitik: détente with the East while staying firmly in NATO.",
+    "MIG": "Guest-worker era; migration was not yet a major political divide.",
+    "CLI": "Environmental protection reached the agenda, climate not yet."
+   }
+  },
+  {
+   "id": "de-adenauer",
+   "name": "Konrad Adenauer",
+   "role": "Chancellor 1949 to 1963 (CDU)",
+   "active": {
+    "from": 1946,
+    "to": 1963
+   },
+   "year": 1955,
+   "label": "Chancellor",
+   "base": "de-cdu",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 40,
+    "MIG": 20,
+    "LIB": 15
+   },
+   "facets": {
+    "int_eu": -60,
+    "int_def": -90
+   },
+   "notes": {
+    "SOC": "Catholic, conservative values of the post-war era.",
+    "INT": "Anchored West Germany in the West: NATO and the start of European integration.",
+    "LIB": "Firm anti-communist law-and-order line.",
+    "MIG": "Migration was not yet a political issue."
+   }
+  },
+  {
+   "id": "uk-starmer",
+   "name": "Keir Starmer",
+   "role": "Prime Minister, leader of Labour",
+   "active": {
+    "from": 2015,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "uk-labour",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-farage",
+   "name": "Nigel Farage",
+   "role": "Leader of Reform UK",
+   "active": {
+    "from": 1993,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "uk-reform",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-badenoch",
+   "name": "Kemi Badenoch",
+   "role": "Leader of the Conservatives",
+   "active": {
+    "from": 2017,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "uk-con",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-thatcher",
+   "name": "Margaret Thatcher",
+   "role": "Prime Minister 1979 to 1990 (Conservative)",
+   "active": {
+    "from": 1959,
+    "to": 1992
+   },
+   "year": 1987,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 1987
+  },
+  {
+   "id": "uk-blair",
+   "name": "Tony Blair",
+   "role": "Prime Minister 1997 to 2007 (Labour)",
+   "active": {
+    "from": 1983,
+    "to": 2007
+   },
+   "year": 1997,
+   "label": "Prime Minister",
+   "base": "uk-labour",
+   "base_year": 1997,
+   "facets": {
+    "int_def": -95
+   },
+   "notes": {
+    "INT": "Strongly interventionist alongside the US: Kosovo, Afghanistan, Iraq."
+   }
+  },
+  {
+   "id": "uk-attlee",
+   "name": "Clement Attlee",
+   "role": "Prime Minister 1945 to 1951 (Labour)",
+   "active": {
+    "from": 1922,
+    "to": 1955
+   },
+   "year": 1945,
+   "label": "Prime Minister",
+   "base": "uk-labour",
+   "base_year": 1945
+  },
+  {
+   "id": "uk-corbyn",
+   "name": "Jeremy Corbyn",
+   "role": "Labour leader 2015 to 2020",
+   "active": {
+    "from": 1983,
+    "to": null
+   },
+   "year": 2019,
+   "label": "Labour leader",
+   "base": "uk-labour",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -45,
+    "SOC": -20,
+    "LIB": -55,
+    "MIG": -55,
+    "CLI": -25,
+    "TEC": -20,
+    "DEM": 15
+   },
+   "facets": {
+    "int_eu": 30,
+    "int_def": 60,
+    "int_aid": -80,
+    "int_trade": 20
+   },
+   "notes": {
+    "ECO": "Nationalisation of rail, energy and water, higher taxes on the rich.",
+    "SOC": "Long-standing campaigner for progressive social causes.",
+    "LIB": "Civil libertarian on surveillance, policing and protest.",
+    "MIG": "Defended migrants' rights and a humane asylum policy.",
+    "INT": "Long critical of the EU and NATO; went into the 2019 election promising a second Brexit referendum.",
+    "CLI": "Backed a 'green industrial revolution' in 2019.",
+    "TEC": "Wanted public control over big tech and broadband.",
+    "DEM": "Insurgent against the party establishment."
+   }
+  },
+  {
+   "id": "uk-johnson",
+   "name": "Boris Johnson",
+   "role": "Prime Minister 2019 to 2022 (Conservative)",
+   "active": {
+    "from": 2001,
+    "to": 2023
+   },
+   "year": 2019,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -15,
+    "CLI": -55,
+    "SOC": -10,
+    "MIG": -15
+   },
+   "facets": {
+    "int_eu": 90
+   },
+   "notes": {
+    "ECO": "'Levelling up': more public spending than traditional Conservatives.",
+    "CLI": "Committed the UK to net zero and championed it at COP26.",
+    "SOC": "Socially liberal by Conservative standards.",
+    "MIG": "Ended EU free movement but allowed high non-EU migration.",
+    "INT": "Led the Leave campaign and 'got Brexit done'."
+   }
+  },
+  {
+   "id": "uk-churchill",
+   "name": "Winston Churchill",
+   "role": "Prime Minister 1940 to 1945 and 1951 to 1955 (Conservative)",
+   "active": {
+    "from": 1900,
+    "to": 1964
+   },
+   "year": 1951,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 1987,
+   "axes": {
+    "ECO": -35,
+    "SOC": 25,
+    "MIG": 15,
+    "LIB": 10
+   },
+   "facets": {
+    "int_eu": -30,
+    "int_def": -90
+   },
+   "notes": {
+    "ECO": "Accepted the post-war welfare state and the NHS in his second term.",
+    "SOC": "Traditional values of his era.",
+    "INT": "Called for a 'United States of Europe' for the continent and built the Atlantic alliance.",
+    "MIG": "Imperial era; restrictive views on immigration by today's standards.",
+    "LIB": "Strong state in war and in matters of order."
+   }
+  },
+  {
+   "id": "uk-sturgeon",
+   "name": "Nicola Sturgeon",
+   "role": "First Minister of Scotland 2014 to 2023 (SNP)",
+   "active": {
+    "from": 1999,
+    "to": 2023
+   },
+   "year": 2020,
+   "label": "First Minister",
+   "base": "uk-snp",
+   "base_year": 2026
+  },
+  {
+   "id": "us-trump",
+   "name": "Donald Trump",
+   "role": "President (Republican)",
+   "active": {
+    "from": 2015,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "us-gop",
+   "base_year": 2026
+  },
+  {
+   "id": "us-vance",
+   "name": "JD Vance",
+   "role": "Vice President (Republican)",
+   "active": {
+    "from": 2023,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "us-gop",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -10
+   },
+   "notes": {
+    "ECO": "Champions a more worker-oriented, protectionist economics than traditional Republicans."
+   }
+  },
+  {
+   "id": "us-harris",
+   "name": "Kamala Harris",
+   "role": "Vice President 2021 to 2025, 2024 Democratic nominee",
+   "active": {
+    "from": 2004,
+    "to": null
+   },
+   "year": 2024,
+   "label": "2024 nominee",
+   "base": "us-dem",
+   "base_year": 2026
+  },
+  {
+   "id": "us-sanders",
+   "name": "Bernie Sanders",
+   "role": "Senator from Vermont (independent, caucuses with the Democrats)",
+   "active": {
+    "from": 1981,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -40,
+    "DEM": 30,
+    "CLI": -15
+   },
+   "facets": {
+    "int_trade": 40
+   },
+   "notes": {
+    "ECO": "Democratic socialist: Medicare for All, free college, higher taxes on the rich.",
+    "DEM": "Rails against a 'rigged' system and billionaire influence.",
+    "INT": "Long opposed free trade deals such as NAFTA.",
+    "CLI": "Backs a Green New Deal."
+   }
+  },
+  {
+   "id": "us-aoc",
+   "name": "Alexandria Ocasio-Cortez",
+   "role": "Representative from New York (Democrat)",
+   "active": {
+    "from": 2019,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -45,
+    "CLI": -35,
+    "MIG": -25,
+    "DEM": 15,
+    "SOC": -10
+   },
+   "notes": {
+    "ECO": "Democratic socialist economics.",
+    "CLI": "Co-author of the Green New Deal resolution.",
+    "MIG": "Has called for abolishing ICE and a humane asylum system.",
+    "DEM": "Insurgent against the party establishment.",
+    "SOC": "Progressive on every social question."
+   }
+  },
+  {
+   "id": "us-obama",
+   "name": "Barack Obama",
+   "role": "President 2009 to 2017 (Democrat)",
+   "active": {
+    "from": 1997,
+    "to": 2017
+   },
+   "year": 2012,
+   "label": "President",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 5,
+    "MIG": 10,
+    "SOC": 5
+   },
+   "facets": {
+    "lib_priv": 40,
+    "int_trade": -60
+   },
+   "notes": {
+    "ECO": "Affordable Care Act, combined with market-friendly economics.",
+    "MIG": "Pursued a path to citizenship but also deported many people.",
+    "SOC": "Came to support same-sex marriage in 2012.",
+    "LIB": "Expanded drone strikes and kept broad surveillance powers.",
+    "INT": "Free-trade supporter (TPP) and multilateralist."
+   }
+  },
+  {
+   "id": "us-reagan",
+   "name": "Ronald Reagan",
+   "role": "President 1981 to 1989 (Republican)",
+   "active": {
+    "from": 1967,
+    "to": 1989
+   },
+   "year": 1984,
+   "label": "President",
+   "base": "us-gop",
+   "base_year": 1980
+  },
+  {
+   "id": "us-fdr",
+   "name": "Franklin D. Roosevelt",
+   "role": "President 1933 to 1945 (Democrat)",
+   "active": {
+    "from": 1911,
+    "to": 1945
+   },
+   "year": 1936,
+   "label": "President",
+   "base": "us-dem",
+   "base_year": 1936
+  },
+  {
+   "id": "us-jfk",
+   "name": "John F. Kennedy",
+   "role": "President 1961 to 1963 (Democrat)",
+   "active": {
+    "from": 1947,
+    "to": 1963
+   },
+   "year": 1962,
+   "label": "President",
+   "base": "us-dem",
+   "base_year": 1964,
+   "axes": {
+    "ECO": 10
+   },
+   "facets": {
+    "int_def": -95
+   },
+   "notes": {
+    "ECO": "Proposed broad tax cuts alongside social programmes.",
+    "INT": "Cold War hawk: 'pay any price, bear any burden'."
+   }
+  },
+  {
+   "id": "us-biden",
+   "name": "Joe Biden",
+   "role": "President 2021 to 2025 (Democrat)",
+   "active": {
+    "from": 1973,
+    "to": 2025
+   },
+   "year": 2022,
+   "label": "President",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -5
+   },
+   "facets": {
+    "int_trade": 20,
+    "int_def": -90
+   },
+   "notes": {
+    "ECO": "Industrial policy and union-friendly economics.",
+    "INT": "Kept and extended tariffs on China while rebuilding alliances and backing Ukraine."
+   }
+  },
+  {
+   "id": "nl-lmarijnissen",
+   "name": "Lilian Marijnissen",
+   "role": "Leader of the SP 2015 to 2025",
+   "active": {
+    "from": 2012,
+    "to": null
+   },
+   "year": 2025,
+   "label": "SP leader",
+   "base": "nl-sp",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-thieme",
+   "name": "Marianne Thieme",
+   "role": "Founder and leader of the Party for the Animals 2002 to 2019",
+   "active": {
+    "from": 2002,
+    "to": 2019
+   },
+   "year": 2017,
+   "label": "Party leader",
+   "base": "nl-pvdd",
+   "base_year": 2026
+  },
+  {
+   "id": "de-gysi",
+   "name": "Gregor Gysi",
+   "role": "Leading figure of Die Linke",
+   "active": {
+    "from": 1989,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-linke",
+   "base_year": 2026
+  },
+  {
+   "id": "de-reichinnek",
+   "name": "Heidi Reichinnek",
+   "role": "Leader of Die Linke in the Bundestag",
+   "active": {
+    "from": 2021,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-linke",
+   "base_year": 2026
+  },
+  {
+   "id": "de-luxemburg",
+   "name": "Rosa Luxemburg",
+   "role": "Socialist theorist, co-founder of the KPD",
+   "kind": "public figure",
+   "active": {
+    "from": 1898,
+    "to": 1919
+   },
+   "year": 1918,
+   "label": "KPD founding",
+   "base": "de-kpd",
+   "base_year": 1928,
+   "axes": {
+    "LIB": -40,
+    "DEM": -15
+   },
+   "notes": {
+    "LIB": "'Freedom is always the freedom of those who think differently': wanted socialism with free speech and open debate.",
+    "DEM": "Believed in mass democratic participation rather than rule by a party elite."
+   }
+  },
+  {
+   "id": "uk-lucas",
+   "name": "Caroline Lucas",
+   "role": "Green Party leader and MP for Brighton Pavilion 2010 to 2024",
+   "active": {
+    "from": 1999,
+    "to": 2024
+   },
+   "year": 2020,
+   "label": "Green MP",
+   "base": "uk-green",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-polanski",
+   "name": "Zack Polanski",
+   "role": "Leader of the Green Party of England and Wales",
+   "active": {
+    "from": 2021,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "uk-green",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-benn",
+   "name": "Tony Benn",
+   "role": "Labour MP and minister, leader of the Labour left",
+   "active": {
+    "from": 1950,
+    "to": 2001
+   },
+   "year": 1983,
+   "label": "Labour left",
+   "base": "uk-labour",
+   "base_year": 1983,
+   "axes": {
+    "ECO": -15,
+    "DEM": 25,
+    "SOC": -10,
+    "LIB": -15
+   },
+   "facets": {
+    "int_eu": 80
+   },
+   "notes": {
+    "ECO": "Wanted public ownership and workers' control of industry.",
+    "DEM": "Distrusted unaccountable power, from the Lords to Brussels and the City.",
+    "INT": "Campaigned to leave the European Community in 1975 and after.",
+    "SOC": "Further to the progressive side than Labour's mainstream of the time.",
+    "LIB": "Defended civil liberties and the right to protest."
+   }
+  },
+  {
+   "id": "us-chomsky",
+   "name": "Noam Chomsky",
+   "role": "Linguist and left-libertarian writer",
+   "kind": "public figure",
+   "active": {
+    "from": 1967,
+    "to": null
+   },
+   "year": 2016,
+   "label": "Writer",
+   "scores": {
+    "ECO": -75,
+    "SOC": -55,
+    "LIB": -65,
+    "MIG": -60,
+    "INT": 25,
+    "CLI": -60,
+    "TEC": -20,
+    "DEM": 55
+   },
+   "notes": {
+    "ECO": "Anarcho-syndicalist: workers should run the economy, not owners or the state.",
+    "LIB": "Absolute defender of free speech, including for views he despises.",
+    "INT": "Critic of US foreign policy and of free-trade deals written for corporations.",
+    "DEM": "Sees mainstream institutions and media as serving concentrated power.",
+    "CLI": "Calls climate change one of the two great threats to humanity."
+   }
+  },
+  {
+   "id": "nl-dassen",
+   "name": "Laurens Dassen",
+   "role": "Lead candidate of Volt Netherlands",
+   "active": {
+    "from": 2018,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-volt",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-kaag",
+   "name": "Sigrid Kaag",
+   "role": "D66 leader 2020 to 2023, deputy prime minister",
+   "active": {
+    "from": 2017,
+    "to": 2024
+   },
+   "year": 2021,
+   "label": "D66 leader",
+   "base": "nl-d66",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-davey",
+   "name": "Ed Davey",
+   "role": "Leader of the Liberal Democrats",
+   "active": {
+    "from": 1997,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "uk-ld",
+   "base_year": 2026
+  },
+  {
+   "id": "uk-ashdown",
+   "name": "Paddy Ashdown",
+   "role": "Leader of the Liberal Democrats 1988 to 1999",
+   "active": {
+    "from": 1983,
+    "to": 2001
+   },
+   "year": 1997,
+   "label": "Lib Dem leader",
+   "base": "uk-ld",
+   "base_year": 2026,
+   "axes": {
+    "CLI": 10
+   },
+   "facets": {
+    "int_def": -70
+   },
+   "notes": {
+    "INT": "Strong pro-European and liberal interventionist, notably on Bosnia.",
+    "CLI": "Environment mattered, climate targets were not yet the debate they are now."
+   }
+  },
+  {
+   "id": "uk-jenkins",
+   "name": "Roy Jenkins",
+   "role": "Labour Home Secretary, co-founder of the SDP",
+   "active": {
+    "from": 1948,
+    "to": 1987
+   },
+   "year": 1981,
+   "label": "SDP founder",
+   "base": "uk-sdp",
+   "base_year": 1983,
+   "axes": {
+    "SOC": -10,
+    "LIB": -10
+   },
+   "notes": {
+    "SOC": "As Home Secretary backed reforms on divorce, homosexuality and abortion: 'the permissive society is the civilised society'.",
+    "LIB": "Liberal on censorship and policing."
+   }
+  },
+  {
+   "id": "us-yang",
+   "name": "Andrew Yang",
+   "role": "Founder of the Forward Party, 2020 Democratic candidate",
+   "active": {
+    "from": 2018,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Forward Party",
+   "scores": {
+    "ECO": -5,
+    "SOC": -35,
+    "LIB": -30,
+    "MIG": -15,
+    "INT": 0,
+    "CLI": -25,
+    "TEC": 15,
+    "DEM": 50
+   },
+   "notes": {
+    "ECO": "Universal basic income paid for by a value-added tax, alongside a market economy.",
+    "TEC": "Optimistic about technology but wants it governed, especially automation and AI.",
+    "DEM": "Wants to break the two-party system with ranked-choice voting and open primaries.",
+    "LIB": "Favours drug decriminalisation and personal freedom."
+   }
+  },
+  {
+   "id": "de-weisband",
+   "name": "Marina Weisband",
+   "role": "Former political director of the Pirate Party, now with the Greens",
+   "kind": "politician",
+   "active": {
+    "from": 2011,
+    "to": null
+   },
+   "year": 2012,
+   "label": "Pirate Party",
+   "scores": {
+    "ECO": -15,
+    "SOC": -55,
+    "LIB": -65,
+    "MIG": -45,
+    "INT": -5,
+    "CLI": -35,
+    "TEC": -5,
+    "DEM": 40
+   },
+   "notes": {
+    "LIB": "Digital civil rights, privacy and freedom of information first.",
+    "DEM": "Liquid democracy: citizens should take part directly, online, between elections.",
+    "ECO": "Pragmatic on the economy, open to a basic income."
+   }
+  },
+  {
+   "id": "us-snowden",
+   "name": "Edward Snowden",
+   "role": "Whistleblower and privacy campaigner",
+   "kind": "public figure",
+   "active": {
+    "from": 2013,
+    "to": null
+   },
+   "year": 2020,
+   "label": "Campaigner",
+   "scores": {
+    "ECO": 10,
+    "SOC": -30,
+    "LIB": -85,
+    "MIG": -10,
+    "INT": 25,
+    "CLI": -10,
+    "TEC": 5,
+    "DEM": 55
+   },
+   "notes": {
+    "LIB": "Mass surveillance is incompatible with a free society.",
+    "DEM": "Distrusts intelligence agencies and the officials who oversee them.",
+    "TEC": "Pro-technology, but wants encryption and limits on data collection.",
+    "ECO": "Has described himself in libertarian terms on economics."
+   }
+  },
+  {
+   "id": "us-paine",
+   "name": "Thomas Paine",
+   "role": "Pamphleteer of the American and French revolutions",
+   "kind": "public figure",
+   "active": {
+    "from": 1774,
+    "to": 1809
+   },
+   "year": 1792,
+   "label": "Rights of Man",
+   "scores": {
+    "ECO": -10,
+    "SOC": -35,
+    "LIB": -50,
+    "MIG": -40,
+    "INT": 15,
+    "CLI": 0,
+    "TEC": 20,
+    "DEM": 60
+   },
+   "notes": {
+    "ECO": "Proposed old-age pensions and a citizen's endowment funded by a land tax, inside a free economy.",
+    "SOC": "Attacked organised religion and opposed slavery, radical for his age.",
+    "LIB": "Rights belong to individuals, not granted by kings.",
+    "DEM": "Hereditary rule is illegitimate; power must come from the people.",
+    "CLI": "Climate had no meaning as a political issue in his time."
+   }
+  },
+  {
+   "id": "us-thoreau",
+   "name": "Henry David Thoreau",
+   "role": "Essayist, author of Civil Disobedience",
+   "kind": "public figure",
+   "active": {
+    "from": 1845,
+    "to": 1862
+   },
+   "year": 1849,
+   "label": "Civil Disobedience",
+   "scores": {
+    "ECO": 5,
+    "SOC": -25,
+    "LIB": -75,
+    "MIG": -20,
+    "INT": 30,
+    "CLI": -40,
+    "TEC": -35,
+    "DEM": 70
+   },
+   "notes": {
+    "LIB": "'That government is best which governs least': conscience over law.",
+    "DEM": "Refused to pay taxes to a state that backed slavery and war.",
+    "CLI": "Early voice for wild nature and simple living.",
+    "TEC": "Sceptical that new machinery made life better.",
+    "SOC": "Abolitionist."
+   }
+  },
+  {
+   "id": "uk-mill",
+   "name": "John Stuart Mill",
+   "role": "Philosopher and Liberal MP, author of On Liberty",
+   "kind": "public figure",
+   "active": {
+    "from": 1859,
+    "to": 1873
+   },
+   "year": 1865,
+   "label": "Liberal MP",
+   "scores": {
+    "ECO": 15,
+    "SOC": -35,
+    "LIB": -65,
+    "MIG": -25,
+    "INT": -10,
+    "CLI": -10,
+    "TEC": 20,
+    "DEM": 15
+   },
+   "notes": {
+    "LIB": "The harm principle: the state may only restrict what harms others.",
+    "SOC": "Argued for women's suffrage in Parliament in 1867.",
+    "ECO": "Free trade, with growing sympathy for cooperatives and taxing inherited wealth.",
+    "DEM": "Supported representative democracy with safeguards against the tyranny of the majority."
+   }
+  },
+  {
+   "id": "de-genscher",
+   "name": "Hans-Dietrich Genscher",
+   "role": "Foreign minister 1974 to 1992 (FDP)",
+   "active": {
+    "from": 1965,
+    "to": 1998
+   },
+   "year": 1985,
+   "label": "Foreign minister",
+   "base": "de-fdp",
+   "base_year": 2026,
+   "axes": {
+    "INT": -15,
+    "SOC": 5,
+    "CLI": 10
+   },
+   "notes": {
+    "INT": "Architect of détente diplomacy and European integration.",
+    "SOC": "Liberal by the norms of the 1980s.",
+    "CLI": "Climate was not yet a central issue."
+   }
+  },
+  {
+   "id": "de-westerwelle",
+   "name": "Guido Westerwelle",
+   "role": "FDP leader 2001 to 2011, foreign minister",
+   "active": {
+    "from": 1994,
+    "to": 2013
+   },
+   "year": 2009,
+   "label": "FDP leader",
+   "base": "de-fdp",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 5,
+    "CLI": 5
+   },
+   "notes": {
+    "ECO": "'More net from gross': campaigned on lower taxes."
+   }
+  },
+  {
+   "id": "de-strackzimmermann",
+   "name": "Marie-Agnes Strack-Zimmermann",
+   "role": "FDP member of the European Parliament, defence expert",
+   "active": {
+    "from": 2017,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-fdp",
+   "base_year": 2026,
+   "facets": {
+    "int_def": -90
+   },
+   "notes": {
+    "INT": "One of Germany's loudest voices for arming Ukraine and stronger defence."
+   }
+  },
+  {
+   "id": "uk-clegg",
+   "name": "Nick Clegg",
+   "role": "Liberal Democrat leader and deputy prime minister 2010 to 2015",
+   "active": {
+    "from": 1999,
+    "to": 2017
+   },
+   "year": 2010,
+   "label": "Deputy PM",
+   "base": "uk-ld",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 35,
+    "TEC": 20
+   },
+   "notes": {
+    "ECO": "From the 'Orange Book' wing that favours markets and lower taxes.",
+    "TEC": "Later went to work for Meta; consistently optimistic about technology."
+   }
+  },
+  {
+   "id": "us-bloomberg",
+   "name": "Michael Bloomberg",
+   "role": "Mayor of New York 2002 to 2013",
+   "active": {
+    "from": 2002,
+    "to": 2020
+   },
+   "year": 2020,
+   "label": "2020 candidate",
+   "base": "us-dem",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 45,
+    "LIB": 25,
+    "TEC": 15
+   },
+   "notes": {
+    "ECO": "Business-friendly centrist on taxes and regulation.",
+    "LIB": "Backed stop-and-frisk policing for years before apologising.",
+    "TEC": "Data-driven and optimistic about technology."
+   }
+  },
+  {
+   "id": "uk-osborne",
+   "name": "George Osborne",
+   "role": "Chancellor of the Exchequer 2010 to 2016 (Conservative)",
+   "active": {
+    "from": 2001,
+    "to": 2017
+   },
+   "year": 2013,
+   "label": "Chancellor",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "SOC": -25,
+    "MIG": -25,
+    "INT": -35,
+    "CLI": -15
+   },
+   "notes": {
+    "SOC": "Backed same-sex marriage and the modernising Cameron project.",
+    "MIG": "Liberal on migration by Conservative standards.",
+    "INT": "Campaigned to Remain in 2016; pro-trade and pro-China investment.",
+    "CLI": "Accepted climate targets, with an eye on cost."
+   }
+  },
+  {
+   "id": "us-gjohnson",
+   "name": "Gary Johnson",
+   "role": "Libertarian presidential candidate 2012 and 2016",
+   "active": {
+    "from": 1995,
+    "to": 2018
+   },
+   "year": 2016,
+   "label": "2016 candidate",
+   "scores": {
+    "ECO": 75,
+    "SOC": -30,
+    "LIB": -60,
+    "MIG": -25,
+    "INT": 40,
+    "CLI": 45,
+    "TEC": 50,
+    "DEM": 40
+   },
+   "notes": {
+    "ECO": "Smaller government, lower taxes, balanced budgets.",
+    "SOC": "Pro-choice and for same-sex marriage.",
+    "LIB": "Wants drug legalisation and an end to mass surveillance.",
+    "MIG": "Open to immigration and a simpler path to work visas.",
+    "INT": "Non-interventionist abroad, free trade at home.",
+    "CLI": "Rejects carbon taxes and climate regulation."
+   }
+  },
+  {
+   "id": "us-friedman",
+   "name": "Milton Friedman",
+   "role": "Economist, author of Capitalism and Freedom",
+   "kind": "public figure",
+   "active": {
+    "from": 1962,
+    "to": 2006
+   },
+   "year": 1980,
+   "label": "Free to Choose",
+   "scores": {
+    "ECO": 90,
+    "SOC": -20,
+    "LIB": -55,
+    "MIG": -10,
+    "INT": -10,
+    "CLI": 40,
+    "TEC": 50,
+    "DEM": 35
+   },
+   "notes": {
+    "ECO": "Markets and monetary rules over state planning.",
+    "LIB": "Opposed the draft and the war on drugs.",
+    "INT": "Free trade everywhere.",
+    "DEM": "Distrusted government's ability to do good; wanted rules that bind it.",
+    "SOC": "Left personal choices to individuals."
+   }
+  },
+  {
+   "id": "uk-hannan",
+   "name": "Daniel Hannan",
+   "role": "Conservative MEP 1999 to 2020, Brexit campaigner",
+   "active": {
+    "from": 1999,
+    "to": null
+   },
+   "year": 2016,
+   "label": "Leave campaign",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 20,
+    "SOC": -20,
+    "LIB": -40,
+    "MIG": -25,
+    "DEM": 30,
+    "TEC": 10
+   },
+   "facets": {
+    "int_eu": 95,
+    "int_trade": -60
+   },
+   "notes": {
+    "ECO": "Classical liberal: free markets, small state.",
+    "SOC": "Liberal on personal choices.",
+    "LIB": "Anglosphere civil-liberties tradition over state power.",
+    "MIG": "Argued for Brexit as more open to the world, not less.",
+    "INT": "Leave the EU and trade freely with everyone.",
+    "DEM": "Wants power closer to voters, away from Brussels."
+   }
+  },
+  {
+   "id": "de-schaeffler",
+   "name": "Frank Schäffler",
+   "role": "FDP member of the Bundestag, euro critic",
+   "active": {
+    "from": 2005,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-fdp",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 15,
+    "LIB": -20,
+    "DEM": 55,
+    "MIG": 10
+   },
+   "facets": {
+    "int_eu": 45
+   },
+   "notes": {
+    "ECO": "Libertarian on money and taxes.",
+    "INT": "Fought the euro rescue packages from inside the FDP.",
+    "DEM": "Distrusts central banks and Brussels.",
+    "LIB": "Strongly for individual freedom against the state."
+   }
+  },
+  {
+   "id": "uk-carswell",
+   "name": "Douglas Carswell",
+   "role": "MP 2005 to 2017, Conservative then UKIP",
+   "active": {
+    "from": 2005,
+    "to": 2017
+   },
+   "year": 2015,
+   "label": "UKIP MP",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 20,
+    "SOC": -15,
+    "LIB": -35,
+    "DEM": 40,
+    "MIG": -15,
+    "TEC": 15
+   },
+   "facets": {
+    "int_eu": 95
+   },
+   "notes": {
+    "ECO": "Libertarian on the economy.",
+    "SOC": "Socially liberal compared with UKIP.",
+    "LIB": "Wants a much smaller state.",
+    "DEM": "Champion of recall and direct democracy.",
+    "INT": "Left the Conservatives for UKIP over Europe.",
+    "MIG": "Steered clear of UKIP's harder line on immigration."
+   }
+  },
+  {
+   "id": "us-rand",
+   "name": "Ayn Rand",
+   "role": "Novelist and philosopher of Objectivism",
+   "kind": "public figure",
+   "active": {
+    "from": 1943,
+    "to": 1982
+   },
+   "year": 1960,
+   "label": "Objectivism",
+   "scores": {
+    "ECO": 95,
+    "SOC": -35,
+    "LIB": -45,
+    "MIG": -10,
+    "INT": 20,
+    "CLI": 50,
+    "TEC": 70,
+    "DEM": 40
+   },
+   "notes": {
+    "ECO": "Laissez-faire capitalism as the only moral system.",
+    "SOC": "Atheist and pro-choice.",
+    "LIB": "The state exists only to protect individual rights.",
+    "TEC": "Celebrated industry and invention.",
+    "DEM": "Hostile to collectivism in all its forms."
+   }
+  },
+  {
+   "id": "nl-kok",
+   "name": "Wim Kok",
+   "role": "Prime Minister 1994 to 2002 (PvdA)",
+   "active": {
+    "from": 1986,
+    "to": 2002
+   },
+   "year": 1998,
+   "label": "Prime Minister",
+   "base": "nl-pro",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 25,
+    "SOC": 10,
+    "MIG": 15,
+    "CLI": 20
+   },
+   "notes": {
+    "ECO": "'Purple' cabinets: shed ideological feathers, embraced markets with a welfare state.",
+    "SOC": "Progressive reforms, judged by the standards of the 1990s.",
+    "MIG": "Before migration became the dividing line it is now.",
+    "CLI": "Climate policy was in its early stages."
+   }
+  },
+  {
+   "id": "nl-drees",
+   "name": "Willem Drees",
+   "role": "Prime Minister 1948 to 1958 (PvdA)",
+   "active": {
+    "from": 1933,
+    "to": 1958
+   },
+   "year": 1955,
+   "label": "Prime Minister",
+   "base": "nl-pro",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 40,
+    "MIG": 25,
+    "LIB": 15,
+    "CLI": 25,
+    "TEC": 20
+   },
+   "notes": {
+    "ECO": "Built the welfare state, including the state pension that still carries his name.",
+    "SOC": "Sober and traditional in personal values, as the 1950s were.",
+    "MIG": "Migration was not a political divide.",
+    "CLI": "Not yet an issue.",
+    "TEC": "Post-war faith in planning and progress."
+   }
+  },
+  {
+   "id": "de-schmidt",
+   "name": "Helmut Schmidt",
+   "role": "Chancellor 1974 to 1982 (SPD)",
+   "active": {
+    "from": 1953,
+    "to": 1987
+   },
+   "year": 1978,
+   "label": "Chancellor",
+   "base": "de-spd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10,
+    "SOC": 20,
+    "MIG": 30,
+    "LIB": 20,
+    "CLI": 25
+   },
+   "facets": {
+    "int_def": -75,
+    "tec_nuc": 60
+   },
+   "notes": {
+    "ECO": "Pragmatic economic manager.",
+    "SOC": "Conservative in personal values.",
+    "MIG": "Later said Germany had taken in too many guest workers.",
+    "LIB": "Firm against left-wing terrorism in the 'German Autumn'.",
+    "INT": "Pushed NATO's double-track decision.",
+    "TEC": "Supported nuclear energy.",
+    "CLI": "Climate was not yet a political issue."
+   }
+  },
+  {
+   "id": "uk-wilson",
+   "name": "Harold Wilson",
+   "role": "Prime Minister 1964 to 1970 and 1974 to 1976 (Labour)",
+   "active": {
+    "from": 1945,
+    "to": 1983
+   },
+   "year": 1966,
+   "label": "Prime Minister",
+   "base": "uk-labour",
+   "base_year": 1945,
+   "axes": {
+    "SOC": -10
+   },
+   "notes": {
+    "ECO": "Planned economy and 'the white heat of technology'.",
+    "SOC": "His governments liberalised divorce, abortion and homosexuality laws."
+   }
+  },
+  {
+   "id": "us-lbj",
+   "name": "Lyndon B. Johnson",
+   "role": "President 1963 to 1969 (Democrat)",
+   "active": {
+    "from": 1937,
+    "to": 1969
+   },
+   "year": 1965,
+   "label": "President",
+   "base": "us-dem",
+   "base_year": 1964,
+   "axes": {
+    "ECO": -10
+   },
+   "facets": {
+    "int_def": -85
+   },
+   "notes": {
+    "ECO": "The Great Society: Medicare, Medicaid and the war on poverty.",
+    "INT": "Escalated in Vietnam in the name of containment."
+   }
+  },
+  {
+   "id": "uk-brown",
+   "name": "Gordon Brown",
+   "role": "Prime Minister 2007 to 2010 (Labour)",
+   "active": {
+    "from": 1983,
+    "to": 2015
+   },
+   "year": 2008,
+   "label": "Prime Minister",
+   "base": "uk-labour",
+   "base_year": 1997,
+   "axes": {
+    "ECO": -10,
+    "LIB": 10
+   },
+   "notes": {
+    "ECO": "Tax credits and higher public spending, while backing the City.",
+    "LIB": "Supported longer detention without charge for terror suspects."
+   }
+  },
+  {
+   "id": "de-lafontaine",
+   "name": "Oskar Lafontaine",
+   "role": "SPD leader, later co-founder of Die Linke and BSW figure",
+   "active": {
+    "from": 1970,
+    "to": null
+   },
+   "year": 2024,
+   "label": "BSW",
+   "base": "de-bsw",
+   "base_year": 2026
+  },
+  {
+   "id": "de-mohamedali",
+   "name": "Amira Mohamed Ali",
+   "role": "Co-leader of BSW",
+   "active": {
+    "from": 2017,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-bsw",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-jmarijnissen",
+   "name": "Jan Marijnissen",
+   "role": "Leader of the SP 1988 to 2015",
+   "active": {
+    "from": 1988,
+    "to": 2015
+   },
+   "year": 2006,
+   "label": "SP leader",
+   "base": "nl-sp",
+   "base_year": 2026,
+   "axes": {
+    "MIG": 40,
+    "SOC": 25,
+    "CLI": 20,
+    "LIB": 15
+   },
+   "notes": {
+    "MIG": "Warned early about poor integration and labour migration undercutting wages.",
+    "SOC": "More conservative on culture than today's left.",
+    "CLI": "Climate was not central to his SP.",
+    "LIB": "Tougher on crime than the left-liberal parties."
+   }
+  },
+  {
+   "id": "uk-scargill",
+   "name": "Arthur Scargill",
+   "role": "NUM leader, founder of the Socialist Labour Party",
+   "kind": "public figure",
+   "active": {
+    "from": 1973,
+    "to": 2002
+   },
+   "year": 1984,
+   "label": "Miners' strike",
+   "scores": {
+    "ECO": -90,
+    "SOC": -5,
+    "LIB": 0,
+    "MIG": 10,
+    "INT": 60,
+    "CLI": 30,
+    "TEC": -20,
+    "DEM": 55
+   },
+   "notes": {
+    "ECO": "Public ownership and the defence of mining communities above all.",
+    "INT": "Opposed the European Community as a capitalist club.",
+    "DEM": "Saw the state and press as lined up against working people.",
+    "CLI": "Defended coal.",
+    "TEC": "Fought pit closures and mechanised job loss."
+   }
+  },
+  {
+   "id": "us-long",
+   "name": "Huey Long",
+   "role": "Governor and Senator of Louisiana (Democrat)",
+   "active": {
+    "from": 1928,
+    "to": 1935
+   },
+   "year": 1934,
+   "label": "Share Our Wealth",
+   "base": "us-dem",
+   "base_year": 1936,
+   "axes": {
+    "ECO": -25,
+    "DEM": 50,
+    "LIB": 15,
+    "INT": 20
+   },
+   "notes": {
+    "ECO": "'Share Our Wealth': cap fortunes and give every family a guaranteed income.",
+    "DEM": "Populist against bankers and the establishment.",
+    "LIB": "Ruled Louisiana with a strong hand.",
+    "INT": "Isolationist."
+   }
+  },
+  {
+   "id": "us-clinton",
+   "name": "Bill Clinton",
+   "role": "President 1993 to 2001 (Democrat)",
+   "active": {
+    "from": 1977,
+    "to": 2001
+   },
+   "year": 1996,
+   "label": "President",
+   "base": "us-dem",
+   "base_year": 1996
+  },
+  {
+   "id": "de-schroeder",
+   "name": "Gerhard Schröder",
+   "role": "Chancellor 1998 to 2005 (SPD)",
+   "active": {
+    "from": 1980,
+    "to": 2005
+   },
+   "year": 2003,
+   "label": "Chancellor",
+   "base": "de-spd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 35,
+    "SOC": 15,
+    "MIG": 15,
+    "CLI": 10
+   },
+   "facets": {
+    "tec_nuc": -30
+   },
+   "notes": {
+    "ECO": "Agenda 2010: labour-market and welfare reforms.",
+    "SOC": "The 'Neue Mitte': centrist on culture.",
+    "MIG": "Introduced dual-citizenship reform but cautious on migration.",
+    "TEC": "Agreed the first nuclear phase-out.",
+    "CLI": "A 'car chancellor', close to industry."
+   }
+  },
+  {
+   "id": "uk-major",
+   "name": "John Major",
+   "role": "Prime Minister 1990 to 1997 (Conservative)",
+   "active": {
+    "from": 1979,
+    "to": 2001
+   },
+   "year": 1992,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 1987,
+   "axes": {
+    "ECO": -15,
+    "SOC": -5,
+    "INT": -20
+   },
+   "notes": {
+    "ECO": "A softer Thatcherism: privatisation alongside the Citizen's Charter.",
+    "INT": "Signed Maastricht and wanted Britain 'at the heart of Europe'.",
+    "SOC": "A classless society was his phrase."
+   }
+  },
+  {
+   "id": "us-eisenhower",
+   "name": "Dwight D. Eisenhower",
+   "role": "President 1953 to 1961 (Republican)",
+   "active": {
+    "from": 1952,
+    "to": 1961
+   },
+   "year": 1956,
+   "label": "President",
+   "base": "us-gop",
+   "base_year": 1956
+  },
+  {
+   "id": "uk-cameron",
+   "name": "David Cameron",
+   "role": "Prime Minister 2010 to 2016 (Conservative)",
+   "active": {
+    "from": 2001,
+    "to": 2016
+   },
+   "year": 2013,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "SOC": -20,
+    "MIG": -15,
+    "INT": -25,
+    "CLI": -25
+   },
+   "notes": {
+    "SOC": "Legalised same-sex marriage.",
+    "MIG": "Promised to cut migration to the tens of thousands, but was open to the EU's free movement.",
+    "INT": "Campaigned to Remain.",
+    "CLI": "'Vote blue, go green'."
+   }
+  },
+  {
+   "id": "nl-omtzigt",
+   "name": "Pieter Omtzigt",
+   "role": "Founder of NSC",
+   "active": {
+    "from": 2003,
+    "to": 2025
+   },
+   "year": 2024,
+   "label": "NSC leader",
+   "base": "nl-cda",
+   "base_year": 2026,
+   "axes": {
+    "MIG": 20,
+    "DEM": 15,
+    "INT": 10
+   },
+   "notes": {
+    "MIG": "Wanted to bring net migration down sharply.",
+    "DEM": "Built his name exposing the childcare-benefits scandal; demands a new style of government.",
+    "INT": "More critical of the EU than the CDA."
+   }
+  },
+  {
+   "id": "us-perot",
+   "name": "Ross Perot",
+   "role": "Independent and Reform Party presidential candidate 1992 and 1996",
+   "active": {
+    "from": 1992,
+    "to": 1996
+   },
+   "year": 1992,
+   "label": "1992 candidate",
+   "scores": {
+    "ECO": 25,
+    "SOC": -5,
+    "LIB": 10,
+    "MIG": 30,
+    "INT": 55,
+    "CLI": 20,
+    "TEC": 20,
+    "DEM": 70
+   },
+   "notes": {
+    "ECO": "Balance the budget, but protect American jobs.",
+    "INT": "Fought NAFTA: 'a giant sucking sound' of jobs going south.",
+    "DEM": "Run government like a business, free from career politicians and lobbyists.",
+    "SOC": "Pro-choice and centrist on social questions."
+   }
+  },
+  {
+   "id": "de-aiwanger",
+   "name": "Hubert Aiwanger",
+   "role": "Leader of the Free Voters, Bavarian economy minister",
+   "active": {
+    "from": 2006,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-csu",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -25,
+    "DEM": 50,
+    "INT": 15,
+    "CLI": 10,
+    "TEC": -15
+   },
+   "notes": {
+    "ECO": "Speaks for farmers, small businesses and rural regions.",
+    "DEM": "'Common sense' against the Berlin establishment; strong on local and direct democracy.",
+    "INT": "Sceptical of Brussels rules.",
+    "CLI": "Rails against heating and farming rules.",
+    "TEC": "Cautious, rooted in rural tradition."
+   }
+  },
+  {
+   "id": "nl-keijzer",
+   "name": "Mona Keijzer",
+   "role": "BBB minister, former CDA",
+   "active": {
+    "from": 2017,
+    "to": null
+   },
+   "year": 2025,
+   "label": "BBB minister",
+   "base": "nl-bbb",
+   "base_year": 2026
+  },
+  {
+   "id": "us-rfkjr",
+   "name": "Robert F. Kennedy Jr.",
+   "role": "Independent candidate 2024, health secretary",
+   "active": {
+    "from": 2023,
+    "to": null
+   },
+   "year": 2024,
+   "label": "2024 candidate",
+   "scores": {
+    "ECO": -10,
+    "SOC": 5,
+    "LIB": -15,
+    "MIG": 30,
+    "INT": 35,
+    "CLI": -10,
+    "TEC": -50,
+    "DEM": 80
+   },
+   "notes": {
+    "ECO": "Against corporate capture of regulators, for small farmers.",
+    "DEM": "Deeply distrusts federal agencies, pharma and the media.",
+    "TEC": "Sceptical of the food, chemical and pharmaceutical industries.",
+    "MIG": "Calls for a secure border.",
+    "INT": "Critical of US wars and aid to Ukraine.",
+    "CLI": "Long-time environmental lawyer, now sceptical of climate rules."
+   }
+  },
+  {
+   "id": "de-palmer",
+   "name": "Boris Palmer",
+   "role": "Mayor of Tübingen, formerly Greens",
+   "active": {
+    "from": 2007,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Independent mayor",
+   "base": "de-gruene",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 45,
+    "SOC": 40,
+    "MIG": 65,
+    "LIB": 35,
+    "DEM": 55,
+    "INT": 30
+   },
+   "notes": {
+    "ECO": "Pragmatic, results-first local governance.",
+    "SOC": "Regularly clashes with progressive language norms.",
+    "MIG": "Calls for limits on asylum and deportation of offenders.",
+    "LIB": "Tough on public order.",
+    "DEM": "Left the Greens after repeated rows; a self-declared independent voice.",
+    "CLI": "Still strongly pro-climate action.",
+    "INT": "Less European in emphasis than his old party."
+   }
+  },
+  {
+   "id": "nl-vanhaga",
+   "name": "Wybren van Haga",
+   "role": "Founder of BVNL",
+   "active": {
+    "from": 2017,
+    "to": 2023
+   },
+   "year": 2023,
+   "label": "BVNL",
+   "base": "nl-bbb",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 15,
+    "DEM": 20,
+    "LIB": -20,
+    "MIG": 15
+   },
+   "notes": {
+    "ECO": "Businessman, against regulation and high taxes.",
+    "DEM": "Against party politics and 'Haagse' rules.",
+    "LIB": "Opposed lockdowns and covid passes.",
+    "MIG": "Wants migration down."
+   }
+  },
+  {
+   "id": "nl-eerdmans",
+   "name": "Joost Eerdmans",
+   "role": "Leader of JA21",
+   "active": {
+    "from": 2002,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-ja21",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-bolkestein",
+   "name": "Frits Bolkestein",
+   "role": "VVD leader 1990 to 1998, EU commissioner",
+   "active": {
+    "from": 1978,
+    "to": 2004
+   },
+   "year": 1995,
+   "label": "VVD leader",
+   "base": "nl-vvd",
+   "base_year": 2026,
+   "axes": {
+    "MIG": 20,
+    "INT": 25,
+    "DEM": 40,
+    "CLI": 15
+   },
+   "facets": {
+    "int_eu": 40
+   },
+   "notes": {
+    "MIG": "Broke the taboo on discussing integration and Islam in the early 1990s.",
+    "INT": "Sceptical of EU enlargement and federalism.",
+    "DEM": "Liked to provoke the consensus of The Hague.",
+    "CLI": "Climate was a minor topic."
+   }
+  },
+  {
+   "id": "us-rpaul",
+   "name": "Ron Paul",
+   "role": "Republican Congressman, presidential candidate 2008 and 2012",
+   "active": {
+    "from": 1976,
+    "to": 2013
+   },
+   "year": 2012,
+   "label": "2012 candidate",
+   "scores": {
+    "ECO": 90,
+    "SOC": 30,
+    "LIB": -60,
+    "MIG": 45,
+    "INT": 70,
+    "CLI": 70,
+    "TEC": 30,
+    "DEM": 75
+   },
+   "notes": {
+    "ECO": "End the Federal Reserve, abolish the income tax.",
+    "SOC": "Personally pro-life, but leaves it to the states.",
+    "LIB": "Legalise drugs, end the Patriot Act and foreign wars.",
+    "MIG": "Against amnesty and birthright citizenship.",
+    "INT": "Strict non-interventionism and out of the UN.",
+    "DEM": "Constitutionalist against federal overreach."
+   }
+  },
+  {
+   "id": "de-lucke",
+   "name": "Bernd Lucke",
+   "role": "Economist, AfD founder 2013",
+   "active": {
+    "from": 2013,
+    "to": 2019
+   },
+   "year": 2014,
+   "label": "AfD founder",
+   "scores": {
+    "ECO": 55,
+    "SOC": 20,
+    "LIB": 10,
+    "MIG": 35,
+    "INT": 55,
+    "CLI": 30,
+    "TEC": 25,
+    "DEM": 45
+   },
+   "notes": {
+    "ECO": "Market economist against the euro bailouts.",
+    "INT": "Wanted an orderly break-up of the eurozone.",
+    "MIG": "Wanted Canadian-style selective immigration.",
+    "DEM": "Founded a party against 'alternativlos' politics; left when it moved further right."
+   }
+  },
+  {
+   "id": "uk-truss",
+   "name": "Liz Truss",
+   "role": "Prime Minister 2022 (Conservative)",
+   "active": {
+    "from": 2010,
+    "to": 2024
+   },
+   "year": 2022,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 20,
+    "CLI": 25,
+    "DEM": 30,
+    "TEC": 10,
+    "MIG": -5
+   },
+   "notes": {
+    "ECO": "Tax cuts and supply-side reform.",
+    "CLI": "Lifted the fracking ban.",
+    "DEM": "Blames the 'blob' of officials and the Bank of England for blocking change.",
+    "MIG": "Pragmatic on work visas."
+   }
+  },
+  {
+   "id": "nl-hirsiali",
+   "name": "Ayaan Hirsi Ali",
+   "role": "VVD MP 2003 to 2006, writer",
+   "kind": "politician",
+   "active": {
+    "from": 2003,
+    "to": null
+   },
+   "year": 2005,
+   "label": "VVD MP",
+   "base": "nl-vvd",
+   "base_year": 2026,
+   "axes": {
+    "MIG": 30,
+    "SOC": -15,
+    "DEM": 40,
+    "INT": 20,
+    "LIB": -10
+   },
+   "notes": {
+    "MIG": "Fierce critic of Islam and of integration policy.",
+    "SOC": "Fought for women's rights and secularism.",
+    "DEM": "Clashed openly with the political establishment.",
+    "INT": "Sceptical of multicultural European elites."
+   }
+  },
+  {
+   "id": "nl-segers",
+   "name": "Gert-Jan Segers",
+   "role": "Leader of the ChristenUnie 2015 to 2023",
+   "active": {
+    "from": 2012,
+    "to": 2023
+   },
+   "year": 2021,
+   "label": "CU leader",
+   "base": "nl-cu",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-bikker",
+   "name": "Mirjam Bikker",
+   "role": "Leader of the ChristenUnie",
+   "active": {
+    "from": 2021,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-cu",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-vanbaarle",
+   "name": "Stephan van Baarle",
+   "role": "Leader of DENK",
+   "active": {
+    "from": 2021,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-denk",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-kuyper",
+   "name": "Abraham Kuyper",
+   "role": "Prime Minister 1901 to 1905 (ARP)",
+   "active": {
+    "from": 1874,
+    "to": 1920
+   },
+   "year": 1901,
+   "label": "Prime Minister",
+   "base": "nl-arp",
+   "base_year": 1965,
+   "axes": {
+    "SOC": 20,
+    "ECO": -15,
+    "MIG": 10
+   },
+   "notes": {
+    "SOC": "Neo-Calvinist: faith shapes every sphere of life.",
+    "ECO": "Raised 'the social question' and argued for protecting workers.",
+    "MIG": "Not an issue in his time."
+   }
+  },
+  {
+   "id": "de-windthorst",
+   "name": "Ludwig Windthorst",
+   "role": "Leader of the Centre Party in the Kulturkampf",
+   "active": {
+    "from": 1867,
+    "to": 1891
+   },
+   "year": 1880,
+   "label": "Zentrum leader",
+   "base": "de-zentrum",
+   "base_year": 1928
+  },
+  {
+   "id": "us-carter",
+   "name": "Jimmy Carter",
+   "role": "President 1977 to 1981 (Democrat)",
+   "active": {
+    "from": 1963,
+    "to": 1981
+   },
+   "year": 1978,
+   "label": "President",
+   "base": "us-dem",
+   "base_year": 1964,
+   "axes": {
+    "SOC": 15,
+    "CLI": -30,
+    "INT": -15,
+    "DEM": -5
+   },
+   "notes": {
+    "SOC": "Devout Baptist, personally traditional.",
+    "CLI": "Put solar panels on the White House and pushed energy conservation.",
+    "INT": "Human rights at the heart of foreign policy."
+   }
+  },
+  {
+   "id": "uk-hardie",
+   "name": "Keir Hardie",
+   "role": "Founder of the Labour Party",
+   "active": {
+    "from": 1888,
+    "to": 1915
+   },
+   "year": 1906,
+   "label": "Labour founder",
+   "base": "uk-labour",
+   "base_year": 1945,
+   "axes": {
+    "SOC": 15,
+    "INT": -5
+   },
+   "notes": {
+    "SOC": "Christian socialist and temperance campaigner, though an early backer of votes for women.",
+    "INT": "Pacifist and internationalist, against the First World War."
+   }
+  },
+  {
+   "id": "uk-galloway",
+   "name": "George Galloway",
+   "role": "Leader of the Workers Party of Britain",
+   "active": {
+    "from": 1987,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Workers Party",
+   "scores": {
+    "ECO": -65,
+    "SOC": 30,
+    "LIB": 20,
+    "MIG": 25,
+    "INT": 65,
+    "CLI": 25,
+    "TEC": -10,
+    "DEM": 65
+   },
+   "notes": {
+    "ECO": "Old Labour socialism: nationalisation and union power.",
+    "SOC": "Socially conservative on gender and education.",
+    "INT": "Anti-EU, anti-NATO, against Western wars.",
+    "DEM": "Against the main parties and the media establishment.",
+    "MIG": "Wants lower immigration to protect wages."
+   }
+  },
+  {
+   "id": "us-bryan",
+   "name": "William Jennings Bryan",
+   "role": "Democratic presidential nominee 1896, 1900 and 1908",
+   "active": {
+    "from": 1891,
+    "to": 1925
+   },
+   "year": 1896,
+   "label": "Cross of Gold",
+   "base": "us-dem",
+   "base_year": 1936,
+   "axes": {
+    "SOC": 45,
+    "DEM": 45,
+    "INT": 30,
+    "LIB": 20,
+    "MIG": 20
+   },
+   "notes": {
+    "ECO": "Free silver and a fight for farmers against bankers.",
+    "SOC": "Evangelical; backed Prohibition and fought the teaching of evolution.",
+    "DEM": "The populist voice of the countryside against the eastern establishment.",
+    "INT": "Anti-imperialist; resigned over the drift to war in 1915."
+   }
+  },
+  {
+   "id": "uk-glasman",
+   "name": "Maurice Glasman",
+   "role": "Labour peer, founder of Blue Labour",
+   "active": {
+    "from": 2009,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Blue Labour",
+   "base": "uk-labour",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 45,
+    "MIG": 40,
+    "DEM": 40,
+    "INT": 40,
+    "LIB": 15,
+    "ECO": -10
+   },
+   "notes": {
+    "SOC": "'Faith, family and flag': social conservatism inside Labour.",
+    "MIG": "Argued for much lower immigration.",
+    "DEM": "Against the managerial liberal establishment.",
+    "INT": "Backed Brexit.",
+    "ECO": "Workers on company boards, vocational banks and a living wage."
+   }
+  },
+  {
+   "id": "uk-shore",
+   "name": "Peter Shore",
+   "role": "Labour cabinet minister, leading Eurosceptic",
+   "active": {
+    "from": 1964,
+    "to": 1997
+   },
+   "year": 1975,
+   "label": "Referendum campaign",
+   "base": "uk-labour",
+   "base_year": 1983,
+   "axes": {
+    "SOC": 30,
+    "MIG": 30,
+    "DEM": 15
+   },
+   "facets": {
+    "int_eu": 90
+   },
+   "notes": {
+    "SOC": "Patriotic, traditional Labour.",
+    "INT": "Led Labour's 'No' campaign in the 1975 referendum.",
+    "MIG": "Of a generation that measured migration by its effect on wages.",
+    "DEM": "Parliamentary sovereignty first."
+   }
+  },
+  {
+   "id": "us-bannon",
+   "name": "Steve Bannon",
+   "role": "Trump strategist 2016 to 2017, media host",
+   "kind": "public figure",
+   "active": {
+    "from": 2012,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Commentator",
+   "base": "us-gop",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -40,
+    "DEM": 15,
+    "TEC": -35
+   },
+   "notes": {
+    "ECO": "Calls for higher taxes on the rich and an economic nationalism for workers.",
+    "DEM": "Wants to 'deconstruct the administrative state'.",
+    "TEC": "Attacks big tech and AI as threats to workers."
+   }
+  },
+  {
+   "id": "nl-balkenende",
+   "name": "Jan Peter Balkenende",
+   "role": "Prime Minister 2002 to 2010 (CDA)",
+   "active": {
+    "from": 1998,
+    "to": 2010
+   },
+   "year": 2006,
+   "label": "Prime Minister",
+   "base": "nl-cda",
+   "base_year": 2026,
+   "axes": {
+    "SOC": 10,
+    "ECO": 5
+   },
+   "notes": {
+    "SOC": "Norms and values: a return to decency and community.",
+    "ECO": "Reform of the welfare state and pensions."
+   }
+  },
+  {
+   "id": "nl-bontenbal",
+   "name": "Henri Bontenbal",
+   "role": "Leader of the CDA",
+   "active": {
+    "from": 2021,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "nl-cda",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-vanderstaaij",
+   "name": "Kees van der Staaij",
+   "role": "Leader of the SGP 2010 to 2023",
+   "active": {
+    "from": 1998,
+    "to": 2023
+   },
+   "year": 2020,
+   "label": "SGP leader",
+   "base": "nl-sgp",
+   "base_year": 2026
+  },
+  {
+   "id": "de-laschet",
+   "name": "Armin Laschet",
+   "role": "CDU leader 2021, Minister-President of North Rhine-Westphalia",
+   "active": {
+    "from": 1994,
+    "to": null
+   },
+   "year": 2021,
+   "label": "Chancellor candidate",
+   "base": "de-cdu",
+   "base_year": 2026,
+   "axes": {
+    "MIG": -15,
+    "INT": -10
+   },
+   "notes": {
+    "MIG": "Germany's first integration minister at state level; defended Merkel's refugee policy.",
+    "INT": "Strongly European, from the Aachen border region."
+   }
+  },
+  {
+   "id": "uk-may",
+   "name": "Theresa May",
+   "role": "Prime Minister 2016 to 2019 (Conservative)",
+   "active": {
+    "from": 1997,
+    "to": 2024
+   },
+   "year": 2017,
+   "label": "Prime Minister",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -20,
+    "LIB": 10,
+    "MIG": 5,
+    "INT": -15
+   },
+   "facets": {
+    "int_eu": 55
+   },
+   "notes": {
+    "ECO": "Spoke for the 'just about managing' and wanted workers on boards.",
+    "LIB": "Expanded surveillance powers as Home Secretary.",
+    "MIG": "Long held the net migration target.",
+    "INT": "Remainer who sought a close Brexit deal."
+   }
+  },
+  {
+   "id": "us-gwbush",
+   "name": "George W. Bush",
+   "role": "President 2001 to 2009 (Republican)",
+   "active": {
+    "from": 1995,
+    "to": 2009
+   },
+   "year": 2004,
+   "label": "President",
+   "base": "us-gop",
+   "base_year": 2004
+  },
+  {
+   "id": "us-buchanan",
+   "name": "Pat Buchanan",
+   "role": "Commentator, presidential candidate 1992, 1996 and 2000",
+   "kind": "politician",
+   "active": {
+    "from": 1966,
+    "to": 2000
+   },
+   "year": 1996,
+   "label": "1996 candidate",
+   "base": "us-gop",
+   "base_year": 1980,
+   "axes": {
+    "ECO": -35,
+    "SOC": 25,
+    "MIG": 35,
+    "INT": 45,
+    "DEM": 35
+   },
+   "notes": {
+    "ECO": "Economic nationalism: tariffs to protect manufacturing jobs.",
+    "SOC": "Declared a 'culture war' for the soul of America.",
+    "MIG": "Wanted a moratorium on immigration.",
+    "INT": "America First, against NAFTA and foreign wars.",
+    "DEM": "Insurgent against the Republican establishment."
+   }
+  },
+  {
+   "id": "de-hoecke",
+   "name": "Björn Höcke",
+   "role": "Leader of the AfD in Thuringia",
+   "active": {
+    "from": 2014,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-afd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -40
+   },
+   "notes": {
+    "ECO": "Speaks for a 'social patriotism' with a strong welfare state for citizens."
+   }
+  },
+  {
+   "id": "nl-agema",
+   "name": "Fleur Agema",
+   "role": "PVV minister of health 2024 to 2025",
+   "active": {
+    "from": 2006,
+    "to": null
+   },
+   "year": 2025,
+   "label": "Minister",
+   "base": "nl-pvv",
+   "base_year": 2026
+  },
+  {
+   "id": "nl-janmaat",
+   "name": "Hans Janmaat",
+   "role": "Leader of the Centre Democrats",
+   "active": {
+    "from": 1982,
+    "to": 1998
+   },
+   "year": 1994,
+   "label": "CD leader",
+   "base": "nl-pvv",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -10,
+    "CLI": 5
+   },
+   "notes": {
+    "MIG": "'Full is full': wanted immigration stopped altogether.",
+    "ECO": "Protect the welfare state for native Dutch citizens."
+   }
+  },
+  {
+   "id": "uk-powell",
+   "name": "Enoch Powell",
+   "role": "Conservative, then Ulster Unionist MP",
+   "active": {
+    "from": 1950,
+    "to": 1987
+   },
+   "year": 1968,
+   "label": "Conservative MP",
+   "base": "uk-con",
+   "base_year": 1987,
+   "axes": {
+    "MIG": 45,
+    "DEM": 35,
+    "SOC": 20,
+    "INT": 30
+   },
+   "facets": {
+    "int_eu": 90
+   },
+   "notes": {
+    "ECO": "Early monetarist and free-marketeer.",
+    "MIG": "Warned against Commonwealth immigration in the 1968 'Rivers of Blood' speech.",
+    "DEM": "Parliamentary sovereignty above all; left the Conservatives over Europe.",
+    "SOC": "Traditional values, though he voted to decriminalise homosexuality.",
+    "INT": "Opposed EEC membership and the American alliance's sway."
+   }
+  },
+  {
+   "id": "us-carlson",
+   "name": "Tucker Carlson",
+   "role": "Media host and commentator",
+   "kind": "public figure",
+   "active": {
+    "from": 2000,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Commentator",
+   "base": "us-gop",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -35,
+    "TEC": -30,
+    "INT": 10
+   },
+   "notes": {
+    "ECO": "Attacks private equity and argues markets should serve families first.",
+    "TEC": "Sceptical of big tech and AI.",
+    "INT": "Against US involvement in Ukraine and new wars."
+   }
+  },
+  {
+   "id": "de-lambsdorff",
+   "name": "Otto Graf Lambsdorff",
+   "role": "Economy minister 1977 to 1984, FDP leader 1988 to 1993",
+   "active": {
+    "from": 1972,
+    "to": 1998
+   },
+   "year": 1982,
+   "label": "Economy minister",
+   "base": "de-fdp",
+   "base_year": 2026,
+   "axes": {
+    "ECO": 10,
+    "SOC": 10,
+    "CLI": 10
+   },
+   "notes": {
+    "ECO": "His 1982 paper on market reform ended the SPD-FDP coalition.",
+    "SOC": "Liberal by the standards of the early 1980s.",
+    "CLI": "Climate was not yet on the agenda."
+   }
+  },
+  {
+   "id": "uk-davidson",
+   "name": "Ruth Davidson",
+   "role": "Leader of the Scottish Conservatives 2011 to 2019",
+   "active": {
+    "from": 2011,
+    "to": 2021
+   },
+   "year": 2016,
+   "label": "Scottish Conservative leader",
+   "base": "uk-con",
+   "base_year": 2026,
+   "axes": {
+    "SOC": -35,
+    "MIG": -30,
+    "INT": -40,
+    "CLI": -20,
+    "DEM": -10
+   },
+   "notes": {
+    "SOC": "Socially liberal, a prominent voice for LGBT rights.",
+    "MIG": "Liberal on immigration by Conservative standards.",
+    "INT": "Led the Remain side in the 2016 BBC debate at Wembley.",
+    "CLI": "Backs net zero.",
+    "DEM": "Unionist and institutionalist."
+   }
+  },
+  {
+   "id": "us-gabbard2020",
+   "name": "Tulsi Gabbard",
+   "role": "Democratic Congresswoman, 2020 presidential candidate",
+   "active": {
+    "from": 2013,
+    "to": null
+   },
+   "year": 2020,
+   "label": "2020 candidate",
+   "scores": {
+    "ECO": -15,
+    "SOC": -5,
+    "LIB": -20,
+    "MIG": 15,
+    "INT": 50,
+    "CLI": -15,
+    "TEC": -5,
+    "DEM": 55
+   },
+   "notes": {
+    "ECO": "Backed Medicare for All in 2016, later more centrist.",
+    "INT": "Anti-interventionist: against 'regime-change wars'.",
+    "DEM": "Critical of the party establishment and the security state.",
+    "LIB": "For drug decriminalisation and against mass surveillance.",
+    "MIG": "Moderate on the border."
+   }
+  },
+  {
+   "id": "us-troosevelt",
+   "name": "Theodore Roosevelt",
+   "role": "President 1901 to 1909, Progressive candidate 1912",
+   "active": {
+    "from": 1882,
+    "to": 1919
+   },
+   "year": 1912,
+   "label": "Bull Moose",
+   "scores": {
+    "ECO": -20,
+    "SOC": 30,
+    "LIB": 20,
+    "MIG": 30,
+    "INT": 15,
+    "CLI": -35,
+    "TEC": 20,
+    "DEM": 45
+   },
+   "notes": {
+    "ECO": "Trust-busting and a 'square deal' for workers within capitalism.",
+    "SOC": "Traditional on family and national character.",
+    "MIG": "Demanded assimilation: no 'hyphenated Americans'.",
+    "INT": "Nationalist, but for a strong military role in the world.",
+    "CLI": "Conservation: set aside vast public lands and forests.",
+    "DEM": "Wanted primaries, recall and referendums against party bosses."
+   },
+   "facets": {
+    "int_def": -70
+   }
+  },
+  {
+   "id": "uk-crow",
+   "name": "Bob Crow",
+   "role": "General secretary of the RMT rail union",
+   "kind": "public figure",
+   "active": {
+    "from": 2002,
+    "to": 2014
+   },
+   "year": 2010,
+   "label": "RMT leader",
+   "scores": {
+    "ECO": -85,
+    "SOC": 15,
+    "LIB": 10,
+    "MIG": 25,
+    "INT": 65,
+    "CLI": 10,
+    "TEC": -15,
+    "DEM": 55
+   },
+   "notes": {
+    "ECO": "Renationalise the railways, strengthen the unions.",
+    "INT": "Led the left-wing 'No2EU' campaign against the European Union.",
+    "MIG": "Argued EU free movement undercut workers' pay.",
+    "DEM": "Distrusted Labour's leadership as much as the Conservatives."
+   }
+  },
+  {
+   "id": "uk-griffin",
+   "name": "Nick Griffin",
+   "role": "Leader of the BNP 1999 to 2014",
+   "active": {
+    "from": 1999,
+    "to": 2014
+   },
+   "year": 2009,
+   "label": "BNP leader",
+   "scores": {
+    "ECO": -20,
+    "SOC": 70,
+    "LIB": 60,
+    "MIG": 95,
+    "INT": 85,
+    "CLI": 30,
+    "TEC": 0,
+    "DEM": 70
+   },
+   "notes": {
+    "ECO": "Protectionist and for nationalising key industries.",
+    "MIG": "Wanted immigration stopped and voluntary 'repatriation'.",
+    "INT": "Out of the EU and NATO.",
+    "DEM": "Against the whole political establishment."
+   }
+  },
+  {
+   "id": "nl-bosma",
+   "name": "Martin Bosma",
+   "role": "PVV ideologue, Speaker of the House 2023 to 2025",
+   "active": {
+    "from": 2006,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Speaker",
+   "base": "nl-pvv",
+   "base_year": 2026
+  },
+  {
+   "id": "de-chrupalla",
+   "name": "Tino Chrupalla",
+   "role": "Co-leader of the AfD",
+   "active": {
+    "from": 2017,
+    "to": null
+   },
+   "year": 2026,
+   "label": "Current",
+   "base": "de-afd",
+   "base_year": 2026,
+   "axes": {
+    "ECO": -30
+   },
+   "notes": {
+    "ECO": "Tradesman from Saxony, speaks for the party's more social, eastern wing."
+   }
+  },
+  {
+   "id": "uk-embery",
+   "name": "Paul Embery",
+   "role": "Trade unionist and Blue Labour writer",
+   "kind": "public figure",
+   "active": {
+    "from": 2010,
+    "to": null
+   },
+   "year": 2024,
+   "label": "Writer",
+   "scores": {
+    "ECO": -55,
+    "SOC": 40,
+    "LIB": 25,
+    "MIG": 45,
+    "INT": 55,
+    "CLI": 20,
+    "TEC": -10,
+    "DEM": 55
+   },
+   "notes": {
+    "ECO": "Fire Brigades Union organiser: strong unions and secure work for working-class towns.",
+    "SOC": "Argues Labour lost its voters by turning its back on family, place and patriotism.",
+    "MIG": "Wants immigration brought down to protect wages and communities.",
+    "INT": "Pro-Brexit trade unionist.",
+    "DEM": "Critical of a metropolitan elite in politics and media."
+   }
+  }
+ ]
+}

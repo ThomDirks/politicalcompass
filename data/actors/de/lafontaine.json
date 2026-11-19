@@ -1,0 +1,83 @@
+{
+  "id": "de-lafontaine",
+  "type": "person",
+  "kind": "politician",
+  "name": "Oskar Lafontaine",
+  "full_name": "SPD leader, later co-founder of Die Linke and BSW figure",
+  "country": "DE",
+  "active": {
+    "from": 1970,
+    "to": null
+  },
+  "party": "de-bsw",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "BSW",
+      "method": "hand",
+      "basis": "Starts from the BSW profile (Current (Nov 2026)), adjusted where Oskar Lafontaine's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 5,
+        "CLI": 2,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-50, "m"],
+        "eco_reg": [-55, "m"],
+        "eco_lab": [-60, "m"],
+        "eco_tax": [-60, "m"],
+        "soc_fam": [20, "m"],
+        "soc_lgbt": [10, "m"],
+        "soc_rel": [-36, "m"],
+        "soc_mor": [15, "m"],
+        "lib_priv": [-40, "m"],
+        "lib_just": [35, "m"],
+        "lib_speech": [-50, "m"],
+        "lib_emerg": [-50, "m"],
+        "mig_lvl": [60, "m"],
+        "mig_asy": [70, "m"],
+        "mig_int": [55, "m"],
+        "mig_nat": [35, "m"],
+        "int_eu": [45, "m"],
+        "int_trade": [45, "m"],
+        "int_def": [85, "m"],
+        "int_aid": [20, "m"],
+        "cli_amb": [40, "m"],
+        "cli_pay": [70, "m"],
+        "cli_nat": [20, "m"],
+        "cli_intl": [20, "m"],
+        "tec_ai": [-20, "l"],
+        "tec_bio": [-10, "l"],
+        "tec_nuc": [-10, "l"],
+        "tec_big": [-60, "l"],
+        "dem_trust": [70, "l"],
+        "dem_direct": [58, "m"],
+        "dem_courts": [18, "m"],
+        "dem_central": [-10, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the BSW profile (Current (Nov 2026)).",
+        "SOC": "In line with the BSW profile (Current (Nov 2026)).",
+        "LIB": "In line with the BSW profile (Current (Nov 2026)).",
+        "MIG": "In line with the BSW profile (Current (Nov 2026)).",
+        "INT": "In line with the BSW profile (Current (Nov 2026)).",
+        "CLI": "In line with the BSW profile (Current (Nov 2026)).",
+        "TEC": "In line with the BSW profile (Current (Nov 2026)).",
+        "DEM": "In line with the BSW profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Oskar Lafontaine",
+          "url": "https://en.wikipedia.org/wiki/Oskar_Lafontaine"
+        }
+      ]
+    }
+  ]
+}

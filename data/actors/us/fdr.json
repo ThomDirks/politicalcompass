@@ -1,0 +1,83 @@
+{
+  "id": "us-fdr",
+  "type": "person",
+  "kind": "politician",
+  "name": "Franklin D. Roosevelt",
+  "full_name": "President 1933 to 1945 (Democrat)",
+  "country": "US",
+  "active": {
+    "from": 1911,
+    "to": 1945
+  },
+  "party": "us-dem",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1936,
+      "label": "President",
+      "method": "hand",
+      "basis": "Starts from the Democrats profile (New Deal era), adjusted where Franklin D. Roosevelt's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 1,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-40, "m"],
+        "eco_reg": [-60, "m"],
+        "eco_lab": [-70, "m"],
+        "eco_tax": [-60, "m"],
+        "soc_fam": [60, "m"],
+        "soc_lgbt": [90, "m"],
+        "soc_rel": [40, "m"],
+        "soc_mor": [60, "m"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [60, "l"],
+        "mig_lvl": [60, "l"],
+        "mig_asy": [70, "l"],
+        "mig_int": [60, "l"],
+        "mig_nat": [50, "l"],
+        "int_eu": null,
+        "int_trade": [-20, "m"],
+        "int_def": [50, "m"],
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-30, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [30, "l"],
+        "dem_direct": [0, "l"],
+        "dem_courts": [60, "l"],
+        "dem_central": [70, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Democrats profile (New Deal era).",
+        "SOC": "In line with the Democrats profile (New Deal era).",
+        "LIB": "In line with the Democrats profile (New Deal era).",
+        "MIG": "In line with the Democrats profile (New Deal era).",
+        "INT": "In line with the Democrats profile (New Deal era).",
+        "CLI": "In line with the Democrats profile (New Deal era).",
+        "TEC": "In line with the Democrats profile (New Deal era).",
+        "DEM": "In line with the Democrats profile (New Deal era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Franklin D. Roosevelt",
+          "url": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt"
+        }
+      ]
+    }
+  ]
+}

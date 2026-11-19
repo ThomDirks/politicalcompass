@@ -1,0 +1,83 @@
+{
+  "id": "uk-wilson",
+  "type": "person",
+  "kind": "politician",
+  "name": "Harold Wilson",
+  "full_name": "Prime Minister 1964 to 1970 and 1974 to 1976 (Labour)",
+  "country": "UK",
+  "active": {
+    "from": 1945,
+    "to": 1983
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1966,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Attlee era), adjusted where Harold Wilson's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 1,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-85, "m"],
+        "eco_reg": [-70, "m"],
+        "eco_lab": [-70, "m"],
+        "eco_tax": [-75, "m"],
+        "soc_fam": [10, "l"],
+        "soc_lgbt": [50, "l"],
+        "soc_rel": [-10, "l"],
+        "soc_mor": [30, "l"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [-30, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [10, "l"],
+        "int_eu": [0, "m"],
+        "int_trade": [40, "m"],
+        "int_def": [-70, "m"],
+        "int_aid": [-20, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-10, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-40, "l"],
+        "dem_direct": [-60, "l"],
+        "dem_courts": [-30, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "Planned economy and 'the white heat of technology'.",
+        "SOC": "His governments liberalised divorce, abortion and homosexuality laws.",
+        "LIB": "In line with the Labour profile (Attlee era).",
+        "MIG": "In line with the Labour profile (Attlee era).",
+        "INT": "In line with the Labour profile (Attlee era).",
+        "CLI": "In line with the Labour profile (Attlee era).",
+        "TEC": "In line with the Labour profile (Attlee era).",
+        "DEM": "In line with the Labour profile (Attlee era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Harold Wilson",
+          "url": "https://en.wikipedia.org/wiki/Harold_Wilson"
+        }
+      ]
+    }
+  ]
+}

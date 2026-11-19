@@ -1,0 +1,83 @@
+{
+  "id": "uk-corbyn",
+  "type": "person",
+  "kind": "politician",
+  "name": "Jeremy Corbyn",
+  "full_name": "Labour leader 2015 to 2020",
+  "country": "UK",
+  "active": {
+    "from": 1983,
+    "to": null
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2019,
+      "label": "Labour leader",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Current (Nov 2026)), adjusted where Jeremy Corbyn's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 3,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-65, "l"],
+        "eco_reg": [-65, "l"],
+        "eco_lab": [-90, "l"],
+        "eco_tax": [-65, "l"],
+        "soc_fam": [-70, "l"],
+        "soc_lgbt": [-65, "l"],
+        "soc_rel": [-50, "l"],
+        "soc_mor": [-35, "l"],
+        "lib_priv": [-15, "l"],
+        "lib_just": [-39, "l"],
+        "lib_speech": [-15, "l"],
+        "lib_emerg": [-30, "l"],
+        "mig_lvl": [-20, "l"],
+        "mig_asy": [-15, "l"],
+        "mig_int": [-59, "l"],
+        "mig_nat": [-50, "l"],
+        "int_eu": [30, "l"],
+        "int_trade": [20, "l"],
+        "int_def": [60, "l"],
+        "int_aid": [-80, "l"],
+        "cli_amb": [-85, "l"],
+        "cli_pay": [-55, "l"],
+        "cli_nat": [-42, "l"],
+        "cli_intl": [-100, "l"],
+        "tec_ai": [40, "l"],
+        "tec_bio": [30, "l"],
+        "tec_nuc": [55, "l"],
+        "tec_big": [-5, "l"],
+        "dem_trust": [-35, "l"],
+        "dem_direct": [-40, "l"],
+        "dem_courts": [-25, "l"],
+        "dem_central": [-15, "l"]
+      },
+      "notes": {
+        "ECO": "Nationalisation of rail, energy and water, higher taxes on the rich.",
+        "SOC": "Long-standing campaigner for progressive social causes.",
+        "LIB": "Civil libertarian on surveillance, policing and protest.",
+        "MIG": "Defended migrants' rights and a humane asylum policy.",
+        "INT": "Long critical of the EU and NATO; went into the 2019 election promising a second Brexit referendum.",
+        "CLI": "Backed a 'green industrial revolution' in 2019.",
+        "TEC": "Wanted public control over big tech and broadband.",
+        "DEM": "Insurgent against the party establishment."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Jeremy Corbyn",
+          "url": "https://en.wikipedia.org/wiki/Jeremy_Corbyn"
+        }
+      ]
+    }
+  ]
+}

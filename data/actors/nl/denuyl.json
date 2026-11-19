@@ -1,0 +1,83 @@
+{
+  "id": "nl-denuyl",
+  "type": "person",
+  "kind": "politician",
+  "name": "Joop den Uyl",
+  "full_name": "Prime Minister 1973 to 1977 (PvdA)",
+  "country": "NL",
+  "active": {
+    "from": 1956,
+    "to": 1986
+  },
+  "party": "nl-pro",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1975,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the PRO profile (Current (Nov 2026)), adjusted where Joop den Uyl's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 4,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-70, "l"],
+        "eco_reg": [-75, "l"],
+        "eco_lab": [-85, "l"],
+        "eco_tax": [-85, "l"],
+        "soc_fam": [-55, "l"],
+        "soc_lgbt": [-70, "l"],
+        "soc_rel": [-45, "l"],
+        "soc_mor": [-40, "l"],
+        "lib_priv": [-55, "m"],
+        "lib_just": [-45, "m"],
+        "lib_speech": [20, "m"],
+        "lib_emerg": [-50, "m"],
+        "mig_lvl": [-30, "l"],
+        "mig_asy": [-50, "l"],
+        "mig_int": [-35, "l"],
+        "mig_nat": [-25, "l"],
+        "int_eu": [-75, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [-60, "m"],
+        "int_aid": [-80, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-50, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [10, "l"],
+        "tec_nuc": [-5, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-38, "m"],
+        "dem_courts": [-75, "m"],
+        "dem_central": [-20, "m"]
+      },
+      "notes": {
+        "ECO": "Wanted to spread 'knowledge, power and income': a more equal society through the state.",
+        "SOC": "Progressive for the 1970s, but measured against today's norms.",
+        "LIB": "In line with the PRO profile (Current (Nov 2026)).",
+        "MIG": "Migration was hardly a political divide in his time.",
+        "INT": "In line with the PRO profile (Current (Nov 2026)).",
+        "CLI": "Environment was an emerging concern, climate not yet.",
+        "TEC": "Broadly optimistic about planning and technology.",
+        "DEM": "In line with the PRO profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Joop den Uyl",
+          "url": "https://en.wikipedia.org/wiki/Joop_den_Uyl"
+        }
+      ]
+    }
+  ]
+}

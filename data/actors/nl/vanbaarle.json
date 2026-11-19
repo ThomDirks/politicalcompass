@@ -1,0 +1,83 @@
+{
+  "id": "nl-vanbaarle",
+  "type": "person",
+  "kind": "politician",
+  "name": "Stephan van Baarle",
+  "full_name": "Leader of DENK",
+  "country": "NL",
+  "active": {
+    "from": 2021,
+    "to": null
+  },
+  "party": "nl-denk",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the DENK profile (Current (Nov 2026)), adjusted where Stephan van Baarle's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-35, "m"],
+        "eco_reg": [-45, "m"],
+        "eco_lab": [-50, "m"],
+        "eco_tax": [-55, "m"],
+        "soc_fam": [35, "m"],
+        "soc_lgbt": [40, "m"],
+        "soc_rel": [44, "m"],
+        "soc_mor": [45, "m"],
+        "lib_priv": [-50, "m"],
+        "lib_just": [-30, "m"],
+        "lib_speech": [50, "m"],
+        "lib_emerg": [-30, "m"],
+        "mig_lvl": [-55, "m"],
+        "mig_asy": [-65, "m"],
+        "mig_int": [-85, "m"],
+        "mig_nat": [-75, "m"],
+        "int_eu": [-20, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [0, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": [-30, "l"],
+        "cli_pay": [-20, "l"],
+        "cli_nat": [-10, "l"],
+        "cli_intl": [-40, "l"],
+        "tec_ai": [-20, "l"],
+        "tec_bio": [0, "l"],
+        "tec_nuc": [0, "l"],
+        "tec_big": [-30, "l"],
+        "dem_trust": [10, "l"],
+        "dem_direct": [-35, "m"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [0, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the DENK profile (Current (Nov 2026)).",
+        "SOC": "In line with the DENK profile (Current (Nov 2026)).",
+        "LIB": "In line with the DENK profile (Current (Nov 2026)).",
+        "MIG": "In line with the DENK profile (Current (Nov 2026)).",
+        "INT": "In line with the DENK profile (Current (Nov 2026)).",
+        "CLI": "In line with the DENK profile (Current (Nov 2026)).",
+        "TEC": "In line with the DENK profile (Current (Nov 2026)).",
+        "DEM": "In line with the DENK profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Stephan van Baarle",
+          "url": "https://en.wikipedia.org/wiki/Stephan_van_Baarle"
+        }
+      ]
+    }
+  ]
+}

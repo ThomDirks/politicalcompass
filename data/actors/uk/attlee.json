@@ -1,0 +1,83 @@
+{
+  "id": "uk-attlee",
+  "type": "person",
+  "kind": "politician",
+  "name": "Clement Attlee",
+  "full_name": "Prime Minister 1945 to 1951 (Labour)",
+  "country": "UK",
+  "active": {
+    "from": 1922,
+    "to": 1955
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1945,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Attlee era), adjusted where Clement Attlee's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 1,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-85, "m"],
+        "eco_reg": [-70, "m"],
+        "eco_lab": [-70, "m"],
+        "eco_tax": [-75, "m"],
+        "soc_fam": [20, "m"],
+        "soc_lgbt": [60, "m"],
+        "soc_rel": [0, "m"],
+        "soc_mor": [40, "m"],
+        "lib_priv": [20, "l"],
+        "lib_just": [20, "l"],
+        "lib_speech": [20, "l"],
+        "lib_emerg": [40, "l"],
+        "mig_lvl": [-30, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [0, "l"],
+        "mig_nat": [10, "l"],
+        "int_eu": null,
+        "int_trade": [40, "m"],
+        "int_def": [-70, "m"],
+        "int_aid": [-20, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-10, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-40, "l"],
+        "dem_direct": [-60, "l"],
+        "dem_courts": [-30, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the Labour profile (Attlee era).",
+        "SOC": "In line with the Labour profile (Attlee era).",
+        "LIB": "In line with the Labour profile (Attlee era).",
+        "MIG": "In line with the Labour profile (Attlee era).",
+        "INT": "In line with the Labour profile (Attlee era).",
+        "CLI": "In line with the Labour profile (Attlee era).",
+        "TEC": "In line with the Labour profile (Attlee era).",
+        "DEM": "In line with the Labour profile (Attlee era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Clement Attlee",
+          "url": "https://en.wikipedia.org/wiki/Clement_Attlee"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "de-westerwelle",
+  "type": "person",
+  "kind": "politician",
+  "name": "Guido Westerwelle",
+  "full_name": "FDP leader 2001 to 2011, foreign minister",
+  "country": "DE",
+  "active": {
+    "from": 1994,
+    "to": 2013
+  },
+  "party": "de-fdp",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2009,
+      "label": "FDP leader",
+      "method": "hand",
+      "basis": "Starts from the FDP profile (Current (Nov 2026)), adjusted where Guido Westerwelle's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 4,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [75, "l"],
+        "eco_reg": [70, "l"],
+        "eco_lab": [55, "l"],
+        "eco_tax": [75, "l"],
+        "soc_fam": [-38, "m"],
+        "soc_lgbt": [-60, "m"],
+        "soc_rel": [-60, "m"],
+        "soc_mor": [-75, "m"],
+        "lib_priv": [-50, "m"],
+        "lib_just": [-16, "m"],
+        "lib_speech": [-40, "m"],
+        "lib_emerg": [-55, "m"],
+        "mig_lvl": [5, "m"],
+        "mig_asy": [45, "m"],
+        "mig_int": [35, "m"],
+        "mig_nat": [-15, "m"],
+        "int_eu": [-60, "m"],
+        "int_trade": [-90, "m"],
+        "int_def": [-90, "m"],
+        "int_aid": [25, "m"],
+        "cli_amb": [15, "l"],
+        "cli_pay": [25, "l"],
+        "cli_nat": [35, "l"],
+        "cli_intl": [-25, "l"],
+        "tec_ai": null,
+        "tec_bio": [70, "m"],
+        "tec_nuc": [40, "m"],
+        "tec_big": [40, "m"],
+        "dem_trust": [-45, "m"],
+        "dem_direct": [-25, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-15, "m"]
+      },
+      "notes": {
+        "ECO": "'More net from gross': campaigned on lower taxes.",
+        "SOC": "In line with the FDP profile (Current (Nov 2026)).",
+        "LIB": "In line with the FDP profile (Current (Nov 2026)).",
+        "MIG": "In line with the FDP profile (Current (Nov 2026)).",
+        "INT": "In line with the FDP profile (Current (Nov 2026)).",
+        "CLI": "In line with the FDP profile (Current (Nov 2026)).",
+        "TEC": "In line with the FDP profile (Current (Nov 2026)).",
+        "DEM": "In line with the FDP profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Guido Westerwelle",
+          "url": "https://en.wikipedia.org/wiki/Guido_Westerwelle"
+        }
+      ]
+    }
+  ]
+}

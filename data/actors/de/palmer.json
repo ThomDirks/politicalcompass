@@ -1,0 +1,83 @@
+{
+  "id": "de-palmer",
+  "type": "person",
+  "kind": "politician",
+  "name": "Boris Palmer",
+  "full_name": "Mayor of Tübingen, formerly Greens",
+  "country": "DE",
+  "active": {
+    "from": 2007,
+    "to": null
+  },
+  "party": "de-gruene",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2024,
+      "label": "Independent mayor",
+      "method": "hand",
+      "basis": "Starts from the Grüne profile (Current (Nov 2026)), adjusted where Boris Palmer's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 3,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 5,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [15, "l"],
+        "eco_reg": [-5, "l"],
+        "eco_lab": [0, "l"],
+        "eco_tax": [-10, "l"],
+        "soc_fam": [-45, "l"],
+        "soc_lgbt": [-55, "l"],
+        "soc_rel": [-15, "l"],
+        "soc_mor": [-25, "l"],
+        "lib_priv": [-20, "l"],
+        "lib_just": [0, "l"],
+        "lib_speech": [65, "l"],
+        "lib_emerg": [-5, "l"],
+        "mig_lvl": [10, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [15, "l"],
+        "mig_nat": [-10, "l"],
+        "int_eu": [-60, "l"],
+        "int_trade": [4, "l"],
+        "int_def": [-41, "l"],
+        "int_aid": [-40, "l"],
+        "cli_amb": [-95, "m"],
+        "cli_pay": [-80, "m"],
+        "cli_nat": [-75, "m"],
+        "cli_intl": [-95, "m"],
+        "tec_ai": [-15, "m"],
+        "tec_bio": [-55, "m"],
+        "tec_nuc": [-95, "m"],
+        "tec_big": [-60, "m"],
+        "dem_trust": [-15, "l"],
+        "dem_direct": [65, "l"],
+        "dem_courts": [-25, "l"],
+        "dem_central": [47, "l"]
+      },
+      "notes": {
+        "ECO": "Pragmatic, results-first local governance.",
+        "SOC": "Regularly clashes with progressive language norms.",
+        "LIB": "Tough on public order.",
+        "MIG": "Calls for limits on asylum and deportation of offenders.",
+        "INT": "Less European in emphasis than his old party.",
+        "CLI": "Still strongly pro-climate action.",
+        "TEC": "In line with the Grüne profile (Current (Nov 2026)).",
+        "DEM": "Left the Greens after repeated rows; a self-declared independent voice."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Boris Palmer",
+          "url": "https://en.wikipedia.org/wiki/Boris_Palmer"
+        }
+      ]
+    }
+  ]
+}

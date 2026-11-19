@@ -1,0 +1,83 @@
+{
+  "id": "uk-may",
+  "type": "person",
+  "kind": "politician",
+  "name": "Theresa May",
+  "full_name": "Prime Minister 2016 to 2019 (Conservative)",
+  "country": "UK",
+  "active": {
+    "from": 1997,
+    "to": 2024
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2017,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Current (Nov 2026)), adjusted where Theresa May's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [45, "l"],
+        "eco_reg": [35, "l"],
+        "eco_lab": [40, "l"],
+        "eco_tax": [35, "l"],
+        "soc_fam": [25, "m"],
+        "soc_lgbt": [20, "m"],
+        "soc_rel": [10, "m"],
+        "soc_mor": [20, "m"],
+        "lib_priv": [50, "l"],
+        "lib_just": [80, "l"],
+        "lib_speech": [-20, "l"],
+        "lib_emerg": [25, "l"],
+        "mig_lvl": [75, "l"],
+        "mig_asy": [85, "l"],
+        "mig_int": [60, "l"],
+        "mig_nat": [50, "l"],
+        "int_eu": [55, "l"],
+        "int_trade": [-55, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [30, "l"],
+        "cli_amb": [30, "m"],
+        "cli_pay": [75, "m"],
+        "cli_nat": [40, "m"],
+        "cli_intl": [40, "m"],
+        "tec_ai": [60, "m"],
+        "tec_bio": [60, "m"],
+        "tec_nuc": [80, "m"],
+        "tec_big": [30, "m"],
+        "dem_trust": [5, "m"],
+        "dem_direct": [-40, "m"],
+        "dem_courts": [40, "m"],
+        "dem_central": [20, "m"]
+      },
+      "notes": {
+        "ECO": "Spoke for the 'just about managing' and wanted workers on boards.",
+        "SOC": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "LIB": "Expanded surveillance powers as Home Secretary.",
+        "MIG": "Long held the net migration target.",
+        "INT": "Remainer who sought a close Brexit deal.",
+        "CLI": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "TEC": "In line with the Conservatives profile (Current (Nov 2026)).",
+        "DEM": "In line with the Conservatives profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Theresa May",
+          "url": "https://en.wikipedia.org/wiki/Theresa_May"
+        }
+      ]
+    }
+  ]
+}

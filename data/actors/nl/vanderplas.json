@@ -1,0 +1,83 @@
+{
+  "id": "nl-vanderplas",
+  "type": "person",
+  "kind": "politician",
+  "name": "Caroline van der Plas",
+  "full_name": "Leader of BBB",
+  "country": "NL",
+  "active": {
+    "from": 2019,
+    "to": null
+  },
+  "party": "nl-bbb",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the BBB profile (Current (Nov 2026)), adjusted where Caroline van der Plas's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 4,
+        "INT": 2,
+        "CLI": 5,
+        "TEC": 1,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [-5, "m"],
+        "eco_reg": [15, "m"],
+        "eco_lab": [0, "m"],
+        "eco_tax": [10, "m"],
+        "soc_fam": [30, "m"],
+        "soc_lgbt": [5, "m"],
+        "soc_rel": [15, "m"],
+        "soc_mor": [20, "m"],
+        "lib_priv": [20, "m"],
+        "lib_just": [60, "m"],
+        "lib_speech": [-20, "m"],
+        "lib_emerg": [10, "m"],
+        "mig_lvl": [60, "m"],
+        "mig_asy": [75, "m"],
+        "mig_int": [55, "m"],
+        "mig_nat": [34, "m"],
+        "int_eu": [40, "m"],
+        "int_trade": [40, "m"],
+        "int_def": [-25, "m"],
+        "int_aid": [50, "m"],
+        "cli_amb": [45, "m"],
+        "cli_pay": [65, "m"],
+        "cli_nat": [70, "m"],
+        "cli_intl": [40, "m"],
+        "tec_ai": [0, "l"],
+        "tec_bio": [30, "l"],
+        "tec_nuc": [80, "l"],
+        "tec_big": [-10, "l"],
+        "dem_trust": [45, "m"],
+        "dem_direct": [20, "m"],
+        "dem_courts": [20, "m"],
+        "dem_central": [-60, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the BBB profile (Current (Nov 2026)).",
+        "SOC": "In line with the BBB profile (Current (Nov 2026)).",
+        "LIB": "In line with the BBB profile (Current (Nov 2026)).",
+        "MIG": "In line with the BBB profile (Current (Nov 2026)).",
+        "INT": "In line with the BBB profile (Current (Nov 2026)).",
+        "CLI": "In line with the BBB profile (Current (Nov 2026)).",
+        "TEC": "In line with the BBB profile (Current (Nov 2026)).",
+        "DEM": "In line with the BBB profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Caroline van der Plas",
+          "url": "https://en.wikipedia.org/wiki/Caroline_van_der_Plas"
+        }
+      ]
+    }
+  ]
+}

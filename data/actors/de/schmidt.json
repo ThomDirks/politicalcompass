@@ -1,0 +1,83 @@
+{
+  "id": "de-schmidt",
+  "type": "person",
+  "kind": "politician",
+  "name": "Helmut Schmidt",
+  "full_name": "Chancellor 1974 to 1982 (SPD)",
+  "country": "DE",
+  "active": {
+    "from": 1953,
+    "to": 1987
+  },
+  "party": "de-spd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1978,
+      "label": "Chancellor",
+      "method": "hand",
+      "basis": "Starts from the SPD profile (Current (Nov 2026)), adjusted where Helmut Schmidt's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-20, "l"],
+        "eco_reg": [-35, "l"],
+        "eco_lab": [-55, "l"],
+        "eco_tax": [-45, "l"],
+        "soc_fam": [-35, "l"],
+        "soc_lgbt": [-50, "l"],
+        "soc_rel": [-25, "l"],
+        "soc_mor": [-25, "l"],
+        "lib_priv": [30, "l"],
+        "lib_just": [30, "l"],
+        "lib_speech": [50, "l"],
+        "lib_emerg": [10, "l"],
+        "mig_lvl": [25, "l"],
+        "mig_asy": [15, "l"],
+        "mig_int": [10, "l"],
+        "mig_nat": [-15, "l"],
+        "int_eu": [-70, "m"],
+        "int_trade": [-17, "m"],
+        "int_def": [-75, "l"],
+        "int_aid": [-45, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-10, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [0, "m"],
+        "tec_nuc": [60, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-20, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-2, "m"]
+      },
+      "notes": {
+        "ECO": "Pragmatic economic manager.",
+        "SOC": "Conservative in personal values.",
+        "LIB": "Firm against left-wing terrorism in the 'German Autumn'.",
+        "MIG": "Later said Germany had taken in too many guest workers.",
+        "INT": "Pushed NATO's double-track decision.",
+        "CLI": "Climate was not yet a political issue.",
+        "TEC": "Supported nuclear energy.",
+        "DEM": "In line with the SPD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Helmut Schmidt",
+          "url": "https://en.wikipedia.org/wiki/Helmut_Schmidt"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "uk-major",
+  "type": "person",
+  "kind": "politician",
+  "name": "John Major",
+  "full_name": "Prime Minister 1990 to 1997 (Conservative)",
+  "country": "UK",
+  "active": {
+    "from": 1979,
+    "to": 2001
+  },
+  "party": "uk-con",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1992,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Conservatives profile (Thatcher era), adjusted where John Major's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 3,
+        "INT": 4,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [70, "l"],
+        "eco_reg": [65, "l"],
+        "eco_lab": [70, "l"],
+        "eco_tax": [55, "l"],
+        "soc_fam": [45, "l"],
+        "soc_lgbt": [55, "l"],
+        "soc_rel": [15, "l"],
+        "soc_mor": [35, "l"],
+        "lib_priv": [40, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [30, "m"],
+        "mig_lvl": [50, "m"],
+        "mig_asy": [40, "m"],
+        "mig_int": [40, "m"],
+        "mig_nat": [50, "m"],
+        "int_eu": [-30, "l"],
+        "int_trade": [-90, "l"],
+        "int_def": [-100, "l"],
+        "int_aid": [20, "l"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": [20, "m"],
+        "tec_nuc": [80, "m"],
+        "tec_big": null,
+        "dem_trust": [-20, "l"],
+        "dem_direct": [-60, "l"],
+        "dem_courts": [-20, "l"],
+        "dem_central": [60, "l"]
+      },
+      "notes": {
+        "ECO": "A softer Thatcherism: privatisation alongside the Citizen's Charter.",
+        "SOC": "A classless society was his phrase.",
+        "LIB": "In line with the Conservatives profile (Thatcher era).",
+        "MIG": "In line with the Conservatives profile (Thatcher era).",
+        "INT": "Signed Maastricht and wanted Britain 'at the heart of Europe'.",
+        "CLI": "In line with the Conservatives profile (Thatcher era).",
+        "TEC": "In line with the Conservatives profile (Thatcher era).",
+        "DEM": "In line with the Conservatives profile (Thatcher era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: John Major",
+          "url": "https://en.wikipedia.org/wiki/John_Major"
+        }
+      ]
+    }
+  ]
+}

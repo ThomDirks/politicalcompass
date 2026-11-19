@@ -1,0 +1,83 @@
+{
+  "id": "de-schroeder",
+  "type": "person",
+  "kind": "politician",
+  "name": "Gerhard Schröder",
+  "full_name": "Chancellor 1998 to 2005 (SPD)",
+  "country": "DE",
+  "active": {
+    "from": 1980,
+    "to": 2005
+  },
+  "party": "de-spd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2003,
+      "label": "Chancellor",
+      "method": "hand",
+      "basis": "Starts from the SPD profile (Current (Nov 2026)), adjusted where Gerhard Schröder's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 2,
+        "MIG": 3,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [5, "l"],
+        "eco_reg": [-10, "l"],
+        "eco_lab": [-30, "l"],
+        "eco_tax": [-20, "l"],
+        "soc_fam": [-40, "l"],
+        "soc_lgbt": [-55, "l"],
+        "soc_rel": [-30, "l"],
+        "soc_mor": [-30, "l"],
+        "lib_priv": [10, "m"],
+        "lib_just": [10, "m"],
+        "lib_speech": [30, "m"],
+        "lib_emerg": [-10, "m"],
+        "mig_lvl": [10, "l"],
+        "mig_asy": [0, "l"],
+        "mig_int": [-5, "l"],
+        "mig_nat": [-30, "l"],
+        "int_eu": [-70, "m"],
+        "int_trade": [-17, "m"],
+        "int_def": [-43, "m"],
+        "int_aid": [-45, "m"],
+        "cli_amb": [-45, "l"],
+        "cli_pay": [-35, "l"],
+        "cli_nat": [-25, "l"],
+        "cli_intl": [-60, "l"],
+        "tec_ai": null,
+        "tec_bio": [0, "m"],
+        "tec_nuc": [-30, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "m"],
+        "dem_direct": [-20, "m"],
+        "dem_courts": [-65, "m"],
+        "dem_central": [-2, "m"]
+      },
+      "notes": {
+        "ECO": "Agenda 2010: labour-market and welfare reforms.",
+        "SOC": "The 'Neue Mitte': centrist on culture.",
+        "LIB": "In line with the SPD profile (Current (Nov 2026)).",
+        "MIG": "Introduced dual-citizenship reform but cautious on migration.",
+        "INT": "In line with the SPD profile (Current (Nov 2026)).",
+        "CLI": "A 'car chancellor', close to industry.",
+        "TEC": "Agreed the first nuclear phase-out.",
+        "DEM": "In line with the SPD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Gerhard Schröder",
+          "url": "https://en.wikipedia.org/wiki/Gerhard_Schröder"
+        }
+      ]
+    }
+  ]
+}

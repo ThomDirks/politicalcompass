@@ -1,0 +1,83 @@
+{
+  "id": "nl-janmaat",
+  "type": "person",
+  "kind": "politician",
+  "name": "Hans Janmaat",
+  "full_name": "Leader of the Centre Democrats",
+  "country": "NL",
+  "active": {
+    "from": 1982,
+    "to": 1998
+  },
+  "party": "nl-pvv",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1994,
+      "label": "CD leader",
+      "method": "hand",
+      "basis": "Starts from the PVV profile (Current (Nov 2026)), adjusted where Hans Janmaat's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 5,
+        "INT": 3,
+        "CLI": 3,
+        "TEC": 1,
+        "DEM": 3
+      },
+      "facets": {
+        "eco_own": [-30, "l"],
+        "eco_reg": [-20, "l"],
+        "eco_lab": [-25, "l"],
+        "eco_tax": [-6, "l"],
+        "soc_fam": [30, "m"],
+        "soc_lgbt": [15, "m"],
+        "soc_rel": [15, "m"],
+        "soc_mor": [20, "m"],
+        "lib_priv": [40, "m"],
+        "lib_just": [70, "m"],
+        "lib_speech": [-10, "m"],
+        "lib_emerg": [30, "m"],
+        "mig_lvl": [85, "m"],
+        "mig_asy": [95, "m"],
+        "mig_int": [85, "m"],
+        "mig_nat": [52, "m"],
+        "int_eu": [65, "m"],
+        "int_trade": [30, "m"],
+        "int_def": [20, "m"],
+        "int_aid": [90, "m"],
+        "cli_amb": [75, "l"],
+        "cli_pay": [85, "l"],
+        "cli_nat": [80, "l"],
+        "cli_intl": [75, "l"],
+        "tec_ai": null,
+        "tec_bio": [20, "l"],
+        "tec_nuc": [80, "l"],
+        "tec_big": null,
+        "dem_trust": [70, "m"],
+        "dem_direct": [80, "m"],
+        "dem_courts": [64, "m"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "Protect the welfare state for native Dutch citizens.",
+        "SOC": "In line with the PVV profile (Current (Nov 2026)).",
+        "LIB": "In line with the PVV profile (Current (Nov 2026)).",
+        "MIG": "'Full is full': wanted immigration stopped altogether.",
+        "INT": "In line with the PVV profile (Current (Nov 2026)).",
+        "CLI": "In line with the PVV profile (Current (Nov 2026)).",
+        "TEC": "In line with the PVV profile (Current (Nov 2026)).",
+        "DEM": "In line with the PVV profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Hans Janmaat",
+          "url": "https://en.wikipedia.org/wiki/Hans_Janmaat"
+        }
+      ]
+    }
+  ]
+}

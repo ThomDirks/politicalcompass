@@ -1,0 +1,83 @@
+{
+  "id": "uk-brown",
+  "type": "person",
+  "kind": "politician",
+  "name": "Gordon Brown",
+  "full_name": "Prime Minister 2007 to 2010 (Labour)",
+  "country": "UK",
+  "active": {
+    "from": 1983,
+    "to": 2015
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2008,
+      "label": "Prime Minister",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Blair era), adjusted where Gordon Brown's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 2,
+        "LIB": 3,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 4
+      },
+      "facets": {
+        "eco_own": [0, "l"],
+        "eco_reg": [10, "l"],
+        "eco_lab": [-30, "l"],
+        "eco_tax": [-10, "l"],
+        "soc_fam": [-30, "m"],
+        "soc_lgbt": [-40, "m"],
+        "soc_rel": [-30, "m"],
+        "soc_mor": [-20, "m"],
+        "lib_priv": [50, "l"],
+        "lib_just": [60, "l"],
+        "lib_speech": [30, "l"],
+        "lib_emerg": [20, "l"],
+        "mig_lvl": [0, "m"],
+        "mig_asy": [20, "m"],
+        "mig_int": [0, "m"],
+        "mig_nat": [-20, "m"],
+        "int_eu": [-40, "m"],
+        "int_trade": [-60, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [-40, "m"],
+        "cli_amb": [-30, "m"],
+        "cli_pay": [-10, "m"],
+        "cli_nat": [-10, "m"],
+        "cli_intl": [-50, "m"],
+        "tec_ai": null,
+        "tec_bio": [0, "l"],
+        "tec_nuc": [0, "l"],
+        "tec_big": null,
+        "dem_trust": [-60, "l"],
+        "dem_direct": [-20, "l"],
+        "dem_courts": [-40, "l"],
+        "dem_central": [-60, "l"]
+      },
+      "notes": {
+        "ECO": "Tax credits and higher public spending, while backing the City.",
+        "SOC": "In line with the Labour profile (Blair era).",
+        "LIB": "Supported longer detention without charge for terror suspects.",
+        "MIG": "In line with the Labour profile (Blair era).",
+        "INT": "In line with the Labour profile (Blair era).",
+        "CLI": "In line with the Labour profile (Blair era).",
+        "TEC": "In line with the Labour profile (Blair era).",
+        "DEM": "In line with the Labour profile (Blair era)."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Gordon Brown",
+          "url": "https://en.wikipedia.org/wiki/Gordon_Brown"
+        }
+      ]
+    }
+  ]
+}

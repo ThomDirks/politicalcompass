@@ -1,0 +1,83 @@
+{
+  "id": "uk-benn",
+  "type": "person",
+  "kind": "politician",
+  "name": "Tony Benn",
+  "full_name": "Labour MP and minister, leader of the Labour left",
+  "country": "UK",
+  "active": {
+    "from": 1950,
+    "to": 2001
+  },
+  "party": "uk-labour",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1983,
+      "label": "Labour left",
+      "method": "hand",
+      "basis": "Starts from the Labour profile (Michael Foot era), adjusted where Tony Benn's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 1,
+        "INT": 5,
+        "CLI": 1,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-100, "l"],
+        "eco_reg": [-95, "l"],
+        "eco_lab": [-100, "l"],
+        "eco_tax": [-95, "l"],
+        "soc_fam": [-40, "l"],
+        "soc_lgbt": [-30, "l"],
+        "soc_rel": [-50, "l"],
+        "soc_mor": [-40, "l"],
+        "lib_priv": [-25, "l"],
+        "lib_just": [-15, "l"],
+        "lib_speech": [-15, "l"],
+        "lib_emerg": [-35, "l"],
+        "mig_lvl": [-10, "l"],
+        "mig_asy": [-20, "l"],
+        "mig_int": [-20, "l"],
+        "mig_nat": [-30, "l"],
+        "int_eu": [80, "l"],
+        "int_trade": [70, "m"],
+        "int_def": [60, "m"],
+        "int_aid": [-60, "m"],
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [-20, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": [-60, "m"],
+        "tec_big": null,
+        "dem_trust": [15, "l"],
+        "dem_direct": [35, "l"],
+        "dem_courts": [15, "l"],
+        "dem_central": [5, "l"]
+      },
+      "notes": {
+        "ECO": "Wanted public ownership and workers' control of industry.",
+        "SOC": "Further to the progressive side than Labour's mainstream of the time.",
+        "LIB": "Defended civil liberties and the right to protest.",
+        "MIG": "In line with the Labour profile (Michael Foot era).",
+        "INT": "Campaigned to leave the European Community in 1975 and after.",
+        "CLI": "In line with the Labour profile (Michael Foot era).",
+        "TEC": "In line with the Labour profile (Michael Foot era).",
+        "DEM": "Distrusted unaccountable power, from the Lords to Brussels and the City."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Tony Benn",
+          "url": "https://en.wikipedia.org/wiki/Tony_Benn"
+        }
+      ]
+    }
+  ]
+}

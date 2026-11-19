@@ -1,0 +1,83 @@
+{
+  "id": "us-perot",
+  "type": "person",
+  "kind": "politician",
+  "name": "Ross Perot",
+  "full_name": "Independent and Reform Party presidential candidate 1992 and 1996",
+  "country": "US",
+  "active": {
+    "from": 1992,
+    "to": 1996
+  },
+  "party": null,
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1992,
+      "label": "1992 candidate",
+      "method": "hand",
+      "basis": "Scored directly from Ross Perot's stated views, speeches and writing. Views only, not actions.",
+      "salience": {
+        "ECO": 2,
+        "SOC": 2,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [25, "l"],
+        "eco_reg": [25, "l"],
+        "eco_lab": [25, "l"],
+        "eco_tax": [25, "l"],
+        "soc_fam": [-5, "l"],
+        "soc_lgbt": [-5, "l"],
+        "soc_rel": [-5, "l"],
+        "soc_mor": [-5, "l"],
+        "lib_priv": [10, "l"],
+        "lib_just": [10, "l"],
+        "lib_speech": [10, "l"],
+        "lib_emerg": [10, "l"],
+        "mig_lvl": [30, "l"],
+        "mig_asy": [30, "l"],
+        "mig_int": [30, "l"],
+        "mig_nat": [30, "l"],
+        "int_eu": [55, "l"],
+        "int_trade": [55, "l"],
+        "int_def": [55, "l"],
+        "int_aid": [55, "l"],
+        "cli_amb": [20, "l"],
+        "cli_pay": [20, "l"],
+        "cli_nat": [20, "l"],
+        "cli_intl": [20, "l"],
+        "tec_ai": null,
+        "tec_bio": [20, "l"],
+        "tec_nuc": [20, "l"],
+        "tec_big": null,
+        "dem_trust": [70, "l"],
+        "dem_direct": [70, "l"],
+        "dem_courts": [70, "l"],
+        "dem_central": [70, "l"]
+      },
+      "notes": {
+        "ECO": "Balance the budget, but protect American jobs.",
+        "SOC": "Pro-choice and centrist on social questions.",
+        "LIB": "Scored from Ross Perot's stated views.",
+        "MIG": "Scored from Ross Perot's stated views.",
+        "INT": "Fought NAFTA: 'a giant sucking sound' of jobs going south.",
+        "CLI": "Scored from Ross Perot's stated views.",
+        "TEC": "Scored from Ross Perot's stated views.",
+        "DEM": "Run government like a business, free from career politicians and lobbyists."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Ross Perot",
+          "url": "https://en.wikipedia.org/wiki/Ross_Perot"
+        }
+      ]
+    }
+  ]
+}

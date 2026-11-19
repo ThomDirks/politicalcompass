@@ -1,0 +1,83 @@
+{
+  "id": "nl-bikker",
+  "type": "person",
+  "kind": "politician",
+  "name": "Mirjam Bikker",
+  "full_name": "Leader of the ChristenUnie",
+  "country": "NL",
+  "active": {
+    "from": 2021,
+    "to": null
+  },
+  "party": "nl-cu",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the CU profile (Current (Nov 2026)), adjusted where Mirjam Bikker's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 3,
+        "SOC": 4,
+        "LIB": 2,
+        "MIG": 2,
+        "INT": 2,
+        "CLI": 3,
+        "TEC": 2,
+        "DEM": 2
+      },
+      "facets": {
+        "eco_own": [-10, "m"],
+        "eco_reg": [-25, "m"],
+        "eco_lab": [-35, "m"],
+        "eco_tax": [-40, "m"],
+        "soc_fam": [26, "m"],
+        "soc_lgbt": [35, "m"],
+        "soc_rel": [65, "m"],
+        "soc_mor": [75, "m"],
+        "lib_priv": [0, "m"],
+        "lib_just": [7, "m"],
+        "lib_speech": [0, "m"],
+        "lib_emerg": [0, "m"],
+        "mig_lvl": [10, "m"],
+        "mig_asy": [-30, "m"],
+        "mig_int": [10, "m"],
+        "mig_nat": [-8, "m"],
+        "int_eu": [-10, "m"],
+        "int_trade": [-10, "m"],
+        "int_def": [-60, "m"],
+        "int_aid": [-55, "m"],
+        "cli_amb": [-55, "m"],
+        "cli_pay": [-40, "m"],
+        "cli_nat": [-25, "m"],
+        "cli_intl": [-60, "m"],
+        "tec_ai": [-40, "m"],
+        "tec_bio": [-30, "m"],
+        "tec_nuc": [40, "m"],
+        "tec_big": [-55, "m"],
+        "dem_trust": [-61, "m"],
+        "dem_direct": [-50, "m"],
+        "dem_courts": [-60, "m"],
+        "dem_central": [-30, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the CU profile (Current (Nov 2026)).",
+        "SOC": "In line with the CU profile (Current (Nov 2026)).",
+        "LIB": "In line with the CU profile (Current (Nov 2026)).",
+        "MIG": "In line with the CU profile (Current (Nov 2026)).",
+        "INT": "In line with the CU profile (Current (Nov 2026)).",
+        "CLI": "In line with the CU profile (Current (Nov 2026)).",
+        "TEC": "In line with the CU profile (Current (Nov 2026)).",
+        "DEM": "In line with the CU profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Mirjam Bikker",
+          "url": "https://en.wikipedia.org/wiki/Mirjam_Bikker"
+        }
+      ]
+    }
+  ]
+}

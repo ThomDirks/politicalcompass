@@ -1,0 +1,83 @@
+{
+  "id": "nl-yesilgoz",
+  "type": "person",
+  "kind": "politician",
+  "name": "Dilan Yeşilgöz",
+  "full_name": "Leader of the VVD",
+  "country": "NL",
+  "active": {
+    "from": 2017,
+    "to": null
+  },
+  "party": "nl-vvd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 2026,
+      "label": "Current",
+      "method": "hand",
+      "basis": "Starts from the VVD profile (Current (Nov 2026)), adjusted where Dilan Yeşilgöz's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 2,
+        "LIB": 4,
+        "MIG": 4,
+        "INT": 3,
+        "CLI": 2,
+        "TEC": 2,
+        "DEM": 1
+      },
+      "facets": {
+        "eco_own": [55, "m"],
+        "eco_reg": [45, "m"],
+        "eco_lab": [40, "m"],
+        "eco_tax": [45, "m"],
+        "soc_fam": [-20, "m"],
+        "soc_lgbt": [-29, "m"],
+        "soc_rel": [-40, "m"],
+        "soc_mor": [-30, "m"],
+        "lib_priv": [35, "m"],
+        "lib_just": [55, "m"],
+        "lib_speech": [-10, "m"],
+        "lib_emerg": [15, "m"],
+        "mig_lvl": [55, "l"],
+        "mig_asy": [75, "l"],
+        "mig_int": [65, "l"],
+        "mig_nat": [45, "l"],
+        "int_eu": [-15, "m"],
+        "int_trade": [-70, "m"],
+        "int_def": [-80, "m"],
+        "int_aid": [30, "m"],
+        "cli_amb": [10, "m"],
+        "cli_pay": [25, "m"],
+        "cli_nat": [30, "m"],
+        "cli_intl": [-20, "m"],
+        "tec_ai": [50, "m"],
+        "tec_bio": [55, "m"],
+        "tec_nuc": [85, "m"],
+        "tec_big": [35, "m"],
+        "dem_trust": [-50, "m"],
+        "dem_direct": [-70, "m"],
+        "dem_courts": [-35, "m"],
+        "dem_central": [10, "m"]
+      },
+      "notes": {
+        "ECO": "In line with the VVD profile (Current (Nov 2026)).",
+        "SOC": "In line with the VVD profile (Current (Nov 2026)).",
+        "LIB": "In line with the VVD profile (Current (Nov 2026)).",
+        "MIG": "Leads the VVD's tougher line on asylum and migration.",
+        "INT": "In line with the VVD profile (Current (Nov 2026)).",
+        "CLI": "In line with the VVD profile (Current (Nov 2026)).",
+        "TEC": "In line with the VVD profile (Current (Nov 2026)).",
+        "DEM": "In line with the VVD profile (Current (Nov 2026))."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Dilan Yeşilgöz",
+          "url": "https://en.wikipedia.org/wiki/Dilan_Yeşilgöz-Zegerius"
+        }
+      ]
+    }
+  ]
+}

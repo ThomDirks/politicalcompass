@@ -1,0 +1,83 @@
+{
+  "id": "de-luxemburg",
+  "type": "person",
+  "kind": "public figure",
+  "name": "Rosa Luxemburg",
+  "full_name": "Socialist theorist, co-founder of the KPD",
+  "country": "DE",
+  "active": {
+    "from": 1898,
+    "to": 1919
+  },
+  "party": "de-kpd",
+  "predecessors": [],
+  "status": "draft",
+  "snapshots": [
+    {
+      "year": 1918,
+      "label": "KPD founding",
+      "method": "hand",
+      "basis": "Starts from the KPD profile (Weimar Republic), adjusted where Rosa Luxemburg's own stated views differ. Views only, not actions.",
+      "salience": {
+        "ECO": 5,
+        "SOC": 3,
+        "LIB": 4,
+        "MIG": 2,
+        "INT": 3,
+        "CLI": 1,
+        "TEC": 1,
+        "DEM": 5
+      },
+      "facets": {
+        "eco_own": [-100, "m"],
+        "eco_reg": [-100, "m"],
+        "eco_lab": [-100, "m"],
+        "eco_tax": [-100, "m"],
+        "soc_fam": [-60, "m"],
+        "soc_lgbt": [-40, "m"],
+        "soc_rel": [-100, "m"],
+        "soc_mor": [-70, "m"],
+        "lib_priv": [40, "l"],
+        "lib_just": [0, "l"],
+        "lib_speech": [40, "l"],
+        "lib_emerg": [60, "l"],
+        "mig_lvl": [-50, "l"],
+        "mig_asy": [-80, "l"],
+        "mig_int": [-60, "l"],
+        "mig_nat": [-100, "l"],
+        "int_eu": null,
+        "int_trade": [50, "l"],
+        "int_def": [0, "l"],
+        "int_aid": null,
+        "cli_amb": null,
+        "cli_pay": null,
+        "cli_nat": [0, "l"],
+        "cli_intl": null,
+        "tec_ai": null,
+        "tec_bio": null,
+        "tec_nuc": null,
+        "tec_big": null,
+        "dem_trust": [85, "l"],
+        "dem_direct": [35, "l"],
+        "dem_courts": [85, "l"],
+        "dem_central": [65, "l"]
+      },
+      "notes": {
+        "ECO": "In line with the KPD profile (Weimar Republic).",
+        "SOC": "In line with the KPD profile (Weimar Republic).",
+        "LIB": "'Freedom is always the freedom of those who think differently': wanted socialism with free speech and open debate.",
+        "MIG": "In line with the KPD profile (Weimar Republic).",
+        "INT": "In line with the KPD profile (Weimar Republic).",
+        "CLI": "In line with the KPD profile (Weimar Republic).",
+        "TEC": "In line with the KPD profile (Weimar Republic).",
+        "DEM": "Believed in mass democratic participation rather than rule by a party elite."
+      },
+      "sources": [
+        {
+          "title": "Wikipedia: Rosa Luxemburg",
+          "url": "https://en.wikipedia.org/wiki/Rosa_Luxemburg"
+        }
+      ]
+    }
+  ]
+}
