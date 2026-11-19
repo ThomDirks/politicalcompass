@@ -89,14 +89,14 @@ p { margin: 0; max-width: var(--measure); }
 .linkbtn { background: none; border: 0; padding: 4px 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; color: var(--muted); }
 .linkbtn:hover { color: var(--ink); }
 
-.seg { display: inline-flex; border: 1.5px solid var(--ink); border-radius: 3px; overflow: hidden; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1.5px solid var(--ink); border-radius: 3px; overflow: hidden; flex-wrap: wrap; justify-self: start; align-self: start; max-width: 100%; }
 .seg button {
   border: 0; background: transparent; padding: 8px 14px; cursor: pointer; font-weight: 600;
-  border-right: 1.5px solid var(--ink);
+  border-right: 1.5px solid var(--ink); flex: 1 0 auto; white-space: nowrap;
 }
 .seg button:last-child { border-right: 0; }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--sheet); }
-.seg button:not([aria-pressed="true"]):hover { background: var(--tint); }
+@media (hover: hover) { .seg button:not([aria-pressed="true"]):hover { background: var(--tint); } }
 
 .choice { display: grid; gap: 10px; }
 .choice label {
@@ -314,9 +314,9 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
 .cm-row { font-weight: 600; padding: 12px 10px 0 0; border-right: 2px solid var(--ink); }
 .cm-row span { display: block; font-weight: 400; color: var(--muted); font-size: .85rem; }
 .cm-col b, .cm-row b { font-family: var(--display); font-variation-settings: "wdth" 70; font-size: 1.25rem; margin-right: 4px; }
-.camp { border-top: 4px solid var(--fam); background: color-mix(in srgb, var(--fam) 7%, var(--paper)); padding: 10px 10px 12px; display: grid; gap: 8px; align-content: start; }
+.camp { border-top: 4px solid var(--fam); background: color-mix(in srgb, var(--fam) 7%, var(--paper)); padding: 10px 10px 12px; display: grid; gap: 8px; grid-template-rows: auto 1fr; }
 .camp-name { font-size: 1.05rem; font-variation-settings: "wdth" 82; }
-.camp-types { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+.camp-types { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; align-items: stretch; }
 .camp .tcard .stage { padding: 10px 10px 0; position: relative; }
 .camp .tcard .stage .ch { max-width: 120px; }
 .camp .tname { font-size: .98rem; }
@@ -343,7 +343,8 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
 .types-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .tcard { display: grid; grid-template-rows: auto 1fr; text-decoration: none; background: var(--sheet); border: 1.5px solid var(--ink); border-radius: 2px; }
 .tcard .stage { padding: 16px 22px 0; border-bottom: 1.5px solid var(--ink); }
-.tcard .stage .ch { max-width: 160px; margin: 0 auto -2px; }
+.tcard .stage { display: grid; place-items: end center; }
+.tcard .stage .ch { width: 100%; max-width: 160px; margin: 0 auto -2px; }
 .tcard .tbody { padding: 12px 14px 16px; display: grid; gap: 4px; align-content: start; }
 .tname { font-family: var(--display); font-variation-settings: "wdth" 78; font-weight: 800; font-size: 1.32rem; line-height: 1.05; }
 .tcard:hover .tname { text-decoration: underline; text-underline-offset: 3px; }
@@ -351,9 +352,11 @@ a:hover .ch-bob, a:focus-visible .ch-bob { animation: ch-hop .5s ease-out; }
 .ttag { font-size: .88rem; color: var(--muted); }
 
 .mini-types { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 10px 8px; margin-top: 8px; }
-.mini-types a { display: grid; gap: 6px; text-decoration: none; justify-items: center; text-align: center; font-size: .8rem; font-weight: 600; line-height: 1.15; }
-.mini-types .stage { width: 100%; border-radius: 50% 50% 4px 4px; padding: 10px 8px 0; border: 1.5px solid var(--ink); }
-.mini-types a:hover span { text-decoration: underline; text-underline-offset: 3px; }
+.mini-types a { display: grid; grid-template-rows: auto 1fr; text-decoration: none; text-align: center; font-size: .8rem; font-weight: 600; line-height: 1.15; background: var(--sheet); border: 1.5px solid var(--ink); border-radius: 2px; overflow: hidden; }
+.mini-types .stage { display: grid; place-items: center; padding: 10px 8px 0; border-bottom: 1.5px solid var(--ink); }
+.mini-types .stage .ch { width: 100%; max-width: 110px; }
+.mini-types .mname { display: grid; place-items: center; padding: 7px 4px 8px; }
+.mini-types a:hover .mname { text-decoration: underline; text-underline-offset: 3px; }
 
 .tpage { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
 .tstage { border: 1.5px solid var(--ink); padding: 28px 36px 0; position: sticky; top: 88px; display: grid; }
@@ -1081,7 +1084,7 @@ function renderHome() {
     <h2>Eighteen political types</h2>
     <p class="muted">Where you stand on the economy and on culture puts you in one of nine camps. How much you trust the system decides which of its two types you are. Which one are you?</p>
     <div class="mini-types">
-      ${TY.types.map(t => `<a href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}"><span class="stage">${ch(t.code)}</span><span>${esc(t.name)}</span></a>`).join("")}
+      ${TY.types.map(t => `<a href="#type-${t.code.toLowerCase()}" style="${famStyle(t.code)}"><span class="stage">${ch(t.code)}</span><span class="mname">${esc(plain(t))}</span></a>`).join("")}
     </div>
   </div>`;
   $("#v-home").querySelectorAll("[data-country]").forEach(b => b.onclick = () => { S.country = b.dataset.country; save(); renderHome(); });
@@ -1782,7 +1785,20 @@ function renderMethod() {
   </div>`;
 }
 
+// Props stick out on one side, so centre each drawing on its actual outline, not on the body.
+function fitChars(root = document) {
+  root.querySelectorAll("svg.ch:not([data-fit])").forEach(svg => {
+    let b;
+    try { b = svg.getBBox(); } catch (e) { return; }
+    if (!b || !b.width) return;
+    const cx = b.x + b.width / 2;
+    svg.setAttribute("viewBox", `${(cx - 100).toFixed(1)} 0 200 220`);
+    svg.dataset.fit = "1";
+  });
+}
+new MutationObserver(() => requestAnimationFrame(() => fitChars())).observe(document.querySelector("main"), { childList: true, subtree: true });
 route();
+requestAnimationFrame(() => fitChars());
 </script>
 </body>
 </html>
